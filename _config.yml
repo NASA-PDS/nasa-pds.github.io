@@ -14,7 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+markdown: kramdown
 theme: jekyll-theme-minimal
+show-downloads: true
 
 title: NASA PDS Incubator Project
 description: The NASA PDS Incubator Project is the entry path into the PDS Tools Catalog [Link TBD], a centralized catalog of PDS tools projects that cross-cut the entire PDS. The Incubator provides the guidelines and promotion criteria for project acceptance into the PDS Tools Catalog.
