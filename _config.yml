@@ -24,11 +24,7 @@ title: PDS Incubator Project
 # github_username:  jekyll
 
 # Build settings
-markdown: kramdown
-remote_theme: pmarsceill/just-the-docs
-theme: just-the-docs
-plugins:
-  - jekyll-feed
+theme: minimal
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
