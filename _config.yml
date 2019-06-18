@@ -18,6 +18,6 @@ markdown: kramdown
 theme: jekyll-theme-minimal
 show-downloads: true
 
-title: NASA PDS Incubator Project
-description: The NASA PDS Incubator Project is the entry path into the PDS Tools Catalog [Link TBD], a centralized catalog of PDS tools projects that cross-cut the entire PDS. The Incubator provides the guidelines and promotion criteria for project acceptance into the PDS Tools Catalog.
+title: NASA PDS Tools Catalog
+description: The NASA PDS Tools Catalog and Incubator Project is an effort by the PDS Tool Working group to develop a managed, centralized catalog of PDS tools and projects that cross-cut the entire PDS. The Incubator provides the guidelines and promotion criteria for project acceptance into the PDS Tools Catalog.
 logo: assets/images/pds_logo.png
