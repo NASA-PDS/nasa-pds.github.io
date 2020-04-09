@@ -31,7 +31,7 @@ Here is an example email filter from Microsoft Outlook for Mac:
 
     When a new message arrives that meets all these conditions:
       Body Contains       @my_username
-      Subject Contains    "NASA-PDS-Incubator/" or "NASA_PDS/" or "pds-data-dictionaries/"
+      Subject Contains    "NASA-PDS-Incubator/" or "NASA-PDS/" or "pds-data-dictionaries/"
 
     Do the following:
       Move to Folder      PDS-@mentions (you may need to create this folder somewhere)
