@@ -15,18 +15,27 @@ CI/CD for will differ between stable releases versus unstable releases (e.g. SNA
 Here are the steps we want to accomplish during our stable release CI/CD process:
 
 * Identify repo (Java or Python)
+    * If `setup.py` == Python, `pom.xml` == Java
 * Unit Test
-* Integration Test
-* Generate CHANGELOG
-* Generate REQUIREMENTS
-* Push updates to repo
-* Tag Release in Github
-* Build software
-* Publish software (push to PyPi, Maven Central, Github Release Assets - Java only)
-* Generate and package Documentation
-* Push Documentation
-    * To Github Pages
-    * To Github Release Assets
+    * Python - `python setup.py test` (unittest)
+    * Java - `mvn test`
+* Integration Test (TBD technology / best practices)
+* Generate Configuration Control Artifacts
+    * Generate CHANGELOG
+    * Generate REQUIREMENTS
+    * Push updates to repo
+* Build and deploy software - RELEASE
+    * Generate and package Documentation
+    * Build software
+        * Python - `python setup.py wheel`
+        * Java - `mvn package`
+    * Publish unstable release to Github Releases
+    * Publish to public artifact repos
+        * Python - Test pypi
+        * Java - Maven central snapshots, upload package to Github assets
+    * Push Documentation
+        * To Github Pages
+        * To Github Release Assets
 
 ### Github Actions Example
 
@@ -40,15 +49,22 @@ CI/CD for in-development software updates (e.g. Java SNAPSHOTS, Python -dev)
 
 * Identify repo (Java or Python)
 * Unit Test
-* Integration Test
-* Generate CHANGELOG
-* Generate REQUIREMENTS
-* Push updates to repo
-* Build software
-* Publish unstable release to Github Releases
-* Publish to public artifact repos
-    * Python - push to PyPi Test
-    * Java - push to Maven Central SNAPSHOTS repo, upload package to Github assets
-* Generate and package Documentation
-* Push Documentation to Github Release Assets ONLY
+    * Python - `python setup.py test` (unittest)
+    * Java - `mvn test`
+* Integration Test (TBD technology / best practices)
+* Generate Configuration Control Artifacts
+    * Generate CHANGELOG
+    * Generate REQUIREMENTS
+    * Push updates to repo
+* Build and deploy software - UNSTABLE
+    * Generate and package Documentation
+    * Build software
+        * Python - `python setup.py wheel`
+        * Java - `mvn package`
+    * Publish unstable release to Github Releases
+    * Publish to public artifact repos
+        * Python - Test pypi
+        * Java - Maven central snapshots, upload package to Github assets
+    * Push Documentation
+        * Push generated docs to Github Release Assets ONLY
 
