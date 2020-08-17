@@ -72,3 +72,6 @@ CI/CD for in-development software updates (e.g. Java SNAPSHOTS, Python -dev)
     * Push Documentation
         * Push generated docs to Github Release Assets ONLY
 
+
+Copyright 2020, California Institute of Technology ("Caltech").
+U.S. Government sponsorship acknowledged.
