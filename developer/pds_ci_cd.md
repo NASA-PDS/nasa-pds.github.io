@@ -26,6 +26,8 @@ Here are the steps we want to accomplish during our stable release CI/CD process
     * Push updates to repo
 * Build and deploy software - RELEASE
     * Generate and package Documentation
+        * Python - Sphinx
+        * Java - `mvn site`
     * Build software
         * Python - `python setup.py wheel`
         * Java - `mvn package`
@@ -58,6 +60,8 @@ CI/CD for in-development software updates (e.g. Java SNAPSHOTS, Python -dev)
     * Push updates to repo
 * Build and deploy software - UNSTABLE
     * Generate and package Documentation
+        * Python - Sphinx
+        * Java - `mvn site`
     * Build software
         * Python - `python setup.py wheel`
         * Java - `mvn package`
