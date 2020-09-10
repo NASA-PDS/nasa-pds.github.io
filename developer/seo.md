@@ -78,7 +78,7 @@ Keywords used to be an important part of page metadata, but due to "keyword stuf
 
 Almost every question can be asked, "Relative to what?" Unless we have some data to measure against, we can't test if changes we make to our site are having a positive or negative effects. That's where *analytics* comes in. Analytics is the [collection, measurement, and analysis of website use](https://www.usability.gov/what-and-why/web-analytics.html). For SEO, it means looking at what parts of our site are used and which are under-used, what search keywords users find to discover our site, what devices they surf on, their demographics, what referrals you're getting from other sites, and more.
 
-With analytics, for example, you might find that many visitors to a node's site are searching for information about Saturn—which might be wholly arong if you happen to be the Planetary Plasma Interactions (PPI) Node!
+With analytics, for example, you might find that many visitors to a node's site are searching for information about Saturn—which might be wholly wrong if you happen to be the Planetary Plasma Interactions (PPI) Node!
 
 [Google Analytics](https://analytics.google.com/) is the *de facto* king of website analytics and is, thankfully, free. But [there are other analytics tools](https://contently.com/2016/08/02/the-top-10-free-content-analytics-tools/) out there, and some site hosting platforms (like SquareSpace) have analytics built-in.
 
