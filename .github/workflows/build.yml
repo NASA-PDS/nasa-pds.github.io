@@ -32,7 +32,7 @@ jobs:
         run: |
           pip install -r build/requirements.txt
 
-      - name: Make Sphinz
+      - name: Make Sphinx
         id: make
         run: |
           cd docs
@@ -44,7 +44,7 @@ jobs:
           git config --local user.email "pdsen-ci@jpl.nasa.gov"
           git config --local user.name "PDSEN CI Bot"
           git add -A .
-          git commit -m "Auto-generated LDD by PDSEN CI Bot"
+          git commit --allow-empty -m "Auto-generated LDD by PDSEN CI Bot"
           
       - name: Push changes
         uses: ad-m/github-push-action@master
