@@ -4,6 +4,7 @@ CI / CD
 ..  toctree::
     :maxdepth: 3
 
+    /developer/ci_cd
 
 Purpose
 -------
