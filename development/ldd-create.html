@@ -1,0 +1,442 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LDD Creation Process &mdash; NASA PDS Software  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LDD Update Process" href="ldd-update.html" />
+    <link rel="prev" title="Getting Started" href="../getting-started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> NASA PDS Software
+          
+
+          
+            
+            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html#getting-to-know-your-ldd-repo">Getting to Know Your LDD Repo</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LDD Creation Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#proposing-a-new-discipline-ldd">Proposing a New Discipline LDD</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#is-this-ldd-needed">1. Is this LDD needed?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#who-will-be-the-ldd-steward-s">2. Who will be the LDD Steward(s)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#who-will-be-on-the-ldd-change-control-board">3. Who will be on the LDD Change Control Board?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#proposing-a-new-mission-ldd">Proposing a New Mission LDD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requesting-a-new-namespace-id">Requesting A New Namespace ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kick-off-team-and-repo-creation">Kick-off Team and Repo Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-new-ldd-repository-admin-only">Creating New LDD Repository (Admin Only)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-new-repo-from-ldd-template">1. Create new repo from ldd-template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#update-repo-settings">2. Update Repo Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-new-issue-template-in-pds4-ldd-issue-repo">3. Create new issue template in PDS4 LDD Issue Repo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notify-ldd-steward">4. Notify LDD Steward</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#retrofit-existing-ldd-repository-admin-stewards-only">Retrofit Existing LDD Repository (Admin / Stewards Only)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-update.html">LDD Update Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-build.html">LDD Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-test.html">LDD Regression Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-how-to.html">LDD How-To Guides</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teams/pds-dd-stewards.html">PDS DD Stewards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teams/ldd-ccb.html">LDD Change Control Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../support/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/github-help.html">Github Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-ldd">Request a New LDD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-ldd-class-or-attribute">Request a New LDD Class or Attribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#user-forum">User Forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NASA PDS Software</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>LDD Creation Process</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/development/ldd-create.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ldd-creation-process">
+<h1>LDD Creation Process<a class="headerlink" href="#ldd-creation-process" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LDD Creation Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#proposing-a-new-discipline-ldd">Proposing a New Discipline LDD</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#is-this-ldd-needed">1. Is this LDD needed?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#who-will-be-the-ldd-steward-s">2. Who will be the LDD Steward(s)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#who-will-be-on-the-ldd-change-control-board">3. Who will be on the LDD Change Control Board?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#proposing-a-new-mission-ldd">Proposing a New Mission LDD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requesting-a-new-namespace-id">Requesting A New Namespace ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kick-off-team-and-repo-creation">Kick-off Team and Repo Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-new-ldd-repository-admin-only">Creating New LDD Repository (Admin Only)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-new-repo-from-ldd-template">1. Create new repo from ldd-template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#update-repo-settings">2. Update Repo Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-new-issue-template-in-pds4-ldd-issue-repo">3. Create new issue template in PDS4 LDD Issue Repo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notify-ldd-steward">4. Notify LDD Steward</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#retrofit-existing-ldd-repository-admin-stewards-only">Retrofit Existing LDD Repository (Admin / Stewards Only)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="proposing-a-new-discipline-ldd">
+<h2>Proposing a New Discipline LDD<a class="headerlink" href="#proposing-a-new-discipline-ldd" title="Permalink to this headline">¶</a></h2>
+<p>Creation of a new Discipline LDDs should be discussed and approved by the PDS LDD Change Control Board (TBD Email list or google group). During this process the following must be determined:</p>
+<div class="section" id="is-this-ldd-needed">
+<h3>1. Is this LDD needed?<a class="headerlink" href="#is-this-ldd-needed" title="Permalink to this headline">¶</a></h3>
+<p>Does a similar dictionary exist? If so, what is the rationale for creating a new one instead of adding to an existing one?</p>
+</div>
+<div class="section" id="who-will-be-the-ldd-steward-s">
+<h3>2. Who will be the LDD Steward(s)?<a class="headerlink" href="#who-will-be-the-ldd-steward-s" title="Permalink to this headline">¶</a></h3>
+<p>One or more discipline node staff members must be appointed steward of the LDD.</p>
+</div>
+<div class="section" id="who-will-be-on-the-ldd-change-control-board">
+<h3>3. Who will be on the LDD Change Control Board?<a class="headerlink" href="#who-will-be-on-the-ldd-change-control-board" title="Permalink to this headline">¶</a></h3>
+<p>If this LDD is of interest to your Discipline Node, request of the newly appointed LDD Steward(s) to be added to the CCB.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="proposing-a-new-mission-ldd">
+<h2>Proposing a New Mission LDD<a class="headerlink" href="#proposing-a-new-mission-ldd" title="Permalink to this headline">¶</a></h2>
+<p>Contact your Discipline Node to help you along this process. Many of the best practices and review rigor described below may not be necessary for Mission LDD development.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="requesting-a-new-namespace-id">
+<h2>Requesting A New Namespace ID<a class="headerlink" href="#requesting-a-new-namespace-id" title="Permalink to this headline">¶</a></h2>
+<p>Upon receiving approval to begin development on your new LDD, a namespace ID must be reserved.</p>
+<p>Create a new “PDS Namespace Request” issue within the <a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/new/choose">PDS4 Information Model repo</a> to get your namespace added to the <a class="reference external" href="https://pds.nasa.gov/datastandards/schema/pds-namespace-registry.pdf">PDS4 Namespace Registry</a>.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="kick-off-team-and-repo-creation">
+<h2>Kick-off Team and Repo Creation<a class="headerlink" href="#kick-off-team-and-repo-creation" title="Permalink to this headline">¶</a></h2>
+<p>Contact the <a class="reference external" href="https://github.com/orgs/pds-data-dictionaries/teams/pds-dictionary-steward-admins/members">PDS Team</a> to assist you with creating the appropriate Github Teams and LDD Repository as laid out below. These actions all require Github Admin access. Please provide them with the following information:</p>
+<ul class="simple">
+<li><p>namespace_id</p></li>
+<li><p>Brief description of the LDD. spell out namespace_id if it is an acronym.</p></li>
+<li><p>LDD Steward Github username</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="creating-new-ldd-repository-admin-only">
+<h2>Creating New LDD Repository (Admin Only)<a class="headerlink" href="#creating-new-ldd-repository-admin-only" title="Permalink to this headline">¶</a></h2>
+<p>Once you have your <a class="reference external" href="#Requesting-A-New-Namespace-ID">Namespace ID</a>, you are ready to create the new Github repo for maintaining the LDD.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Responsible Party: Member of <a class="reference external" href="https://github.com/orgs/pds-data-dictionaries/teams/pds-dictionary-steward-admins/members">PDS Dictionary Stewards Admin Team</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This can probably be scripted someday using GithubAPI or within a Github Action.</p>
+</div>
+<div class="section" id="create-new-repo-from-ldd-template">
+<h3>1. Create new repo from ldd-template<a class="headerlink" href="#create-new-repo-from-ldd-template" title="Permalink to this headline">¶</a></h3>
+<ol class="loweralpha simple">
+<li><p><a class="reference external" href="https://github.com/pds-data-dictionaries/ldd-template/generate">Create new repo</a></p></li>
+<li><dl class="simple">
+<dt>Set the following parameters:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Owner</span></code>: <code class="docutils literal notranslate"><span class="pre">pds-data-dictionaries</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Repository</span> <span class="pre">Name</span></code>: should follow the naming scheme <code class="docutils literal notranslate"><span class="pre">ldd-&lt;namespace_id&gt;</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Description</span></code>: enter description sent by LDD Steward</p></li>
+<li><p>Set visibility to <code class="docutils literal notranslate"><span class="pre">Public</span></code></p></li>
+<li><p>Check the box <code class="docutils literal notranslate"><span class="pre">Include</span> <span class="pre">all</span> <span class="pre">branches</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<div class="section" id="update-repo-settings">
+<h3>2. Update Repo Settings<a class="headerlink" href="#update-repo-settings" title="Permalink to this headline">¶</a></h3>
+<p>We need to setup the teams and <code class="docutils literal notranslate"><span class="pre">master</span></code> branch protections.</p>
+<ol class="loweralpha simple">
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Settings</span></code></p></li>
+<li><p>Disable issues being created on this repo (they will be created in the PDS4 LDD Issue Repo).</p></li>
+<li><dl class="simple">
+<dt>Add appropriate teams with access to repo</dt><dd><ul class="simple">
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">Access</span></code></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Invite</span> <span class="pre">teams</span> <span class="pre">or</span> <span class="pre">people</span></code></p></li>
+<li><p>Add the LDD Steward with Admin access</p></li>
+<li><p>Add the LDD CCB Team with Write access</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Set branches protections</dt><dd><ul class="simple">
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Branches</span></code></p></li>
+<li><p>Under <strong>Branch protection rules</strong>, click <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">rule</span></code></p></li>
+<li><p>Enter <strong>Branch name pattern:</strong> <code class="docutils literal notranslate"><span class="pre">master</span></code></p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Require</span> <span class="pre">pull</span> <span class="pre">request</span> <span class="pre">reviews</span> <span class="pre">before</span> <span class="pre">merging</span></code></p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Require</span> <span class="pre">review</span> <span class="pre">from</span> <span class="pre">Code</span> <span class="pre">Owners</span></code></p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Restrict</span> <span class="pre">who</span> <span class="pre">can</span> <span class="pre">push</span> <span class="pre">to</span> <span class="pre">matching</span> <span class="pre">branches</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<div class="section" id="create-new-issue-template-in-pds4-ldd-issue-repo">
+<h3>3. Create new issue template in PDS4 LDD Issue Repo<a class="headerlink" href="#create-new-issue-template-in-pds4-ldd-issue-repo" title="Permalink to this headline">¶</a></h3>
+<ol class="loweralpha">
+<li><p><a class="reference external" href="https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo/labels">Create a new label</a> in the PDS4 LDD Issue Repo for the new repo (ldd-&lt;namespace_id&gt;)</p></li>
+<li><p>Clone the <a class="reference external" href="https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo/">PDS4 LDD Issue Repo</a></p></li>
+<li><p>Execute the <a class="reference external" href="https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo/blob/master/bin/generate-issue-template.sh">generate-issue-template.sh bash script</a>. This will automatically generate an issue template from the <a class="reference external" href="https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo/blob/master/templates/ldd-issue-template.md">LDD Issue Template</a> and push to the repo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ bin/generate-issue-template.sh cart Cartography thareUSGS
+New issue template created: /Users/jpadams/Documents/proj/pds/pdsen/workspace/pds4-ldd-issue-repo/bin/../.github/ISSUE_TEMPLATE/-ldd-cart--ldd-update-request.md
+[master 950bedb] Add cart issue template
+ 1 file changed, 33 insertions(+)
+ create mode 100644 .github/ISSUE_TEMPLATE/-ldd-cart--ldd-update-request.md
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.07 KiB | 1.07 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   git@github.com:pds-data-dictionaries/PDS4-LDD-Issue-Repo.git
+To github.com:pds-data-dictionaries/pds4-ldd-issue-repo.git
+   b0abee5..950bedb  master -&gt; master
+</pre></div>
+</div>
+</li>
+<li><p>You should now see a <a class="reference external" href="https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo/issues/new/choose">new issue template created</a></p></li>
+</ol>
+</div>
+<div class="section" id="notify-ldd-steward">
+<h3>4. Notify LDD Steward<a class="headerlink" href="#notify-ldd-steward" title="Permalink to this headline">¶</a></h3>
+<p>Notify the LDD Steward the new repo is ready.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="retrofit-existing-ldd-repository-admin-stewards-only">
+<h2>Retrofit Existing LDD Repository (Admin / Stewards Only)<a class="headerlink" href="#retrofit-existing-ldd-repository-admin-stewards-only" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Clone the ldd-template repo and the LDD repo to be retrofitted. For this example, we will be retrofitting the <code class="docutils literal notranslate"><span class="pre">ldd-img</span></code> repo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">pds</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">dictionaries</span><span class="o">/</span><span class="n">ldd</span><span class="o">-</span><span class="n">template</span><span class="o">.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">pds</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">dictionaries</span><span class="o">/</span><span class="n">ldd</span><span class="o">-</span><span class="n">img</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</li>
+<li><p>From the <code class="docutils literal notranslate"><span class="pre">ldd-img</span></code> repo, rsync the various files from the <code class="docutils literal notranslate"><span class="pre">ldd-template</span></code> repo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">ldd</span><span class="o">-</span><span class="n">img</span>
+<span class="n">rsync</span> <span class="o">-</span><span class="n">av</span> <span class="o">../</span><span class="n">ldd</span><span class="o">-</span><span class="n">template</span><span class="o">/.</span><span class="n">gitignore</span> <span class="o">../</span><span class="n">ldd</span><span class="o">-</span><span class="n">template</span><span class="o">/.</span><span class="n">github</span> <span class="o">../</span><span class="n">ldd</span><span class="o">-</span><span class="n">template</span><span class="o">/</span><span class="n">build</span> <span class="o">../</span><span class="n">ldd</span><span class="o">-</span><span class="n">template</span><span class="o">/</span><span class="n">src</span> <span class="o">../</span><span class="n">ldd</span><span class="o">-</span><span class="n">template</span><span class="o">/</span><span class="n">test</span> <span class="o">./</span>
+</pre></div>
+</div>
+</li>
+<li><p>Rename or remove test files and example IngestLDD so they don’t get picked up in the regression tests (files can’t end in .xml):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mv</span> <span class="n">test</span><span class="o">/</span><span class="n">test1_FAIL</span><span class="o">.</span><span class="n">xml</span> <span class="n">test</span><span class="o">/</span><span class="n">test1_FAIL</span><span class="o">.</span><span class="n">xml_example</span>
+<span class="n">mv</span> <span class="n">test</span><span class="o">/</span><span class="n">test1_VALID</span><span class="o">.</span><span class="n">xml</span> <span class="n">test</span><span class="o">/</span><span class="n">test1_VALID</span><span class="o">.</span><span class="n">xml_example</span>
+<span class="n">rm</span> <span class="n">src</span><span class="o">/</span><span class="n">PDS4_EXAMPLE_IngestLDD</span><span class="o">.</span><span class="n">xml</span>
+</pre></div>
+</div>
+</li>
+<li><p>Re-arrange directories to match that of the <code class="docutils literal notranslate"><span class="pre">ldd-template</span></code> repo. Specifically note the <code class="docutils literal notranslate"><span class="pre">build/development</span></code> and <code class="docutils literal notranslate"><span class="pre">build/release</span></code> directories.</p></li>
+<li><p>Create a branch and pull request, and verify the Github Action executes successfully. e.g. <a class="reference external" href="https://github.com/pds-data-dictionaries/ldd-img/actions/">https://github.com/pds-data-dictionaries/ldd-img/actions/</a></p></li>
+<li><p>Remove local repo github issues, update permissions on the repository, and add branch protections per <span class="xref std std-doc">Update Repo Settings above</span></p></li>
+<li><p>Update README as appropriate to direct people to Contribute and Get Support. See the <a class="reference external" href="https://github.com/pds-data-dictionaries/ldd-template/blob/master/README.md">ldd-template README</a> for more details.</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ldd-update.html" class="btn btn-neutral float-right" title="LDD Update Process" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../getting-started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 California Institute of Technology
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

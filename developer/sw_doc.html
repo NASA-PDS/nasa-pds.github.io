@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SW Documentation &mdash; NASA PDS Software  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PMC and Committers" href="../teams/teams.html" />
+    <link rel="prev" title="Search Engine Optimization" href="seo.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> NASA PDS Software
+          
+
+          
+            
+            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">System Releases</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/plan.html">Plans</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases/release.html">Releases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ci_cd.html">CI / CD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="github.html">Git and Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue_tracking.html">Issue Tracking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seo.html">Search Engine Optimization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SW Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-requirements">General Requirements</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#best-practices-and-guidelines">Best Practices and Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation-documentation">Installation Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage-documentation">Usage Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developer-documentation">Developer Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#support">Support</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Teams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teams/teams.html">PMC and Committers</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-tool-service">Request a New Tool / Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/forum.html">OpenPlanetary Forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/help.html">Help</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NASA PDS Software</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>SW Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/developer/sw_doc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sw-documentation">
+<h1>SW Documentation<a class="headerlink" href="#sw-documentation" title="Permalink to this headline">¶</a></h1>
+<p>The following page will outline some best practices for PDS Software Documentation.</p>
+<div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SW Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-requirements">General Requirements</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#best-practices-and-guidelines">Best Practices and Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation-documentation">Installation Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage-documentation">Usage Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developer-documentation">Developer Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>To develop a set of best practices and guidelines for developing and
+generating software documentation to ensure consistency across software
+repositories.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general-requirements">
+<h3>General Requirements<a class="headerlink" href="#general-requirements" title="Permalink to this headline">¶</a></h3>
+<p><strong>PDS shall only host online the latest version of software documentation.</strong></p>
+<p>Ensures we don’t bump into changing versions breaking links or people
+downloading the wrong version. Also eliminates the possibility that
+Google will index and link to older versions of the docs / software.</p>
+<p><strong>PDS shall host software documentation on Github Pages for all Open Source repositories</strong></p>
+<p>We should use Github Pages as much as possible to minimize confusion. We
+may even want to look at</p>
+<p><strong>PDS shall generate a documentation package with each release and upload to Github Release Assets.</strong></p>
+<p>This ensures we have links to past documentation that can be downloaded
+and used, but this is not hosted online.</p>
+<p><strong>PDS shall generate a Past Releases page for each software tool, which includes links to the source code / download package and documentation.</strong></p>
+<p>For Python applications, this should link to source code download links.
+For Java applications, should link to the download applications. For
+other programming languages, default to linking to source code.</p>
+<p><strong>PDS shall include, at minimum, the following documentation pages: Installation, Usage (or Operation), Developer, Support.</strong></p>
+</div>
+</div>
+<div class="section" id="best-practices-and-guidelines">
+<h2>Best Practices and Guidelines<a class="headerlink" href="#best-practices-and-guidelines" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="installation-documentation">
+<h3>Installation Documentation<a class="headerlink" href="#installation-documentation" title="Permalink to this headline">¶</a></h3>
+<p>TBD template?</p>
+</div>
+<div class="section" id="usage-documentation">
+<h3>Usage Documentation<a class="headerlink" href="#usage-documentation" title="Permalink to this headline">¶</a></h3>
+<p>TBD template?</p>
+</div>
+<div class="section" id="developer-documentation">
+<h3>Developer Documentation<a class="headerlink" href="#developer-documentation" title="Permalink to this headline">¶</a></h3>
+<p>Should include, at minimum, the following information (should this just
+link to the repo README?):</p>
+<ul class="simple">
+<li><p>Build from source instructions</p></li>
+<li><p>Release instructions</p></li>
+<li><p>Contribute information</p></li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
+<p>Should look something like the following in all repos:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Found a bug? Or want a new feature? We would love your feedback and contributions. Please submit new issues into our repository Github Issue Tracking:
+
+Issue Tracking: https://github.com/NASA-PDS/pds-deep-archive/issues
+
+If you require additional help or more immediate assistance, please email us at pds-operator@jpl.nasa.gov
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../teams/teams.html" class="btn btn-neutral float-right" title="PMC and Committers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="seo.html" class="btn btn-neutral float-left" title="Search Engine Optimization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 California Institute of Technology
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

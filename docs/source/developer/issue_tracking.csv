@@ -1,0 +1,5 @@
+System,Applicable Nodes / Projects,Description,Access
+PDS JIRA,PDS4 Standards Change Control Board,"This JIRA is used specifically for tracking PDS4 Information Model Software Change Requests (SCRs) and their approval through the Change Control Board. Once and SCR is approved, the implementation will be tracked in the PDS4 Information Model repo","Access is restricted to PDS personnel, or upon request"
+Github.com Issues,All open sourced PDS projects,Issues are created in their appropriate NASA-PDS and NASA-PDS repositories,Public access
+Zenhub PDSEN Workspace,All open sources PDS projects managed by PDS Engineering Node,"Zenhub is utilized for sprint planning, management, and reporting by integrating all PDS projects into one visual workspace",Access available upon request
+JPL Github Enterprise,PDS Engineering Internal Projects,"Github Issues / Zenhub Internal EN software and operations projects and issue tracking (Development, Operations)",Access restricted to JPL personnel only

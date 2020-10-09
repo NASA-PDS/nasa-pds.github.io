@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LDD How-To Guides &mdash; NASA PDS Software  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PDS DD Stewards" href="../teams/pds-dd-stewards.html" />
+    <link rel="prev" title="LDD Regression Testing" href="ldd-test.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> NASA PDS Software
+          
+
+          
+            
+            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html#getting-to-know-your-ldd-repo">Getting to Know Your LDD Repo</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ldd-create.html">LDD Creation Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-update.html">LDD Update Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-build.html">LDD Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-test.html">LDD Regression Testing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LDD How-To Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#trigger-ldd-build">Trigger LDD Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generate-a-discipline-ldd">Generate a Discipline LDD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generate-a-mission-ldd">Generate a Mission LDD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generate-a-ldd-with-a-specific-pds4-version">Generate a LDD with a specific PDS4 Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#specify-enumerated-values-for-attributes-within-inherited-classes">Specify Enumerated Values for Attributes within Inherited Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#schematron-dd-rule-help">Schematron (DD_Rule) Help</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#specify-enumerated-values-for-inherited-attributes">Specify Enumerated Values for Inherited Attributes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#using-schematron-value-of-functionality">Using Schematron <code class="docutils literal notranslate"><span class="pre">value-of</span></code> functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mission-ldd-namespace-formation-guidelines">Mission LDD Namespace Formation Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tbd">TBD</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Teams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teams/pds-dd-stewards.html">PDS DD Stewards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teams/ldd-ccb.html">LDD Change Control Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../support/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/github-help.html">Github Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-ldd">Request a New LDD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-ldd-class-or-attribute">Request a New LDD Class or Attribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#user-forum">User Forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NASA PDS Software</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>LDD How-To Guides</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/development/ldd-how-to.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ldd-how-to-guides">
+<h1>LDD How-To Guides<a class="headerlink" href="#ldd-how-to-guides" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LDD How-To Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#trigger-ldd-build">Trigger LDD Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generate-a-discipline-ldd">Generate a Discipline LDD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generate-a-mission-ldd">Generate a Mission LDD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generate-a-ldd-with-a-specific-pds4-version">Generate a LDD with a specific PDS4 Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#specify-enumerated-values-for-attributes-within-inherited-classes">Specify Enumerated Values for Attributes within Inherited Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#schematron-dd-rule-help">Schematron (DD_Rule) Help</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#specify-enumerated-values-for-inherited-attributes">Specify Enumerated Values for Inherited Attributes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#using-schematron-value-of-functionality">Using Schematron <code class="docutils literal notranslate"><span class="pre">value-of</span></code> functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mission-ldd-namespace-formation-guidelines">Mission LDD Namespace Formation Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tbd">TBD</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="trigger-ldd-build">
+<h2>Trigger LDD Build<a class="headerlink" href="#trigger-ldd-build" title="Permalink to this headline">¶</a></h2>
+<p>For this example we will be using the <a class="reference external" href="https://github.com/pds-data-dictionaries/ldd-img">IMG Discipline LDD</a> repo. For your repo, just replace the <cite>ldd-img</cite> or references to <cite>IMG</cite> with your appropriate discipline dictionary.</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-branches">Create a new branch for your updates</a> (if you have not already created one).</p></li>
+<li><p>Update your IngestLDD file (e.g. PDS4_IMG_IngestLDD.xml).</p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/committing-and-reviewing-changes-to-your-project">Commit your changes</a>.</p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/pushing-changes-to-github">Push your branch to Github</a></p></li>
+<li><p>Watch the magic happen on your Github Actions page: <a class="reference external" href="https://github.com/pds-data-dictionaries/ldd-img/actions">https://github.com/pds-data-dictionaries/ldd-img/actions</a></p></li>
+<li><p>After the action has completed successfully (hopefully), <a class="reference external" href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/syncing-your-branch">update your local branch</a> to get the generated dictionaries from Github.com</p></li>
+</ol>
+</div>
+<div class="section" id="generate-a-discipline-ldd">
+<h2>Generate a Discipline LDD<a class="headerlink" href="#generate-a-discipline-ldd" title="Permalink to this headline">¶</a></h2>
+<p>To generate a Discipline LDD versus a Mission LDD, you must specify this information within the IngestLDD, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">Imaging</span> <span class="n">Discipline</span> <span class="n">Dictionary</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">ldd_version_id</span><span class="o">&gt;</span><span class="mf">1.0</span><span class="o">.</span><span class="mf">0.0</span><span class="o">&lt;/</span><span class="n">ldd_version_id</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">dictionary_type</span><span class="o">&gt;</span><span class="n">Discipline</span><span class="o">&lt;/</span><span class="n">dictionary_type</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>See the <a class="reference external" href="https://github.com/pds-data-dictionaries/ldd-img/blob/master/src/PDS4_IMG_IngestLDD.xml">Imaging Discipline LDD</a> for a more detailed example.</p>
+<p>Then execute LDDTool to generate the appropriate dictionary:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lddtool</span> <span class="o">-</span><span class="n">lp</span> <span class="o">&lt;</span><span class="n">my_ingest_ldd</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="generate-a-mission-ldd">
+<h2>Generate a Mission LDD<a class="headerlink" href="#generate-a-mission-ldd" title="Permalink to this headline">¶</a></h2>
+<p>To generate a Mission LDD versus a Discipline LDD, you must specify this information within the IngestLDD, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">Mars</span> <span class="mi">2020</span> <span class="n">Mission</span><span class="o">&lt;/</span><span class="n">name</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">ldd_version_id</span><span class="o">&gt;</span><span class="mf">1.0</span><span class="o">.</span><span class="mf">0.0</span><span class="o">&lt;/</span><span class="n">ldd_version_id</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">dictionary_type</span><span class="o">&gt;</span><span class="n">Mission</span><span class="o">&lt;/</span><span class="n">dictionary_type</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>See the <a class="reference external" href="https://github.com/pds-data-dictionaries/ldd-m2020/blob/master/src/PDS4_M2020_IngestLDD.xml">Mars 2020 Mission LDD</a> for a more detailed example.</p>
+<p>Then execute LDDTool to generate the appropriate dictionary:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lddtool</span> <span class="o">-</span><span class="n">lp</span> <span class="o">&lt;</span><span class="n">my_ingest_ldd</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="generate-a-ldd-with-a-specific-pds4-version">
+<h2>Generate a LDD with a specific PDS4 Version<a class="headerlink" href="#generate-a-ldd-with-a-specific-pds4-version" title="Permalink to this headline">¶</a></h2>
+<p>LDDTool is a reflection of the PDS4 Information Model (IM), and in turn, has a major build in sync with the <a class="reference external" href="https://pds.nasa.gov/datastandards/about/">PDS4 Build Schedule</a> (every 6 months).</p>
+<p>By default, LDDTool builds with the latest version of the IM. As of LDDTool v12.0.0, it can now generate LDDs for older versions of the IM using the -V flag:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">V</span><span class="p">,</span> <span class="o">--</span><span class="n">IM</span> <span class="n">Version</span> <span class="o">-</span> <span class="n">E</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="o">-</span><span class="n">V</span> <span class="mi">1</span><span class="n">D00</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="specify-enumerated-values-for-attributes-within-inherited-classes">
+<h2>Specify Enumerated Values for Attributes within Inherited Classes<a class="headerlink" href="#specify-enumerated-values-for-attributes-within-inherited-classes" title="Permalink to this headline">¶</a></h2>
+<p>Classes from the PDS common dictionary (or discipline LDDs) are often inherited and used within Discipline and Mission LDDs (e.g. <code class="docutils literal notranslate"><span class="pre">Internal_Reference.reference_type</span></code>, etc.). When inherited within the specific Discipline or Mission, you may want to provide a specific set of values applicable for that particular context. In this case you would want to use the <a class="reference external" href="https://pds.nasa.gov/datastandards/documents/im/current/index_1E00.html#18.9%C2%A0%C2%A0class_pds_dd_associate_external_class">DD_Associate_External_Class</a>. For example::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">DD_Associate_External_Class</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">namespace_id</span><span class="o">&gt;</span><span class="n">pds</span><span class="o">&lt;/</span><span class="n">namespace_id</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">class_name</span><span class="o">&gt;</span><span class="n">Local_Internal_Reference</span><span class="o">&lt;/</span><span class="n">class_name</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">minimum_occurrences</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&lt;/</span><span class="n">minimum_occurrences</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">maximum_occurrences</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">maximum_occurrences</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">DD_Context_Value_List</span><span class="o">&gt;</span>
+     <span class="o">&lt;</span><span class="n">attribute_name</span><span class="o">&gt;</span><span class="n">local_reference_type</span><span class="o">&lt;/</span><span class="n">attribute_name</span><span class="o">&gt;</span>
+     <span class="o">&lt;</span><span class="n">attribute_relative_xpath</span><span class="o">&gt;</span><span class="n">local_reference_type</span><span class="o">&lt;/</span><span class="n">attribute_relative_xpath</span><span class="o">&gt;</span>
+     <span class="o">&lt;</span><span class="n">DD_Permissible_Value</span><span class="o">&gt;</span>
+         <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;</span><span class="n">spectral_characteristics_to_array_object</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+         <span class="o">&lt;</span><span class="n">value_meaning</span><span class="o">&gt;</span>
+           <span class="n">The</span> <span class="n">spectral</span> <span class="n">parameters</span> <span class="n">describe</span> <span class="n">the</span> <span class="n">array</span> <span class="n">associated</span>
+           <span class="k">with</span> <span class="n">the</span> <span class="n">given</span> <span class="s1">&#39;local_identifier&#39;</span><span class="o">.</span>
+         <span class="o">&lt;/</span><span class="n">value_meaning</span><span class="o">&gt;</span>
+     <span class="o">&lt;/</span><span class="n">DD_Permissible_Value</span><span class="o">&gt;</span>
+     <span class="o">&lt;</span><span class="n">DD_Permissible_Value</span><span class="o">&gt;</span>
+         <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;</span><span class="n">spectral_characteristics_to_table_object</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+         <span class="o">&lt;</span><span class="n">value_meaning</span><span class="o">&gt;</span>
+           <span class="n">The</span> <span class="n">spectral</span> <span class="n">parameters</span> <span class="n">describe</span> <span class="n">the</span> <span class="n">table</span> <span class="ow">or</span> <span class="n">specific</span>
+           <span class="n">fields</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">table</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">the</span> <span class="n">given</span>
+           <span class="s1">&#39;local_identifier&#39;</span><span class="o">.</span>
+         <span class="o">&lt;/</span><span class="n">value_meaning</span><span class="o">&gt;</span>
+     <span class="o">&lt;/</span><span class="n">DD_Permissible_Value</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">DD_Context_Value_List</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">DD_Associate_External_Class</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="schematron-dd-rule-help">
+<h2>Schematron (DD_Rule) Help<a class="headerlink" href="#schematron-dd-rule-help" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="specify-enumerated-values-for-inherited-attributes">
+<h3>Specify Enumerated Values for Inherited Attributes<a class="headerlink" href="#specify-enumerated-values-for-inherited-attributes" title="Permalink to this headline">¶</a></h3>
+<p>Attributes from the PDS common dictionary (or discipline LDDs) are often inherited and used within Discipline and Mission LDDs (e.g. <code class="docutils literal notranslate"><span class="pre">pds:name</span></code>, etc.). When inherited within the specific Discipline or Mission, you may want to provide a specific set of values applicable for that particular context. In this case you will need to specify a DD_Rule to provide the enumerated value list. For example::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">DD_Rule</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">local_identifier</span><span class="o">&gt;</span><span class="n">color_filter_array_state_check</span><span class="o">&lt;/</span><span class="n">local_identifier</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">rule_context</span><span class="o">&gt;//</span><span class="n">img</span><span class="p">:</span><span class="n">Color_Filter_Array</span><span class="o">&lt;/</span><span class="n">rule_context</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">DD_Rule_Statement</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">rule_type</span><span class="o">&gt;</span><span class="n">Assert</span><span class="o">&lt;/</span><span class="n">rule_type</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">rule_test</span><span class="o">&gt;</span><span class="n">img</span><span class="p">:</span><span class="n">color_filter_array_state</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Encoded&#39;</span><span class="p">,</span> <span class="s1">&#39;Decoded&#39;</span><span class="p">,</span> <span class="s1">&#39;No CFA&#39;</span><span class="p">)</span><span class="o">&lt;/</span><span class="n">rule_test</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">rule_message</span><span class="o">&gt;</span><span class="n">IMG</span><span class="p">:</span><span class="n">error</span><span class="p">:</span><span class="n">img</span><span class="p">:</span><span class="n">color_filter_array_state_check</span><span class="p">:</span> <span class="n">img</span><span class="p">:</span><span class="n">color_filter_array_state</span> <span class="n">must</span> <span class="n">be</span> <span class="n">equal</span> <span class="n">to</span> <span class="n">one</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">values</span><span class="p">:</span>
+        <span class="s1">&#39;Encoded&#39;</span><span class="p">,</span> <span class="s1">&#39;Decoded&#39;</span><span class="p">,</span> <span class="s1">&#39;No CFA&#39;</span><span class="o">.</span>
+      <span class="o">&lt;/</span><span class="n">rule_message</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">DD_Rule_Statement</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">DD_Rule</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="using-schematron-value-of-functionality">
+<h2>Using Schematron <code class="docutils literal notranslate"><span class="pre">value-of</span></code> functionality<a class="headerlink" href="#using-schematron-value-of-functionality" title="Permalink to this headline">¶</a></h2>
+<p>To use the <code class="docutils literal notranslate"><span class="pre">sch:value-of</span></code> in your <code class="docutils literal notranslate"><span class="pre">DD_Rule</span></code> descriptions, you simply need to escape the XML entities. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">sch</span><span class="p">:</span><span class="n">rule</span> <span class="n">context</span><span class="o">=</span><span class="s2">&quot;msn:mission_phase_name&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">sch</span><span class="p">:</span><span class="n">let</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;num_colons&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;string-length(.) - string-length(translate(., &#39;:&#39;, &#39;&#39;))&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">sch</span><span class="p">:</span><span class="n">let</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;required_colons&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;4&quot;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">sch</span><span class="p">:</span><span class="k">assert</span> <span class="n">test</span><span class="o">=</span><span class="s2">&quot;$num_colons eq $required_colons&quot;</span><span class="o">&gt;</span>
+        <span class="n">In</span> <span class="n">Product_Collection</span><span class="p">,</span> <span class="n">the</span> <span class="n">number</span> <span class="n">of</span> <span class="n">colons</span> <span class="n">found</span><span class="p">:</span>
+        <span class="p">(</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">sch</span><span class="p">:</span><span class="n">value</span><span class="o">-</span><span class="n">of</span> <span class="n">select</span><span class="o">=</span><span class="s2">&quot;$num_colons&quot;</span><span class="o">/&amp;</span><span class="n">gt</span><span class="p">;)</span>
+        <span class="ow">is</span> <span class="n">inconsistent</span> <span class="k">with</span> <span class="n">the</span> <span class="n">number</span> <span class="n">expected</span><span class="p">:</span>
+        <span class="p">(</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">sch</span><span class="p">:</span><span class="n">value</span><span class="o">-</span><span class="n">of</span> <span class="n">select</span><span class="o">=</span><span class="s2">&quot;$required_colons&quot;</span><span class="o">/&amp;</span><span class="n">gt</span><span class="p">;)</span><span class="o">.</span>
+    <span class="o">&lt;/</span><span class="n">sch</span><span class="p">:</span><span class="k">assert</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">sch</span><span class="p">:</span><span class="n">rule</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">sch</span><span class="p">:</span><span class="n">pattern</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Note the <code class="docutils literal notranslate"><span class="pre">&amp;lt;`</span></code> and <code class="docutils literal notranslate"><span class="pre">&amp;gt;</span></code> used to replace the <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&gt;</span></code></p>
+</div>
+<div class="section" id="mission-ldd-namespace-formation-guidelines">
+<h2>Mission LDD Namespace Formation Guidelines<a class="headerlink" href="#mission-ldd-namespace-formation-guidelines" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The determination of LDD namespaces is ultimately up to the discussion amongst the Mission Data Archive Working Group (DAWG). This is simply a guide to enable consistency wherever possible.</p>
+</div>
+<p>For <strong>mission namespaces</strong>, use the <em>mission acronym or shortened name</em>. For example:</p>
+<ul class="simple">
+<li><p>bc for BepiColombo</p></li>
+<li><p>m2020 for Mars2020</p></li>
+<li><p>insight for InSight</p></li>
+<li><p>orex for OSIRIS-REx</p></li>
+</ul>
+<p>for <strong>instrument-specific namespaces</strong>, use the formation rule <em>mission_host_instrument</em>. For example:</p>
+<ul class="simple">
+<li><p>bc_mtm_mcam for the MCAM instrument on the Mercury Transfer Module (MTM) instrument host of the BepiColombo mission</p></li>
+</ul>
+</div>
+<div class="section" id="tbd">
+<h2>TBD<a class="headerlink" href="#tbd" title="Permalink to this headline">¶</a></h2>
+<p>Feel free to add some of your own or create a ticket in the <a class="reference external" href="https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo/issues">PDS4 LDD Issue Repo</a> so we can start to build up this documentation.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../teams/pds-dd-stewards.html" class="btn btn-neutral float-right" title="PDS DD Stewards" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ldd-test.html" class="btn btn-neutral float-left" title="LDD Regression Testing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 California Institute of Technology
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+PDS Issue Tracking
+==================
+
+-  `Overview <#Overview>`__
+-  `Getting Started with Zenhub <#getting-started-with-zenhub>`__
+-  `Issue Creation Best Practices <#issue-creation-best-practices>`__
+-  `Help with Zenhub <#help-with-zenhub>`__
+-  `References <#references>`__
+
+--------------
+
+Overview
+--------
+
+The Planetary Data System has several issue tracking and project
+management mechanisms that serve different purposes:
+
++-------+-------------------------------------+--------------+-------+
+| S     | Applicable Nodes / Projects         | Description  | A     |
+| ystem |                                     |              | ccess |
++=======+=====================================+==============+=======+
+| `PDS  | PDS4 Standards Change Control Board | This JIRA is | A     |
+| J     |                                     | used         | ccess |
+| IRA < |                                     | specifically | is    |
+| https |                                     | for tracking | restr |
+| ://pd |                                     | PDS4         | icted |
+| s-jir |                                     | Information  | to    |
+| a.jpl |                                     | Model        | PDS   |
+| .nasa |                                     | Software     | perso |
+| .gov/ |                                     | Change       | nnel, |
+| secur |                                     | Requests     | or    |
+| e/Das |                                     | (SCRs) and   | `upon |
+| hboar |                                     | their        | reque |
+| d.jsp |                                     | approval     | st <m |
+| a>`__ |                                     | through the  | ailto |
+|       |                                     | Change       | :pds- |
+|       |                                     | Control      | opera |
+|       |                                     | Board. Once  | tor@j |
+|       |                                     | and SCR is   | pl.na |
+|       |                                     | approved,    | sa.go |
+|       |                                     | the          | v>`__ |
+|       |                                     | im           |       |
+|       |                                     | plementation |       |
+|       |                                     | will be      |       |
+|       |                                     | tracked in   |       |
+|       |                                     | the `PDS4    |       |
+|       |                                     | Information  |       |
+|       |                                     | Model        |       |
+|       |                                     | repo <h      |       |
+|       |                                     | ttps://githu |       |
+|       |                                     | b.com/NASA-P |       |
+|       |                                     | DS/pds4-info |       |
+|       |                                     | rmation-mode |       |
+|       |                                     | l/issues>`__ |       |
++-------+-------------------------------------+--------------+-------+
+| Githu | All open sourced PDS projects       | Issues are   | P     |
+| b.com |                                     | created in   | ublic |
+| I     |                                     | their        | a     |
+| ssues |                                     | appropriate  | ccess |
+|       |                                     | `NASA-PDS    |       |
+|       |                                     | and NASA-PDS |       |
+|       |                                     | repositor    |       |
+|       |                                     | ies <https:/ |       |
+|       |                                     | /nasa-pds.gi |       |
+|       |                                     | thub.io/>`__ |       |
++-------+-------------------------------------+--------------+-------+
+| `Z    | All open sources PDS projects       | `Zenhub      | A     |
+| enhub | managed by PDS Engineering Node     | <#Zenhub>`__ | ccess |
+| PDSEN |                                     | is utilized  | `avai |
+| Works |                                     | for sprint   | lable |
+| pace  |                                     | planning,    | upon  |
+| <http |                                     | management,  | reque |
+| s://a |                                     | and          | st <m |
+| pp.ze |                                     | reporting by | ailto |
+| nhub. |                                     | integrating  | :pds- |
+| com/w |                                     | all PDS      | opera |
+| orksp |                                     | projects     | tor@j |
+| aces/ |                                     | into one     | pl.na |
+| pdsen |                                     | visual       | sa.go |
+| -work |                                     | workspace    | v>`__ |
+| space |                                     |              |       |
+| -5c87 |                                     |              |       |
+| e859b |                                     |              |       |
+| 7a087 |                                     |              |       |
+| 2dd10 |                                     |              |       |
+| b87c5 |                                     |              |       |
+| /boar |                                     |              |       |
+| d?rep |                                     |              |       |
+| os=18 |                                     |              |       |
+| 69141 |                                     |              |       |
+| 79,22 |                                     |              |       |
+| 57412 |                                     |              |       |
+| 45,24 |                                     |              |       |
+| 71825 |                                     |              |       |
+| 82,17 |                                     |              |       |
+| 93795 |                                     |              |       |
+| 37,19 |                                     |              |       |
+| 26175 |                                     |              |       |
+| 33,21 |                                     |              |       |
+| 11899 |                                     |              |       |
+| 58,24 |                                     |              |       |
+| 52169 |                                     |              |       |
+| 97,23 |                                     |              |       |
+| 60865 |                                     |              |       |
+| 58,23 |                                     |              |       |
+| 60991 |                                     |              |       |
+| 03,25 |                                     |              |       |
+| 31084 |                                     |              |       |
+| 83,20 |                                     |              |       |
+| 02803 |                                     |              |       |
+| 92,25 |                                     |              |       |
+| 16647 |                                     |              |       |
+| 03,17 |                                     |              |       |
+| 02078 |                                     |              |       |
+| 12,19 |                                     |              |       |
+| 35726 |                                     |              |       |
+| 40,19 |                                     |              |       |
+| 87170 |                                     |              |       |
+| 28,19 |                                     |              |       |
+| 38006 |                                     |              |       |
+| 15,22 |                                     |              |       |
+| 59560 |                                     |              |       |
+| 31,84 |                                     |              |       |
+| 49160 |                                     |              |       |
+| 9,199 |                                     |              |       |
+| 73969 |                                     |              |       |
+| 0,198 |                                     |              |       |
+| 51722 |                                     |              |       |
+| 2,193 |                                     |              |       |
+| 56028 |                                     |              |       |
+| 1>`__ |                                     |              |       |
++-------+-------------------------------------+--------------+-------+
+| JPL   | PDS Engineering Internal Projects   | Github       | A     |
+| G     |                                     | Issues /     | ccess |
+| ithub |                                     | Zenhub       | restr |
+| Enter |                                     | Internal EN  | icted |
+| prise |                                     | software and | to    |
+|       |                                     | operations   | JPL   |
+|       |                                     | projects and | pers  |
+|       |                                     | issue        | onnel |
+|       |                                     | tracking     | only  |
+|       |                                     | (`De         |       |
+|       |                                     | velopment <h |       |
+|       |                                     | ttps://zenhu |       |
+|       |                                     | b.jpl.nasa.g |       |
+|       |                                     | ov/app/works |       |
+|       |                                     | paces/pdsen- |       |
+|       |                                     | dev-internal |       |
+|       |                                     | -5d5ff11ab87 |       |
+|       |                                     | 61871eb7ed69 |       |
+|       |                                     | 2/board?repo |       |
+|       |                                     | s=23220>`__, |       |
+|       |                                     | `Op          |       |
+|       |                                     | erations <ht |       |
+|       |                                     | tps://zenhub |       |
+|       |                                     | .jpl.nasa.go |       |
+|       |                                     | v/app/worksp |       |
+|       |                                     | aces/pds-ops |       |
+|       |                                     | -5e444561fe7 |       |
+|       |                                     | e060b0e514b0 |       |
+|       |                                     | 7/board?repo |       |
+|       |                                     | s=31090,3100 |       |
+|       |                                     | 9,31007>`__) |       |
++-------+-------------------------------------+--------------+-------+
+
+Getting Started with Zenhub
+---------------------------
+
+Go to the applicable board to view / create / update new tickets: \*
+`PDS EN Github.com
+Development <https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/board?repos=186914179,225741245,247182582,179379537,192617533,211189958,245216997,236086558,236099103,253108483,200280392,251664703,170207812,193572640,198717028,193800615,225956031,84491609,199739690,198517222,193560281>`__
+\* `PDS EN JPL Internal
+Development <https://zenhub.jpl.nasa.gov/app/workspaces/pdsen-dev-internal-5d5ff11ab8761871eb7ed692/board?repos=27663,28856,29312,28901,25759,24033,23921,28407,23450,23220,23446,28406,23894,28296>`__
+\* `PDS EN JPL Internal
+Operations <https://zenhub.jpl.nasa.gov/app/workspaces/pds-ops-5e444561fe7e060b0e514b07/board?repos=31090,31009,31007>`__
+
+Alternatively, you can install the Zenhub Chrome/Firefox extension to
+view Zenhub within Github: \* `Zenhub for
+Github.com <https://www.zenhub.com/extension>`__ \* `Zenhub for JPL
+Github Enterprise <https://zenhub.jpl.nasa.gov/>`__
+
+Issue Creation Best Practices
+-----------------------------
+
+The PDS has uses the article `“Naming Guide For Task, Bug, and User
+Story
+Titles” <https://stratejos.ai/blog/naming-task-bug-user-story-titles/>`__ for
+issue best practices.
+
+*Here are some high-priority best practices we really want to try to
+follow:*
+
+-  In general, for tasks, bugs, and new features, at minimum, **start
+   the title with a verb** (e.g. Ingest some data from somewhere or
+   Update this page with some change)
+-  **Title** should be able to tell someone what was fixed or completed
+
+   -  We plan on using these issue titles for generating changelogs and
+      report automatically
+
+-  Use `autolinked
+   references <https://help.github.com/en/enterprise/2.18/user/github/writing-on-github/autolinked-references-and-urls#issues-and-pull-requests>`__
+   wherever possible for traceability
+
+   -  Using references is a *HUGE* benefit in streamlining productivity,
+      project management, provenance, and requirements/test
+      traceability.
+
+Help with Zenhub
+----------------
+
+We use Zenhub to visualize all our tickets across Github.com
+repositories.
+
+-  `How to use
+   Zenhub <https://help.zenhub.com/support/solutions/articles/43000010778-what-is-zenhub-an-intro-to-zenhub-in-github>`__
+-  `Zenhub Support <https://help.zenhub.com/support/home>`__
+
+References
+----------
+
+-  https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53
+-  https://help.github.com/en/enterprise/2.18/user/github/writing-on-github/autolinked-references-and-urls#issues-and-pull-requests
