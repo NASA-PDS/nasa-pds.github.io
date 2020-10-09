@@ -13,6 +13,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
 
   
   
@@ -199,27 +200,60 @@
 <hr class="docutils" />
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>The Planetary Data System has several issue tracking and project
-management mechanisms that serve different purposes:</p>
-<dl class="field-list simple">
-<dt class="field-odd">file</dt>
-<dd class="field-odd"><p>issue_tracking.csv
-:header-rows: 1</p>
-</dd>
-</dl>
+<p>The Planetary Data System has several issue tracking and project management mechanisms that serve different purposes:</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Tools</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 60%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>System</p></th>
+<th class="head"><p>Applicable Nodes / Projects</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Access</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://pds-jira.jpl.nasa.gov/secure/Dashboard.jspa">PDS JIRA</a></p></td>
+<td><p>PDS4 Standards Change Control Board</p></td>
+<td><p>This JIRA is used specifically for tracking PDS4 Information Model Software Change Requests (SCRs) and their approval through the Change Control Board. Once and SCR is approved, the implementation will be tracked in the <a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues">PDS4 Information Model repo</a></p></td>
+<td><p>Access is restricted to PDS personnel, or upon request</p></td>
+</tr>
+<tr class="row-odd"><td><p>Github.com Issues</p></td>
+<td><p>All open sourced PDS projects</p></td>
+<td><p>Issues are created in their appropriate NASA-PDS and NASA-PDS repositories</p></td>
+<td><p>Public access</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/board?repos=186914179,225741245,247182582,179379537,192617533,211189958,245216997,236086558,236099103,253108483,200280392,251664703,170207812,193572640,198717028,193800615,225956031,84491609,199739690,198517222,193560281)">Zenhub PDSEN Workspace</a></p></td>
+<td><p>All open sources PDS projects managed by PDS Engineering Node</p></td>
+<td><p>Zenhub is utilized for sprint planning, management, and reporting by integrating all PDS projects into one visual workspace</p></td>
+<td><p>Access available upon request</p></td>
+</tr>
+<tr class="row-odd"><td><p>JPL Github Enterprise</p></td>
+<td><p>PDS Engineering Internal Projects</p></td>
+<td><p>Github Issues / Zenhub Internal EN software and operations projects and issue tracking (<a class="reference external" href="https://zenhub.jpl.nasa.gov/app/workspaces/pdsen-dev-internal-5d5ff11ab8761871eb7ed692/board?repos=23220">Development</a>, <a class="reference external" href="https://zenhub.jpl.nasa.gov/app/workspaces/pds-ops-5e444561fe7e060b0e514b07/board?repos=31090,31009,31007">Operations</a>)</p></td>
+<td><p>Access restricted to JPL personnel only</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="getting-started-with-zenhub">
 <h2>Getting Started with Zenhub<a class="headerlink" href="#getting-started-with-zenhub" title="Permalink to this headline">¶</a></h2>
-<p>Go to the applicable board to view / create / update new tickets:
-* <a class="reference external" href="https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/board?repos=186914179,225741245,247182582,179379537,192617533,211189958,245216997,236086558,236099103,253108483,200280392,251664703,170207812,193572640,198717028,193800615,225956031,84491609,199739690,198517222,193560281">PDS EN Github (public) Development</a></p>
+<p>Go to the applicable board to view / create / update new tickets:</p>
 <ul class="simple">
+<li><p><a class="reference external" href="https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/board?repos=186914179,225741245,247182582,179379537,192617533,211189958,245216997,236086558,236099103,253108483,200280392,251664703,170207812,193572640,198717028,193800615,225956031,84491609,199739690,198517222,193560281">PDS EN Github (public) Development</a></p></li>
 <li><p><a class="reference external" href="https://zenhub.jpl.nasa.gov/app/workspaces/pdsen-dev-internal-5d5ff11ab8761871eb7ed692/board?repos=27663,28856,29312,28901,25759,24033,23921,28407,23450,23220,23446,28406,23894,28296">PDS EN JPL Internal Development</a></p></li>
 <li><p><a class="reference external" href="https://zenhub.jpl.nasa.gov/app/workspaces/pds-ops-5e444561fe7e060b0e514b07/board?repos=31090,31009,31007">PDS EN JPL Internal Operations</a></p></li>
 </ul>
 <p>Alternatively, you can install the Zenhub Chrome/Firefox extension to
-view Zenhub within Github:
-* <a class="reference external" href="https://www.zenhub.com/extension">Zenhub for Github.com</a>
-* <a class="reference external" href="https://zenhub.jpl.nasa.gov/">Zenhub for JPL Github Enterprise</a></p>
+view Zenhub within Github:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.zenhub.com/extension">Zenhub for Github.com</a></p></li>
+<li><p><a class="reference external" href="https://zenhub.jpl.nasa.gov/">Zenhub for JPL Github Enterprise</a></p></li>
+</ul>
 </div>
 <div class="section" id="issue-creation-best-practices">
 <h2>Issue Creation Best Practices<a class="headerlink" href="#issue-creation-best-practices" title="Permalink to this headline">¶</a></h2>
