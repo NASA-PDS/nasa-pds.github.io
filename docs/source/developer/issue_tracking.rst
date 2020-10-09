@@ -31,6 +31,7 @@ Go to the applicable board to view / create / update new tickets:
 
 Alternatively, you can install the Zenhub Chrome/Firefox extension to
 view Zenhub within Github:
+
 * `Zenhub for Github.com <https://www.zenhub.com/extension>`_
 * `Zenhub for JPL Github Enterprise <https://zenhub.jpl.nasa.gov/>`_
 
