@@ -15,6 +15,7 @@ The Planetary Data System has several issue tracking and project management mech
 
 .. csv-table:: Tools
    :file: issue_tracking.csv
+   :widths: 15, 15, 60, 10
    :header-rows: 1
 
 Getting Started with Zenhub

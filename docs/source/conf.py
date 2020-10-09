@@ -62,36 +62,8 @@ html_static_path = ['_static']
 
 html_logo = '_static/images/PDS_Planets.png'
 
-############################
-# SETUP THE RTD LOWER-LEFT #
-############################
-try:
-   html_context
-except NameError:
-   html_context = dict()
-html_context['display_lower_left'] = True
-
-templates_path = ['_templates']
-
-import os
-if 'REPO_NAME' in os.environ:
-   REPO_NAME = os.environ['REPO_NAME']
-else:
-   REPO_NAME = ''
- 
-# SET CURRENT_LANGUAGE
-if 'current_language' in os.environ:
-   # get the current_language env var set by buildDocs.sh
-   current_language = os.environ['current_language']
-else:
-   # the user is probably doing `make html`
-   # set this build's current language to english
-   current_language = 'en'
- 
-# tell the theme which language to we're currently building
-html_context['current_language'] = current_language
-
-import git
-# SET CURRENT_VERSION
-from git import Repo
-repo = Repo( search_parent_directories=True )
+html_context = {
+    'css_files': [
+        '_static/theme_overrides.css',  # override wide tables in RTD theme
+        ],
+      }
