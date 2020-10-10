@@ -18,7 +18,7 @@ tools, services, processes, and procedures.
 
 ..  toctree::
     :glob:
-    :maxdepth: 2
+    :maxdepth: 3
     :caption: Developer Guides
 
     /developer/*
@@ -33,14 +33,14 @@ tools, services, processes, and procedures.
 
 ..  toctree::
     :glob:
-    :maxdepth: 2
+    :maxdepth: 3
     :caption: Teams
 
     /teams/*
 
 ..  toctree::
     :glob:
-    :maxdepth: 2
+    :maxdepth: 3
     :caption: Support
 
     /support/*
