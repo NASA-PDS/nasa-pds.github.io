@@ -3,6 +3,6 @@ Plans
 
 ..  toctree::
     :glob:
-    :maxdepth: 3
+    :maxdepth: 1
 
     /releases/plans/*
