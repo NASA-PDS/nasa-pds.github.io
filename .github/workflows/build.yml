@@ -44,7 +44,7 @@ jobs:
           git config --local user.email "pdsen-ci@jpl.nasa.gov"
           git config --local user.name "PDSEN CI Bot"
           git add -A .
-          git commit --allow-empty -m "Auto-generated LDD by PDSEN CI Bot"
+          git commit --allow-empty -m "Auto-generated docs by PDSEN CI Bot"
           
       - name: Push changes
         uses: ad-m/github-push-action@master
