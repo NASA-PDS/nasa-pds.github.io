@@ -82,7 +82,7 @@ validate
    * - `User Guide <https://nasa-pds.github.io/validate/>`_
      - `Github Repo <https://github.com/NASA-PDS/validate>`_
      - `Issue Tracking <https://github.com/NASA-PDS/validate/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/validate/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/validate/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/validate/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/validate/releases>`_ 
 
@@ -114,7 +114,7 @@ pds4-information-model
    * - `User Guide <https://nasa-pds.github.io/pds4-information-model/>`_
      - `Github Repo <https://github.com/NASA-PDS/pds4-information-model>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds4-information-model/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds4-information-model/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds4-information-model/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds4-information-model/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds4-information-model/releases>`_ 
 
@@ -143,7 +143,7 @@ pds-deep-archive
    * - `User Guide <https://nasa-pds.github.io/pds-deep-archive/>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-deep-archive>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-deep-archive/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-deep-archive/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-deep-archive/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-deep-archive/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-deep-archive/releases>`_ 
 
@@ -162,7 +162,7 @@ pds-doi-service
    * - `User Guide <https://nasa-pds.github.io/pds-doi-service>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-doi-service>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-doi-service/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-doi-service/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-doi-service/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-doi-service/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-doi-service/releases>`_ 
 
@@ -195,7 +195,7 @@ pds-registry-app
    * - `User Guide <https://nasa-pds.github.io/pds-registry-app/>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-registry-app>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-registry-app/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-registry-app/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-registry-app/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-registry-app/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-registry-app/releases>`_ 
 
@@ -237,7 +237,7 @@ PDS.nasa.gov-Search
    * - `User Guide <https://github.com/NASA-PDS/PDS.nasa.gov-Search#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/PDS.nasa.gov-Search>`_
      - `Issue Tracking <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/PDS.nasa.gov-Search/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/PDS.nasa.gov-Search/releases>`_ 
 
@@ -261,7 +261,7 @@ pds-api
    * - `User Guide <https://github.com/NASA-PDS/pds-api#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-api>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-api/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-api/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-api/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-api/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-api/releases>`_ 
 
@@ -305,7 +305,7 @@ pdsen-corral
    * - `User Guide <http://nasa-pds.github.io/pdsen-corral>`_
      - `Github Repo <https://github.com/NASA-PDS/pdsen-corral>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pdsen-corral/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pdsen-corral/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pdsen-corral/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pdsen-corral/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pdsen-corral/releases>`_ 
 
@@ -334,7 +334,7 @@ PDS.nasa.gov-UX
    * - `User Guide <https://github.com/NASA-PDS/PDS.nasa.gov-UX#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/PDS.nasa.gov-UX>`_
      - `Issue Tracking <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/PDS.nasa.gov-UX/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/PDS.nasa.gov-UX/releases>`_ 
 
@@ -386,7 +386,7 @@ pdsen-operations
    * - `User Guide <https://github.com/NASA-PDS/pdsen-operations#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/pdsen-operations>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pdsen-operations/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pdsen-operations/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pdsen-operations/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pdsen-operations/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pdsen-operations/releases>`_ 
 
@@ -407,7 +407,7 @@ pds-tracking-service
    * - `User Guide <https://github.com/NASA-PDS/pds-tracking-service#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-tracking-service>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-tracking-service/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-tracking-service/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-tracking-service/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-tracking-service/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-tracking-service/releases>`_ 
 
