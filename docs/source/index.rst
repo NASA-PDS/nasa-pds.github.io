@@ -7,18 +7,20 @@ tools, services, processes, and procedures.
 
 --------------
 
-..  toctree::
-    :glob:
-    :maxdepth: 2
-    :caption: System Releases
 
-    /releases/*
+Sitemap
+=======
 
 .. /overview
 
 ..  toctree::
     :glob:
-    :maxdepth: 3
+    :caption: System Releases
+
+    /releases/*
+
+..  toctree::
+    :glob:
     :caption: Developer Guides
 
     /developer/*
@@ -33,14 +35,12 @@ tools, services, processes, and procedures.
 
 ..  toctree::
     :glob:
-    :maxdepth: 3
     :caption: Teams
 
     /teams/*
 
 ..  toctree::
     :glob:
-    :maxdepth: 3
     :caption: Support
 
     /support/*

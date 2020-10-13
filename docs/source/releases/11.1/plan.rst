@@ -1,11 +1,11 @@
-Build 11.1
-=====================
+Build 11.1 Plan
+========================
 
 ..  toctree::
     :glob:
     :maxdepth: 3
 
-    plan-11.1.rst
+    plan.rst
 
 .. |br| raw:: html
 
@@ -15,7 +15,7 @@ The Planetary Data System (PDS) is a long-term archive of digital data products 
 
 The following page outlines the planned PDS software enhancements, bug fixes, and impacted requirements for the upcoming Build .
 
-A more detailed breakdown of these tasks by date and priority can be found in our `Zenhub Roadmap <https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/roadmap>` (login required).
+A more detailed breakdown of these tasks by date and priority can be found in our `Zenhub Roadmap <https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/roadmap>`_ (login required).
 
 Key Dates
 +++++++++
@@ -56,6 +56,14 @@ Planned Software Changes
 
 This section details the planned software changes for this build.
 
+Planned tasks for the next release cycle are grouped by software component, and sub-tasks are included where known at the time of this plan generation. Each section also includes additional information, such as:
+
+* Software description
+* Link to |:mag:| User Guide
+* Link to |:computer:| Github Repo
+* Link to |:ambulance:| Issue Tracking
+* Link to |:ledger:| Backlog - future work not planned for this release cycle
+
 **Don't see the tool you are looking for?** This means there is no active development planned for this build cycle. Head to the `PDS Tool Registry <https://pds.nasa.gov/tools/tool-registry/>`_ to see all possible tools available for PDS data.
 
 **Have a new feature or tool you think we should be working on?** Create a ticket in the applicable Github repo or in our `PDS EN Operations repo <https://github.com/NASA-PDS/pdsen-operations/issues/new/choose>`_ and we will see how that can fit into our plans moving forward.
@@ -65,11 +73,19 @@ This section details the planned software changes for this build.
 
 validate
 ########
+
 *Validates PDS4 product labels, data and PDS3 Volumes*
 
-* |:mag:| User Guide: https://nasa-pds.github.io/validate/
-* |:computer:| Github Repo: https://github.com/NASA-PDS/validate
-* |:ambulance:| Issues: https://github.com/NASA-PDS/validate/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/validate/>`_
+     - `Github Repo <https://github.com/NASA-PDS/validate>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/validate/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/validate/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/validate/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/validate/releases>`_ 
+
 * `validate#250 <https://github.com/NASA-PDS/validate/issues/250>`_ **Improvements to meet updated Standards Reference since initial requirements implementation**
    * `validate#5 <https://github.com/NASA-PDS/validate/issues/5>`_ Improve file base name check according to Standards Reference
    * `validate#6 <https://github.com/NASA-PDS/validate/issues/6>`_ Improve pds4.bundle unlabeled files check to handle files without a file suffix
@@ -89,11 +105,19 @@ validate
 
 pds4-information-model
 ######################
+
 *The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.*
 
-* |:mag:| User Guide: https://nasa-pds.github.io/pds4-information-model/
-* |:computer:| Github Repo: https://github.com/NASA-PDS/pds4-information-model
-* |:ambulance:| Issues: https://github.com/NASA-PDS/pds4-information-model/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds4-information-model/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds4-information-model>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds4-information-model/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds4-information-model/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds4-information-model/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds4-information-model/releases>`_ 
+
 * `pds4-information-model#242 <https://github.com/NASA-PDS/pds4-information-model/issues/242>`_ **DocBook HTML/WebHelp generation and conversion processes**
    * `pds4-information-model#170 <https://github.com/NASA-PDS/pds4-information-model/issues/170>`_ LDDTool: DocBook generation does not work from any file system location
    * `pds4-information-model#243 <https://github.com/NASA-PDS/pds4-information-model/issues/243>`_ Document how to generate the DocBook XML and how to generate HTML/WebHelp
@@ -110,22 +134,38 @@ pds4-information-model
 
 pds-deep-archive
 ################
+
 *PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators*
 
-* |:mag:| User Guide: https://nasa-pds.github.io/pds-deep-archive/
-* |:computer:| Github Repo: https://github.com/NASA-PDS/pds-deep-archive
-* |:ambulance:| Issues: https://github.com/NASA-PDS/pds-deep-archive/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-deep-archive/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-deep-archive>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-deep-archive/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-deep-archive/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-deep-archive/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-deep-archive/releases>`_ 
+
 * `pds-deep-archive#80 <https://github.com/NASA-PDS/pds-deep-archive/issues/80>`_ **NSSDCA Delivery Onboarding**
 
 --------
 
 pds-doi-service
 ###############
+
 *Service and tools for generating DOIs for PDS bundles, collections, and data sets*
 
-* |:mag:| User Guide: https://nasa-pds.github.io/pds-doi-service
-* |:computer:| Github Repo: https://github.com/NASA-PDS/pds-doi-service
-* |:ambulance:| Issues: https://github.com/NASA-PDS/pds-doi-service/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-doi-service>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-doi-service>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-doi-service/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-doi-service/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-doi-service/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-doi-service/releases>`_ 
+
 * `pds-doi-service#91 <https://github.com/NASA-PDS/pds-doi-service/issues/91>`_ **Develop User Access / Management Strategy**
 * `pds-doi-service#86 <https://github.com/NASA-PDS/pds-doi-service/issues/86>`_ **Deploy DOI API and UI**
    * `pds-doi-service#87 <https://github.com/NASA-PDS/pds-doi-service/issues/87>`_ Dev beta testing with API
@@ -146,11 +186,19 @@ pds-doi-service
 
 pds-registry-app
 ################
+
 *Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system.*
 
-* |:mag:| User Guide: https://nasa-pds.github.io/pds-registry-app/
-* |:computer:| Github Repo: https://github.com/NASA-PDS/pds-registry-app
-* |:ambulance:| Issues: https://github.com/NASA-PDS/pds-registry-app/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-registry-app/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-registry-app>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-registry-app/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-registry-app/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-registry-app/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-registry-app/releases>`_ 
+
 * `pds-registry-app#42 <https://github.com/NASA-PDS/pds-registry-app/issues/42>`_ **Integrate Registry API into pds-registry-app**
 * `pds-registry-app#13 <https://github.com/NASA-PDS/pds-registry-app/issues/13>`_ **Beta test operational deployment**
    * `pds-registry-app#82 <https://github.com/NASA-PDS/pds-registry-app/issues/82>`_ Develop test plan
@@ -180,11 +228,20 @@ pds-registry-app
 
 PDS.nasa.gov-Search
 ###################
+
 *Front-end interface for PDS.nasa.gov data search capability*
 
-* |:mag:| User Guide: None
-* |:computer:| Github Repo: https://github.com/NASA-PDS/PDS.nasa.gov-Search
-* |:ambulance:| Issues: https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/PDS.nasa.gov-Search#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/PDS.nasa.gov-Search>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/PDS.nasa.gov-Search/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/PDS.nasa.gov-Search/releases>`_ 
+
+* `PDS.nasa.gov-Search#20 <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/20>`_ **Search Details Page / DOI Landing Page**
 * `PDS.nasa.gov-Search#21 <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/21>`_ **DOI Landing Page Requirements and Design**
    * `PDS.nasa.gov-Search#22 <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/22>`_ Develop DOI Landing Page Scope
    * `PDS.nasa.gov-Search#23 <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/23>`_ Revise requirements to meet scope
@@ -195,11 +252,19 @@ PDS.nasa.gov-Search
 
 pds-api
 #######
+
 *PDS API Application with client and server integrated into one package*
 
-* |:mag:| User Guide: None
-* |:computer:| Github Repo: https://github.com/NASA-PDS/pds-api
-* |:ambulance:| Issues: https://github.com/NASA-PDS/pds-api/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pds-api#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-api>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-api/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-api/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-api/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-api/releases>`_ 
+
 * `pds-api#31 <https://github.com/NASA-PDS/pds-api/issues/31>`_ **Streamline testing of API server implementation**
 * `pds-api#35 <https://github.com/NASA-PDS/pds-api/issues/35>`_ **Initial Federated API implementation**
 * `pds-api#34 <https://github.com/NASA-PDS/pds-api/issues/34>`_ **Deploy PDS API v0 (beta) for beta testing**
@@ -231,11 +296,19 @@ pds-api
 
 pdsen-corral
 ############
+
 *umbrella project to manage the build cycle (continuous integration and stable release) for the PDS EN tools. *
 
-* |:mag:| User Guide: http://nasa-pds.github.io/pdsen-corral
-* |:computer:| Github Repo: https://github.com/NASA-PDS/pdsen-corral
-* |:ambulance:| Issues: https://github.com/NASA-PDS/pdsen-corral/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <http://nasa-pds.github.io/pdsen-corral>`_
+     - `Github Repo <https://github.com/NASA-PDS/pdsen-corral>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pdsen-corral/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pdsen-corral/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pdsen-corral/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pdsen-corral/releases>`_ 
+
 * `pdsen-corral#16 <https://github.com/NASA-PDS/pdsen-corral/issues/16>`_ **Github Action and Documentation Generation Best Practices**
    * `nasa-pds.github.io#3 <https://github.com/NASA-PDS/nasa-pds.github.io/issues/3>`_ Update nasa-pds.github.io with software documentation best practices
    * `nasa-pds.github.io#4 <https://github.com/NASA-PDS/nasa-pds.github.io/issues/4>`_ Update nasa-pds.github.io with github action best practices
@@ -252,11 +325,19 @@ pdsen-corral
 
 PDS.nasa.gov-UX
 ###############
+
 *PDS.nasa.gov User Experience Task Issue and Prototype repository*
 
-* |:mag:| User Guide: 
-* |:computer:| Github Repo: https://github.com/NASA-PDS/PDS.nasa.gov-UX
-* |:ambulance:| Issues: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/PDS.nasa.gov-UX#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/PDS.nasa.gov-UX>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/PDS.nasa.gov-UX/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/PDS.nasa.gov-UX/releases>`_ 
+
 * `PDS.nasa.gov-UX#3 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/3>`_ **Formulate user stories for prototype**
    * `PDS.nasa.gov-UX#14 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/14>`_ Develop user personas based upon outputs from user interview synthesis
 * `PDS.nasa.gov-UX#6 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/6>`_ **Model workflows and initial design directions**
@@ -294,26 +375,21 @@ PDS.nasa.gov-UX
 
 --------
 
-pds-report-service
-##################
-*PDS Report and Metrics Service with ELK stack*
-
-* |:mag:| User Guide: None
-* |:computer:| Github Repo: https://github.com/NASA-PDS/pds-report-service
-* |:ambulance:| Issues: https://github.com/NASA-PDS/pds-report-service/issues |br| |br| 
-* `pds-report-service#2 <https://github.com/NASA-PDS/pds-report-service/issues/2>`_ **Restart Report Service with ELK Stack to generate IMG reports**
-   * `pds-report-service#1 <https://github.com/NASA-PDS/pds-report-service/issues/1>`_ Perform initial tech stack overview and review of previous implementation
-   * `pds-report-service#3 <https://github.com/NASA-PDS/pds-report-service/issues/3>`_ Work with IMG to generate missing Juno and InSight reports
-
---------
-
 pdsen-operations
 ################
+
 *Tickets for the PDSEN Operations Team*
 
-* |:mag:| User Guide: None
-* |:computer:| Github Repo: https://github.com/NASA-PDS/pdsen-operations
-* |:ambulance:| Issues: https://github.com/NASA-PDS/pdsen-operations/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pdsen-operations#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/pdsen-operations>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pdsen-operations/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pdsen-operations/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pdsen-operations/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pdsen-operations/releases>`_ 
+
 * `pdsen-operations#14 <https://github.com/NASA-PDS/pdsen-operations/issues/14>`_ **LDD CCB and Management processes**
    * `pdsen-operations#15 <https://github.com/NASA-PDS/pdsen-operations/issues/15>`_ Work with LDD Stewards to develop process and CCB
    * `pdsen-operations#16 <https://github.com/NASA-PDS/pdsen-operations/issues/16>`_ Update LDD CI/CD accordingly to match the expectations from the CCB review process
@@ -322,11 +398,19 @@ pdsen-operations
 
 pds-tracking-service
 ####################
+
 *Provides functionality for tracking status and other aspects pertaining to PDS products that are not captured in the Registry Service.*
 
-* |:mag:| User Guide: None
-* |:computer:| Github Repo: https://github.com/NASA-PDS/pds-tracking-service
-* |:ambulance:| Issues: https://github.com/NASA-PDS/pds-tracking-service/issues |br| |br| 
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pds-tracking-service#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-tracking-service>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-tracking-service/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-tracking-service/issues>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-tracking-service/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-tracking-service/releases>`_ 
+
 * `pds-tracking-service#1 <https://github.com/NASA-PDS/pds-tracking-service/issues/1>`_ **Open Source Tracking Service**
 * `pds-tracking-service#6 <https://github.com/NASA-PDS/pds-tracking-service/issues/6>`_ **Refactor Tracking Service**
    * `pds-tracking-service#5 <https://github.com/NASA-PDS/pds-tracking-service/issues/5>`_ De-couple individual components
