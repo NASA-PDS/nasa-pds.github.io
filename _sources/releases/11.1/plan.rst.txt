@@ -48,6 +48,15 @@ Planned PDS4 Information Model Changes
 
 This section details the planned changes to the PDS4 Information Model for this build. These changes are deliverables by the PDS Data Design Working Group (DDWG) to the Engineering Node for implementation.
 
+* `pds4-information-model#258 <https://github.com/NASA-PDS/pds4-information-model/issues/258>`_ **CCB-301: The attribute <name> in the <DD_Attribute> and <DD_Class> classes is not properly constrained**
+* `pds4-information-model#256 <https://github.com/NASA-PDS/pds4-information-model/issues/256>`_ **CCB-312: <ldd_version_id> does not appear to be constrained the way LDDTool expects**
+* `pds4-information-model#254 <https://github.com/NASA-PDS/pds4-information-model/issues/254>`_ **CCB-305: Missing validation constraint on <specified_unit_id>**
+* `pds4-information-model#253 <https://github.com/NASA-PDS/pds4-information-model/issues/253>`_ **CCB-313: Definition of <external_source_product_identifier> refers to non-existent documentation**
+* `pds4-information-model#249 <https://github.com/NASA-PDS/pds4-information-model/issues/249>`_ **CCB-288: Change Internal_Reference reference type to 'guided' text**
+* `pds4-information-model#257 <https://github.com/NASA-PDS/pds4-information-model/issues/257>`_ **CCB-302: No <reference_type> values defined in DD_Attribute or DD_Class contexts**
+* `pds4-information-model#255 <https://github.com/NASA-PDS/pds4-information-model/issues/255>`_ **CCB-300: Apparently deprecated units of measure are not actually deprecated**
+* `pds4-information-model#251 <https://github.com/NASA-PDS/pds4-information-model/issues/251>`_ **CCB-303: The definition for <skos_relation_name> is not sufficient.**
+* `pds4-information-model#250 <https://github.com/NASA-PDS/pds4-information-model/issues/250>`_ **CCB-315: "PDS3" is an allowed parsing standard for Bundle documentation file**
 
 
 
@@ -98,9 +107,29 @@ validate
 * `validate#249 <https://github.com/NASA-PDS/validate/issues/249>`_ **Improvements for validating accumulating bundles / collections**
    * `validate#51 <https://github.com/NASA-PDS/validate/issues/51>`_ Provide the capability to specify multiple locations for pds4.bundle validation
    * `validate#231 <https://github.com/NASA-PDS/validate/issues/231>`_ For accumulating bundles, validate latest version of collections only
-   * `validate#238 <https://github.com/NASA-PDS/validate/issues/238>`_ validate does not perform product-level validation when specifying a specific bundle.xml
+   * `validate#238 <https://github.com/NASA-PDS/validate/issues/238>`_ validate does not perform full bundle validation when using a specific bundle.xml
    * `validate#246 <https://github.com/NASA-PDS/validate/issues/246>`_ Add output directory flag to validate-bundle tool
    * `validate#256 <https://github.com/NASA-PDS/validate/issues/256>`_ validate should only do integrity checking on latest version of a collection when referenced by LID
+
+--------
+
+pds4-jparser
+############
+
+*Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds4-jparser/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds4-jparser>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds4-jparser/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds4-jparser/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds4-jparser/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds4-jparser/releases>`_ 
+
+* `pds4-jparser#21 <https://github.com/NASA-PDS/pds4-jparser/issues/21>`_ **Update table reads for large files and improve memory footprints**
+   * `validate#189 <https://github.com/NASA-PDS/validate/issues/189>`_ Validate error reading tables > 2GiB
 
 --------
 
@@ -167,13 +196,11 @@ pds-doi-service
      - `Stable Release <https://github.com/NASA-PDS/pds-doi-service/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-doi-service/releases>`_ 
 
-* `pds-doi-service#91 <https://github.com/NASA-PDS/pds-doi-service/issues/91>`_ **Develop User Access / Management Strategy**
-* `pds-doi-service#86 <https://github.com/NASA-PDS/pds-doi-service/issues/86>`_ **Deploy DOI API and UI**
-   * `pds-doi-service#87 <https://github.com/NASA-PDS/pds-doi-service/issues/87>`_ Dev beta testing with API
-   * `pds-doi-service#88 <https://github.com/NASA-PDS/pds-doi-service/issues/88>`_ Operations team test interface with DOI Service
-   * `pds-doi-service#89 <https://github.com/NASA-PDS/pds-doi-service/issues/89>`_ Update procedures to use DOI web interface submission
-   * `pds-doi-service#90 <https://github.com/NASA-PDS/pds-doi-service/issues/90>`_ Deploy point build of DOI service and UI
-* `pds-doi-service#23 <https://github.com/NASA-PDS/pds-doi-service/issues/23>`_ **Document how to Deactivate a DOI (with curl command)**
+* `pds-doi-service#68 <https://github.com/NASA-PDS/pds-doi-service/issues/68>`_ **Develop Web UI for DOI service**
+   * `pds-doi-service#67 <https://github.com/NASA-PDS/pds-doi-service/issues/67>`_ Mock web UI for DOI management 
+   * `pds-doi-service#108 <https://github.com/NASA-PDS/pds-doi-service/issues/108>`_ Reserve DOI UI forms
+   * `pds-doi-service#109 <https://github.com/NASA-PDS/pds-doi-service/issues/109>`_ Release existing DOI (previously reserved, drafted or released) UI forms
+   * `pds-doi-service#110 <https://github.com/NASA-PDS/pds-doi-service/issues/110>`_ Release new DOI forms
 * `pds-doi-service#52 <https://github.com/NASA-PDS/pds-doi-service/issues/52>`_ **API Implementation for DOI Service**
    * `pds-doi-service#38 <https://github.com/NASA-PDS/pds-doi-service/issues/38>`_ Add Status / Query component to API
    * `pds-doi-service#77 <https://github.com/NASA-PDS/pds-doi-service/issues/77>`_ Add POST PDS4 or  OSTI DOI label to API
@@ -182,8 +209,16 @@ pds-doi-service
    * `pds-doi-service#80 <https://github.com/NASA-PDS/pds-doi-service/issues/80>`_ Develop API specification in SwaggerHub
    * `pds-doi-service#100 <https://github.com/NASA-PDS/pds-doi-service/issues/100>`_ Add GET DOI to the API
    * `pds-doi-service#101 <https://github.com/NASA-PDS/pds-doi-service/issues/101>`_ Add PUT DOI to the API (for updates)
-* `pds-doi-service#68 <https://github.com/NASA-PDS/pds-doi-service/issues/68>`_ **Develop Web UI for DOI service**
-   * `pds-doi-service#67 <https://github.com/NASA-PDS/pds-doi-service/issues/67>`_ Mock web UI for DOI management 
+   * `pds-doi-service#105 <https://github.com/NASA-PDS/pds-doi-service/issues/105>`_ Complete get DOIS criterias with the arguments proposed in command line
+   * `pds-doi-service#106 <https://github.com/NASA-PDS/pds-doi-service/issues/106>`_ Add exception name in the error messages
+   * `pds-doi-service#107 <https://github.com/NASA-PDS/pds-doi-service/issues/107>`_ allow to post PDS4 labels in the payload (for draft)
+* `pds-doi-service#91 <https://github.com/NASA-PDS/pds-doi-service/issues/91>`_ **Develop User Access / Management Strategy**
+* `pds-doi-service#86 <https://github.com/NASA-PDS/pds-doi-service/issues/86>`_ **Deploy DOI API and UI**
+   * `pds-doi-service#87 <https://github.com/NASA-PDS/pds-doi-service/issues/87>`_ Dev beta testing with API
+   * `pds-doi-service#88 <https://github.com/NASA-PDS/pds-doi-service/issues/88>`_ Operations team test interface with DOI Service
+   * `pds-doi-service#89 <https://github.com/NASA-PDS/pds-doi-service/issues/89>`_ Update procedures to use DOI web interface submission
+   * `pds-doi-service#90 <https://github.com/NASA-PDS/pds-doi-service/issues/90>`_ Deploy point build of DOI service and UI
+* `pds-doi-service#23 <https://github.com/NASA-PDS/pds-doi-service/issues/23>`_ **Document how to Deactivate a DOI (with curl command)**
 
 --------
 
@@ -202,12 +237,16 @@ pds-registry-app
      - `Stable Release <https://github.com/NASA-PDS/pds-registry-app/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-registry-app/releases>`_ 
 
-* `pds-registry-app#42 <https://github.com/NASA-PDS/pds-registry-app/issues/42>`_ **Integrate Registry API into pds-registry-app**
 * `pds-registry-app#13 <https://github.com/NASA-PDS/pds-registry-app/issues/13>`_ **Beta test operational deployment**
    * `pds-registry-app#82 <https://github.com/NASA-PDS/pds-registry-app/issues/82>`_ Develop test plan
    * `pds-registry-app#83 <https://github.com/NASA-PDS/pds-registry-app/issues/83>`_ Deploy and install multi-node ES
    * `pds-registry-app#84 <https://github.com/NASA-PDS/pds-registry-app/issues/84>`_ Download large data set for testing
    * `pds-registry-app#85 <https://github.com/NASA-PDS/pds-registry-app/issues/85>`_ Document performance benchmarks in registry app docs
+* `pds-registry-app#42 <https://github.com/NASA-PDS/pds-registry-app/issues/42>`_ **Integrate Registry API into pds-registry-app**
+* `pds-registry-app#27 <https://github.com/NASA-PDS/pds-registry-app/issues/27>`_ **Manage PDS4 product relationships**
+   * `pds-registry-app#76 <https://github.com/NASA-PDS/pds-registry-app/issues/76>`_ Manage relationships between bundles / collections / products
+   * `pds-registry-app#77 <https://github.com/NASA-PDS/pds-registry-app/issues/77>`_ Manage relationships described by reference types
+   * `pds-registry-app#97 <https://github.com/NASA-PDS/pds-registry-app/issues/97>`_ Research RDF technologies to handle pds4 label cross-references in the registry
 * `pds-registry-app#92 <https://github.com/NASA-PDS/pds-registry-app/issues/92>`_ **Update Registry API per PDS API v0-beta**
 * `pds-registry-app#91 <https://github.com/NASA-PDS/pds-registry-app/issues/91>`_ **Deploy Registries in AWS**
    * `pds-registry-app#86 <https://github.com/NASA-PDS/pds-registry-app/issues/86>`_ Deploy EN Registry in AWS
@@ -224,9 +263,6 @@ pds-registry-app
    * `pds-registry-mgr-elastic#5 <https://github.com/NASA-PDS/pds-registry-mgr-elastic/issues/5>`_ Create a field-data type lookup table
    * `pds-registry-mgr-elastic#6 <https://github.com/NASA-PDS/pds-registry-mgr-elastic/issues/6>`_ Update the field-data type lookup table
    * `pds-registry-app#93 <https://github.com/NASA-PDS/pds-registry-app/issues/93>`_ Research tech stack modifications due to large number of search fields in registry
-* `pds-registry-app#27 <https://github.com/NASA-PDS/pds-registry-app/issues/27>`_ **Manage PDS4 product relationships**
-   * `pds-registry-app#76 <https://github.com/NASA-PDS/pds-registry-app/issues/76>`_ Manage relationships between bundles / collections / products
-   * `pds-registry-app#77 <https://github.com/NASA-PDS/pds-registry-app/issues/77>`_ Manage relationships described by reference types
 
 --------
 
@@ -246,6 +282,7 @@ PDS.nasa.gov-Search
      - `Dev Release <https://github.com/NASA-PDS/PDS.nasa.gov-Search/releases>`_ 
 
 * `PDS.nasa.gov-Search#20 <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/20>`_ **Search Details Page / DOI Landing Page**
+   * `PDS.nasa.gov-Search#26 <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/26>`_ Review search details / DOI page updates
 * `PDS.nasa.gov-Search#21 <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/21>`_ **DOI Landing Page Requirements and Design**
    * `PDS.nasa.gov-Search#22 <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/22>`_ Develop DOI Landing Page Scope
    * `PDS.nasa.gov-Search#23 <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/23>`_ Revise requirements to meet scope
@@ -270,6 +307,13 @@ pds-api
      - `Dev Release <https://github.com/NASA-PDS/pds-api/releases>`_ 
 
 * `pds-api#31 <https://github.com/NASA-PDS/pds-api/issues/31>`_ **Streamline testing of API server implementation**
+* `pds-api#17 <https://github.com/NASA-PDS/pds-api/issues/17>`_ **Response format conventions and parameter definition**
+   * `pds-api#18 <https://github.com/NASA-PDS/pds-api/issues/18>`_ Refine format conventions defined by the API WG
+   * `pds-api#19 <https://github.com/NASA-PDS/pds-api/issues/19>`_ Define default response fields
+   * `pds-api#20 <https://github.com/NASA-PDS/pds-api/issues/20>`_ Define required response fields
+   * `pds-api#21 <https://github.com/NASA-PDS/pds-api/issues/21>`_ Define response formatting for default vs "additional" metadata fields
+   * `pds-api#22 <https://github.com/NASA-PDS/pds-api/issues/22>`_ Update API Spec with refined response format conventions and field definitions
+   * `pds-api#23 <https://github.com/NASA-PDS/pds-api/issues/23>`_ Implement response format definition in API Service
 * `pds-api#35 <https://github.com/NASA-PDS/pds-api/issues/35>`_ **Initial Federated API implementation**
 * `pds-api#34 <https://github.com/NASA-PDS/pds-api/issues/34>`_ **Deploy PDS API v0 (beta) for beta testing**
    * `pds-api#32 <https://github.com/NASA-PDS/pds-api/issues/32>`_ Deploy PDS API v0 (beta) on pds-gamma test server
@@ -284,13 +328,6 @@ pds-api
    * `pds-api#29 <https://github.com/NASA-PDS/pds-api/issues/29>`_ Implement EN query passing to DN search UI
 * `pds-api#24 <https://github.com/NASA-PDS/pds-api/issues/24>`_ **Define PDS handling of enriched / supplemental metadata**
 * `pds-api#25 <https://github.com/NASA-PDS/pds-api/issues/25>`_ **PDS API extension convention for discipline-specific search engines**
-* `pds-api#17 <https://github.com/NASA-PDS/pds-api/issues/17>`_ **Response format conventions and parameter definition**
-   * `pds-api#18 <https://github.com/NASA-PDS/pds-api/issues/18>`_ Refine format conventions defined by the API WG
-   * `pds-api#19 <https://github.com/NASA-PDS/pds-api/issues/19>`_ Define default response fields
-   * `pds-api#20 <https://github.com/NASA-PDS/pds-api/issues/20>`_ Define required response fields
-   * `pds-api#21 <https://github.com/NASA-PDS/pds-api/issues/21>`_ Define response formatting for default vs "additional" metadata fields
-   * `pds-api#22 <https://github.com/NASA-PDS/pds-api/issues/22>`_ Update API Spec with refined response format conventions and field definitions
-   * `pds-api#23 <https://github.com/NASA-PDS/pds-api/issues/23>`_ Implement response format definition in API Service
 * `pds-api#15 <https://github.com/NASA-PDS/pds-api/issues/15>`_ **Query passing and search integration design**
 * `pds-api#14 <https://github.com/NASA-PDS/pds-api/issues/14>`_ **Define intra-discipline (product-level) search scope**
 * `pds-api#12 <https://github.com/NASA-PDS/pds-api/issues/12>`_ **Initial Query Syntax Lexer Implementation**
@@ -321,6 +358,7 @@ pdsen-corral
    * `pds-doi-service#94 <https://github.com/NASA-PDS/pds-doi-service/issues/94>`_ Update to use pds round-up github action
    * `roundup-action#1 <https://github.com/NASA-PDS/roundup-action/issues/1>`_ Add Java / Maven support
    * `pdsen-corral#24 <https://github.com/NASA-PDS/pdsen-corral/issues/24>`_ Re-evaluate generating requirements for -dev versions
+   * `pds-template-repo-python#3 <https://github.com/NASA-PDS/pds-template-repo-python/issues/3>`_ Add the roundup action in the template
    * `validate#255 <https://github.com/NASA-PDS/validate/issues/255>`_ Retrofit validate CI to use roundup-action
    * `pds4-jparser#30 <https://github.com/NASA-PDS/pds4-jparser/issues/30>`_ Retrofit pds4-jparser CI to use roundup-action
    * `pds-registry-app#94 <https://github.com/NASA-PDS/pds-registry-app/issues/94>`_ Retrofit pds-registry-app CI to use roundup-action
@@ -345,11 +383,9 @@ PDS.nasa.gov-UX
      - `Stable Release <https://github.com/NASA-PDS/PDS.nasa.gov-UX/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/PDS.nasa.gov-UX/releases>`_ 
 
-* `PDS.nasa.gov-UX#55 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/55>`_ **Apply PDS WDS to PDS software documentation**
-   * `PDS.nasa.gov-UX#56 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/56>`_ Implement software docs template for Sphinx
-   * `PDS.nasa.gov-UX#57 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/57>`_ Implement software docs template for Maven
 * `PDS.nasa.gov-UX#3 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/3>`_ **Formulate user stories for prototype**
    * `PDS.nasa.gov-UX#14 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/14>`_ Develop user personas based upon outputs from user interview synthesis
+   * `PDS.nasa.gov-UX#58 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/58>`_ Propose users stories for selected subset of the user personnas
 * `PDS.nasa.gov-UX#6 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/6>`_ **Model workflows and initial design directions**
 * `PDS.nasa.gov-UX#8 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/8>`_ **Design mockups and develop Figma prototype**
    * `PDS.nasa.gov-UX#10 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/10>`_ Develop generic design and mockups for cross-node Material templates
@@ -366,6 +402,7 @@ PDS.nasa.gov-UX
    * `pds-wds#6 <https://github.com/NASA-PDS/pds-wds/issues/6>`_ Define types of banner notifications
    * `pds-wds#8 <https://github.com/NASA-PDS/pds-wds/issues/8>`_ Document UI guidelines and rules
    * `pds-wds#9 <https://github.com/NASA-PDS/pds-wds/issues/9>`_ Restructure component organization in Figma
+   * `PDS.nasa.gov-UX#54 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/54>`_ Relay for Figma (continuous delivery)
 * `PDS.nasa.gov-UX#53 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/53>`_ **PDS Sitemap Generator**
    * `PDS.nasa.gov-UX#49 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/49>`_ Evaluate sitemap generator tools
    * `PDS.nasa.gov-UX#50 <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/50>`_ Generate sitemap for pds.nasa.gov

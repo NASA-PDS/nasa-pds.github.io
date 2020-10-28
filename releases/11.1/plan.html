@@ -100,6 +100,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#planned-pds4-information-model-changes">Planned PDS4 Information Model Changes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#planned-software-changes">Planned Software Changes</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#validate">validate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pds4-jparser">pds4-jparser</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#pds4-information-model">pds4-information-model</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#pds-deep-archive">pds-deep-archive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#pds-doi-service">pds-doi-service</a></li>
@@ -219,6 +220,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#planned-pds4-information-model-changes">Planned PDS4 Information Model Changes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#planned-software-changes">Planned Software Changes</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#validate">validate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds4-jparser">pds4-jparser</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pds4-information-model">pds4-information-model</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pds-deep-archive">pds-deep-archive</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pds-doi-service">pds-doi-service</a></li>
@@ -245,8 +247,8 @@
 <p>A more detailed breakdown of these tasks by date and priority can be found in our <a class="reference external" href="https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/roadmap">Zenhub Roadmap</a> (login required).</p>
 <div class="section" id="key-dates">
 <h2>Key Dates<a class="headerlink" href="#key-dates" title="Permalink to this headline">¶</a></h2>
-<table class="colwidths-given docutils align-default" id="id64">
-<caption><span class="caption-text">Key Dates</span><a class="headerlink" href="#id64" title="Permalink to this table">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id70">
+<caption><span class="caption-text">Key Dates</span><a class="headerlink" href="#id70" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 27%" />
 <col style="width: 18%" />
@@ -283,6 +285,17 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <div class="section" id="planned-pds4-information-model-changes">
 <h2>Planned PDS4 Information Model Changes<a class="headerlink" href="#planned-pds4-information-model-changes" title="Permalink to this headline">¶</a></h2>
 <p>This section details the planned changes to the PDS4 Information Model for this build. These changes are deliverables by the PDS Data Design Working Group (DDWG) to the Engineering Node for implementation.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/258">pds4-information-model#258</a> <strong>CCB-301: The attribute &lt;name&gt; in the &lt;DD_Attribute&gt; and &lt;DD_Class&gt; classes is not properly constrained</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/256">pds4-information-model#256</a> <strong>CCB-312: &lt;ldd_version_id&gt; does not appear to be constrained the way LDDTool expects</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/254">pds4-information-model#254</a> <strong>CCB-305: Missing validation constraint on &lt;specified_unit_id&gt;</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/253">pds4-information-model#253</a> <strong>CCB-313: Definition of &lt;external_source_product_identifier&gt; refers to non-existent documentation</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/249">pds4-information-model#249</a> <strong>CCB-288: Change Internal_Reference reference type to ‘guided’ text</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/257">pds4-information-model#257</a> <strong>CCB-302: No &lt;reference_type&gt; values defined in DD_Attribute or DD_Class contexts</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/255">pds4-information-model#255</a> <strong>CCB-300: Apparently deprecated units of measure are not actually deprecated</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/251">pds4-information-model#251</a> <strong>CCB-303: The definition for &lt;skos_relation_name&gt; is not sufficient.</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/250">pds4-information-model#250</a> <strong>CCB-315: “PDS3” is an allowed parsing standard for Bundle documentation file</strong></p></li>
+</ul>
 </div>
 <div class="section" id="planned-software-changes">
 <h2>Planned Software Changes<a class="headerlink" href="#planned-software-changes" title="Permalink to this headline">¶</a></h2>
@@ -339,9 +352,42 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <dt><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/249">validate#249</a> <strong>Improvements for validating accumulating bundles / collections</strong></dt><dd><ul>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/51">validate#51</a> Provide the capability to specify multiple locations for pds4.bundle validation</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/231">validate#231</a> For accumulating bundles, validate latest version of collections only</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/238">validate#238</a> validate does not perform product-level validation when specifying a specific bundle.xml</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/238">validate#238</a> validate does not perform full bundle validation when using a specific bundle.xml</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/246">validate#246</a> Add output directory flag to validate-bundle tool</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/256">validate#256</a> validate should only do integrity checking on latest version of a collection when referenced by LID</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="pds4-jparser">
+<h3>pds4-jparser<a class="headerlink" href="#pds4-jparser" title="Permalink to this headline">¶</a></h3>
+<p><em>Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.</em></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/pds4-jparser/">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog">Backlog</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser/issues/21">pds4-jparser#21</a> <strong>Update table reads for large files and improve memory footprints</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/189">validate#189</a> Validate error reading tables &gt; 2GiB</p></li>
 </ul>
 </dd>
 </dl>
@@ -451,6 +497,32 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </tbody>
 </table>
 <ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/68">pds-doi-service#68</a> <strong>Develop Web UI for DOI service</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/67">pds-doi-service#67</a> Mock web UI for DOI management</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/108">pds-doi-service#108</a> Reserve DOI UI forms</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/109">pds-doi-service#109</a> Release existing DOI (previously reserved, drafted or released) UI forms</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/110">pds-doi-service#110</a> Release new DOI forms</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/52">pds-doi-service#52</a> <strong>API Implementation for DOI Service</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/38">pds-doi-service#38</a> Add Status / Query component to API</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/77">pds-doi-service#77</a> Add POST PDS4 or  OSTI DOI label to API</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/78">pds-doi-service#78</a> Add POST Reserve xslx/csv DOI function to API</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/79">pds-doi-service#79</a> Add Release DOI function to API</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/80">pds-doi-service#80</a> Develop API specification in SwaggerHub</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/100">pds-doi-service#100</a> Add GET DOI to the API</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/101">pds-doi-service#101</a> Add PUT DOI to the API (for updates)</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/105">pds-doi-service#105</a> Complete get DOIS criterias with the arguments proposed in command line</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/106">pds-doi-service#106</a> Add exception name in the error messages</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/107">pds-doi-service#107</a> allow to post PDS4 labels in the payload (for draft)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/91">pds-doi-service#91</a> <strong>Develop User Access / Management Strategy</strong></p></li>
 <li><dl class="simple">
 <dt><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/86">pds-doi-service#86</a> <strong>Deploy DOI API and UI</strong></dt><dd><ul>
@@ -463,26 +535,6 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </dl>
 </li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/23">pds-doi-service#23</a> <strong>Document how to Deactivate a DOI (with curl command)</strong></p></li>
-<li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/52">pds-doi-service#52</a> <strong>API Implementation for DOI Service</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/38">pds-doi-service#38</a> Add Status / Query component to API</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/77">pds-doi-service#77</a> Add POST PDS4 or  OSTI DOI label to API</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/78">pds-doi-service#78</a> Add POST Reserve xslx/csv DOI function to API</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/79">pds-doi-service#79</a> Add Release DOI function to API</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/80">pds-doi-service#80</a> Develop API specification in SwaggerHub</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/100">pds-doi-service#100</a> Add GET DOI to the API</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/101">pds-doi-service#101</a> Add PUT DOI to the API (for updates)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/68">pds-doi-service#68</a> <strong>Develop Web UI for DOI service</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/67">pds-doi-service#67</a> Mock web UI for DOI management</p></li>
-</ul>
-</dd>
-</dl>
-</li>
 </ul>
 </div>
 <hr class="docutils" />
@@ -509,13 +561,22 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </tbody>
 </table>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/42">pds-registry-app#42</a> <strong>Integrate Registry API into pds-registry-app</strong></p></li>
 <li><dl class="simple">
 <dt><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/13">pds-registry-app#13</a> <strong>Beta test operational deployment</strong></dt><dd><ul>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/82">pds-registry-app#82</a> Develop test plan</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/83">pds-registry-app#83</a> Deploy and install multi-node ES</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/84">pds-registry-app#84</a> Download large data set for testing</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/85">pds-registry-app#85</a> Document performance benchmarks in registry app docs</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/42">pds-registry-app#42</a> <strong>Integrate Registry API into pds-registry-app</strong></p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/27">pds-registry-app#27</a> <strong>Manage PDS4 product relationships</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/76">pds-registry-app#76</a> Manage relationships between bundles / collections / products</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/77">pds-registry-app#77</a> Manage relationships described by reference types</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/97">pds-registry-app#97</a> Research RDF technologies to handle pds4 label cross-references in the registry</p></li>
 </ul>
 </dd>
 </dl>
@@ -546,14 +607,6 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/27">pds-registry-app#27</a> <strong>Manage PDS4 product relationships</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/76">pds-registry-app#76</a> Manage relationships between bundles / collections / products</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/77">pds-registry-app#77</a> Manage relationships described by reference types</p></li>
-</ul>
-</dd>
-</dl>
-</li>
 </ul>
 </div>
 <hr class="docutils" />
@@ -580,7 +633,13 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </tbody>
 </table>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/20">PDS.nasa.gov-Search#20</a> <strong>Search Details Page / DOI Landing Page</strong></p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/20">PDS.nasa.gov-Search#20</a> <strong>Search Details Page / DOI Landing Page</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/26">PDS.nasa.gov-Search#26</a> Review search details / DOI page updates</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 <li><dl class="simple">
 <dt><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/21">PDS.nasa.gov-Search#21</a> <strong>DOI Landing Page Requirements and Design</strong></dt><dd><ul>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/22">PDS.nasa.gov-Search#22</a> Develop DOI Landing Page Scope</p></li>
@@ -618,6 +677,18 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </table>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/31">pds-api#31</a> <strong>Streamline testing of API server implementation</strong></p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/17">pds-api#17</a> <strong>Response format conventions and parameter definition</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/18">pds-api#18</a> Refine format conventions defined by the API WG</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/19">pds-api#19</a> Define default response fields</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/20">pds-api#20</a> Define required response fields</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/21">pds-api#21</a> Define response formatting for default vs “additional” metadata fields</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/22">pds-api#22</a> Update API Spec with refined response format conventions and field definitions</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/23">pds-api#23</a> Implement response format definition in API Service</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/35">pds-api#35</a> <strong>Initial Federated API implementation</strong></p></li>
 <li><dl class="simple">
 <dt><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/34">pds-api#34</a> <strong>Deploy PDS API v0 (beta) for beta testing</strong></dt><dd><ul>
@@ -647,18 +718,6 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/24">pds-api#24</a> <strong>Define PDS handling of enriched / supplemental metadata</strong></p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/25">pds-api#25</a> <strong>PDS API extension convention for discipline-specific search engines</strong></p></li>
-<li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/17">pds-api#17</a> <strong>Response format conventions and parameter definition</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/18">pds-api#18</a> Refine format conventions defined by the API WG</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/19">pds-api#19</a> Define default response fields</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/20">pds-api#20</a> Define required response fields</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/21">pds-api#21</a> Define response formatting for default vs “additional” metadata fields</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/22">pds-api#22</a> Update API Spec with refined response format conventions and field definitions</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/23">pds-api#23</a> Implement response format definition in API Service</p></li>
-</ul>
-</dd>
-</dl>
-</li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/15">pds-api#15</a> <strong>Query passing and search integration design</strong></p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/14">pds-api#14</a> <strong>Define intra-discipline (product-level) search scope</strong></p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/12">pds-api#12</a> <strong>Initial Query Syntax Lexer Implementation</strong></p></li>
@@ -668,7 +727,7 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <hr class="docutils" />
 <div class="section" id="pdsen-corral">
 <h3>pdsen-corral<a class="headerlink" href="#pdsen-corral" title="Permalink to this headline">¶</a></h3>
-<p><a href="#id38"><span class="problematic" id="id39">*</span></a>umbrella project to manage the build cycle (continuous integration and stable release) for the PDS EN tools. *</p>
+<p><a href="#id44"><span class="problematic" id="id45">*</span></a>umbrella project to manage the build cycle (continuous integration and stable release) for the PDS EN tools. *</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 17%" />
@@ -698,6 +757,7 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/94">pds-doi-service#94</a> Update to use pds round-up github action</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action/issues/1">roundup-action#1</a> Add Java / Maven support</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pdsen-corral/issues/24">pdsen-corral#24</a> Re-evaluate generating requirements for -dev versions</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-template-repo-python/issues/3">pds-template-repo-python#3</a> Add the roundup action in the template</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/255">validate#255</a> Retrofit validate CI to use roundup-action</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser/issues/30">pds4-jparser#30</a> Retrofit pds4-jparser CI to use roundup-action</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/94">pds-registry-app#94</a> Retrofit pds-registry-app CI to use roundup-action</p></li>
@@ -735,16 +795,9 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </table>
 <ul class="simple">
 <li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/55">PDS.nasa.gov-UX#55</a> <strong>Apply PDS WDS to PDS software documentation</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/56">PDS.nasa.gov-UX#56</a> Implement software docs template for Sphinx</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/57">PDS.nasa.gov-UX#57</a> Implement software docs template for Maven</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
 <dt><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/3">PDS.nasa.gov-UX#3</a> <strong>Formulate user stories for prototype</strong></dt><dd><ul>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/14">PDS.nasa.gov-UX#14</a> Develop user personas based upon outputs from user interview synthesis</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/58">PDS.nasa.gov-UX#58</a> Propose users stories for selected subset of the user personnas</p></li>
 </ul>
 </dd>
 </dl>
@@ -776,6 +829,7 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds/issues/6">pds-wds#6</a> Define types of banner notifications</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds/issues/8">pds-wds#8</a> Document UI guidelines and rules</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds/issues/9">pds-wds#9</a> Restructure component organization in Figma</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/54">PDS.nasa.gov-UX#54</a> Relay for Figma (continuous delivery)</p></li>
 </ul>
 </dd>
 </dl>
