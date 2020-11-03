@@ -16,8 +16,16 @@ Here are few good ones we have found: \*
 Lynda.com: https://www.lynda.com/Git-training-tutorials/1383-0.html \*
 TBD
 
-Notifications
--------------
+Github Notifications
+--------------------
+
+Github email notifications can become very difficult to parse through without proper 
+email management and setup. The following section helps you pull high priority emails 
+out to ensure you do not miss out on various activities that require your more immediate 
+attention.
+
+Setup Notifications
+~~~~~~~~~~~~~~~~~~~
 
 To ensure you are up-to-date with all things happening in repositories,
 check your `notification
@@ -33,6 +41,15 @@ please check the following:
    ✅ Email
    ✅ Web and Mobile
 
+Managing Repository Notifications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can manage the notifications you receive for specific repositories from here: 
+https://github.com/watching . From this page, you can determine what types of notifications 
+you would like to receive from repositories you are watching.
+
+For more information on managing notifications, see the `Github documentation <https://help.github.jp/enterprise/2.11/user/articles/watching-and-unwatching-repositories/>`_
+
 @mentions Email Filter
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -41,20 +58,70 @@ commit notifications being group messages. It is highly recommended you
 setup an email filter to pull out these @mentions (aka direct messages)
 so you are able to respond in a timely manner.
 
-Here is an example email filter from Microsoft Outlook for Mac:
+Here is an example email filter from Microsoft Exchange:
 
 ::
 
    When a new message arrives that meets all these conditions:
-     Body Contains       @my_username
-     Subject Contains    "NASA-PDS/" or "NASA-PDS/" or "pds-data-dictionaries/"
+     Body     Contains    @my_username
+     Sent To  Contains    mention@noreply.github.com
+     From     Contains    github.com
 
    Do the following:
-     Move to Folder      PDS-@mentions (you may need to create this folder somewhere)
+     Move to Folder      Github-@mentions (you will need to create this folder)
 
    [checked] Do not apply other rules to message that meet the same conditions
 
    [checked] Enabled
+
+
+Pull Requests Review Requested Email Filter
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In order to prioritize pull request reviews above other Github email notifications, 
+this email filter will help you pull out emails where your review is requested.
+
+Note: This applies to both personal reviews and reviews requested of a team you belong to.
+
+Here is an example email filter from Microsoft Exchange:
+
+::
+
+   When a new message arrives that meets all these conditions:
+     Body     Contains    your review
+     Sent To  Contains    review_requested@noreply.github.com
+     From     Is          notifications@github.com
+
+   Do the following:
+     Move to Folder      Github-@reviews (you will need to create this folder)
+
+   [checked] Do not apply other rules to message that meet the same conditions
+
+   [checked] Enabled
+
+
+Github Notifications Email Filter
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This email filter is intended to be a catchall for remaining github notifications for a particular organization. This can be adapted to handle individual repositories as you see fit.
+
+NOTE: Make sure this is the last email filter in your list, otherwise the filters created above will be ignored.
+
+Here is an example email filter for the `NASA-PDS Github Org <https://github.com/NASA-PDS/>`_ through Microsoft Exchange:
+
+::
+
+   When a new message arrives that meets all these conditions:
+     Subject  Contains    NASA-PDS/
+     From     Contains    "noreply@github.com" or "notifications@github.com"
+
+   Do the following:
+     Move to Folder      PDS-Github (you will need to create this folder)
+
+   [checked] Do not apply other rules to message that meet the same conditions
+
+   [checked] Enabled
+
 
 Commit Message Best Practices
 -----------------------------
