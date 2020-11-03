@@ -123,6 +123,22 @@ Here is an example email filter for the `NASA-PDS Github Org <https://github.com
    [checked] Enabled
 
 
+Here is an example email filter for the `PDS-Data-Dictionaries Github Org <https://github.com/pds-data-dictionaries/>`_ through Microsoft Exchange:
+
+::
+
+   When a new message arrives that meets all these conditions:
+     Subject  Contains    pds-data-dictionaries/
+     From     Contains    "noreply@github.com" or "notifications@github.com"
+
+   Do the following:
+     Move to Folder      pds-ldd-github (you will need to create this folder)
+
+   [checked] Do not apply other rules to message that meet the same conditions
+
+   [checked] Enabled
+
+
 Commit Message Best Practices
 -----------------------------
 
