@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LDD Regression Testing &mdash; NASA PDS Software  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LDD How-To Guides" href="ldd-how-to.html" />
+    <link rel="prev" title="LDD Build Process" href="ldd-build.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> NASA PDS Software
+          
+
+          
+            
+            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html#getting-to-know-your-ldd-repo">Getting to Know Your LDD Repo</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ldd-create.html">LDD Creation Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-update.html">LDD Update Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-build.html">LDD Build Process</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LDD Regression Testing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#regression-test-data">Regression Test Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#regression-test-data-rules">Regression Test Data Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test-data-directory-layout">Test Data Directory Layout</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-how-to.html">LDD How-To Guides</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teams/pds-dd-stewards.html">PDS DD Stewards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teams/ldd-ccb.html">LDD Change Control Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../support/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/github-help.html">Github Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-ldd">Request a New LDD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-ldd-class-or-attribute">Request a New LDD Class or Attribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#user-forum">User Forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NASA PDS Software</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>LDD Regression Testing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/development/ldd-test.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ldd-regression-testing">
+<h1>LDD Regression Testing<a class="headerlink" href="#ldd-regression-testing" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LDD Regression Testing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#regression-test-data">Regression Test Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#regression-test-data-rules">Regression Test Data Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test-data-directory-layout">Test Data Directory Layout</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Local Data Dictionary (LDD) stewards are expected to provide example labels that can be used for regression testing LDDs delivered for release. The number and complexity of examples developed are dependent upon the dictionary steward and what is determined to be a high-priority or is thought to be something that are critical to the dictionary. The following page describes some examples of regression tests as well as where/how these files should be provided to PDS Engineering Node to complete that testing.</p>
+</div>
+<div class="section" id="regression-test-data">
+<h2>Regression Test Data<a class="headerlink" href="#regression-test-data" title="Permalink to this headline">¶</a></h2>
+<p>Regression tests should be made up of PDS4 example products that either successfully or unsuccessfully validate using the <a class="reference external" href="https://nasa-pds.github.io/validate/">PDS Validate Tool</a>.</p>
+<p>For simple examples of generating simple regression test cases, see the <a class="reference external" href="https://github.com/pds-data-dictionaries/ldd-template">LDD Template repository</a>.</p>
+</div>
+<div class="section" id="regression-test-data-rules">
+<h2>Regression Test Data Rules<a class="headerlink" href="#regression-test-data-rules" title="Permalink to this headline">¶</a></h2>
+<p>In order for your regression test data to be autonomously tested during the automated LDD Generation process, you must follow the following rules when posting your test data to Github:</p>
+<ol class="arabic simple">
+<li><p><strong>No schematrons</strong> - do not include schematron references in the labels. the pipeline will automatically add the newly generated schematrons to the validation.</p></li>
+<li><p><strong>No schemaLocations</strong> - do not include schemaLocation references in the labels. the pipeline will automatically add the newly generated schematrons to the validation.</p></li>
+<li><p><strong>Include ``[IM_VERSION]`` for information_model_version</strong> - use <code class="docutils literal notranslate"><span class="pre">[IM_VERSION]</span></code> value for <code class="docutils literal notranslate"><span class="pre">information_model_version</span></code> attribute so it can be dynamically replaced by the pipeline</p></li>
+</ol>
+</div>
+<div class="section" id="test-data-directory-layout">
+<h2>Test Data Directory Layout<a class="headerlink" href="#test-data-directory-layout" title="Permalink to this headline">¶</a></h2>
+<p>Regression test products should be maintained within the <code class="docutils literal notranslate"><span class="pre">test/</span></code> directory of your LDD Repo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ldd-test/
+├── ...
+├── test
+│   ├── No.Data
+│   ├── test1_FAIL.xml
+│   └── test1_VALID.xml
+</pre></div>
+</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PDS4_SP_1100_1000_test</span></code> - this top level directory should be named using the format <code class="docutils literal notranslate"><span class="pre">PDS4_&lt;namespace_id&gt;_&lt;IM_version&gt;_&lt;LDD_version&gt;_test</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*FAIL*</span></code> - all PDS4 XML labels that will fail validation against delivered dictionaries. Output from Validate Tool should go into <code class="docutils literal notranslate"><span class="pre">*FAIL*.log</span></code> files in order to compare output from EN Validate execution.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*VALID*</span></code> - all PDS4 XML labels that will complete successful validation against delivered dictionaries.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ldd-how-to.html" class="btn btn-neutral float-right" title="LDD How-To Guides" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ldd-build.html" class="btn btn-neutral float-left" title="LDD Build Process" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 California Institute of Technology
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

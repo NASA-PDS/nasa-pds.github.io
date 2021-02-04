@@ -1,0 +1,399 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PDS Git and Github Guide &mdash; NASA PDS Software  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PDS Issue Tracking" href="pds_issue_tracking_guide.html" />
+    <link rel="prev" title="Releases" href="../releases_bkp/plan.html" />
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> NASA PDS Software
+          
+
+          
+            
+            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">System Releases</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases_bkp/release.html">Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases_bkp/plan.html">Releases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guides`</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PDS Git and Github Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started-with-github">Getting Started with Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notifications">Notifications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mentions-email-filter">&#64;mentions Email Filter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#commit-message-best-practices">Commit Message Best Practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issue-tracking">Issue Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-help">Advanced Help</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#help-with-rebasing">Help With Rebasing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pds_issue_tracking_guide.html">PDS Issue Tracking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pds_ci_cd.html">PDS Continuous Integration / Continuous Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pds_sw_docs.html">PDS Software Documentation Best Practices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seo.html">Search Engine Optimization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teams/teams.html">Teams</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../support/help.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/forum.html">OpenPlanetary Forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-tool-service">Request a New Tool / Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NASA PDS Software</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>PDS Git and Github Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/developer/pds_git_and_github_guide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pds-git-and-github-guide">
+<h1>PDS Git and Github Guide<a class="headerlink" href="#pds-git-and-github-guide" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="#getting-started-with-github">Getting Started with Github</a></p></li>
+<li><p><a class="reference external" href="#notifications">Notifications</a></p>
+<ul>
+<li><p>[&#64;mentions Email Filter](#mentions-email-filter)</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#commit-message-best-practices">Commit Message Best Practices</a></p></li>
+<li><p><a class="reference external" href="#issue-tracking">Issue Tracking</a></p></li>
+<li><p><a class="reference external" href="#other-help">Other Help</a></p>
+<ul>
+<li><p><a class="reference external" href="#help-with-rebasing">Help With Rebasing</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#References">References</a></p></li>
+</ul>
+<hr class="docutils" />
+<div class="section" id="getting-started-with-github">
+<h2>Getting Started with Github<a class="headerlink" href="#getting-started-with-github" title="Permalink to this headline">¶</a></h2>
+<p>Instead of reinventing the wheel, there are countless trainings online.
+Here are few good ones we have found: *
+Lynda.com: <a class="reference external" href="https://www.lynda.com/Git-training-tutorials/1383-0.html">https://www.lynda.com/Git-training-tutorials/1383-0.html</a> *
+TBD</p>
+</div>
+<div class="section" id="notifications">
+<h2>Notifications<a class="headerlink" href="#notifications" title="Permalink to this headline">¶</a></h2>
+<p>To ensure you are up-to-date with all things happening in repositories,
+check your <a class="reference external" href="https://github.com/settings/notifications">notification
+settings</a> send you emails
+/ mobile notifications when needed. For PDS development, at minimum,
+please check the following: * <strong>Participating:</strong> :white_check_mark:
+Email, :white_check_mark: Web and Mobile * <strong>Watching:</strong>
+:white_check_mark: Email, :white_check_mark: Web and Mobile</p>
+<div class="section" id="mentions-email-filter">
+<h3>&#64;mentions Email Filter<a class="headerlink" href="#mentions-email-filter" title="Permalink to this headline">¶</a></h3>
+<p>Think of a Github &#64;mention as a direct message, versus other issue and
+commit notifications being group messages. It is highly recommended you
+setup an email filter to pull out these &#64;mentions (aka direct messages)
+so you are able to respond in a timely manner.</p>
+<p>Here is an example email filter from Microsoft Outlook for Mac:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">When</span> <span class="n">a</span> <span class="n">new</span> <span class="n">message</span> <span class="n">arrives</span> <span class="n">that</span> <span class="n">meets</span> <span class="nb">all</span> <span class="n">these</span> <span class="n">conditions</span><span class="p">:</span>
+  <span class="n">Body</span> <span class="n">Contains</span>       <span class="nd">@my_username</span>
+  <span class="n">Subject</span> <span class="n">Contains</span>    <span class="s2">&quot;NASA-PDS/&quot;</span> <span class="ow">or</span> <span class="s2">&quot;NASA-PDS/&quot;</span> <span class="ow">or</span> <span class="s2">&quot;pds-data-dictionaries/&quot;</span>
+
+<span class="n">Do</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+  <span class="n">Move</span> <span class="n">to</span> <span class="n">Folder</span>      <span class="n">PDS</span><span class="o">-</span><span class="nd">@mentions</span> <span class="p">(</span><span class="n">you</span> <span class="n">may</span> <span class="n">need</span> <span class="n">to</span> <span class="n">create</span> <span class="n">this</span> <span class="n">folder</span> <span class="n">somewhere</span><span class="p">)</span>
+
+<span class="p">[</span><span class="n">checked</span><span class="p">]</span> <span class="n">Do</span> <span class="ow">not</span> <span class="n">apply</span> <span class="n">other</span> <span class="n">rules</span> <span class="n">to</span> <span class="n">message</span> <span class="n">that</span> <span class="n">meet</span> <span class="n">the</span> <span class="n">same</span> <span class="n">conditions</span>
+
+<span class="p">[</span><span class="n">checked</span><span class="p">]</span> <span class="n">Enabled</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="commit-message-best-practices">
+<h2>Commit Message Best Practices<a class="headerlink" href="#commit-message-best-practices" title="Permalink to this headline">¶</a></h2>
+<p>For commit message best practices, the PDS tries to follow these <a class="reference external" href="https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53">Github
+Commit Messages
+Guidelines</a>
+where possible.</p>
+<p>Once you have read through the guidelines, here are some highlights to
+touch on and some additional notes:</p>
+<p>A properly formed git commit subject line should always be able to
+complete the following sentence</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">If</span> <span class="n">applied</span><span class="p">,</span> <span class="n">this</span> <span class="n">commit</span> <span class="n">will</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">subject</span> <span class="n">line</span> <span class="n">here</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Rules for a great commit message style</strong></p>
+<ul>
+<li><p>Separate subject from body with a blank line</p></li>
+<li><p>Do not end the subject line with a period</p></li>
+<li><p>Capitalize the subject line and each paragraph</p></li>
+<li><p>Use the imperative mood in the subject line</p></li>
+<li><p>Wrap lines at 72 characters</p></li>
+<li><p>Use the body to explain what and why you have done something. In
+most cases, you can leave out details about how a change has been
+made.</p></li>
+</ul>
+</li>
+<li><p><strong>References in commit messages</strong></p>
+<ul>
+<li><p>If the commit refers to an issue, add this information to the
+commit message header or body.</p></li>
+<li><p>See <a class="reference external" href="https://help.github.com/en/github/writing-on-github/autolinked-references-and-urls">how to autolink references and
+urls</a>
+for more information on linking to other issues, repos, commits,
+etc.</p></li>
+<li><p>Do this for ticket references, people, etc.</p></li>
+<li><p>Be sure use the correct referencing method when going across
+repositories.</p></li>
+</ul>
+</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Short</span> <span class="p">(</span><span class="mi">72</span> <span class="n">chars</span> <span class="ow">or</span> <span class="n">less</span><span class="p">)</span> <span class="n">summary</span>
+
+<span class="n">More</span> <span class="n">detailed</span> <span class="n">explanatory</span> <span class="n">text</span><span class="o">.</span> <span class="n">Wrap</span> <span class="n">it</span> <span class="n">to</span> <span class="mi">72</span> <span class="n">characters</span><span class="o">.</span> <span class="n">The</span> <span class="n">blank</span>
+<span class="n">line</span> <span class="n">separating</span> <span class="n">the</span> <span class="n">summary</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">body</span> <span class="ow">is</span> <span class="n">critical</span> <span class="p">(</span><span class="n">unless</span> <span class="n">you</span> <span class="n">omit</span>
+<span class="n">the</span> <span class="n">body</span> <span class="n">entirely</span><span class="p">)</span><span class="o">.</span>
+
+<span class="n">Write</span> <span class="n">your</span> <span class="n">commit</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">imperative</span><span class="p">:</span> <span class="s2">&quot;Fix bug&quot;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="s2">&quot;Fixed</span>
+<span class="n">bug</span><span class="s2">&quot; or &quot;</span><span class="n">Fixes</span> <span class="n">bug</span><span class="o">.</span><span class="s2">&quot; This convention matches up with commit messages</span>
+<span class="n">generated</span> <span class="n">by</span> <span class="n">commands</span> <span class="n">like</span> <span class="n">git</span> <span class="n">merge</span> <span class="ow">and</span> <span class="n">git</span> <span class="n">revert</span><span class="o">.</span>
+
+<span class="n">Further</span> <span class="n">paragraphs</span> <span class="n">come</span> <span class="n">after</span> <span class="n">blank</span> <span class="n">lines</span><span class="o">.</span>
+
+<span class="o">-</span> <span class="n">Bullet</span> <span class="n">points</span> <span class="n">are</span> <span class="n">okay</span><span class="p">,</span> <span class="n">too</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Typically</span> <span class="n">a</span> <span class="n">hyphen</span> <span class="ow">or</span> <span class="n">asterisk</span> <span class="ow">is</span> <span class="n">used</span> <span class="k">for</span> <span class="n">the</span> <span class="n">bullet</span><span class="p">,</span> <span class="n">followed</span> <span class="n">by</span> <span class="n">a</span>
+  <span class="n">single</span> <span class="n">space</span><span class="o">.</span> <span class="n">Use</span> <span class="n">a</span> <span class="n">hanging</span> <span class="n">indent</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add my_file.txt
+
+# Try to avoid using `git commit -m` unless it is a very trivial update/change
+$ git commit
+
+# Vim or Emacs window will open. To change editor that opens, see https://help.github.com/en/github/using-git/associating-text-editors-with-git .
+Created new my_file with text in it
+
+This new file includes:
+* Part 1
+* Part 2
+* Part 3
+</pre></div>
+</div>
+</div>
+<div class="section" id="issue-tracking">
+<h2>Issue Tracking<a class="headerlink" href="#issue-tracking" title="Permalink to this headline">¶</a></h2>
+<p>See more information at <a class="reference external" href="pds_issue_tracking_guide.md">PDS Issue Tracking
+Guide</a></p>
+</div>
+<div class="section" id="advanced-help">
+<h2>Advanced Help<a class="headerlink" href="#advanced-help" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="help-with-rebasing">
+<h3>Help With Rebasing<a class="headerlink" href="#help-with-rebasing" title="Permalink to this headline">¶</a></h3>
+<p>Rebasing can get messy and be painful. We highly recommend reading this
+article on <a class="reference external" href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing">The Golden Rule of
+Rebasing</a>.</p>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://help.github.com/en/github/writing-on-github/autolinked-references-and-urls">https://help.github.com/en/github/writing-on-github/autolinked-references-and-urls</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pds_issue_tracking_guide.html" class="btn btn-neutral float-right" title="PDS Issue Tracking" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../releases_bkp/plan.html" class="btn btn-neutral float-left" title="Releases" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 California Institute of Technology
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

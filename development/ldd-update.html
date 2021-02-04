@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LDD Update Process &mdash; NASA PDS Software  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LDD Build Process" href="ldd-build.html" />
+    <link rel="prev" title="LDD Creation Process" href="ldd-create.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> NASA PDS Software
+          
+
+          
+            
+            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html#getting-to-know-your-ldd-repo">Getting to Know Your LDD Repo</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ldd-create.html">LDD Creation Process</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LDD Update Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#change-request-proposed">1. Change Request Proposed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ldd-steward-initial-approval">2. LDD Steward Initial Approval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-ingestldd">3. Update IngestLDD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#push-updates-to-github">4. Push Updates To Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ldd-change-control-board-approval">5. LDD Change Control Board Approval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#approve-and-merge-changes">6. Approve and Merge Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-contact-en-for-point-build">7. (optional) Contact EN for Point Build</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-build.html">LDD Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-test.html">LDD Regression Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ldd-how-to.html">LDD How-To Guides</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teams/pds-dd-stewards.html">PDS DD Stewards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teams/ldd-ccb.html">LDD Change Control Board</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../support/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/github-help.html">Github Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-ldd">Request a New LDD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-ldd-class-or-attribute">Request a New LDD Class or Attribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#user-forum">User Forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NASA PDS Software</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>LDD Update Process</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/development/ldd-update.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ldd-update-process">
+<h1>LDD Update Process<a class="headerlink" href="#ldd-update-process" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LDD Update Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#change-request-proposed">1. Change Request Proposed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ldd-steward-initial-approval">2. LDD Steward Initial Approval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-ingestldd">3. Update IngestLDD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#push-updates-to-github">4. Push Updates To Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ldd-change-control-board-approval">5. LDD Change Control Board Approval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#approve-and-merge-changes">6. Approve and Merge Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-contact-en-for-point-build">7. (optional) Contact EN for Point Build</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>The following are the necessary steps to propose and execute an update to a PDS4 Local Data Dictionary.</p>
+<a class="reference external image-reference" href="../_static/images/LDD-mgmt-process.png"><img alt="../_images/LDD-mgmt-process.png" src="../_images/LDD-mgmt-process.png" /></a>
+<div class="section" id="change-request-proposed">
+<h2>1. Change Request Proposed<a class="headerlink" href="#change-request-proposed" title="Permalink to this headline">¶</a></h2>
+<p>The process is initiated when a user requests an update to an LDD via the <a class="reference external" href="https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo/issues/new/choose">PDS4 Github Issues Repo</a>.</p>
+</div>
+<div class="section" id="ldd-steward-initial-approval">
+<h2>2. LDD Steward Initial Approval<a class="headerlink" href="#ldd-steward-initial-approval" title="Permalink to this headline">¶</a></h2>
+<p>The update request is received by the LDD Steward, who makes an initial determination of whether or not the change is warranted.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>If no, the issue is brought to the <a class="reference internal" href="../teams/ldd-ccb.html"><span class="doc">LDD Change Control Board</span></a> for discussion. The outcome of that User Group discussion will determine whether or not to proceed.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="update-ingestldd">
+<h2>3. Update IngestLDD<a class="headerlink" href="#update-ingestldd" title="Permalink to this headline">¶</a></h2>
+<p>Once the LDD Steward approves the change, they will get the latest version of the LDD from Github, and complete the necessary updates to the IngestLDD file (TBD link).</p>
+<p>The LDD Steward can download and use <a class="reference external" href="https://nasa-pds.github.io/pds4-information-model/model-lddtool/index.html">LDDTool</a> for testing purposes, but only the IngestLDD will be needed for submission to Github.</p>
+</div>
+<div class="section" id="push-updates-to-github">
+<h2>4. Push Updates To Github<a class="headerlink" href="#push-updates-to-github" title="Permalink to this headline">¶</a></h2>
+<p>Once the LDD Steward has completed the necessary changes to the IngestLDD, a Pull Request (PR) (TBD link) is then created in the applicable LDD repository. When creating the Pull Request, sufficient documentation and details need to be provided in order to sufficiently describe the change and the rationale for LDD Change Control Board (link TBD) review.</p>
+<p>Additionally, by generating a PR on the IngestLDD updates, the system will automatically run LDDTool to generate the schemas, schematrons, and other default LDDTool outputs. See the <a class="reference internal" href="../support/tutorials.html"><span class="doc">LDD Update and Build Tutorial</span></a></p>
+</div>
+<div class="section" id="ldd-change-control-board-approval">
+<h2>5. LDD Change Control Board Approval<a class="headerlink" href="#ldd-change-control-board-approval" title="Permalink to this headline">¶</a></h2>
+<p>The LDD Change Control Board will be notified their review is needed by two mechanisms:
+a. They will be assigned as reviewers on the Github Pull Request
+b. The LDD Steward will notify the group of the review start by emailing the CCB Google Group</p>
+<p>Discussions about the changes should as much as possible be done within the Github Pull Request. See <a class="reference external" href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request">Github Documentation</a> for more details.</p>
+<p>See the <a class="reference internal" href="../teams/ldd-ccb.html"><span class="doc">LDD Change Control Board web page</span></a> for details on the voting and approval process.</p>
+</div>
+<div class="section" id="approve-and-merge-changes">
+<h2>6. Approve and Merge Changes<a class="headerlink" href="#approve-and-merge-changes" title="Permalink to this headline">¶</a></h2>
+<p>Once the LDD CCB has approved changes, the PDS DD Steward can then Merge the Pull Request (link TBD).</p>
+</div>
+<div class="section" id="optional-contact-en-for-point-build">
+<h2>7. (optional) Contact EN for Point Build<a class="headerlink" href="#optional-contact-en-for-point-build" title="Permalink to this headline">¶</a></h2>
+<p>For critical bug fixes that require the LDD to be built and released against the current or a past IM, create a new ticket for a Point Build Request (link TBD)</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ldd-build.html" class="btn btn-neutral float-right" title="LDD Build Process" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ldd-create.html" class="btn btn-neutral float-left" title="LDD Creation Process" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 California Institute of Technology
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

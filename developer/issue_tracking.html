@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Issue Tracking &mdash; NASA PDS Software 11.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Search Engine Optimization" href="seo.html" />
+    <link rel="prev" title="Git and Github" href="github.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> NASA PDS Software
+          
+
+          
+            
+            <img src="../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                11.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">System Releases</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases_bkp/releases.html">Latest Stable Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases_bkp/releases.html#latest-development-release">Latest Development Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases_bkp/releases.html#upcoming">Upcoming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases_bkp/releases.html#past-releases">Past Releases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ci_cd.html">CI / CD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="github.html">Git and Github</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Issue Tracking</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started-with-zenhub">Getting Started with Zenhub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issue-creation-best-practices">Issue Creation Best Practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#help-with-zenhub">Help with Zenhub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="seo.html">Search Engine Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sw_doc.html">SW Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teams/pds-swg.html">Software Working Group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teams/teams.html">PMC and Committers</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#request-a-new-tool-service">Request a New Tool / Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/forum.html">OpenPlanetary Forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/help.html">Help</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NASA PDS Software</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Issue Tracking</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/developer/issue_tracking.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="issue-tracking">
+<h1>Issue Tracking<a class="headerlink" href="#issue-tracking" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Issue Tracking</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started-with-zenhub">Getting Started with Zenhub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issue-creation-best-practices">Issue Creation Best Practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#help-with-zenhub">Help with Zenhub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>The Planetary Data System has several issue tracking and project management mechanisms that serve different purposes:</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Tools</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 1%" />
+<col style="width: 1%" />
+<col style="width: 83%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>System</p></th>
+<th class="head"><p>Applicable Nodes / Projects</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Access</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://pds-jira.jpl.nasa.gov/secure/Dashboard.jspa">PDS JIRA</a></p></td>
+<td><p>PDS4 Standards Change Control Board</p></td>
+<td><p>This JIRA is used specifically for tracking PDS4 Information Model Software Change Requests (SCRs) and their approval through the Change Control Board. Once and SCR is approved, the implementation will be tracked in the <a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues">PDS4 Information Model repo</a></p></td>
+<td><p>Access is restricted to PDS personnel, or upon request</p></td>
+</tr>
+<tr class="row-odd"><td><p>Github.com Issues</p></td>
+<td><p>All open sourced PDS projects</p></td>
+<td><p>Issues are created in their appropriate NASA-PDS and NASA-PDS repositories</p></td>
+<td><p>Public access</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/board?repos=186914179,225741245,247182582,179379537,192617533,211189958,245216997,236086558,236099103,253108483,200280392,251664703,170207812,193572640,198717028,193800615,225956031,84491609,199739690,198517222,193560281)">Zenhub PDSEN Workspace</a></p></td>
+<td><p>All open sources PDS projects managed by PDS Engineering Node</p></td>
+<td><p>Zenhub is utilized for sprint planning, management, and reporting by integrating all PDS projects into one visual workspace</p></td>
+<td><p>Access available upon request</p></td>
+</tr>
+<tr class="row-odd"><td><p>JPL Github Enterprise</p></td>
+<td><p>PDS Engineering Internal Projects</p></td>
+<td><p>Github Issues / Zenhub Internal EN software and operations projects and issue tracking (<a class="reference external" href="https://zenhub.jpl.nasa.gov/app/workspaces/pdsen-dev-internal-5d5ff11ab8761871eb7ed692/board?repos=23220">Development</a>, <a class="reference external" href="https://zenhub.jpl.nasa.gov/app/workspaces/pds-ops-5e444561fe7e060b0e514b07/board?repos=31090,31009,31007">Operations</a>)</p></td>
+<td><p>Access restricted to JPL personnel only</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="getting-started-with-zenhub">
+<h2>Getting Started with Zenhub<a class="headerlink" href="#getting-started-with-zenhub" title="Permalink to this headline">¶</a></h2>
+<p>Go to the applicable board to view / create / update new tickets:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/board?repos=186914179,225741245,247182582,179379537,192617533,211189958,245216997,236086558,236099103,253108483,200280392,251664703,170207812,193572640,198717028,193800615,225956031,84491609,199739690,198517222,193560281">PDS EN Github (public) Development</a></p></li>
+<li><p><a class="reference external" href="https://zenhub.jpl.nasa.gov/app/workspaces/pdsen-dev-internal-5d5ff11ab8761871eb7ed692/board?repos=27663,28856,29312,28901,25759,24033,23921,28407,23450,23220,23446,28406,23894,28296">PDS EN JPL Internal Development</a></p></li>
+<li><p><a class="reference external" href="https://zenhub.jpl.nasa.gov/app/workspaces/pds-ops-5e444561fe7e060b0e514b07/board?repos=31090,31009,31007">PDS EN JPL Internal Operations</a></p></li>
+</ul>
+<p>Alternatively, you can install the Zenhub Chrome/Firefox extension to
+view Zenhub within Github:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.zenhub.com/extension">Zenhub for Github.com</a></p></li>
+<li><p><a class="reference external" href="https://zenhub.jpl.nasa.gov/">Zenhub for JPL Github Enterprise</a></p></li>
+</ul>
+</div>
+<div class="section" id="issue-creation-best-practices">
+<h2>Issue Creation Best Practices<a class="headerlink" href="#issue-creation-best-practices" title="Permalink to this headline">¶</a></h2>
+<p>The PDS has uses the article <a class="reference external" href="https://stratejos.ai/blog/naming-task-bug-user-story-titles/">“Naming Guide For Task, Bug, and User Story Titles”</a> for issue best practices.</p>
+<p><em>Here are some high-priority best practices we really want to try to follow:</em></p>
+<ul class="simple">
+<li><p>In general, for tasks, bugs, and new features, at minimum, <strong>start
+the title with a verb</strong> (e.g. Ingest some data from somewhere or
+Update this page with some change)</p></li>
+<li><p><strong>Title</strong> should be able to tell someone what was fixed or completed</p>
+<ul>
+<li><p>We plan on using these issue titles for generating changelogs and
+report automatically</p></li>
+</ul>
+</li>
+<li><p>Use <a class="reference external" href="https://help.github.com/en/enterprise/2.18/user/github/writing-on-github/autolinked-references-and-urls#issues-and-pull-requests">autolinked references</a> wherever possible for traceability</p>
+<ul>
+<li><p>Using references is a <em>HUGE</em> benefit in streamlining productivity,
+project management, provenance, and requirements/test
+traceability.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="help-with-zenhub">
+<h2>Help with Zenhub<a class="headerlink" href="#help-with-zenhub" title="Permalink to this headline">¶</a></h2>
+<p>We use Zenhub to visualize all our tickets across Github.com
+repositories.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://help.zenhub.com/support/solutions/articles/43000010778-what-is-zenhub-an-intro-to-zenhub-in-github">How to use Zenhub</a></p></li>
+<li><p><a class="reference external" href="https://help.zenhub.com/support/home">Zenhub Support</a></p></li>
+</ul>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53">https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53</a></p></li>
+<li><p><a class="reference external" href="https://help.github.com/en/enterprise/2.18/user/github/writing-on-github/autolinked-references-and-urls#issues-and-pull-requests">https://help.github.com/en/enterprise/2.18/user/github/writing-on-github/autolinked-references-and-urls#issues-and-pull-requests</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="seo.html" class="btn btn-neutral float-right" title="Search Engine Optimization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="github.html" class="btn btn-neutral float-left" title="Git and Github" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 California Institute of Technology
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
