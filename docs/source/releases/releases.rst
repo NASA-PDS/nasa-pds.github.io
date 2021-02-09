@@ -1,27 +1,28 @@
-Latest Stable Release
-=====================
+Release Build Summaries
+=======================
 
-TBD
+The builds available are
 
+------------------------
 
-Latest Development Release
-==========================
+..  toctree:: Builds
+    :glob:
+    :maxdepth: 1
 
-TBD
+    /releases/*/index
 
+Upcoming plans
+==============
 
-Upcoming
-========
-
-..  toctree:: Releases
+..  toctree:: Plans
     :glob:
     :maxdepth: 1
 
     /releases/11.1/plan
 
 
-Past Releases
-=============
+Release Description Documents (RDD)
+===================================
 
 ..  toctree:: Releases
     :glob:
