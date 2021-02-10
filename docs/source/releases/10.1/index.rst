@@ -23,8 +23,6 @@ Software Summary (build 10.1)
 +-------------------------+----------+---------------+--------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |mi-label                 |v1.1.3    |2020-12-11     |Metadata Injector for PDS Labels (MILabel), former...   ||NASA-PDS/mi-label_manual|                 ||NASA-PDS/mi-label_changelog|                 |                   ||NASA-PDS/mi-label_download|                 ||NASA-PDS/mi-label_license|                 ||NASA-PDS/mi-label_feedback|                 |
 +-------------------------+----------+---------------+--------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
-|example_harvest          |3.2.3     |2020-07-01     |Provides software provides functionality for captu...   ||tloubrieu-jpl/harvest_manual|             |                                              |                   ||tloubrieu-jpl/harvest_download|             ||tloubrieu-jpl/harvest_license|             ||tloubrieu-jpl/harvest_feedback|             |
-+-------------------------+----------+---------------+--------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 
 .. |NASA-PDS/pds-registry-app_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds-registry-app/0.1.2
@@ -134,18 +132,6 @@ Software Summary (build 10.1)
    :target: https://raw.githubusercontent.com/NASA-PDS/mi-label/master/LICENSE.txt
 .. |NASA-PDS/mi-label_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/mi-label/issues/new/choose
-.. |tloubrieu-jpl/harvest_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
-   :target: https://tloubrieu-jpl.github.io/harvest
-.. |tloubrieu-jpl/harvest_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: None
-.. |tloubrieu-jpl/harvest_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
-   :target: None
-.. |tloubrieu-jpl/harvest_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
-   :target: https://github.com/tloubrieu-jpl/harvest/releases/tag/3.2.3
-.. |tloubrieu-jpl/harvest_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/harvest/master/LICENSE.txt
-.. |tloubrieu-jpl/harvest_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
-   :target: https://github.com/tloubrieu-jpl/harvest/issues/new/choose
 .. |manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual_text.png
    :alt: manual
 .. |changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog_text.png
