@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Release Description Document (build 11.1) &mdash; NASA PDS Software 11.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="CI / CD" href="../../developer/ci_cd.html" />
+    <link rel="prev" title="Build 11.0 RDD" href="../11.0/rdd.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> NASA PDS Software
+          
+
+          
+            
+            <img src="../../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                11.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p><span class="caption-text">System Releases</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../releases.html">Release Build Summaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases.html#upcoming-plans">Upcoming plans</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../releases.html#release-description-documents-rdd">Release Description Documents (RDD)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../11.0/rdd.html">Build 11.0 RDD</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Release Description Document (build 11.1)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#validate">validate</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#bug">bug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enhancement">enhancement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#requirement">requirement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#theme">theme</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><span class="caption-text">Developer Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../developer/ci_cd.html">CI / CD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer/github.html">Git and Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer/issue_tracking.html">Issue Tracking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer/seo.html">Search Engine Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer/sw_doc.html">SW Documentation</a></li>
+</ul>
+<p><span class="caption-text">Teams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../teams/pds-swg.html">Software Working Group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../teams/teams.html">PMC and Committers</a></li>
+</ul>
+<p><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../support/contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/contribute.html#request-a-new-tool-service">Request a New Tool / Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/contribute.html#report-a-bug">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/forum.html">OpenPlanetary Forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/help.html">Help</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NASA PDS Software</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../releases.html">Release Build Summaries</a> &raquo;</li>
+        
+      <li>Release Description Document (build 11.1)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/releases/11.1/rdd.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="release-description-document-build-11-1">
+<h1>Release Description Document (build 11.1)<a class="headerlink" href="#release-description-document-build-11-1" title="Permalink to this headline">¶</a></h1>
+<section id="validate">
+<h2>validate<a class="headerlink" href="#validate" title="Permalink to this headline">¶</a></h2>
+<section id="bug">
+<h3>bug<a class="headerlink" href="#bug" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 86%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/5">validate_5</a> Improve file base name check according to Standards Reference</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/6">validate_6</a> Improve pds4.bundle unlabeled files check to handle files without a file suffix</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/11">validate_11</a>  Update allowable field_format values per Standards Reference definition regarding [+-] characters</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/153">validate_153</a> Update validate to throw error when a file has a space in the filename</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/189">validate_189</a> Validate error reading tables &gt; 2GiB</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/240">validate_240</a> Unexpected error for data collection in a sub-directory</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/256">validate_256</a> validate should only do integrity checking on latest version of a collection when referenced by LID</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/257">validate_257</a> Product with incorrect table binary definition pass validation</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/260">validate_260</a> Missing documentation about deprecated flags</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/271">validate_271</a> validate 1.25.0-SNAPSHOT raises an exception when validating a product</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/273">validate_273</a> Bug performing bundle validation with nested directories</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/278">validate_278</a> Registered context products file does not retain older versions of context products</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/281">validate_281</a> Validate fails to report error in   File.file_size</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/291">validate_291</a> When validating a product with a bad schematron definition, bundle validation also fails indicating the associated product does not exist</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/294">validate_294</a> Content validation incorrectly reports error for floating-point values out of specified min/max range</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/297">validate_297</a> Content validation of ASCII_Integer field does not accept value with leading zeroes</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/298">validate_298</a> validate misses double quotes within a delimited table</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/299">validate_299</a> Validate tool does not PASS a bundle with a single-character filename</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/300">validate_300</a> validate -u flag reports an error on Windows</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/301">validate_301</a> unclear error message for field count matching</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/310">validate_310</a> Validate missing collections in bundle after CCB-282 updates</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="enhancement">
+<h3>enhancement<a class="headerlink" href="#enhancement" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 81%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/17">validate_17</a> Validate schematron references and throw fatal error if invalid URI specified</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/24">validate_24</a> Update context check to retrieve and use latest context products from EN Registry</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/51">validate_51</a> Provide the capability to specify multiple locations for pds4.bundle validation</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/81">validate_81</a> Validate and throw error when duplicate LIDs are found in Bundle</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/230">validate_230</a> Update validate per SR requirements for collection inventories</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/238">validate_238</a> validate does not perform full bundle validation when using a specific bundle.xml</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/246">validate_246</a> Add output directory flag to validate-bundle tool</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/249">validate_249</a> Improvements for validating accumulating bundles / collections</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/252">validate_252</a> Implement initial behavioral testing framework with cucumber</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/254">validate_254</a> validate does not perform expediently when doing bundle-level validation against large bundles</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/264">validate_264</a> Update installation documentation to include 64-bit Java as system requirement</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/290">validate_290</a> Migrate subset of existing regression tests to cucumber behavioral testing</p></td>
+<td><p>unk</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="requirement">
+<h3>requirement<a class="headerlink" href="#requirement" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 83%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/188">validate_188</a> As a user, I want to validate a bundle that uses multiple versions of the Information Model / Discipline LDDs</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/210">validate_210</a> As a user, I want validate to raise a WARNING when differing versions of IM are used within a bundle</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/292">validate_292</a> CCB-264: Make the Line Feed (LF) character an allowed record delimiter</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/322">validate_322</a> Update installation documentation to require Java 1.9+</p></td>
+<td><p>unk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/323">validate_323</a> Upgrade to Java 9+</p></td>
+<td><p>unk</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="theme">
+<h3>theme<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 80%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/250">validate_250</a> Improvements to meet updated Standards Reference since initial requirements implementation</p></td>
+<td><p>unk</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../developer/ci_cd.html" class="btn btn-neutral float-right" title="CI / CD" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../11.0/rdd.html" class="btn btn-neutral float-left" title="Build 11.0 RDD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 California Institute of Technology
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
