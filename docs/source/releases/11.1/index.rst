@@ -21,7 +21,7 @@ Software Summary (build 11.1)
 +---------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+---------------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
 |pds-registry-mgr-elastic   |v4.1.0    |2021-04-17     |Tool for managing the Elastic Search back-end Registry Service for tracking, searching, auditing, locating, and maintaining artifacts within the Planetary Data System. See new PDS Registry App for more details (https://github.com/NASA-PDS/pds-registry-app)   ||NASA-PDS/pds-registry-mgr-elastic_manual|   ||NASA-PDS/pds-registry-mgr-elastic_changelog|   ||NASA-PDS/pds-registry-mgr-elastic_requirements|   ||NASA-PDS/pds-registry-mgr-elastic_download|   ||NASA-PDS/pds-registry-mgr-elastic_license|   ||NASA-PDS/pds-registry-mgr-elastic_feedback|   |
 +---------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+---------------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
-|registry-api-service       |None      |N/A            |Tool for managing the Elastic Search back-end Registry Service for tracking, searching, auditing, locating, and maintaining artifacts within the Planetary Data System. See new PDS Registry App for more details (https://github.com/NASA-PDS/pds-registry-app)   ||NASA-PDS/pds-registry-mgr-elastic_manual|   ||NASA-PDS/pds-registry-mgr-elastic_changelog|   |                                                   ||NASA-PDS/pds-registry-mgr-elastic_download|   ||NASA-PDS/pds-registry-mgr-elastic_license|   ||NASA-PDS/pds-registry-mgr-elastic_feedback|   |
+|registry-api-service       |v0.1.0    |2021-04-07     |PDS Registry API service. Complies with PDS API specification                                                                                                                                                                                                      ||NASA-PDS/registry-api-service_manual|       ||NASA-PDS/registry-api-service_changelog|       |                                                   ||NASA-PDS/registry-api-service_download|       ||NASA-PDS/registry-api-service_license|       ||NASA-PDS/registry-api-service_feedback|       |
 +---------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+---------------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
 |transform                  |v1.11.1   |2019-12-13     |Transforms PDS3 and PDS4 product labels and data into various formats.                                                                                                                                                                                             ||NASA-PDS/transform_manual|                  |                                                |                                                   ||NASA-PDS/transform_download|                  ||NASA-PDS/transform_license|                  ||NASA-PDS/transform_feedback|                  |
 +---------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+---------------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
@@ -126,18 +126,18 @@ Software Summary (build 11.1)
    :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-mgr-elastic/master/LICENSE.txt
 .. |NASA-PDS/pds-registry-mgr-elastic_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-registry-mgr-elastic/issues/new/choose
-.. |NASA-PDS/pds-registry-mgr-elastic_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
-   :target: https://NASA-PDS.github.io/pds-registry-mgr-elastic
-.. |NASA-PDS/pds-registry-mgr-elastic_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://www.gnupg.org/gph/en/manual/r1943.html
-.. |NASA-PDS/pds-registry-mgr-elastic_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
+.. |NASA-PDS/registry-api-service_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
+   :target: https://NASA-PDS.github.io/registry-api-service
+.. |NASA-PDS/registry-api-service_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
+   :target: https://github.com/NASA-PDS/registry-api-service/blob/master/CHANGELOG.md#v010-2021-04-07
+.. |NASA-PDS/registry-api-service_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
-.. |NASA-PDS/pds-registry-mgr-elastic_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
-   :target: https://github.com/NASA-PDS/pds-registry-mgr-elastic/releases/tag/None
-.. |NASA-PDS/pds-registry-mgr-elastic_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-mgr-elastic/master/LICENSE.txt
-.. |NASA-PDS/pds-registry-mgr-elastic_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
-   :target: https://github.com/NASA-PDS/pds-registry-mgr-elastic/issues/new/choose
+.. |NASA-PDS/registry-api-service_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
+   :target: https://github.com/NASA-PDS/registry-api-service/releases/tag/v0.1.0
+.. |NASA-PDS/registry-api-service_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
+   :target: https://raw.githubusercontent.com/NASA-PDS/registry-api-service/master/LICENSE.txt
+.. |NASA-PDS/registry-api-service_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
+   :target: https://github.com/NASA-PDS/registry-api-service/issues/new/choose
 .. |NASA-PDS/transform_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/transform/1.11.1
 .. |NASA-PDS/transform_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
