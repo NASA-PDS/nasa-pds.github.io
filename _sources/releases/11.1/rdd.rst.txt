@@ -1,20 +1,8 @@
 ===========================================================
 Release Description Document (build 11.1), software changes
 ===========================================================
-
 harvest
 -------
-bug
-~~~
-
-+------------------------------------------------------------------------------+--------------------------+
-|Issue                                                                         |Priority / Bug Severity   |
-+==============================================================================+==========================+
-|harvest_34_ MD5 digest encoding is in Base64 instead of Hex                   |s.medium                  |
-+------------------------------------------------------------------------------+--------------------------+
-|harvest_35_ File system metadata not sufficiently captured per requirements   |s.medium                  |
-+------------------------------------------------------------------------------+--------------------------+
-
 enhancement
 ~~~~~~~~~~~
 
@@ -46,15 +34,6 @@ bug
 |mi-label_10_ Windows version will not run because of error in generate.bat   |s.high                    |
 +-----------------------------------------------------------------------------+--------------------------+
 
-enhancement
-~~~~~~~~~~~
-
-+--------------------------------------------------------------------------------+--------------------------+
-|Issue                                                                           |Priority / Bug Severity   |
-+================================================================================+==========================+
-|mi-label_15_ Refactor itemNode to consistently return objects to enable units   |p.could-have              |
-+--------------------------------------------------------------------------------+--------------------------+
-
 pds-api
 -------
 enhancement
@@ -64,8 +43,6 @@ enhancement
 |Issue                                                                                                              |Priority / Bug Severity   |
 +===================================================================================================================+==========================+
 |pds-api_12_ Initial Query Syntax Lexer Implementation                                                              |unknown                   |
-+-------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-api_14_ Define initial set of intra-discipline (product-level) search scope                                    |unknown                   |
 +-------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-api_17_ Define initial structure for response format conventions and parameter definition                      |unknown                   |
 +-------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -80,8 +57,6 @@ enhancement
 |pds-api_43_ Implement content negotiation                                                                          |unknown                   |
 +-------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-api_47_ develop a jupyter notebook demo where a user can browse PDS archive from bundle to product data file   |unknown                   |
-+-------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-api_49_ initiate a proposal for the API WG and ENG team                                                        |unknown                   |
 +-------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-api_52_ Get investigation area/targets/instruments from external ids                                           |unknown                   |
 +-------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -140,8 +115,6 @@ enhancement
 +--------------------------------------------------------------------------+--------------------------+
 |Issue                                                                     |Priority / Bug Severity   |
 +==========================================================================+==========================+
-|pds-deep-archive_80_ NSSDCA Delivery Onboarding                           |unknown                   |
-+--------------------------------------------------------------------------+--------------------------+
 |pds-deep-archive_93_ add year to directory path in URL                    |unknown                   |
 +--------------------------------------------------------------------------+--------------------------+
 |pds-deep-archive_95_ Bash required for default installation description   |unknown                   |
@@ -164,8 +137,6 @@ bug
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |Issue                                                                                                                       |Priority / Bug Severity   |
 +============================================================================================================================+==========================+
-|pds-doi-service_115_ configuration files are not well deployed                                                              |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-service_119_ Raise a specific exception when the OSTI server is not reachable                                       |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-service_121_ GET /dois must support empty vid field                                                                 |s.high                    |
@@ -174,11 +145,7 @@ bug
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-service_126_ get /dois/{lidvid}                                                                                     |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-doi-service_127_ update_date management                                                                                 |s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-service_128_ command pds-doi-cmd list returns update date in timestamp instead of iso8601                           |s.high                    |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-doi-service_129_ 'pds-doi-cmd draft' chokes on a legit Product_Document                                                 |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-service_138_ xlsx file extension for reserve not supported                                                          |s.high                    |
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -192,8 +159,6 @@ bug
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-service_159_ The url /dois/{lidvid} should still return XML in the record attribute                                 |s.critical                |
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-doi-service_168_ site_url error when we submit on OSTI test server                                                      |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 
 enhancement
 ~~~~~~~~~~~
@@ -203,8 +168,6 @@ enhancement
 +=======================================================================================================================+==========================+
 |pds-doi-service_52_ API Implementation for DOI Service                                                                 |p.must-have               |
 +-----------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-doi-service_56_ validate the submitted OSTI record against a schema                                                |unknown                   |
-+-----------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-service_91_ Develop User Access / Management Strategy                                                          |unknown                   |
 +-----------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-service_114_ Draft action: read the doi from the pds4 label                                                    |p.must-have               |
@@ -212,8 +175,6 @@ enhancement
 |pds-doi-service_116_ Extraction of the OSTI XML in /dois?... GET requests                                              |p.must-have               |
 +-----------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-service_125_ Update DOI UI and Service with new workflow for operational deployment                            |unknown                   |
-+-----------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-doi-service_132_ Update status management in code with Enumeration                                                 |p.should-have             |
 +-----------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-service_134_ Update draft action with new option --lidvid to change from review to draft the status of a DOI   |unknown                   |
 +-----------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -253,8 +214,6 @@ enhancement
 +=============================================================================================+==========================+
 |pds-doi-ui_1_ Reserve DOI UI forms                                                           |unknown                   |
 +---------------------------------------------------------------------------------------------+--------------------------+
-|pds-doi-ui_5_ Connect UI (reserve) to API                                                    |unknown                   |
-+---------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-ui_9_ Return API error message in UI                                                 |unknown                   |
 +---------------------------------------------------------------------------------------------+--------------------------+
 |pds-doi-ui_10_ Provide a mean to come back to release action when on reserve screen          |p.must-have               |
@@ -282,10 +241,6 @@ bug
 +-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |Issue                                                                                                                        |Priority / Bug Severity   |
 +=============================================================================================================================+==========================+
-|pds-registry-app_104_ Broken link in pds-registry-app docs                                                                   |unknown                   |
-+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_106_ Issues with Registry App Documentation                                                                 |unknown                   |
-+-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-registry-app_108_ harvest and registry manager in pds-registry-app-0.2.2-bin.zip are missing batch scripts for windows   |s.medium                  |
 +-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-registry-app_109_ Test data in pds-registry-app-0.2.2-bin.zip contains invalid PDS4 labels                               |s.high                    |
@@ -300,41 +255,25 @@ bug
 enhancement
 ~~~~~~~~~~~
 
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|Issue                                                                                                                       |Priority / Bug Severity   |
-+============================================================================================================================+==========================+
-|pds-registry-app_13_ Beta test operational deployment                                                                       |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_20_ Update Schema Generator for handling special cases where ancestor classes are needed                   |p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_27_ Manage PDS4 product relationships                                                                      |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_92_ Update Registry API per PDS API v0-beta                                                                |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_102_ Add the API to the pds-registry-app package, with documentation                                       |p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_103_ update registry-manager load-data to handle additional use cases                                      |p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_107_ Prep Registry Demo for Discipline Nodes                                                               |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_113_ Have pds4 properties syntax match the syntax decided for the PDS API                                  |p.should-have             |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_114_ Manage product relationships v2 - collection inventories                                              |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_120_ Develop kibana configuration for EN registry UI                                                       |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_123_ Update registry-mgr documentation as stated in #86                                                    |p.could-have              |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_125_ analyze need, propose architecture                                                                    |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_127_ load data for kibana test                                                                             |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_129_ Create a registry docker for developer testing                                                        |p.could-have              |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_131_ Develop ElasticSearch client library to be utilized by harvest / registry-mgr                         |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-app_133_ Verify pds-registry-app doc is up to date, have registry configuration in the harvest conf examples   |unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------+--------------------------+
++------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                       |Priority / Bug Severity   |
++============================================================================================================+==========================+
+|pds-registry-app_20_ Update Schema Generator for handling special cases where ancestor classes are needed   |p.must-have               |
++------------------------------------------------------------------------------------------------------------+--------------------------+
+|pds-registry-app_27_ Manage PDS4 product relationships                                                      |unknown                   |
++------------------------------------------------------------------------------------------------------------+--------------------------+
+|pds-registry-app_102_ Add the API to the pds-registry-app package, with documentation                       |p.must-have               |
++------------------------------------------------------------------------------------------------------------+--------------------------+
+|pds-registry-app_103_ update registry-manager load-data to handle additional use cases                      |p.must-have               |
++------------------------------------------------------------------------------------------------------------+--------------------------+
+|pds-registry-app_113_ Have pds4 properties syntax match the syntax decided for the PDS API                  |p.should-have             |
++------------------------------------------------------------------------------------------------------------+--------------------------+
+|pds-registry-app_123_ Update registry-mgr documentation as stated in #86                                    |p.could-have              |
++------------------------------------------------------------------------------------------------------------+--------------------------+
+|pds-registry-app_129_ Create a registry docker for developer testing                                        |p.could-have              |
++------------------------------------------------------------------------------------------------------------+--------------------------+
+|pds-registry-app_131_ Develop ElasticSearch client library to be utilized by harvest / registry-mgr         |unknown                   |
++------------------------------------------------------------------------------------------------------------+--------------------------+
 
 requirement
 ~~~~~~~~~~~
@@ -358,30 +297,6 @@ requirement
 +---------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |pds-registry-app_147_ As a node operator,  I want to be able to tag ingested data with the node it is ingested by.               |p.must-have               |
 +---------------------------------------------------------------------------------------------------------------------------------+--------------------------+
-
-pds-registry-common
--------------------
-enhancement
-~~~~~~~~~~~
-
-+-------------------------------------------------------------------------------------+--------------------------+
-|Issue                                                                                |Priority / Bug Severity   |
-+=====================================================================================+==========================+
-|pds-registry-common_1_ verify artifact is pushed to Maven central and setup the ci   |unknown                   |
-+-------------------------------------------------------------------------------------+--------------------------+
-
-pds-registry-mgr-elastic
-------------------------
-bug
-~~~
-
-+--------------------------------------------------------------------------------------------+--------------------------+
-|Issue                                                                                       |Priority / Bug Severity   |
-+============================================================================================+==========================+
-|pds-registry-mgr-elastic_12_ registry-mgr  delete-data options are not correct in -help     |unknown                   |
-+--------------------------------------------------------------------------------------------+--------------------------+
-|pds-registry-mgr-elastic_14_ Missing Science_Facets fields definitions in registry schema   |unknown                   |
-+--------------------------------------------------------------------------------------------+--------------------------+
 
 pds-wds-web
 -----------
@@ -707,16 +622,11 @@ theme
 |validate_250_ Improvements to meet updated Standards Reference since initial requirements implementation   |unknown                   |
 +-----------------------------------------------------------------------------------------------------------+--------------------------+
 
-.. _github-actions-base_1: https://github.com/NASA-PDS/github-actions-base/issues/1
-.. _harvest_34: https://github.com/NASA-PDS/harvest/issues/34
-.. _harvest_35: https://github.com/NASA-PDS/harvest/issues/35
 .. _harvest_41: https://github.com/NASA-PDS/harvest/issues/41
 .. _harvest_37: https://github.com/NASA-PDS/harvest/issues/37
 .. _harvest_45: https://github.com/NASA-PDS/harvest/issues/45
 .. _mi-label_10: https://github.com/NASA-PDS/mi-label/issues/10
-.. _mi-label_15: https://github.com/NASA-PDS/mi-label/issues/15
 .. _pds-api_12: https://github.com/NASA-PDS/pds-api/issues/12
-.. _pds-api_14: https://github.com/NASA-PDS/pds-api/issues/14
 .. _pds-api_17: https://github.com/NASA-PDS/pds-api/issues/17
 .. _pds-api_34: https://github.com/NASA-PDS/pds-api/issues/34
 .. _pds-api_35: https://github.com/NASA-PDS/pds-api/issues/35
@@ -724,7 +634,6 @@ theme
 .. _pds-api_41: https://github.com/NASA-PDS/pds-api/issues/41
 .. _pds-api_43: https://github.com/NASA-PDS/pds-api/issues/43
 .. _pds-api_47: https://github.com/NASA-PDS/pds-api/issues/47
-.. _pds-api_49: https://github.com/NASA-PDS/pds-api/issues/49
 .. _pds-api_52: https://github.com/NASA-PDS/pds-api/issues/52
 .. _pds-api_64: https://github.com/NASA-PDS/pds-api/issues/64
 .. _pds-api-client_2: https://github.com/NASA-PDS/pds-api-client/issues/2
@@ -733,32 +642,25 @@ theme
 .. _pds-deep-archive_90: https://github.com/NASA-PDS/pds-deep-archive/issues/90
 .. _pds-deep-archive_92: https://github.com/NASA-PDS/pds-deep-archive/issues/92
 .. _pds-deep-archive_99: https://github.com/NASA-PDS/pds-deep-archive/issues/99
-.. _pds-deep-archive_80: https://github.com/NASA-PDS/pds-deep-archive/issues/80
 .. _pds-deep-archive_93: https://github.com/NASA-PDS/pds-deep-archive/issues/93
 .. _pds-deep-archive_95: https://github.com/NASA-PDS/pds-deep-archive/issues/95
 .. _pds-deep-archive_102: https://github.com/NASA-PDS/pds-deep-archive/issues/102
-.. _pds-doi-service_115: https://github.com/NASA-PDS/pds-doi-service/issues/115
 .. _pds-doi-service_119: https://github.com/NASA-PDS/pds-doi-service/issues/119
 .. _pds-doi-service_121: https://github.com/NASA-PDS/pds-doi-service/issues/121
 .. _pds-doi-service_122: https://github.com/NASA-PDS/pds-doi-service/issues/122
 .. _pds-doi-service_126: https://github.com/NASA-PDS/pds-doi-service/issues/126
-.. _pds-doi-service_127: https://github.com/NASA-PDS/pds-doi-service/issues/127
 .. _pds-doi-service_128: https://github.com/NASA-PDS/pds-doi-service/issues/128
-.. _pds-doi-service_129: https://github.com/NASA-PDS/pds-doi-service/issues/129
 .. _pds-doi-service_138: https://github.com/NASA-PDS/pds-doi-service/issues/138
 .. _pds-doi-service_141: https://github.com/NASA-PDS/pds-doi-service/issues/141
 .. _pds-doi-service_143: https://github.com/NASA-PDS/pds-doi-service/issues/143
 .. _pds-doi-service_150: https://github.com/NASA-PDS/pds-doi-service/issues/150
 .. _pds-doi-service_154: https://github.com/NASA-PDS/pds-doi-service/issues/154
 .. _pds-doi-service_159: https://github.com/NASA-PDS/pds-doi-service/issues/159
-.. _pds-doi-service_168: https://github.com/NASA-PDS/pds-doi-service/issues/168
 .. _pds-doi-service_52: https://github.com/NASA-PDS/pds-doi-service/issues/52
-.. _pds-doi-service_56: https://github.com/NASA-PDS/pds-doi-service/issues/56
 .. _pds-doi-service_91: https://github.com/NASA-PDS/pds-doi-service/issues/91
 .. _pds-doi-service_114: https://github.com/NASA-PDS/pds-doi-service/issues/114
 .. _pds-doi-service_116: https://github.com/NASA-PDS/pds-doi-service/issues/116
 .. _pds-doi-service_125: https://github.com/NASA-PDS/pds-doi-service/issues/125
-.. _pds-doi-service_132: https://github.com/NASA-PDS/pds-doi-service/issues/132
 .. _pds-doi-service_134: https://github.com/NASA-PDS/pds-doi-service/issues/134
 .. _pds-doi-service_135: https://github.com/NASA-PDS/pds-doi-service/issues/135
 .. _pds-doi-service_140: https://github.com/NASA-PDS/pds-doi-service/issues/140
@@ -770,7 +672,6 @@ theme
 .. _pds-doi-service_167: https://github.com/NASA-PDS/pds-doi-service/issues/167
 .. _pds-doi-service_177: https://github.com/NASA-PDS/pds-doi-service/issues/177
 .. _pds-doi-ui_1: https://github.com/NASA-PDS/pds-doi-ui/issues/1
-.. _pds-doi-ui_5: https://github.com/NASA-PDS/pds-doi-ui/issues/5
 .. _pds-doi-ui_9: https://github.com/NASA-PDS/pds-doi-ui/issues/9
 .. _pds-doi-ui_10: https://github.com/NASA-PDS/pds-doi-ui/issues/10
 .. _pds-doi-ui_14: https://github.com/NASA-PDS/pds-doi-ui/issues/14
@@ -780,29 +681,19 @@ theme
 .. _pds-doi-ui_28: https://github.com/NASA-PDS/pds-doi-ui/issues/28
 .. _pds-doi-ui_30: https://github.com/NASA-PDS/pds-doi-ui/issues/30
 .. _pds-doi-ui_31: https://github.com/NASA-PDS/pds-doi-ui/issues/31
-.. _pds-registry-app_104: https://github.com/NASA-PDS/pds-registry-app/issues/104
-.. _pds-registry-app_106: https://github.com/NASA-PDS/pds-registry-app/issues/106
 .. _pds-registry-app_108: https://github.com/NASA-PDS/pds-registry-app/issues/108
 .. _pds-registry-app_109: https://github.com/NASA-PDS/pds-registry-app/issues/109
 .. _pds-registry-app_110: https://github.com/NASA-PDS/pds-registry-app/issues/110
 .. _pds-registry-app_112: https://github.com/NASA-PDS/pds-registry-app/issues/112
 .. _pds-registry-app_135: https://github.com/NASA-PDS/pds-registry-app/issues/135
-.. _pds-registry-app_13: https://github.com/NASA-PDS/pds-registry-app/issues/13
 .. _pds-registry-app_20: https://github.com/NASA-PDS/pds-registry-app/issues/20
 .. _pds-registry-app_27: https://github.com/NASA-PDS/pds-registry-app/issues/27
-.. _pds-registry-app_92: https://github.com/NASA-PDS/pds-registry-app/issues/92
 .. _pds-registry-app_102: https://github.com/NASA-PDS/pds-registry-app/issues/102
 .. _pds-registry-app_103: https://github.com/NASA-PDS/pds-registry-app/issues/103
-.. _pds-registry-app_107: https://github.com/NASA-PDS/pds-registry-app/issues/107
 .. _pds-registry-app_113: https://github.com/NASA-PDS/pds-registry-app/issues/113
-.. _pds-registry-app_114: https://github.com/NASA-PDS/pds-registry-app/issues/114
-.. _pds-registry-app_120: https://github.com/NASA-PDS/pds-registry-app/issues/120
 .. _pds-registry-app_123: https://github.com/NASA-PDS/pds-registry-app/issues/123
-.. _pds-registry-app_125: https://github.com/NASA-PDS/pds-registry-app/issues/125
-.. _pds-registry-app_127: https://github.com/NASA-PDS/pds-registry-app/issues/127
 .. _pds-registry-app_129: https://github.com/NASA-PDS/pds-registry-app/issues/129
 .. _pds-registry-app_131: https://github.com/NASA-PDS/pds-registry-app/issues/131
-.. _pds-registry-app_133: https://github.com/NASA-PDS/pds-registry-app/issues/133
 .. _pds-registry-app_67: https://github.com/NASA-PDS/pds-registry-app/issues/67
 .. _pds-registry-app_130: https://github.com/NASA-PDS/pds-registry-app/issues/130
 .. _pds-registry-app_141: https://github.com/NASA-PDS/pds-registry-app/issues/141
@@ -811,9 +702,6 @@ theme
 .. _pds-registry-app_144: https://github.com/NASA-PDS/pds-registry-app/issues/144
 .. _pds-registry-app_145: https://github.com/NASA-PDS/pds-registry-app/issues/145
 .. _pds-registry-app_147: https://github.com/NASA-PDS/pds-registry-app/issues/147
-.. _pds-registry-common_1: https://github.com/NASA-PDS/pds-registry-common/issues/1
-.. _pds-registry-mgr-elastic_12: https://github.com/NASA-PDS/pds-registry-mgr-elastic/issues/12
-.. _pds-registry-mgr-elastic_14: https://github.com/NASA-PDS/pds-registry-mgr-elastic/issues/14
 .. _pds-wds-web_9: https://github.com/NASA-PDS/pds-wds-web/issues/9
 .. _pds-wds-web_10: https://github.com/NASA-PDS/pds-wds-web/issues/10
 .. _pds-wds-web_15: https://github.com/NASA-PDS/pds-wds-web/issues/15
