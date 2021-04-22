@@ -1,6 +1,6 @@
-==================================
-Software Summary (build 11.1) BETA
-==================================
+=============================
+Software Summary (build 11.1)
+=============================
 
 +---------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+---------------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
 |tool                       |version   |last updated   |description                                                                                                                                                                                                                                                        |l |manual|                                   |l |changelog|                                   |l |requirements|                                   |l |download|                                   |l |license|                                   |l |feedback|                                   |
@@ -81,7 +81,7 @@ Software Summary (build 11.1) BETA
 .. |NASA-PDS/validate_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/validate
 .. |NASA-PDS/validate_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/validate/blob/master/CHANGELOG.md#v202-2021-04-07
+   :target: https://github.com/NASA-PDS/validate/blob/master/CHANGELOG.md#v202-2021-04-08
 .. |NASA-PDS/validate_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/validate_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
