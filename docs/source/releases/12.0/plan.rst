@@ -20,7 +20,40 @@ A more detailed breakdown of these tasks by date and priority can be found in ou
 Key Dates
 +++++++++
 
-.. list-table:: Key Dates
+.. list-table:: Key Dates for Discipline Nodes
+    :widths: 20 20 20 40
+    :header-rows: 1
+
+    * - Date
+      - Name
+      - Responsible Party
+      - Description
+    * - 08/24/2021
+      - SCR Freeze Date
+      - DDWG
+      - Freeze date for identifying SCRs to be implemented in this release.
+    * - 08/24/2021
+      - Standards Documents Updates Due
+      - Document Authoring Team
+      - Updates to PDS4 standards documents due to EN for review.
+    * - 10/15/2021 - 11/12/2021
+      - Beta Testing Period
+      - DNs, IPDA
+      - Changes to PDS4 IM and system components available for beta testing.
+    * - 10/15/2021 - 11/12/2021
+      - dLDD Integration and Test
+      - dLDD Stewards
+      - Auto-generated dLDDs should be reviews by dLDD Stewards, and final updates to dLDDs should be completed during this time.
+    * - 11/12/2021
+      - Standards Documents Review Due
+      - Document Review Team
+      - Review updates to PDS4 standards documents.
+    * - 12/03/2021
+      - System Release
+      - EN
+      - PDS4 system is operationally deployed and website is updated accordingly.
+
+.. list-table:: Key Dates for Engineering Node
     :widths: 15 10 30
     :header-rows: 1
 
@@ -49,7 +82,6 @@ Planned PDS4 Information Model Changes
 This section details the planned changes to the PDS4 Information Model for this build. These changes are deliverables by the PDS Data Design Working Group (DDWG) to the Engineering Node for implementation.
 
 * `validate#310 <https://github.com/NASA-PDS/validate/issues/310>`_ **Validate missing collections in bundle after CCB-282 updates**
-* `pds4-information-model#339 <https://github.com/NASA-PDS/pds4-information-model/issues/339>`_ **CCB-328 : Inconsistency in <title> type definition**
 
 
 
