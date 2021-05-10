@@ -20,6 +20,7 @@ Upcoming plans
     :maxdepth: 1
 
     /releases/11.1/plan
+    /releases/12.0/plan
 
 
 Release Description Documents (RDD)

@@ -70,3 +70,8 @@ html_context = {
         '_static/theme_overrides.css',  # override wide tables in RTD theme
         ],
       }
+
+html_theme_options = {
+    'display_version': True,
+    'style_external_links': True,
+}
