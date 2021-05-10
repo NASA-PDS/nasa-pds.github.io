@@ -3,12 +3,11 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
   
-  <title>Software Working Group &mdash; NASA PDS Software 11.0 documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Software Working Group &mdash; NASA PDS Software 11.1 documentation</title>
   
 
   
@@ -18,7 +17,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -28,10 +30,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -53,7 +55,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> NASA PDS Software
+            <a href="../index.html" class="icon icon-home"> NASA PDS Software
           
 
           
@@ -66,7 +68,7 @@
             
             
               <div class="version">
-                11.0
+                11.1
               </div>
             
           
@@ -91,13 +93,13 @@
               
             
             
-              <p><span class="caption-text">System Releases</span></p>
+              <p class="caption"><span class="caption-text">System Releases</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../releases/releases.html">Release Build Summaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../releases/releases.html#upcoming-plans">Upcoming plans</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../releases/releases.html#release-description-documents-rdd">Release Description Documents (RDD)</a></li>
 </ul>
-<p><span class="caption-text">Developer Guides</span></p>
+<p class="caption"><span class="caption-text">Developer Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../developer/ci_cd.html">CI / CD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../developer/github.html">Git and Github</a></li>
@@ -105,7 +107,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../developer/seo.html">Search Engine Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../developer/sw_doc.html">SW Documentation</a></li>
 </ul>
-<p><span class="caption-text">Teams</span></p>
+<p class="caption"><span class="caption-text">Teams</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Software Working Group</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#release-plan-review-process">Release Plan Review Process</a></li>
@@ -113,7 +115,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="teams.html">PMC and Committers</a></li>
 </ul>
-<p><span class="caption-text">Support</span></p>
+<p class="caption"><span class="caption-text">Support</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../support/contact.html">Contact Us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../support/contribute.html">Contribute</a></li>
@@ -161,6 +163,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -172,7 +176,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="../_sources/teams/pds-swg.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -186,7 +190,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="software-working-group">
+  <div class="section" id="software-working-group">
 <h1>Software Working Group<a class="headerlink" href="#software-working-group" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul class="current">
@@ -203,7 +207,7 @@
 * PDS Integrated Task Planning is an effort to develop and maintain a plan of all current and future software development tasks across all the PDS nodes.
 * Software Change Control Board is a semi-formal approach for EN to appropriately re-prioritize and scope new tasks into current and future build cycles based upon Discipline Node input.</p>
 <hr class="docutils" />
-<section id="release-plan-review-process">
+<div class="section" id="release-plan-review-process">
 <h2>Release Plan Review Process<a class="headerlink" href="#release-plan-review-process" title="Permalink to this headline">¶</a></h2>
 <p>Prior to the start of each build, the PDS Engineering Node formulate a Release Plan for review by the PDS SWG. PDS SWG members (&#64;NASA-PDS/pds-swg) are responsible for reviewing the release plan providing comments regarding re-priorization of tasks, missing issues, etc.</p>
 <p>The release plan approval process follows the <a href="#id1"><span class="problematic" id="id2">`Apache Software Foundation Voting Process &lt;https://www.apache.org/foundation/voting.html`_</span></a>, including <a href="#id3"><span class="problematic" id="id4">`expressing votes with +1, 0, -1, and fractions &lt;https://www.apache.org/foundation/voting.html#expressing-votes-1-0-1-and-fractions`_</span></a> and <a href="#id5"><span class="problematic" id="id6">`Lazy Consensus &lt;https://www.apache.org/foundation/voting.html#LazyConsensus`_</span></a>:</p>
@@ -212,45 +216,37 @@
 </div>
 <p>Here is an example <a class="reference external" href="https://nasa-pds.github.io/releases/11.1/plan.html">release plan</a>  and <a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/3">review</a> from Build 11.1.</p>
 <p>Feel free to watch the repository to be notified when a new review is ready, and feel free to comment.</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="teams.html" class="btn btn-neutral float-right" title="PMC and Committers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../developer/sw_doc.html" class="btn btn-neutral float-left" title="SW Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="teams.html" class="btn btn-neutral float-right" title="PMC and Committers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../developer/sw_doc.html" class="btn btn-neutral float-left" title="SW Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2020 California Institute of Technology
+        &#169; Copyright 2020 California Institute of Technology.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
