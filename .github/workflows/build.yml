@@ -11,17 +11,6 @@ on:
      paths:
        - 'docs/source/**'
        - '.github/workflows/*.yml'
-     paths-ignore:
-       - 'developer/**'
-       - 'releases/**'
-       - 'support/**'
-       - 'teams/**'
-       - '.buildinfo'
-       - 'genindex.html'
-       - 'index.html'
-       - 'objects.inv'
-       - 'search.html'
-       - 'searchindex.js'
 
 jobs:
   build: # job 1
