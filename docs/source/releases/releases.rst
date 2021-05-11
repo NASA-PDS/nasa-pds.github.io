@@ -32,6 +32,5 @@ Release Description Documents (RDD)
     :glob:
     :maxdepth: 1
 
-    11.0</releases/11.0/rdd>
     11.1</releases/11.1/rdd>
 
