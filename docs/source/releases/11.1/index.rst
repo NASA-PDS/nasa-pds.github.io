@@ -4,19 +4,19 @@ Software Summary (build 11.1)
 The software provided for the build 11.1 are listed hereafter and
 organized by category:
 
-- `PDS Tools`_
-
-- `Discipline Node Services`_
+- `Discipline Node Tools`_
 
 - `Libraries`_
 
-- `Other Core Services and Libraries`_
+- `Core tools and services`_
 
-PDS Tools
-=========
+- `Other software assets (back-end services or libraries)`_
+
+Discipline Node Tools
+=====================
 
 +-------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
-|tool               |version   |last updated   |description                                                                                                                                              |l |Manual|                           |l |Changelog|                           |l |Requirements|   |l |Download|                           |l |License|                           |l |Feedback|                           |
+|tool               |version   |last updated   |description                                                                                                                                              |l |manual|                           |l |changelog|                           |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
 +===================+==========+===============+=========================================================================================================================================================+=====================================+========================================+===================+=======================================+======================================+=======================================+
 |pds-deep-archive   |v0.4.0    |2021-01-25     |PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators   ||NASA-PDS/pds-deep-archive_manual|   ||NASA-PDS/pds-deep-archive_changelog|   |                   ||NASA-PDS/pds-deep-archive_download|   ||NASA-PDS/pds-deep-archive_license|   ||NASA-PDS/pds-deep-archive_feedback|   |
 +-------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
@@ -31,16 +31,16 @@ Libraries
 =========
 
 +---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
-|tool           |version   |last updated   |description                                                                                                                                                                      |l |Manual|                       |l |Changelog|                       |l |Requirements|   |l |Download|                       |l |License|                       |l |Feedback|                       |
+|tool           |version   |last updated   |description                                                                                                                                                                      |l |manual|                       |l |changelog|                       |l |requirements|   |l |download|                       |l |license|                       |l |feedback|                       |
 +===============+==========+===============+=================================================================================================================================================================================+=================================+====================================+===================+===================================+==================================+===================================+
 |pds4-jparser   |None      |N/A            |Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.   ||NASA-PDS/pds4-jparser_manual|   ||NASA-PDS/pds4-jparser_changelog|   |                   ||NASA-PDS/pds4-jparser_download|   ||NASA-PDS/pds4-jparser_license|   ||NASA-PDS/pds4-jparser_feedback|   |
 +---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
 
-Other Core Services and Libraries
-=================================
+Core tools and services
+=======================
 
 +------------------------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------------------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
-|tool                                |version   |last updated   |description                                                                                                                                          |l |Manual|                                 |l |Changelog|                                 |l |Requirements|                           |l |Download|                                 |l |License|                                 |l |Feedback|                                 |
+|tool                                |version   |last updated   |description                                                                                                                                          |l |manual|                                 |l |changelog|                                 |l |requirements|                           |l |download|                                 |l |license|                                 |l |feedback|                                 |
 +====================================+==========+===============+=====================================================================================================================================================+===========================================+==============================================+===========================================+=============================================+============================================+=============================================+
 |pds-doi-service                     |v1.1.0    |2021-04-13     |Service and tools for generating DOIs for PDS bundles, collections, and data sets                                                                    ||NASA-PDS/pds-doi-service_manual|          ||NASA-PDS/pds-doi-service_changelog|          |                                           ||NASA-PDS/pds-doi-service_download|          ||NASA-PDS/pds-doi-service_license|          ||NASA-PDS/pds-doi-service_feedback|          |
 +------------------------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------------------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
@@ -49,11 +49,11 @@ Other Core Services and Libraries
 |pds4-information-model & ldd-tool   |v12.1.0   |2021-01-11     |The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.                     ||NASA-PDS/pds4-information-model_manual|   ||NASA-PDS/pds4-information-model_changelog|   |                                           ||NASA-PDS/pds4-information-model_download|   ||NASA-PDS/pds4-information-model_license|   ||NASA-PDS/pds4-information-model_feedback|   |
 +------------------------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------------------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 
-Unclassified software assets
-============================
+Other software assets (back-end services or libraries)
+======================================================
 
 +---------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+---------------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
-|tool                       |version   |last updated   |description                                                                                                                                                                                                                                                        |l |Manual|                                   |l |Changelog|                                   |l |Requirements|                                   |l |Download|                                   |l |License|                                   |l |Feedback|                                   |
+|tool                       |version   |last updated   |description                                                                                                                                                                                                                                                        |l |manual|                                   |l |changelog|                                   |l |requirements|                                   |l |download|                                   |l |license|                                   |l |feedback|                                   |
 +===========================+==========+===============+===================================================================================================================================================================================================================================================================+=============================================+================================================+===================================================+===============================================+==============================================+===============================================+
 |pds-doi-ui                 |None      |N/A            |web UI for pds-doi-service                                                                                                                                                                                                                                         ||NASA-PDS/pds-doi-ui_manual|                 ||NASA-PDS/pds-doi-ui_changelog|                 |                                                   ||NASA-PDS/pds-doi-ui_download|                 ||NASA-PDS/pds-doi-ui_license|                 ||NASA-PDS/pds-doi-ui_feedback|                 |
 +---------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+---------------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
@@ -208,15 +208,15 @@ Unclassified software assets
    :target: https://raw.githubusercontent.com/NASA-PDS/mi-label/master/LICENSE.txt
 .. |NASA-PDS/mi-label_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/mi-label/issues/new/choose
-.. |Manual| image:: https://nasa-pds.github.io/pdsen-corral/images/Manual_text.png
-   :alt: Manual
-.. |Changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/Changelog_text.png
-   :alt: Changelog
-.. |Requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/Requirements_text.png
-   :alt: Requirements
-.. |Download| image:: https://nasa-pds.github.io/pdsen-corral/images/Download_text.png
-   :alt: Download
-.. |License| image:: https://nasa-pds.github.io/pdsen-corral/images/License_text.png
-   :alt: License
-.. |Feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/Feedback_text.png
-   :alt: Feedback
+.. |manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual_text.png
+   :alt: manual
+.. |changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog_text.png
+   :alt: changelog
+.. |requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements_text.png
+   :alt: requirements
+.. |download| image:: https://nasa-pds.github.io/pdsen-corral/images/download_text.png
+   :alt: download
+.. |license| image:: https://nasa-pds.github.io/pdsen-corral/images/license_text.png
+   :alt: license
+.. |feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback_text.png
+   :alt: feedback
