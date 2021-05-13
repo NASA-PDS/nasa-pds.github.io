@@ -73,5 +73,4 @@ html_context = {
 
 html_theme_options = {
     'display_version': True,
-    'style_external_links': True,
 }
