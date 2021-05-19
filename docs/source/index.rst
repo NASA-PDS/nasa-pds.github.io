@@ -21,17 +21,9 @@ Sitemap
 
 ..  toctree::
     :glob:
-    :caption: Developer Guides
+    :caption: Contribute
 
-    /developer/*
-
-
-..    /developer/pds_dev_best_practices
-    /developer/github
-    /developer/issue_tracking
-    /developer/ci_cd
-    /developer/sw_doc
-    /developer/seo
+    /contribute/*
 
 ..  toctree::
     :glob:
