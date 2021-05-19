@@ -6,7 +6,7 @@ The following page will outline some best practices for PDS Software Documentati
 ..  toctree::
     :maxdepth: 3
 
-    /contributing/developer
+    /contribute/developer
 
 --------------
 
