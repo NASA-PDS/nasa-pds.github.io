@@ -4,25 +4,25 @@ Software Summary (build 12.0-SNAPSHOT)
 The software provided for the build 12.0-SNAPSHOT are listed hereafter
 and organized by category:
 
-- `PDS Tools`_
-
-- `Discipline Node Services`_
+- `Discipline Node Tools`_
 
 - `Libraries`_
 
-- `Other Core Services and Libraries`_
+- `Core tools and services`_
 
-PDS Tools
-=========
+- `Other software assets (back-end services or libraries)`_
+
+Discipline Node Tools
+=====================
 
 +------------------------------------+-------------------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------------------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |tool                                |version            |last updated   |description                                                                                                                                              |l |manual|                                 |l |changelog|                                 |l |requirements|                           |l |download|                                 |l |license|                                 |l |feedback|                                 |
 +====================================+===================+===============+=========================================================================================================================================================+===========================================+==============================================+===========================================+=============================================+============================================+=============================================+
 |pds-deep-archive                    |v1.1.0-dev         |2021-05-03     |PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators   ||NASA-PDS/pds-deep-archive_manual|         ||NASA-PDS/pds-deep-archive_changelog|         ||NASA-PDS/pds-deep-archive_requirements|   ||NASA-PDS/pds-deep-archive_download|         ||NASA-PDS/pds-deep-archive_license|         ||NASA-PDS/pds-deep-archive_feedback|         |
 +------------------------------------+-------------------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------------------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
-|validate                            |None               |N/A            |Validates PDS4 product labels, data and PDS3 Volumes                                                                                                     ||NASA-PDS/validate_manual|                 ||NASA-PDS/validate_changelog|                 |                                           ||NASA-PDS/validate_download|                 ||NASA-PDS/validate_license|                 ||NASA-PDS/validate_feedback|                 |
+|validate                            |v2.1.0-SNAPSHOT    |2021-05-28     |Validates PDS4 product labels, data and PDS3 Volumes                                                                                                     ||NASA-PDS/validate_manual|                 ||NASA-PDS/validate_changelog|                 |                                           ||NASA-PDS/validate_download|                 ||NASA-PDS/validate_license|                 ||NASA-PDS/validate_feedback|                 |
 +------------------------------------+-------------------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------------------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
-|pds4-information-model & ldd-tool   |v13.1.0-SNAPSHOT   |2021-05-04     |The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.                         ||NASA-PDS/pds4-information-model_manual|   ||NASA-PDS/pds4-information-model_changelog|   |                                           ||NASA-PDS/pds4-information-model_download|   ||NASA-PDS/pds4-information-model_license|   ||NASA-PDS/pds4-information-model_feedback|   |
+|pds4-information-model & ldd-tool   |v13.1.0-SNAPSHOT   |2021-05-20     |The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.                         ||NASA-PDS/pds4-information-model_manual|   ||NASA-PDS/pds4-information-model_changelog|   |                                           ||NASA-PDS/pds4-information-model_download|   ||NASA-PDS/pds4-information-model_license|   ||NASA-PDS/pds4-information-model_feedback|   |
 +------------------------------------+-------------------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------------------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |transform                           |None               |N/A            |Transforms PDS3 and PDS4 product labels and data into various formats.                                                                                   ||NASA-PDS/transform_manual|                ||NASA-PDS/transform_changelog|                |                                           ||NASA-PDS/transform_download|                ||NASA-PDS/transform_license|                ||NASA-PDS/transform_feedback|                |
 +------------------------------------+-------------------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------------------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
@@ -31,26 +31,17 @@ PDS Tools
 |PLAID                               |None               |N/A            |APPS PDS Label Assistant for Interactive Design (PLAID). See an overview of the software on YouTube. https://www.youtube.com/watch?v=WCo8erW_rL8         ||NASA-PDS/PLAID_manual|                    ||NASA-PDS/PLAID_changelog|                    |                                           ||NASA-PDS/PLAID_download|                    ||NASA-PDS/PLAID_license|                    ||NASA-PDS/PLAID_feedback|                    |
 +------------------------------------+-------------------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------------------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 
-Discipline Node Services
-========================
-
-+-------------------+------------------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
-|tool               |version           |last updated   |description                                                                                                                                          |l |manual|                           |l |changelog|                           |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
-+===================+==================+===============+=====================================================================================================================================================+=====================================+========================================+===================+=======================================+======================================+=======================================+
-|pds-registry-app   |v0.4.0-SNAPSHOT   |2021-05-12     |Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system.   ||NASA-PDS/pds-registry-app_manual|   ||NASA-PDS/pds-registry-app_changelog|   |                   ||NASA-PDS/pds-registry-app_download|   ||NASA-PDS/pds-registry-app_license|   ||NASA-PDS/pds-registry-app_feedback|   |
-+-------------------+------------------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
-
 Libraries
 =========
 
 +---------------+------------------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
 |tool           |version           |last updated   |description                                                                                                                                                                      |l |manual|                       |l |changelog|                       |l |requirements|   |l |download|                       |l |license|                       |l |feedback|                       |
 +===============+==================+===============+=================================================================================================================================================================================+=================================+====================================+===================+===================================+==================================+===================================+
-|pds4-jparser   |v2.1.0-SNAPSHOT   |2021-05-11     |Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.   ||NASA-PDS/pds4-jparser_manual|   ||NASA-PDS/pds4-jparser_changelog|   |                   ||NASA-PDS/pds4-jparser_download|   ||NASA-PDS/pds4-jparser_license|   ||NASA-PDS/pds4-jparser_feedback|   |
+|pds4-jparser   |v2.1.0-SNAPSHOT   |2021-05-19     |Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.   ||NASA-PDS/pds4-jparser_manual|   ||NASA-PDS/pds4-jparser_changelog|   |                   ||NASA-PDS/pds4-jparser_download|   ||NASA-PDS/pds4-jparser_license|   ||NASA-PDS/pds4-jparser_feedback|   |
 +---------------+------------------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
 
-Other Core Services and Libraries
-=================================
+Core tools and services
+=======================
 
 +---------------------------+------------------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
 |tool                       |version           |last updated   |description                                                                                                                                                                                                                                                        |l |manual|                                   |l |changelog|                                   |l |requirements|                          |l |download|                                   |l |license|                                   |l |feedback|                                   |
@@ -61,6 +52,15 @@ Other Core Services and Libraries
 +---------------------------+------------------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
 |pds-registry-mgr-elastic   |v4.2.0-SNAPSHOT   |2021-04-23     |Tool for managing the Elastic Search back-end Registry Service for tracking, searching, auditing, locating, and maintaining artifacts within the Planetary Data System. See new PDS Registry App for more details (https://github.com/NASA-PDS/pds-registry-app)   ||NASA-PDS/pds-registry-mgr-elastic_manual|   ||NASA-PDS/pds-registry-mgr-elastic_changelog|   |                                          ||NASA-PDS/pds-registry-mgr-elastic_download|   ||NASA-PDS/pds-registry-mgr-elastic_license|   ||NASA-PDS/pds-registry-mgr-elastic_feedback|   |
 +---------------------------+------------------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
+
+Unclassified software assets
+============================
+
++-------------------+------------------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
+|tool               |version           |last updated   |description                                                                                                                                          |l |manual|                           |l |changelog|                           |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
++===================+==================+===============+=====================================================================================================================================================+=====================================+========================================+===================+=======================================+======================================+=======================================+
+|pds-registry-app   |v0.4.0-SNAPSHOT   |2021-05-12     |Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system.   ||NASA-PDS/pds-registry-app_manual|   ||NASA-PDS/pds-registry-app_changelog|   |                   ||NASA-PDS/pds-registry-app_download|   ||NASA-PDS/pds-registry-app_license|   ||NASA-PDS/pds-registry-app_feedback|   |
++-------------------+------------------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
 
 .. |NASA-PDS/pds-doi-service_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds-doi-service/
@@ -101,11 +101,11 @@ Other Core Services and Libraries
 .. |NASA-PDS/validate_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/validate/
 .. |NASA-PDS/validate_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://www.gnupg.org/gph/en/manual/r1943.html
+   :target: https://github.com/NASA-PDS/validate/blob/master/CHANGELOG.md#v210-snapshot-2021-05-25
 .. |NASA-PDS/validate_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/validate_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
-   :target: https://github.com/NASA-PDS/validate/releases/tag/None
+   :target: https://github.com/NASA-PDS/validate/releases/tag/v2.1.0-SNAPSHOT
 .. |NASA-PDS/validate_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
    :target: https://raw.githubusercontent.com/NASA-PDS/validate/master/LICENSE.txt
 .. |NASA-PDS/validate_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
@@ -113,7 +113,7 @@ Other Core Services and Libraries
 .. |NASA-PDS/pds4-information-model_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds4-information-model/
 .. |NASA-PDS/pds4-information-model_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/pds4-information-model/blob/master/CHANGELOG.md#v1310-snapshot-2021-05-04
+   :target: https://github.com/NASA-PDS/pds4-information-model/blob/master/CHANGELOG.md#v1310-snapshot-2021-05-19
 .. |NASA-PDS/pds4-information-model_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/pds4-information-model_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png

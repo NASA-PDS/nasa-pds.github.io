@@ -7,7 +7,7 @@ Latest stable release:
 
 |build|release|update|
 | :---: | :---: | :---: |
-|[11.1](./11.1)|<span style="color:green">2021-04-30</span>|2021-05-11|
+|[11.1](./11.1)|<span style="color:green">2021-04-30</span>|2021-06-02|
   
 
 
@@ -15,7 +15,7 @@ Development releases:
 
 |build|planned release|update|
 | :---: | :---: | :---: |
-|[12.0-SNAPSHOT](./12.0-SNAPSHOT)|<span style="color:orange">2021-12-31</span>|2021-05-13|
+|[12.0-SNAPSHOT](./12.0-SNAPSHOT)|<span style="color:orange">2021-12-31</span>|2021-05-28|
   
 
 
