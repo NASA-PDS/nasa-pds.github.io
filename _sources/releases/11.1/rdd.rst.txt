@@ -1054,35 +1054,53 @@ standalone, discipline nodes or engineering node
 For the installation and operation manual see the `users manuals` in the
 software summary sections below:
 - `PDS Standalone`_
+
 - `PDS Discipline Nodes`_
+
 - `PDS Engineering Node only`_
+
 
 Reference documents
 -------------------
 This section details the controlling and applicable documents referenced
 for this release. The controlling documents are as follows:
 - PDS Level 1, 2 and 3 Requirements, April 20, 2017.
+
 - PDS4 Project Plan, July 17, 2013.
+
 - PDS4 System Architecture Specification, Version 1.3, September 1,
 2013.
+
 - PDS4 Operations Concept, Version 1.0, September 1, 2013.
+
 - PDS Harvest Tool Software Requirements and Design Document (SRD/SDD),
 Version 1.2, September 1, 2013.
+
 - PDS Preparation Tools Software Requirements and Design Document
 (SRD/SDD), Version 0.3, September 1, 2013.
+
 - PDS Registry Service Software Requirements and Design Document
 (SRD/SDD), Version 1.1, September 1, 2013.
+
 - PDS Report Service Software Requirements and Design Document
 (SRD/SDD),   Version 1.1, September 1, 2013.
+
 - PDS Search Service Software Requirements and Design Document
 (SRD/SDD),   Version 1.0, September 1, 2013.
+
 - PDS Search Scenarios, Version 1.0, September 1, 2013.
+
 - PDS Search Protocol, Version 1.2, March 21, 2014.
+
 - PDAP Search Protocol, Version 1.0, March 21, 2014.
+
 - PDS Security Service Software Requirements and Design Document
 (SRD/SDD), Version 1.1, September 1, 2013.
+
 - `PDS Deep Archive Sotware Requirements and Design Document (SRD/SDD)`_
+
 - `PDS DOI Service Requirements and Design Document (SRD/SDD)`_
+
 
 .. _NASA-PDS/api-search-query-lexer_1: https://github.com/NASA-PDS/api-search-query-lexer/issues/1
 .. _NASA-PDS/archive-analytics_2: https://github.com/NASA-PDS/archive-analytics/issues/2
