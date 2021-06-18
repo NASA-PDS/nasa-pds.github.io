@@ -61,73 +61,73 @@ Other Core Services and Libraries
 .. |NASA-PDS/pds-registry-app_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds-registry-app/
 .. |NASA-PDS/pds-registry-app_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/pds-registry-app/blob/master/CHANGELOG.md#012-2020-08-13
+   :target: https://github.com/NASA-PDS/pds-registry-app/blob/main/CHANGELOG.md#012-2020-08-13
 .. |NASA-PDS/pds-registry-app_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/pds-registry-app_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-registry-app/releases/tag/0.1.2
 .. |NASA-PDS/pds-registry-app_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-app/master/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-app/main/LICENSE.txt
 .. |NASA-PDS/pds-registry-app_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-registry-app/issues/new/choose
 .. |NASA-PDS/pds-deep-archive_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds-deep-archive/
 .. |NASA-PDS/pds-deep-archive_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/pds-deep-archive/blob/master/CHANGELOG.md#016-2020-07-15
+   :target: https://github.com/NASA-PDS/pds-deep-archive/blob/main/CHANGELOG.md#016-2020-07-15
 .. |NASA-PDS/pds-deep-archive_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/pds-deep-archive_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-deep-archive/releases/tag/0.1.6
 .. |NASA-PDS/pds-deep-archive_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-deep-archive/master/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-deep-archive/main/LICENSE.txt
 .. |NASA-PDS/pds-deep-archive_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-deep-archive/issues/new/choose
 .. |NASA-PDS/validate_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/validate/
 .. |NASA-PDS/validate_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/validate/blob/master/CHANGELOG.md#1233-2020-08-06
+   :target: https://github.com/NASA-PDS/validate/blob/main/CHANGELOG.md#1233-2020-08-06
 .. |NASA-PDS/validate_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/validate_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/validate/releases/tag/1.23.3
 .. |NASA-PDS/validate_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/validate/master/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/validate/main/LICENSE.txt
 .. |NASA-PDS/validate_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/validate/issues/new/choose
 .. |NASA-PDS/pds4-information-model_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds4-information-model/
 .. |NASA-PDS/pds4-information-model_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/pds4-information-model/blob/master/CHANGELOG.md#1132-2020-08-17
+   :target: https://github.com/NASA-PDS/pds4-information-model/blob/main/CHANGELOG.md#1132-2020-08-17
 .. |NASA-PDS/pds4-information-model_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/pds4-information-model_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds4-information-model/releases/tag/11.3.2
 .. |NASA-PDS/pds4-information-model_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-information-model/master/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-information-model/main/LICENSE.txt
 .. |NASA-PDS/pds4-information-model_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds4-information-model/issues/new/choose
 .. |NASA-PDS/harvest_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/harvest/
 .. |NASA-PDS/harvest_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/harvest/blob/master/CHANGELOG.md#v322-2020-03-28
+   :target: https://github.com/NASA-PDS/harvest/blob/main/CHANGELOG.md#v322-2020-03-28
 .. |NASA-PDS/harvest_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/harvest_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/harvest/releases/tag/v3.2.2
 .. |NASA-PDS/harvest_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/harvest/master/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/harvest/main/LICENSE.txt
 .. |NASA-PDS/harvest_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/harvest/issues/new/choose
 .. |NASA-PDS/pds-registry-mgr-solr_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds-registry-mgr-solr/
 .. |NASA-PDS/pds-registry-mgr-solr_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/pds-registry-mgr-solr/blob/master/CHANGELOG.md#v322-2020-03-27
+   :target: https://github.com/NASA-PDS/pds-registry-mgr-solr/blob/main/CHANGELOG.md#v322-2020-03-27
 .. |NASA-PDS/pds-registry-mgr-solr_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/pds-registry-mgr-solr_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-registry-mgr-solr/releases/tag/v3.2.2
 .. |NASA-PDS/pds-registry-mgr-solr_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-mgr-solr/master/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-mgr-solr/main/LICENSE.txt
 .. |NASA-PDS/pds-registry-mgr-solr_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-registry-mgr-solr/issues/new/choose
 .. |NASA-PDS/transform_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -139,31 +139,31 @@ Other Core Services and Libraries
 .. |NASA-PDS/transform_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/transform/releases/tag/v1.11.1
 .. |NASA-PDS/transform_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/transform/master/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/transform/main/LICENSE.txt
 .. |NASA-PDS/transform_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/transform/issues/new/choose
 .. |NASA-PDS/pds4-jparser_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds4-jparser/
 .. |NASA-PDS/pds4-jparser_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/pds4-jparser/blob/master/CHANGELOG.md#v181-2020-08-04
+   :target: https://github.com/NASA-PDS/pds4-jparser/blob/main/CHANGELOG.md#v181-2020-08-04
 .. |NASA-PDS/pds4-jparser_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/pds4-jparser_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds4-jparser/releases/tag/v1.8.1
 .. |NASA-PDS/pds4-jparser_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-jparser/master/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-jparser/main/LICENSE.txt
 .. |NASA-PDS/pds4-jparser_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds4-jparser/issues/new/choose
 .. |NASA-PDS/mi-label_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/mi-label/
 .. |NASA-PDS/mi-label_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/mi-label/blob/master/CHANGELOG.md#v113-2020-12-11
+   :target: https://github.com/NASA-PDS/mi-label/blob/main/CHANGELOG.md#v113-2020-12-11
 .. |NASA-PDS/mi-label_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/mi-label_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/mi-label/releases/tag/v1.1.3
 .. |NASA-PDS/mi-label_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/mi-label/master/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/mi-label/main/LICENSE.txt
 .. |NASA-PDS/mi-label_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/mi-label/issues/new/choose
 .. |manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual_text.png
