@@ -1,8 +1,25 @@
 =========================================
-Release Description Document (build 11.1)
+Release Description Document (Build 11.1)
 =========================================
-Software changes
+
+This release of the PDS4 System is intended as an operational release of the system components to date. The following sections can be found in this document:
+
+..  toctree::
+    :glob:
+    :maxdepth: 3
+
+    rdd.rst
+
+
+Software Changes
 ================
+
+This section details the new, modified and corrected capabilities that comprise this release . They are summarized here for a system-level view. A more detailed list of capabilities can be found in the change logs for each component.
+
+Note on Requirements: Requirement are now being provided for some project. The coverage is not yet complete. Please contact the `PDS Operator <mailto:pds-operator@jpl.nasa.gov>`_ or PDS EN staff if you would like additional details on software Requirements.
+
+---
+
 api-search-query-lexer
 ----------------------
 *Lexer to parse the search query of the PDS API*
@@ -13,12 +30,12 @@ api-search-query-lexer
    * - `User Guide <https://github.com/NASA-PDS/api-search-query-lexer#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/api-search-query-lexer>`_
      - `Issue Tracking <https://github.com/NASA-PDS/api-search-query-lexer/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/api-search-query-lexer/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/api-search-query-lexer/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/api-search-query-lexer/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/api-search-query-lexer/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +------------------------------------------------------------------------+--------------------------+
@@ -26,6 +43,8 @@ bug
 +========================================================================+==========================+
 |NASA-PDS/api-search-query-lexer_1_ parsing of string does not succeed   |unknown                   |
 +------------------------------------------------------------------------+--------------------------+
+
+---
 
 archive-analytics
 -----------------
@@ -37,12 +56,12 @@ archive-analytics
    * - `User Guide <https://github.com/NASA-PDS/archive-analytics#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/archive-analytics>`_
      - `Issue Tracking <https://github.com/NASA-PDS/archive-analytics/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/archive-analytics/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/archive-analytics/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/archive-analytics/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/archive-analytics/releases>`_ 
 
 
-requirement
+Requirement
 ~~~~~~~~~~~
 
 +------------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -55,6 +74,8 @@ requirement
 |NASA-PDS/archive-analytics_10_ As a Node Manager, I want to report on the number of artifacts within the archive              |unknown                   |
 +------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 
+---
+
 harvest
 -------
 *Provides software provides functionality for capturing and indexing product metadata in PDS Registry. A sub-component of the PDS Registry App (https://github.com/NASA-PDS/pds-registry-app)*
@@ -65,12 +86,12 @@ harvest
    * - `User Guide <https://nasa-pds.github.io/pds-registry-app>`_
      - `Github Repo <https://github.com/NASA-PDS/harvest>`_
      - `Issue Tracking <https://github.com/NASA-PDS/harvest/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/harvest/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/harvest/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/harvest/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/harvest/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +---------------------------------------------------------------------------------+--------------------------+
@@ -79,7 +100,7 @@ bug
 |NASA-PDS/harvest_6_ Check input URIs to avoid potential security vulnerability   |s.low                     |
 +---------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +--------------------------------------------------------+--------------------------+
@@ -88,7 +109,7 @@ enhancement
 |NASA-PDS/harvest_18_ Track collection file inventory    |unknown                   |
 +--------------------------------------------------------+--------------------------+
 
-requirement
+Requirement
 ~~~~~~~~~~~
 
 +---------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -98,6 +119,8 @@ requirement
 +---------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/harvest_45_ As a user, I want to be able to ingest a directory of data that is not part of a bundle   |unknown                   |
 +---------------------------------------------------------------------------------------------------------------+--------------------------+
+
+---
 
 mi-label
 --------
@@ -109,12 +132,12 @@ mi-label
    * - `User Guide <https://nasa-pds.github.io/mi-label/>`_
      - `Github Repo <https://github.com/NASA-PDS/mi-label>`_
      - `Issue Tracking <https://github.com/NASA-PDS/mi-label/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/mi-label/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/mi-label/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/mi-label/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/mi-label/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +--------------------------------------------------------------------------------------+--------------------------+
@@ -122,6 +145,8 @@ bug
 +======================================================================================+==========================+
 |NASA-PDS/mi-label_10_ Windows version will not run because of error in generate.bat   |s.high                    |
 +--------------------------------------------------------------------------------------+--------------------------+
+
+---
 
 pds-api
 -------
@@ -133,12 +158,12 @@ pds-api
    * - `User Guide <http://nasa-pds.github.io/pds-api>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-api>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-api/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-api/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/pds-api/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-api/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-api/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +------------------------------------------------------------------------------------------------------+--------------------------+
@@ -147,7 +172,7 @@ bug
 |NASA-PDS/pds-api_73_ As a n00b paginator, there might be an off-by-1 error in the `limit` parameter   |s.medium                  |
 +------------------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -174,7 +199,7 @@ enhancement
 |NASA-PDS/pds-api_52_ Get investigation area/targets/instruments from external ids                                           |unknown                   |
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 
-requirement
+Requirement
 ~~~~~~~~~~~
 
 +-------------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -194,6 +219,7 @@ requirement
 +-------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/pds-api_64_ As a user, when I request specific fields I want to get records which have at least one of these fields   |unknown                   |
 +-------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+---
 
 pds-api-client
 --------------
@@ -205,12 +231,12 @@ pds-api-client
    * - `User Guide <https://nasa-pds.github.io/pds-api-client/>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-api-client>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-api-client/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-api-client/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/pds-api-client/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-api-client/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-api-client/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +------------------------------------------------------------------------------------+--------------------------+
@@ -229,12 +255,12 @@ pds-api-javalib
    * - `User Guide <https://github.com/NASA-PDS/pds-api-javalib>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-api-javalib>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-api-javalib/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-api-javalib/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/pds-api-javalib/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-api-javalib/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-api-javalib/releases>`_ 
 
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +---------------------------------------------------------------------------------------------+--------------------------+
@@ -244,6 +270,7 @@ enhancement
 +---------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/pds-api-javalib_2_ Add list of available fields in response format                  |unknown                   |
 +---------------------------------------------------------------------------------------------+--------------------------+
+---
 
 pds-deep-archive
 ----------------
@@ -255,12 +282,12 @@ pds-deep-archive
    * - `User Guide <https://nasa-pds.github.io/pds-deep-archive/>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-deep-archive>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-deep-archive/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-deep-archive/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/pds-deep-archive/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-deep-archive/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-deep-archive/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +-----------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -273,7 +300,7 @@ bug
 |NASA-PDS/pds-deep-archive_99_ aip_label_checksum is not for the correct file                                           |unknown                   |
 +-----------------------------------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +-----------------------------------------------------------------------------------+--------------------------+
@@ -284,7 +311,7 @@ enhancement
 |NASA-PDS/pds-deep-archive_95_ Bash required for default installation description   |unknown                   |
 +-----------------------------------------------------------------------------------+--------------------------+
 
-requirement
+Requirement
 ~~~~~~~~~~~
 
 +------------------------------------------------------------------------------------------+--------------------------+
@@ -294,6 +321,7 @@ requirement
 +------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/pds-deep-archive_102_ As a user, I want the SIP manifest to include valid URLs   |p.must-have               |
 +------------------------------------------------------------------------------------------+--------------------------+
+---
 
 pds-doi-service
 ---------------
@@ -305,12 +333,12 @@ pds-doi-service
    * - `User Guide <https://nasa-pds.github.io/pds-doi-service>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-doi-service>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-doi-service/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-doi-service/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/pds-doi-service/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-doi-service/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-doi-service/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +-------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -339,7 +367,7 @@ bug
 |NASA-PDS/pds-doi-service_159_ The url /dois/{lidvid} should still return XML in the record attribute                                 |s.critical                |
 +-------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +--------------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -374,7 +402,7 @@ enhancement
 |NASA-PDS/pds-doi-service_165_ Add service to API for update of the status of records with OSTI (check sub command)              |unknown                   |
 +--------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 
-requirement
+Requirement
 ~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -390,6 +418,7 @@ requirement
 +----------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/pds-doi-service_184_ As an API user, I want to always have an update date for the DOIs                 |unknown                   |
 +----------------------------------------------------------------------------------------------------------------+--------------------------+
+---
 
 pds-doi-ui
 ----------
@@ -401,12 +430,12 @@ pds-doi-ui
    * - `User Guide <https://github.com/NASA-PDS/pds-doi-ui#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-doi-ui>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-doi-ui/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-doi-ui/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/pds-doi-ui/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-doi-ui/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-doi-ui/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +------------------------------------------------------------------------------------------+--------------------------+
@@ -415,7 +444,7 @@ bug
 |NASA-PDS/pds-doi-ui_35_ As a SA, I don't want security vulnerabilities in the public UI   |s.medium                  |
 +------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +------------------------------------------------------------------------------------------------------+--------------------------+
@@ -442,7 +471,7 @@ enhancement
 |NASA-PDS/pds-doi-ui_31_ On release screen, have only one "ignore warning" checkbox                    |p.must-have               |
 +------------------------------------------------------------------------------------------------------+--------------------------+
 
-requirement
+Requirement
 ~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -452,6 +481,7 @@ requirement
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/pds-doi-ui_34_ As a user, I want to see the error/warnings messages on the same page from where they were raised   |p.could-have              |
 +----------------------------------------------------------------------------------------------------------------------------+--------------------------+
+---
 
 pds-registry-app
 ----------------
@@ -463,12 +493,12 @@ pds-registry-app
    * - `User Guide <https://nasa-pds.github.io/pds-registry-app/>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-registry-app>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-registry-app/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-registry-app/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/pds-registry-app/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-registry-app/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-registry-app/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +--------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -483,7 +513,7 @@ bug
 |NASA-PDS/pds-registry-app_135_ docker build is version locked                                                                         |s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +---------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -508,7 +538,7 @@ enhancement
 |NASA-PDS/pds-registry-app_131_ Develop ElasticSearch client library to be utilized by harvest / registry-mgr         |unknown                   |
 +---------------------------------------------------------------------------------------------------------------------+--------------------------+
 
-requirement
+Requirement
 ~~~~~~~~~~~
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -556,6 +586,7 @@ requirement
 +-----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/pds-registry-app_147_ As a node operator,  I want to be able to tag ingested data with the node it is ingested by.                    |p.must-have               |
 +-----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+---
 
 pds-wds-web
 -----------
@@ -567,12 +598,12 @@ pds-wds-web
    * - `User Guide <https://github.com/NASA-PDS/pds-wds-web>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-wds-web>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-wds-web/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-wds-web/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/pds-wds-web/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-wds-web/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-wds-web/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +------------------------------------------------------------------------------------------+--------------------------+
@@ -587,7 +618,7 @@ bug
 |NASA-PDS/pds-wds-web_19_ Update NAIF in App Bar                                           |unknown                   |
 +------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +----------------------------------------------------------------+--------------------------+
@@ -597,6 +628,7 @@ enhancement
 +----------------------------------------------------------------+--------------------------+
 |NASA-PDS/pds-wds-web_17_ App Bar Node List Reordering           |unknown                   |
 +----------------------------------------------------------------+--------------------------+
+---
 
 PDS.nasa.gov-Search
 -------------------
@@ -608,12 +640,12 @@ PDS.nasa.gov-Search
    * - `User Guide <https://github.com/NASA-PDS/PDS.nasa.gov-Search#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/PDS.nasa.gov-Search>`_
      - `Issue Tracking <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/PDS.nasa.gov-Search/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/PDS.nasa.gov-Search/releases>`_ 
 
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------------+--------------------------+
@@ -623,6 +655,7 @@ enhancement
 +----------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/PDS.nasa.gov-Search_29_ Iterate with DOI Working Group for improvements to landing pages   |unknown                   |
 +----------------------------------------------------------------------------------------------------+--------------------------+
+---
 
 PDS.nasa.gov-UX
 ---------------
@@ -634,12 +667,12 @@ PDS.nasa.gov-UX
    * - `User Guide <https://github.com/NASA-PDS/PDS.nasa.gov-UX#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/PDS.nasa.gov-UX>`_
      - `Issue Tracking <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/PDS.nasa.gov-UX/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/PDS.nasa.gov-UX/releases>`_ 
 
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -661,6 +694,7 @@ enhancement
 +----------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/PDS.nasa.gov-UX_73_ Rev 3 of milestones to breakdown of notional goals and deliverables                |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------+--------------------------+
+---
 
 pds4-information-model
 ----------------------
@@ -672,12 +706,12 @@ pds4-information-model
    * - `User Guide <https://nasa-pds.github.io/pds4-information-model/>`_
      - `Github Repo <https://github.com/NASA-PDS/pds4-information-model>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds4-information-model/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds4-information-model/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/pds4-information-model/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds4-information-model/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds4-information-model/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -714,7 +748,7 @@ bug
 |NASA-PDS/pds4-information-model_331_ Invalid output schema when trying to set an Internal_Reference reference_type value set                  |s.high                    |
 +----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -734,6 +768,7 @@ enhancement
 +----------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/pds4-information-model_332_ [namespace-registry] add new namespace "<clementine>"                      |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------+--------------------------+
+---
 
 pds4-jparser
 ------------
@@ -745,12 +780,12 @@ pds4-jparser
    * - `User Guide <https://nasa-pds.github.io/pds4-jparser/>`_
      - `Github Repo <https://github.com/NASA-PDS/pds4-jparser>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds4-jparser/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds4-jparser/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/pds4-jparser/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds4-jparser/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds4-jparser/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +---------------------------------------------------------------------------------------------+--------------------------+
@@ -763,7 +798,7 @@ bug
 |NASA-PDS/pds4-jparser_36_ NoSuchMethodError: java.nio.ByteBuffer with Java9 Builds           |s.medium                  |
 +---------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +-----------------------------------------------------------------------+--------------------------+
@@ -771,6 +806,7 @@ enhancement
 +=======================================================================+==========================+
 |NASA-PDS/pds4-jparser_33_ Upgrade pds4-jparser to build with Java11+   |unknown                   |
 +-----------------------------------------------------------------------+--------------------------+
+---
 
 PLAID
 -----
@@ -782,12 +818,12 @@ PLAID
    * - `User Guide <https://plaid.jpl.nasa.gov>`_
      - `Github Repo <https://github.com/NASA-PDS/PLAID>`_
      - `Issue Tracking <https://github.com/NASA-PDS/PLAID/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/PLAID/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/PLAID/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/PLAID/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/PLAID/releases>`_ 
 
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +------------------------------------------------------------------------------+--------------------------+
@@ -796,7 +832,7 @@ enhancement
 |NASA-PDS/PLAID_10_ Develop procedure for how to update PLAID with latest IM   |unknown                   |
 +------------------------------------------------------------------------------+--------------------------+
 
-requirement
+Requirement
 ~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------------+--------------------------+
@@ -804,6 +840,7 @@ requirement
 +====================================================================================================+==========================+
 |NASA-PDS/PLAID_15_ As a PDS Operator, I want to update PLAID to the latest PDS4 Information Model   |unknown                   |
 +----------------------------------------------------------------------------------------------------+--------------------------+
+---
 
 registry-api-service
 --------------------
@@ -815,12 +852,12 @@ registry-api-service
    * - `User Guide <https://github.com/NASA-PDS/registry-api-service#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/registry-api-service>`_
      - `Issue Tracking <https://github.com/NASA-PDS/registry-api-service/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/registry-api-service/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/registry-api-service/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/registry-api-service/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/registry-api-service/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +------------------------------------------------------------------------------------------------------+--------------------------+
@@ -831,7 +868,7 @@ bug
 |NASA-PDS/registry-api-service_17_ error 500 on GET /collections/:lidvid:/products                     |s.high                    |
 +------------------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +-----------------------------------------------------------------------------------------+--------------------------+
@@ -844,7 +881,7 @@ enhancement
 |NASA-PDS/registry-api-service_4_ Implement a lid resolver                                |unknown                   |
 +-----------------------------------------------------------------------------------------+--------------------------+
 
-requirement
+Requirement
 ~~~~~~~~~~~
 
 +--------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -852,6 +889,7 @@ requirement
 +==========================================================================================================================+==========================+
 |NASA-PDS/registry-api-service_14_ As a node operators, I want to deploy the Registry API Service with the PDS Registry.   |p.must-have               |
 +--------------------------------------------------------------------------------------------------------------------------+--------------------------+
+---
 
 tracking-service
 ----------------
@@ -863,12 +901,12 @@ tracking-service
    * - `User Guide <https://github.com/NASA-PDS/tracking-service#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/tracking-service>`_
      - `Issue Tracking <https://github.com/NASA-PDS/tracking-service/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/tracking-service/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/tracking-service/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/tracking-service/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/tracking-service/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +---------------------------------------------------------------------------------------------------+--------------------------+
@@ -877,7 +915,7 @@ bug
 |NASA-PDS/tracking-service_18_ tracking front page does not keep tracking in relative anchor href   |unknown                   |
 +---------------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +------------------------------------------------------------------------+--------------------------+
@@ -887,6 +925,7 @@ enhancement
 +------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/tracking-service_14_ Add mysql database to docker deployment   |unknown                   |
 +------------------------------------------------------------------------+--------------------------+
+---
 
 validate
 --------
@@ -898,12 +937,12 @@ validate
    * - `User Guide <https://nasa-pds.github.io/validate/>`_
      - `Github Repo <https://github.com/NASA-PDS/validate>`_
      - `Issue Tracking <https://github.com/NASA-PDS/validate/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/validate/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Up Next <https://github.com/NASA-PDS/validate/issues?q=is%3Aopen+is%3Aissue+label%3AB12.0>`_ 
      - `Stable Release <https://github.com/NASA-PDS/validate/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/validate/releases>`_ 
 
 
-bug
+Bug
 ~~~
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -958,7 +997,7 @@ bug
 |NASA-PDS/validate_327_ validate fails to process large data file                                                                                                   |s.medium                  |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 
-enhancement
+Enhancement
 ~~~~~~~~~~~
 
 +------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -972,7 +1011,7 @@ enhancement
 +------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/validate_81_ Validate and throw error when duplicate LIDs are found in Bundle                                  |p.should-have             |
 +------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|NASA-PDS/validate_230_ Update validate per SR requirements for collection inventories                                   |p.should-have             |
+|NASA-PDS/validate_230_ Update validate per SR Requirements for collection inventories                                   |p.should-have             |
 +------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/validate_238_ validate does not perform full bundle validation when using a specific bundle.xml                |unknown                   |
 +------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -984,7 +1023,7 @@ enhancement
 +------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/validate_254_ validate does not perform expediently when doing bundle-level validation against large bundles   |unknown                   |
 +------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|NASA-PDS/validate_264_ Update installation documentation to include 64-bit Java as system requirement                   |unknown                   |
+|NASA-PDS/validate_264_ Update installation documentation to include 64-bit Java as system Requirement                   |unknown                   |
 +------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/validate_290_ Migrate subset of existing regression tests to cucumber behavioral testing                       |unknown                   |
 +------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -993,7 +1032,7 @@ enhancement
 |NASA-PDS/validate_323_ Upgrade to Java 9+                                                                               |unknown                   |
 +------------------------------------------------------------------------------------------------------------------------+--------------------------+
 
-requirement
+Requirement
 ~~~~~~~~~~~
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
@@ -1015,17 +1054,19 @@ requirement
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/validate_308_ As a user, I want to check that all Internal References are valid references to other PDS4 products within the current validating bundle   |p.must-have               |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+---
 
-theme
+Theme
 ~~~~~
 
 +--------------------------------------------------------------------------------------------------------------------+--------------------------+
 |Issue                                                                                                               |Priority / Bug Severity   |
 +====================================================================================================================+==========================+
-|NASA-PDS/validate_250_ Improvements to meet updated Standards Reference since initial requirements implementation   |unknown                   |
+|NASA-PDS/validate_250_ Improvements to meet updated Standards Reference since initial Requirements implementation   |unknown                   |
 +--------------------------------------------------------------------------------------------------------------------+--------------------------+
 |NASA-PDS/validate_318_ B12.0 Content Validation Improvements                                                        |unknown                   |
 +--------------------------------------------------------------------------------------------------------------------+--------------------------+
+---
 
 Liens
 =====
@@ -1037,17 +1078,20 @@ Liens
 +-----------------------------------------------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |pds-swg_6_ [CR] Defer PDS API Tasks to B12.0               |[CR] Defer PDS API Tasks to B12.0               |Inaccurate estimates for time to complete other designs and implementations with PDS API WG.                                                                                                                                                                                                                                                                                           |
 +-----------------------------------------------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|pds-swg_5_ [CR] Defer Tracking Service Tasks to B12.0      |[CR] Defer Tracking Service Tasks to B12.0      |Tracking Service design and partial implementation was completed in 2018. Misunderstanding during handoff from previous developers that the software design did not include requirements definition, and design did not form to common API standards. Caused significant increase in scope for [requirements definition task](https://github.com/nasa-pds/tracking-service/issues/2)   |
+|pds-swg_5_ [CR] Defer Tracking Service Tasks to B12.0      |[CR] Defer Tracking Service Tasks to B12.0      |Tracking Service design and partial implementation was completed in 2018. Misunderstanding during handoff from previous developers that the software design did not include Requirements definition, and design did not form to common API standards. Caused significant increase in scope for [Requirements definition task](https://github.com/nasa-pds/tracking-service/issues/2)   |
 +-----------------------------------------------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |pds-swg_4_ [CR] Add additional PDS4 SCRs to Release Plan   |[CR] Add additional PDS4 SCRs to Release Plan   |Several additional SCRs passed by the CCB.                                                                                                                                                                                                                                                                                                                                             |
 +-----------------------------------------------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Engineering Node Software Catalog
-=================================
-The Engineering Node Software resources are listed in the `software
+---
+
+
+Software Catalog
+=================
+The Engineering Node-provided Software resources are listed in the `software
 release summary (B11.1)`_
 
-Installation and operation
+Installation and Operation
 ==========================
 PDS Engineering node software are meant to be deployed in 3 contexts:
 standalone, discipline nodes or engineering node
@@ -1059,8 +1103,10 @@ software summary sections below:
 - `PDS Discipline Nodes`_
 
 - `PDS Engineering Node only`_
+---
 
-Reference documents
+
+Reference Documents
 ===================
 This section details the controlling and applicable documents referenced
 for this release. The controlling documents are as follows:

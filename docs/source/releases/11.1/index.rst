@@ -1,16 +1,16 @@
 =============================
-Software Summary (build 11.1)
+Software Summary (Build 11.1)
 =============================
-The software provided for the build 11.1 are listed hereafter and
+
+The software provided for the Build 11.1 are listed hereafter and
 organized by category:
 
-- `PDS Tools`_
+..  toctree::
+    :glob:
+    :maxdepth: 3
 
-- `Discipline Node Services`_
+    index.rst
 
-- `Libraries`_
-
-- `Other Core Services and Libraries`_
 
 PDS Tools
 =========
@@ -49,8 +49,8 @@ Other Core Services and Libraries
 |PDS DOI Service   |v1.1.1    |2021-05-27     |Service and tools for generating DOIs for PDS bundles, collections, and data sets   ||NASA-PDS/pds-doi-service_manual|   |                |                   ||NASA-PDS/pds-doi-service_download|   ||NASA-PDS/pds-doi-service_license|   ||NASA-PDS/pds-doi-service_feedback|   |
 +------------------+----------+---------------+------------------------------------------------------------------------------------+------------------------------------+----------------+-------------------+--------------------------------------+-------------------------------------+--------------------------------------+
 
-Unclassified software assets
-============================
+Other Software Assets
+======================
 
 +-------------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+---------------------------------------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
 |tool                           |version   |last updated   |description                                                                                                                                                                                                                                                        |l |manual|                                   |l |changelog|                                   |l |requirements|                                   |l |download|                                   |l |license|                                   |l |feedback|                                   |
