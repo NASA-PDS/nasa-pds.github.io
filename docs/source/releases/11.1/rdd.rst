@@ -6,7 +6,7 @@ This release of the PDS4 System is intended as an operational release of the sys
 
 ..  toctree::
     :glob:
-    :maxdepth: 1
+    :maxdepth: 2
 
     rdd.rst
 
