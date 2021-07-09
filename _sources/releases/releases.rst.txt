@@ -11,9 +11,9 @@ The builds available are
     :maxdepth: 1
 
     10.1 (archived)</releases/10.1/index>
-    11.0 (stable)</releases/11.0/index>
-    11.1 (beta)</releases/11.1/index>
-    12.0 (dev)</releases/12.0-SNAPSHOT/index>
+    11.0 (archived)</releases/11.0/index>
+    11.1 (STABLE)</releases/11.1/index>
+    12.0 (in-development)</releases/12.0-SNAPSHOT/index>
 
 Upcoming plans
 ==============
