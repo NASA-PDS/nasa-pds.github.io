@@ -99,6 +99,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../releases.html#upcoming-plans">Upcoming plans</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../releases.html#release-description-documents-rdd">Release Description Documents (RDD)</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">11.1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pds4-standards-and-information-model-changes">PDS4 Standards and Information Model Changes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#software-changes">Software Changes</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#api-search-query-lexer">api-search-query-lexer</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#archive-analytics">archive-analytics</a></li>
@@ -223,6 +224,7 @@
 <div class="toctree-wrapper compound">
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Release Description Document (Build 11.1)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pds4-standards-and-information-model-changes">PDS4 Standards and Information Model Changes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#software-changes">Software Changes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#liens">Liens</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#software-catalog">Software Catalog</a></li>
@@ -232,6 +234,34 @@
 </li>
 </ul>
 </div>
+<div class="section" id="pds4-standards-and-information-model-changes">
+<h2>PDS4 Standards and Information Model Changes<a class="headerlink" href="#pds4-standards-and-information-model-changes" title="Permalink to this headline">¶</a></h2>
+<p>This section details the changes to the PDS4 Standards and Information Model approved by the PDS4 Change Control Boarda and implemented by the PDS within the latest build period.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/255">pds4-information-model#255</a> CCB-300: Apparently deprecated units of measure are not actually deprecated</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/257">pds4-information-model#257</a> CCB-302: No &lt;reference_type&gt; values defined in DD_Attribute or DD_Class contexts</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/252">pds4-information-model#252</a> CCB-304: Cleanup unused Vector classes in IM before 2.0.0.0</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/254">pds4-information-model#254</a> CCB-305: Missing validation constraint on &lt;specified_unit_id&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/253">pds4-information-model#253</a> CCB-313: Definition of &lt;external_source_product_identifier&gt; refers to non-existent documentation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/250">pds4-information-model#250</a> CCB-315: “PDS3” is an allowed parsing standard for Bundle documentation file</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/288">pds4-information-model#288</a> CCB-321: Add MPEG-4 as an encoding_standard_id for Product_Native</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/339">pds4-information-model#339</a> CCB-328 : Inconsistency in &lt;title&gt; type definition</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
 <div class="section" id="software-changes">
 <h2>Software Changes<a class="headerlink" href="#software-changes" title="Permalink to this headline">¶</a></h2>
 <p>This section details the new, modified and corrected capabilities that comprise this release . They are summarized here for a system-level view. A more detailed list of capabilities can be found in the change logs for each component.</p>
@@ -272,7 +302,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id153"><span class="problematic" id="id154">api-search-query-lexer_1_</span></a> parsing of string does not succeed</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/api-search-query-lexer/issues/1">api-search-query-lexer#1</a> parsing of string does not succeed</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -315,13 +345,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id155"><span class="problematic" id="id156">archive-analytics_2_</span></a> As a manager, I want to know the current total volume of PDS holdings</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/archive-analytics/issues/2">archive-analytics#2</a> As a manager, I want to know the current total volume of PDS holdings</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id157"><span class="problematic" id="id158">archive-analytics_7_</span></a> As a PDS Project Office, I want to know the historical total volume of PDS holdings over time</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/archive-analytics/issues/7">archive-analytics#7</a> As a PDS Project Office, I want to know the historical total volume of PDS holdings over time</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id159"><span class="problematic" id="id160">archive-analytics_10_</span></a> As a Node Manager, I want to report on the number of artifacts within the archive</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/archive-analytics/issues/10">archive-analytics#10</a> As a Node Manager, I want to report on the number of artifacts within the archive</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -364,7 +394,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id161"><span class="problematic" id="id162">harvest_6_</span></a> Check input URIs to avoid potential security vulnerability</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues/6">harvest#6</a> Check input URIs to avoid potential security vulnerability</p></td>
 <td><p>s.low</p></td>
 </tr>
 </tbody>
@@ -383,7 +413,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id163"><span class="problematic" id="id164">harvest_18_</span></a> Track collection file inventory</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues/18">harvest#18</a> Track collection file inventory</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -402,10 +432,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id165"><span class="problematic" id="id166">harvest_37_</span></a> As a user, I want a default configuration for harvest included in the tool package</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues/37">harvest#37</a> As a user, I want a default configuration for harvest included in the tool package</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id167"><span class="problematic" id="id168">harvest_45_</span></a> As a user, I want to be able to ingest a directory of data that is not part of a bundle</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues/45">harvest#45</a> As a user, I want to be able to ingest a directory of data that is not part of a bundle</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -448,7 +478,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id169"><span class="problematic" id="id170">mi-label_10_</span></a> Windows version will not run because of error in generate.bat</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/mi-label/issues/10">mi-label#10</a> Windows version will not run because of error in generate.bat</p></td>
 <td><p>s.high</p></td>
 </tr>
 </tbody>
@@ -491,7 +521,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id171"><span class="problematic" id="id172">pds-api_73_</span></a> As a n00b paginator, there might be an off-by-1 error in the <cite>limit</cite> parameter</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/73">pds-api#73</a> As a n00b paginator, there might be an off-by-1 error in the <cite>limit</cite> parameter</p></td>
 <td><p>s.medium</p></td>
 </tr>
 </tbody>
@@ -510,34 +540,34 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id173"><span class="problematic" id="id174">pds-api_31_</span></a> Streamline testing of API server implementation</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/31">pds-api#31</a> Streamline testing of API server implementation</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id175"><span class="problematic" id="id176">pds-api_12_</span></a> Initial Query Syntax Lexer Implementation</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/12">pds-api#12</a> Initial Query Syntax Lexer Implementation</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id177"><span class="problematic" id="id178">pds-api_17_</span></a> Define initial structure for response format conventions and parameter definition</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/17">pds-api#17</a> Define initial structure for response format conventions and parameter definition</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id179"><span class="problematic" id="id180">pds-api_34_</span></a> Deploy PDS API v0 (alpha) for beta testing</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/34">pds-api#34</a> Deploy PDS API v0 (alpha) for beta testing</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id181"><span class="problematic" id="id182">pds-api_35_</span></a> Initial Federated API implementation</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/35">pds-api#35</a> Initial Federated API implementation</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id183"><span class="problematic" id="id184">pds-api_40_</span></a> add lexer to registry api</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/40">pds-api#40</a> add lexer to registry api</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id185"><span class="problematic" id="id186">pds-api_41_</span></a> Manage field preselection in queries</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/41">pds-api#41</a> Manage field preselection in queries</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id187"><span class="problematic" id="id188">pds-api_43_</span></a> Implement content negotiation</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/43">pds-api#43</a> Implement content negotiation</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id189"><span class="problematic" id="id190">pds-api_47_</span></a> develop a jupyter notebook demo where a user can browse PDS archive from bundle to product data file</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/47">pds-api#47</a> develop a jupyter notebook demo where a user can browse PDS archive from bundle to product data file</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id191"><span class="problematic" id="id192">pds-api_52_</span></a> Get investigation area/targets/instruments from external ids</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/52">pds-api#52</a> Get investigation area/targets/instruments from external ids</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -556,25 +586,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id193"><span class="problematic" id="id194">pds-api_54_</span></a> As an API user, I want to perform a search using wildcards</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/54">pds-api#54</a> As an API user, I want to perform a search using wildcards</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id195"><span class="problematic" id="id196">pds-api_56_</span></a> As an API user, I want to know the children and ancestors of bundle, collections, and products</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/56">pds-api#56</a> As an API user, I want to know the children and ancestors of bundle, collections, and products</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id197"><span class="problematic" id="id198">pds-api_59_</span></a> As an API user, I want to know the Product(s) that belong to a given Bundle.</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/59">pds-api#59</a> As an API user, I want to know the Product(s) that belong to a given Bundle.</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id199"><span class="problematic" id="id200">pds-api_60_</span></a> As an API user, I want to know the Bundle for a given Product.</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/60">pds-api#60</a> As an API user, I want to know the Bundle for a given Product.</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id201"><span class="problematic" id="id202">pds-api_61_</span></a> As an API user, I want to know the Collection(s) for a given Product.</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/61">pds-api#61</a> As an API user, I want to know the Collection(s) for a given Product.</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id203"><span class="problematic" id="id204">pds-api_62_</span></a> As an API user, I want to know the Bundle for a given Collection.</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/62">pds-api#62</a> As an API user, I want to know the Bundle for a given Collection.</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id205"><span class="problematic" id="id206">pds-api_64_</span></a> As a user, when I request specific fields I want to get records which have at least one of these fields</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/64">pds-api#64</a> As a user, when I request specific fields I want to get records which have at least one of these fields</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -617,7 +647,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id207"><span class="problematic" id="id208">pds-api-client_2_</span></a> PDS API Client 1.0.0 cannot communicate with pds-gamma</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api-client/issues/2">pds-api-client#2</a> PDS API Client 1.0.0 cannot communicate with pds-gamma</p></td>
 <td><p>s.high</p></td>
 </tr>
 </tbody>
@@ -659,10 +689,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id209"><span class="problematic" id="id210">pds-api-javalib_1_</span></a> Add time out specification in swaggerHub definition of the API</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api-javalib/issues/1">pds-api-javalib#1</a> Add time out specification in swaggerHub definition of the API</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id211"><span class="problematic" id="id212">pds-api-javalib_2_</span></a> Add list of available fields in response format</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api-javalib/issues/2">pds-api-javalib#2</a> Add list of available fields in response format</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -705,13 +735,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id213"><span class="problematic" id="id214">pds-deep-archive_90_</span></a> Small typo on package documentation</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-deep-archive/issues/90">pds-deep-archive#90</a> Small typo on package documentation</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id215"><span class="problematic" id="id216">pds-deep-archive_92_</span></a> SIP manifest table erroneously includes secondary collections and their basic products</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-deep-archive/issues/92">pds-deep-archive#92</a> SIP manifest table erroneously includes secondary collections and their basic products</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id217"><span class="problematic" id="id218">pds-deep-archive_99_</span></a> aip_label_checksum is not for the correct file</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-deep-archive/issues/99">pds-deep-archive#99</a> aip_label_checksum is not for the correct file</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -730,10 +760,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id219"><span class="problematic" id="id220">pds-deep-archive_93_</span></a> add year to directory path in URL</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-deep-archive/issues/93">pds-deep-archive#93</a> add year to directory path in URL</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id221"><span class="problematic" id="id222">pds-deep-archive_95_</span></a> Bash required for default installation description</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-deep-archive/issues/95">pds-deep-archive#95</a> Bash required for default installation description</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -752,10 +782,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id223"><span class="problematic" id="id224">pds-deep-archive_7_</span></a> As a user, I want to generate AIPs and SIPs using Registry</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-deep-archive/issues/7">pds-deep-archive#7</a> As a user, I want to generate AIPs and SIPs using Registry</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id225"><span class="problematic" id="id226">pds-deep-archive_102_</span></a> As a user, I want the SIP manifest to include valid URLs</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-deep-archive/issues/102">pds-deep-archive#102</a> As a user, I want the SIP manifest to include valid URLs</p></td>
 <td><p>p.must-have</p></td>
 </tr>
 </tbody>
@@ -798,37 +828,37 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id227"><span class="problematic" id="id228">pds-doi-service_119_</span></a> Raise a specific exception when the OSTI server is not reachable</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/119">pds-doi-service#119</a> Raise a specific exception when the OSTI server is not reachable</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id229"><span class="problematic" id="id230">pds-doi-service_121_</span></a> GET /dois must support empty vid field</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/121">pds-doi-service#121</a> GET /dois must support empty vid field</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id231"><span class="problematic" id="id232">pds-doi-service_122_</span></a> the sqllite database should be created at the same location, whereever the command are launched from</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/122">pds-doi-service#122</a> the sqllite database should be created at the same location, whereever the command are launched from</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id233"><span class="problematic" id="id234">pds-doi-service_126_</span></a> get /dois/{lidvid}</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/126">pds-doi-service#126</a> get /dois/{lidvid}</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id235"><span class="problematic" id="id236">pds-doi-service_128_</span></a> command pds-doi-cmd list returns update date in timestamp instead of iso8601</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/128">pds-doi-service#128</a> command pds-doi-cmd list returns update date in timestamp instead of iso8601</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id237"><span class="problematic" id="id238">pds-doi-service_138_</span></a> xlsx file extension for reserve not supported</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/138">pds-doi-service#138</a> xlsx file extension for reserve not supported</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id239"><span class="problematic" id="id240">pds-doi-service_141_</span></a> api does not ignore ‘/’ at the end of url</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/141">pds-doi-service#141</a> api does not ignore ‘/’ at the end of url</p></td>
 <td><p>s.low</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id241"><span class="problematic" id="id242">pds-doi-service_143_</span></a> when release command keywords are broken with encoded characters</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/143">pds-doi-service#143</a> when release command keywords are broken with encoded characters</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id243"><span class="problematic" id="id244">pds-doi-service_150_</span></a> when doing draft with warnings (e.g. duplicated title) the -f option does not help</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/150">pds-doi-service#150</a> when doing draft with warnings (e.g. duplicated title) the -f option does not help</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id245"><span class="problematic" id="id246">pds-doi-service_154_</span></a> draft OSTI label</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/154">pds-doi-service#154</a> draft OSTI label</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id247"><span class="problematic" id="id248">pds-doi-service_159_</span></a> The url /dois/{lidvid} should still return XML in the record attribute</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/159">pds-doi-service#159</a> The url /dois/{lidvid} should still return XML in the record attribute</p></td>
 <td><p>s.critical</p></td>
 </tr>
 </tbody>
@@ -847,46 +877,46 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id249"><span class="problematic" id="id250">pds-doi-service_52_</span></a> API Implementation for DOI Service</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/52">pds-doi-service#52</a> API Implementation for DOI Service</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id251"><span class="problematic" id="id252">pds-doi-service_91_</span></a> Develop User Access / Management Strategy</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/91">pds-doi-service#91</a> Develop User Access / Management Strategy</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id253"><span class="problematic" id="id254">pds-doi-service_114_</span></a> Draft action: read the doi from the pds4 label</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/114">pds-doi-service#114</a> Draft action: read the doi from the pds4 label</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id255"><span class="problematic" id="id256">pds-doi-service_116_</span></a> Extraction of the OSTI XML in /dois?… GET requests</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/116">pds-doi-service#116</a> Extraction of the OSTI XML in /dois?… GET requests</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id257"><span class="problematic" id="id258">pds-doi-service_125_</span></a> Update DOI UI and Service with new workflow for operational deployment</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/125">pds-doi-service#125</a> Update DOI UI and Service with new workflow for operational deployment</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id259"><span class="problematic" id="id260">pds-doi-service_134_</span></a> Update draft action with new option –lidvid to change from review to draft the status of a DOI</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/134">pds-doi-service#134</a> Update draft action with new option –lidvid to change from review to draft the status of a DOI</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id261"><span class="problematic" id="id262">pds-doi-service_135_</span></a> Update API to deactivate ‘release’ end point, create a ‘submit’ end-point</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/135">pds-doi-service#135</a> Update API to deactivate ‘release’ end point, create a ‘submit’ end-point</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id263"><span class="problematic" id="id264">pds-doi-service_140_</span></a> Update submission to OSTI to handle the removal of a field from the OSTI metadata</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/140">pds-doi-service#140</a> Update submission to OSTI to handle the removal of a field from the OSTI metadata</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id265"><span class="problematic" id="id266">pds-doi-service_144_</span></a> enable filter by status in sub-action ‘pds-doi-cmd list’</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/144">pds-doi-service#144</a> enable filter by status in sub-action ‘pds-doi-cmd list’</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id267"><span class="problematic" id="id268">pds-doi-service_148_</span></a> API POST /dois should accept DOI OSTI format in payload</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/148">pds-doi-service#148</a> API POST /dois should accept DOI OSTI format in payload</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id269"><span class="problematic" id="id270">pds-doi-service_157_</span></a> When a pds4 label or osti can not be parsed generate error 400 in API</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/157">pds-doi-service#157</a> When a pds4 label or osti can not be parsed generate error 400 in API</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id271"><span class="problematic" id="id272">pds-doi-service_162_</span></a> Implement Application Server to wrap Flask service</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/162">pds-doi-service#162</a> Implement Application Server to wrap Flask service</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id273"><span class="problematic" id="id274">pds-doi-service_163_</span></a> Dockerize API Service</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/163">pds-doi-service#163</a> Dockerize API Service</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id275"><span class="problematic" id="id276">pds-doi-service_165_</span></a> Add service to API for update of the status of records with OSTI (check sub command)</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/165">pds-doi-service#165</a> Add service to API for update of the status of records with OSTI (check sub command)</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -905,19 +935,19 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id277"><span class="problematic" id="id278">pds-doi-service_167_</span></a> As a user, I want to see the lidvid of my DOIs in the email report</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/167">pds-doi-service#167</a> As a user, I want to see the lidvid of my DOIs in the email report</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id279"><span class="problematic" id="id280">pds-doi-service_177_</span></a> As an API user I want to filter on lidvids with wildcards</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/177">pds-doi-service#177</a> As an API user I want to filter on lidvids with wildcards</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id281"><span class="problematic" id="id282">pds-doi-service_180_</span></a> As an API user I want to filter on PDS3 Data Set IDs with wildcards</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/180">pds-doi-service#180</a> As an API user I want to filter on PDS3 Data Set IDs with wildcards</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id283"><span class="problematic" id="id284">pds-doi-service_183_</span></a> As a user of the API, I want to see the DOI’s title when I go GET /dois request</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/183">pds-doi-service#183</a> As a user of the API, I want to see the DOI’s title when I go GET /dois request</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id285"><span class="problematic" id="id286">pds-doi-service_184_</span></a> As an API user, I want to always have an update date for the DOIs</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/issues/184">pds-doi-service#184</a> As an API user, I want to always have an update date for the DOIs</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -960,7 +990,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id287"><span class="problematic" id="id288">pds-doi-ui_35_</span></a> As a SA, I don’t want security vulnerabilities in the public UI</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/35">pds-doi-ui#35</a> As a SA, I don’t want security vulnerabilities in the public UI</p></td>
 <td><p>s.medium</p></td>
 </tr>
 </tbody>
@@ -979,34 +1009,34 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id289"><span class="problematic" id="id290">pds-doi-ui_1_</span></a> Reserve DOI UI forms</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/1">pds-doi-ui#1</a> Reserve DOI UI forms</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id291"><span class="problematic" id="id292">pds-doi-ui_9_</span></a> Return API error message in UI</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/9">pds-doi-ui#9</a> Return API error message in UI</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id293"><span class="problematic" id="id294">pds-doi-ui_10_</span></a> Provide a mean to come back to release action when on reserve screen</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/10">pds-doi-ui#10</a> Provide a mean to come back to release action when on reserve screen</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id295"><span class="problematic" id="id296">pds-doi-ui_14_</span></a> Prevent the discipline node for doing DOI release without a ENG node review</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/14">pds-doi-ui#14</a> Prevent the discipline node for doing DOI release without a ENG node review</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id297"><span class="problematic" id="id298">pds-doi-ui_17_</span></a>  PDS Label url should take a public URL</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/17">pds-doi-ui#17</a>  PDS Label url should take a public URL</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id299"><span class="problematic" id="id300">pds-doi-ui_19_</span></a> Release step needs a submitter/node</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/19">pds-doi-ui#19</a> Release step needs a submitter/node</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id301"><span class="problematic" id="id302">pds-doi-ui_27_</span></a> Error need to be catched when one draft a pds4 label from the url</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/27">pds-doi-ui#27</a> Error need to be catched when one draft a pds4 label from the url</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id303"><span class="problematic" id="id304">pds-doi-ui_28_</span></a> Enable force warning</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/28">pds-doi-ui#28</a> Enable force warning</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id305"><span class="problematic" id="id306">pds-doi-ui_30_</span></a> Display errors and warning when user clicks “save” on the release screen</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/30">pds-doi-ui#30</a> Display errors and warning when user clicks “save” on the release screen</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id307"><span class="problematic" id="id308">pds-doi-ui_31_</span></a> On release screen, have only one “ignore warning” checkbox</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/31">pds-doi-ui#31</a> On release screen, have only one “ignore warning” checkbox</p></td>
 <td><p>p.must-have</p></td>
 </tr>
 </tbody>
@@ -1025,10 +1055,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id309"><span class="problematic" id="id310">pds-doi-ui_25_</span></a> As a user, I want to search for a DOI and associated metadata by LID/LIDVID</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/25">pds-doi-ui#25</a> As a user, I want to search for a DOI and associated metadata by LID/LIDVID</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id311"><span class="problematic" id="id312">pds-doi-ui_34_</span></a> As a user, I want to see the error/warnings messages on the same page from where they were raised</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-ui/issues/34">pds-doi-ui#34</a> As a user, I want to see the error/warnings messages on the same page from where they were raised</p></td>
 <td><p>p.could-have</p></td>
 </tr>
 </tbody>
@@ -1071,16 +1101,16 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id313"><span class="problematic" id="id314">pds-registry-app_108_</span></a> harvest and registry manager in pds-registry-app-0.2.2-bin.zip are missing batch scripts for windows</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/108">pds-registry-app#108</a> harvest and registry manager in pds-registry-app-0.2.2-bin.zip are missing batch scripts for windows</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id315"><span class="problematic" id="id316">pds-registry-app_109_</span></a> Test data in pds-registry-app-0.2.2-bin.zip contains invalid PDS4 labels</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/109">pds-registry-app#109</a> Test data in pds-registry-app-0.2.2-bin.zip contains invalid PDS4 labels</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id317"><span class="problematic" id="id318">pds-registry-app_110_</span></a> Test data in pds-registry-app-0.2.2-bin.zip is missing data products.</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/110">pds-registry-app#110</a> Test data in pds-registry-app-0.2.2-bin.zip is missing data products.</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id319"><span class="problematic" id="id320">pds-registry-app_135_</span></a> docker build is version locked</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/135">pds-registry-app#135</a> docker build is version locked</p></td>
 <td><p>s.medium</p></td>
 </tr>
 </tbody>
@@ -1099,31 +1129,31 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id321"><span class="problematic" id="id322">pds-registry-app_20_</span></a> Update Schema Generator for handling special cases where ancestor classes are needed</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/20">pds-registry-app#20</a> Update Schema Generator for handling special cases where ancestor classes are needed</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id323"><span class="problematic" id="id324">pds-registry-app_27_</span></a> Manage PDS4 product relationships</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/27">pds-registry-app#27</a> Manage PDS4 product relationships</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id325"><span class="problematic" id="id326">pds-registry-app_102_</span></a> Add the API to the pds-registry-app package, with documentation</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/102">pds-registry-app#102</a> Add the API to the pds-registry-app package, with documentation</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id327"><span class="problematic" id="id328">pds-registry-app_103_</span></a> update registry-manager load-data to handle additional use cases</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/103">pds-registry-app#103</a> update registry-manager load-data to handle additional use cases</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id329"><span class="problematic" id="id330">pds-registry-app_113_</span></a> Have pds4 properties syntax match the syntax decided for the PDS API</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/113">pds-registry-app#113</a> Have pds4 properties syntax match the syntax decided for the PDS API</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id331"><span class="problematic" id="id332">pds-registry-app_122_</span></a> Initial deployment of API on AWS - ASG/ELB solution</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/122">pds-registry-app#122</a> Initial deployment of API on AWS - ASG/ELB solution</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id333"><span class="problematic" id="id334">pds-registry-app_123_</span></a> Update registry-mgr documentation as stated in #86</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/123">pds-registry-app#123</a> Update registry-mgr documentation as stated in #86</p></td>
 <td><p>p.could-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id335"><span class="problematic" id="id336">pds-registry-app_129_</span></a> Create a registry docker for developer testing</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/129">pds-registry-app#129</a> Create a registry docker for developer testing</p></td>
 <td><p>p.could-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id337"><span class="problematic" id="id338">pds-registry-app_131_</span></a> Develop ElasticSearch client library to be utilized by harvest / registry-mgr</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/131">pds-registry-app#131</a> Develop ElasticSearch client library to be utilized by harvest / registry-mgr</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1142,67 +1172,67 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id339"><span class="problematic" id="id340">pds-registry-app_57_</span></a> The service shall accept artifact registrations.</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/57">pds-registry-app#57</a> The service shall accept artifact registrations.</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id341"><span class="problematic" id="id342">pds-registry-app_58_</span></a> The service shall provide a means identifying relationships between artifact registrations</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/58">pds-registry-app#58</a> The service shall provide a means identifying relationships between artifact registrations</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id343"><span class="problematic" id="id344">pds-registry-app_59_</span></a> The service shall maintain configuration regarding the classes of artifacts to be registered</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/59">pds-registry-app#59</a> The service shall maintain configuration regarding the classes of artifacts to be registered</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id345"><span class="problematic" id="id346">pds-registry-app_75_</span></a> The service shall accept metadata for a registered artifact in a defined format</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/75">pds-registry-app#75</a> The service shall accept metadata for a registered artifact in a defined format</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id347"><span class="problematic" id="id348">pds-registry-app_56_</span></a> The service shall assign a global unique identifier to a registered artifact</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/56">pds-registry-app#56</a> The service shall assign a global unique identifier to a registered artifact</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id349"><span class="problematic" id="id350">pds-registry-app_73_</span></a> The service shall require a logical identifier and version be provided for all registered artifacts</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/73">pds-registry-app#73</a> The service shall require a logical identifier and version be provided for all registered artifacts</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id351"><span class="problematic" id="id352">pds-registry-app_72_</span></a> The service shall store metadata for a registered artifact in an underlying metadata store</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/72">pds-registry-app#72</a> The service shall store metadata for a registered artifact in an underlying metadata store</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id353"><span class="problematic" id="id354">pds-registry-app_71_</span></a> The service shall allow updates to registered artifacts</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/71">pds-registry-app#71</a> The service shall allow updates to registered artifacts</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id355"><span class="problematic" id="id356">pds-registry-app_70_</span></a> The service shall allow deletion of registered artifacts</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/70">pds-registry-app#70</a> The service shall allow deletion of registered artifacts</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id357"><span class="problematic" id="id358">pds-registry-app_55_</span></a> The service shall allow for queries for registered artifacts</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/55">pds-registry-app#55</a> The service shall allow for queries for registered artifacts</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id359"><span class="problematic" id="id360">pds-registry-app_68_</span></a> The service shall require checksums as metadata for registry artifact to enable system-wide integrity checking</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/68">pds-registry-app#68</a> The service shall require checksums as metadata for registry artifact to enable system-wide integrity checking</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id361"><span class="problematic" id="id362">pds-registry-app_67_</span></a> The service shall require a subset of file system metadata in order to support data metrics generation</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/67">pds-registry-app#67</a> The service shall require a subset of file system metadata in order to support data metrics generation</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id363"><span class="problematic" id="id364">pds-registry-app_66_</span></a> The service shall require user authorization for updating registry metadata</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/66">pds-registry-app#66</a> The service shall require user authorization for updating registry metadata</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id365"><span class="problematic" id="id366">pds-registry-app_65_</span></a> The service shall provide a staging capability for artifacts staged for release</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/65">pds-registry-app#65</a> The service shall provide a staging capability for artifacts staged for release</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id367"><span class="problematic" id="id368">pds-registry-app_141_</span></a> As a manager, I want a cost model for deploying a registry + API in AWS</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/141">pds-registry-app#141</a> As a manager, I want a cost model for deploying a registry + API in AWS</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id369"><span class="problematic" id="id370">pds-registry-app_142_</span></a> As a node operator, I want actionable, user-friendly error messages for registry schema failures</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/142">pds-registry-app#142</a> As a node operator, I want actionable, user-friendly error messages for registry schema failures</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id371"><span class="problematic" id="id372">pds-registry-app_143_</span></a> As a node operator, I want to ingest metadata regarding secondary products that belong to a collection.</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/143">pds-registry-app#143</a> As a node operator, I want to ingest metadata regarding secondary products that belong to a collection.</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id373"><span class="problematic" id="id374">pds-registry-app_144_</span></a> As a node operator, I want to ingest metadata regarding secondary collections that belong to a bundle.</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/144">pds-registry-app#144</a> As a node operator, I want to ingest metadata regarding secondary collections that belong to a bundle.</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id375"><span class="problematic" id="id376">pds-registry-app_145_</span></a> As a developer, I want to include supplemental file data sizes in the registry</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/145">pds-registry-app#145</a> As a developer, I want to include supplemental file data sizes in the registry</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id377"><span class="problematic" id="id378">pds-registry-app_146_</span></a> As a node operator, I want the the registry schema to update autonomously when new data is ingested.</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/146">pds-registry-app#146</a> As a node operator, I want the the registry schema to update autonomously when new data is ingested.</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id379"><span class="problematic" id="id380">pds-registry-app_147_</span></a> As a node operator,  I want to be able to tag ingested data with the node it is ingested by.</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/147">pds-registry-app#147</a> As a node operator,  I want to be able to tag ingested data with the node it is ingested by.</p></td>
 <td><p>p.must-have</p></td>
 </tr>
 </tbody>
@@ -1245,16 +1275,16 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id381"><span class="problematic" id="id382">pds-wds-web_9_</span></a> App Bar causes usability issues on mobile</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds-web/issues/9">pds-wds-web#9</a> App Bar causes usability issues on mobile</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id383"><span class="problematic" id="id384">pds-wds-web_10_</span></a> PDS App Bar does not work if it’s included after the DOM loads</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds-web/issues/10">pds-wds-web#10</a> PDS App Bar does not work if it’s included after the DOM loads</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id385"><span class="problematic" id="id386">pds-wds-web_15_</span></a> App Bar breaks facet selection on Photojournal Beta</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds-web/issues/15">pds-wds-web#15</a> App Bar breaks facet selection on Photojournal Beta</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id387"><span class="problematic" id="id388">pds-wds-web_19_</span></a> Update NAIF in App Bar</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds-web/issues/19">pds-wds-web#19</a> Update NAIF in App Bar</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1273,10 +1303,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id389"><span class="problematic" id="id390">pds-wds-web_12_</span></a> Show screenshot of app-bar in README</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds-web/issues/12">pds-wds-web#12</a> Show screenshot of app-bar in README</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id391"><span class="problematic" id="id392">pds-wds-web_17_</span></a> App Bar Node List Reordering</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds-web/issues/17">pds-wds-web#17</a> App Bar Node List Reordering</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1319,10 +1349,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id393"><span class="problematic" id="id394">PDS.nasa.gov-Search_20_</span></a> Search Details Page / DOI Landing Page</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/20">PDS.nasa.gov-Search#20</a> Search Details Page / DOI Landing Page</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id395"><span class="problematic" id="id396">PDS.nasa.gov-Search_29_</span></a> Iterate with DOI Working Group for improvements to landing pages</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/29">PDS.nasa.gov-Search#29</a> Iterate with DOI Working Group for improvements to landing pages</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1365,28 +1395,28 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id397"><span class="problematic" id="id398">PDS.nasa.gov-UX_3_</span></a> Formulate user stories for prototype</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/3">PDS.nasa.gov-UX#3</a> Formulate user stories for prototype</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id399"><span class="problematic" id="id400">PDS.nasa.gov-UX_5_</span></a> Synthesize interview results into user research knowledge base and produce report</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/5">PDS.nasa.gov-UX#5</a> Synthesize interview results into user research knowledge base and produce report</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id401"><span class="problematic" id="id402">PDS.nasa.gov-UX_6_</span></a> Model workflows and initial design directions</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/6">PDS.nasa.gov-UX#6</a> Model workflows and initial design directions</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id403"><span class="problematic" id="id404">PDS.nasa.gov-UX_8_</span></a> Design mockups and develop Figma prototype</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/8">PDS.nasa.gov-UX#8</a> Design mockups and develop Figma prototype</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id405"><span class="problematic" id="id406">PDS.nasa.gov-UX_61_</span></a> Refine user interview and survey analysis per MC comments</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/61">PDS.nasa.gov-UX#61</a> Refine user interview and survey analysis per MC comments</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id407"><span class="problematic" id="id408">PDS.nasa.gov-UX_70_</span></a> Refine PDS Web Modernization working group plan</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/70">PDS.nasa.gov-UX#70</a> Refine PDS Web Modernization working group plan</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id409"><span class="problematic" id="id410">PDS.nasa.gov-UX_71_</span></a> Upload all data from airtable / survey to GDrive</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/71">PDS.nasa.gov-UX#71</a> Upload all data from airtable / survey to GDrive</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id411"><span class="problematic" id="id412">PDS.nasa.gov-UX_73_</span></a> Rev 3 of milestones to breakdown of notional goals and deliverables</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/73">PDS.nasa.gov-UX#73</a> Rev 3 of milestones to breakdown of notional goals and deliverables</p></td>
 <td><p>p.must-have</p></td>
 </tr>
 </tbody>
@@ -1429,49 +1459,49 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id413"><span class="problematic" id="id414">pds4-information-model_175_</span></a> LDDTool: Displaying invalid Imaging Discipline Classes</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/175">pds4-information-model#175</a> LDDTool: Displaying invalid Imaging Discipline Classes</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id415"><span class="problematic" id="id416">pds4-information-model_188_</span></a> LDDTool: requires one class with (element_flag = true), even when no classes defined</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/188">pds4-information-model#188</a> LDDTool: requires one class with (element_flag = true), even when no classes defined</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id417"><span class="problematic" id="id418">pds4-information-model_266_</span></a> Throw WARNING message when enumeration_flag = false but enumerations are specified</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/266">pds4-information-model#266</a> Throw WARNING message when enumeration_flag = false but enumerations are specified</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id419"><span class="problematic" id="id420">pds4-information-model_271_</span></a> LDDTool forces use of LDD versions based upon config</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/271">pds4-information-model#271</a> LDDTool forces use of LDD versions based upon config</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id421"><span class="problematic" id="id422">pds4-information-model_277_</span></a> LDD versionId list in the Data Dictionary Document introduction does not contain valid versionIds</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/277">pds4-information-model#277</a> LDD versionId list in the Data Dictionary Document introduction does not contain valid versionIds</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id423"><span class="problematic" id="id424">pds4-information-model_280_</span></a> CSV files fail to escape double quotes.</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/280">pds4-information-model#280</a> CSV files fail to escape double quotes.</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id425"><span class="problematic" id="id426">pds4-information-model_283_</span></a> LDDTool generated LIDs for XML Schema Label Products  do not contain IM or LDD Version Ids</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/283">pds4-information-model#283</a> LDDTool generated LIDs for XML Schema Label Products  do not contain IM or LDD Version Ids</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id427"><span class="problematic" id="id428">pds4-information-model_302_</span></a> LDDTool does not allow the bundle to be specified for generated dictionaries</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/302">pds4-information-model#302</a> LDDTool does not allow the bundle to be specified for generated dictionaries</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id429"><span class="problematic" id="id430">pds4-information-model_304_</span></a> LDDTool does include the PSA namespace</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/304">pds4-information-model#304</a> LDDTool does include the PSA namespace</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id431"><span class="problematic" id="id432">pds4-information-model_312_</span></a> LDDTool does not generate the complete “All LDD” version of the  WebHelp PDS4 Data Dictionary Document</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/312">pds4-information-model#312</a> LDDTool does not generate the complete “All LDD” version of the  WebHelp PDS4 Data Dictionary Document</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id433"><span class="problematic" id="id434">pds4-information-model_316_</span></a> The 1F00 directory is missing from the Data directory for the 1G00 development release.</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/316">pds4-information-model#316</a> The 1F00 directory is missing from the Data directory for the 1G00 development release.</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id435"><span class="problematic" id="id436">pds4-information-model_322_</span></a> LDDTool generates a 1C00 file when -V 1B00 is specified</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/322">pds4-information-model#322</a> LDDTool generates a 1C00 file when -V 1B00 is specified</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id437"><span class="problematic" id="id438">pds4-information-model_327_</span></a> Repo tests fail when trying to run back-to-back maven steps</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/327">pds4-information-model#327</a> Repo tests fail when trying to run back-to-back maven steps</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id439"><span class="problematic" id="id440">pds4-information-model_328_</span></a> LDDTool outputs invalid schema with v13.0.0</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/328">pds4-information-model#328</a> LDDTool outputs invalid schema with v13.0.0</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id441"><span class="problematic" id="id442">pds4-information-model_331_</span></a> Invalid output schema when trying to set an Internal_Reference reference_type value set</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/331">pds4-information-model#331</a> Invalid output schema when trying to set an Internal_Reference reference_type value set</p></td>
 <td><p>s.high</p></td>
 </tr>
 </tbody>
@@ -1490,25 +1520,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id443"><span class="problematic" id="id444">pds4-information-model_167_</span></a> LDDTool: Use sch:value-of to display a variable in Schematron validation</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/167">pds4-information-model#167</a> LDDTool: Use sch:value-of to display a variable in Schematron validation</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id445"><span class="problematic" id="id446">pds4-information-model_238_</span></a> Continuing refactoring of IMTool / LDDTool</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/238">pds4-information-model#238</a> Continuing refactoring of IMTool / LDDTool</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id447"><span class="problematic" id="id448">pds4-information-model_241_</span></a> Improvements from Build 11.0 testing</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/241">pds4-information-model#241</a> Improvements from Build 11.0 testing</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id449"><span class="problematic" id="id450">pds4-information-model_242_</span></a> DocBook HTML/WebHelp generation and conversion processes</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/242">pds4-information-model#242</a> DocBook HTML/WebHelp generation and conversion processes</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id451"><span class="problematic" id="id452">pds4-information-model_293_</span></a> Update JSON output to include dependencies in output</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/293">pds4-information-model#293</a> Update JSON output to include dependencies in output</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id453"><span class="problematic" id="id454">pds4-information-model_298_</span></a> Add title to Rule Assertion to allow generation of regression tests.</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/298">pds4-information-model#298</a> Add title to Rule Assertion to allow generation of regression tests.</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id455"><span class="problematic" id="id456">pds4-information-model_332_</span></a> [namespace-registry] add new namespace “&lt;clementine&gt;”</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/332">pds4-information-model#332</a> [namespace-registry] add new namespace “&lt;clementine&gt;”</p></td>
 <td><p>p.must-have</p></td>
 </tr>
 </tbody>
@@ -1551,13 +1581,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id457"><span class="problematic" id="id458">pds4-jparser_21_</span></a> Update table reads for large files and improve memory footprints</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser/issues/21">pds4-jparser#21</a> Update table reads for large files and improve memory footprints</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id459"><span class="problematic" id="id460">pds4-jparser_32_</span></a> NIO Library causes error when trying to build with openJDK 8</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser/issues/32">pds4-jparser#32</a> NIO Library causes error when trying to build with openJDK 8</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id461"><span class="problematic" id="id462">pds4-jparser_36_</span></a> NoSuchMethodError: java.nio.ByteBuffer with Java9 Builds</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser/issues/36">pds4-jparser#36</a> NoSuchMethodError: java.nio.ByteBuffer with Java9 Builds</p></td>
 <td><p>s.medium</p></td>
 </tr>
 </tbody>
@@ -1576,7 +1606,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id463"><span class="problematic" id="id464">pds4-jparser_33_</span></a> Upgrade pds4-jparser to build with Java11+</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-jparser/issues/33">pds4-jparser#33</a> Upgrade pds4-jparser to build with Java11+</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1619,7 +1649,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id465"><span class="problematic" id="id466">PLAID_10_</span></a> Develop procedure for how to update PLAID with latest IM</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PLAID/issues/10">PLAID#10</a> Develop procedure for how to update PLAID with latest IM</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1638,7 +1668,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id467"><span class="problematic" id="id468">PLAID_15_</span></a> As a PDS Operator, I want to update PLAID to the latest PDS4 Information Model</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/PLAID/issues/15">PLAID#15</a> As a PDS Operator, I want to update PLAID to the latest PDS4 Information Model</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1681,10 +1711,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id469"><span class="problematic" id="id470">registry-api-service_16_</span></a> API server crashes with OutOfMemoryError if invalid query is used</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api-service/issues/16">registry-api-service#16</a> API server crashes with OutOfMemoryError if invalid query is used</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id471"><span class="problematic" id="id472">registry-api-service_17_</span></a> error 500 on GET /collections/:lidvid:/products</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api-service/issues/17">registry-api-service#17</a> error 500 on GET /collections/:lidvid:/products</p></td>
 <td><p>s.high</p></td>
 </tr>
 </tbody>
@@ -1703,13 +1733,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id473"><span class="problematic" id="id474">registry-api-service_2_</span></a> Manage relationships bundle-collection-product in API</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api-service/issues/2">registry-api-service#2</a> Manage relationships bundle-collection-product in API</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id475"><span class="problematic" id="id476">registry-api-service_3_</span></a> implement the start/limit efficiently</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api-service/issues/3">registry-api-service#3</a> implement the start/limit efficiently</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id477"><span class="problematic" id="id478">registry-api-service_4_</span></a> Implement a lid resolver</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api-service/issues/4">registry-api-service#4</a> Implement a lid resolver</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1728,7 +1758,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id479"><span class="problematic" id="id480">registry-api-service_14_</span></a> As a node operators, I want to deploy the Registry API Service with the PDS Registry.</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api-service/issues/14">registry-api-service#14</a> As a node operators, I want to deploy the Registry API Service with the PDS Registry.</p></td>
 <td><p>p.must-have</p></td>
 </tr>
 </tbody>
@@ -1771,7 +1801,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id481"><span class="problematic" id="id482">tracking-service_18_</span></a> tracking front page does not keep tracking in relative anchor href</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/tracking-service/issues/18">tracking-service#18</a> tracking front page does not keep tracking in relative anchor href</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1790,10 +1820,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id483"><span class="problematic" id="id484">tracking-service_10_</span></a> Dockerize Tracking Service</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/tracking-service/issues/10">tracking-service#10</a> Dockerize Tracking Service</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id485"><span class="problematic" id="id486">tracking-service_14_</span></a> Add mysql database to docker deployment</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/tracking-service/issues/14">tracking-service#14</a> Add mysql database to docker deployment</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1836,76 +1866,76 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id487"><span class="problematic" id="id488">validate_5_</span></a> Improve file base name check according to Standards Reference</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/5">validate#5</a> Improve file base name check according to Standards Reference</p></td>
 <td><p>s.low</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id489"><span class="problematic" id="id490">validate_6_</span></a> Improve pds4.bundle unlabeled files check to handle files without a file suffix</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/6">validate#6</a> Improve pds4.bundle unlabeled files check to handle files without a file suffix</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id491"><span class="problematic" id="id492">validate_11_</span></a> Update allowable field_format values per Standards Reference definition regarding [+-] characters</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/11">validate#11</a> Update allowable field_format values per Standards Reference definition regarding [+-] characters</p></td>
 <td><p>s.low</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id493"><span class="problematic" id="id494">validate_153_</span></a> Update validate to throw error when a file has a space in the filename</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/153">validate#153</a> Update validate to throw error when a file has a space in the filename</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id495"><span class="problematic" id="id496">validate_189_</span></a> Validate error reading tables &gt; 2GiB</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/189">validate#189</a> Validate error reading tables &gt; 2GiB</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id497"><span class="problematic" id="id498">validate_240_</span></a> Unexpected error for data collection in a sub-directory</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/240">validate#240</a> Unexpected error for data collection in a sub-directory</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id499"><span class="problematic" id="id500">validate_256_</span></a> validate should only do integrity checking on latest version of a collection when referenced by LID</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/256">validate#256</a> validate should only do integrity checking on latest version of a collection when referenced by LID</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id501"><span class="problematic" id="id502">validate_257_</span></a> Product with incorrect table binary definition pass validation</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/257">validate#257</a> Product with incorrect table binary definition pass validation</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id503"><span class="problematic" id="id504">validate_260_</span></a> Missing documentation about deprecated flags</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/260">validate#260</a> Missing documentation about deprecated flags</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id505"><span class="problematic" id="id506">validate_271_</span></a> validate 1.25.0-SNAPSHOT raises an exception when validating a product</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/271">validate#271</a> validate 1.25.0-SNAPSHOT raises an exception when validating a product</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id507"><span class="problematic" id="id508">validate_273_</span></a> Bug performing bundle validation with nested directories</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/273">validate#273</a> Bug performing bundle validation with nested directories</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id509"><span class="problematic" id="id510">validate_278_</span></a> Registered context products file does not retain older versions of context products</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/278">validate#278</a> Registered context products file does not retain older versions of context products</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id511"><span class="problematic" id="id512">validate_281_</span></a> Validate fails to report error in   File.file_size</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/281">validate#281</a> Validate fails to report error in   File.file_size</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id513"><span class="problematic" id="id514">validate_291_</span></a> When validating a product with a bad schematron definition, bundle validation also fails indicating the associated product does not exist</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/291">validate#291</a> When validating a product with a bad schematron definition, bundle validation also fails indicating the associated product does not exist</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id515"><span class="problematic" id="id516">validate_294_</span></a> Content validation incorrectly reports error for floating-point values out of specified min/max range</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/294">validate#294</a> Content validation incorrectly reports error for floating-point values out of specified min/max range</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id517"><span class="problematic" id="id518">validate_297_</span></a> Content validation of ASCII_Integer field does not accept value with leading zeroes</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/297">validate#297</a> Content validation of ASCII_Integer field does not accept value with leading zeroes</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id519"><span class="problematic" id="id520">validate_298_</span></a> validate misses double quotes within a delimited table</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/298">validate#298</a> validate misses double quotes within a delimited table</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id521"><span class="problematic" id="id522">validate_299_</span></a> Validate tool does not PASS a bundle with a single-character filename</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/299">validate#299</a> Validate tool does not PASS a bundle with a single-character filename</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id523"><span class="problematic" id="id524">validate_300_</span></a> validate -u flag reports an error on Windows</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/300">validate#300</a> validate -u flag reports an error on Windows</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id525"><span class="problematic" id="id526">validate_301_</span></a> unclear error message for field count matching</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/301">validate#301</a> unclear error message for field count matching</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id527"><span class="problematic" id="id528">validate_310_</span></a> Validate missing collections in bundle after CCB-282 updates</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/310">validate#310</a> Validate missing collections in bundle after CCB-282 updates</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id529"><span class="problematic" id="id530">validate_325_</span></a> Validate Incorrectly Throws Error When Embedded Field_Character Contains &lt;CR&gt;&lt;LF&gt;</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/325">validate#325</a> Validate Incorrectly Throws Error When Embedded Field_Character Contains &lt;CR&gt;&lt;LF&gt;</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id531"><span class="problematic" id="id532">validate_326_</span></a> File-size check fails for large data files</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/326">validate#326</a> File-size check fails for large data files</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id533"><span class="problematic" id="id534">validate_327_</span></a> validate fails to process large data file</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/327">validate#327</a> validate fails to process large data file</p></td>
 <td><p>s.medium</p></td>
 </tr>
 </tbody>
@@ -1924,46 +1954,46 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id535"><span class="problematic" id="id536">validate_17_</span></a> Validate schematron references and throw fatal error if invalid URI specified</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/17">validate#17</a> Validate schematron references and throw fatal error if invalid URI specified</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id537"><span class="problematic" id="id538">validate_24_</span></a> Update context check to retrieve and use latest context products from EN Registry</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/24">validate#24</a> Update context check to retrieve and use latest context products from EN Registry</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id539"><span class="problematic" id="id540">validate_51_</span></a> Provide the capability to specify multiple locations for pds4.bundle validation</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/51">validate#51</a> Provide the capability to specify multiple locations for pds4.bundle validation</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id541"><span class="problematic" id="id542">validate_81_</span></a> Validate and throw error when duplicate LIDs are found in Bundle</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/81">validate#81</a> Validate and throw error when duplicate LIDs are found in Bundle</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id543"><span class="problematic" id="id544">validate_230_</span></a> Update validate per SR Requirements for collection inventories</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/230">validate#230</a> Update validate per SR Requirements for collection inventories</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id545"><span class="problematic" id="id546">validate_238_</span></a> validate does not perform full bundle validation when using a specific bundle.xml</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/238">validate#238</a> validate does not perform full bundle validation when using a specific bundle.xml</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id547"><span class="problematic" id="id548">validate_246_</span></a> Add output directory flag to validate-bundle tool</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/246">validate#246</a> Add output directory flag to validate-bundle tool</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id549"><span class="problematic" id="id550">validate_249_</span></a> Improvements for validating accumulating bundles / collections</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/249">validate#249</a> Improvements for validating accumulating bundles / collections</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id551"><span class="problematic" id="id552">validate_252_</span></a> Implement initial behavioral testing framework with cucumber</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/252">validate#252</a> Implement initial behavioral testing framework with cucumber</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id553"><span class="problematic" id="id554">validate_254_</span></a> validate does not perform expediently when doing bundle-level validation against large bundles</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/254">validate#254</a> validate does not perform expediently when doing bundle-level validation against large bundles</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id555"><span class="problematic" id="id556">validate_264_</span></a> Update installation documentation to include 64-bit Java as system Requirement</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/264">validate#264</a> Update installation documentation to include 64-bit Java as system Requirement</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id557"><span class="problematic" id="id558">validate_290_</span></a> Migrate subset of existing regression tests to cucumber behavioral testing</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/290">validate#290</a> Migrate subset of existing regression tests to cucumber behavioral testing</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id559"><span class="problematic" id="id560">validate_322_</span></a> Update installation documentation to require Java 1.9+</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/322">validate#322</a> Update installation documentation to require Java 1.9+</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id561"><span class="problematic" id="id562">validate_323_</span></a> Upgrade to Java 9+</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/323">validate#323</a> Upgrade to Java 9+</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -1982,28 +2012,28 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id563"><span class="problematic" id="id564">validate_57_</span></a> As a user, I want to be warned when there are alphanumeric characters between fields in Table_Character</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/57">validate#57</a> As a user, I want to be warned when there are alphanumeric characters between fields in Table_Character</p></td>
 <td><p>p.could-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id565"><span class="problematic" id="id566">validate_149_</span></a> As a user, I want validate to check number of records/fields specified in label matches the records in the actual data table</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/149">validate#149</a> As a user, I want validate to check number of records/fields specified in label matches the records in the actual data table</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id567"><span class="problematic" id="id568">validate_164_</span></a> As a user, I want to validate PDF files are PDF/A</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/164">validate#164</a> As a user, I want to validate PDF files are PDF/A</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id569"><span class="problematic" id="id570">validate_188_</span></a> As a user, I want to validate a bundle that uses multiple versions of the Information Model / Discipline LDDs</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/188">validate#188</a> As a user, I want to validate a bundle that uses multiple versions of the Information Model / Discipline LDDs</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id571"><span class="problematic" id="id572">validate_210_</span></a> As a user, I want validate to raise a WARNING when differing versions of IM are used within a bundle</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/210">validate#210</a> As a user, I want validate to raise a WARNING when differing versions of IM are used within a bundle</p></td>
 <td><p>p.could-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id573"><span class="problematic" id="id574">validate_292_</span></a> CCB-264: Make the Line Feed (LF) character an allowed record delimiter</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/292">validate#292</a> CCB-264: Make the Line Feed (LF) character an allowed record delimiter</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id575"><span class="problematic" id="id576">validate_303_</span></a> As a user, I want to the raise a WARNING if the object-defined size in the label does not match the file_size value</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/303">validate#303</a> As a user, I want to the raise a WARNING if the object-defined size in the label does not match the file_size value</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id577"><span class="problematic" id="id578">validate_308_</span></a> As a user, I want to check that all Internal References are valid references to other PDS4 products within the current validating bundle</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/308">validate#308</a> As a user, I want to check that all Internal References are valid references to other PDS4 products within the current validating bundle</p></td>
 <td><p>p.must-have</p></td>
 </tr>
 </tbody>
@@ -2023,10 +2053,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>NASA-PDS/<a href="#id579"><span class="problematic" id="id580">validate_250_</span></a> Improvements to meet updated Standards Reference since initial Requirements implementation</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/250">validate#250</a> Improvements to meet updated Standards Reference since initial Requirements implementation</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p>NASA-PDS/<a href="#id581"><span class="problematic" id="id582">validate_318_</span></a> B12.0 Content Validation Improvements</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/318">validate#318</a> B12.0 Content Validation Improvements</p></td>
 <td><p>unknown</p></td>
 </tr>
 </tbody>
@@ -2037,37 +2067,6 @@
 <hr class="docutils" />
 <div class="section" id="liens">
 <h2>Liens<a class="headerlink" href="#liens" title="Permalink to this headline">¶</a></h2>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 10%" />
-<col style="width: 78%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Issue</p></th>
-<th class="head"><p>Title</p></th>
-<th class="head"><p>Rationale</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/7">pds-swg_7</a> [CR] Defer PDS UX Tasks to B12.0</p></td>
-<td><p>[CR] Defer PDS UX Tasks to B12.0</p></td>
-<td><p>Deferring these tasks to B12.0 in order to develop a comprehensive, detailed plan, milestones, and activities for a PDS Web Modernization Team. <a class="reference external" href="https://github.com/nasa-pds/pds.nasa.gov-ux/issues/70">https://github.com/nasa-pds/pds.nasa.gov-ux/issues/70</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/6">pds-swg_6</a> [CR] Defer PDS API Tasks to B12.0</p></td>
-<td><p>[CR] Defer PDS API Tasks to B12.0</p></td>
-<td><p>Inaccurate estimates for time to complete other designs and implementations with PDS API WG.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/5">pds-swg_5</a> [CR] Defer Tracking Service Tasks to B12.0</p></td>
-<td><p>[CR] Defer Tracking Service Tasks to B12.0</p></td>
-<td><p>Tracking Service design and partial implementation was completed in 2018. Misunderstanding during handoff from previous developers that the software design did not include Requirements definition, and design did not form to common API standards. Caused significant increase in scope for [Requirements definition task](<a class="reference external" href="https://github.com/nasa-pds/tracking-service/issues/2">https://github.com/nasa-pds/tracking-service/issues/2</a>)</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/4">pds-swg_4</a> [CR] Add additional PDS4 SCRs to Release Plan</p></td>
-<td><p>[CR] Add additional PDS4 SCRs to Release Plan</p></td>
-<td><p>Several additional SCRs passed by the CCB.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <hr class="docutils" />
 <div class="section" id="software-catalog">
