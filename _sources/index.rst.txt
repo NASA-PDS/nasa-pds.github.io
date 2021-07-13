@@ -21,9 +21,9 @@ Sitemap
 
 ..  toctree::
     :glob:
-    :caption: Contribute
+    :caption: Collaborate
 
-    /contribute/*
+    /collaborate/*
 
 ..  toctree::
     :glob:
