@@ -31,7 +31,7 @@ This policy is subject to change based upon future guidance from NASA Science Mi
 Exemptions
 ++++++++++
 
-Exemption from Apache 2.0 license or other license for SPICE Toolkit.
+Exemption from Apache 2.0 license or other license for the SPICE Toolkit.
 ---------------------------------------------------------------------
 *Rationale:* The SPICE Toolkit source code is provided as open source via their website [1] with an open source license that limits redistribution [2]. The license was already agreed upon due to concerns over the security, backwards-compatibility, and quality of the software. This exemption will be reviewed at the next major release of the software.
  
