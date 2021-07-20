@@ -28,6 +28,8 @@ Some software may be exempt from this policy for reasons such as export control,
  
 This policy is subject to change based upon future guidance from NASA Science Mission Directorate per open sourcing, archiving, and indexing of software.
 
+This policy complies with the Open Source Policy at JPL, and has been approved by JPL’s Office of Technology Transfer and Software Release Authority.
+
 Exemptions
 ++++++++++
 
