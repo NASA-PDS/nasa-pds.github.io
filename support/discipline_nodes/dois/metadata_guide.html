@@ -1,0 +1,1448 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>DOI Metadata Guidelines &mdash; NASA PDS Software 11.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="prev" title="FAQs" href="faqs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> NASA PDS Software
+          
+
+          
+            
+            <img src="../../../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                11.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">System Releases</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../releases/releases.html">Software Release Summaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../releases/releases.html#upcoming-plans">Upcoming plans</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../releases/releases.html#release-description-documents-rdd">Release Description Documents (RDD)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Collaborate</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../collaborate/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../collaborate/developer.html">PDS Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../collaborate/jpl-pds-oss-policy.html">JPL-PDS Open Source Software Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../teams/pds-swg.html">Software Working Group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../teams/teams.html">PMC and Committers</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../forum.html">OpenPlanetary Forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../help.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Discipline Node Support</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">NASA PDS Software</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Discipline Node Support</a> &raquo;</li>
+        
+          <li><a href="index.html">DOI Support</a> &raquo;</li>
+        
+      <li>DOI Metadata Guidelines</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/support/discipline_nodes/dois/metadata_guide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="doi-metadata-guidelines">
+<h1>DOI Metadata Guidelines<a class="headerlink" href="#doi-metadata-guidelines" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This page is under constructions. Contributions, comments, and improvements welcome
+in our <a class="reference external" href="https://github.com/NASA-PDS/nasa-pds.github.io/issues">Github Issues</a></p>
+</div>
+<div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DOI Metadata Guidelines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#citing-conventions">Citing Conventions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#new-in-schema-4-4"><strong>[New in Schema 4.4]</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p><em>ROOT</em></p>
+<p>This is the root of the submission file document, and thus required.</p>
+<p>Note that the content of the <em>&lt;resource&gt;</em> element is defined under an
+<em>xs:all</em> group, so that the immediate child nodes can appear in any
+order. The order here reflects the order in which they are listed in the
+schema.</p>
+<p id="section-1"><em>REQUIRED</em></p>
+<p>This is the assigned DOI identifier and must begin with the DataCite
+prefix “10.”</p>
+<blockquote>
+<div><p>Required attribute: <em>identifierType</em>. This <em>must</em> have a value of
+<strong>DOI</strong>. For example:</p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">identifier</span> <span class="n">identifierType</span><span class="o">=</span><span class="s2">&quot;DOI&quot;</span><span class="o">&gt;</span><span class="mf">10.12345</span><span class="o">/</span><span class="n">abcde</span><span class="o">&lt;/</span><span class="n">identifier</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p id="section-2"><em>REQUIRED</em></p>
+<p>This is the author list or equivalent. Creators should appear in
+priority order. Both individuals and institutions/organizations can be
+credited as creators.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>If the only list we have is a list of editors, then it goes here,
+but also indicate in the <em>&lt;contributors&gt;</em> section that each person
+in the list is a <em>contributor</em> with the role of <strong>Editor</strong>. This is
+not an optimal solution, but it will do for now.</p></td>
+</tr>
+</tbody>
+</table>
+<p id="section-3"><em>REQUIRED, repeatable</em></p>
+<p>This class contains the identifying information for one creator. It is
+repeated for each creator. Note that the metadata schema does not
+distinguish between “authors” and “editors”. If some of the creators
+listed are editors rather than authors, repeat their creator information
+in the <em>&lt;contributors&gt;</em> section and indicate a role of “Editor”.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Fill out as much of this class as possible with information that was
+apropos at the time of the publication. So, if you know given name,
+include it; if you know the institutional affiliation, include it;
+if you can find and confirm the correct ORCID, include it; etc. This
+all helps in linking the data set into the literature and the
+author’s network.</p></td>
+</tr>
+</tbody>
+</table>
+<p id="section-4"><em>REQUIRED</em></p>
+<p>The string representing the name as it should appear in citations. For
+personal names, the format is “<em>Family</em>, <em>Given</em>” (all one string). Full
+first names are preferred for the metadata, in order to help identify
+authors unambiguously. (It is also relatively easy to turn a complete
+name into an initial.) For organizational names, use the full, formal
+name of the organization.</p>
+<p>This tag has one optional XML attribute, <em>nameType</em>, which takes one of
+these values:</p>
+<blockquote>
+<div><p><strong>Organizational</strong>
+<strong>Personal</strong></p>
+</div></blockquote>
+<p>Best practice is to always include this attribute for <em>creatorName</em>.</p>
+<p id="section-5"><em>OPTIONAL</em></p>
+<p>For personal names, this should contain the string corresponding to the
+given name in the <em>&lt;creatorName&gt;</em> element. This should not be present
+for organizational names (but that is not enforced by the DataCite
+schema).</p>
+<p id="section-6"><em>OPTIONAL</em></p>
+<p>For personal names, this should contain the string corresponding to the
+family name (surname, patronymic, etc.). This should not be present for
+organizational names (but that is not enforced by the DataCite schema).</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Note:</strong> For PDS purposes, at least, we should consider where to
+associate suffixes (Jr., Sr., III, etc.). If DataCite, ADS, or the
+AAS journals have a convention, we should follow that.</p></td>
+</tr>
+</tbody>
+</table>
+<p id="section-7"><em>OPTIONAL, repeatable</em></p>
+<p>This attribute provides a formal identifier for an individual or
+organization - for example, an author’s ORCID, or an organizational DOI.
+Only public identifiers should appear here, of course. If there is more
+than one applicable identifier, this element may be repeated.</p>
+<blockquote>
+<div><p>Required attribute: <em>nameIdentifierScheme</em>. The value should be the
+common name or acronym for the identifier given (like “ORCID”).
+Optional attribute: <em>schemeURI</em>. The value should be the URI of the
+defining organization or schema (“<a class="reference external" href="http://orcid.org">http://orcid.org</a>”, e.g.).</p>
+</div></blockquote>
+<p>Where it can be obtained directly from the creator, or where we can be
+certain about a creator’s ORCID, we should add it to the metadata.</p>
+<p id="section-8"><em>OPTIONAL, repeatable</em></p>
+<p>This attribute provides an organizational affiliation (as free-format
+text) for the creator. It may be repeated. Organizational “creators” may
+also have affiliations, if that makes sense.</p>
+<blockquote>
+<div><p>Optional attribute: <em>affiliationIdentifier</em>. The value should be a
+formal, permanent, unique identifier for the affiliated organization,
+beyond the name that is the value of the <em>&lt;affiliation&gt;</em> element. For
+example, a Research Organization Registry (ROR) ID would be ideal
+here.</p>
+<p>Optional attribute: <em>affiliationIdentifierScheme</em>. The
+(human-recognizable) name of the identifier system (e.g., “ROR” would
+be sufficient in the above case.</p>
+<p>Optional attribute: <em>schemeURI</em>. The URI of the identifier scheme,
+typically a URL.</p>
+</div></blockquote>
+<p id="section-9"><em>REQUIRED</em></p>
+<p>This class lists names or titles for the resource being identified. At
+least one title <em>must</em> be provided. This is the title that will be used
+to format citations, and it is also the title that users will see
+returned by various search interfaces. It needs to make sense in a
+general, non-PDS search context, so avoid acronyms and assuming that
+users will know that, for example, “Deep Impact” is also the name of a
+spacecraft and NASA mission.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Remember the primary title has to make sense in the context of an
+ADS-type search. Users may not know that data sets are included in
+their result set. The title we put here will be used to formulate
+citations of the data set as well as helping users to identify data
+of potential interest. So avoid acronyms (no matter how obvious they
+seem now) unless they include the full name. For example, “DIF” is
+not good on its own, but “Deep Impact Flyby (DIF) Spacecraft” is
+very good - explicit and contains the acronym that knowledgeable
+users might search on as well.</p></td>
+</tr>
+</tbody>
+</table>
+<p>===</p>
+<title><p>===</p>
+<p><em>REQUIRED, repeatable</em></p>
+<p>This element contains a single title. It may be repeated for alternate
+titles where appropriate.</p>
+<blockquote>
+<div><p>Optional attribute: <em>titleType</em>. This must have one of the following
+values:
+:* AlternativeTitle</p>
+<p>:* Subtitle</p>
+<p>:* TranslatedTitle</p>
+<p>:* Other</p>
+</div></blockquote>
+<p>For PDS purposes, the formal title should <em>always</em> be listed first
+without a <em>titleType</em> attribute, and additional titles should probably
+always be either alternatives or translations and identified accordingly
+through the <em>titleType</em> attribute.</p>
+<blockquote>
+<div><p>Optional attribute: <em>xml:lang</em>. This should contain one of the
+standard ISO 2- or 3-letter codes (but this is not validated). Note
+that this indicates only the language of the associated title string,
+<em>not</em> the language of the resource.</p>
+</div></blockquote>
+<p>PDS documents are required to be in English, so we should have no use
+for this. Our IPDA partners, however, might. In that sort of context, it
+would be prudent to include the <em>xml:lang</em> attribute for all <em>&lt;title&gt;</em>
+elements, not just the one identified as the <em>TranslatedTitle</em>.</p>
+<p id="section-10"><em>REQUIRED</em></p>
+<p>This attribute identifies the publisher/distributor/curator of the
+resource. It is used in creating citations.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>For PDS4 data sets that have LIDs that begin with <em>urn:nasa:pds</em>,
+this should always be <strong>NASA Planetary Data System</strong>. If we are
+assigning DOIs for other publishers (like ESA), we should first
+determine what their publisher title should be, <em>and</em> we should
+probably be using a DOI prefix that can be unique to that publishing
+archive.</p>
+<p>If we are assigning a DOI and also serving the data for a non-PDS
+publisher, then we should list our node and facility in the
+<em>&lt;contributors&gt;</em> section, with a role of <em>DataCurator</em>. (The first
+time this comes up we should think about this again, just in case.)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>Optional attribute: <em>xml:lang</em>. This attribute is used to indicate
+the language (using the standard ISO codes) of the publisher name.
+Unless otherwise specified, this is assumed to be in English.</p>
+</div></blockquote>
+<p id="section-11"><em>REQUIRED</em></p>
+<p>The year the resource was made available to the public. This is used in
+creating citations.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>For PDS data sets, this <strong>must</strong> be the four-digit year in which the
+data were publicly posted <em>in the format and version associated with
+this DOI</em>. This may or may not be the same year as listed in the
+CITATION_DESC field for legacy data sets. When in doubt, assume the
+DATA_SET_RELEASE_DATE is correct unless you have documentation that
+proves it is not - and then use the date in that documentation and
+note the discrepancy and resolution in an additional <em>&lt;description&gt;</em>
+field (following) with a <em>descriptionType</em> of <strong>Other</strong>.</p>
+<p>This date <strong>must</strong> agree with the <strong>Available</strong> date (see below)
+provided for ADS processing.</p>
+<p>There are other date fields in which significant dates can be
+indicated if needed or desired.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p id="section-12"><em>REQUIRED</em></p>
+<p>This element takes a free-format text description of the type of
+resource associated with the DOI.</p>
+<blockquote>
+<div><p>Required attribute: <em>resourceTypeGeneral</em>. This must have one of the
+following values:</p>
+<blockquote>
+<div><p>{| cellpadding=”10”</p>
+</div></blockquote>
+</div></blockquote>
+<p>|- | valign=”top” |</p>
+<ul class="simple">
+<li><p>Audiovisual</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> Book</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> BookChapter</p></li>
+<li><p>Collection</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> ComputationalNotebook</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> ConferencePaper</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> ConferenceProceeding</p></li>
+</ul>
+<p>| valign=”top” |</p>
+<ul class="simple">
+<li><p>DataPaper</p></li>
+<li><p>Dataset</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> Dissertation</p></li>
+<li><p>Event</p></li>
+<li><p>Image</p></li>
+<li><p>InteractiveResource</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> Journal</p></li>
+</ul>
+<p>| valign=”top” |</p>
+<ul class="simple">
+<li><p><strong>[New in Schema 4.4]</strong> JournalArticle</p></li>
+<li><p>Model</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> OutputmanagementPlan</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> PeerReview</p></li>
+<li><p>PhysicalObject</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> Preprint</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> Report</p></li>
+</ul>
+<p>| valign=”top” |</p>
+<ul class="simple">
+<li><p>Service</p></li>
+<li><p>Software</p></li>
+<li><p>Sound</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> Standard</p></li>
+<li><p>Text</p></li>
+<li><p>Workflow</p></li>
+<li><p>Other</p></li>
+</ul>
+<p>|}</p>
+<p>Best/recommended practice is to consider the <em>resourceTypeGeneral</em> as
+the broader term which is then modified by the value string, so that a
+classification can be formed by concatenating the two with ‘/’. So, for
+example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">resourceType</span> <span class="n">resourceTypeGeneral</span><span class="o">=</span><span class="s2">&quot;Dataset&quot;</span><span class="o">&gt;</span><span class="n">PDS4</span> <span class="n">Refereed</span> <span class="n">Data</span> <span class="n">Collection</span><span class="o">&lt;/</span><span class="n">resourceType</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>would read as “Dataset/PDS4 Refereed Data Collection”.</p>
+<p><strong>[New in Schema 4.4]</strong> The value “Text” is deprecated except as a last
+resort before going with <em>Other</em>. Wherever possible, please use a more
+specific reference to a type of textual publication (i.e.,
+<em>JournalArticle</em> or <em>Dissertation</em>).</p>
+<p>Here are the values to use for non-text SBN cases:</p>
+<p>In general, we should aim to be consistent with Dublin Core usage for
+these terms, but decisions here will have consequences elsewhere in the
+database. Consistency across PDS would be highly desirable here.</p>
+<p id="section-13"><em>OPTIONAL</em></p>
+<p>This element lists keyword-type classifications as are commonly
+associated with journal articles.</p>
+<p id="section-14"><em>OPTIONAL</em></p>
+<p>This element provides a string that corresponds to a keyword or similar
+classifier for the resource. It may be repeated as desired. Each
+occurrence should contain only a single taxonomic-type entry, and the
+taxonomy should be indicated via the optional attributes as far as
+possible.</p>
+<blockquote>
+<div><p>Optional attribute: <em>subjectScheme</em>. This should be the name of the
+taxonomy or authority. There is no controlled value list.
+Optional attribute: <em>schemeURI</em>. This should be a reference to the
+taxonomy definition or reference site.
+Optional attribute: <em>valueURI</em>. If there is a URL, for example, for
+the definition of the specific term being used, include it here.
+Optional attribute: <em>xml:lang</em>. Use this attribute to provide the
+standard ISO abbreviation for the language of the term.
+<strong>[4.4 addition]</strong> Optional attribute: <em>classificationCode</em>. Use this
+to provide the code within a system that does not have individual
+<strong>valueURI</strong>s but does have an internal code for each concept. (SBN
+data sets should use the UAT which does have <strong>valueURI</strong>s, so this
+attribute should not be used.)</p>
+</div></blockquote>
+<p>For PDS and SBN data sets, subject keywords should be from the <em>Unified
+Astronomy Thesaurus</em>, which does provide <strong>valueURIs</strong>. Here’s a sample
+** referencing the UAT:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;subject</span> <span class="pre">subjectScheme=&quot;UAT&quot;</span> <span class="pre">schemeURI=&quot;http://astrothesaurus.org&quot;</span> <span class="pre">valueURI=&quot;https://astrothesaurus.org/uat/280&quot;&gt;Comets&lt;/subject&gt;</span></code></p>
+<p>If you cannot find an appropriate value in the UAT, please let SBN know
+and we’ll suggest an update.</p>
+<p id="section-15"><em>OPTIONAL</em></p>
+<p>This element provides a means for identifying people and organizations,
+other than the previously identified <em>&lt;creator&gt;</em>, who contributed to the
+creation, management, curation, distribution, etc., of the resource
+being described.</p>
+<p id="section-16"><em>OPTIONAL</em></p>
+<p>This element identifies a person or organization who made or makes some
+contribution to the resource. There is a required attribute to define
+the type of contribution. The element may be repeated as needed.</p>
+<blockquote>
+<div><p>Required attribute: <em>contributorType</em>. This must have one of the
+following values:</p>
+<blockquote>
+<div><p>{| cellpadding=”10”</p>
+</div></blockquote>
+</div></blockquote>
+<p>|- | valign=”top” |</p>
+<ul class="simple">
+<li><p>ContactPerson</p></li>
+<li><p>DataCollector</p></li>
+<li><p>DataCurator</p></li>
+<li><p>DataManager</p></li>
+<li><p>Distributor</p></li>
+<li><p>Editor</p></li>
+<li><p>HostingInstitution</p></li>
+</ul>
+<p>| valign=”top” |</p>
+<ul class="simple">
+<li><p>Producer</p></li>
+<li><p>ProjectLeader</p></li>
+<li><p>ProjectManager</p></li>
+<li><p>ProjectMember</p></li>
+<li><p>RegistrationAgency</p></li>
+<li><p>RegistrationAuthority</p></li>
+<li><p>RelatedPerson</p></li>
+</ul>
+<p>| valign=”top” |</p>
+<ul class="simple">
+<li><p>Researcher</p></li>
+<li><p>ResearchGroup</p></li>
+<li><p>RightsHolder</p></li>
+<li><p>Sponsor</p></li>
+<li><p>Supervisor</p></li>
+<li><p>WorkPackageLeader</p></li>
+<li><p>Other</p></li>
+</ul>
+<p>|}</p>
+<blockquote>
+<div><p>These are all defined in the appendix to the DataCite schema
+description document, but interpreting them into a PDS context should
+be done with care.</p>
+<p>Here are some suggestions:</p>
+<p>{| class=”wikitable” style=”background-color:lime”</p>
+</div></blockquote>
+<p>! <em>Contributor Role</em> !! <em>Use for</em> |- | <strong>Data Collector</strong> || People
+involved in collection or compiling the data object but not otherwise
+involved in generating labels or archive support information, and are
+not otherwise credited as authors or editors. |- | <strong>Data Curator</strong>
+|| The PDS Node/Subnode where the primary copy of the data physically
+reside. |- | <strong>Editor</strong> || Someone who formatted or otherwise
+altered the content of data product files or archive labels created by
+someone else. |- | <strong>Producer</strong> || Someone who is involved in
+designing and creating the PDS4 archive labels and support files, who is
+not otherwise credited. |- | colspan=”2” | Other contributor roles
+may be used if appropriate, but generic roles should be avoided and no
+role should be used gratuitously. Do not use the <em>ContactPerson</em>, or
+<em>RelatedPerson</em> roles in particular, as these do not age well in an
+archive and will not be maintained - at least not by me. |}</p>
+<p id="section-17"><em>REQUIRED</em></p>
+<p>The name of a single person or organization contributing. As in the case
+of <em>&lt;creator&gt;</em>, this should be in the format “<em>Family, Given</em>” for
+personal names, and the formal name for organizations.</p>
+<blockquote>
+<div><p>Optional attribute: <em>nameType</em>. It must have one of these two values:
+:* Personal</p>
+<p>:* Organizational</p>
+</div></blockquote>
+<p>Best practice is to use the optional attribute.</p>
+<p id="section-18"><em>OPTIONAL</em></p>
+<p>The given name of a personal name, analogous to the same field for
+<em>&lt;creatorName&gt;</em>.</p>
+<p id="section-19"><em>OPTIONAL</em></p>
+<p>The surname or patronymic of a personal name, analogous to the same
+field for <em>&lt;creatorName&gt;</em>.</p>
+<p id="section-20"><em>OPTIONAL</em></p>
+<p>A formal identifier for a person or organization, such as a personal
+ORCID or an organizational DOI. It may be repeated if there is more than
+one applicable identifier.</p>
+<blockquote>
+<div><p>Required attribute: <em>nameIdentifierScheme</em>. This is the type of the
+identifier (“ORCID” or “DOI”, e.g.).
+Optional attribute: <em>schemeURI</em>. This is a URI reference to the
+identifier definition or defining organization.</p>
+</div></blockquote>
+<p id="section-21"><em>OPTIONAL</em></p>
+<p>This element contains the name of an organization or institution with
+which the named contributor is affiliated. It is a free-format text
+field. It should be repeated for each unique affiliation when there is
+more than one.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>In the archiving case, this <em>must</em> be interpreted as “affiliation at
+the time of publication of the product(s)” - in other words,
+affiliation on the date given for ‘’&lt;publicationYear&gt;.</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>Optional attribute: <em>affiliationIdentifier</em>. The value should be a
+formal, permanent, unique identifier for the affiliated organization,
+beyond the name that is the value of the <em>&lt;affiliation&gt;</em> element. For
+example, a Research Organization Registry (ROR) ID would be ideal
+here.</p>
+<p>Optional attribute: <em>affiliationIdentifierScheme</em>. The
+(human-recognizable) name of the identifier system (e.g., “ROR” would
+be sufficient in the above case.</p>
+<p>Optional attribute: <em>schemeURI</em>. The URI of the identifier scheme,
+typically a URL.</p>
+</div></blockquote>
+<p id="section-22"><em>OPTIONAL</em></p>
+<p>This element provides a way to include various significant dates in the
+DOI database record.</p>
+<p id="section-23"><em>OPTIONAL</em></p>
+<p>One significant date for the resource. Dates should be in ISO 8601
+format and can be to any precision (but this is not schematically
+enforced). This element may be repeated as needed for each date.</p>
+<blockquote>
+<div><p>Required attribute: <em>dateType</em>. This indicates the significance of
+the date and must be one of the following values:</p>
+<blockquote>
+<div><p>{| cellpadding=”10”</p>
+</div></blockquote>
+</div></blockquote>
+<p>|- | valign=”top” |</p>
+<ul class="simple">
+<li><p>Accepted</p></li>
+<li><p>Available</p></li>
+<li><p>Collected</p></li>
+<li><p>Copyrighted</p></li>
+<li><p>Created</p></li>
+<li><p>Issued</p></li>
+</ul>
+<p>| valign=”top” |</p>
+<ul class="simple">
+<li><p>Other</p></li>
+<li><p>Submitted</p></li>
+<li><p>Updated</p></li>
+<li><p>Valid</p></li>
+<li><p>Withdrawn</p></li>
+</ul>
+<p>|}</p>
+<blockquote>
+<div><p>These are defined in the DOI Schema description document.</p>
+<p>Optional attribute: <em>dateInformation</em>. This should be a <em>very</em> brief
+clarification of the <em>dateType</em>, where necessary.</p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Wherever it is possible to do so, SBN must include an <em>&lt;Available&gt;</em>
+date that is the year and month of publication - so the year <em>must</em>
+agree with the previously listed <em>&lt;publicationYear&gt;</em> value. This
+date is the date ADS will use in generating statistics over various
+periods, so it is important that at least the month be present
+whenever it is known. As with <em>&lt;publicationYear&gt;</em>, the PDS3
+DATA_SET_RELEASE date should usually be considered authoritative.</p></td>
+</tr>
+</tbody>
+</table>
+<p id="section-24"><em>OPTIONAL</em></p>
+<p>The natural language of the resource. This is defined as being of type
+<em>xs:language</em>, which provides syntax validation but does not actually
+fully enforce that values come from the “IETF BCP 47, ISO 639-1 language
+code,” as specified in the description.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>For most purposes, “English” is assumed and there is no need to
+attempt to distinguish between American, Canadian, British, or any
+other sub-categories of modern English. If you’re a completionist,
+though, feel free to include <em>&lt;language&gt;en&lt;/language&gt;</em> in your DOI
+metadata.</p></td>
+</tr>
+</tbody>
+</table>
+<p id="section-25"><em>OPTIONAL</em></p>
+<p>This element lists alternate identifiers for the same instance of the
+resource (as opposed to physically distinct, duplicate copies with their
+own identifiers). The identifiers should be unique and controlled within
+some context which should be specified.</p>
+<p>In the DOI metadata context, PDS3 Data Set IDs and PDS4 LIDVIDs are
+“alternate identifiers”. Typically we would want the DSID or LIDVID to
+be included in a citation, so we need to pay particular attention to
+content here to make sure it is consistent and thus programmatically
+retrievable. PDS4 LIDs without the version ID are not identifiers in the
+context of DOIs, because the thing they point to is not permanently
+fixed (a LID alone refers to the “latest available version”, which may
+change).</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 74%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>For PDS Product:</p></th>
+<th class="head"><p>Use:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>PDS3 Product</p></td>
+<td><p>DSID:PRODUCT_ID</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDS3 Data Set</p></td>
+<td><p>DATA_SET_ID</p></td>
+</tr>
+<tr class="row-even"><td><p>PDS4 Product</p></td>
+<td><p>Product LIDVID</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDS4 Collection</p></td>
+<td><p>Collection LDVID</p></td>
+</tr>
+<tr class="row-even"><td><p>PDS4 Bundle</p></td>
+<td><p>Bundle LIDVID*</p></td>
+</tr>
+<tr class="row-odd"><td><p>*Note that a Bundle that does not change its
+own version ID every time a collection it
+contains changes its version ID <em>should not have
+its own DOI</em>. The DOI needs to be associated
+with an unchanging entity. If the bundle doesn’t
+change when any of its collections changes, then
+it is <em>not</em> an “unchanging entity”.</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p id="section-26"><em>OPTIONAL</em></p>
+<p>This element provides one instance of an alternate identifier for the
+resource. It may be repeated as desired.</p>
+<blockquote>
+<div><p>Required attribute: <em>alternateIdentifierType</em>. This string must
+describe the source or context of the identifier.</p>
+<p>{| class=”wikitable” style=”background-color: lime”</p>
+</div></blockquote>
+<p>! For PDS Identifier: !! Use <em>alternateIdentifierType</em>: |- | PDS3
+DSID:PRODUCT_ID || <strong>PDS3 Product ID</strong> |- | PDS3 DSID || <strong>PDS3
+Dataset ID</strong> |- | PDS4 Product LIDVID || <strong>PDS4 Product ID</strong> |- |
+PDS4 Collection LIDVID || <strong>PDS4 Collection ID</strong> |- | PDS4 Bundle
+LIDVID || <strong>PDS4 Bundle ID</strong> |}</p>
+<p id="section-27"><em>OPTIONAL</em></p>
+<p>This element lists identifiers for other resources related to this
+resource in some specific way. <strong>This is an important attribute to
+include in our DOI metadata.</strong> This is where we tie into the published
+literature, so some effort should be put into getting this right. It’s
+also where we can related different versions of the same PDS product
+(each of which will have its own DOI).</p>
+<p><em>Citation Considerations</em></p>
+<p>This is where we indicate which papers and other data sets are cited by
+the data set getting the DOI. This is <strong>not</strong> a “reading list”. When in
+doubt, consider the data set/product as if it were being prepared for
+publication in a refereed journal. If the citation would be appropriate
+in that context, then it is likely appropriate in this one.</p>
+<hr class="docutils" />
+<div class="section" id="citing-conventions">
+<span id="id1"></span><h2>Citing Conventions<a class="headerlink" href="#citing-conventions" title="Permalink to this headline">¶</a></h2>
+<p>Here are some draft guidelines developed at SBN/UMD during a discussion
+among the node personnel for where to look for citations to include in
+DOI metadata as <em>relatedIdentifier</em>s of the type <strong>Cites</strong> or
+<strong>isCitedBy</strong>:</p>
+<blockquote>
+<div><p><strong>Raw and Calibrated Data</strong></p>
+<ul class="simple">
+<li><p><em>Cites</em> any inline citation in the text of the overview and/or
+intro document</p></li>
+<li><p><em>Cites</em> any published papers describing the mission and/or
+relevant instrumentation referenced by the archive</p></li>
+<li><p>Calibrated data <em>Cites</em> raw data and calibration data; raw and
+calibration data <em>isCitedBy</em> calibrated data</p></li>
+</ul>
+<p><strong>High-level Data</strong></p>
+<ul class="simple">
+<li><p><em>Cites</em> immediate precursor products (e.g., mosaic <em>Cites</em>
+calibrated images; resampled data <em>Cites</em> full-resolution data);
+precursor data <em>isCitedBy</em> high-level data</p></li>
+<li><p><em>Cites</em> published paper describing the derivation/processing, if
+any.</p></li>
+</ul>
+<p><strong>Calibration Data</strong></p>
+<ul class="simple">
+<li><p><em>Cites</em> mission and hardware papers, as appropriate.</p></li>
+</ul>
+</div></blockquote>
+<hr class="docutils" />
+<p><em>Other Relationships</em></p>
+<p>The next most important relationship to note here is that between older
+and newer versions. Where both things have DOIs, the metadata should be
+updated in both cases to provide bi-directional pointing. This can also
+be used to indicate predecessors even when there are multiple
+predecessors that were combined, or one that was split.</p>
+<p>Other relationships should be documented if that makes sense both in the
+context of the DOI metadata as well as the PDS archive. Some of the
+likely ones to occur are listed following.</p>
+<p id="section-28"><em>OPTIONAL</em></p>
+<p>This element is a single related identifier. It can be repeated as
+needed for additional identifiers. Note that it has half a dozen
+attributes, only two of which are required, to help in defining the
+relationship. Standard values are defined in the DataCite schema
+documentation.</p>
+<blockquote>
+<div><p>Required attribute: <em>relatedIdentifierType</em>. The value must come from
+the following list:</p>
+<blockquote>
+<div><p>{| cellpadding=”10”</p>
+</div></blockquote>
+</div></blockquote>
+<p>|- | valign=”top” |</p>
+<ul class="simple">
+<li><p>ARK</p></li>
+<li><p>arXiv</p></li>
+<li><p>bibcode</p></li>
+<li><p>DOI</p></li>
+<li><p>EAN13</p></li>
+<li><p>EISSN</p></li>
+</ul>
+<p>| valign=”top” |</p>
+<ul class="simple">
+<li><p>Handle</p></li>
+<li><p>IGSN</p></li>
+<li><p>ISBN</p></li>
+<li><p>ISSN</p></li>
+<li><p>ISTC</p></li>
+<li><p>LISSN</p></li>
+</ul>
+<p>| valign=”top” |</p>
+<ul class="simple">
+<li><p>LSID</p></li>
+<li><p>PMID</p></li>
+<li><p>PURL</p></li>
+<li><p>UPC</p></li>
+<li><p>URL</p></li>
+<li><p>URN</p></li>
+<li><p>w3id</p></li>
+</ul>
+<p>|}</p>
+<blockquote>
+<div><p>Do not include more than one <em>&lt;relatedIdentifier&gt;</em> for the same
+publication/work to be cited or related.
+For general use, <strong>DOI</strong> is the preferred identifier for all
+relationship types. For citation, <strong>bibcode</strong> is acceptable, but
+should only be used if there is no DOI available. When both exist,
+ADS (who issue <em>bibcodes</em>) have specifically requested that we only
+use the DOI in this list to cite the other work. <strong>ISBN</strong> and
+<strong>arXiv</strong> might also be available and could be used in cases where
+this is no DOI.</p>
+<p>Required attribute: <em>relationType</em>. The value must come from the
+following list:</p>
+<blockquote>
+<div><p>{| cellpadding=”10”</p>
+</div></blockquote>
+</div></blockquote>
+<p>|- | valign=”top” |</p>
+<ul class="simple">
+<li><p>IsCitedBy</p></li>
+<li><p>Cites</p></li>
+<li><p>IsSupplementTo</p></li>
+<li><p>IsSupplementedBy</p></li>
+<li><p>IsContinuedBy</p></li>
+<li><p>Continues</p></li>
+<li><p>IsNewVersionOf</p></li>
+<li><p>IsPreviousVersionOf</p></li>
+<li><p>IsPartOf</p></li>
+<li><p>HasPart</p></li>
+<li><p><strong>[New in Schema 4.4]</strong> IsPublishedIn</p></li>
+</ul>
+<p>| valign=”top” |</p>
+<ul class="simple">
+<li><p>IsReferencedBy</p></li>
+<li><p>References</p></li>
+<li><p>IsDocumentedBy</p></li>
+<li><p>Documents</p></li>
+<li><p>IsCompiledBy</p></li>
+<li><p>Compiles</p></li>
+<li><p>IsVariantFormOf</p></li>
+<li><p>IsOriginalFormOf</p></li>
+<li><p>IsIdenticalTo</p></li>
+<li><p>HasMetadata</p></li>
+<li><p>IsMetadataFor</p></li>
+</ul>
+<p>| valign=”top” |</p>
+<ul class="simple">
+<li><p>Reviews</p></li>
+<li><p>IsReviewedBy</p></li>
+<li><p>IsDerivedFrom</p></li>
+<li><p>IsSourceOf</p></li>
+<li><p>Describes</p></li>
+<li><p>IsDescribedBy</p></li>
+<li><p>HasVersion</p></li>
+<li><p>IsVersionOf</p></li>
+<li><p>Requires</p></li>
+<li><p>IsRequiredby</p></li>
+<li><p>Obsoletes</p></li>
+<li><p>IsObsoletedBy</p></li>
+</ul>
+<p>|}</p>
+<blockquote>
+<div><p>Following is a summary of the relationships most likely to be useful
+in our context.</p>
+<p>{| class=”wikitable” style=”background-color:lime”</p>
+</div></blockquote>
+<p>! <em>relationType</em> !! Use for: |- | Cites/IsCitedBy || Standard
+citation of previous/subsequent work |- | IsVariantFormOf || PDS4
+versions of PDS3 data sets, where the PDS3 data set has a DOI and <em>no
+substantive changes</em> (i.e., an external peer review was <em>not</em> required
+for the PDS4 version) have been made in migrating the data from PDS3 to
+PDS4. This should be included in the DOI metadata for both the PDS3 and
+PDS4 versions. |- | IsNewVersionOf/IsPreviousVersionOf || Datasets
+that are new/previous versions (that is, same ID but different version
+number) of datasets that also have DOIs; in this case both DOIs should
+have their metadata updated. Also, if a PDS3-to-PDS4 migration <em>did</em>
+require substantive changes to the data file, then this is the
+appropriate relationship between the two. |- | Obsoletes/IsObsoletedBy
+|| When a dataset supersedes a dataset with a <em>different</em> ID (in the
+same ID system), use this relationship. |- | IsSupplementTo || Data
+that is the basis of or direct result of a journal article, but that was
+<em>not</em> published as part of the article - especially where the data set
+is mentioned in that publication |- | IsReferencedBy/References ||
+Bibliographic references (as opposed to citations) |- |
+IsDerivedFrom/IsSourceOf || Raw-Calibrated relationships; high-order
+products and the contributing source products |- | IsPartOf/HasPart
+|| Bundles and their constituent collections when both have DOIs.
+<em>IsPartOf</em> can also be used when a data product comprises one or more
+tables that were published (in their entirety) as part of a journal
+article or book. |- | colspan=”2” | Other relationships can and
+should be used where they seem useful. |}</p>
+<blockquote>
+<div><p>Optional attribute: <em>resourceTypeGeneral</em>. This attribute is
+identical to the one of the same name in
+<em>&lt;</em><a class="reference external" href="#.3CresourceType.3E">resourceType</a><em>&gt;</em>, above.</p>
+<p>These optional attributes should only be used when the value of the
+<em>relationType</em> attribute is either <strong>IsMetadataFor</strong> or
+<strong>HasMetadata</strong> (this is not validated):</p>
+<blockquote>
+<div><p>Optional attribute: <em>relatedMetadataScheme</em>. This indicates the ID
+or name of a metadata definition standard.
+Optional attribute: <em>schemeURI</em>. This should be the URI of the
+named metadata standard.
+Optional attribute: <em>schemeType</em>. The DataCite definition is not
+clear, but this looks like a specific file format type for the
+referenced metadata standard (such as “XSD”).</p>
+</div></blockquote>
+</div></blockquote>
+<div class="section" id="new-in-schema-4-4">
+<span id="id2"></span><h3><strong>[New in Schema 4.4]</strong><a class="headerlink" href="#new-in-schema-4-4" title="Permalink to this headline">¶</a></h3>
+<p><em>OPTIONAL</em></p>
+<p>This element is used for two purposes:</p>
+<p>1. To provide reference information for a traditional publication that
+has no DOI; and 2. To provide additional information about the
+publication context of a reference that does have a DOI (for example, to
+document the book that contains a chapter in the citation list).</p>
+<p>SBN will generally be using this element for the first purpose. Note
+that <em>no verification</em> is done by DataCite for the publication
+information in this class even when a DOI is present, so type carefully
+and check it twice.</p>
+<p id="section-29"><em>OPTIONAL</em></p>
+<p>A single instance of “related item” information. Like
+<em>&lt;relatedIdentifier&gt;</em>, this element has several attributes.</p>
+<blockquote>
+<div><p>Required Attribute: <em>relatedItemType</em>. This must have a value from
+the same list as the <em>resourceTypeGeneral</em> attribute of the
+<a class="reference external" href="#.3CresourceType.3E">&lt;resourceType&gt;</a> element above.</p>
+<p>Required Attribute: <em>relationType</em>. This must have a value from the
+same list as the <em>relationType</em> attribute of the
+<a class="reference external" href="#.3CrelatedIdentifier.3E">&lt;relatedIdentifier&gt;</a> element above.</p>
+</div></blockquote>
+<p id="section-30"><em>OPTIONAL</em></p>
+<p>If the related item has a digital identifier, it should be specified
+here in the same manner as would be used for
+<a class="reference external" href="#.3CrelatedIdentifier.3E">&lt;relatedIdentifier&gt;</a>, above.</p>
+<blockquote>
+<div><p>Optional Attribute: <em>relatedItemIdentifierType</em>. This must have a
+value from the same list as
+<a class="reference external" href="#.3CrelatedIdentifier.3E">relatedIdentifier</a>, above. Unlike
+<em>&lt;relatedIdentifier&gt;</em>, however, this attribute is optional.</p>
+<p>Optional Attributes: <em>relatedMetadataScheme</em>, <em>schemeURI</em>, and
+<em>schemeType</em>. These are used in the same circumstances and in the
+same way as for <a class="reference external" href="#.3CrelatedIdentifier.3E">&lt;relatedIdentifier&gt;</a>,
+above. For SBN data sets, these are very unlikely to be relevant.</p>
+</div></blockquote>
+<p id="section-31"><em>OPTIONAL</em></p>
+<p>This is a grouping element for the creator list of the related item.</p>
+<p id="section-32"><em>OPTIONAL</em></p>
+<p>This element is similar to the <em>&lt;creator&gt;</em> element for the resource
+itself, but does not allow specification of a <em>nameIdentifier</em> or
+<em>affiliation</em>.</p>
+<p id="section-33"><em>REQUIRED</em></p>
+<p>As with the creators listed for the resource, the name should be given
+in the format “<em>familyName, givenName</em>”.</p>
+<blockquote>
+<div><p>Optional Attribute: <em>nameType</em>, which must be either
+<strong>Organizational</strong> or <strong>Personal</strong>.</p>
+<p>Optional Attribute: <em>xml:lang</em>, which can be used to indicate the
+language in which the name is expressed.</p>
+</div></blockquote>
+<p id="section-34"><em>OPTIONAL</em></p>
+<p>The given name of the creator.</p>
+<p id="section-35"><em>OPTIONAL</em></p>
+<p>The family name of the creator.</p>
+<p id="section-36"><em>OPTIONAL</em></p>
+<p>This container class is used to hold the title of the related item, and
+any alternate titles for that item.</p>
+<hr class="docutils" />
+<title><hr class="docutils" />
+<p><em>OPTIONAL</em></p>
+<p>This element holds the title of the related item, if it has one. It may
+be repeated if that seems appropriate.</p>
+<blockquote>
+<div><p>Optional Attribute: <em>titleType</em>. If there is more than one title,
+then the secondary titles should have an associated <em>titleType</em> to
+explain their existence. The values come from the same list as used
+for the <a class="reference external" href="#.3Ctitle.3E">title of the resource</a>, above.</p>
+</div></blockquote>
+<p>Note there is <strong>not</strong> an enclosing <em>&lt;titles&gt;</em> class in this case.</p>
+<p id="section-37"><em>OPTIONAL</em></p>
+<p>If the related item has aassociated volume identifier (numeric or
+otherwise), here’s where it goes.</p>
+<p id="section-38"><em>OPTIONAL</em></p>
+<p>If the related item has an associated issue identifier (numeric or
+otherwise), it goes here.</p>
+<p id="section-39"><em>OPTIONAL</em></p>
+<p>This element is for an associated sequence number, or similar (possibly
+non-numeric) identifier.</p>
+<blockquote>
+<div><p>Optional Attribute: <em>numberType</em>. Use the attribute to indicate what
+kind of number (corresponding to common prefixes in reference list
+formats) the element contains. It must have one of these values:</p>
+<blockquote>
+<div><p>{| cellpadding=”10”</p>
+</div></blockquote>
+</div></blockquote>
+<p>|- | valign=”top” |</p>
+<ul class="simple">
+<li><p>Article</p></li>
+<li><p>Chapter</p></li>
+<li><p>Report</p></li>
+<li><p>Other</p></li>
+</ul>
+<p>|}</p>
+<p id="section-40"><em>OPTIONAL</em></p>
+<p>This and the following element are for specifying a start and end page
+for the item within the enclosing volume, issue, etc. If only one page
+is known, assume it is the starting page and use <em>&lt;firstPage&gt;</em> without
+<em>&lt;lastPage&gt;</em>.</p>
+<p id="section-41"><em>OPTIONAL</em></p>
+<p>This is for specifying the end of the page range of the related item
+within its containing publication. If only one page is known, assume it
+is the starting page and use <em>&lt;firstPage&gt;</em> without <em>&lt;lastPage&gt;</em>.</p>
+<p id="section-42"><em>OPTIONAL</em></p>
+<p>This element indicates the publisher of the related item, <em>not</em> the
+resource receiving the DOI.</p>
+<p id="section-43"><em>OPTIONAL</em></p>
+<p>The year in which the related item was made publicly available. As with
+the <em>&lt;publicationYear&gt;</em> of the resource, this must be in the range
+[0..9999].</p>
+<p id="section-44"><em>OPTIONAL</em></p>
+<p>This element is used to provide an edition or version number for the
+related item.</p>
+<p id="section-45"><em>OPTIONAL</em></p>
+<p>This is an enclosing element to hold a list of contributors to the
+related item.</p>
+<p id="section-46"><em>OPTIONAL</em></p>
+<p>This element identifies a single contributor.</p>
+<blockquote>
+<div><p>Required Attribute: <em>contributorType</em>. This indicates the role the
+named <em>contributor</em> filled. This must come from the same
+controlled-value list as listed above for the
+<a class="reference external" href="#.3Ccontributor.3E">contributors</a> to the resource.</p>
+</div></blockquote>
+<p id="section-47"><em>REQUIRED</em></p>
+<p>As with the contributors listed for the resource, the name should be
+given in the format “<em>familyName, givenName</em>”.</p>
+<blockquote>
+<div><p>Optional Attribute: <em>nameType</em>, which must be either
+<strong>Organizational</strong> or <strong>Personal</strong>.</p>
+<p>Optional Attribute: <em>xml:lang</em>, which can be used to indicate the
+language in which the name is expressed.</p>
+</div></blockquote>
+<p id="section-48"><em>OPTIONAL</em></p>
+<p>The given name of the contributor.</p>
+<p id="section-49"><em>OPTIONAL</em></p>
+<p>The family name of the contributor.</p>
+<p id="section-50"><em>OPTIONAL</em></p>
+<p>This element provides unstructured size information. In other words, it
+is not required to be numeric and there are no syntax constraints on the
+content.</p>
+<p id="section-51"><em>OPTIONAL</em></p>
+<p>A single size specification string, like “18GB” or “Three volumes”. This
+element may be repeated as needed or desired.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Some Examples</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&lt;size&gt;55GB&lt;/size&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;size&gt;3250 tables&lt;size&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;size&gt;235 FITS images&lt;size&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;size&gt;24 documents in multiple formats&lt;size&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p id="section-52"><em>OPTIONAL</em></p>
+<p>This class indicates the physical/digital format(s) of the resource.</p>
+<p id="section-53"><em>OPTIONAL</em></p>
+<p>This element contains a text description of the format. It is not
+constrained and may be repeated as appropriate.</p>
+<p>Best practice is to use a file extension or MIME type string as the
+value.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>PDS should be more formal about the content here. We also need to
+think about possible mixed-format products, like single documents
+that comprise multiple files, some of which are text and some
+images/graphics, and the best way to describe <em>format</em> for
+collections (if at all).</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Some Examples</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&lt;format&gt;text/plain&lt;/format&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;format&gt;text/plain;charset=utf-8&lt;/format&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;format&gt;text/csv&lt;/format&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;format&gt;text/tab-separated-values&lt;/format&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;format&gt;text/vnd.ascii-art&lt;/format&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;format&gt;application/pdf&lt;/format&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;format&gt;application/msword&lt;/format&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;format&gt;text/xml&lt;/format&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;format&gt;image/fits&lt;/format&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;format&gt;application/fits&lt;/format&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p>Other media types (MIME types) may be found by referencing the list
+provided by the Internet Assigned Number Authority (IANA) at
+<a class="reference external" href="https://www.iana.org/assignments/media-types/media-types.xhtml">https://www.iana.org/assignments/media-types/media-types.xhtml</a>. There is
+no media type corresponding to PDS3 <em>.img</em> images, or plain raster
+images (as far as I can tell).</p>
+<p id="section-54"><em>OPTIONAL</em></p>
+<p>A version number associated with the resource.</p>
+<p>Best practice is to obtain a new DOI for a major version change of
+something that already has a DOI.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Because of the traceability and reproducability concerns involved in
+research data, PDS should never use this element for archival data.
+New versions of PDS products with DOIs should get their own DOIs.
+The <em>&lt;</em><a class="reference external" href="#.3CrelatedIdentifier.3E">relatedIdentifier</a><em>&gt;</em>
+element can be used to link the two versions in the DOI database.</p></td>
+</tr>
+</tbody>
+</table>
+<p id="section-55"><em>OPTIONAL</em></p>
+<p>This element typically contains only a single <em>&lt;rights&gt;</em> member to
+indicate the rights management for the resource, although it may contain
+multiple <em>&lt;rights&gt;</em> elements in complex cases.</p>
+<p id="section-56"><em>OPTIONAL</em></p>
+<p>A single rights license with management information (e.g., “Creative
+Commons”, or “GNU General Public License”). This should be as explicit
+as possible, with a complete management statement where appropriate.
+Embargo information should also be recorded here.</p>
+<blockquote>
+<div><p>Optional attribute: <em>rightsURI</em>. This should be the URI to the full
+text of the license.
+Optional attribute: <em>rightsIdentifier</em>. A short, standardized license
+name. Best practice is to use one of the identifiers on the SPDX
+list: <a class="reference external" href="https://spdx.org/licenses/">https://spdx.org/licenses/</a>
+Optional attribute: <em>rightsIdentifierScheme</em>. The name of the scheme
+for the identifier, immediately preceding. If the identifier same
+from the SPDX list, for example, then this attribute should have the
+value <strong>SPDX</strong>.
+Optional attribute: <em>schemeURI</em>. The URI corresponding to the
+definition of whatever is in <em>rightsIdentifierScheme</em>. In general,
+those two attributes should be used together.
+Optional attribute: <em>xml:lang</em>. This indicates the language of the
+license.</p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>PDS data is in the public domain for some values of “public domain”,
+but this is not a well-defined term. Also, in order to be considered
+FAIR, PDS data must have an explicit statement of license. “U.S.
+Government Work” might be correct, but this is typically applied to
+documents. Repeated requests to PDS and NASA for direction have gone
+nowhere.</p></td>
+</tr>
+</tbody>
+</table>
+<p id="section-57"><em>OPTIONAL</em></p>
+<p>This element provides a place for additional information that does not
+fit into other categories.</p>
+<p id="section-58"><em>OPTIONAL</em></p>
+<p>A single, free-format description of the specified (via attribute) type.
+This field may be repeated as needed.</p>
+<p>It looks like formatting is not preserved for this text, but you may use
+the <em>&lt;br/&gt;</em> tag to insert a paragraph break.</p>
+<p>Best practice is to provide at least one description of some type. It is
+probably not a good idea to provide multiple <em>&lt;description&gt;</em> elements
+with the same <em>descriptionType</em> value, but this is not validated.</p>
+<blockquote>
+<div><p>Required attribute: <em>descriptionType</em>. This indicates the category of
+information being provided. It must have one of these values:
+:* Abstract</p>
+<p>:* Methods</p>
+<p>:* SeriesInformation</p>
+<p>:* TableOfContents</p>
+<p>:* TechnicalInfo</p>
+<p>:* Other</p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>All PDS DOIs <em>must</em> have at least one <em>&lt;description&gt;</em> field with a
+<em>descriptionType</em> of <strong>Abstract</strong>. Note that if you create a DOI
+through the <em>Fabrica</em> interface, the description you enter there is
+<em>not</em> tagged as an abstract. If other description types seem
+appropriate, add them.</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>Optional attribute: <em>xml:lang</em>. This indicates the language of the
+description being provided, not of the resource.</p>
+</div></blockquote>
+<p id="section-59"><em>OPTIONAL</em></p>
+<p>This element is used to define relationships (either on the creation or
+application side) between the resource and a defined patch on the
+surface of the Earth. I don’t see a way to apply it as it currently
+exists to celestial coordinates, and that might seriously confuse
+applications that process this sort of metadata harvested from DOI
+databases. It’s included here for completeness.</p>
+<p id="section-60"><em>OPTIONAL</em></p>
+<p>This element defines one specific patch of Earth where the data were
+taken or on which the resource is focused. It may be repeated as
+desired.</p>
+<p id="section-61"><em>OPTIONAL</em></p>
+<p>A name for the location being defined.</p>
+<p>Note that the text provided in the schema that describes the points
+comprising the following elements as having values which are “a single
+latitude-longitude pair, separated by whitespace”. This is not true. In
+all cases there are tags specifically defining latitude and longitude as
+separate and distinct elements.</p>
+<p>It is also possible to define any single <em>&lt;geoLocation&gt;</em> as being
+simultaneously a single point, a single box, <em>and</em> any number of
+polygons. This seems irrational, yet it appears to be deliberate.</p>
+<p id="section-62"><em>OPTIONAL</em></p>
+<p>This element specifies a single point on the globe.</p>
+<p id="section-63"><em>REQUIRED</em></p>
+<p>Longitude in degrees in the range +/- 180.</p>
+<p id="section-64"><em>REQUIRED</em></p>
+<p>Latitude in degrees in the range +/- 90.</p>
+<p id="section-65"><em>OPTIONAL</em></p>
+<p>A box is defined by its four sides - east and west longtude, and north
+and south latitude.</p>
+<p id="section-66"><em>REQUIRED</em></p>
+<p>Westward bounding longitude in degrees in the range +/- 180.</p>
+<p id="section-67"><em>REQUIRED</em></p>
+<p>Eastward bounding longitude in degrees in the range +/- 180.</p>
+<p id="section-68"><em>REQUIRED</em></p>
+<p>Southward bounding latitude in degrees in the range +/- 90.</p>
+<p id="section-69"><em>REQUIRED</em></p>
+<p>Northward bounding latitude in degrees in the range +/- 90.</p>
+<p id="section-70"><em>OPTIONAL</em></p>
+<p>This element defines an arbitrary polygon as a sequence of points around
+the perimeter in which the last point must have the same definition as
+the first point (though this is not validated, nor is the nature of the
+path). There must be at least 4 points provided.</p>
+<p>Oddly, the schema allows this element to be repeated.</p>
+<p id="section-71"><em>REQUIRED</em></p>
+<p>Longitude and latitude of one point on the perimeter of the polygon.</p>
+<p id="section-72"><em>REQUIRED</em></p>
+<p>Longitude in degrees in the range +/- 180.</p>
+<p id="section-73"><em>REQUIRED</em></p>
+<p>Latitude in degrees in the range +/- 90.</p>
+<p id="section-74"><em>OPTIONAL</em></p>
+<p>If you are intending to define an area that is larger than half the
+total surface of the Earth, then you <em>must</em> use this element to define a
+point somewhere inside the area of interest. Otherwise the smaller
+enclosed area is assumed to be the area of interest. The actual point
+can be random, as long as it is inside the intended area.</p>
+<p id="section-75"><em>REQUIRED</em></p>
+<p>Longitude in degrees in the range +/- 180.</p>
+<p id="section-76"><em>REQUIRED</em></p>
+<p>Latitude in degrees in the range +/- 90.</p>
+<p id="section-77"><em>OPTIONAL</em></p>
+<p>This element identifies sources of funding related to creating or
+maintaining the resource.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>This is not information that PDS has traditionally collected, but as
+it is used to trace results back to funding in the literature
+databases, we probably should. In the case of ROSES data preparers,
+I’d make that “definitely should”.</p></td>
+</tr>
+</tbody>
+</table>
+<p id="section-78"><em>OPTIONAL</em></p>
+<p>This element identifies a single source of funding. It may be repeated
+as needed.</p>
+<p id="section-79"><em>REQUIRED</em></p>
+<p>Name of the funding source. This should be the formal name.</p>
+<p id="section-80"><em>OPTIONAL</em></p>
+<p>This is a string that uniquely identifies a funding source under some
+public scheme, like “Crossref Funder” or ISNI.</p>
+<blockquote>
+<div><p>Required attribute: <em>funderIdentifierType</em>. This string is the source
+of the corresponding identifier. It must have one of these values:
+:* ISNI</p>
+<p>:* GRID</p>
+<p>:* Crossref Funder ID</p>
+<p>:* ROR</p>
+<p>:* Other</p>
+<p>NASA’s Crossref Funder ID is <em>10.13039/100000104</em>.</p>
+</div></blockquote>
+<p id="section-81"><em>OPTIONAL</em></p>
+<p>Grant number or similar code assigned by the funding organization.</p>
+<blockquote>
+<div><p>Optional attribute: <em>awardURI</em>. This attribute can be used to provide
+a link to a page at the funding organization website that describes
+the award/grant program.</p>
+</div></blockquote>
+<p id="section-82"><em>OPTIONAL</em></p>
+<p>The title on the grant/award - that is, the title of the proposal that
+was submitted and funded.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="faqs.html" class="btn btn-neutral float-left" title="FAQs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020 California Institute of Technology.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -37,4 +37,6 @@ Sitemap
 
     /support/*
 
+    /support/discipline_nodes/index
+
 
