@@ -38,5 +38,7 @@ Sitemap
     /support/*
 
     /support/discipline_nodes/index
+    
+    Wiki <https://github.com/NASA-PDS/nasa-pds.github.io/wiki>
 
 
