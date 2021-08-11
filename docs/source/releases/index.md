@@ -15,7 +15,7 @@ Development releases:
 
 |build|planned release|update|
 | :---: | :---: | :---: |
-|[12.0-SNAPSHOT](./12.0-SNAPSHOT)|<span style="color:orange">2021-12-31</span>|2021-07-24|
+|[12.0-SNAPSHOT](./12.0-SNAPSHOT)|<span style="color:orange">2021-12-31</span>|2021-08-09|
   
 
 

@@ -44,7 +44,7 @@ Libraries
 +---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
 |tool           |version   |last updated   |description                                                                                                                                                                      |l |manual|                       |l |changelog|                       |l |requirements|   |l |download|                       |l |license|                       |l |feedback|                       |
 +===============+==========+===============+=================================================================================================================================================================================+=================================+====================================+===================+===================================+==================================+===================================+
-|PDS4 JParser   |None      |N/A            |Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.   ||NASA-PDS/pds4-jparser_manual|   ||NASA-PDS/pds4-jparser_changelog|   |                   ||NASA-PDS/pds4-jparser_download|   ||NASA-PDS/pds4-jparser_license|   ||NASA-PDS/pds4-jparser_feedback|   |
+|PDS4 JParser   |v2.0.3    |2021-06-30     |Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.   ||NASA-PDS/pds4-jparser_manual|   ||NASA-PDS/pds4-jparser_changelog|   |                   ||NASA-PDS/pds4-jparser_download|   ||NASA-PDS/pds4-jparser_license|   ||NASA-PDS/pds4-jparser_feedback|   |
 +---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
 
 Other Core Services and Libraries
@@ -194,11 +194,11 @@ Unclassified software assets
 .. |NASA-PDS/pds4-jparser_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds4-jparser/
 .. |NASA-PDS/pds4-jparser_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://www.gnupg.org/gph/en/manual/r1943.html
+   :target: https://github.com/NASA-PDS/pds4-jparser/blob/main/CHANGELOG.md#v203-2021-06-30
 .. |NASA-PDS/pds4-jparser_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/pds4-jparser_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
-   :target: https://github.com/NASA-PDS/pds4-jparser/releases/tag/None
+   :target: https://github.com/NASA-PDS/pds4-jparser/releases/tag/v2.0.3
 .. |NASA-PDS/pds4-jparser_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
    :target: https://raw.githubusercontent.com/NASA-PDS/pds4-jparser/main/LICENSE.txt
 .. |NASA-PDS/pds4-jparser_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
