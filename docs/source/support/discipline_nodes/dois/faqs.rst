@@ -54,7 +54,7 @@ How do I get a DOIs for PDS3 data sets and documents?
 
 The PDS has gone through the exercise with each Discipline Node to mint DOIs for most PDS3 Data Sets. If we missed one or there is a newer version available, please complete the following:
 
-Send an email with the DS.CAT for all applicable PDS3 Data Sets to `PDS Operator <mailto:pds-operator@jpl.nasa.gov>`__ and `Ron
-Joyner <mailto:ronald.joyner@jpl.nasa.gov>`__ with subject ``Release DOI for PDS3 Data Set: some identifying info``. Be sure to indicate whether:
+Send an email with the DS.CAT for all applicable PDS3 Data Sets to `PDS Operator <mailto:pds-operator@jpl.nasa.gov>`_ and `Ron
+Joyner <mailto:ronald.joyner@jpl.nasa.gov>`_ with subject ``Release DOI for PDS3 Data Set: some identifying info``. Be sure to indicate whether:
 (1) The data set is new to the system; no DOI exists; but the data set has been "registered" with the PDS Engineering Node
-(2) The DS.cat been updated, the data set has already been registered at PDS Engineering Node, and the DOI for the data set is: <doi>10.17189/xxxxxx</doi> 
+(2) The DS.cat been updated, the data set has already been registered at PDS Engineering Node, and the DOI for the data set is: ``<doi>10.17189/xxxxxx</doi>``
