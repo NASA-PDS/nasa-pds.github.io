@@ -16,14 +16,14 @@ Within the NASA Planetary Data System, we value the people who comprise our team
 Request a New Tool / Service
 ++++++++++++++++++++++++++++
 
-Feel free to propose a new idea to our `Engineering Node Operations repo <https://github.com/NASA-PDS/pdsen-operations/issues>`_ and we will triage it appropriately.
+Feel free to propose a new idea to our `General PDS Software Issues repo <https://github.com/NASA-PDS/PDS-Software-Issues-Repo/issues/>`_ and we will triage it appropriately.
 
 ----
 
 Report a Bug
 ++++++++++++
 
-To report a bug found in either a software tool or services, report in the individual repo for the project, or in our `Engineering Node Operations repo <https://github.com/NASA-PDS/pdsen-operations/issues>`_ and we will triage it appropriately.
+To report a bug found in either a software tool or services, report in the individual repo for the project, or in our `General PDS Software Issues repo <https://github.com/NASA-PDS/PDS-Software-Issues-Repo/issues/new>`_ and we will triage it appropriately.
 
 
 .. _`contributor's guide`: https://github.com/NASA-PDS/.github/blob/main/CONTRIBUTING.md
