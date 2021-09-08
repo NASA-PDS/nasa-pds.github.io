@@ -32,7 +32,7 @@ Key Dates
       - SCR Freeze Date
       - DDWG
       - Freeze date for identifying SCRs to be implemented in this release.
-    * - 08/24/2021
+    * - 09/29/2021
       - Standards Documents Updates Due
       - Document Authoring Team
       - Updates to PDS4 standards documents due to EN for review.
