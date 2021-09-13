@@ -33,4 +33,6 @@ Release Description Documents (RDD)
     :maxdepth: 1
 
     11.1</releases/11.1/rdd>
+    12.0(draft)</releases/12.0/rdd>
+
 
