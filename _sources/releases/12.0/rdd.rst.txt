@@ -97,6 +97,806 @@ PDS within the latest build period.
 
 Software changes
 ================
+.github
+-------
+*GitHub-specific defaults for the Engineering Node of the Planetary Data System*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/.github#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/.github>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/.github/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/.github/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/.github/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/.github/releases>`_ 
+
+
+enhancement
+~~~~~~~~~~~
+
++----------------------------------------------------+--------------------------+
+|Issue                                               |Priority / Bug Severity   |
++====================================================+==========================+
+|`.github#3`_ Add issue and pull request templates   |unknown                   |
++----------------------------------------------------+--------------------------+
+
+archive-analytics
+-----------------
+*Processes, tools, and configuration for managing PDS archive analytics software and reports*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/archive-analytics#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/archive-analytics>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/archive-analytics/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/archive-analytics/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/archive-analytics/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/archive-analytics/releases>`_ 
+
+
+enhancement
+~~~~~~~~~~~
+
++-------------------------------------------------------------------------+--------------------------+
+|Issue                                                                    |Priority / Bug Severity   |
++=========================================================================+==========================+
+|`archive-analytics#16`_ Develop procedure and export of Kibana config    |unknown                   |
++-------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++-----------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                  |Priority / Bug Severity   |
++=======================================================================================================================+==========================+
+|`archive-analytics#2`_ As a manager, I want to know the current total volume of PDS holdings                           |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`archive-analytics#7`_ As a PDS Project Office, I want to know the historical total volume of PDS holdings over time   |unknown                   |
++-----------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+harvest
+-------
+*Provides software provides functionality for capturing and indexing product metadata in PDS Registry. A sub-component of the PDS Registry App (https://github.com/NASA-PDS/pds-registry-app)*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-registry-app>`_
+     - `Github Repo <https://github.com/NASA-PDS/harvest>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/harvest/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/harvest/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/harvest/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/harvest/releases>`_ 
+
+
+enhancement
+~~~~~~~~~~~
+
++----------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                             |Priority / Bug Severity   |
++==================================================================================+==========================+
+|`harvest#55`_ Quick fix to support date/time conversion to "ISO instant" format   |p.must-have               |
++----------------------------------------------------------------------------------+--------------------------+
+|`harvest#58`_ Enable blob ingestion by default                                    |unknown                   |
++----------------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++-----------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                    |Priority / Bug Severity   |
++=========================================================================================+==========================+
+|`harvest#60`_ As a user, I want to ingest the PDS4 label as JSON in a binary blob form   |p.should-have             |
++-----------------------------------------------------------------------------------------+--------------------------+
+
+nasa-pds.github.io
+------------------
+*Site for https://nasa-pds.github.io and NASA PDS Wiki*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/>`_
+     - `Github Repo <https://github.com/NASA-PDS/nasa-pds.github.io>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/nasa-pds.github.io/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/nasa-pds.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/nasa-pds.github.io/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/nasa-pds.github.io/releases>`_ 
+
+
+enhancement
+~~~~~~~~~~~
+
++-----------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                      |Priority / Bug Severity   |
++===========================================================================================================+==========================+
+|`nasa-pds.github.io#9`_ Add links to PDS default Code of Conduct and Contributing community health files   |unknown                   |
++-----------------------------------------------------------------------------------------------------------+--------------------------+
+
+pds-api
+-------
+*PDS API Application with client and server integrated into one package*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <http://nasa-pds.github.io/pds-api>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-api>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-api/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-api/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-api/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-api/releases>`_ 
+
+
+bug
+~~~
+
++-----------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                          |Priority / Bug Severity   |
++===============================================================================================+==========================+
+|`pds-api#73`_ As a n00b paginator, there might be an off-by-1 error in the `limit` parameter   |s.medium                  |
++-----------------------------------------------------------------------------------------------+--------------------------+
+
+enhancement
+~~~~~~~~~~~
+
++------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                           |Priority / Bug Severity   |
++================================================================================================+==========================+
+|`pds-api#91`_ Disable XML and HTML responses from current registry-api-service implementation   |p.should-have             |
++------------------------------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                                      |Priority / Bug Severity   |
++===========================================================================================================================================+==========================+
+|`pds-api#56`_ As an API user, I want to know the children and ancestors of bundle, collections, and products                               |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#59`_ As an API user, I want to know the Product(s) that belong to a given Bundle.                                                 |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#60`_ As an API user, I want to know the Bundle for a given Product.                                                               |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#61`_ As an API user, I want to know the Collection(s) for a given Product.                                                        |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#62`_ As an API user, I want to know the Bundle for a given Collection.                                                            |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#67`_ As an API user, I want to access supplemental metadata from Product_Metadata_Supplemental.                                   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#74`_ As an API user, I want to specify whether I get the latest or all versions of a product                                      |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#80`_ As a developer, I never want the label blob to be returned                                                                   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#83`_ As an API user, I want to search using URL parameters                                                                        |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#96`_ As an API user, I want to get the latest version of a product, by default                                                    |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#99`_ As an API user, I want to be able to use the API for free text search                                                        |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#101`_ As a user, I want to receive a JSON response that contains the PDS4 label metadata in JSON format (application/pds4+json)   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#105`_ As an API user, I want to know how long a request took to complete                                                          |p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-api#107`_ As an API user, I want to explicitly request the latest version of a product                                                |p.could-have              |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+theme
+~~~~~
+
++------------------------------------------------------------+--------------------------+
+|Issue                                                       |Priority / Bug Severity   |
++============================================================+==========================+
+|`pds-api#24`_ [registry] Handle PDS Supplemental Metadata   |unknown                   |
++------------------------------------------------------------+--------------------------+
+|`pds-api#76`_ [pds-api] Improve API Performance             |unknown                   |
++------------------------------------------------------------+--------------------------+
+|`pds-api#77`_ [pds-api] PDS4 Product Relationships          |unknown                   |
++------------------------------------------------------------+--------------------------+
+|`pds-api#79`_ [pds-api] PDS Core Registry                   |unknown                   |
++------------------------------------------------------------+--------------------------+
+|`pds-api#84`_ [pds-api] Initial Google-like Search          |unknown                   |
++------------------------------------------------------------+--------------------------+
+
+pds-api-client
+--------------
+*PDS API Client*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-api-client/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-api-client>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-api-client/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-api-client/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-api-client/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-api-client/releases>`_ 
+
+
+bug
+~~~
+
++-----------------------------------------------------------------------------+--------------------------+
+|Issue                                                                        |Priority / Bug Severity   |
++=============================================================================+==========================+
+|`pds-api-client#6`_ Stack trace when calling `BundlesApi.bundle_by_lidvid`   |s.medium                  |
++-----------------------------------------------------------------------------+--------------------------+
+
+pds-deep-archive
+----------------
+*PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-deep-archive/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-deep-archive>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-deep-archive/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-deep-archive/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-deep-archive/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-deep-archive/releases>`_ 
+
+
+bug
+~~~
+
++----------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                     |Priority / Bug Severity   |
++==========================================================================================================+==========================+
+|`pds-deep-archive#116`_ deep archive misses products that specify primary products using lower case 'p'   |s.low                     |
++----------------------------------------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++-----------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                              |Priority / Bug Severity   |
++===================================================================================+==========================+
+|`pds-deep-archive#7`_ As a user, I want to generate AIPs and SIPs using Registry   |unknown                   |
++-----------------------------------------------------------------------------------+--------------------------+
+
+theme
+~~~~~
+
++-------------------------------------------------------------------+--------------------------+
+|Issue                                                              |Priority / Bug Severity   |
++===================================================================+==========================+
+|`pds-deep-archive#105`_ Integrate PDS Deep Archive with Registry   |unknown                   |
++-------------------------------------------------------------------+--------------------------+
+
+pds-doi-service
+---------------
+*Service and tools for generating DOIs for PDS bundles, collections, and data sets*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-doi-service>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-doi-service>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-doi-service/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-doi-service/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-doi-service/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-doi-service/releases>`_ 
+
+
+bug
+~~~
+
++--------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                   |Priority / Bug Severity   |
++========================================================================================================+==========================+
+|`pds-doi-service#188`_ As a user, I want to make sure I can not override existing DOI with new LIDVID   |s.medium                  |
++--------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#191`_ API accepts Reserve submissions with invalid LIDVIDs                             |s.medium                  |
++--------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#220`_ CI does not work on main branch for dev release                                  |unknown                   |
++--------------------------------------------------------------------------------------------------------+--------------------------+
+
+enhancement
+~~~~~~~~~~~
+
++--------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                         |Priority / Bug Severity   |
++==============================================================================================================+==========================+
+|`pds-doi-service#145`_ review the full doi workflow and make it smooth for eng operators/users                |unknown                   |
++--------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#162`_ Implement Application Server to wrap Flask service                                     |p.should-have             |
++--------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#163`_ Dockerize API Service                                                                  |unknown                   |
++--------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#165`_ Add service to API for update of the status of records with OSTI (check sub command)   |unknown                   |
++--------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#227`_ Update DOI service for handling existing DOIs acceptance criteria per #175             |unknown                   |
++--------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#229`_ As a user, I want to see the PDS3 ids as they originally are                           |unknown                   |
++--------------------------------------------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++----------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                 |Priority / Bug Severity   |
++======================================================================================================================+==========================+
+|`pds-doi-service#171`_ As an operator, I want to reserve a DOI through DataCite                                       |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#172`_ As an operator, I want query for one or more minted DOIs from DataCite                         |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#174`_ As an operator, I want to release a DOI through DataCite                                       |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#175`_ As an operator, I want to update DOI metadata through DataCite                                 |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#180`_ As an API user I want to filter on PDS3 Data Set IDs with wildcards                            |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#187`_ As a SA, I want the operational deployment of the service to be secure                         |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#198`_ As a user, I want to use the API with ids containing a slash (/)                               |p.should-have             |
++----------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-service#228`_ As an admistrator of the application,  I want to restrict access to API by specific referrer   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+theme
+~~~~~
+
++-------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                |Priority / Bug Severity   |
++=====================================================================================+==========================+
+|`pds-doi-service#178`_ B12.0 Refinements to DOI Service and UI for Initial Release   |unknown                   |
++-------------------------------------------------------------------------------------+--------------------------+
+
+pds-doi-ui
+----------
+*web UI for pds-doi-service*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pds-doi-ui#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-doi-ui>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-doi-ui/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-doi-ui/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-doi-ui/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-doi-ui/releases>`_ 
+
+
+bug
+~~~
+
++-----------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                              |Priority / Bug Severity   |
++===================================================================================+==========================+
+|`pds-doi-ui#22`_ After reserve one file successfully, resubmit a new file          |s.low                     |
++-----------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#35`_ As a SA, I don't want security vulnerabilities in the public UI   |s.medium                  |
++-----------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#70`_ navigation issue when using the app bar                           |s.high                    |
++-----------------------------------------------------------------------------------+--------------------------+
+
+enhancement
+~~~~~~~~~~~
+
++---------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                              |Priority / Bug Severity   |
++===================================================================================================+==========================+
+|`pds-doi-ui#1`_ Reserve DOI UI forms                                                               |unknown                   |
++---------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#9`_ Return API error message in UI                                                     |unknown                   |
++---------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#10`_ Provide a mean to come back to release action when on reserve screen              |p.must-have               |
++---------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#48`_ Enhancements per initial implementation of mockups                                |unknown                   |
++---------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#49`_ Add Feedback Widget to DOI UI                                                     |unknown                   |
++---------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#50`_ Add additional help information throughout DOI UI                                 |unknown                   |
++---------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#54`_ Update Release and Update DOI pages to follow similar design as Create DOI page   |unknown                   |
++---------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#75`_ Add link to landing page from `Identifier` column in search results               |unknown                   |
++---------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#79`_ Create javascript library for website integration                                 |unknown                   |
++---------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#82`_ Create PDS React Component Library Process For NPM Packages                       |unknown                   |
++---------------------------------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                        |Priority / Bug Severity   |
++=============================================================================================================================+==========================+
+|`pds-doi-ui#25`_ As a user, I want to search for a DOI and associated metadata by LID/LIDVID                                 |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#34`_ As a user, I want to see the error/warnings messages on the same page from where they were raised           |p.could-have              |
++-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#41`_ As a user, I want to acquire a DOI for a PDS4 product prior to it's public release of the data              |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#42`_ As a user, I want to acquire a DOI for a PDS4 product that has been registered and is publicly accessible   |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#65`_ As a user, I want my search criteria to persist in the URL                                                  |p.could-have              |
++-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-doi-ui#71`_ As a user, I want to have a dedicated favicon for the service                                               |p.should-have             |
++-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+pds-github-util
+---------------
+*github utility functions to enforce the PDS engineering node software life cycle.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pds-github-util>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-github-util>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-github-util/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-github-util/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-github-util/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-github-util/releases>`_ 
+
+
+enhancement
+~~~~~~~~~~~
+
++-------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                      |Priority / Bug Severity   |
++===========================================================================================+==========================+
+|`pds-github-util#15`_ As a developer, I want to add the CODE OF CONDUCT to all PDS repos   |unknown                   |
++-------------------------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                                      |Priority / Bug Severity   |
++===========================================================================================================================================+==========================+
+|`pds-github-util#7`_ As a PDS software user, I want to have a hierarchical view of the PDS EN components that apply to my user interests   |p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+pds-registry-app
+----------------
+*Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-registry-app/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-registry-app>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-registry-app/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-registry-app/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-registry-app/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-registry-app/releases>`_ 
+
+
+bug
+~~~
+
++---------------------------------------------------------------------------+--------------------------+
+|Issue                                                                      |Priority / Bug Severity   |
++===========================================================================+==========================+
+|`pds-registry-app#163`_ docker instructions in README.md are not working   |s.medium                  |
++---------------------------------------------------------------------------+--------------------------+
+
+enhancement
+~~~~~~~~~~~
+
++------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                               |Priority / Bug Severity   |
++====================================================================================+==========================+
+|`pds-registry-app#122`_ Initial deployment of API on AWS - ASG/ELB solution         |unknown                   |
++------------------------------------------------------------------------------------+--------------------------+
+|`pds-registry-app#150`_ Develop plan for instituting AWS ES Cross Cluster Search    |p.must-have               |
++------------------------------------------------------------------------------------+--------------------------+
+|`pds-registry-app#165`_ Initial deployment of API on AWS - Fargate solution         |unknown                   |
++------------------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                              |Priority / Bug Severity   |
++===================================================================================================================================+==========================+
+|`pds-registry-app#12`_ As a registry user, I want to ingest supplemental metadata from Product_Metadata_Supplemental.              |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-registry-app#130`_ As a node operator, I want to harvest and ingest a subset of a bundle based on existing registered data.   |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-registry-app#147`_ As a node operator,  I want to be able to tag ingested data with the node it is ingested by.               |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-registry-app#153`_ As a developer, I want to extend the registry-mgr and harvest using the Java API                           |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds-registry-app#154`_ As a manager, I want the registry to have regression tests included in CI                                  |p.should-have             |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+theme
+~~~~~
+
++--------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                           |Priority / Bug Severity   |
++================================================================================+==========================+
+|`pds-registry-app#155`_ [registry] Registry Regression Test and Documentation   |unknown                   |
++--------------------------------------------------------------------------------+--------------------------+
+
+pds-template-repo-java
+----------------------
+*Template for new NASA PDS repositories. For Python software, see https://github.com/nasa-pds/pds-template-repo-python*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pds-template-repo-java#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-template-repo-java>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-template-repo-java/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-template-repo-java/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-template-repo-java/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-template-repo-java/releases>`_ 
+
+
+enhancement
+~~~~~~~~~~~
+
++--------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                 |Priority / Bug Severity   |
++======================================================================================+==========================+
+|`pds-template-repo-java#12`_ Add README sections referencing Community Health files   |unknown                   |
++--------------------------------------------------------------------------------------+--------------------------+
+
+pds-wds-web
+-----------
+*PDS Web Design System - Basic web implementation*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pds-wds-web>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-wds-web>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-wds-web/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-wds-web/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-wds-web/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-wds-web/releases>`_ 
+
+
+enhancement
+~~~~~~~~~~~
+
++-----------------------------------------------------+--------------------------+
+|Issue                                                |Priority / Bug Severity   |
++=====================================================+==========================+
+|`pds-wds-web#25`_ Review and merge App Bar Updates   |unknown                   |
++-----------------------------------------------------+--------------------------+
+
+PDS.nasa.gov-Search
+-------------------
+*Front-end interface for PDS.nasa.gov data search capability*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/PDS.nasa.gov-Search#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/PDS.nasa.gov-Search>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/PDS.nasa.gov-Search/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/PDS.nasa.gov-Search/releases>`_ 
+
+
+enhancement
+~~~~~~~~~~~
+
++--------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                               |Priority / Bug Severity   |
++====================================================================================================================+==========================+
+|`PDS.nasa.gov-Search#33`_ Initial investigation for Search UI utilizing PDS API and identify new API user stories   |unknown                   |
++--------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+PDS.nasa.gov-UX
+---------------
+*PDS.nasa.gov User Experience Task Issue and Prototype repository*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/PDS.nasa.gov-UX#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/PDS.nasa.gov-UX>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/PDS.nasa.gov-UX/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/PDS.nasa.gov-UX/releases>`_ 
+
+
+enhancement
+~~~~~~~~~~~
+
++-------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                        |Priority / Bug Severity   |
++=============================================================================================================+==========================+
+|`PDS.nasa.gov-UX#73`_ Rev 3 of milestones to breakdown of notional goals and deliverables                    |p.must-have               |
++-------------------------------------------------------------------------------------------------------------+--------------------------+
+|`PDS.nasa.gov-UX#81`_ [Training] incorporate new materials - misc videos and ancillary files for TBD video   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------+--------------------------+
+|`PDS.nasa.gov-UX#86`_ [Training] incorporate changes from June pow-wow                                       |p.must-have               |
++-------------------------------------------------------------------------------------------------------------+--------------------------+
+
+theme
+~~~~~
+
++---------------------------------------------------+--------------------------+
+|Issue                                              |Priority / Bug Severity   |
++===================================================+==========================+
+|`PDS.nasa.gov-UX#74`_ Plan and Kick-off PDS WMWG   |unknown                   |
++---------------------------------------------------+--------------------------+
+
+pds4-information-model
+----------------------
+*The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds4-information-model/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds4-information-model>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds4-information-model/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds4-information-model/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds4-information-model/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds4-information-model/releases>`_ 
+
+
+bug
+~~~
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                                                   |Priority / Bug Severity   |
++========================================================================================================================================================+==========================+
+|`pds4-information-model#391`_ Issue with DD_Associate_External_Class when trying to reference pds:Internal_Reference and pds:Local_Internal_Reference   |s.high                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+enhancement
+~~~~~~~~~~~
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                                                |Priority / Bug Severity   |
++=====================================================================================================================================================+==========================+
+|`pds4-information-model#344`_ [namespace-registry] add new namespace "ctli"                                                                          |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds4-information-model#352`_ [namespace-registry] add new namespace "m2020"                                                                         |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds4-information-model#353`_ [namespace-registry] add new namespace "ml"                                                                            |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds4-information-model#369`_ Evolution of CCB-256: Need method for providing permissible value definitions for external namespaces in Ingest_LDD.   |unknown                   |
++-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds4-information-model#374`_ [namespace-registry] add new namespace "clipper"                                                                       |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                           |Priority / Bug Severity   |
++================================================================================================================================+==========================+
+|`pds4-information-model#324`_ An LDD developer desires to inherit a class/attribute defined using DD_Associate_External_Class   |p.must-have               |
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds4-information-model#330`_ As a user I want to know the output of the tool after it completes execution.                     |p.should-have             |
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`pds4-information-model#338`_ As a developer, I want to know the dLDD version from the output JSON data                         |p.should-have             |
++--------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+theme
+~~~~~
+
++--------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                           |Priority / Bug Severity   |
++================================================================================+==========================+
+|`pds4-information-model#349`_ Establish LDD Management Teams and Processes      |unknown                   |
++--------------------------------------------------------------------------------+--------------------------+
+|`pds4-information-model#326`_ B12.0 LDDTool Improvements                        |unknown                   |
++--------------------------------------------------------------------------------+--------------------------+
+|`pds4-information-model#350`_ B12.0 PDS4 Information Model SCR Implementation   |unknown                   |
++--------------------------------------------------------------------------------+--------------------------+
+
+pds4-jparser
+------------
+*Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds4-jparser/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds4-jparser>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds4-jparser/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds4-jparser/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds4-jparser/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds4-jparser/releases>`_ 
+
+
+bug
+~~~
+
++------------------------------------------------------------+--------------------------+
+|Issue                                                       |Priority / Bug Severity   |
++============================================================+==========================+
+|`pds4-jparser#40`_ SNAPSHOT dependencies in 2.0.0 release   |s.low                     |
++------------------------------------------------------------+--------------------------+
+
+PLAID
+-----
+*APPS PDS Label Assistant for Interactive Design (PLAID). See an overview of the software on YouTube. https://www.youtube.com/watch?v=WCo8erW_rL8*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://plaid.jpl.nasa.gov>`_
+     - `Github Repo <https://github.com/NASA-PDS/PLAID>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/PLAID/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/PLAID/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/PLAID/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/PLAID/releases>`_ 
+
+
+bug
+~~~
+
++------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                     |Priority / Bug Severity   |
++==========================================================================================+==========================+
+|`PLAID#21`_ Discipline LDD workflow page is missing new discipline LDDs added to config   |s.medium                  |
++------------------------------------------------------------------------------------------+--------------------------+
+|`PLAID#25`_ All products are assumed to be Product_Observational by PLAID                 |s.high                    |
++------------------------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++---------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                        |Priority / Bug Severity   |
++=============================================================================================+==========================+
+|`PLAID#15`_ As a PDS Operator, I want to update PLAID to the latest PDS4 Information Model   |unknown                   |
++---------------------------------------------------------------------------------------------+--------------------------+
+
+registry-api-service
+--------------------
+*PDS Registry API service. Complies with PDS API specification*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/registry-api-service#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-api-service>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-api-service/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/registry-api-service/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-api-service/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-api-service/releases>`_ 
+
+
+bug
+~~~
+
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                              |Priority / Bug Severity   |
++===================================================================================================================================+==========================+
+|`registry-api-service#16`_ API server crashes with OutOfMemoryError if invalid query is used                                       |s.high                    |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`registry-api-service#17`_ error 500 on GET /collections/:lidvid:/products                                                         |s.high                    |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`registry-api-service#27`_ XML and PDS4+XML Response Formats are invalid                                                           |s.high                    |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`registry-api-service#43`_ As an API caller, I expect MD5s and file reference URLs to have real values and not the string "null"   |s.high                    |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`registry-api-service#51`_ blob is returned in product results if fields to return are not specified                               |unknown                   |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+
+requirement
+~~~~~~~~~~~
+
++----------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|Issue                                                                                                                                   |Priority / Bug Severity   |
++========================================================================================================================================+==========================+
+|`registry-api-service#10`_ As a SA, I want to deploy the API behind a proxy                                                             |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`registry-api-service#13`_ As a developer, I want to utilize ElasticSearch performance robustness for API response time requirements.   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`registry-api-service#14`_ As a node operators, I want to deploy the Registry API Service with the PDS Registry.                        |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+|`registry-api-service#47`_ As a user, I want to have a complete default fields (for now at least)                                       |unknown                   |
++----------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
+
 validate
 --------
 *Validates PDS4 product labels, data and PDS3 Volumes*
@@ -287,6 +1087,120 @@ for this release. The controlling documents are as follows:
 .. _pds4-information-model#288: https://github.com/NASA-PDS/pds4-information-model/issues/288
 .. _pds4-information-model#339: https://github.com/NASA-PDS/pds4-information-model/issues/339
 .. _pds4-information-model#403: https://github.com/NASA-PDS/pds4-information-model/issues/403
+.. _.github#3: https://github.com/NASA-PDS/.github/issues/3
+.. _archive-analytics#16: https://github.com/NASA-PDS/archive-analytics/issues/16
+.. _archive-analytics#2: https://github.com/NASA-PDS/archive-analytics/issues/2
+.. _archive-analytics#7: https://github.com/NASA-PDS/archive-analytics/issues/7
+.. _harvest#55: https://github.com/NASA-PDS/harvest/issues/55
+.. _harvest#58: https://github.com/NASA-PDS/harvest/issues/58
+.. _harvest#60: https://github.com/NASA-PDS/harvest/issues/60
+.. _nasa-pds.github.io#9: https://github.com/NASA-PDS/nasa-pds.github.io/issues/9
+.. _pds-api#73: https://github.com/NASA-PDS/pds-api/issues/73
+.. _pds-api#91: https://github.com/NASA-PDS/pds-api/issues/91
+.. _pds-api#56: https://github.com/NASA-PDS/pds-api/issues/56
+.. _pds-api#59: https://github.com/NASA-PDS/pds-api/issues/59
+.. _pds-api#60: https://github.com/NASA-PDS/pds-api/issues/60
+.. _pds-api#61: https://github.com/NASA-PDS/pds-api/issues/61
+.. _pds-api#62: https://github.com/NASA-PDS/pds-api/issues/62
+.. _pds-api#67: https://github.com/NASA-PDS/pds-api/issues/67
+.. _pds-api#74: https://github.com/NASA-PDS/pds-api/issues/74
+.. _pds-api#80: https://github.com/NASA-PDS/pds-api/issues/80
+.. _pds-api#83: https://github.com/NASA-PDS/pds-api/issues/83
+.. _pds-api#96: https://github.com/NASA-PDS/pds-api/issues/96
+.. _pds-api#99: https://github.com/NASA-PDS/pds-api/issues/99
+.. _pds-api#101: https://github.com/NASA-PDS/pds-api/issues/101
+.. _pds-api#105: https://github.com/NASA-PDS/pds-api/issues/105
+.. _pds-api#107: https://github.com/NASA-PDS/pds-api/issues/107
+.. _pds-api#24: https://github.com/NASA-PDS/pds-api/issues/24
+.. _pds-api#76: https://github.com/NASA-PDS/pds-api/issues/76
+.. _pds-api#77: https://github.com/NASA-PDS/pds-api/issues/77
+.. _pds-api#79: https://github.com/NASA-PDS/pds-api/issues/79
+.. _pds-api#84: https://github.com/NASA-PDS/pds-api/issues/84
+.. _pds-api-client#6: https://github.com/NASA-PDS/pds-api-client/issues/6
+.. _pds-deep-archive#116: https://github.com/NASA-PDS/pds-deep-archive/issues/116
+.. _pds-deep-archive#7: https://github.com/NASA-PDS/pds-deep-archive/issues/7
+.. _pds-deep-archive#105: https://github.com/NASA-PDS/pds-deep-archive/issues/105
+.. _pds-doi-service#188: https://github.com/NASA-PDS/pds-doi-service/issues/188
+.. _pds-doi-service#191: https://github.com/NASA-PDS/pds-doi-service/issues/191
+.. _pds-doi-service#220: https://github.com/NASA-PDS/pds-doi-service/issues/220
+.. _pds-doi-service#145: https://github.com/NASA-PDS/pds-doi-service/issues/145
+.. _pds-doi-service#162: https://github.com/NASA-PDS/pds-doi-service/issues/162
+.. _pds-doi-service#163: https://github.com/NASA-PDS/pds-doi-service/issues/163
+.. _pds-doi-service#165: https://github.com/NASA-PDS/pds-doi-service/issues/165
+.. _pds-doi-service#227: https://github.com/NASA-PDS/pds-doi-service/issues/227
+.. _pds-doi-service#229: https://github.com/NASA-PDS/pds-doi-service/issues/229
+.. _pds-doi-service#171: https://github.com/NASA-PDS/pds-doi-service/issues/171
+.. _pds-doi-service#172: https://github.com/NASA-PDS/pds-doi-service/issues/172
+.. _pds-doi-service#174: https://github.com/NASA-PDS/pds-doi-service/issues/174
+.. _pds-doi-service#175: https://github.com/NASA-PDS/pds-doi-service/issues/175
+.. _pds-doi-service#180: https://github.com/NASA-PDS/pds-doi-service/issues/180
+.. _pds-doi-service#187: https://github.com/NASA-PDS/pds-doi-service/issues/187
+.. _pds-doi-service#198: https://github.com/NASA-PDS/pds-doi-service/issues/198
+.. _pds-doi-service#228: https://github.com/NASA-PDS/pds-doi-service/issues/228
+.. _pds-doi-service#178: https://github.com/NASA-PDS/pds-doi-service/issues/178
+.. _pds-doi-ui#22: https://github.com/NASA-PDS/pds-doi-ui/issues/22
+.. _pds-doi-ui#35: https://github.com/NASA-PDS/pds-doi-ui/issues/35
+.. _pds-doi-ui#70: https://github.com/NASA-PDS/pds-doi-ui/issues/70
+.. _pds-doi-ui#1: https://github.com/NASA-PDS/pds-doi-ui/issues/1
+.. _pds-doi-ui#9: https://github.com/NASA-PDS/pds-doi-ui/issues/9
+.. _pds-doi-ui#10: https://github.com/NASA-PDS/pds-doi-ui/issues/10
+.. _pds-doi-ui#48: https://github.com/NASA-PDS/pds-doi-ui/issues/48
+.. _pds-doi-ui#49: https://github.com/NASA-PDS/pds-doi-ui/issues/49
+.. _pds-doi-ui#50: https://github.com/NASA-PDS/pds-doi-ui/issues/50
+.. _pds-doi-ui#54: https://github.com/NASA-PDS/pds-doi-ui/issues/54
+.. _pds-doi-ui#75: https://github.com/NASA-PDS/pds-doi-ui/issues/75
+.. _pds-doi-ui#79: https://github.com/NASA-PDS/pds-doi-ui/issues/79
+.. _pds-doi-ui#82: https://github.com/NASA-PDS/pds-doi-ui/issues/82
+.. _pds-doi-ui#25: https://github.com/NASA-PDS/pds-doi-ui/issues/25
+.. _pds-doi-ui#34: https://github.com/NASA-PDS/pds-doi-ui/issues/34
+.. _pds-doi-ui#41: https://github.com/NASA-PDS/pds-doi-ui/issues/41
+.. _pds-doi-ui#42: https://github.com/NASA-PDS/pds-doi-ui/issues/42
+.. _pds-doi-ui#65: https://github.com/NASA-PDS/pds-doi-ui/issues/65
+.. _pds-doi-ui#71: https://github.com/NASA-PDS/pds-doi-ui/issues/71
+.. _pds-github-util#15: https://github.com/NASA-PDS/pds-github-util/issues/15
+.. _pds-github-util#7: https://github.com/NASA-PDS/pds-github-util/issues/7
+.. _pds-registry-app#163: https://github.com/NASA-PDS/pds-registry-app/issues/163
+.. _pds-registry-app#122: https://github.com/NASA-PDS/pds-registry-app/issues/122
+.. _pds-registry-app#150: https://github.com/NASA-PDS/pds-registry-app/issues/150
+.. _pds-registry-app#165: https://github.com/NASA-PDS/pds-registry-app/issues/165
+.. _pds-registry-app#12: https://github.com/NASA-PDS/pds-registry-app/issues/12
+.. _pds-registry-app#130: https://github.com/NASA-PDS/pds-registry-app/issues/130
+.. _pds-registry-app#147: https://github.com/NASA-PDS/pds-registry-app/issues/147
+.. _pds-registry-app#153: https://github.com/NASA-PDS/pds-registry-app/issues/153
+.. _pds-registry-app#154: https://github.com/NASA-PDS/pds-registry-app/issues/154
+.. _pds-registry-app#155: https://github.com/NASA-PDS/pds-registry-app/issues/155
+.. _pds-template-repo-java#12: https://github.com/NASA-PDS/pds-template-repo-java/issues/12
+.. _pds-wds-web#25: https://github.com/NASA-PDS/pds-wds-web/issues/25
+.. _PDS.nasa.gov-Search#33: https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/33
+.. _PDS.nasa.gov-UX#73: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/73
+.. _PDS.nasa.gov-UX#81: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/81
+.. _PDS.nasa.gov-UX#86: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/86
+.. _PDS.nasa.gov-UX#74: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/74
+.. _pds4-information-model#391: https://github.com/NASA-PDS/pds4-information-model/issues/391
+.. _pds4-information-model#344: https://github.com/NASA-PDS/pds4-information-model/issues/344
+.. _pds4-information-model#352: https://github.com/NASA-PDS/pds4-information-model/issues/352
+.. _pds4-information-model#353: https://github.com/NASA-PDS/pds4-information-model/issues/353
+.. _pds4-information-model#369: https://github.com/NASA-PDS/pds4-information-model/issues/369
+.. _pds4-information-model#374: https://github.com/NASA-PDS/pds4-information-model/issues/374
+.. _pds4-information-model#324: https://github.com/NASA-PDS/pds4-information-model/issues/324
+.. _pds4-information-model#330: https://github.com/NASA-PDS/pds4-information-model/issues/330
+.. _pds4-information-model#338: https://github.com/NASA-PDS/pds4-information-model/issues/338
+.. _pds4-information-model#349: https://github.com/NASA-PDS/pds4-information-model/issues/349
+.. _pds4-information-model#326: https://github.com/NASA-PDS/pds4-information-model/issues/326
+.. _pds4-information-model#350: https://github.com/NASA-PDS/pds4-information-model/issues/350
+.. _pds4-jparser#40: https://github.com/NASA-PDS/pds4-jparser/issues/40
+.. _PLAID#21: https://github.com/NASA-PDS/PLAID/issues/21
+.. _PLAID#25: https://github.com/NASA-PDS/PLAID/issues/25
+.. _PLAID#15: https://github.com/NASA-PDS/PLAID/issues/15
+.. _registry-api-service#16: https://github.com/NASA-PDS/registry-api-service/issues/16
+.. _registry-api-service#17: https://github.com/NASA-PDS/registry-api-service/issues/17
+.. _registry-api-service#27: https://github.com/NASA-PDS/registry-api-service/issues/27
+.. _registry-api-service#43: https://github.com/NASA-PDS/registry-api-service/issues/43
+.. _registry-api-service#51: https://github.com/NASA-PDS/registry-api-service/issues/51
+.. _registry-api-service#10: https://github.com/NASA-PDS/registry-api-service/issues/10
+.. _registry-api-service#13: https://github.com/NASA-PDS/registry-api-service/issues/13
+.. _registry-api-service#14: https://github.com/NASA-PDS/registry-api-service/issues/14
+.. _registry-api-service#47: https://github.com/NASA-PDS/registry-api-service/issues/47
 .. _validate#310: https://github.com/NASA-PDS/validate/issues/310
 .. _validate#325: https://github.com/NASA-PDS/validate/issues/325
 .. _validate#326: https://github.com/NASA-PDS/validate/issues/326
