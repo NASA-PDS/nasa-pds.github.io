@@ -97,30 +97,6 @@ PDS within the latest build period.
 
 Software changes
 ================
-.github
--------
-*GitHub-specific defaults for the Engineering Node of the Planetary Data System*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/.github#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/.github>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/.github/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/.github/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/.github/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/.github/releases>`_ 
-
-
-enhancement
-~~~~~~~~~~~
-
-+----------------------------------------------------+--------------------------+
-|Issue                                               |Priority / Bug Severity   |
-+====================================================+==========================+
-|`.github#3`_ Add issue and pull request templates   |unknown                   |
-+----------------------------------------------------+--------------------------+
-
 archive-analytics
 -----------------
 *Processes, tools, and configuration for managing PDS archive analytics software and reports*
@@ -190,30 +166,6 @@ requirement
 +=========================================================================================+==========================+
 |`harvest#60`_ As a user, I want to ingest the PDS4 label as JSON in a binary blob form   |p.should-have             |
 +-----------------------------------------------------------------------------------------+--------------------------+
-
-nasa-pds.github.io
-------------------
-*Site for https://nasa-pds.github.io and NASA PDS Wiki*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://nasa-pds.github.io/>`_
-     - `Github Repo <https://github.com/NASA-PDS/nasa-pds.github.io>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/nasa-pds.github.io/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/nasa-pds.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/nasa-pds.github.io/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/nasa-pds.github.io/releases>`_ 
-
-
-enhancement
-~~~~~~~~~~~
-
-+-----------------------------------------------------------------------------------------------------------+--------------------------+
-|Issue                                                                                                      |Priority / Bug Severity   |
-+===========================================================================================================+==========================+
-|`nasa-pds.github.io#9`_ Add links to PDS default Code of Conduct and Contributing community health files   |unknown                   |
-+-----------------------------------------------------------------------------------------------------------+--------------------------+
 
 pds-api
 -------
@@ -519,39 +471,6 @@ requirement
 |`pds-doi-ui#71`_ As a user, I want to have a dedicated favicon for the service                                               |p.should-have             |
 +-----------------------------------------------------------------------------------------------------------------------------+--------------------------+
 
-pds-github-util
----------------
-*github utility functions to enforce the PDS engineering node software life cycle.*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/pds-github-util>`_
-     - `Github Repo <https://github.com/NASA-PDS/pds-github-util>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/pds-github-util/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-github-util/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/pds-github-util/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/pds-github-util/releases>`_ 
-
-
-enhancement
-~~~~~~~~~~~
-
-+-------------------------------------------------------------------------------------------+--------------------------+
-|Issue                                                                                      |Priority / Bug Severity   |
-+===========================================================================================+==========================+
-|`pds-github-util#15`_ As a developer, I want to add the CODE OF CONDUCT to all PDS repos   |unknown                   |
-+-------------------------------------------------------------------------------------------+--------------------------+
-
-requirement
-~~~~~~~~~~~
-
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
-|Issue                                                                                                                                      |Priority / Bug Severity   |
-+===========================================================================================================================================+==========================+
-|`pds-github-util#7`_ As a PDS software user, I want to have a hierarchical view of the PDS EN components that apply to my user interests   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
-
 pds-registry-app
 ----------------
 *Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system.*
@@ -614,30 +533,6 @@ theme
 +================================================================================+==========================+
 |`pds-registry-app#155`_ [registry] Registry Regression Test and Documentation   |unknown                   |
 +--------------------------------------------------------------------------------+--------------------------+
-
-pds-template-repo-java
-----------------------
-*Template for new NASA PDS repositories. For Python software, see https://github.com/nasa-pds/pds-template-repo-python*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/pds-template-repo-java#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/pds-template-repo-java>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/pds-template-repo-java/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/pds-template-repo-java/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/pds-template-repo-java/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/pds-template-repo-java/releases>`_ 
-
-
-enhancement
-~~~~~~~~~~~
-
-+--------------------------------------------------------------------------------------+--------------------------+
-|Issue                                                                                 |Priority / Bug Severity   |
-+======================================================================================+==========================+
-|`pds-template-repo-java#12`_ Add README sections referencing Community Health files   |unknown                   |
-+--------------------------------------------------------------------------------------+--------------------------+
 
 pds-wds-web
 -----------
@@ -1087,14 +982,12 @@ for this release. The controlling documents are as follows:
 .. _pds4-information-model#288: https://github.com/NASA-PDS/pds4-information-model/issues/288
 .. _pds4-information-model#339: https://github.com/NASA-PDS/pds4-information-model/issues/339
 .. _pds4-information-model#403: https://github.com/NASA-PDS/pds4-information-model/issues/403
-.. _.github#3: https://github.com/NASA-PDS/.github/issues/3
 .. _archive-analytics#16: https://github.com/NASA-PDS/archive-analytics/issues/16
 .. _archive-analytics#2: https://github.com/NASA-PDS/archive-analytics/issues/2
 .. _archive-analytics#7: https://github.com/NASA-PDS/archive-analytics/issues/7
 .. _harvest#55: https://github.com/NASA-PDS/harvest/issues/55
 .. _harvest#58: https://github.com/NASA-PDS/harvest/issues/58
 .. _harvest#60: https://github.com/NASA-PDS/harvest/issues/60
-.. _nasa-pds.github.io#9: https://github.com/NASA-PDS/nasa-pds.github.io/issues/9
 .. _pds-api#73: https://github.com/NASA-PDS/pds-api/issues/73
 .. _pds-api#91: https://github.com/NASA-PDS/pds-api/issues/91
 .. _pds-api#56: https://github.com/NASA-PDS/pds-api/issues/56
@@ -1157,8 +1050,6 @@ for this release. The controlling documents are as follows:
 .. _pds-doi-ui#42: https://github.com/NASA-PDS/pds-doi-ui/issues/42
 .. _pds-doi-ui#65: https://github.com/NASA-PDS/pds-doi-ui/issues/65
 .. _pds-doi-ui#71: https://github.com/NASA-PDS/pds-doi-ui/issues/71
-.. _pds-github-util#15: https://github.com/NASA-PDS/pds-github-util/issues/15
-.. _pds-github-util#7: https://github.com/NASA-PDS/pds-github-util/issues/7
 .. _pds-registry-app#163: https://github.com/NASA-PDS/pds-registry-app/issues/163
 .. _pds-registry-app#122: https://github.com/NASA-PDS/pds-registry-app/issues/122
 .. _pds-registry-app#150: https://github.com/NASA-PDS/pds-registry-app/issues/150
@@ -1169,7 +1060,6 @@ for this release. The controlling documents are as follows:
 .. _pds-registry-app#153: https://github.com/NASA-PDS/pds-registry-app/issues/153
 .. _pds-registry-app#154: https://github.com/NASA-PDS/pds-registry-app/issues/154
 .. _pds-registry-app#155: https://github.com/NASA-PDS/pds-registry-app/issues/155
-.. _pds-template-repo-java#12: https://github.com/NASA-PDS/pds-template-repo-java/issues/12
 .. _pds-wds-web#25: https://github.com/NASA-PDS/pds-wds-web/issues/25
 .. _PDS.nasa.gov-Search#33: https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/33
 .. _PDS.nasa.gov-UX#73: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/73
