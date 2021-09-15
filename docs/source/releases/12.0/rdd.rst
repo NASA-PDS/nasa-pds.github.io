@@ -114,6 +114,8 @@ archive-analytics
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
 Other updates
 ~~~~~~~~~~~~~
 Requirements
@@ -153,6 +155,8 @@ harvest
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
 Other updates
 ~~~~~~~~~~~~~
 Requirements
@@ -299,6 +303,8 @@ pds-api-client
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
 Other updates
 ~~~~~~~~~~~~~
 Bugs
@@ -457,6 +463,8 @@ pds-doi-ui
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
 Other updates
 ~~~~~~~~~~~~~
 Bugs
@@ -601,6 +609,8 @@ pds-wds-web
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
 Other updates
 ~~~~~~~~~~~~~
 Enhancements
@@ -629,6 +639,8 @@ PDS.nasa.gov-Search
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
 Other updates
 ~~~~~~~~~~~~~
 Enhancements
@@ -772,6 +784,8 @@ pds4-jparser
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
 Other updates
 ~~~~~~~~~~~~~
 Bugs
@@ -800,6 +814,8 @@ PLAID
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
 Other updates
 ~~~~~~~~~~~~~
 Bugs
@@ -839,6 +855,8 @@ registry-api-service
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
 Other updates
 ~~~~~~~~~~~~~
 Bugs
