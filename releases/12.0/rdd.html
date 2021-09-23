@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Release Description Document (build 11.1), software changes &mdash; NASA PDS Software 11.1 documentation</title>
+  <title>Release Description Document (build B12.0) &mdash; NASA PDS Software 11.1 documentation</title>
   
 
   
@@ -165,7 +165,7 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Release Description Document (build 11.1), software changes</li>
+      <li>Release Description Document (build B12.0)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -184,17 +184,35 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="release-description-document-build-11-1-software-changes">
-<h1>Release Description Document (build 11.1), software changes<a class="headerlink" href="#release-description-document-build-11-1-software-changes" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="release-description-document-build-b12-0">
+<h1>Release Description Document (build B12.0)<a class="headerlink" href="#release-description-document-build-b12-0" title="Permalink to this headline">¶</a></h1>
 <p>This release of the PDS4 System is intended as an operational release of
 the system components to date.
 The original plan for this release can be found here: <a class="reference external" href="https://nasa-pds.github.io/releases/12.0/plan.html">plan B12.0</a></p>
 <p>The following sections can be found in this document:</p>
 <div class="toctree-wrapper compound">
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Description Document (build 11.1), software changes</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Description Document (build B12.0)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#pds4-standards-and-information-model-changes">PDS4 Standards and Information Model Changes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#software-changes">Software changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#software-changes">Software changes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#archive-analytics">archive-analytics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#harvest">harvest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds-api">pds-api</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds-api-client">pds-api-client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds-deep-archive">pds-deep-archive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds-doi-service">pds-doi-service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds-doi-ui">pds-doi-ui</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds-registry-app">pds-registry-app</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds-wds-web">pds-wds-web</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds-nasa-gov-search">PDS.nasa.gov-Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds-nasa-gov-ux">PDS.nasa.gov-UX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds4-information-model">pds4-information-model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds4-jparser">pds4-jparser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plaid">PLAID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#registry-api-service">registry-api-service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#validate">validate</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#liens">Liens</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#engineering-node-software-catalog">Engineering Node Software Catalog</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation-and-operation">Installation and operation</a></li>
@@ -332,6 +350,15 @@ PDS within the latest build period.</p>
 </div>
 <div class="section" id="software-changes">
 <h2>Software changes<a class="headerlink" href="#software-changes" title="Permalink to this headline">¶</a></h2>
+<p>The changes types are ‘bug’, ‘enhancement’ or ‘requirement’. For each
+software repository, the changes are listed in 2 categories:
+- planned updates
+- other updates</p>
+<p>The ‘planned updates’ are organized by ‘themes’ which are defined at the
+planing phase (see <a class="reference external" href="https://nasa-pds.github.io/releases/12.0/plan.html">plan B12.0</a>’)
+The ‘other updates’ occurs during the build cycle witout being planned
+or attached to a theme. They are orgnized by types (bug, enhancements,
+requirements…)</p>
 <div class="section" id="archive-analytics">
 <h3>archive-analytics<a class="headerlink" href="#archive-analytics" title="Permalink to this headline">¶</a></h3>
 <p><em>Processes, tools, and configuration for managing PDS archive analytics software and reports</em></p>

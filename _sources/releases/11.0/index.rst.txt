@@ -1,19 +1,22 @@
 =============================
-Software Summary (build 11.0)
+Software Catalog (build 11.0)
 =============================
 The software provided for the build 11.0 are listed hereafter and
 organized by category:
 
-- `PDS Tools`_
+- `Standalone Tools and Libraries`_
 
 - `Discipline Node Services`_
 
 - `Libraries`_
 
-- `Other Core Services and Libraries`_
+- `Engineering Node Services`_
 
-PDS Tools
-=========
+- `Other Tools and Libraries (dependencies)`_
+
+Standalone Tools and Libraries
+==============================
+PDS tools for discipline nodes, data providers and users.
 
 +-----------------------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |tool                               |version   |last updated   |description                                                                                                                                              |l |manual|                                 |l |changelog|                                 |l |requirements|   |l |download|                                 |l |license|                                 |l |feedback|                                 |
@@ -31,6 +34,8 @@ PDS Tools
 
 Discipline Node Services
 ========================
+PDS servers that Discipline Node should deploy to publish their archive
+at PDS level
 
 +-------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
 |tool               |version   |last updated   |description                                                                                                                                          |l |manual|                           |l |changelog|                           |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
@@ -40,6 +45,7 @@ Discipline Node Services
 
 Libraries
 =========
+Libraries supported by PDS
 
 +---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
 |tool           |version   |last updated   |description                                                                                                                                                                      |l |manual|                       |l |changelog|                       |l |requirements|   |l |download|                       |l |license|                       |l |feedback|                       |
@@ -47,8 +53,9 @@ Libraries
 |PDS4 JParser   |1.9.0     |2020-09-09     |Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.   ||NASA-PDS/pds4-jparser_manual|   ||NASA-PDS/pds4-jparser_changelog|   |                   ||NASA-PDS/pds4-jparser_download|   ||NASA-PDS/pds4-jparser_license|   ||NASA-PDS/pds4-jparser_feedback|   |
 +---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
 
-Other Core Services and Libraries
-=================================
+Engineering Node Services
+=========================
+PDS servers deployed by PDS Engineering Node at central level
 
 +-------------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------------------------------------+-------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
 |tool                           |version   |last updated   |description                                                                                                                                                                                                                                                        |l |manual|                                   |l |changelog|                                   |l |requirements|   |l |download|                                   |l |license|                                   |l |feedback|                                   |

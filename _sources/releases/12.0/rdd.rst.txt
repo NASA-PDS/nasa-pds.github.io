@@ -1,6 +1,6 @@
-===========================================================
-Release Description Document (build 11.1), software changes
-===========================================================
+==========================================
+Release Description Document (build B12.0)
+==========================================
 This release of the PDS4 System is intended as an operational release of
 the system components to date.
 The original plan for this release can be found here: `plan B12.0`_
@@ -9,7 +9,7 @@ The following sections can be found in this document:
 
 .. toctree::
    :glob: 
-   :maxdepth: 2
+   :maxdepth: 3
 
    rdd.rst
 
@@ -97,6 +97,17 @@ PDS within the latest build period.
 
 Software changes
 ================
+The changes types are 'bug', 'enhancement' or 'requirement'. For each
+software repository, the changes are listed in 2 categories:
+- planned updates
+- other updates
+
+The 'planned updates' are organized by 'themes' which are defined at the
+planing phase (see `plan B12.0`_')
+The 'other updates' occurs during the build cycle witout being planned
+or attached to a theme. They are orgnized by types (bug, enhancements,
+requirements...)
+
 archive-analytics
 -----------------
 *Processes, tools, and configuration for managing PDS archive analytics software and reports*
