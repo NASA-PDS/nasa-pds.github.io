@@ -9,7 +9,7 @@ The following sections can be found in this document:
 
 .. toctree::
    :glob: 
-   :maxdepth: 2
+   :maxdepth: 3
 
    rdd.rst
 
@@ -43,6 +43,7 @@ requirements...)
 The deliveries are validated by the development team and most of time,
 when relevant, also go through an additional Integration & Test process
 as indicated by a specific icon in the following tables.
+
 archive-analytics
 -----------------
 *Processes, tools, and configuration for managing PDS archive analytics software and reports*
