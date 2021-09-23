@@ -9,7 +9,7 @@ The following sections can be found in this document:
 
 .. toctree::
    :glob: 
-   :maxdepth: 3
+   :maxdepth: 2
 
    rdd.rst
 
@@ -18,7 +18,15 @@ PDS4 Standards and Information Model Changes
 This section details the changes to the PDS4 Standards and Information
 Model approved by the PDS4 Change Control Board and implemented by the
 PDS within the latest build period.
-no PDS4 standard updates
+
++--------------------------------+-----------------------------------------------------+
+|Ref                             |Title                                                |
++================================+=====================================================+
+|`pds4-information-model#164`_   |CCB-283: Add reference_type value document_to_data   |
++--------------------------------+-----------------------------------------------------+
+|`pds4-information-model#403`_   |CCB-329 - Broaden Definition of Attribute aperture   |
++--------------------------------+-----------------------------------------------------+
+
 Software changes
 ================
 The changes types are 'bug', 'enhancement' or 'requirement'. For each
@@ -1097,6 +1105,8 @@ for this release. The controlling documents are as follows:
 - `PDS DOI Service Requirements and Design Document (SRD/SDD)`_
 
 .. _plan B12.0: https://nasa-pds.github.io/releases/12.0/plan.html
+.. _pds4-information-model#164: https://github.com/NASA-PDS/pds4-information-model/issues/164
+.. _pds4-information-model#403: https://github.com/NASA-PDS/pds4-information-model/issues/403
 .. |iandt| image:: https://nasa-pds.github.io/_static/images/noun_certified_18093.png
    :alt: I&T
    :width: 20
