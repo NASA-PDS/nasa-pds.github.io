@@ -44,6 +44,8 @@ The deliveries are validated by the development team and most of time,
 when relevant, also go through an additional Integration & Test process
 as indicated by a specific icon in the following tables.
 
+--------
+
 archive-analytics
 -----------------
 *Processes, tools, and configuration for managing PDS archive analytics software and reports*
@@ -73,7 +75,7 @@ Requirements
 +=======================================================================================================================+======+==========================+
 |`archive-analytics#2`_ As a manager, I want to know the current total volume of PDS holdings                           |      |p.must-have               |
 +-----------------------------------------------------------------------------------------------------------------------+------+--------------------------+
-|`archive-analytics#7`_ As a PDS Project Office, I want to know the historical total volume of PDS holdings over time   |      |unknown                   |
+|`archive-analytics#7`_ As a PDS Project Office, I want to know the historical total volume of PDS holdings over time   |      |p.must-have               |
 +-----------------------------------------------------------------------------------------------------------------------+------+--------------------------+
 
 Enhancements
@@ -84,6 +86,31 @@ Enhancements
 +=========================================================================+======+==========================+
 |`archive-analytics#16`_ Develop procedure and export of Kibana config    |      |unknown                   |
 +-------------------------------------------------------------------------+------+--------------------------+
+
+--------
+
+cloud-initiative
+----------------
+*PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/cloud-initiative#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/cloud-initiative>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/cloud-initiative/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/cloud-initiative/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/cloud-initiative/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/cloud-initiative/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
+Other updates
+~~~~~~~~~~~~~
+--------
 
 devops
 ------
@@ -117,6 +144,8 @@ Planned Updates
 
 Other updates
 ~~~~~~~~~~~~~
+--------
+
 harvest
 -------
 *Provides software provides functionality for capturing and indexing product metadata in PDS Registry. A sub-component of the PDS Registry App (https://github.com/NASA-PDS/pds-registry-app)*
@@ -155,8 +184,10 @@ Enhancements
 +==================================================================================+==========+==========================+
 |`harvest#55`_ Quick fix to support date/time conversion to "ISO instant" format   ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------+----------+--------------------------+
-|`harvest#58`_ Enable blob ingestion by default                                    ||iandt|   |unknown                   |
+|`harvest#58`_ Enable blob ingestion by default                                    ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------+----------+--------------------------+
+
+--------
 
 pds-api
 -------
@@ -255,13 +286,19 @@ Bugs
 Requirements
 ++++++++++++
 
-+----------------------------------------------------------------------------------------------+----------+--------------------------+
-|Issue                                                                                         |I&T       |Priority / Bug Severity   |
-+==============================================================================================+==========+==========================+
-|`pds-api#96`_ As an API user, I want to get the latest version of a product, by default       ||iandt|   |p.must-have               |
-+----------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#107`_ As an API user, I want to explicitly request the latest version of a product   ||iandt|   |p.could-have              |
-+----------------------------------------------------------------------------------------------+----------+--------------------------+
++------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|Issue                                                                                                       |I&T       |Priority / Bug Severity   |
++============================================================================================================+==========+==========================+
+|`pds-api#68`_ As an API user, I want to know in the response how many hits are returned for an API query.   ||iandt|   |p.must-have               |
++------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-api#95`_ As a user, I want to query for all versions of a product                                      ||iandt|   |unknown                   |
++------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-api#96`_ As an API user, I want to get the latest version of a product, by default                     ||iandt|   |p.must-have               |
++------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-api#107`_ As an API user, I want to explicitly request the latest version of a product                 ||iandt|   |p.could-have              |
++------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+
+--------
 
 pds-api-client
 --------------
@@ -293,6 +330,8 @@ Bugs
 |`pds-api-client#6`_ Stack trace when calling `BundlesApi.bundle_by_lidvid`   ||iandt|   |s.medium                  |
 +-----------------------------------------------------------------------------+----------+--------------------------+
 
+--------
+
 pds-deep-archive
 ----------------
 *PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators*
@@ -315,7 +354,7 @@ Planned Updates
 +---------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                  |I&T       |Level         |Priority / Bug Severity   |
 +=======================================================================================+==========+==============+==========================+
-|`pds-deep-archive#7`_ As a user, I want to generate AIPs and SIPs using Registry       ||iandt|   |requirement   |unknown                   |
+|`pds-deep-archive#7`_ As a user, I want to generate AIPs and SIPs using Registry       ||iandt|   |requirement   |p.should-have             |
 +---------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |`pds-deep-archive#106`_ Improvements per API updates to remove workarounds from code   |          |enhancement   |p.must-have               |
 +---------------------------------------------------------------------------------------+----------+--------------+--------------------------+
@@ -331,6 +370,8 @@ Bugs
 +==========================================================================================================+==========+==========================+
 |`pds-deep-archive#116`_ deep archive misses products that specify primary products using lower case 'p'   ||iandt|   |s.low                     |
 +----------------------------------------------------------------------------------------------------------+----------+--------------------------+
+
+--------
 
 pds-doi-service
 ---------------
@@ -354,9 +395,11 @@ Planned Updates
 +-------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                            |I&T       |Level         |Priority / Bug Severity   |
 +=================================================================================================+==========+==============+==========================+
-|`pds-doi-service#90`_ Deploy point build of DOI service and UI                                   ||iandt|   |task          |unknown                   |
+|`pds-doi-service#87`_ Dev beta testing with API                                                  ||iandt|   |task          |unknown                   |
 +-------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
-|`pds-doi-service#145`_ review the full doi workflow and make it smooth for eng operators/users   ||iandt|   |enhancement   |unknown                   |
+|`pds-doi-service#90`_ Deploy point build of DOI service and UI                                   |          |task          |unknown                   |
++-------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
+|`pds-doi-service#145`_ review the full doi workflow and make it smooth for eng operators/users   |          |enhancement   |unknown                   |
 +-------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |`pds-doi-service#187`_ As a SA, I want the operational deployment of the service to be secure    ||iandt|   |requirement   |p.must-have               |
 +-------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
@@ -365,15 +408,28 @@ Planned Updates
 - `pds-doi-service#178`_ B12.0 Refinements to DOI Service and UI for
 Initial Release
 
-+--------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
-|Issue                                                                                                   |I&T       |Level         |Priority / Bug Severity   |
-+========================================================================================================+==========+==============+==========================+
-|`pds-doi-service#163`_ Dockerize API Service                                                            ||iandt|   |enhancement   |unknown                   |
-+--------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
-|`pds-doi-service#180`_ As an API user I want to filter on PDS3 Data Set IDs with wildcards              ||iandt|   |requirement   |p.must-have               |
-+--------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
-|`pds-doi-service#188`_ As a user, I want to make sure I can not override existing DOI with new LIDVID   ||iandt|   |bug           |s.medium                  |
-+--------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
+|Issue                                                                                                                                         |I&T       |Level         |Priority / Bug Severity   |
++==============================================================================================================================================+==========+==============+==========================+
+|`pds-doi-service#163`_ Dockerize API Service                                                                                                  ||iandt|   |enhancement   |p.should-have             |
++----------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
+|`pds-doi-service#177`_ As an API user I want to filter on lidvids with wildcards                                                              ||iandt|   |requirement   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
+|`pds-doi-service#180`_ As an API user I want to filter on PDS3 Data Set IDs with wildcards                                                    ||iandt|   |requirement   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
+|`pds-doi-service#188`_ As a user, I want to make sure I can not override existing DOI with new LIDVID                                         ||iandt|   |bug           |s.medium                  |
++----------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
+|`pds-doi-service#192`_ As a user, I want the application to support the history of PDS's DOIs, especially the one created for PDS3 products   ||iandt|   |requirement   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
+
+
+- `pds-doi-service#179`_ Develop DataCite Interface
+
++--------------------------------------------------------------------------+----------+--------------+--------------------------+
+|Issue                                                                     |I&T       |Level         |Priority / Bug Severity   |
++==========================================================================+==========+==============+==========================+
+|`pds-doi-service#103`_ As the PDS, I want to mint DOIs through DataCite   ||iandt|   |requirement   |p.must-have               |
++--------------------------------------------------------------------------+----------+--------------+--------------------------+
 
 
 Other updates
@@ -397,6 +453,8 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                                 |I&T       |Priority / Bug Severity   |
 +======================================================================================================================+==========+==========================+
+|`pds-doi-service#167`_ As a user, I want to see the lidvid of my DOIs in the email report                             ||iandt|   |p.should-have             |
++----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-doi-service#171`_ As an operator, I want to reserve a DOI through DataCite                                       ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-doi-service#172`_ As an operator, I want query for one or more minted DOIs from DataCite                         ||iandt|   |p.must-have               |
@@ -404,6 +462,10 @@ Requirements
 |`pds-doi-service#174`_ As an operator, I want to release a DOI through DataCite                                       ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-doi-service#175`_ As an operator, I want to update DOI metadata through DataCite                                 ||iandt|   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-doi-service#183`_ As a user of the API, I want to see the DOI's title when I go GET /dois request                ||iandt|   |unknown                   |
++----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-doi-service#184`_ As an API user, I want to always have an update date for the DOIs                              ||iandt|   |p.could-have              |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-doi-service#198`_ As a user, I want to use the API with ids containing a slash (/)                               ||iandt|   |p.should-have             |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
@@ -418,7 +480,7 @@ Enhancements
 +==============================================================================================================+==========+==========================+
 |`pds-doi-service#162`_ Implement Application Server to wrap Flask service                                     ||iandt|   |p.should-have             |
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-doi-service#165`_ Add service to API for update of the status of records with OSTI (check sub command)   ||iandt|   |unknown                   |
+|`pds-doi-service#165`_ Add service to API for update of the status of records with OSTI (check sub command)   |          |unknown                   |
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-doi-service#227`_ Update DOI service for handling existing DOIs acceptance criteria per #175             ||iandt|   |unknown                   |
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
@@ -426,6 +488,8 @@ Enhancements
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-doi-service#242`_ Port from pystache to jinja2                                                           |          |unknown                   |
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+
+--------
 
 pds-doi-ui
 ----------
@@ -507,6 +571,8 @@ Enhancements
 |`pds-doi-ui#82`_ Create PDS React Component Library Process For NPM Packages                       ||iandt|   |unknown                   |
 +---------------------------------------------------------------------------------------------------+----------+--------------------------+
 
+--------
+
 pds-registry-app
 ----------------
 *Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system.*
@@ -559,6 +625,8 @@ Requirements
 +-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-registry-app#147`_ As a node operator,  I want to be able to tag ingested data with the node it is ingested by.               ||iandt|   |p.must-have               |
 +-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-registry-app#185`_ As a user, I want to know the version of all registry app components via the command-line                  ||iandt|   |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
 ++++++++++++
@@ -574,6 +642,8 @@ Enhancements
 +------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-registry-app#173`_ Upgrade API on AWS with latest version 0.3.1                |          |unknown                   |
 +------------------------------------------------------------------------------------+----------+--------------------------+
+
+--------
 
 pds-registry-mgr-elastic
 ------------------------
@@ -596,6 +666,15 @@ No planned update realised in the build in this repository.
 
 Other updates
 ~~~~~~~~~~~~~
+Bugs
+++++
+
++---------------------------------------------------------------------------------------------------+----------+--------------------------+
+|Issue                                                                                              |I&T       |Priority / Bug Severity   |
++===================================================================================================+==========+==========================+
+|`pds-registry-mgr-elastic#33`_ registry-mgr cannot handle updated JSON files output from LDDTool   ||iandt|   |s.medium                  |
++---------------------------------------------------------------------------------------------------+----------+--------------------------+
+
 Enhancements
 ++++++++++++
 
@@ -604,6 +683,8 @@ Enhancements
 +=========================================================================================================+======+==========================+
 |`pds-registry-mgr-elastic#27`_ Update registry-mgr-elastic to support new LDD JSON version information   |      |unknown                   |
 +---------------------------------------------------------------------------------------------------------+------+--------------------------+
+
+--------
 
 pds-wds-web
 -----------
@@ -635,6 +716,8 @@ Enhancements
 |`pds-wds-web#25`_ Review and merge App Bar Updates   |      |unknown                   |
 +-----------------------------------------------------+------+--------------------------+
 
+--------
+
 PDS.nasa.gov-Search
 -------------------
 *Front-end interface for PDS.nasa.gov data search capability*
@@ -664,6 +747,8 @@ Enhancements
 +====================================================================================================================+======+==========================+
 |`PDS.nasa.gov-Search#33`_ Initial investigation for Search UI utilizing PDS API and identify new API user stories   |      |unknown                   |
 +--------------------------------------------------------------------------------------------------------------------+------+--------------------------+
+
+--------
 
 PDS.nasa.gov-UX
 ---------------
@@ -701,6 +786,8 @@ Enhancements
 +=============================================================================================================+==========+==========================+
 |`PDS.nasa.gov-UX#59`_ Rollout PDS App Bar to Discipline Nodes                                                |          |unknown                   |
 +-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`PDS.nasa.gov-UX#80`_ Create new Training page                                                               ||iandt|   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`PDS.nasa.gov-UX#81`_ [Training] incorporate new materials - misc videos and ancillary files for TBD video   ||iandt|   |p.must-have               |
 +-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`PDS.nasa.gov-UX#82`_ Develop kickoff meeting slides                                                         |          |p.must-have               |
@@ -713,6 +800,8 @@ Enhancements
 +-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`PDS.nasa.gov-UX#92`_ Synthesize Workshop Feedback                                                           |          |unknown                   |
 +-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+
+--------
 
 pds4-information-model
 ----------------------
@@ -814,6 +903,8 @@ Enhancements
 |`pds4-information-model#374`_ [namespace-registry] add new namespace "clipper"   |      |p.must-have               |
 +---------------------------------------------------------------------------------+------+--------------------------+
 
+--------
+
 pds4-jparser
 ------------
 *Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.*
@@ -845,6 +936,8 @@ Bugs
 +------------------------------------------------------------------+----------+--------------------------+
 |`pds4-jparser#42`_ Software does not build in Java11 on Windows   |          |s.medium                  |
 +------------------------------------------------------------------+----------+--------------------------+
+
+--------
 
 PLAID
 -----
@@ -887,6 +980,8 @@ Requirements
 |`PLAID#15`_ As a PDS Operator, I want to update PLAID to the latest PDS4 Information Model   |      |unknown                   |
 +---------------------------------------------------------------------------------------------+------+--------------------------+
 
+--------
+
 registry-api-service
 --------------------
 *PDS Registry API service. Complies with PDS API specification*
@@ -920,11 +1015,15 @@ Bugs
 +-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#27`_ XML and PDS4+XML Response Formats are invalid                                                           ||iandt|   |s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api-service#36`_ The end point /bundles/{lidvid}/products does not fully work                                            ||iandt|   |s.medium                  |
++-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#43`_ As an API caller, I expect MD5s and file reference URLs to have real values and not the string "null"   ||iandt|   |s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#51`_ blob is returned in product results if fields to return are not specified                               ||iandt|   |unknown                   |
 +-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#53`_ If Elasticsearch is down on API server startup, it starts, but doesn't accept connections               ||iandt|   |s.medium                  |
++-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api-service#62`_ API unable to handle products with multiple file areas                                                  ||iandt|   |s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#69`_ As a paginator, I want endpoints to consistently return no results when I page to the end of results    ||iandt|   |s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
@@ -941,8 +1040,44 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#14`_ As a node operators, I want to deploy the Registry API Service with the PDS Registry.                        ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api-service#33`_ As a user, I want  to get a 404 error when I attempt to request a resource which does not exists             ||iandt|   |unknown                   |
++----------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#47`_ As a user, I want to have a complete default fields (for now at least)                                       ||iandt|   |unknown                   |
 +----------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+
+--------
+
+registry-ci
+-----------
+*Continuous Integration framework and regression tests for different Registry components, such as Harvest, Registry Manager and API.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/registry-ci#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-ci>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-ci/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/registry-ci/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-ci/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-ci/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned update realised in the build in this repository.
+
+Other updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++--------------------------------------------------------------------------------------------------------------------+------+--------------------------+
+|Issue                                                                                                               |I&T   |Priority / Bug Severity   |
++====================================================================================================================+======+==========================+
+|`registry-ci#2`_ Maven build step of "Run CI" GitHub action could not handle source branches with '/' in the name   |      |unknown                   |
++--------------------------------------------------------------------------------------------------------------------+------+--------------------------+
+
+--------
 
 validate
 --------
@@ -1029,8 +1164,15 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#392`_ Validate throws incorrect overlap error when first Field_Bit has length 1                                                                         ||iandt|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#405`_ Validate 2.0.7 does not detect more than one collection product in the same directory                                                             ||iandt|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+
+Requirements
+++++++++++++
+
++-------------------------------------------------------------------------------------------+----------+--------------------------+
+|Issue                                                                                      |I&T       |Priority / Bug Severity   |
++===========================================================================================+==========+==========================+
+|`validate#367`_ As a user, I want to validate all files referenced by a Product_Document   ||iandt|   |p.must-have               |
++-------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
 ++++++++++++
@@ -1114,6 +1256,7 @@ for this release. The controlling documents are as follows:
 .. _archive-analytics#2: https://github.com/NASA-PDS/archive-analytics/issues/2
 .. _archive-analytics#7: https://github.com/NASA-PDS/archive-analytics/issues/7
 .. _archive-analytics#16: https://github.com/NASA-PDS/archive-analytics/issues/16
+.. _cloud-initiative#2: https://github.com/NASA-PDS/cloud-initiative/issues/2
 .. _devops#4: https://github.com/NASA-PDS/devops/issues/4
 .. _devops#1: https://github.com/NASA-PDS/devops/issues/1
 .. _devops#5: https://github.com/NASA-PDS/devops/issues/5
@@ -1143,6 +1286,8 @@ for this release. The controlling documents are as follows:
 .. _pds-api#84: https://github.com/NASA-PDS/pds-api/issues/84
 .. _pds-api#99: https://github.com/NASA-PDS/pds-api/issues/99
 .. _pds-api#73: https://github.com/NASA-PDS/pds-api/issues/73
+.. _pds-api#68: https://github.com/NASA-PDS/pds-api/issues/68
+.. _pds-api#95: https://github.com/NASA-PDS/pds-api/issues/95
 .. _pds-api#96: https://github.com/NASA-PDS/pds-api/issues/96
 .. _pds-api#107: https://github.com/NASA-PDS/pds-api/issues/107
 .. _pds-api-client#6: https://github.com/NASA-PDS/pds-api-client/issues/6
@@ -1151,22 +1296,29 @@ for this release. The controlling documents are as follows:
 .. _pds-deep-archive#106: https://github.com/NASA-PDS/pds-deep-archive/issues/106
 .. _pds-deep-archive#116: https://github.com/NASA-PDS/pds-deep-archive/issues/116
 .. _pds-doi-service#86: https://github.com/NASA-PDS/pds-doi-service/issues/86
+.. _pds-doi-service#87: https://github.com/NASA-PDS/pds-doi-service/issues/87
 .. _pds-doi-service#90: https://github.com/NASA-PDS/pds-doi-service/issues/90
 .. _pds-doi-service#145: https://github.com/NASA-PDS/pds-doi-service/issues/145
 .. _pds-doi-service#187: https://github.com/NASA-PDS/pds-doi-service/issues/187
 .. _pds-doi-service#178: https://github.com/NASA-PDS/pds-doi-service/issues/178
 .. _pds-doi-service#163: https://github.com/NASA-PDS/pds-doi-service/issues/163
+.. _pds-doi-service#177: https://github.com/NASA-PDS/pds-doi-service/issues/177
 .. _pds-doi-service#180: https://github.com/NASA-PDS/pds-doi-service/issues/180
 .. _pds-doi-service#188: https://github.com/NASA-PDS/pds-doi-service/issues/188
+.. _pds-doi-service#192: https://github.com/NASA-PDS/pds-doi-service/issues/192
 .. _pds-doi-service#179: https://github.com/NASA-PDS/pds-doi-service/issues/179
+.. _pds-doi-service#103: https://github.com/NASA-PDS/pds-doi-service/issues/103
 .. _pds-doi-service#203: https://github.com/NASA-PDS/pds-doi-service/issues/203
 .. _pds-doi-service#191: https://github.com/NASA-PDS/pds-doi-service/issues/191
 .. _pds-doi-service#220: https://github.com/NASA-PDS/pds-doi-service/issues/220
 .. _pds-doi-service#247: https://github.com/NASA-PDS/pds-doi-service/issues/247
+.. _pds-doi-service#167: https://github.com/NASA-PDS/pds-doi-service/issues/167
 .. _pds-doi-service#171: https://github.com/NASA-PDS/pds-doi-service/issues/171
 .. _pds-doi-service#172: https://github.com/NASA-PDS/pds-doi-service/issues/172
 .. _pds-doi-service#174: https://github.com/NASA-PDS/pds-doi-service/issues/174
 .. _pds-doi-service#175: https://github.com/NASA-PDS/pds-doi-service/issues/175
+.. _pds-doi-service#183: https://github.com/NASA-PDS/pds-doi-service/issues/183
+.. _pds-doi-service#184: https://github.com/NASA-PDS/pds-doi-service/issues/184
 .. _pds-doi-service#198: https://github.com/NASA-PDS/pds-doi-service/issues/198
 .. _pds-doi-service#228: https://github.com/NASA-PDS/pds-doi-service/issues/228
 .. _pds-doi-service#162: https://github.com/NASA-PDS/pds-doi-service/issues/162
@@ -1174,7 +1326,6 @@ for this release. The controlling documents are as follows:
 .. _pds-doi-service#227: https://github.com/NASA-PDS/pds-doi-service/issues/227
 .. _pds-doi-service#229: https://github.com/NASA-PDS/pds-doi-service/issues/229
 .. _pds-doi-service#242: https://github.com/NASA-PDS/pds-doi-service/issues/242
-.. _pds-doi-ui#60: https://github.com/NASA-PDS/pds-doi-ui/issues/60
 .. _pds-doi-ui#22: https://github.com/NASA-PDS/pds-doi-ui/issues/22
 .. _pds-doi-ui#35: https://github.com/NASA-PDS/pds-doi-ui/issues/35
 .. _pds-doi-ui#70: https://github.com/NASA-PDS/pds-doi-ui/issues/70
@@ -1203,10 +1354,12 @@ for this release. The controlling documents are as follows:
 .. _pds-registry-app#12: https://github.com/NASA-PDS/pds-registry-app/issues/12
 .. _pds-registry-app#130: https://github.com/NASA-PDS/pds-registry-app/issues/130
 .. _pds-registry-app#147: https://github.com/NASA-PDS/pds-registry-app/issues/147
+.. _pds-registry-app#185: https://github.com/NASA-PDS/pds-registry-app/issues/185
 .. _pds-registry-app#122: https://github.com/NASA-PDS/pds-registry-app/issues/122
 .. _pds-registry-app#150: https://github.com/NASA-PDS/pds-registry-app/issues/150
 .. _pds-registry-app#165: https://github.com/NASA-PDS/pds-registry-app/issues/165
 .. _pds-registry-app#173: https://github.com/NASA-PDS/pds-registry-app/issues/173
+.. _pds-registry-mgr-elastic#33: https://github.com/NASA-PDS/pds-registry-mgr-elastic/issues/33
 .. _pds-registry-mgr-elastic#27: https://github.com/NASA-PDS/pds-registry-mgr-elastic/issues/27
 .. _pds-wds-web#25: https://github.com/NASA-PDS/pds-wds-web/issues/25
 .. _PDS.nasa.gov-Search#33: https://github.com/NASA-PDS/PDS.nasa.gov-Search/issues/33
@@ -1215,6 +1368,7 @@ for this release. The controlling documents are as follows:
 .. _PDS.nasa.gov-UX#75: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/75
 .. _PDS.nasa.gov-UX#79: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/79
 .. _PDS.nasa.gov-UX#59: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/59
+.. _PDS.nasa.gov-UX#80: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/80
 .. _PDS.nasa.gov-UX#81: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/81
 .. _PDS.nasa.gov-UX#82: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/82
 .. _PDS.nasa.gov-UX#85: https://github.com/NASA-PDS/PDS.nasa.gov-UX/issues/85
@@ -1253,14 +1407,18 @@ for this release. The controlling documents are as follows:
 .. _registry-api-service#16: https://github.com/NASA-PDS/registry-api-service/issues/16
 .. _registry-api-service#17: https://github.com/NASA-PDS/registry-api-service/issues/17
 .. _registry-api-service#27: https://github.com/NASA-PDS/registry-api-service/issues/27
+.. _registry-api-service#36: https://github.com/NASA-PDS/registry-api-service/issues/36
 .. _registry-api-service#43: https://github.com/NASA-PDS/registry-api-service/issues/43
 .. _registry-api-service#51: https://github.com/NASA-PDS/registry-api-service/issues/51
 .. _registry-api-service#53: https://github.com/NASA-PDS/registry-api-service/issues/53
+.. _registry-api-service#62: https://github.com/NASA-PDS/registry-api-service/issues/62
 .. _registry-api-service#69: https://github.com/NASA-PDS/registry-api-service/issues/69
 .. _registry-api-service#10: https://github.com/NASA-PDS/registry-api-service/issues/10
 .. _registry-api-service#13: https://github.com/NASA-PDS/registry-api-service/issues/13
 .. _registry-api-service#14: https://github.com/NASA-PDS/registry-api-service/issues/14
+.. _registry-api-service#33: https://github.com/NASA-PDS/registry-api-service/issues/33
 .. _registry-api-service#47: https://github.com/NASA-PDS/registry-api-service/issues/47
+.. _registry-ci#2: https://github.com/NASA-PDS/registry-ci/issues/2
 .. _validate#317: https://github.com/NASA-PDS/validate/issues/317
 .. _validate#69: https://github.com/NASA-PDS/validate/issues/69
 .. _validate#308: https://github.com/NASA-PDS/validate/issues/308
@@ -1287,7 +1445,7 @@ for this release. The controlling documents are as follows:
 .. _validate#380: https://github.com/NASA-PDS/validate/issues/380
 .. _validate#381: https://github.com/NASA-PDS/validate/issues/381
 .. _validate#392: https://github.com/NASA-PDS/validate/issues/392
-.. _validate#405: https://github.com/NASA-PDS/validate/issues/405
+.. _validate#367: https://github.com/NASA-PDS/validate/issues/367
 .. _validate#373: https://github.com/NASA-PDS/validate/issues/373
 .. _validate#374: https://github.com/NASA-PDS/validate/issues/374
 .. _pds-swg_11: https://github.com/NASA-PDS/pds-swg/issues/11
