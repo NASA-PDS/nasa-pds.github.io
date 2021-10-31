@@ -81,9 +81,6 @@ Planned PDS4 Information Model Changes
 
 This section details the planned changes to the PDS4 Information Model for this build. These changes are deliverables by the PDS Data Design Working Group (DDWG) to the Engineering Node for implementation.
 
-
-
-
 Planned Software Changes
 ++++++++++++++++++++++++
 
@@ -481,6 +478,13 @@ DevOps
 
 --------
 
+Schedule
+++++++++
+
+.. image:: /_static/images/b12.1_roadmap.svg
+   :target: ../_static/images/b12.1_roadmap.svg
+
+---------
 
 Other Information
 +++++++++++++++++
