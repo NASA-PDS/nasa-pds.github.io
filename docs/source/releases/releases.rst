@@ -23,7 +23,7 @@ Upcoming plans
     :glob:
     :maxdepth: 1
 
-    12.0</releases/12.0/plan>
+    12.1</releases/12.1/plan>
 
 
 Release Description Documents (RDD)
@@ -34,6 +34,7 @@ Release Description Documents (RDD)
     :maxdepth: 1
 
     11.1</releases/11.1/rdd>
+    12.0</releases/12.0/rdd>
 
 
 
