@@ -27,7 +27,7 @@ PDS tools for discipline nodes, data providers and users.
 +-----------------------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |PDS4 Information Model & LDDTool   |v12.1.0   |2021-01-11     |The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.                         ||NASA-PDS/pds4-information-model_manual|   ||NASA-PDS/pds4-information-model_changelog|   |                   ||NASA-PDS/pds4-information-model_download|   ||NASA-PDS/pds4-information-model_license|   ||NASA-PDS/pds4-information-model_feedback|   |
 +-----------------------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
-|Transform                          |v1.11.1   |2019-12-13     |Transforms PDS3 and PDS4 product labels and data into various formats.                                                                                   ||NASA-PDS/transform_manual|                |                                              |                   ||NASA-PDS/transform_download|                ||NASA-PDS/transform_license|                ||NASA-PDS/transform_feedback|                |
+|Transform                          |v1.11.1   |2019-12-13     |Transforms PDS3 and PDS4 product labels and data into various formats.                                                                                   ||NASA-PDS/transform_manual|                ||NASA-PDS/transform_changelog|                |                   ||NASA-PDS/transform_download|                ||NASA-PDS/transform_license|                ||NASA-PDS/transform_feedback|                |
 +-----------------------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |MILabel                            |v1.1.3    |2020-12-11     |Metadata Injector for PDS Labels (MILabel), formerly known as Generate Tool                                                                              ||NASA-PDS/mi-label_manual|                 ||NASA-PDS/mi-label_changelog|                 |                   ||NASA-PDS/mi-label_download|                 ||NASA-PDS/mi-label_license|                 ||NASA-PDS/mi-label_feedback|                 |
 +-----------------------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
@@ -88,7 +88,7 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/pds-doi-service_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-doi-service/releases/tag/v1.1.1
 .. |NASA-PDS/pds-doi-service_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-doi-service/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-doi-service/main/LICENSE.md
 .. |NASA-PDS/pds-doi-service_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-doi-service/issues/new/choose
 .. |NASA-PDS/pds-doi-ui_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -100,7 +100,7 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/pds-doi-ui_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-doi-ui/releases/tag/v0.3.1
 .. |NASA-PDS/pds-doi-ui_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-doi-ui/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-doi-ui/main/LICENSE.md
 .. |NASA-PDS/pds-doi-ui_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-doi-ui/issues/new/choose
 .. |NASA-PDS/pds-registry-app_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -112,7 +112,7 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/pds-registry-app_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-registry-app/releases/tag/v0.3.2
 .. |NASA-PDS/pds-registry-app_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-app/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-app/main/LICENSE.md
 .. |NASA-PDS/pds-registry-app_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-registry-app/issues/new/choose
 .. |NASA-PDS/pds-deep-archive_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -124,7 +124,7 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/pds-deep-archive_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-deep-archive/releases/tag/v0.4.0
 .. |NASA-PDS/pds-deep-archive_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-deep-archive/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-deep-archive/main/LICENSE.md
 .. |NASA-PDS/pds-deep-archive_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-deep-archive/issues/new/choose
 .. |NASA-PDS/validate_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -136,7 +136,7 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/validate_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/validate/releases/tag/v2.0.7
 .. |NASA-PDS/validate_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/validate/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/validate/main/LICENSE.md
 .. |NASA-PDS/validate_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/validate/issues/new/choose
 .. |NASA-PDS/pds4-information-model_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -148,7 +148,7 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/pds4-information-model_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds4-information-model/releases/tag/v12.1.0
 .. |NASA-PDS/pds4-information-model_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-information-model/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-information-model/main/LICENSE.md
 .. |NASA-PDS/pds4-information-model_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds4-information-model/issues/new/choose
 .. |NASA-PDS/harvest_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -160,7 +160,7 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/harvest_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/harvest/releases/tag/v3.4.1
 .. |NASA-PDS/harvest_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/harvest/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/harvest/main/LICENSE.md
 .. |NASA-PDS/harvest_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/harvest/issues/new/choose
 .. |NASA-PDS/pds-registry-mgr-elastic_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -172,7 +172,7 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/pds-registry-mgr-elastic_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-registry-mgr-elastic/releases/tag/v4.1.0
 .. |NASA-PDS/pds-registry-mgr-elastic_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-mgr-elastic/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-mgr-elastic/main/LICENSE.md
 .. |NASA-PDS/pds-registry-mgr-elastic_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-registry-mgr-elastic/issues/new/choose
 .. |NASA-PDS/registry-api-service_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -184,19 +184,19 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/registry-api-service_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/registry-api-service/releases/tag/v0.1.1
 .. |NASA-PDS/registry-api-service_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/registry-api-service/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/registry-api-service/main/LICENSE.md
 .. |NASA-PDS/registry-api-service_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/registry-api-service/issues/new/choose
 .. |NASA-PDS/transform_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/transform/
 .. |NASA-PDS/transform_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: None
+   :target: https://github.com/NASA-PDS/transform/blob/main/CHANGELOG.md#v1111-2019-12-13
 .. |NASA-PDS/transform_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/transform_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/transform/releases/tag/v1.11.1
 .. |NASA-PDS/transform_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/transform/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/transform/main/LICENSE.md
 .. |NASA-PDS/transform_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/transform/issues/new/choose
 .. |NASA-PDS/pds4-jparser_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -208,7 +208,7 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/pds4-jparser_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds4-jparser/releases/tag/v2.0.3
 .. |NASA-PDS/pds4-jparser_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-jparser/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-jparser/main/LICENSE.md
 .. |NASA-PDS/pds4-jparser_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds4-jparser/issues/new/choose
 .. |NASA-PDS/mi-label_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -220,7 +220,7 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/mi-label_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/mi-label/releases/tag/v1.1.3
 .. |NASA-PDS/mi-label_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/mi-label/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/mi-label/main/LICENSE.md
 .. |NASA-PDS/mi-label_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/mi-label/issues/new/choose
 .. |manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual_text.png

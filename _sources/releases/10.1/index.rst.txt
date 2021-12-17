@@ -25,7 +25,7 @@ PDS tools for discipline nodes, data providers and users.
 +-----------------------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |PDS4 Information Model & LDDTool   |11.3.2    |2020-08-17     |The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.   ||NASA-PDS/pds4-information-model_manual|   ||NASA-PDS/pds4-information-model_changelog|   |                   ||NASA-PDS/pds4-information-model_download|   ||NASA-PDS/pds4-information-model_license|   ||NASA-PDS/pds4-information-model_feedback|   |
 +-----------------------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
-|Transform                          |v1.11.1   |2019-12-13     |Transforms PDS3 and PDS4 product labels and data into various formats.                                                             ||NASA-PDS/transform_manual|                |                                              |                   ||NASA-PDS/transform_download|                ||NASA-PDS/transform_license|                ||NASA-PDS/transform_feedback|                |
+|Transform                          |v1.11.1   |2019-12-13     |Transforms PDS3 and PDS4 product labels and data into various formats.                                                             ||NASA-PDS/transform_manual|                ||NASA-PDS/transform_changelog|                |                   ||NASA-PDS/transform_download|                ||NASA-PDS/transform_license|                ||NASA-PDS/transform_feedback|                |
 +-----------------------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |MILabel                            |v1.1.3    |2020-12-11     |Metadata Injector for PDS Labels (MILabel), formerly known as Generate Tool                                                        ||NASA-PDS/mi-label_manual|                 ||NASA-PDS/mi-label_changelog|                 |                   ||NASA-PDS/mi-label_download|                 ||NASA-PDS/mi-label_license|                 ||NASA-PDS/mi-label_feedback|                 |
 +-----------------------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
@@ -74,7 +74,7 @@ PDS servers deployed by PDS Engineering Node at central level
 .. |NASA-PDS/pds-registry-app_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-registry-app/releases/tag/0.1.2
 .. |NASA-PDS/pds-registry-app_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-app/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-app/main/LICENSE.md
 .. |NASA-PDS/pds-registry-app_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-registry-app/issues/new/choose
 .. |NASA-PDS/pds-deep-archive_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -86,7 +86,7 @@ PDS servers deployed by PDS Engineering Node at central level
 .. |NASA-PDS/pds-deep-archive_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-deep-archive/releases/tag/0.1.6
 .. |NASA-PDS/pds-deep-archive_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-deep-archive/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-deep-archive/main/LICENSE.md
 .. |NASA-PDS/pds-deep-archive_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-deep-archive/issues/new/choose
 .. |NASA-PDS/validate_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -98,7 +98,7 @@ PDS servers deployed by PDS Engineering Node at central level
 .. |NASA-PDS/validate_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/validate/releases/tag/1.23.3
 .. |NASA-PDS/validate_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/validate/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/validate/main/LICENSE.md
 .. |NASA-PDS/validate_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/validate/issues/new/choose
 .. |NASA-PDS/pds4-information-model_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -110,7 +110,7 @@ PDS servers deployed by PDS Engineering Node at central level
 .. |NASA-PDS/pds4-information-model_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds4-information-model/releases/tag/11.3.2
 .. |NASA-PDS/pds4-information-model_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-information-model/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-information-model/main/LICENSE.md
 .. |NASA-PDS/pds4-information-model_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds4-information-model/issues/new/choose
 .. |NASA-PDS/harvest_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -122,7 +122,7 @@ PDS servers deployed by PDS Engineering Node at central level
 .. |NASA-PDS/harvest_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/harvest/releases/tag/v3.2.2
 .. |NASA-PDS/harvest_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/harvest/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/harvest/main/LICENSE.md
 .. |NASA-PDS/harvest_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/harvest/issues/new/choose
 .. |NASA-PDS/pds-registry-mgr-solr_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -134,19 +134,19 @@ PDS servers deployed by PDS Engineering Node at central level
 .. |NASA-PDS/pds-registry-mgr-solr_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-registry-mgr-solr/releases/tag/v3.2.2
 .. |NASA-PDS/pds-registry-mgr-solr_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-mgr-solr/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-mgr-solr/main/LICENSE.md
 .. |NASA-PDS/pds-registry-mgr-solr_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-registry-mgr-solr/issues/new/choose
 .. |NASA-PDS/transform_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/transform/
 .. |NASA-PDS/transform_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: None
+   :target: https://github.com/NASA-PDS/transform/blob/main/CHANGELOG.md#v1111-2019-12-13
 .. |NASA-PDS/transform_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/transform_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/transform/releases/tag/v1.11.1
 .. |NASA-PDS/transform_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/transform/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/transform/main/LICENSE.md
 .. |NASA-PDS/transform_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/transform/issues/new/choose
 .. |NASA-PDS/pds4-jparser_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -158,7 +158,7 @@ PDS servers deployed by PDS Engineering Node at central level
 .. |NASA-PDS/pds4-jparser_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds4-jparser/releases/tag/v1.8.1
 .. |NASA-PDS/pds4-jparser_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-jparser/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/pds4-jparser/main/LICENSE.md
 .. |NASA-PDS/pds4-jparser_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds4-jparser/issues/new/choose
 .. |NASA-PDS/mi-label_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
@@ -170,7 +170,7 @@ PDS servers deployed by PDS Engineering Node at central level
 .. |NASA-PDS/mi-label_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/mi-label/releases/tag/v1.1.3
 .. |NASA-PDS/mi-label_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/mi-label/main/LICENSE.txt
+   :target: https://raw.githubusercontent.com/NASA-PDS/mi-label/main/LICENSE.md
 .. |NASA-PDS/mi-label_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/mi-label/issues/new/choose
 .. |manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual_text.png
