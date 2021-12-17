@@ -12,8 +12,8 @@ The builds available are
 
     10.1 (archived)</releases/10.1/index>
     11.0 (archived)</releases/11.0/index>
-    11.1 (STABLE)</releases/11.1/index>
-    12.0 (validation)</releases/12.0/index>
+    11.1 (archived)</releases/11.1/index>
+    12.0 (STABLE)</releases/12.0/index>
     12.1 (development)</releases/12.1-SNAPSHOT/index>
 
 Upcoming plans
