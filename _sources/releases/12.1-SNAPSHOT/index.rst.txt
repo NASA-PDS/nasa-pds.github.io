@@ -41,11 +41,11 @@ Discipline Node Services
 PDS servers that Discipline Node should deploy to publish their archive
 at PDS level
 
-+-------------------+------------------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
-|tool               |version           |last updated   |description                                                                                                                                          |l |manual|                           |l |changelog|                           |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
-+===================+==================+===============+=====================================================================================================================================================+=====================================+========================================+===================+=======================================+======================================+=======================================+
-|PDS Registry App   |v1.0.2-SNAPSHOT   |2021-12-10     |Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system.   ||NASA-PDS/pds-registry-app_manual|   ||NASA-PDS/pds-registry-app_changelog|   |                   ||NASA-PDS/pds-registry-app_download|   ||NASA-PDS/pds-registry-app_license|   ||NASA-PDS/pds-registry-app_feedback|   |
-+-------------------+------------------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
++-------------------+------------------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
+|tool               |version           |last updated   |description                                                                                                                                          |l |manual|                           |l |changelog|   |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
++===================+==================+===============+=====================================================================================================================================================+=====================================+================+===================+=======================================+======================================+=======================================+
+|PDS Registry App   |v1.0.3-SNAPSHOT   |2021-12-21     |Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system.   ||NASA-PDS/pds-registry-app_manual|   |                |                   ||NASA-PDS/pds-registry-app_download|   ||NASA-PDS/pds-registry-app_license|   ||NASA-PDS/pds-registry-app_feedback|   |
++-------------------+------------------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
 
 Engineering Node Services
 =========================
@@ -100,11 +100,11 @@ Other software assets re-used in previously listed applications
 .. |NASA-PDS/pds-registry-app_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds-registry-app/
 .. |NASA-PDS/pds-registry-app_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/pds-registry-app/blob/main/CHANGELOG.md#v102-snapshot-2021-12-10
+   :target: None
 .. |NASA-PDS/pds-registry-app_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
    :target: None
 .. |NASA-PDS/pds-registry-app_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
-   :target: https://github.com/NASA-PDS/pds-registry-app/releases/tag/v1.0.2-SNAPSHOT
+   :target: https://github.com/NASA-PDS/pds-registry-app/releases/tag/v1.0.3-SNAPSHOT
 .. |NASA-PDS/pds-registry-app_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
    :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-app/main/LICENSE.md
 .. |NASA-PDS/pds-registry-app_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
