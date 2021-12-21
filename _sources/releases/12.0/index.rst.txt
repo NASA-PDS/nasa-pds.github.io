@@ -5,14 +5,9 @@ The software provided for the PDS System Build 12.0 are listed hereafter and
 organized by category:
 
 - `Standalone Tools and Libraries`_
-
 - `Discipline Node Services`_
-
 - `Libraries`_
-
 - `Engineering Node Services`_
-
-- `Other Tools and Libraries (dependencies)`_
 
 
 Standalone Tools and Libraries
