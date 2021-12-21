@@ -35,13 +35,13 @@ Discipline Node Services
 PDS servers that Discipline Node should deploy to publish their archive
 at PDS level
 
-+-------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+---------------------------------------+---------------------------------------+--------------------------------------+---------------------------------------+
-|tool               |version   |last updated   |description                                                                                                                                              |l |manual|                           |l |changelog|                           |l |requirements|                       |l |download|                           |l |license|                           |l |feedback|                           |
-+===================+==========+===============+=========================================================================================================================================================+=====================================+========================================+=======================================+=======================================+======================================+=======================================+
-|PDS Registry App   |0.1.2     |2020-08-13     |Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system.       ||NASA-PDS/pds-registry-app_manual|   ||NASA-PDS/pds-registry-app_changelog|   |                                       ||NASA-PDS/pds-registry-app_download|   ||NASA-PDS/pds-registry-app_license|   ||NASA-PDS/pds-registry-app_feedback|   |
-+-------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+---------------------------------------+---------------------------------------+--------------------------------------+---------------------------------------+
-|PDS Deep Archive   |0.1.6     |2020-07-15     |PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators   ||NASA-PDS/deep-archive_manual|       ||NASA-PDS/deep-archive_changelog|       ||NASA-PDS/deep-archive_requirements|   ||NASA-PDS/deep-archive_download|       ||NASA-PDS/deep-archive_license|       ||NASA-PDS/deep-archive_feedback|       |
-+-------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+---------------------------------------+---------------------------------------+--------------------------------------+---------------------------------------+
++-------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
+|tool               |version   |last updated   |description                                                                                                                                              |l |manual|                           |l |changelog|                           |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
++===================+==========+===============+=========================================================================================================================================================+=====================================+========================================+===================+=======================================+======================================+=======================================+
+|PDS Registry App   |0.1.2     |2020-08-13     |Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system.       ||NASA-PDS/pds-registry-app_manual|   ||NASA-PDS/pds-registry-app_changelog|   |                   ||NASA-PDS/pds-registry-app_download|   ||NASA-PDS/pds-registry-app_license|   ||NASA-PDS/pds-registry-app_feedback|   |
++-------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
+|PDS Deep Archive   |0.1.6     |2020-07-15     |PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators   ||NASA-PDS/deep-archive_manual|       ||NASA-PDS/deep-archive_changelog|       |                   ||NASA-PDS/deep-archive_download|       ||NASA-PDS/deep-archive_license|       ||NASA-PDS/deep-archive_feedback|       |
++-------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
 
 Libraries
 =========
@@ -78,17 +78,17 @@ PDS servers deployed by PDS Engineering Node at central level
 .. |NASA-PDS/pds-registry-app_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-registry-app/issues/new/choose
 .. |NASA-PDS/deep-archive_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
-   :target: https://NASA-PDS.github.io/pds-deep-archive/
+   :target: https://NASA-PDS.github.io/deep-archive/
 .. |NASA-PDS/deep-archive_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
-   :target: https://github.com/NASA-PDS/pds-deep-archive/blob/main/CHANGELOG.md#016-2020-07-15
+   :target: https://github.com/NASA-PDS/deep-archive/blob/main/CHANGELOG.md#016-2020-07-15
 .. |NASA-PDS/deep-archive_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
-   :target: https://github.com/NASA-PDS/pds-deep-archive/blob/main/docs/requirements/0.1.6/REQUIREMENTS.md
+   :target: None
 .. |NASA-PDS/deep-archive_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
-   :target: https://github.com/NASA-PDS/pds-deep-archive/releases/tag/0.1.6
+   :target: https://github.com/NASA-PDS/deep-archive/releases/tag/0.1.6
 .. |NASA-PDS/deep-archive_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
-   :target: https://raw.githubusercontent.com/NASA-PDS/pds-deep-archive/main/LICENSE.md
+   :target: https://raw.githubusercontent.com/NASA-PDS/deep-archive/main/LICENSE.md
 .. |NASA-PDS/deep-archive_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
-   :target: https://github.com/NASA-PDS/pds-deep-archive/issues/new/choose
+   :target: https://github.com/NASA-PDS/deep-archive/issues/new/choose
 .. |NASA-PDS/validate_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/validate/
 .. |NASA-PDS/validate_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
