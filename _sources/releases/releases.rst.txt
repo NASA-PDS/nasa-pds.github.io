@@ -1,40 +1,33 @@
-Software Release Summaries
-==========================
+Current Software
+================
+..  toctree:: Current Software
+    :glob:
+    :maxdepth: 1
+               
+    B12.0 </releases/12.0/index>
+
+Upcoming
+========
+..  toctree:: Upcoming
+    :glob:
+    :maxdepth: 1
+               
+    Plans </releases/12.1-SNAPSHOT/index>
+    In-Dev Software </releases/12.1-SNAPSHOT/index>
 
 
-The builds available are
+Past Releases
+=============
 
-------------------------
-
-..  toctree:: Builds
+..  toctree:: Past Releases
     :glob:
     :maxdepth: 1
 
-    10.1 (archived)</releases/10.1/index>
-    11.0 (archived)</releases/11.0/index>
-    11.1 (archived)</releases/11.1/index>
-    12.0 (STABLE)</releases/12.0/index>
-    12.1 (development)</releases/12.1-SNAPSHOT/index>
-
-Upcoming plans
-==============
-
-..  toctree:: Plans
-    :glob:
-    :maxdepth: 1
-
-    12.1</releases/12.1/plan>
+    10.1 </releases/10.1/index>
+    11.0 </releases/11.0/index>
+    11.1 </releases/11.1/index>
 
 
-Release Description Documents (RDD)
-===================================
-
-..  toctree:: Releases
-    :glob:
-    :maxdepth: 1
-
-    11.1</releases/11.1/rdd>
-    12.0</releases/12.0/rdd>
 
 
 
