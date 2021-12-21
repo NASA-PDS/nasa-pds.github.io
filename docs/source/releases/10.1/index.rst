@@ -1,22 +1,21 @@
 =============================
-Software Catalog (build 10.1)
+Software Catalog (Build 10.1)
 =============================
-The software provided for the build 10.1 are listed hereafter and
+The software provided for the PDS System Build 10.1 are listed below and
 organized by category:
 
-- `Standalone Tools and Libraries`_
+- `Standalone Tools`_
+
+- `Libraries and Clients`_
 
 - `Discipline Node Services`_
 
-- `Libraries`_
-
 - `Engineering Node Services`_
 
-- `Other Tools and Libraries (dependencies)`_
 
-Standalone Tools and Libraries
-==============================
-PDS tools for discipline nodes, data providers and users.
+Standalone Tools
+================
+PDS Tools for Discipline Nodes, Data Providers and Community Users.
 
 +-----------------------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |tool                               |version   |last updated   |description                                                                                                                        |l |manual|                                 |l |changelog|                                 |l |requirements|   |l |download|                                 |l |license|                                 |l |feedback|                                 |
@@ -30,10 +29,21 @@ PDS tools for discipline nodes, data providers and users.
 |MILabel                            |v1.1.3    |2020-12-11     |Metadata Injector for PDS Labels (MILabel), formerly known as Generate Tool                                                        ||NASA-PDS/mi-label_manual|                 ||NASA-PDS/mi-label_changelog|                 |                   ||NASA-PDS/mi-label_download|                 ||NASA-PDS/mi-label_license|                 ||NASA-PDS/mi-label_feedback|                 |
 +-----------------------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 
+Libraries and Clients
+=====================
+Libraries and Clients for programing interfaces to PDS services and
+data.
+
++---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
+|tool           |version   |last updated   |description                                                                                                                                                                      |l |manual|                       |l |changelog|                       |l |requirements|   |l |download|                       |l |license|                       |l |feedback|                       |
++===============+==========+===============+=================================================================================================================================================================================+=================================+====================================+===================+===================================+==================================+===================================+
+|PDS4 JParser   |v1.8.1    |2020-08-04     |Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.   ||NASA-PDS/pds4-jparser_manual|   ||NASA-PDS/pds4-jparser_changelog|   |                   ||NASA-PDS/pds4-jparser_download|   ||NASA-PDS/pds4-jparser_license|   ||NASA-PDS/pds4-jparser_feedback|   |
++---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
+
 Discipline Node Services
 ========================
-PDS servers that Discipline Node should deploy to publish their archive
-at PDS level
+Tools and Services that Discipline Node should deploy to enable
+integration and interoperability across the PDS.
 
 +-------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
 |tool               |version   |last updated   |description                                                                                                                                              |l |manual|                           |l |changelog|                           |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
@@ -43,19 +53,10 @@ at PDS level
 |PDS Deep Archive   |0.1.6     |2020-07-15     |PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators   ||NASA-PDS/deep-archive_manual|       ||NASA-PDS/deep-archive_changelog|       |                   ||NASA-PDS/deep-archive_download|       ||NASA-PDS/deep-archive_license|       ||NASA-PDS/deep-archive_feedback|       |
 +-------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
 
-Libraries
-=========
-Libraries supported by PDS
-
-+---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
-|tool           |version   |last updated   |description                                                                                                                                                                      |l |manual|                       |l |changelog|                       |l |requirements|   |l |download|                       |l |license|                       |l |feedback|                       |
-+===============+==========+===============+=================================================================================================================================================================================+=================================+====================================+===================+===================================+==================================+===================================+
-|PDS4 JParser   |v1.8.1    |2020-08-04     |Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.   ||NASA-PDS/pds4-jparser_manual|   ||NASA-PDS/pds4-jparser_changelog|   |                   ||NASA-PDS/pds4-jparser_download|   ||NASA-PDS/pds4-jparser_license|   ||NASA-PDS/pds4-jparser_feedback|   |
-+---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
-
 Engineering Node Services
 =========================
-PDS servers deployed by PDS Engineering Node at central level
+Tools and Services centrally deployed by PDS Engineering Node to support
+the integration and interoperability of all PDS nodes.
 
 +------------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+-----------------------------------------+--------------------------------------------+----------------------------------------+---------------------------------------+----------------------------------------+
 |tool                    |version   |last updated   |description                                                                                                                                                                                              |l |manual|                            |l |changelog|                            |l |requirements|                            |l |download|                            |l |license|                            |l |feedback|                            |
