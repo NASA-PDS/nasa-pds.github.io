@@ -1,7 +1,7 @@
 =============================
-Software Catalog (build 12.0)
+Software Catalog (Build 12.0)
 =============================
-The software provided for the build 12.0 are listed hereafter and
+The software provided for the PDS System Build 12.0 are listed hereafter and
 organized by category:
 
 - `Standalone Tools and Libraries`_
@@ -14,9 +14,10 @@ organized by category:
 
 - `Other Tools and Libraries (dependencies)`_
 
+
 Standalone Tools and Libraries
 ==============================
-PDS tools for discipline nodes, data providers and users.
+PDS Tools for Discipline Nodes, Data Providers and Community Users.
 
 +-----------------------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+-------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |tool                               |version   |last updated   |description                                                                                                                                              |l |manual|                                 |l |changelog|                                 |l |requirements|   |l |download|                                 |l |license|                                 |l |feedback|                                 |
@@ -36,8 +37,7 @@ PDS tools for discipline nodes, data providers and users.
 
 Discipline Node Services
 ========================
-PDS servers that Discipline Node should deploy to publish their archive
-at PDS level
+Tools and Services that Discipline Node should deploy to enable integration and interoperability across the PDS.
 
 +-------------------+----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+----------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
 |tool               |version   |last updated   |description                                                                                                                                          |l |manual|                           |l |changelog|   |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
@@ -57,7 +57,7 @@ Libraries supported by PDS
 
 Engineering Node Services
 =========================
-PDS servers deployed by PDS Engineering Node at central level
+Tools and Services centrally deployed by PDS Engineering Node to support the integration and interoperability of all PDS nodes.
 
 +-------------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+---------------------------------------+-------------------+-----------------------------------------------+----------------------------------------------+-----------------------------------------------+
 |tool                           |version   |last updated   |description                                                                                                                                                                                                                                                        |l |manual|                                   |l |changelog|                          |l |requirements|   |l |download|                                   |l |license|                                   |l |feedback|                                   |
