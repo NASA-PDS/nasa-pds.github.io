@@ -1,11 +1,7 @@
-==========================================
-Release Description Document (build B12.1)
-==========================================
-
-!!!!!!!!!!!!!!!!!!!! DRAFT !!!!!!!!!!!!!!!!!!
-
-This release of the PDS4 System is intended as an operational release of
-the system components to date.
+===================================================
+Release Description Document (build B12.1-SNAPSHOT)
+===================================================
+This release of the PDS4 System is intended as an operational release of the system components to date.
 The original plan for this release can be found here: `Plan B12.1`_
 
 The following sections can be found in this document:
@@ -18,15 +14,12 @@ The following sections can be found in this document:
 
 PDS4 Standards and Information Model Changes
 ============================================
-This section details the changes to the PDS4 Standards and Information
-Model approved by the PDS4 Change Control Board and implemented by the
-PDS within the latest build period.
+This section details the changes to the PDS4 Standards and Information Model approved by the PDS4 Change Control Board
+and implemented by the PDS within the latest build period.
 
 +--------------------------------+----------------------------------------------------------------------------------------------+
 |Ref                             |Title                                                                                         |
 +================================+==============================================================================================+
-|`pds4-information-model#443`_   |CCB-339: add Units_of_Power with SI watts as option                                           |
-+--------------------------------+----------------------------------------------------------------------------------------------+
 |`pds4-information-model#446`_   |CCB-344:  Add data_to_partially_processed_product to reference types for Internal_Reference   |
 +--------------------------------+----------------------------------------------------------------------------------------------+
 |`pds4-information-model#448`_   |CCB-343: Revise Product_Metadata_Supplemental                                                 |
@@ -38,27 +31,24 @@ PDS within the latest build period.
 
 Software Changes
 ================
-The changes types are 'Bug', 'Enhancement' or 'Requirement'. For each
-software repository, the changes are listed in 2 categories:
+The changes types are 'Bug', 'Enhancement' or 'Requirement'. For each software repository, the changes are listed in 2
+categories:
 
 - Planned Updates
 - Other Updates
 
-The 'Planned Updates' are organized by 'Themes' (or 'Release Themes'),
-which are defined in advance and approved by the PDS Software Working
-Group (see `Plan B12.1`_')
-The 'Other Updates' occurs during the build cycle witout being planned
-or attached to a theme. They are organized by types (bug, enhancements,
-requirements...). Any updates that require a de-scope of planned tasks
-are reviewed by the PDS Software Working Group.
+The 'Planned Updates' are organized by 'Themes' (or 'Release Themes'), which are defined in advance and approved by the
+PDS Software Working Group (see `Plan B12.1-SNAPSHOT`_')
+The 'Other Updates' occurs during the build cycle witout being planned or attached to a theme. They are organized by
+types (bug, enhancements, requirements...). Any updates that require a de-scope of planned tasks are reviewed by the PDS
+Software Working Group.
 
-The deliveries are validated by the development team and go through an
-additional Integration & Test process, as applicable, as indicated by a
-specific icon in the following tables.
+The deliveries are validated by the development team and go through an additional Integration & Test process, as
+applicable, as indicated by a specific icon in the following tables.
 
 --------
 
-cloud-tasks
+Cloud-tasks
 -----------
 *PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.*
 
@@ -75,31 +65,28 @@ cloud-tasks
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-- `cloud-tasks#3`_ B12.1 pds.nasa.gov Website Lift-and-Shift Pilot
-Project
-
-+-----------------------------------------------------------------+----------+--------+--------------------------+
-|Issue                                                            |I&T       |Level   |Priority / Bug Severity   |
-+=================================================================+==========+========+==========================+
-|`cloud-tasks#9`_ AWS testing for PDS and PDS Engineering sites   ||iandt|   |task    |unknown                   |
-+-----------------------------------------------------------------+----------+--------+--------------------------+
-
-
-- `cloud-tasks#4`_ B12.1 pds-engineering.nasa.gov Website Lift-and-Shift
-Pilot Project
-
-+-----------------------------------------------------------------+----------+--------+--------------------------+
-|Issue                                                            |I&T       |Level   |Priority / Bug Severity   |
-+=================================================================+==========+========+==========================+
-|`cloud-tasks#9`_ AWS testing for PDS and PDS Engineering sites   ||iandt|   |task    |unknown                   |
-+-----------------------------------------------------------------+----------+--------+--------------------------+
+- `cloud-tasks#3`_ B12.1 pds.nasa.gov Website Lift-and-Shift Pilot Project
+    
++-----------------------------------------------------------------+------+--------+--------------------------+
+|Issue                                                            |I&T   |Level   |Priority / Bug Severity   |
++=================================================================+======+========+==========================+
+|`cloud-tasks#9`_ AWS testing for PDS and PDS Engineering sites   |      |task    |p.must-have               |
++-----------------------------------------------------------------+------+--------+--------------------------+
 
 
-- `cloud-tasks#5`_ NAIF.nasa.gov Website Lift-and-Shift Pilot Project
-(no   parent epic in this repository)
+- `cloud-tasks#4`_ B12.1 pds-engineering.nasa.gov Website Lift-and-Shift Pilot Project
+    
++-----------------------------------------------------------------+------+--------+--------------------------+
+|Issue                                                            |I&T   |Level   |Priority / Bug Severity   |
++=================================================================+======+========+==========================+
+|`cloud-tasks#9`_ AWS testing for PDS and PDS Engineering sites   |      |task    |p.must-have               |
++-----------------------------------------------------------------+------+--------+--------------------------+
+
+
+- `cloud-tasks#5`_ NAIF.nasa.gov Website Lift-and-Shift Pilot Project (this theme has not epics in this repository)
 
 - `cloud-tasks#7`_ B12.1 Refine AWS Registry Deployment Strategy
-
+    
 +-------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                              |I&T       |Level         |Priority / Bug Severity   |
 +===================================================================================================================+==========+==============+==========================+
@@ -109,11 +96,10 @@ Pilot Project
 +-------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 
 
-- `cloud-tasks#8`_ Develop Roadmap and Cost Model for PDS Cloud (no
-parent   epic in this repository)
+- `cloud-tasks#8`_ Develop Roadmap and Cost Model for PDS Cloud (this theme has not epics in this repository)
 
 - `cloud-tasks#10`_ Initialize PDS-ESDIS NGAP Pilot Project
-
+    
 +------------------------------------------+------+--------------+--------------------------+
 |Issue                                     |I&T   |Level         |Priority / Bug Severity   |
 +==========================================+======+==============+==========================+
@@ -122,7 +108,7 @@ parent   epic in this repository)
 
 
 - `cloud-tasks#11`_ B12.1 Deploy Node Registries
-
+    
 +---------------------------------------------------------+------+--------+--------------------------+
 |Issue                                                    |I&T   |Level   |Priority / Bug Severity   |
 +=========================================================+======+========+==========================+
@@ -132,14 +118,13 @@ parent   epic in this repository)
 +---------------------------------------------------------+------+--------+--------------------------+
 
 
-- `cloud-tasks#15`_ Design and Develop Registry Upgrade Strategy (no
-parent epic in this repository)
+- `cloud-tasks#15`_ Design and Develop Registry Upgrade Strategy (this theme has not epics in this repository)
 
 Other Updates
 ~~~~~~~~~~~~~
 --------
 
-deep-archive
+Deep-archive
 ------------
 *PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators*
 
@@ -157,7 +142,7 @@ deep-archive
 Planned Updates
 ~~~~~~~~~~~~~~~
 - `deep-archive#115`_ Revisit PDS Deep Archive Integration with Registry
-
+    
 +-------------------------------------------------------------------------------------------------------------------------------+------+--------------+--------------------------+
 |Issue                                                                                                                          |I&T   |Level         |Priority / Bug Severity   |
 +===============================================================================================================================+======+==============+==========================+
@@ -178,7 +163,7 @@ Bugs
 
 --------
 
-devops
+Devops
 ------
 *Parent repo for PDS DevOps activities*
 
@@ -195,11 +180,10 @@ devops
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-- `devops#11`_ Implement Continuous Deployment Strategy (no parent epic
-in   this repository)
+- `devops#11`_ Implement Continuous Deployment Strategy (this theme has not epics in this repository)
 
 - `devops#13`_ Continuous improvements to Continuous Integration
-
+    
 +-----------------------------------------------------------------------------+------+--------------+--------------------------+
 |Issue                                                                        |I&T   |Level         |Priority / Bug Severity   |
 +=============================================================================+======+==============+==========================+
@@ -219,7 +203,7 @@ Other Updates
 ~~~~~~~~~~~~~
 --------
 
-doi-service
+Doi-service
 -----------
 *Service and tools for generating DOIs for PDS bundles, collections, and data sets*
 
@@ -237,7 +221,7 @@ doi-service
 Planned Updates
 ~~~~~~~~~~~~~~~
 - `doi-service#203`_ Improve DOI Service Documentation
-
+    
 +----------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                           |I&T       |Level         |Priority / Bug Severity   |
 +================================================================================================================+==========+==============+==========================+
@@ -250,7 +234,7 @@ Planned Updates
 
 
 - `doi-service#251`_ B12.1 Enhancements to PDS DOI Metadata
-
+    
 +----------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                     |I&T       |Level         |Priority / Bug Severity   |
 +==========================================================================================================+==========+==============+==========================+
@@ -262,9 +246,8 @@ Planned Updates
 +----------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 
 
-- `doi-service#270`_ B12.1 DOI Metadata and Update Functionality
-Improvements
-
+- `doi-service#270`_ B12.1 DOI Metadata and Update Functionality Improvements
+    
 +--------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                               |I&T       |Level         |Priority / Bug Severity   |
 +====================================================================================================================+==========+==============+==========================+
@@ -275,7 +258,7 @@ Improvements
 
 
 - `doi-service#287`_ B12.1 DOI Service Integration with Registry
-
+    
 +----------------------------------------------------------------------+------+--------+--------------------------+
 |Issue                                                                 |I&T   |Level   |Priority / Bug Severity   |
 +======================================================================+======+========+==========================+
@@ -291,25 +274,25 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                                 |I&T       |Priority / Bug Severity   |
 +======================================================================================================================+==========+==========================+
-|`doi-service#214`_ Remove test and other transaction log data from public pypi distro                                 |          |s.medium                  |
+|`doi-service#318`_ Corruption in local database with invalid JSON                                                     |          |s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`doi-service#299`_ DOI Service does not assign adequate permissions to transaction database/history                   ||iandt|   |s.low                     |
-+----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`doi-service#305`_ --no-review argument has potential to be confused with -n (node ID) argument                       ||iandt|   |s.low                     |
+|`doi-service#259`_ Spreadsheet parser does not validate/sanitize format of expected header row                        |          |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`doi-service#258`_ Spreadsheet parser does not validate parsed contents of rows                                       ||iandt|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`doi-service#310`_ Test DOIs are showing up in pds-gamma DOI search now linked from operations Citing PDS Data page   ||iandt|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`doi-service#291`_ Spreadsheet parsers do not handle blank rows gracefully                                            |          |s.low                     |
++----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`doi-service#305`_ --no-review argument has potential to be confused with -n (node ID) argument                       ||iandt|   |s.low                     |
++----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`doi-service#273`_ Default keywords/subjects are not always added to DOI records                                      ||iandt|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`doi-service#318`_ Corruption in local database with invalid JSON                                                     |          |s.high                    |
+|`doi-service#299`_ DOI Service does not assign adequate permissions to transaction database/history                   ||iandt|   |s.low                     |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`doi-service#321`_ deactivate registered cassini doi 10.17189/1517823                                                 |          |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`doi-service#259`_ Spreadsheet parser does not validate/sanitize format of expected header row                        |          |s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`doi-service#291`_ Spreadsheet parsers do not handle blank rows gracefully                                            |          |s.low                     |
+|`doi-service#214`_ Remove test and other transaction log data from public pypi distro                                 |          |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Requirements
@@ -338,7 +321,7 @@ Enhancements
 
 --------
 
-doi-ui
+Doi-ui
 ------
 *web UI for pds-doi-service*
 
@@ -355,10 +338,10 @@ doi-ui
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-- `doi-ui#60`_ DOI Search Component (no parent epic in this repository)
+- `doi-ui#60`_ DOI Search Component (this theme has not epics in this repository)
 
 - `doi-ui#111`_ Complete DOI UI Implementation
-
+    
 +------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                 |I&T       |Level         |Priority / Bug Severity   |
 +======================================================+==========+==============+==========================+
@@ -376,13 +359,13 @@ Bugs
 +---------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                              |I&T       |Priority / Bug Severity   |
 +===================================================================================================+==========+==========================+
+|`doi-ui#67`_ Issue with displaying the content of an uploaded file after multiple selections       ||iandt|   |s.high                    |
++---------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`doi-ui#87`_ When I try to reload a reserve which has been updated, the web page does not update   ||iandt|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`doi-ui#88`_ Pre-existing keyword show in a weird way in the UI                                    ||iandt|   |s.medium                  |
 +---------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`doi-ui#117`_ Fix DOI Search And DOI UI Integration Bugs                                           ||iandt|   |unknown                   |
-+---------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`doi-ui#67`_ Issue with displaying the content of an uploaded file after multiple selections       ||iandt|   |s.high                    |
+|`doi-ui#117`_ Fix DOI Search And DOI UI Integration Bugs                                           ||iandt|   |s.critical                |
 +---------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Requirements
@@ -407,7 +390,7 @@ Enhancements
 
 --------
 
-feedback-widget
+Feedback-widget
 ---------------
 *Javascript widget for user feedback*
 
@@ -434,14 +417,14 @@ Bugs
 +-------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                |I&T       |Priority / Bug Severity   |
 +=====================================================================================+==========+==========================+
-|`feedback-widget#17`_ Feedback does not let submissions through for SBN              ||iandt|   |s.medium                  |
-+-------------------------------------------------------------------------------------+----------+--------------------------+
 |`feedback-widget#16`_ widget not working on pds.nasa.gov or pds-gamma.jpl.nasa.gov   |          |s.medium                  |
++-------------------------------------------------------------------------------------+----------+--------------------------+
+|`feedback-widget#17`_ Feedback does not let submissions through for SBN              ||iandt|   |s.medium                  |
 +-------------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
 
-harvest
+Harvest
 -------
 *Provides software provides functionality for capturing and indexing product metadata in PDS Registry. A sub-component of the PDS Registry App (https://github.com/NASA-PDS/pds-registry-app)*
 
@@ -468,11 +451,11 @@ Bugs
 +----------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                       |I&T       |Priority / Bug Severity   |
 +============================================================================+==========+==========================+
-|`harvest#70`_ Harvest fails on `yyyyZ` date time                            ||iandt|   |s.high                    |
-+----------------------------------------------------------------------------+----------+--------------------------+
 |`harvest#75`_ harvest stops rather than skips a file with bad permissions   ||iandt|   |s.high                    |
 +----------------------------------------------------------------------------+----------+--------------------------+
 |`harvest#78`_ Error ingesting an XML boolean with values of 0/1             ||iandt|   |s.high                    |
++----------------------------------------------------------------------------+----------+--------------------------+
+|`harvest#70`_ Harvest fails on `yyyyZ` date time                            ||iandt|   |s.high                    |
 +----------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
@@ -486,7 +469,7 @@ Enhancements
 
 --------
 
-mi-label
+Mi-label
 --------
 *Metadata Injector for PDS Labels (MILabel) provides a command-line interface for generating PDS4 Labels using a user provided PDS4 XML template and input (source) data products.*
 
@@ -518,7 +501,7 @@ Bugs
 
 --------
 
-pds-api
+Pds-api
 -------
 *PDS API Application with client and server integrated into one package*
 
@@ -535,11 +518,10 @@ pds-api
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-- `pds-api#111`_ B12.1 Response Format Improvements (no parent epic in
-this repository)
+- `pds-api#111`_ B12.1 Response Format Improvements (this theme has not epics in this repository)
 
 - `pds-api#114`_ Improve PDS API Development Workflow and Versioning
-
+    
 +----------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                       |I&T       |Level         |Priority / Bug Severity   |
 +============================================================================+==========+==============+==========================+
@@ -558,7 +540,7 @@ this repository)
 
 
 - `pds-api#117`_ [pds-api] B12.1 API Response Improvements
-
+    
 +------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                                         |I&T       |Level         |Priority / Bug Severity   |
 +==============================================================================================================================+==========+==============+==========================+
@@ -579,7 +561,7 @@ this repository)
 
 
 - `pds-api#129`_ Prep for API v1.0 Release
-
+    
 +----------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                           |I&T       |Level         |Priority / Bug Severity   |
 +================================================================================================================+==========+==============+==========================+
@@ -601,13 +583,13 @@ Bugs
 +--------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                             |I&T       |Priority / Bug Severity   |
 +==================================================================================================+==========+==========================+
-|`pds-api#121`_ Deployed API + Registry does not contain product metadata for pds4+json response   ||iandt|   |s.high                    |
+|`pds-api#155`_ `products/{identifier}` missing properties object in application/json response     ||iandt|   |s.high                    |
++--------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-api#164`_ version number invalid according to PEP validation in CI                           |          |s.critical                |
 +--------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-api#124`_ Changes to API per last tagged release not in SwaggerHub                           |          |s.critical                |
 +--------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#155`_ `products/{identifier}` missing properties object in application/json response     ||iandt|   |s.high                    |
-+--------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#164`_ version number invalid according to PEP validation in CI                           ||iandt|   |unknown                   |
+|`pds-api#121`_ Deployed API + Registry does not contain product metadata for pds4+json response   ||iandt|   |s.high                    |
 +--------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Requirements
@@ -616,17 +598,17 @@ Requirements
 +---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                                      |I&T       |Priority / Bug Severity   |
 +===========================================================================================================================+==========+==========================+
-|`pds-api#72`_ As an API user, I want to search by a temporal range as an ISO-8601 time interval.                           ||iandt|   |p.must-have               |
-+---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#134`_ As an API user, I want to get a key-value-pair JSON response                                                ||iandt|   |p.must-have               |
-+---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#65`_ As an API user, I want to get only the fields I explicitly requested                                         ||iandt|   |p.could-have              |
-+---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#74`_ As an API user, I want to specify whether I get the latest or all versions of a product                      ||iandt|   |p.must-have               |
+|`pds-api#120`_ As an API user, I want a CSV response format option                                                         ||iandt|   |p.must-have               |
 +---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-api#106`_ As a API manager, I want to restrict access to registered products that should not be publicly accessible   ||iandt|   |p.should-have             |
 +---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#120`_ As an API user, I want a CSV response format option                                                         ||iandt|   |p.must-have               |
+|`pds-api#74`_ As an API user, I want to specify whether I get the latest or all versions of a product                      ||iandt|   |p.must-have               |
++---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-api#134`_ As an API user, I want to get a key-value-pair JSON response                                                ||iandt|   |p.must-have               |
++---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-api#72`_ As an API user, I want to search by a temporal range as an ISO-8601 time interval.                           ||iandt|   |p.must-have               |
++---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-api#65`_ As an API user, I want to get only the fields I explicitly requested                                         ||iandt|   |p.could-have              |
 +---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
@@ -637,16 +619,16 @@ Enhancements
 +============================================================================================================================+==========+==========================+
 |`pds-api#112`_ As an API client user, I want to consistently and robustly start local servers for development and testing   |          |unknown                   |
 +----------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#110`_ Extend application/pds4+json support to all endpoints                                                        ||iandt|   |p.must-have               |
+|`pds-api#145`_ Remove the x-total-count header from the API specification                                                   ||iandt|   |unknown                   |
 +----------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-api#108`_ Update API endpoints to use `identifier` instead of `lidvid`                                                 ||iandt|   |p.should-have             |
 +----------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#145`_ Remove the x-total-count header from the API specification                                                   ||iandt|   |unknown                   |
+|`pds-api#110`_ Extend application/pds4+json support to all endpoints                                                        ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
 
-pds-api-client
+Pds-api-client
 --------------
 *PDS API Client*
 
@@ -673,14 +655,16 @@ Bugs
 +------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                           |I&T       |Priority / Bug Severity   |
 +================================================================================================+==========+==========================+
-|`pds-api-client#18`_ Links to client API details are broken on GitHub site                      ||iandt|   |s.high                    |
-+------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-api-client#17`_ Import failure for pds.api_client.CollectionsApi using PIP package 0.8.0   ||iandt|   |s.critical                |
++------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-api-client#19`_ The demo provided on pds-api-client quickstart gives a 500 error           ||iandt|   |s.high                    |
++------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-api-client#18`_ Links to client API details are broken on GitHub site                      ||iandt|   |s.high                    |
 +------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
 
-pds-registry-app
+Pds-registry-app
 ----------------
 *Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system. This repo builds, packages, and documents all the services and tools related to the ingestion and access of the data.*
 
@@ -697,11 +681,10 @@ pds-registry-app
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-- `pds-registry-app#26`_ Manage duplicate products (no parent epic in
-this   repository)
+- `pds-registry-app#26`_ Manage duplicate products (this theme has not epics in this repository)
 
 - `pds-registry-app#184`_ B12.1 Registry Tools Performance Improvements
-
+    
 +--------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                                                 |I&T       |Level         |Priority / Bug Severity   |
 +======================================================================================================================================+==========+==============+==========================+
@@ -715,9 +698,8 @@ this   repository)
 +--------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 
 
-- `pds-registry-app#190`_ Provide Initial Support for Restricted Access
-vs. Public Data
-
+- `pds-registry-app#190`_ Provide Initial Support for Restricted Access vs. Public Data
+    
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                                                               |I&T       |Level         |Priority / Bug Severity   |
 +====================================================================================================================================================+==========+==============+==========================+
@@ -731,12 +713,10 @@ vs. Public Data
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 
 
-- `pds-registry-app#194`_ Populate EN Registry (no parent epic in this
-repository)
+- `pds-registry-app#194`_ Populate EN Registry (this theme has not epics in this repository)
 
-- `pds-registry-app#199`_ Dockerize Registry Components for Dev and Ops
-Deployments
-
+- `pds-registry-app#199`_ Dockerize Registry Components for Dev and Ops Deployments
+    
 +--------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                                                 |I&T       |Level         |Priority / Bug Severity   |
 +======================================================================================================================================+==========+==============+==========================+
@@ -746,11 +726,11 @@ Deployments
 +--------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 
 
-- `pds-registry-app#219`_ Re-imagine Registry Handling of Product
-Versioning (no parent epic in this repository)
+- `pds-registry-app#219`_ Re-imagine Registry Handling of Product Versioning (this theme has not epics in this
+repository)
 
 - `pds-registry-app#226`_ Upgrade Registry App to OpenSearch
-
+    
 +------------------------------------------------------------------------------------------------+------+--------+--------------------------+
 |Issue                                                                                           |I&T   |Level   |Priority / Bug Severity   |
 +================================================================================================+======+========+==========================+
@@ -766,13 +746,13 @@ Bugs
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                         |I&T       |Priority / Bug Severity   |
 +==============================================================================================================+==========+==========================+
-|`pds-registry-app#205`_ Harvest network I/O errors can cause corrupted JSON                                   ||iandt|   |s.high                    |
-+--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-registry-app#220`_ harvest flags as mandatory a config elements the docs describe as optional            ||iandt|   |s.low                     |
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-registry-app#177`_ stable continuous integration don't generate the packages tar.gz and .zip properly.   |          |s.medium                  |
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-registry-app#231`_ the snapshot releases are not created for big-data-harvest-client                     ||iandt|   |unknown                   |
+|`pds-registry-app#231`_ the snapshot releases are not created for big-data-harvest-client                     |          |s.critical                |
++--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-registry-app#205`_ Harvest network I/O errors can cause corrupted JSON                                   ||iandt|   |s.high                    |
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-registry-app#238`_ pom.xml on main is broken                                                             |          |s.high                    |
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
@@ -783,9 +763,9 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                        |I&T       |Priority / Bug Severity   |
 +=============================================================================================================+==========+==========================+
-|`pds-registry-app#186`_ As a developer, I want to deploy the registry with a single docker-compose command   ||iandt|   |p.must-have               |
+|`pds-registry-app#241`_ Simplify the readme and procedure to start the registry with docker-compose          |          |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-registry-app#241`_ Simplify the readme and procedure to start the registry with docker-compose          |          |unknown                   |
+|`pds-registry-app#186`_ As a developer, I want to deploy the registry with a single docker-compose command   ||iandt|   |p.must-have               |
 +-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
@@ -798,18 +778,18 @@ Enhancements
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-registry-app#257`_ Simple wrappers to call the pds-batch-loader and pds-service-loader docker compose services     ||iandt|   |unknown                   |
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-registry-app#245`_ Update the README of the harvest service repositories                                           |          |p.must-have               |
-+------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-registry-app#230`_ As a developer, I want to update and run the integration tests from the 'registry' repository   |          |unknown                   |
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-registry-app#90`_ Develop cost model and reporting for Registry deployments                                        |          |p.must-have               |
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-registry-app#260`_ Make CICD work on registry-api repository                                                       |          |p.must-have               |
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-registry-app#245`_ Update the README of the harvest service repositories                                           |          |p.must-have               |
++------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
 
-pds-report-service
+Pds-report-service
 ------------------
 *PDS Report and Metrics Service with ELK stack*
 
@@ -841,7 +821,7 @@ Enhancements
 
 --------
 
-pds-wds-react
+Pds-wds-react
 -------------
 *PDS Web Design System - React Implementation*
 
@@ -859,7 +839,7 @@ pds-wds-react
 Planned Updates
 ~~~~~~~~~~~~~~~
 - `pds-wds-react#13`_ B12.1 Enhancements to DOI Search Component
-
+    
 +----------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                                 |I&T       |Level         |Priority / Bug Severity   |
 +======================================================================================================================+==========+==============+==========================+
@@ -878,17 +858,17 @@ Other Updates
 Bugs
 ++++
 
-+--------------------------------------------------------------------------+----------+--------------------------+
-|Issue                                                                     |I&T       |Priority / Bug Severity   |
-+==========================================================================+==========+==========================+
-|`pds-wds-react#26`_ Fix Material UI Overriding Client App's Styling       ||iandt|   |unknown                   |
-+--------------------------------------------------------------------------+----------+--------------------------+
-|`pds-wds-react#27`_ Hovering Over Status Value Will Crash A Client App    ||iandt|   |unknown                   |
-+--------------------------------------------------------------------------+----------+--------------------------+
-|`pds-wds-react#28`_ Hovering Over Status Value Will Crash A Client App    ||iandt|   |unknown                   |
-+--------------------------------------------------------------------------+----------+--------------------------+
-|`pds-wds-react#29`_ Fix Search Not Running On First Call For Client App   ||iandt|   |unknown                   |
-+--------------------------------------------------------------------------+----------+--------------------------+
++--------------------------------------------------------------------------+------+--------------------------+
+|Issue                                                                     |I&T   |Priority / Bug Severity   |
++==========================================================================+======+==========================+
+|`pds-wds-react#26`_ Fix Material UI Overriding Client App's Styling       |      |s.critical                |
++--------------------------------------------------------------------------+------+--------------------------+
+|`pds-wds-react#28`_ Hovering Over Status Value Will Crash A Client App    |      |s.critical                |
++--------------------------------------------------------------------------+------+--------------------------+
+|`pds-wds-react#27`_ Hovering Over Status Value Will Crash A Client App    |      |s.critical                |
++--------------------------------------------------------------------------+------+--------------------------+
+|`pds-wds-react#29`_ Fix Search Not Running On First Call For Client App   |      |s.critical                |
++--------------------------------------------------------------------------+------+--------------------------+
 
 Requirements
 ++++++++++++
@@ -905,26 +885,26 @@ Enhancements
 +----------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                             |I&T       |Priority / Bug Severity   |
 +==================================================================================+==========+==========================+
-|`pds-wds-react#8`_ Create a NPM package                                           ||iandt|   |unknown                   |
-+----------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-wds-react#22`_ Update DOI Service per user feedback                          |          |unknown                   |
 +----------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-wds-react#17`_ Combine NPM Package And Embeddable JS Script Toolchains       ||iandt|   |unknown                   |
 +----------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-wds-react#19`_ Create javascript library for website integration             ||iandt|   |unknown                   |
++----------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-wds-react#4`_ Add Search DOI Component                                       ||iandt|   |unknown                   |
 +----------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-wds-react#18`_ Create PDS React Component Library Process For NPM Packages   ||iandt|   |unknown                   |
+|`pds-wds-react#8`_ Create a NPM package                                           ||iandt|   |unknown                   |
++----------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-wds-react#15`_ Improve Search UI Behavior For DOI Search Widget              ||iandt|   |unknown                   |
 +----------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-wds-react#30`_ Update NPM Package Documentation                              ||iandt|   |unknown                   |
 +----------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-wds-react#19`_ Create javascript library for website integration             ||iandt|   |unknown                   |
-+----------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-wds-react#15`_ Improve Search UI Behavior For DOI Search Widget              ||iandt|   |unknown                   |
+|`pds-wds-react#18`_ Create PDS React Component Library Process For NPM Packages   ||iandt|   |unknown                   |
 +----------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
 
-pds-web-mgmt
+Pds-web-mgmt
 ------------
 *PDS Web Management and Unification Team*
 
@@ -941,18 +921,15 @@ pds-web-mgmt
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-- `pds-web-mgmt#1`_ Initial Assessment of Today’s Web Management
-Landscape   (no parent epic in this repository)
+- `pds-web-mgmt#1`_ Initial Assessment of Today’s Web Management Landscape (this theme has not epics in this repository)
 
-- `pds-web-mgmt#2`_ Preliminary Design of Migration (no parent epic in
-this repository)
+- `pds-web-mgmt#2`_ Preliminary Design of Migration (this theme has not epics in this repository)
 
-- `pds-web-mgmt#3`_ Initial High-level Implementation Plan (no parent
-epic   in this repository)
+- `pds-web-mgmt#3`_ Initial High-level Implementation Plan (this theme has not epics in this repository)
 
 --------
 
-PDS.nasa.gov-UX
+Pds.nasa.gov-ux
 ---------------
 *PDS.nasa.gov User Experience Task Issue and Prototype repository*
 
@@ -969,15 +946,12 @@ PDS.nasa.gov-UX
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-- `PDS.nasa.gov-UX#77`_ Initial Information Architecture (no parent epic
-in this repository)
+- `PDS.nasa.gov-UX#77`_ Initial Information Architecture (this theme has not epics in this repository)
 
-- `PDS.nasa.gov-UX#78`_ Initial Design Validation and Usability Testing
-(no parent epic in this repository)
+- `PDS.nasa.gov-UX#78`_ Initial Design Validation and Usability Testing (this theme has not epics in this repository)
 
-- `PDS.nasa.gov-UX#100`_ B12.1 Continuation of User Persona and User
-Story   Development
-
+- `PDS.nasa.gov-UX#100`_ B12.1 Continuation of User Persona and User Story Development
+    
 +---------------------------------------------------------------------------+------+--------+--------------------------+
 |Issue                                                                      |I&T   |Level   |Priority / Bug Severity   |
 +===========================================================================+======+========+==========================+
@@ -989,11 +963,10 @@ Story   Development
 +---------------------------------------------------------------------------+------+--------+--------------------------+
 
 
-- `PDS.nasa.gov-UX#101`_ Deploy new Citing PDS Data Web Pages (no parent
-epic in this repository)
+- `PDS.nasa.gov-UX#101`_ Deploy new Citing PDS Data Web Pages (this theme has not epics in this repository)
 
 - `PDS.nasa.gov-UX#109`_ Develop Initial User Journey Designs
-
+    
 +-------------------------------------------------------------------------------------------+------+--------+--------------------------+
 |Issue                                                                                      |I&T   |Level   |Priority / Bug Severity   |
 +===========================================================================================+======+========+==========================+
@@ -1016,7 +989,7 @@ epic in this repository)
 
 
 - `PDS.nasa.gov-UX#110`_ Define Initial Content Strategy
-
+    
 +-----------------------------------------------------------------+------+--------+--------------------------+
 |Issue                                                            |I&T   |Level   |Priority / Bug Severity   |
 +=================================================================+======+========+==========================+
@@ -1027,7 +1000,7 @@ epic in this repository)
 
 
 - `PDS.nasa.gov-UX#111`_ Define Current Information Architecture
-
+    
 +-------------------------------------------------------------------+------+--------+--------------------------+
 |Issue                                                              |I&T   |Level   |Priority / Bug Severity   |
 +===================================================================+======+========+==========================+
@@ -1037,7 +1010,7 @@ epic in this repository)
 
 --------
 
-pds4-information-model
+Pds4-information-model
 ----------------------
 *The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.*
 
@@ -1055,7 +1028,7 @@ pds4-information-model
 Planned Updates
 ~~~~~~~~~~~~~~~
 - `pds4-information-model#306`_ Refactoring of IMTool
-
+    
 +---------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                                      |I&T       |Level         |Priority / Bug Severity   |
 +===========================================================================================================================+==========+==============+==========================+
@@ -1071,11 +1044,10 @@ Planned Updates
 +---------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 
 
-- `pds4-information-model#356`_ Kick-off PDS4 Information Model in
-GraphDB   (no parent epic in this repository)
+- `pds4-information-model#356`_ Kick-off PDS4 Information Model in GraphDB (this theme has not epics in this repository)
 
 - `pds4-information-model#401`_ B12.1 LDDTool Improvements
-
+    
 +---------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                                                      |I&T       |Level         |Priority / Bug Severity   |
 +===========================================================================================================================+==========+==============+==========================+
@@ -1085,12 +1057,11 @@ GraphDB   (no parent epic in this repository)
 +---------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 
 
-- `pds4-information-model#410`_ B12.1 LDDTool / PDS4 IM Documentation
-Updates (no parent epic in this repository)
-
-- `pds4-information-model#415`_ CCB-342: NASA, CODMAC, and PDS
-Processing   Levels for Science Data Sets (no parent epic in this
+- `pds4-information-model#410`_ B12.1 LDDTool / PDS4 IM Documentation Updates (this theme has not epics in this
 repository)
+
+- `pds4-information-model#415`_ CCB-342: NASA, CODMAC, and PDS Processing Levels for Science Data Sets (this theme has
+not   epics in this repository)
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -1100,13 +1071,13 @@ Bugs
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                         |I&T       |Priority / Bug Severity   |
 +==============================================================================================================+==========+==========================+
-|`pds4-information-model#418`_ Inconsistent naming of JSON schema files                                        ||iandt|   |s.medium                  |
-+--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds4-information-model#375`_ LDDTool documentation inconsistency                                             ||iandt|   |s.low                     |
-+--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds4-information-model#424`_ Missing JSON LDDs (alt & particle)                                              |          |s.low                     |
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds4-information-model#418`_ Inconsistent naming of JSON schema files                                        ||iandt|   |s.medium                  |
++--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds4-information-model#351`_ Contradictory DISP rule assertions exist in the PDS4 IM from legacy ingestion   ||iandt|   |s.medium                  |
++--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds4-information-model#375`_ LDDTool documentation inconsistency                                             ||iandt|   |s.low                     |
 +--------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Requirements
@@ -1115,15 +1086,13 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                                       |I&T       |Priority / Bug Severity   |
 +============================================================================================================================+==========+==========================+
-|`pds4-information-model#443`_ CCB-339: add Units_of_Power with SI watts as option                                           ||iandt|   |p.must-have               |
+|`pds4-information-model#450`_ CCB-340 : <Local_Internal_Reference>.<local_identifier_reference> cardinality                 ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds4-information-model#453`_ CCB-335: Inventory Specification Allows Too Many Delimiters                                   ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds4-information-model#448`_ CCB-343: Revise Product_Metadata_Supplemental                                                 ||iandt|   |p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds4-information-model#446`_ CCB-344:  Add data_to_partially_processed_product to reference types for Internal_Reference   ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds4-information-model#450`_ CCB-340 : <Local_Internal_Reference>.<local_identifier_reference> cardinality                 ||iandt|   |p.must-have               |
+|`pds4-information-model#448`_ CCB-343: Revise Product_Metadata_Supplemental                                                 ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
@@ -1139,7 +1108,7 @@ Enhancements
 
 --------
 
-pds4-jparser
+Pds4-jparser
 ------------
 *Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.*
 
@@ -1171,7 +1140,7 @@ Enhancements
 
 --------
 
-PLAID
+Plaid
 -----
 *APPS PDS Label Assistant for Interactive Design (PLAID). See an overview of the software on YouTube. https://www.youtube.com/watch?v=WCo8erW_rL8*
 
@@ -1221,7 +1190,7 @@ Enhancements
 
 --------
 
-portal-tasks
+Portal-tasks
 ------------
 *PDS Portal tasks repo used to track update requests for the website. Actual code and website are managed in separate private repo*
 
@@ -1248,25 +1217,29 @@ Bugs
 +-------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                          |I&T       |Priority / Bug Severity   |
 +===============================================================================+==========+==========================+
-|`portal-tasks#10`_ DD Search and Tool Registry not working on pdscloud-gamma   ||iandt|   |s.critical                |
-+-------------------------------------------------------------------------------+----------+--------------------------+
 |`portal-tasks#9`_ Broken link to PDS4_PDS_1H00.zip                             |          |s.high                    |
 +-------------------------------------------------------------------------------+----------+--------------------------+
 |`portal-tasks#6`_ links not working on data dictionary pages                   ||iandt|   |s.high                    |
++-------------------------------------------------------------------------------+----------+--------------------------+
+|`portal-tasks#10`_ DD Search and Tool Registry not working on pdscloud-gamma   ||iandt|   |s.critical                |
++-------------------------------------------------------------------------------+----------+--------------------------+
+|`portal-tasks#19`_ viewBundle not working properly for DOI search logic        ||iandt|   |s.high                    |
 +-------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
 ++++++++++++
 
-+-----------------------------------------------+----------+--------------------------+
-|Issue                                          |I&T       |Priority / Bug Severity   |
-+===============================================+==========+==========================+
-|`portal-tasks#3`_ improvement on citing page   ||iandt|   |unknown                   |
-+-----------------------------------------------+----------+--------------------------+
++----------------------------------------------------------------------------+----------+--------------------------+
+|Issue                                                                       |I&T       |Priority / Bug Severity   |
++============================================================================+==========+==========================+
+|`portal-tasks#7`_ As a user, I want to see a DOI on all DOI landing pages   |          |p.should-have             |
++----------------------------------------------------------------------------+----------+--------------------------+
+|`portal-tasks#3`_ improvement on citing page                                ||iandt|   |unknown                   |
++----------------------------------------------------------------------------+----------+--------------------------+
 
 --------
 
-registry-api
+Registry-api
 ------------
 *web API service of the PDS registry*
 
@@ -1293,20 +1266,31 @@ Bugs
 +----------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                         |I&T       |Priority / Bug Severity   |
 +==============================================================================================+==========+==========================+
-|`registry-api#2`_ CICD did not publish the jar on artifactory                                 |          |s.medium                  |
-+----------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api#89`_ Fix unstable integration build failure                                     |          |s.medium                  |
++----------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api#2`_ CICD did not publish the jar on artifactory                                 |          |s.medium                  |
 +----------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api#81`_ Service using JSON blob in pds4+xml response when it should use ops blob   |          |s.medium                  |
 +----------------------------------------------------------------------------------------------+----------+--------------------------+
-|`registry-api#5`_ AWS cost analysis tag  is not 'Alpha' but instead 'Alfa'                    |          |unknown                   |
-+----------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api#73`_ blob/json_blob should not be included in default response                  ||iandt|   |s.high                    |
 +----------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api#5`_ AWS cost analysis tag  is not 'Alpha' but instead 'Alfa'                    |          |s.high                    |
++----------------------------------------------------------------------------------------------+----------+--------------------------+
+
+Enhancements
+++++++++++++
+
++---------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|Issue                                                                                                                                  |I&T       |Priority / Bug Severity   |
++=======================================================================================================================================+==========+==========================+
+|`registry-api#10`_ Rename `engineering` package naming to `registry`                                                                   |          |unknown                   |
++---------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api#102`_ add ops:Tracking_Meta/ops:node_name and ops:Tracking_Meta/ops:harvest_date_time  to meta section of API response   ||iandt|   |p.should-have             |
++---------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
 
-registry-api-service
+Registry-api-service
 --------------------
 *PDS Registry API service. Complies with PDS API specification*
 
@@ -1333,19 +1317,19 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                                   |I&T       |Priority / Bug Severity   |
 +========================================================================================================================+==========+==========================+
-|`registry-api-service#102`_ when fields are selected in the 'application/kvp+json' format some extra fields are found   ||iandt|   |s.medium                  |
+|`registry-api-service#79`_ simple url requested in a browser generate a 500 error                                       ||iandt|   |s.critical                |
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#97`_ Revert  ES High Level Java API version 7.13.3                                                ||iandt|   |s.critical                |
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api-service#102`_ when fields are selected in the 'application/kvp+json' format some extra fields are found   ||iandt|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#87`_ service is not handling value of ES login correctly                                          ||iandt|   |s.high                    |
-+------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`registry-api-service#88`_ api should handle request with no Accept header                                              ||iandt|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`registry-api-service#85`_ AWS target groups created in terraform do not have intended targets                          ||iandt|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#103`_ All the supported format don't show in the swagger-ui                                       ||iandt|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`registry-api-service#79`_ simple url requested in a browser generate a 500 error                                       ||iandt|   |s.critical                |
+|`registry-api-service#85`_ AWS target groups created in terraform do not have intended targets                          ||iandt|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api-service#88`_ api should handle request with no Accept header                                              ||iandt|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Requirements
@@ -1363,16 +1347,16 @@ Enhancements
 +--------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                   |I&T       |Priority / Bug Severity   |
 +========================================================================================================+==========+==========================+
-|`registry-api-service#81`_ Support for node-specific routing in API paths                               |          |unknown                   |
+|`registry-api-service#78`_ Add aws cost tagging and secret/parameter creation to ECS terraform script   ||iandt|   |unknown                   |
 +--------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api-service#95`_ add creation of routing rule to terraform script                             ||iandt|   |s.high                    |
 +--------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`registry-api-service#78`_ Add aws cost tagging and secret/parameter creation to ECS terraform script   ||iandt|   |unknown                   |
+|`registry-api-service#81`_ Support for node-specific routing in API paths                               |          |unknown                   |
 +--------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
 
-registry-common
+Registry-common
 ---------------
 *Common code used by both Harvest and Registry Manager*
 
@@ -1404,7 +1388,7 @@ Bugs
 
 --------
 
-registry-mgr
+Registry-mgr
 ------------
 *Tool for managing the Elastic Search back-end Registry Service for tracking, searching, auditing, locating, and maintaining artifacts within the Planetary Data System. See new PDS Registry App for more details (https://github.com/NASA-PDS/pds-registry-app)*
 
@@ -1445,7 +1429,7 @@ Enhancements
 
 --------
 
-software-issues-repo
+Software-issues-repo
 --------------------
 *Issue tracking repository as a centralized entry point for general PDS software bugs and feature requests.*
 
@@ -1463,7 +1447,7 @@ software-issues-repo
 Planned Updates
 ~~~~~~~~~~~~~~~
 - `software-issues-repo#14`_ B12.0 Prep for I&T
-
+    
 +---------------------------------------------------------------+----------+--------+--------------------------+
 |Issue                                                          |I&T       |Level   |Priority / Bug Severity   |
 +===============================================================+==========+========+==========================+
@@ -1473,8 +1457,7 @@ Planned Updates
 +---------------------------------------------------------------+----------+--------+--------------------------+
 
 
-- `software-issues-repo#17`_ B12.1 Generate Release Plan (no parent epic
-in this repository)
+- `software-issues-repo#17`_ B12.1 Generate Release Plan (this theme has not epics in this repository)
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -1498,7 +1481,7 @@ Enhancements
 
 --------
 
-template-repo-java
+Template-repo-java
 ------------------
 *Template for new NASA PDS repositories. For Python software, see https://github.com/nasa-pds/pds-template-repo-python*
 
@@ -1530,7 +1513,7 @@ Enhancements
 
 --------
 
-validate
+Validate
 --------
 *Validates PDS4 product labels, data and PDS3 Volumes*
 
@@ -1547,11 +1530,10 @@ validate
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-- `validate#407`_ B12.1 Referential Integrity Improvements (no parent
-epic   in this repository)
+- `validate#407`_ B12.1 Referential Integrity Improvements (this theme has not epics in this repository)
 
 - `validate#409`_ B12.1 PDF/A Handling Improvements
-
+    
 +-------------------------------------------------------------------------------------------+----------+--------------+--------------------------+
 |Issue                                                                                      |I&T       |Level         |Priority / Bug Severity   |
 +===========================================================================================+==========+==============+==========================+
@@ -1562,7 +1544,7 @@ epic   in this repository)
 
 
 - `validate#426`_ B12.1 Content Validation Improvements
-
+    
 +------------------------------------------------------------------------------------------+----------+--------+--------------------------+
 |Issue                                                                                     |I&T       |Level   |Priority / Bug Severity   |
 +==========================================================================================+==========+========+==========================+
@@ -1580,31 +1562,31 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                                               |I&T       |Priority / Bug Severity   |
 +====================================================================================================================================+==========+==========================+
-|`validate#447`_ Validate does not correctly pass PDF/A files that are in a subdirectory                                             ||iandt|   |s.high                    |
+|`validate#411`_ Validate repo cannot be checked out on Windows without errors                                                       ||iandt|   |s.low                     |
++------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`validate#349`_ validate allows absolute path in directory_path_name but shouldn't                                                  ||iandt|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#390`_ validate does not flag *.tab files with variable length records                                                     ||iandt|   |s.low                     |
-+------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#461`_ [SECURITY] Patch log4j library                                                                                      ||iandt|   |s.critical                |
 +------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#376`_ Checksums output lowercase and do not accept uppercase checksums                                                    ||iandt|   |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#439`_ Incorrect Warning for Missing document_standard_id is Stream_Text                                                   ||iandt|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#419`_ validate 2.2.0-SNAPSHOT warns about a pretty benign bundle + readme.txt                                             ||iandt|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#408`_ Validate 2.1.0-SNAPSHOT skips a collection XML label                                                                ||iandt|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#411`_ Validate repo cannot be checked out on Windows without errors                                                       ||iandt|   |s.low                     |
-+------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#435`_ Array Content Validator is not accepting values at the min/max due to false precision                               ||iandt|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#441`_ Validate is reporting a 'String index out of range' error for a text file                                           ||iandt|   |s.high                    |
 +------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#349`_ validate allows absolute path in directory_path_name but shouldn't                                                  ||iandt|   |s.medium                  |
+|`validate#461`_ [SECURITY] Patch log4j library                                                                                      ||iandt|   |s.critical                |
 +------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#470`_ Fix validate compilation issues due to removal of veraPDF artifacts from maven central                              ||iandt|   |s.critical                |
 +------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`validate#419`_ validate 2.2.0-SNAPSHOT warns about a pretty benign bundle + readme.txt                                             ||iandt|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#469`_ Validate content validation does not handle properly special_constants and field_statistics when they both appear   ||iandt|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`validate#435`_ Array Content Validator is not accepting values at the min/max due to false precision                               ||iandt|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`validate#447`_ Validate does not correctly pass PDF/A files that are in a subdirectory                                             ||iandt|   |s.high                    |
 +------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
@@ -1613,7 +1595,7 @@ Enhancements
 +----------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                       |I&T       |Priority / Bug Severity   |
 +============================================================================+==========+==========================+
-|`validate#421`_ Improve warning message                                     ||iandt|   |p.must-have               |
+|`validate#421`_ Improve warning message for missing_context_reference       ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------+----------+--------------------------+
 |`validate#377`_ Update rule documentation to remove "auto-detect" mention   |          |unknown                   |
 +----------------------------------------------------------------------------+----------+--------------------------+
@@ -1631,15 +1613,13 @@ Liens
 
 Engineering Node Software Catalog
 =================================
-The Engineering Node Software resources are listed in the `Software Catalog (Build 12.1-SNAPSHOT)`_
+The Engineering Node Software resources are listed in the `Software Release Summary (B12.1-SNAPSHOT)`_
 
 Installation and Operation
 ==========================
-PDS Engineering Node Software have 3 different venues/purposes for
-execution: Standalone, Discipline Node Deployment or Engineering
-Node-only Deployment
-For the Installation and Operation manual see the `users manuals` in the
-software summary sections below:
+PDS Engineering Node Software have 3 different venues/purposes for execution: Standalone, Discipline Node Deployment or
+Engineering Node-only Deployment
+For the Installation and Operation manual see the `users manuals` in the software summary sections below:
 
 - `PDS Standalone`_
 
@@ -1649,8 +1629,8 @@ software summary sections below:
 
 Reference documents
 ===================
-This section details the controlling and applicable documents referenced
-for this release. The controlling documents are as follows:
+This section details the controlling and applicable documents referenced for this release. The controlling documents are
+as follows:
 
 - PDS Level 1, 2 and 3 Requirements, April 20, 2017.
 
@@ -1683,7 +1663,6 @@ for this release. The controlling documents are as follows:
 - `PDS DOI Service Requirements and Design Document (SRD/SDD)`_
 
 .. _Plan B12.1: https://nasa-pds.github.io/releases/12.1/plan.html
-.. _pds4-information-model#443: https://github.com/NASA-PDS/pds4-information-model/issues/443
 .. _pds4-information-model#446: https://github.com/NASA-PDS/pds4-information-model/issues/446
 .. _pds4-information-model#448: https://github.com/NASA-PDS/pds4-information-model/issues/448
 .. _pds4-information-model#450: https://github.com/NASA-PDS/pds4-information-model/issues/450
@@ -1729,16 +1708,16 @@ for this release. The controlling documents are as follows:
 .. _doi-service#278: https://github.com/NASA-PDS/doi-service/issues/278
 .. _doi-service#287: https://github.com/NASA-PDS/doi-service/issues/287
 .. _doi-service#312: https://github.com/NASA-PDS/doi-service/issues/312
-.. _doi-service#214: https://github.com/NASA-PDS/doi-service/issues/214
-.. _doi-service#299: https://github.com/NASA-PDS/doi-service/issues/299
-.. _doi-service#305: https://github.com/NASA-PDS/doi-service/issues/305
+.. _doi-service#318: https://github.com/NASA-PDS/doi-service/issues/318
+.. _doi-service#259: https://github.com/NASA-PDS/doi-service/issues/259
 .. _doi-service#258: https://github.com/NASA-PDS/doi-service/issues/258
 .. _doi-service#310: https://github.com/NASA-PDS/doi-service/issues/310
-.. _doi-service#273: https://github.com/NASA-PDS/doi-service/issues/273
-.. _doi-service#318: https://github.com/NASA-PDS/doi-service/issues/318
-.. _doi-service#321: https://github.com/NASA-PDS/doi-service/issues/321
-.. _doi-service#259: https://github.com/NASA-PDS/doi-service/issues/259
 .. _doi-service#291: https://github.com/NASA-PDS/doi-service/issues/291
+.. _doi-service#305: https://github.com/NASA-PDS/doi-service/issues/305
+.. _doi-service#273: https://github.com/NASA-PDS/doi-service/issues/273
+.. _doi-service#299: https://github.com/NASA-PDS/doi-service/issues/299
+.. _doi-service#321: https://github.com/NASA-PDS/doi-service/issues/321
+.. _doi-service#214: https://github.com/NASA-PDS/doi-service/issues/214
 .. _doi-service#317: https://github.com/NASA-PDS/doi-service/issues/317
 .. _doi-service#279: https://github.com/NASA-PDS/doi-service/issues/279
 .. _doi-service#231: https://github.com/NASA-PDS/doi-service/issues/231
@@ -1748,18 +1727,18 @@ for this release. The controlling documents are as follows:
 .. _doi-ui#111: https://github.com/NASA-PDS/doi-ui/issues/111
 .. _doi-ui#106: https://github.com/NASA-PDS/doi-ui/issues/106
 .. _doi-ui#115: https://github.com/NASA-PDS/doi-ui/issues/115
+.. _doi-ui#67: https://github.com/NASA-PDS/doi-ui/issues/67
 .. _doi-ui#87: https://github.com/NASA-PDS/doi-ui/issues/87
 .. _doi-ui#88: https://github.com/NASA-PDS/doi-ui/issues/88
 .. _doi-ui#117: https://github.com/NASA-PDS/doi-ui/issues/117
-.. _doi-ui#67: https://github.com/NASA-PDS/doi-ui/issues/67
 .. _doi-ui#63: https://github.com/NASA-PDS/doi-ui/issues/63
 .. _doi-ui#68: https://github.com/NASA-PDS/doi-ui/issues/68
 .. _doi-ui#102: https://github.com/NASA-PDS/doi-ui/issues/102
-.. _feedback-widget#17: https://github.com/NASA-PDS/feedback-widget/issues/17
 .. _feedback-widget#16: https://github.com/NASA-PDS/feedback-widget/issues/16
-.. _harvest#70: https://github.com/NASA-PDS/harvest/issues/70
+.. _feedback-widget#17: https://github.com/NASA-PDS/feedback-widget/issues/17
 .. _harvest#75: https://github.com/NASA-PDS/harvest/issues/75
 .. _harvest#78: https://github.com/NASA-PDS/harvest/issues/78
+.. _harvest#70: https://github.com/NASA-PDS/harvest/issues/70
 .. _harvest#64: https://github.com/NASA-PDS/harvest/issues/64
 .. _mi-label#21: https://github.com/NASA-PDS/mi-label/issues/21
 .. _pds-api#111: https://github.com/NASA-PDS/pds-api/issues/111
@@ -1783,22 +1762,23 @@ for this release. The controlling documents are as follows:
 .. _pds-api#136: https://github.com/NASA-PDS/pds-api/issues/136
 .. _pds-api#137: https://github.com/NASA-PDS/pds-api/issues/137
 .. _pds-api#156: https://github.com/NASA-PDS/pds-api/issues/156
-.. _pds-api#121: https://github.com/NASA-PDS/pds-api/issues/121
-.. _pds-api#124: https://github.com/NASA-PDS/pds-api/issues/124
 .. _pds-api#155: https://github.com/NASA-PDS/pds-api/issues/155
 .. _pds-api#164: https://github.com/NASA-PDS/pds-api/issues/164
-.. _pds-api#72: https://github.com/NASA-PDS/pds-api/issues/72
-.. _pds-api#134: https://github.com/NASA-PDS/pds-api/issues/134
-.. _pds-api#65: https://github.com/NASA-PDS/pds-api/issues/65
-.. _pds-api#74: https://github.com/NASA-PDS/pds-api/issues/74
-.. _pds-api#106: https://github.com/NASA-PDS/pds-api/issues/106
+.. _pds-api#124: https://github.com/NASA-PDS/pds-api/issues/124
+.. _pds-api#121: https://github.com/NASA-PDS/pds-api/issues/121
 .. _pds-api#120: https://github.com/NASA-PDS/pds-api/issues/120
+.. _pds-api#106: https://github.com/NASA-PDS/pds-api/issues/106
+.. _pds-api#74: https://github.com/NASA-PDS/pds-api/issues/74
+.. _pds-api#134: https://github.com/NASA-PDS/pds-api/issues/134
+.. _pds-api#72: https://github.com/NASA-PDS/pds-api/issues/72
+.. _pds-api#65: https://github.com/NASA-PDS/pds-api/issues/65
 .. _pds-api#112: https://github.com/NASA-PDS/pds-api/issues/112
-.. _pds-api#110: https://github.com/NASA-PDS/pds-api/issues/110
-.. _pds-api#108: https://github.com/NASA-PDS/pds-api/issues/108
 .. _pds-api#145: https://github.com/NASA-PDS/pds-api/issues/145
-.. _pds-api-client#18: https://github.com/NASA-PDS/pds-api-client/issues/18
+.. _pds-api#108: https://github.com/NASA-PDS/pds-api/issues/108
+.. _pds-api#110: https://github.com/NASA-PDS/pds-api/issues/110
 .. _pds-api-client#17: https://github.com/NASA-PDS/pds-api-client/issues/17
+.. _pds-api-client#19: https://github.com/NASA-PDS/pds-api-client/issues/19
+.. _pds-api-client#18: https://github.com/NASA-PDS/pds-api-client/issues/18
 .. _pds-registry-app#26: https://github.com/NASA-PDS/pds-registry-app/issues/26
 .. _pds-registry-app#184: https://github.com/NASA-PDS/pds-registry-app/issues/184
 .. _pds-registry-app#179: https://github.com/NASA-PDS/pds-registry-app/issues/179
@@ -1817,19 +1797,19 @@ for this release. The controlling documents are as follows:
 .. _pds-registry-app#219: https://github.com/NASA-PDS/pds-registry-app/issues/219
 .. _pds-registry-app#226: https://github.com/NASA-PDS/pds-registry-app/issues/226
 .. _pds-registry-app#250: https://github.com/NASA-PDS/pds-registry-app/issues/250
-.. _pds-registry-app#205: https://github.com/NASA-PDS/pds-registry-app/issues/205
 .. _pds-registry-app#220: https://github.com/NASA-PDS/pds-registry-app/issues/220
 .. _pds-registry-app#177: https://github.com/NASA-PDS/pds-registry-app/issues/177
 .. _pds-registry-app#231: https://github.com/NASA-PDS/pds-registry-app/issues/231
+.. _pds-registry-app#205: https://github.com/NASA-PDS/pds-registry-app/issues/205
 .. _pds-registry-app#238: https://github.com/NASA-PDS/pds-registry-app/issues/238
-.. _pds-registry-app#186: https://github.com/NASA-PDS/pds-registry-app/issues/186
 .. _pds-registry-app#241: https://github.com/NASA-PDS/pds-registry-app/issues/241
+.. _pds-registry-app#186: https://github.com/NASA-PDS/pds-registry-app/issues/186
 .. _pds-registry-app#237: https://github.com/NASA-PDS/pds-registry-app/issues/237
 .. _pds-registry-app#257: https://github.com/NASA-PDS/pds-registry-app/issues/257
-.. _pds-registry-app#245: https://github.com/NASA-PDS/pds-registry-app/issues/245
 .. _pds-registry-app#230: https://github.com/NASA-PDS/pds-registry-app/issues/230
 .. _pds-registry-app#90: https://github.com/NASA-PDS/pds-registry-app/issues/90
 .. _pds-registry-app#260: https://github.com/NASA-PDS/pds-registry-app/issues/260
+.. _pds-registry-app#245: https://github.com/NASA-PDS/pds-registry-app/issues/245
 .. _pds-report-service#9: https://github.com/NASA-PDS/pds-report-service/issues/9
 .. _pds-wds-react#13: https://github.com/NASA-PDS/pds-wds-react/issues/13
 .. _pds-wds-react#5: https://github.com/NASA-PDS/pds-wds-react/issues/5
@@ -1837,18 +1817,18 @@ for this release. The controlling documents are as follows:
 .. _pds-wds-react#10: https://github.com/NASA-PDS/pds-wds-react/issues/10
 .. _pds-wds-react#12: https://github.com/NASA-PDS/pds-wds-react/issues/12
 .. _pds-wds-react#26: https://github.com/NASA-PDS/pds-wds-react/issues/26
-.. _pds-wds-react#27: https://github.com/NASA-PDS/pds-wds-react/issues/27
 .. _pds-wds-react#28: https://github.com/NASA-PDS/pds-wds-react/issues/28
+.. _pds-wds-react#27: https://github.com/NASA-PDS/pds-wds-react/issues/27
 .. _pds-wds-react#29: https://github.com/NASA-PDS/pds-wds-react/issues/29
 .. _pds-wds-react#14: https://github.com/NASA-PDS/pds-wds-react/issues/14
-.. _pds-wds-react#8: https://github.com/NASA-PDS/pds-wds-react/issues/8
 .. _pds-wds-react#22: https://github.com/NASA-PDS/pds-wds-react/issues/22
 .. _pds-wds-react#17: https://github.com/NASA-PDS/pds-wds-react/issues/17
-.. _pds-wds-react#4: https://github.com/NASA-PDS/pds-wds-react/issues/4
-.. _pds-wds-react#18: https://github.com/NASA-PDS/pds-wds-react/issues/18
-.. _pds-wds-react#30: https://github.com/NASA-PDS/pds-wds-react/issues/30
 .. _pds-wds-react#19: https://github.com/NASA-PDS/pds-wds-react/issues/19
+.. _pds-wds-react#4: https://github.com/NASA-PDS/pds-wds-react/issues/4
+.. _pds-wds-react#8: https://github.com/NASA-PDS/pds-wds-react/issues/8
 .. _pds-wds-react#15: https://github.com/NASA-PDS/pds-wds-react/issues/15
+.. _pds-wds-react#30: https://github.com/NASA-PDS/pds-wds-react/issues/30
+.. _pds-wds-react#18: https://github.com/NASA-PDS/pds-wds-react/issues/18
 .. _pds-web-mgmt#1: https://github.com/NASA-PDS/pds-web-mgmt/issues/1
 .. _pds-web-mgmt#2: https://github.com/NASA-PDS/pds-web-mgmt/issues/2
 .. _pds-web-mgmt#3: https://github.com/NASA-PDS/pds-web-mgmt/issues/3
@@ -1885,41 +1865,44 @@ for this release. The controlling documents are as follows:
 .. _pds4-information-model#341: https://github.com/NASA-PDS/pds4-information-model/issues/341
 .. _pds4-information-model#410: https://github.com/NASA-PDS/pds4-information-model/issues/410
 .. _pds4-information-model#415: https://github.com/NASA-PDS/pds4-information-model/issues/415
-.. _pds4-information-model#418: https://github.com/NASA-PDS/pds4-information-model/issues/418
-.. _pds4-information-model#375: https://github.com/NASA-PDS/pds4-information-model/issues/375
 .. _pds4-information-model#424: https://github.com/NASA-PDS/pds4-information-model/issues/424
+.. _pds4-information-model#418: https://github.com/NASA-PDS/pds4-information-model/issues/418
 .. _pds4-information-model#351: https://github.com/NASA-PDS/pds4-information-model/issues/351
-.. _pds4-information-model#443: https://github.com/NASA-PDS/pds4-information-model/issues/443
-.. _pds4-information-model#453: https://github.com/NASA-PDS/pds4-information-model/issues/453
-.. _pds4-information-model#448: https://github.com/NASA-PDS/pds4-information-model/issues/448
-.. _pds4-information-model#446: https://github.com/NASA-PDS/pds4-information-model/issues/446
+.. _pds4-information-model#375: https://github.com/NASA-PDS/pds4-information-model/issues/375
 .. _pds4-information-model#450: https://github.com/NASA-PDS/pds4-information-model/issues/450
+.. _pds4-information-model#453: https://github.com/NASA-PDS/pds4-information-model/issues/453
+.. _pds4-information-model#446: https://github.com/NASA-PDS/pds4-information-model/issues/446
+.. _pds4-information-model#448: https://github.com/NASA-PDS/pds4-information-model/issues/448
 .. _pds4-information-model#421: https://github.com/NASA-PDS/pds4-information-model/issues/421
 .. _pds4-information-model#435: https://github.com/NASA-PDS/pds4-information-model/issues/435
 .. _pds4-jparser#55: https://github.com/NASA-PDS/pds4-jparser/issues/55
 .. _PLAID#32: https://github.com/NASA-PDS/PLAID/issues/32
 .. _PLAID#30: https://github.com/NASA-PDS/PLAID/issues/30
 .. _PLAID#16: https://github.com/NASA-PDS/PLAID/issues/16
-.. _portal-tasks#10: https://github.com/NASA-PDS/portal-tasks/issues/10
 .. _portal-tasks#9: https://github.com/NASA-PDS/portal-tasks/issues/9
 .. _portal-tasks#6: https://github.com/NASA-PDS/portal-tasks/issues/6
+.. _portal-tasks#10: https://github.com/NASA-PDS/portal-tasks/issues/10
+.. _portal-tasks#19: https://github.com/NASA-PDS/portal-tasks/issues/19
+.. _portal-tasks#7: https://github.com/NASA-PDS/portal-tasks/issues/7
 .. _portal-tasks#3: https://github.com/NASA-PDS/portal-tasks/issues/3
-.. _registry-api#2: https://github.com/NASA-PDS/registry-api/issues/2
 .. _registry-api#89: https://github.com/NASA-PDS/registry-api/issues/89
+.. _registry-api#2: https://github.com/NASA-PDS/registry-api/issues/2
 .. _registry-api#81: https://github.com/NASA-PDS/registry-api/issues/81
-.. _registry-api#5: https://github.com/NASA-PDS/registry-api/issues/5
 .. _registry-api#73: https://github.com/NASA-PDS/registry-api/issues/73
-.. _registry-api-service#102: https://github.com/NASA-PDS/registry-api-service/issues/102
-.. _registry-api-service#97: https://github.com/NASA-PDS/registry-api-service/issues/97
-.. _registry-api-service#87: https://github.com/NASA-PDS/registry-api-service/issues/87
-.. _registry-api-service#88: https://github.com/NASA-PDS/registry-api-service/issues/88
-.. _registry-api-service#85: https://github.com/NASA-PDS/registry-api-service/issues/85
-.. _registry-api-service#103: https://github.com/NASA-PDS/registry-api-service/issues/103
+.. _registry-api#5: https://github.com/NASA-PDS/registry-api/issues/5
+.. _registry-api#10: https://github.com/NASA-PDS/registry-api/issues/10
+.. _registry-api#102: https://github.com/NASA-PDS/registry-api/issues/102
 .. _registry-api-service#79: https://github.com/NASA-PDS/registry-api-service/issues/79
+.. _registry-api-service#97: https://github.com/NASA-PDS/registry-api-service/issues/97
+.. _registry-api-service#102: https://github.com/NASA-PDS/registry-api-service/issues/102
+.. _registry-api-service#87: https://github.com/NASA-PDS/registry-api-service/issues/87
+.. _registry-api-service#103: https://github.com/NASA-PDS/registry-api-service/issues/103
+.. _registry-api-service#85: https://github.com/NASA-PDS/registry-api-service/issues/85
+.. _registry-api-service#88: https://github.com/NASA-PDS/registry-api-service/issues/88
 .. _registry-api-service#52: https://github.com/NASA-PDS/registry-api-service/issues/52
-.. _registry-api-service#81: https://github.com/NASA-PDS/registry-api-service/issues/81
-.. _registry-api-service#95: https://github.com/NASA-PDS/registry-api-service/issues/95
 .. _registry-api-service#78: https://github.com/NASA-PDS/registry-api-service/issues/78
+.. _registry-api-service#95: https://github.com/NASA-PDS/registry-api-service/issues/95
+.. _registry-api-service#81: https://github.com/NASA-PDS/registry-api-service/issues/81
 .. _registry-common#20: https://github.com/NASA-PDS/registry-common/issues/20
 .. _registry-mgr#43: https://github.com/NASA-PDS/registry-mgr/issues/43
 .. _registry-mgr#31: https://github.com/NASA-PDS/registry-mgr/issues/31
@@ -1937,24 +1920,24 @@ for this release. The controlling documents are as follows:
 .. _validate#426: https://github.com/NASA-PDS/validate/issues/426
 .. _validate#423: https://github.com/NASA-PDS/validate/issues/423
 .. _validate#424: https://github.com/NASA-PDS/validate/issues/424
-.. _validate#447: https://github.com/NASA-PDS/validate/issues/447
+.. _validate#411: https://github.com/NASA-PDS/validate/issues/411
+.. _validate#349: https://github.com/NASA-PDS/validate/issues/349
 .. _validate#390: https://github.com/NASA-PDS/validate/issues/390
-.. _validate#461: https://github.com/NASA-PDS/validate/issues/461
 .. _validate#376: https://github.com/NASA-PDS/validate/issues/376
 .. _validate#439: https://github.com/NASA-PDS/validate/issues/439
-.. _validate#419: https://github.com/NASA-PDS/validate/issues/419
 .. _validate#408: https://github.com/NASA-PDS/validate/issues/408
-.. _validate#411: https://github.com/NASA-PDS/validate/issues/411
-.. _validate#435: https://github.com/NASA-PDS/validate/issues/435
 .. _validate#441: https://github.com/NASA-PDS/validate/issues/441
-.. _validate#349: https://github.com/NASA-PDS/validate/issues/349
+.. _validate#461: https://github.com/NASA-PDS/validate/issues/461
 .. _validate#470: https://github.com/NASA-PDS/validate/issues/470
+.. _validate#419: https://github.com/NASA-PDS/validate/issues/419
 .. _validate#469: https://github.com/NASA-PDS/validate/issues/469
+.. _validate#435: https://github.com/NASA-PDS/validate/issues/435
+.. _validate#447: https://github.com/NASA-PDS/validate/issues/447
 .. _validate#421: https://github.com/NASA-PDS/validate/issues/421
 .. _validate#377: https://github.com/NASA-PDS/validate/issues/377
 .. _pds-swg_15: https://github.com/NASA-PDS/pds-swg/issues/15
 .. _pds-swg_14: https://github.com/NASA-PDS/pds-swg/issues/14
-.. _Software Release Summary (B12.1): https://nasa-pds.github.io/releases/B12.1/index.html
+.. _Software Release Summary (B12.1-SNAPSHOT): https://nasa-pds.github.io/releases/12.1-SNAPSHOT/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
 .. _PDS Engineering Node Only: https://nasa-pds.github.io/releases/11.1/index.html#enineering-node-services
