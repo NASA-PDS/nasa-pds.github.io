@@ -322,6 +322,7 @@ registry
 * `registry#46 <https://github.com/NASA-PDS/registry/issues/46>`_ **Preparations to Support B13.0 Registry Upgrades**
 * `registry#47 <https://github.com/NASA-PDS/registry/issues/47>`_ **Support LBLX extension in Registry Loader tools**
 
+
 Other Information
 +++++++++++++++++
 
