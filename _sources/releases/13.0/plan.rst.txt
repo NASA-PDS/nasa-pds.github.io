@@ -322,25 +322,6 @@ registry
 * `registry#46 <https://github.com/NASA-PDS/registry/issues/46>`_ **Preparations to Support B13.0 Registry Upgrades**
 * `registry#47 <https://github.com/NASA-PDS/registry/issues/47>`_ **Support LBLX extension in Registry Loader tools**
 
---------
-
-wds-wordpress
-#############
-
-*PDS Web Design System components implemented for Wordpress*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/wds-wordpress#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/wds-wordpress>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/wds-wordpress/issues>`_ 
-     - `Backlog <https://github.com/NASA-PDS/wds-wordpress/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/wds-wordpress/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/wds-wordpress/releases>`_ 
-
-* `wds-wordpress#1 <https://github.com/NASA-PDS/wds-wordpress/issues/1>`_ **Prototype Top Journeys in Wordpress**
-
 
 Other Information
 +++++++++++++++++
