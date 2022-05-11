@@ -7,7 +7,8 @@ name: Build Sphinx Docs
 on:
    push:
      branches:
-       - 'main'
+       - '**'
+       - '!main'
      paths:
        - 'docs/source/**'
        - '.github/workflows/*.yml'
