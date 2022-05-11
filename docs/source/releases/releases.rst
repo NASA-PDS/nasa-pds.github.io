@@ -12,7 +12,8 @@ Upcoming
     :glob:
     :maxdepth: 1
                
-    Plans </releases/12.1-SNAPSHOT/index>
+    B12.1 Plans </releases/12.1/plan>
+    B13.0 Plans </releases/13.1/plan>
     In-Dev Software </releases/12.1-SNAPSHOT/index>
 
 
