@@ -1,0 +1,373 @@
+Build 13.0 Plan
+========================
+
+..  toctree::
+    :glob:
+    :maxdepth: 3
+
+    plan.rst
+
+.. |br| raw:: html
+
+  <br/>
+
+The Planetary Data System (PDS) is a long-term archive of digital data products returned from NASA's planetary missions, and from other kinds of flight and ground-based data acquisitions, including laboratory experiments. But it is more than just a facility - the archive is actively managed by planetary scientists to help ensure its usefulness and usability by the world wide planetary science community.
+
+The following page outlines the planned PDS software enhancements, bug fixes, and impacted requirements for the upcoming Build .
+
+A more detailed breakdown of these tasks by date and priority can be found in our `Zenhub Roadmap <https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/roadmap>`_ (login required).
+
+Key Dates
++++++++++
+
+.. list-table:: Key Dates for Discipline Nodes
+    :widths: 20 20 20 40
+    :header-rows: 1
+
+    * - Date
+      - Name
+      - Responsible Party
+      - Description
+    * - 08/26/2022
+      - SCR Freeze Date
+      - DDWG
+      - Freeze date for identifying SCRs to be implemented in this release.
+    * - 10/03/2022
+      - Standards Documents Updates Due
+      - Document Authoring Team
+      - Updates to PDS4 standards documents due to EN for review.
+    * - 10/26/2022 - 11/15/2022
+      - Beta Testing Period
+      - DNs, IPDA
+      - Changes to PDS4 IM and system components available for beta testing.
+    * - 10/18/2022 - 11/15/2022
+      - dLDD Integration and Test
+      - dLDD Stewards
+      - Auto-generated dLDDs should be reviews by dLDD Stewards, and final updates to dLDDs should be completed during this time.
+    * - 11/15/2022
+      - Standards Documents Review Due
+      - Document Review Team
+      - Review updates to PDS4 standards documents.
+    * - 12/02/2022
+      - System Release
+      - EN
+      - PDS4 system is operationally deployed and website is updated accordingly.
+
+.. list-table:: Key Dates for Engineering Node
+    :widths: 20 40 40
+    :header-rows: 1
+
+    * - Date
+      - Name
+      - Description
+    * - 09/22/2022
+      - Delivery to I&T
+      - The PDS4 IM and all software updated during this 
+        build cycle are delivered to EN I&T.
+    * - 10/03/2021
+      - Test Readiness Review (TRR)
+      - PDS EN internal review to verify readiness to enter I&T phase.
+    * - 11/17/2022
+      - Delivery and Deployment Review (DRR)
+      - PDS internal review with PDS Software Working Group to verify readiness to deploy build system.
+    * - 12/02/2022
+      - Operational Deployment
+      - PDS4 system is operationally deployed and website is updated accordingly.
+
+For a more detailed schedule, see https://pds-engineering.jpl.nasa.gov/content/schedules.
+
+Planned PDS4 Information Model Changes
++++++++++++++++++++++++++++++++++++++++
+
+This section details the planned changes to the PDS4 Information Model for this build. These changes are deliverables by the PDS Data Design Working Group (DDWG) to the Engineering Node for implementation.
+
+* `validate#482 <https://github.com/NASA-PDS/validate/issues/482>`_ **As a user, I want to validate lblx file extension as a PDS4 label  (CCB-260)**
+
+
+
+Planned Software Changes
+++++++++++++++++++++++++
+
+This section details the planned software changes for this build.
+
+Planned tasks for the next release cycle are grouped by software component, and sub-tasks are included where known at the time of this plan generation. Each section also includes additional information, such as:
+
+* Software description
+* Link to |:mag:| User Guide
+* Link to |:computer:| Github Repo
+* Link to |:ambulance:| Issue Tracking
+* Link to |:ledger:| Backlog - future work not planned for this release cycle
+
+**Don't see the tool you are looking for?** This means there is no active development planned for this build cycle. Head to the `PDS Tool Registry <https://pds.nasa.gov/tools/tool-registry/>`_ to see all possible tools available for PDS data.
+
+**Have a new feature or tool you think we should be working on?** Create a ticket in the applicable Github repo or in our `PDS EN Operations repo <https://github.com/NASA-PDS/pdsen-operations/issues/new/choose>`_ and we will see how that can fit into our plans moving forward.
+
+
+--------
+
+validate
+########
+
+*Validates PDS4 product labels, data and PDS3 Volumes*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/validate/>`_
+     - `Github Repo <https://github.com/NASA-PDS/validate>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/validate/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/validate/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/validate/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/validate/releases>`_ 
+
+* `validate#414 <https://github.com/NASA-PDS/validate/issues/414>`_ **Referential Integrity Checking with the Registry**
+   * `validate#415 <https://github.com/NASA-PDS/validate/issues/415>`_ As a user, I want to perform referential integrity checking against a registry
+   * `validate#462 <https://github.com/NASA-PDS/validate/issues/462>`_ As a user, I want validate to throw an error when the LID specified for secondary context product in a collection inventory is not valid
+* `validate#481 <https://github.com/NASA-PDS/validate/issues/481>`_ **B13.0 Content Validation Improvements: Intermingled Headers, Additional Table Types, Additional File Areas**
+   * `validate#217 <https://github.com/NASA-PDS/validate/issues/217>`_ As a user, I want to validate content for all possible PDS4 table types
+   * `validate#425 <https://github.com/NASA-PDS/validate/issues/425>`_ Refactor content validation to more robustly handle intermingled Headers
+   * `validate#436 <https://github.com/NASA-PDS/validate/issues/436>`_ Improve error messages for overlapping objects in a label
+   * `validate#480 <https://github.com/NASA-PDS/validate/issues/480>`_ Validate does not calculate overlaps correctly when Header is not first object in file
+* `validate#496 <https://github.com/NASA-PDS/validate/issues/496>`_ **Support new lblx file extension**
+   * `validate#482 <https://github.com/NASA-PDS/validate/issues/482>`_ As a user, I want to validate lblx file extension as a PDS4 label  (CCB-260)
+* `validate#498 <https://github.com/NASA-PDS/validate/issues/498>`_ **Improve Content Validation Performance through Spot Checking**
+   * `validate#1 <https://github.com/NASA-PDS/validate/issues/1>`_ As a user, I want to execute content validation against every nth file
+
+--------
+
+pds-registry-app
+################
+
+*Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system. This repo builds, packages, and documents all the services and tools related to the ingestion and access of the data.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-registry-app/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-registry-app>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-registry-app/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-registry-app/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-registry-app/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-registry-app/releases>`_ 
+
+* `pds-registry-app#219 <https://github.com/NASA-PDS/pds-registry-app/issues/219>`_ **Re-imagine Registry Handling of Product Versioning**
+   * `pds-registry-app#229 <https://github.com/NASA-PDS/pds-registry-app/issues/229>`_ Design the PDS4 definition for describing superseded LIDs via product metadata
+   * `pds-api#148 <https://github.com/NASA-PDS/pds-api/issues/148>`_ As a user, I want to search for past versions of a product where the LID changed during the product history
+   * `pds-api#149 <https://github.com/NASA-PDS/pds-api/issues/149>`_ As a user, I want to only return the latest version of a product that has changed logical identifiers in it's history
+   * `pds-registry-app#264 <https://github.com/NASA-PDS/pds-registry-app/issues/264>`_ Decouple lidvid and opensearch id
+   * `pds-registry-app#266 <https://github.com/NASA-PDS/pds-registry-app/issues/266>`_ Add supersede / update product version functionality in Registry Manager
+
+--------
+
+pds-api
+#######
+
+*PDS API Application with client and server integrated into one package*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <http://nasa-pds.github.io/pds-api>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-api>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-api/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-api/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-api/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-api/releases>`_ 
+
+* `pds-api#129 <https://github.com/NASA-PDS/pds-api/issues/129>`_ **Prep for API v1.0 Release**
+   * `pds-api#133 <https://github.com/NASA-PDS/pds-api/issues/133>`_ clarify what `keyword` parameter is for
+   * `pds-api#136 <https://github.com/NASA-PDS/pds-api/issues/136>`_ Revise the pds-api README so that it gives a perspective on non search api (e.g. doi) from pds
+   * `pds-api#137 <https://github.com/NASA-PDS/pds-api/issues/137>`_ As a user, I want to have a detailed description of the API q parameter syntax
+   * `pds-api#156 <https://github.com/NASA-PDS/pds-api/issues/156>`_ Disable automated github pages deployment with v1.0
+   * `pds-api#157 <https://github.com/NASA-PDS/pds-api/issues/157>`_ document the server - specification - client
+   * `pds-api#158 <https://github.com/NASA-PDS/pds-api/issues/158>`_ Improve linkages from Registry App Docs to API Docs
+   * `pds-api#161 <https://github.com/NASA-PDS/pds-api/issues/161>`_ Check for typos in OpenAPI spec
+   * `pds-api#169 <https://github.com/NASA-PDS/pds-api/issues/169>`_ As a user, I want to have a PDS Search API user guide
+* `pds-api#181 <https://github.com/NASA-PDS/pds-api/issues/181>`_ **Search Improvements to Support Web Modernization**
+* `pds-api#182 <https://github.com/NASA-PDS/pds-api/issues/182>`_ **Implement Faceting**
+   * `pds-api#70 <https://github.com/NASA-PDS/pds-api/issues/70>`_ As an API user, I want to know the unique values for a specific API field.
+   * `pds-api#103 <https://github.com/NASA-PDS/pds-api/issues/103>`_ As a client developer, I want to facet on 1 or more fields in the registry
+
+--------
+
+pds-wds
+#######
+
+*PDS Web Design System*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pds-wds>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-wds>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-wds/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/pds-wds/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-wds/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-wds/releases>`_ 
+
+* `pds-wds#16 <https://github.com/NASA-PDS/pds-wds/issues/16>`_ **Initial Implementation of WDS Modules**
+   * `design-team#125 <https://github.com/NASA-PDS/design-team/issues/125>`_ Plan and Prioritize needed WDS improvements and adaptations
+
+--------
+
+design-team
+###########
+
+*PDS.nasa.gov User Experience Task Issue and Prototype repository*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/design-team#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/design-team>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/design-team/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/design-team/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/design-team/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/design-team/releases>`_ 
+
+* `design-team#139 <https://github.com/NASA-PDS/design-team/issues/139>`_ **Refine WDS based upon High-Fidelity Designs**
+* `design-team#140 <https://github.com/NASA-PDS/design-team/issues/140>`_ **Usability Testing Phase 1 - High-fidelity Designs**
+
+--------
+
+cloud-tasks
+###########
+
+*PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/cloud-tasks#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/cloud-tasks>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/cloud-tasks/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/cloud-tasks/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/cloud-tasks/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/cloud-tasks/releases>`_ 
+
+* `cloud-tasks#28 <https://github.com/NASA-PDS/cloud-tasks/issues/28>`_ **B13.0 Upgrade Registry Deployments to OpenSearch**
+   * `cloud-tasks#17 <https://github.com/NASA-PDS/cloud-tasks/issues/17>`_ Upgrade all AWS Registry deployments to use OpenSearch
+   * `cloud-tasks#18 <https://github.com/NASA-PDS/cloud-tasks/issues/18>`_ Update terraform scripts / AWS registry deployment documentation to use OpenSearch
+   * `pds-registry-app#267 <https://github.com/NASA-PDS/pds-registry-app/issues/267>`_ Plan and strategize how to migrate to OpenSearch deployments
+* `cloud-tasks#29 <https://github.com/NASA-PDS/cloud-tasks/issues/29>`_ **Migrate Web Analytics prototype to PDS Cloud**
+   * `cloud-tasks#30 <https://github.com/NASA-PDS/cloud-tasks/issues/30>`_ Work with Web Unification team to define system architecture for migration
+* `cloud-tasks#32 <https://github.com/NASA-PDS/cloud-tasks/issues/32>`_ **Plan and Architect ATM Annex Pilot Project**
+* `cloud-tasks#33 <https://github.com/NASA-PDS/cloud-tasks/issues/33>`_ **Plan and Architect GEO PDS3 Diviner Migration Pilot**
+* `cloud-tasks#34 <https://github.com/NASA-PDS/cloud-tasks/issues/34>`_ **Plan and Architect SBN-PSI Catalina Sky Survey Migration**
+* `cloud-tasks#35 <https://github.com/NASA-PDS/cloud-tasks/issues/35>`_ **NGAP Pilot: Deploy Registries**
+
+--------
+
+devops
+######
+
+*Parent repo for PDS DevOps activities*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/devops#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/devops>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/devops/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/devops/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/devops/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/devops/releases>`_ 
+
+* `devops#11 <https://github.com/NASA-PDS/devops/issues/11>`_ **B13.0 Implement Continuous Deployment Strategy**
+   * `pds-api#51 <https://github.com/NASA-PDS/pds-api/issues/51>`_ As a developer, I want a continuous deployment of the API available for testing
+   * `devops#2 <https://github.com/NASA-PDS/devops/issues/2>`_ As a developer, I want a developer staging system with the latest dev versions of PDS services deployed
+   * `pds-registry-app#186 <https://github.com/NASA-PDS/pds-registry-app/issues/186>`_ As a developer, I want to deploy the registry with a single docker-compose command
+   * `devops#16 <https://github.com/NASA-PDS/devops/issues/16>`_ As a I&T Engineer, I want a I&T system with the latest release candidates of PDS tools automatically deployed
+   * `devops#17 <https://github.com/NASA-PDS/devops/issues/17>`_ As an Operations Engineer, I want a production staging system with the latest stable releases of PDS tools automatically deployed
+   * `devops#18 <https://github.com/NASA-PDS/devops/issues/18>`_ As an Operations Engineer, I want a production system with the latest stable releases of PDS tools automatically deployed
+
+--------
+
+nucleus
+#######
+
+*None*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/nucleus#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/nucleus>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/nucleus/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/nucleus/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/nucleus/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/nucleus/releases>`_ 
+
+* `nucleus#10 <https://github.com/NASA-PDS/nucleus/issues/10>`_ **Initial Prototyping and Implementation**
+
+--------
+
+registry
+########
+
+*Core registry services*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/registry#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/registry/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry/releases>`_ 
+
+* `registry#45 <https://github.com/NASA-PDS/registry/issues/45>`_ **Preparations to Support B12.1 Registry Upgrades**
+   * `registry#43 <https://github.com/NASA-PDS/registry/issues/43>`_ Develop script to update existing registry metadata per B12.1 metadata modifications
+* `registry#46 <https://github.com/NASA-PDS/registry/issues/46>`_ **Preparations to Support B13.0 Registry Upgrades**
+* `registry#47 <https://github.com/NASA-PDS/registry/issues/47>`_ **Support LBLX extension in Registry Loader tools**
+
+--------
+
+wds-wordpress
+#############
+
+*PDS Web Design System components implemented for Wordpress*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/wds-wordpress#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/wds-wordpress>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/wds-wordpress/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/wds-wordpress/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/wds-wordpress/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/wds-wordpress/releases>`_ 
+
+* `wds-wordpress#1 <https://github.com/NASA-PDS/wds-wordpress/issues/1>`_ **Prototype Top Journeys in Wordpress**
+
+
+Other Information
++++++++++++++++++
+
+Reference Documents
+###################
+
+This section details the controlling and applicable documents referenced for this release. The controlling documents are as follows:
+
+* PDS Level 1, 2 and 3 Requirements, April 20, 2017.
+* PDS4 Project Plan, July 17, 2013.
+* PDS4 System Architecture Specification, Version 1.3, September 1, 2013.
+* PDS4 Operations Concept, Version 1.0, September 1, 2013.
+* PDS General System Software Requirements Document (SRD), Version 1.1, September 1, 2013.
+* PDS Harvest Tool Software Requirements and Design Document (SRD/SDD), Version 1.2, September 1, 2013.
+* PDS Preparation Tools Software Requirements and Design Document (SRD/SDD), Version 0.3, September 1, 2013.
+* PDS Registry Service Software Requirements and Design Document (SRD/SDD), Version 1.1, September 1, 2013.
+* PDS Report Service Software Requirements and Design Document (SRD/SDD), Version 1.1, September 1, 2013.
+* PDS Search Service Software Requirements and Design Document (SRD/SDD), Version 1.0, September 1, 2013.
+   * PDS Search Scenarios, Version 1.0, September 1, 2013.
+   * PDS Search Protocol, Version 1.2, March 21, 2014.
+   * PDAP Search Protocol, Version 1.0, March 21, 2014.
+* PDS Security Service Software Requirements and Design Document (SRD/SDD), Version 1.1, September 1, 2013.
+* PDS NSSDC Delivery Software Requirements and Design Document (SRD/SDD), Version 0.1, October 29, 2019.
+
+
+System Requirements, Dependencies, and Assumptions
+##################################################
+
+See individual applications for specific dependencies and system requirements.
