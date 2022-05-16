@@ -17,7 +17,7 @@ jobs:
   build: # job 1
     name: 'Build Docs'
     runs-on: ubuntu-latest
-    #if: github.actor != 'pdsen-ci'
+    if: github.actor != 'pdsen-ci'
 
     steps:
       - uses: actions/checkout@v2
