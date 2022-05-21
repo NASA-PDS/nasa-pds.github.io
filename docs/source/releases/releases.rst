@@ -13,8 +13,12 @@ Upcoming
     :maxdepth: 1
 
     B13.0 Plans </releases/13.0/plan>
-    B12.1 (candidate release) </releases/12.1/index>
-    In-Dev Software </releases/13.0-SNAPSHOT/index>
+    B13.0-SNAPSHOT In-Dev Software </releases/13.0-SNAPSHOT/index>
+
+    B12.1 Plans </releases/12.1/plan>
+    B12.1, Candidate Release, Software </releases/12.1/index>
+    B12.1, Candidate Release, Release Description Document </releases/12.1/rdd>
+
 
 
 Past Releases
