@@ -2,7 +2,7 @@ Current Software
 ================
 ..  toctree:: Current Software
     :glob:
-    :maxdepth: 1
+    :maxdepth: 0
                
     B12.0 </releases/12.0/index>
 
@@ -10,7 +10,7 @@ Upcoming
 ========
 ..  toctree:: Upcoming
     :glob:
-    :maxdepth: 1
+    :maxdepth: 0
 
     B13.0 Plans </releases/13.0/plan>
     B13.0-SNAPSHOT In-Dev Software </releases/13.0-SNAPSHOT/index>
@@ -26,7 +26,7 @@ Past Releases
 
 ..  toctree:: Past Releases
     :glob:
-    :maxdepth: 1
+    :maxdepth: 0
 
     10.1 </releases/10.1/index>
     11.0 </releases/11.0/index>
