@@ -41,7 +41,9 @@
 
     
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Release Description Document (build B12.1)" href="rdd.html" />
+    <link rel="prev" title="Build 12.1 Plan" href="plan.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -94,9 +96,22 @@
             
             
               <p class="caption"><span class="caption-text">System Releases</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../releases.html">Current Software</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../releases.html#upcoming">Upcoming</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../releases.html#upcoming">Upcoming</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../13.0/plan.html">B13.0 Plans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13.0-SNAPSHOT/index.html">B13.0-SNAPSHOT In-Dev Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plan.html">B12.1 Plans</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">B12.1, Candidate Release, Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standalone-tools">Standalone Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libraries-and-clients">Libraries and Clients</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#discipline-node-services">Discipline Node Services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#engineering-node-services">Engineering Node Services</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rdd.html">B12.1, Candidate Release, Release Description Document</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../releases.html#past-releases">Past Releases</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Collaborate</span></p>
@@ -167,6 +182,8 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../releases.html">Current Software</a> &raquo;</li>
+        
       <li>Software Catalog (Build 12.1)</li>
     
     
@@ -195,7 +212,7 @@ organized by category:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#standalone-tools">Standalone Tools</a></p></li>
 <li><p><a class="reference internal" href="#libraries-and-clients">Libraries and Clients</a></p></li>
-<li><p><a href="#id1"><span class="problematic" id="id2">`Discipline Node Services`_</span></a></p></li>
+<li><p><a class="reference internal" href="#discipline-node-services">Discipline Node Services</a></p></li>
 <li><p><a class="reference internal" href="#engineering-node-services">Engineering Node Services</a></p></li>
 </ul>
 <div class="section" id="standalone-tools">
@@ -206,13 +223,13 @@ organized by category:</p>
 <col style="width: 7%" />
 <col style="width: 2%" />
 <col style="width: 3%" />
-<col style="width: 38%" />
+<col style="width: 37%" />
 <col style="width: 9%" />
-<col style="width: 7%" />
+<col style="width: 10%" />
 <col style="width: 4%" />
-<col style="width: 10%" />
 <col style="width: 9%" />
-<col style="width: 10%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>tool</p></th>
@@ -229,13 +246,13 @@ organized by category:</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>PDS API Client</p></td>
-<td><p>v0.7.1</p></td>
-<td><p>2021-10-01</p></td>
+<td><p>None</p></td>
+<td><p>N/A</p></td>
 <td><p>PDS API Client</p></td>
 <td><p><a class="reference external" href="https://NASA-PDS.github.io/pds-api-client/"><img alt="NASA-PDS/pds-api-client_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td><p><a class="reference external" href="https://www.gnupg.org/gph/en/manual/r1943.html"><img alt="NASA-PDS/pds-api-client_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
 <td></td>
-<td></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api-client/releases/tag/v0.7.1"><img alt="NASA-PDS/pds-api-client_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api-client/releases/tag/None"><img alt="NASA-PDS/pds-api-client_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
 <td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/pds-api-client/main/LICENSE.md"><img alt="NASA-PDS/pds-api-client_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api-client/issues/new/choose"><img alt="NASA-PDS/pds-api-client_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
 </tr>
@@ -244,7 +261,7 @@ organized by category:</p>
 <td><p>2022-04-14</p></td>
 <td><p>PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators</p></td>
 <td><p><a class="reference external" href="https://NASA-PDS.github.io/deep-archive/"><img alt="NASA-PDS/deep-archive_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
-<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/deep-archive/blob/main/CHANGELOG.md#v111-2022-04-14"><img alt="NASA-PDS/deep-archive_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
 <td></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/deep-archive/releases/tag/v1.1.1"><img alt="NASA-PDS/deep-archive_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
 <td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/deep-archive/main/LICENSE.md"><img alt="NASA-PDS/deep-archive_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
@@ -262,13 +279,13 @@ organized by category:</p>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/new/choose"><img alt="NASA-PDS/validate_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>PDS4 Information Model &amp; LDDTool</p></td>
-<td><p>v14.0.0</p></td>
-<td><p>2022-04-13</p></td>
+<td><p>v14.0.1</p></td>
+<td><p>2022-04-18</p></td>
 <td><p>The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.</p></td>
 <td><p><a class="reference external" href="https://NASA-PDS.github.io/pds4-information-model/"><img alt="NASA-PDS/pds4-information-model_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/blob/main/CHANGELOG.md#v1401-2022-04-18"><img alt="NASA-PDS/pds4-information-model_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
 <td></td>
-<td></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/releases/tag/v14.0.0"><img alt="NASA-PDS/pds4-information-model_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/releases/tag/v14.0.1"><img alt="NASA-PDS/pds4-information-model_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
 <td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/pds4-information-model/main/LICENSE.md"><img alt="NASA-PDS/pds4-information-model_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/new/choose"><img alt="NASA-PDS/pds4-information-model_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
 </tr>
@@ -295,13 +312,13 @@ organized by category:</p>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/PLAID/issues/new/choose"><img alt="NASA-PDS/PLAID_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Transform</p></td>
-<td><p>v1.11.1</p></td>
-<td><p>2019-12-13</p></td>
+<td><p>v1.11.2</p></td>
+<td><p>2022-05-05</p></td>
 <td><p>Transforms PDS3 and PDS4 product labels and data into various formats.</p></td>
 <td><p><a class="reference external" href="https://NASA-PDS.github.io/transform/"><img alt="NASA-PDS/transform_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/transform/blob/main/CHANGELOG.md#v1111-2019-12-13"><img alt="NASA-PDS/transform_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
 <td></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/transform/releases/tag/v1.11.1"><img alt="NASA-PDS/transform_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/transform/releases/tag/v1.11.2"><img alt="NASA-PDS/transform_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
 <td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/transform/main/LICENSE.md"><img alt="NASA-PDS/transform_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/transform/issues/new/choose"><img alt="NASA-PDS/transform_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
 </tr>
@@ -317,12 +334,12 @@ data.</p>
 <col style="width: 4%" />
 <col style="width: 2%" />
 <col style="width: 4%" />
-<col style="width: 43%" />
+<col style="width: 41%" />
 <col style="width: 8%" />
 <col style="width: 9%" />
-<col style="width: 5%" />
+<col style="width: 4%" />
 <col style="width: 9%" />
-<col style="width: 8%" />
+<col style="width: 9%" />
 <col style="width: 9%" />
 </colgroup>
 <thead>
@@ -339,7 +356,18 @@ data.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>PDS4 JParser</p></td>
+<tr class="row-even"><td><p>Registry Common</p></td>
+<td><p>v1.2.0</p></td>
+<td><p>2022-04-13</p></td>
+<td><p>Common code used by both Harvest and Registry Manager</p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-common"><img alt="NASA-PDS/registry-common_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-common/blob/main/CHANGELOG.md#v120-2022-04-13"><img alt="NASA-PDS/registry-common_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-common/releases/tag/v1.2.0"><img alt="NASA-PDS/registry-common_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/registry-common/main/LICENSE.md"><img alt="NASA-PDS/registry-common_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-common/issues/new/choose"><img alt="NASA-PDS/registry-common_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PDS4 JParser</p></td>
 <td><p>v2.2.1</p></td>
 <td><p>2022-04-06</p></td>
 <td><p>Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.</p></td>
@@ -353,22 +381,22 @@ data.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="engineering-node-services">
-<h2>Engineering Node Services<a class="headerlink" href="#engineering-node-services" title="Permalink to this headline">¶</a></h2>
-<p>Tools and Services centrally deployed by PDS Engineering Node to support
-the integration and interoperability of all PDS nodes.</p>
+<div class="section" id="discipline-node-services">
+<h2>Discipline Node Services<a class="headerlink" href="#discipline-node-services" title="Permalink to this headline">¶</a></h2>
+<p>Tools and Services that Discipline Node should deploy to enable
+integration and interoperability across the PDS.</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 5%" />
-<col style="width: 2%" />
-<col style="width: 3%" />
-<col style="width: 52%" />
-<col style="width: 7%" />
-<col style="width: 7%" />
 <col style="width: 4%" />
+<col style="width: 2%" />
+<col style="width: 2%" />
+<col style="width: 44%" />
 <col style="width: 7%" />
-<col style="width: 7%" />
-<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>tool</p></th>
@@ -384,29 +412,7 @@ the integration and interoperability of all PDS nodes.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>PDS DOI Service</p></td>
-<td><p>v2.2.0</p></td>
-<td><p>2022-04-14</p></td>
-<td><p>Service and tools for generating DOIs for PDS bundles, collections, and data sets</p></td>
-<td><p><a class="reference external" href="https://NASA-PDS.github.io/doi-service/"><img alt="NASA-PDS/doi-service_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
-<td></td>
-<td></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/releases/tag/v2.2.0"><img alt="NASA-PDS/doi-service_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
-<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/doi-service/main/LICENSE.md"><img alt="NASA-PDS/doi-service_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/issues/new/choose"><img alt="NASA-PDS/doi-service_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
-</tr>
-<tr class="row-odd"><td><p>PDS DOI User Interface</p></td>
-<td><p>v0.4.0</p></td>
-<td><p>2021-09-30</p></td>
-<td><p>web UI for pds-doi-service</p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-ui"><img alt="NASA-PDS/doi-ui_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
-<td></td>
-<td></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-ui/releases/tag/v0.4.0"><img alt="NASA-PDS/doi-ui_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
-<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/doi-ui/main/LICENSE.md"><img alt="NASA-PDS/doi-ui_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-ui/issues/new/choose"><img alt="NASA-PDS/doi-ui_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
-</tr>
-<tr class="row-even"><td><p>Harvest</p></td>
+<tr class="row-even"><td><p>Registry Harvest</p></td>
 <td><p>v3.6.0</p></td>
 <td><p>2022-04-13</p></td>
 <td><p>Provides software provides functionality for capturing and indexing product metadata in PDS Registry. A sub-component of the PDS Registry App (<a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app">https://github.com/NASA-PDS/pds-registry-app</a>)</p></td>
@@ -428,25 +434,147 @@ the integration and interoperability of all PDS nodes.</p>
 <td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/registry-mgr/main/LICENSE.md"><img alt="NASA-PDS/registry-mgr_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-mgr/issues/new/choose"><img alt="NASA-PDS/registry-mgr_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
 </tr>
-<tr class="row-even"><td><p>Registry API</p></td>
-<td><p>None</p></td>
-<td><p>N/A</p></td>
-<td><p>web API service of the PDS registry</p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api"><img alt="NASA-PDS/registry-api_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
-<td><p><a class="reference external" href="https://www.gnupg.org/gph/en/manual/r1943.html"><img alt="NASA-PDS/registry-api_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
+<tr class="row-even"><td><p>Registry Loader</p></td>
+<td><p>v0.2.1</p></td>
+<td><p>2022-05-03</p></td>
+<td><p>registry loader</p></td>
+<td><p><a class="reference external" href="https://NASA-PDS.github.io/registry-loader/"><img alt="NASA-PDS/registry-loader_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
 <td></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/releases/tag/None"><img alt="NASA-PDS/registry-api_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/releases/tag/v0.2.1"><img alt="NASA-PDS/registry-loader_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/registry-loader/main/LICENSE.md"><img alt="NASA-PDS/registry-loader_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/issues/new/choose"><img alt="NASA-PDS/registry-loader_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Registry Harvest Service</p></td>
+<td><p>v1.0.0</p></td>
+<td><p>2022-04-13</p></td>
+<td><p>Server application providing the functionality for capturing and indexing product metadata into the PDS Registry system. Different from the standalone Harvest Tool, this goes along with Crawler and Harvest Client to enable performant ingestion of large data sets.</p></td>
+<td><p><a class="reference external" href="https://NASA-PDS.github.io/registry-harvest-service/"><img alt="NASA-PDS/registry-harvest-service_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-harvest-service/blob/main/CHANGELOG.md#v100-2022-04-13"><img alt="NASA-PDS/registry-harvest-service_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-harvest-service/blob/main/docs/requirements/v1.0.0/REQUIREMENTS.md"><img alt="NASA-PDS/registry-harvest-service_requirements" src="https://nasa-pds.github.io/pdsen-corral/images/requirements.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-harvest-service/releases/tag/v1.0.0"><img alt="NASA-PDS/registry-harvest-service_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/registry-harvest-service/main/LICENSE.md"><img alt="NASA-PDS/registry-harvest-service_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-harvest-service/issues/new/choose"><img alt="NASA-PDS/registry-harvest-service_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Registry Crawler Service</p></td>
+<td><p>v1.0.0</p></td>
+<td><p>2022-04-13</p></td>
+<td><p>Server application providing the functionality for crawling PDS4 products. It has to be used with other components, such as RabbitMQ message broker, Harvest Server and Harvest Client  to enable performant ingestion of large data sets into PDS Registry.</p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-crawler-service"><img alt="NASA-PDS/registry-crawler-service_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-crawler-service/blob/main/CHANGELOG.md#v100-2022-04-13"><img alt="NASA-PDS/registry-crawler-service_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-crawler-service/blob/main/docs/requirements/v1.0.0/REQUIREMENTS.md"><img alt="NASA-PDS/registry-crawler-service_requirements" src="https://nasa-pds.github.io/pdsen-corral/images/requirements.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-crawler-service/releases/tag/v1.0.0"><img alt="NASA-PDS/registry-crawler-service_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/registry-crawler-service/main/LICENSE.md"><img alt="NASA-PDS/registry-crawler-service_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-crawler-service/issues/new/choose"><img alt="NASA-PDS/registry-crawler-service_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Registry Harvest Client</p></td>
+<td><p>v1.0.0</p></td>
+<td><p>2022-04-13</p></td>
+<td><p>Client application providing the functionality for capturing and indexing product metadata into the PDS Registry system. Different from the standalone Harvest Tool, this goes along with Crawler and Harvest Server to enable performant ingestion of large data sets.</p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-harvest-cli"><img alt="NASA-PDS/registry-harvest-cli_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-harvest-cli/blob/main/CHANGELOG.md#v100-2022-04-13"><img alt="NASA-PDS/registry-harvest-cli_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-harvest-cli/releases/tag/v1.0.0"><img alt="NASA-PDS/registry-harvest-cli_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/registry-harvest-cli/main/LICENSE.md"><img alt="NASA-PDS/registry-harvest-cli_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-harvest-cli/issues/new/choose"><img alt="NASA-PDS/registry-harvest-cli_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Feedback Widget</p></td>
+<td><p>v1.3.0</p></td>
+<td><p>2022-03-25</p></td>
+<td><p>Javascript widget for user feedback</p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/feedback-widget"><img alt="NASA-PDS/feedback-widget_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/feedback-widget/releases/tag/v1.3.0"><img alt="NASA-PDS/feedback-widget_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/feedback-widget/main/LICENSE.md"><img alt="NASA-PDS/feedback-widget_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/feedback-widget/issues/new/choose"><img alt="NASA-PDS/feedback-widget_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="engineering-node-services">
+<h2>Engineering Node Services<a class="headerlink" href="#engineering-node-services" title="Permalink to this headline">¶</a></h2>
+<p>Tools and Services centrally deployed by PDS Engineering Node to support
+the integration and interoperability of all PDS nodes.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 3%" />
+<col style="width: 4%" />
+<col style="width: 24%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>tool</p></th>
+<th class="head"><p>version</p></th>
+<th class="head"><p>last updated</p></th>
+<th class="head"><p>description</p></th>
+<th class="head"><p>l <img alt="manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual_text.png" /></p></th>
+<th class="head"><p>l <img alt="changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog_text.png" /></p></th>
+<th class="head"><p>l <img alt="requirements" src="https://nasa-pds.github.io/pdsen-corral/images/requirements_text.png" /></p></th>
+<th class="head"><p>l <img alt="download" src="https://nasa-pds.github.io/pdsen-corral/images/download_text.png" /></p></th>
+<th class="head"><p>l <img alt="license" src="https://nasa-pds.github.io/pdsen-corral/images/license_text.png" /></p></th>
+<th class="head"><p>l <img alt="feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback_text.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>PDS DOI Service</p></td>
+<td><p>v2.2.0</p></td>
+<td><p>2022-04-14</p></td>
+<td><p>Service and tools for generating DOIs for PDS bundles, collections, and data sets</p></td>
+<td><p><a class="reference external" href="https://NASA-PDS.github.io/doi-service/"><img alt="NASA-PDS/doi-service_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/blob/main/CHANGELOG.md#v220-2022-04-14"><img alt="NASA-PDS/doi-service_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/releases/tag/v2.2.0"><img alt="NASA-PDS/doi-service_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/doi-service/main/LICENSE.md"><img alt="NASA-PDS/doi-service_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/issues/new/choose"><img alt="NASA-PDS/doi-service_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PDS DOI User Interface</p></td>
+<td><p>v1.0.0</p></td>
+<td><p>2022-04-18</p></td>
+<td><p>Web UI for pds-doi-service</p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-ui"><img alt="NASA-PDS/doi-ui_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td></td>
+<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-ui/releases/tag/v1.0.0"><img alt="NASA-PDS/doi-ui_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/doi-ui/main/LICENSE.md"><img alt="NASA-PDS/doi-ui_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-ui/issues/new/choose"><img alt="NASA-PDS/doi-ui_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PDS WDS React</p></td>
+<td><p>v0.1.0</p></td>
+<td><p>2022-04-18</p></td>
+<td><p>PDS Web Design System - React Implementation</p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds-react"><img alt="NASA-PDS/wds-react_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds-react/blob/main/docs/requirements/v0.1.0/REQUIREMENTS.md"><img alt="NASA-PDS/wds-react_requirements" src="https://nasa-pds.github.io/pdsen-corral/images/requirements.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds-react/releases/tag/v0.1.0"><img alt="NASA-PDS/wds-react_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/pds-wds-react/main/LICENSE.md"><img alt="NASA-PDS/wds-react_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds-react/issues/new/choose"><img alt="NASA-PDS/wds-react_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Registry API</p></td>
+<td><p>v1.0.0</p></td>
+<td><p>2022-04-19</p></td>
+<td><p>Web API service of the PDS registry</p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api"><img alt="NASA-PDS/registry-api_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/blob/main/CHANGELOG.md#v100-2022-04-19"><img alt="NASA-PDS/registry-api_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/releases/tag/v1.0.0"><img alt="NASA-PDS/registry-api_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
 <td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/registry-api/main/LICENSE.md"><img alt="NASA-PDS/registry-api_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/new/choose"><img alt="NASA-PDS/registry-api_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>Registry</p></td>
-<td><p>None</p></td>
-<td><p>N/A</p></td>
-<td><p>Core registry services</p></td>
+<tr class="row-even"><td><p>Registry</p></td>
+<td><p>v1.0.1</p></td>
+<td><p>2022-05-03</p></td>
+<td><p>Registry application, umbrella for all the registry components</p></td>
 <td><p><a class="reference external" href="https://NASA-PDS.github.io/registry/"><img alt="NASA-PDS/registry_manual" src="https://nasa-pds.github.io/pdsen-corral/images/manual.png" /></a></p></td>
-<td><p><a class="reference external" href="https://www.gnupg.org/gph/en/manual/r1943.html"><img alt="NASA-PDS/registry_changelog" src="https://nasa-pds.github.io/pdsen-corral/images/changelog.png" /></a></p></td>
 <td></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/releases/tag/None"><img alt="NASA-PDS/registry_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/releases/tag/v1.0.1"><img alt="NASA-PDS/registry_download" src="https://nasa-pds.github.io/pdsen-corral/images/download.png" /></a></p></td>
 <td><p><a class="reference external" href="https://raw.githubusercontent.com/NASA-PDS/registry/main/LICENSE.md"><img alt="NASA-PDS/registry_license" src="https://nasa-pds.github.io/pdsen-corral/images/license.png" /></a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/new/choose"><img alt="NASA-PDS/registry_feedback" src="https://nasa-pds.github.io/pdsen-corral/images/feedback.png" /></a></p></td>
 </tr>
@@ -460,6 +588,10 @@ the integration and interoperability of all PDS nodes.</p>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="rdd.html" class="btn btn-neutral float-right" title="Release Description Document (build B12.1)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="plan.html" class="btn btn-neutral float-left" title="Build 12.1 Plan" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 
