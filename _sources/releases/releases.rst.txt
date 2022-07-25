@@ -4,8 +4,8 @@ Upcoming
     :glob:
     :maxdepth: 0
 
-    B13.0 Plans <13.0/plan>
-    B13.0-SNAPSHOT In-Dev Software <13.0-SNAPSHOT/index>
+    Near-Term Plans <13.0/plan>
+    Latest In-Dev Software <13.0-SNAPSHOT/index>
 
 Past Releases
 =============
