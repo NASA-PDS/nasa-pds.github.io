@@ -1,7 +1,7 @@
 =============================
-Software Catalog (build 12.1)
+Software Catalog (Build 12.1)
 =============================
-The software provided for the build 12.1 are listed hereafter and
+The software provided for the Build 12.1 are listed hereafter and
 organized by category:
 
 - `Standalone Tools and Libraries`_
@@ -12,11 +12,10 @@ organized by category:
 
 - `Engineering Node Services`_
 
-- `Other Tools and Libraries (dependencies)`_
 
 Standalone Tools and Libraries
 ==============================
-PDS tools for discipline nodes, data providers and users.
+PDS Tools for Discipline Nodes, data providers and users.
 
 +-----------------------------------+-----------+---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+----------------------------------------------+---------------------------------------+---------------------------------------------+--------------------------------------------+---------------------------------------------+
 |tool                               |version    |last updated   |description                                                                                                                                                                         |l |manual|                                 |l |changelog|                                 |l |requirements|                       |l |download|                                 |l |license|                                 |l |feedback|                                 |
