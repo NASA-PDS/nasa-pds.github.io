@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'NASA PDS Software'
-copyright = '2020 California Institute of Technology'
+copyright = '2020-2022 California Institute of Technology'
 author = 'NASA Planetary Data System'
 release = 'B12.1'
 version = 'B12.1'
