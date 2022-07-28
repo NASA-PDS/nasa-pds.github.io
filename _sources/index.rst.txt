@@ -17,7 +17,8 @@ Sitemap
     :glob:
     :caption: System Releases
 
-    /releases/*
+    Current Release </releases/12.1/index>
+    /releases/releases
 
 ..  toctree::
     :glob:
