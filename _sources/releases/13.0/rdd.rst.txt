@@ -2,8 +2,7 @@
 Release Description Document (Build B13.0)
 ==========================================
 This release of the PDS4 System is intended as an operational release of the system components to date.
-
-The original plan for this release can be found here: `Plan B13.0`_
+The original plan for this release can be found here: `plan B13.0`_
 
 The following sections can be found in this document:
 
@@ -96,7 +95,6 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `design-team#138`_ Continue High-Fidelity User Journey Designs: Homepage, Search, Mission Portal
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 +-----------------------------------------------------------------------------------------------+------+--------+--------------------------+
 |Issue                                                                                          |I&T   |Level   |Priority / Bug Severity   |
 +===============================================================================================+======+========+==========================+
@@ -142,7 +140,7 @@ Devops
    * - `User Guide <https://github.com/NASA-PDS/devops#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/devops>`_
      - `Issue Tracking <https://github.com/NASA-PDS/devops/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/devops/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/devops/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/devops/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/devops/releases>`_ 
 
@@ -314,7 +312,7 @@ Harvest
    * - `User Guide <https://nasa-pds.github.io/registry>`_
      - `Github Repo <https://github.com/NASA-PDS/harvest>`_
      - `Issue Tracking <https://github.com/NASA-PDS/harvest/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/harvest/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/harvest/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/harvest/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/harvest/releases>`_ 
 
@@ -704,7 +702,6 @@ Enhancements
 |`registry-api#122`_ [SECURITY] Upgrade jackson dependencies to remove vulnerability                            |          |s.low                     |
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api#140`_ Add back the Dockerfile used for the AWS/Fargate deployment                                ||iandt|   |unknown                   |
-
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
@@ -1065,6 +1062,7 @@ as follows:
 .. _planetarydata.org#6: https://github.com/NASA-PDS/planetarydata.org/issues/6
 .. _portal-tasks#35: https://github.com/NASA-PDS/portal-tasks/issues/35
 .. _portal-tasks#38: https://github.com/NASA-PDS/portal-tasks/issues/38
+.. _portal-tasks#22: https://github.com/NASA-PDS/portal-tasks/issues/22
 .. _portal-tasks#26: https://github.com/NASA-PDS/portal-tasks/issues/26
 .. _registry#55: https://github.com/NASA-PDS/registry/issues/55
 .. _registry#57: https://github.com/NASA-PDS/registry/issues/57
