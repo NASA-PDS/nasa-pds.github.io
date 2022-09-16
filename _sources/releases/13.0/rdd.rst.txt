@@ -2,6 +2,7 @@
 Release Description Document (Build B13.0)
 ==========================================
 This release of the PDS4 System is intended as an operational release of the system components to date.
+
 The original plan for this release can be found here: `Plan B13.0`_
 
 The following sections can be found in this document:
@@ -14,7 +15,7 @@ The following sections can be found in this document:
 
 PDS4 Standards and Information Model Changes
 ============================================
-This section details the changes to the PDS4 Standards and Information Model approved by the PDS4 Change Control Board 
+This section details the changes to the PDS4 Standards and Information Model approved by the PDS4 Change Control Board
 and implemented by the PDS within the latest build period.
 
 +--------------------------------+----------------------------------------------------------+
@@ -25,19 +26,19 @@ and implemented by the PDS within the latest build period.
 
 Software Changes
 ================
-The changes types are 'Bug', 'Enhancement' or 'Requirement'. For each software repository, the changes are listed in 2 
+The changes types are 'Bug', 'Enhancement' or 'Requirement'. For each software repository, the changes are listed in 2
 categories:
 
 - Planned Updates
 - Other Updates
 
-The 'Planned Updates' are organized by 'Themes' (or 'Release Themes'), which are defined in advance and approved by 
-the PDS Software Working Group (see `Plan B13.0`_')
-The 'Other Updates' occurs during the build cycle witout being planned or attached to a theme. They are organized by 
-types (bug, enhancements, requirements...). Any updates that require a de-scope of planned tasks are reviewed by the PDS 
+The 'Planned Updates' are organized by 'Themes' (or 'Release Themes'), which are defined in advance and approved by the
+PDS Software Working Group (see `Plan B13.0`_')
+The 'Other Updates' occurs during the build cycle witout being planned or attached to a theme. They are organized by
+types (bug, enhancements, requirements...). Any updates that require a de-scope of planned tasks are reviewed by the PDS
 Software Working Group.
 
-The deliveries are validated by the development team and go through an additional Integration & Test process, as 
+The deliveries are validated by the development team and go through an additional Integration & Test process, as
 applicable, as indicated by a specific icon in the following tables.
 
 --------
@@ -52,7 +53,7 @@ Cloud Tasks
    * - `User Guide <https://github.com/NASA-PDS/cloud-tasks#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/cloud-tasks>`_
      - `Issue Tracking <https://github.com/NASA-PDS/cloud-tasks/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/cloud-tasks/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/cloud-tasks/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/cloud-tasks/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/cloud-tasks/releases>`_ 
 
@@ -86,7 +87,7 @@ PDS Design Team and Web Modernization
    * - `User Guide <https://github.com/NASA-PDS/design-team#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/design-team>`_
      - `Issue Tracking <https://github.com/NASA-PDS/design-team/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/devops/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/design-team/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/design-team/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/design-team/releases>`_ 
 
@@ -128,7 +129,6 @@ No requirements, significant enhancements, or bug fixes identified for this Buil
 `design-team#140`_ Usability Testing Phase 1 - Introduction
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
-parent epic in this repository)
 
 --------
 
@@ -193,7 +193,7 @@ DOI Service
    * - `User Guide <https://nasa-pds.github.io/doi-service>`_
      - `Github Repo <https://github.com/NASA-PDS/doi-service>`_
      - `Issue Tracking <https://github.com/NASA-PDS/doi-service/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/doi-service/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/doi-service/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/doi-service/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/doi-service/releases>`_ 
 
@@ -248,7 +248,7 @@ DOI User Interface
    * - `User Guide <https://github.com/NASA-PDS/doi-ui#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/doi-ui>`_
      - `Issue Tracking <https://github.com/NASA-PDS/doi-ui/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/doi-ui/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/doi-ui/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/doi-ui/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/doi-ui/releases>`_ 
 
@@ -346,7 +346,7 @@ Nucleus
    * - `User Guide <https://github.com/NASA-PDS/nucleus#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/nucleus>`_
      - `Issue Tracking <https://github.com/NASA-PDS/nucleus/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/nucleus/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/nucleus/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/nucleus/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/nucleus/releases>`_ 
 
@@ -369,7 +369,7 @@ Pds-api
    * - `User Guide <http://nasa-pds.github.io/pds-api>`_
      - `Github Repo <https://github.com/NASA-PDS/pds-api>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds-api/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/pds-api/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/pds-api/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds-api/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds-api/releases>`_ 
 
@@ -452,7 +452,7 @@ Pds4-information-model
    * - `User Guide <https://nasa-pds.github.io/pds4-information-model/>`_
      - `Github Repo <https://github.com/NASA-PDS/pds4-information-model>`_
      - `Issue Tracking <https://github.com/NASA-PDS/pds4-information-model/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/pds4-information-model/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/pds4-information-model/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/pds4-information-model/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/pds4-information-model/releases>`_ 
 
@@ -502,7 +502,7 @@ Planetarydata.org
    * - `User Guide <https://github.com/NASA-PDS/planetarydata.org#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/planetarydata.org>`_
      - `Issue Tracking <https://github.com/NASA-PDS/planetarydata.org/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/planetarydata.org/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/planetarydata.org/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/planetarydata.org/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/planetarydata.org/releases>`_ 
 
@@ -534,14 +534,14 @@ Portal-tasks
    * - `User Guide <https://pds.nasa.gov>`_
      - `Github Repo <https://github.com/NASA-PDS/portal-tasks>`_
      - `Issue Tracking <https://github.com/NASA-PDS/portal-tasks/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/portal-tasks/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/portal-tasks/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/portal-tasks/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/portal-tasks/releases>`_ 
 
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-`portal-tasks#35`_ Initial Migration of PDS.nasa.gov to New CMS 
+`portal-tasks#35`_ Initial Migration of PDS.nasa.gov to New CMS
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
@@ -579,7 +579,7 @@ Registry
    * - `User Guide <https://nasa-pds.github.io/registry>`_
      - `Github Repo <https://github.com/NASA-PDS/registry>`_
      - `Issue Tracking <https://github.com/NASA-PDS/registry/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/registry/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/registry/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/registry/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/registry/releases>`_ 
 
@@ -634,7 +634,7 @@ Registry-api
    * - `User Guide <https://nasa-pds.github.io/pds-api>`_
      - `Github Repo <https://github.com/NASA-PDS/registry-api>`_
      - `Issue Tracking <https://github.com/NASA-PDS/registry-api/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/registry-api/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/registry-api/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/registry-api/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/registry-api/releases>`_ 
 
@@ -704,6 +704,7 @@ Enhancements
 |`registry-api#122`_ [SECURITY] Upgrade jackson dependencies to remove vulnerability                            |          |s.low                     |
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api#140`_ Add back the Dockerfile used for the AWS/Fargate deployment                                ||iandt|   |unknown                   |
+
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
@@ -718,7 +719,7 @@ Registry-mgr
    * - `User Guide <https://nasa-pds.github.io/registry>`_
      - `Github Repo <https://github.com/NASA-PDS/registry-mgr>`_
      - `Issue Tracking <https://github.com/NASA-PDS/registry-mgr/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/registry-mgr/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/registry-mgr/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/registry-mgr/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/registry-mgr/releases>`_ 
 
@@ -753,7 +754,7 @@ Roundup-action
 --------------
 *Do a "roundup", a/k/a PDS-style continuous integration and delivery*
 
-.. list-table::
+.. list-table:: 
    :widths: 15 15 15 15 15 15
 
    * - `User Guide <https://github.com/NASA-PDS/roundup-action#readme>`_
@@ -800,7 +801,7 @@ Software-issues-repo
    * - `User Guide <https://github.com/NASA-PDS/software-issues-repo#readme>`_
      - `Github Repo <https://github.com/NASA-PDS/software-issues-repo>`_
      - `Issue Tracking <https://github.com/NASA-PDS/software-issues-repo/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/software-issues-repo/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/software-issues-repo/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/software-issues-repo/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/software-issues-repo/releases>`_ 
 
@@ -834,7 +835,7 @@ Template-repo-python
    * - `User Guide <https://nasa-pds.github.io/template-repo-python>`_
      - `Github Repo <https://github.com/NASA-PDS/template-repo-python>`_
      - `Issue Tracking <https://github.com/NASA-PDS/template-repo-python/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/template-repo-python/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/template-repo-python/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/template-repo-python/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/template-repo-python/releases>`_ 
 
@@ -866,7 +867,7 @@ Validate
    * - `User Guide <https://nasa-pds.github.io/validate/>`_
      - `Github Repo <https://github.com/NASA-PDS/validate>`_
      - `Issue Tracking <https://github.com/NASA-PDS/validate/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/validate/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/validate/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/validate/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/validate/releases>`_ 
 
@@ -923,7 +924,7 @@ Wds-web
    * - `User Guide <https://github.com/NASA-PDS/pds-wds-web>`_
      - `Github Repo <https://github.com/NASA-PDS/wds-web>`_
      - `Issue Tracking <https://github.com/NASA-PDS/wds-web/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/wds-web/tree/main/docs/requirements>`_
+     - `Requirements <https://github.com/NASA-PDS/wds-web/tree/main/docs/requirements>`_ 
      - `Stable Release <https://github.com/NASA-PDS/wds-web/releases/latest>`_ 
      - `Dev Release <https://github.com/NASA-PDS/wds-web/releases>`_ 
 
@@ -958,7 +959,7 @@ The Engineering Node Software resources are listed in the `Software Release Summ
 
 Installation and Operation
 ==========================
-PDS Engineering Node Software have 3 different venues/purposes for execution: Standalone, Discipline Node Deployment or 
+PDS Engineering Node Software have 3 different venues/purposes for execution: Standalone, Discipline Node Deployment or
 Engineering Node-only Deployment
 For the Installation and Operation manual see the `users manuals` in the software summary sections below:
 
@@ -970,7 +971,7 @@ For the Installation and Operation manual see the `users manuals` in the softwar
 
 Reference documents
 ===================
-This section details the controlling and applicable documents referenced for this release. The controlling documents are 
+This section details the controlling and applicable documents referenced for this release. The controlling documents are
 as follows:
 
 - PDS Level 1, 2 and 3 Requirements, April 20, 2017.
