@@ -1,7 +1,7 @@
 FAQs
 ++++
 
-This section includes FAQs for creating and updating DOIs for PDS3 data sets; and for PDS4 Bundles, Collections, and Document Products. If you require additional support, please contact the `PDS Operator <mailto:pds-operator@jpl.nasa.gov>`__ for assistance.
+This section includes FAQs for creating and updating DOIs for PDS3 data sets; and for PDS4 Bundles, Collections, and Document Products. If you require additional support, please submit a request to `PDS Help Desk <https://pds.nasa.gov/?feedback=true>`_ for assistance.
 
 ..  toctree::
 
