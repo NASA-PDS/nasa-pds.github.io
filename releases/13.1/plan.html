@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Build 13.0 Plan &mdash; NASA PDS Software B12.1 documentation</title>
+  <title>Build 13.1 Plan &mdash; NASA PDS Software B12.1 documentation</title>
   
 
   
@@ -41,7 +41,9 @@
 
     
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Software Catalog (Build 10.1)" href="../10.1/index.html" />
+    <link rel="prev" title="Upcoming" href="../releases.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -94,9 +96,32 @@
             
             
               <p class="caption"><span class="caption-text">System Releases</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../12.1/index.html">Current Release</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../releases.html">Upcoming</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../releases.html">Upcoming</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Near-Term Plans</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#key-dates">Key Dates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#planned-pds4-information-model-changes">Planned PDS4 Information Model Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#planned-software-changes">Planned Software Changes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#validate">validate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pds4-information-model">pds4-information-model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pds-api">pds-api</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#design-team">design-team</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cloud-tasks">cloud-tasks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#planetarydata-org">planetarydata.org</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nucleus">nucleus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#registry">registry</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#other-information">Other Information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#reference-documents">Reference Documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#system-requirements-dependencies-and-assumptions">System Requirements, Dependencies, and Assumptions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../releases.html#past-releases">Past Releases</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Collaborate</span></p>
@@ -167,14 +192,16 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Build 13.0 Plan</li>
+          <li><a href="../releases.html">Upcoming</a> &raquo;</li>
+        
+      <li>Build 13.1 Plan</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
             
-              <a href="https://github.com/nasa-pds/nasa-pds.github.io/blob/main/docs/source/releases/13.0/plan.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/nasa-pds/nasa-pds.github.io/blob/main/docs/source/releases/13.1/plan.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -188,21 +215,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="build-13-0-plan">
-<h1>Build 13.0 Plan<a class="headerlink" href="#build-13-0-plan" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="build-13-1-plan">
+<h1>Build 13.1 Plan<a class="headerlink" href="#build-13-1-plan" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Build 13.0 Plan</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Build 13.1 Plan</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#key-dates">Key Dates</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#planned-pds4-information-model-changes">Planned PDS4 Information Model Changes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#planned-software-changes">Planned Software Changes</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#validate">validate</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pds-registry-app">pds-registry-app</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pds4-information-model">pds4-information-model</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pds-api">pds-api</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pds-wds">pds-wds</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#design-team">design-team</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cloud-tasks">cloud-tasks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#devops">devops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#planetarydata-org">planetarydata.org</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#nucleus">nucleus</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#registry">registry</a></li>
 </ul>
@@ -221,8 +247,8 @@
 <p>A more detailed breakdown of these tasks by date and priority can be found in our <a class="reference external" href="https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/roadmap">Zenhub Roadmap</a> (login required).</p>
 <div class="section" id="key-dates">
 <h2>Key Dates<a class="headerlink" href="#key-dates" title="Permalink to this headline">¶</a></h2>
-<table class="colwidths-given docutils align-default" id="id50">
-<caption><span class="caption-text">Key Dates for Discipline Nodes</span><a class="headerlink" href="#id50" title="Permalink to this table">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id43">
+<caption><span class="caption-text">Key Dates for Discipline Nodes</span><a class="headerlink" href="#id43" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 20%" />
@@ -237,40 +263,40 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>08/26/2022</p></td>
+<tr class="row-even"><td><p>03/02/2022</p></td>
 <td><p>SCR Freeze Date</p></td>
 <td><p>DDWG</p></td>
 <td><p>Freeze date for identifying SCRs to be implemented in this release.</p></td>
 </tr>
-<tr class="row-odd"><td><p>10/03/2022</p></td>
+<tr class="row-odd"><td><p>04/06/2023</p></td>
 <td><p>Standards Documents Updates Due</p></td>
 <td><p>Document Authoring Team</p></td>
 <td><p>Updates to PDS4 standards documents due to EN for review.</p></td>
 </tr>
-<tr class="row-even"><td><p>10/26/2022 - 11/15/2022</p></td>
+<tr class="row-even"><td><p>04/18/2023 - 05/16/2023</p></td>
 <td><p>Beta Testing Period</p></td>
 <td><p>DNs, IPDA</p></td>
 <td><p>Changes to PDS4 IM and system components available for beta testing.</p></td>
 </tr>
-<tr class="row-odd"><td><p>10/18/2022 - 11/15/2022</p></td>
+<tr class="row-odd"><td><p>04/18/2023 - 05/16/2023</p></td>
 <td><p>dLDD Integration and Test</p></td>
 <td><p>dLDD Stewards</p></td>
 <td><p>Auto-generated dLDDs should be reviews by dLDD Stewards, and final updates to dLDDs should be completed during this time.</p></td>
 </tr>
-<tr class="row-even"><td><p>11/15/2022</p></td>
+<tr class="row-even"><td><p>05/08/2023</p></td>
 <td><p>Standards Documents Review Due</p></td>
 <td><p>Document Review Team</p></td>
 <td><p>Review updates to PDS4 standards documents.</p></td>
 </tr>
-<tr class="row-odd"><td><p>12/02/2022</p></td>
+<tr class="row-odd"><td><p>06/02/2023</p></td>
 <td><p>System Release</p></td>
 <td><p>EN</p></td>
 <td><p>PDS4 system is operationally deployed and website is updated accordingly.</p></td>
 </tr>
 </tbody>
 </table>
-<table class="colwidths-given docutils align-default" id="id51">
-<caption><span class="caption-text">Key Dates for Engineering Node</span><a class="headerlink" href="#id51" title="Permalink to this table">¶</a></caption>
+<table class="colwidths-given docutils align-default" id="id44">
+<caption><span class="caption-text">Key Dates for Engineering Node</span><a class="headerlink" href="#id44" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 40%" />
@@ -283,20 +309,20 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>09/22/2022</p></td>
+<tr class="row-even"><td><p>03/21/2023</p></td>
 <td><p>Delivery to I&amp;T</p></td>
 <td><p>The PDS4 IM and all software updated during this
 build cycle are delivered to EN I&amp;T.</p></td>
 </tr>
-<tr class="row-odd"><td><p>10/03/2021</p></td>
+<tr class="row-odd"><td><p>04/03/2023</p></td>
 <td><p>Test Readiness Review (TRR)</p></td>
 <td><p>PDS EN internal review to verify readiness to enter I&amp;T phase.</p></td>
 </tr>
-<tr class="row-even"><td><p>11/17/2022</p></td>
+<tr class="row-even"><td><p>05/22/2023</p></td>
 <td><p>Delivery and Deployment Review (DRR)</p></td>
 <td><p>PDS internal review with PDS Software Working Group to verify readiness to deploy build system.</p></td>
 </tr>
-<tr class="row-odd"><td><p>12/02/2022</p></td>
+<tr class="row-odd"><td><p>06/02/2023</p></td>
 <td><p>Operational Deployment</p></td>
 <td><p>PDS4 system is operationally deployed and website is updated accordingly.</p></td>
 </tr>
@@ -308,7 +334,8 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <h2>Planned PDS4 Information Model Changes<a class="headerlink" href="#planned-pds4-information-model-changes" title="Permalink to this headline">¶</a></h2>
 <p>This section details the planned changes to the PDS4 Information Model for this build. These changes are deliverables by the PDS Data Design Working Group (DDWG) to the Engineering Node for implementation.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/482">validate#482</a> <strong>As a user, I want to validate lblx file extension as a PDS4 label  (CCB-260)</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/499">pds4-information-model#499</a> <strong>CCB-348: Add Units_of_Mass_Density as a unit of measure</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/547">pds4-information-model#547</a> <strong>B13.1 Updates per CCB-Approved SCRs</strong></p></li>
 </ul>
 </div>
 <div class="section" id="planned-software-changes">
@@ -341,7 +368,7 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/validate/">User Guide</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/validate">Github Repo</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues">Issue Tracking</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues?q=is%3Aopen+is%3Aissue+label%3Aicebox">Backlog</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog">Backlog</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/releases/latest">Stable Release</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/releases">Dev Release</a></p></td>
 </tr>
@@ -357,9 +384,15 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/481">validate#481</a> <strong>B13.0 Content Validation Improvements: Intermingled Headers, Additional Table Types, Additional File Areas</strong></dt><dd><ul>
+<dt><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/498">validate#498</a> <strong>Improve Content Validation Performance through Spot Checking</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/1">validate#1</a> As a user, I want to execute content validation against every nth file</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/534">validate#534</a> <strong>B13.1 Content Validation Improvements: Additional Table Types, Additional File Areas</strong></dt><dd><ul>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/217">validate#217</a> As a user, I want to validate content for all possible PDS4 table types</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/425">validate#425</a> Refactor content validation to more robustly handle intermingled Headers</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/436">validate#436</a> Improve error messages for overlapping objects in a label</p></li>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/480">validate#480</a> Validate does not calculate overlaps correctly when Header is not first object in file</p></li>
 </ul>
@@ -367,15 +400,8 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/496">validate#496</a> <strong>Support new lblx file extension</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/482">validate#482</a> As a user, I want to validate lblx file extension as a PDS4 label  (CCB-260)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/498">validate#498</a> <strong>Improve Content Validation Performance through Spot Checking</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/1">validate#1</a> As a user, I want to execute content validation against every nth file</p></li>
+<dt><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/557">validate#557</a> <strong>Dockerize Validate</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/556">validate#556</a> As a user, I want to be able to use validate from a docker container</p></li>
 </ul>
 </dd>
 </dl>
@@ -383,9 +409,9 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="pds-registry-app">
-<h3>pds-registry-app<a class="headerlink" href="#pds-registry-app" title="Permalink to this headline">¶</a></h3>
-<p><em>Registry application enabling a PDS node to register all its data products for long term preservation and sharing with the rest of the PDS system. This repo builds, packages, and documents all the services and tools related to the ingestion and access of the data.</em></p>
+<div class="section" id="pds4-information-model">
+<h3>pds4-information-model<a class="headerlink" href="#pds4-information-model" title="Permalink to this headline">¶</a></h3>
+<p><em>The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 17%" />
@@ -396,33 +422,32 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <col style="width: 17%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/pds-registry-app/">User Guide</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app">Github Repo</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues">Issue Tracking</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues?q=is%3Aopen+is%3Aissue+label%3Aicebox">Backlog</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/releases/latest">Stable Release</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/releases">Dev Release</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/pds4-information-model/">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog">Backlog</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/releases">Dev Release</a></p></td>
 </tr>
 </tbody>
 </table>
 <ul class="simple">
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/513">pds4-information-model#513</a> <strong>B13.1 Update LDDTool to support IM Version 1.19.0.0</strong></p></li>
 <li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/219">pds-registry-app#219</a> <strong>Re-imagine Registry Handling of Product Versioning</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/229">pds-registry-app#229</a> Design the PDS4 definition for describing superseded LIDs via product metadata</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/148">pds-api#148</a> As a user, I want to search for past versions of a product where the LID changed during the product history</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/149">pds-api#149</a> As a user, I want to only return the latest version of a product that has changed logical identifiers in it’s history</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/264">pds-registry-app#264</a> Decouple lidvid and opensearch id</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/266">pds-registry-app#266</a> Add supersede / update product version functionality in Registry Manager</p></li>
+<dt><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/544">pds4-information-model#544</a> <strong>Test and Validate Term Mapping Implementation</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/545">pds4-information-model#545</a> Implement Term Mapping Example for EPNCore Attributes</p></li>
 </ul>
 </dd>
 </dl>
 </li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/546">pds4-information-model#546</a> <strong>B13.1 Continue Refactoring the IMTool/LDDTool Code</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/549">pds4-information-model#549</a> <strong>B13.1 Initial Support for Target Ontology Project</strong></p></li>
 </ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="pds-api">
 <h3>pds-api<a class="headerlink" href="#pds-api" title="Permalink to this headline">¶</a></h3>
-<p><em>PDS API Application with client and server integrated into one package</em></p>
+<p><em>PDS web APIs specifications and user’s manual</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 17%" />
@@ -436,7 +461,7 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <tr class="row-odd"><td><p><a class="reference external" href="http://nasa-pds.github.io/pds-api">User Guide</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api">Github Repo</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues">Issue Tracking</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues?q=is%3Aopen+is%3Aissue+label%3Aicebox">Backlog</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog">Backlog</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/releases/latest">Stable Release</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/releases">Dev Release</a></p></td>
 </tr>
@@ -444,20 +469,13 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </table>
 <ul class="simple">
 <li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/129">pds-api#129</a> <strong>Prep for API v1.0 Release</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/133">pds-api#133</a> clarify what <cite>keyword</cite> parameter is for</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/136">pds-api#136</a> Revise the pds-api README so that it gives a perspective on non search api (e.g. doi) from pds</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/137">pds-api#137</a> As a user, I want to have a detailed description of the API q parameter syntax</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/156">pds-api#156</a> Disable automated github pages deployment with v1.0</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/157">pds-api#157</a> document the server - specification - client</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/158">pds-api#158</a> Improve linkages from Registry App Docs to API Docs</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/161">pds-api#161</a> Check for typos in OpenAPI spec</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/169">pds-api#169</a> As a user, I want to have a PDS Search API user guide</p></li>
+<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/181">pds-api#181</a> <strong>Search Improvements to Support Web Modernization</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/104">pds-api#104</a> Improvements to Keyword Search for Weighting and Suggested Searches</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/165">pds-api#165</a> As a user, I want to search for PDS software tools and services</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/181">pds-api#181</a> <strong>Search Improvements to Support Web Modernization</strong></p></li>
 <li><dl class="simple">
 <dt><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/182">pds-api#182</a> <strong>Implement Faceting</strong></dt><dd><ul>
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/70">pds-api#70</a> As an API user, I want to know the unique values for a specific API field.</p></li>
@@ -466,35 +484,28 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </dd>
 </dl>
 </li>
-</ul>
-</div>
-<hr class="docutils" />
-<div class="section" id="pds-wds">
-<h3>pds-wds<a class="headerlink" href="#pds-wds" title="Permalink to this headline">¶</a></h3>
-<p><em>PDS Web Design System</em></p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds">User Guide</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds">Github Repo</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds/issues">Issue Tracking</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds/issues?q=is%3Aopen+is%3Aissue+label%3Aicebox">Backlog</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds/releases/latest">Stable Release</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds/releases">Dev Release</a></p></td>
-</tr>
-</tbody>
-</table>
-<ul class="simple">
 <li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-wds/issues/16">pds-wds#16</a> <strong>Initial Implementation of WDS Modules</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/design-team/issues/125">design-team#125</a> Plan and Prioritize needed WDS improvements and adaptations</p></li>
+<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/230">pds-api#230</a> <strong>Support latest product search from API</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/220">pds-api#220</a> Past versions are being returned by API, by default</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/221">pds-api#221</a> As a user, I want to query only the latest versions of products unless explicitly requested</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/236">pds-api#236</a> Make the registry-api use the new latest index</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/140">registry#140</a> Integrate new <cite>provence.py</cite> script into integration tests to tag products with Provenance information</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/141">registry#141</a> Integrate new <cite>provence.py</cite> script into operational deployment to tag products with Provenance information</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/235">pds-api#235</a> <strong>Enable Swagger Interface on pds.nasa.gov</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/193">pds-api#193</a> As a user, I want to be able to access the Search API Swagger interface from pds.nasa.gov</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/239">pds-api#239</a> As a user, I want to get application/json response format by default if I request an API url in my browser</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/237">pds-api#237</a> <strong>Support Searching for Past Versions of Products with Differing LIDs</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/148">pds-api#148</a> As a user, I want to search for past versions of a product where the LID changed during the product history</p></li>
 </ul>
 </dd>
 </dl>
@@ -518,15 +529,14 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/design-team#readme">User Guide</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/design-team">Github Repo</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/design-team/issues">Issue Tracking</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/design-team/issues?q=is%3Aopen+is%3Aissue+label%3Aicebox">Backlog</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/design-team/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog">Backlog</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/design-team/releases/latest">Stable Release</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/design-team/releases">Dev Release</a></p></td>
 </tr>
 </tbody>
 </table>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/design-team/issues/139">design-team#139</a> <strong>Refine WDS based upon High-Fidelity Designs</strong></p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/design-team/issues/140">design-team#140</a> <strong>Usability Testing Phase 1 - High-fidelity Designs</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/design-team/issues/161">design-team#161</a> <strong>B13.1 User Journey Figma Prototyping: Homepage &amp; Search</strong></p></li>
 </ul>
 </div>
 <hr class="docutils" />
@@ -546,7 +556,7 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks#readme">User Guide</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks">Github Repo</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues">Issue Tracking</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues?q=is%3Aopen+is%3Aissue+label%3Aicebox">Backlog</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog">Backlog</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/releases/latest">Stable Release</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/releases">Dev Release</a></p></td>
 </tr>
@@ -554,31 +564,35 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </table>
 <ul class="simple">
 <li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/28">cloud-tasks#28</a> <strong>B13.0 Upgrade Registry Deployments to OpenSearch</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/17">cloud-tasks#17</a> Upgrade all AWS Registry deployments to use OpenSearch</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/18">cloud-tasks#18</a> Update terraform scripts / AWS registry deployment documentation to use OpenSearch</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/267">pds-registry-app#267</a> Plan and strategize how to migrate to OpenSearch deployments</p></li>
+<dt><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/24">cloud-tasks#24</a> <strong>Re-imagine and Implement New Registry Architecture in AWS</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/36">cloud-tasks#36</a> document the AWS infrastructure used by PDS</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/51">cloud-tasks#51</a> Create POC for registry multi-tenancy</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/133">registry#133</a> Update Registry Loader Tools To Support New Registry Cloud Architecture</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/29">cloud-tasks#29</a> <strong>Migrate Web Analytics prototype to PDS Cloud</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/30">cloud-tasks#30</a> Work with Web Unification team to define system architecture for migration</p></li>
+<dt><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/35">cloud-tasks#35</a> <strong>NGAP Pilot: Deploy Registries</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/40">cloud-tasks#40</a> NGAP Onboarding</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/32">cloud-tasks#32</a> <strong>Plan and Architect ATM Annex Pilot Project</strong></p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/33">cloud-tasks#33</a> <strong>Plan and Architect GEO PDS3 Diviner Migration Pilot</strong></p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/34">cloud-tasks#34</a> <strong>Plan and Architect SBN-PSI Catalina Sky Survey Migration</strong></p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/35">cloud-tasks#35</a> <strong>NGAP Pilot: Deploy Registries</strong></p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/57">cloud-tasks#57</a> <strong>Prototype and Adapt ESDIS Thin Egresss App (TEA) for PDS</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/58">cloud-tasks#58</a> Initial investigation of TEA and how/if it can be adapted for the PDS</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/cloud-tasks/issues/60">cloud-tasks#60</a> <strong>Develop PDS Cloud Cost Model</strong></p></li>
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="devops">
-<h3>devops<a class="headerlink" href="#devops" title="Permalink to this headline">¶</a></h3>
-<p><em>Parent repo for PDS DevOps activities</em></p>
+<div class="section" id="planetarydata-org">
+<h3>planetarydata.org<a class="headerlink" href="#planetarydata-org" title="Permalink to this headline">¶</a></h3>
+<p><em>Website and related services for the International Planetary Data Alliance, nominally run at https://planetarydata.org/</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 17%" />
@@ -589,24 +603,24 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <col style="width: 17%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/devops#readme">User Guide</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/devops">Github Repo</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/devops/issues">Issue Tracking</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/devops/issues?q=is%3Aopen+is%3Aissue+label%3Aicebox">Backlog</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/devops/releases/latest">Stable Release</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/devops/releases">Dev Release</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog">Backlog</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/releases">Dev Release</a></p></td>
 </tr>
 </tbody>
 </table>
 <ul class="simple">
 <li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/devops/issues/11">devops#11</a> <strong>B13.0 Implement Continuous Deployment Strategy</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/51">pds-api#51</a> As a developer, I want a continuous deployment of the API available for testing</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/devops/issues/2">devops#2</a> As a developer, I want a developer staging system with the latest dev versions of PDS services deployed</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-registry-app/issues/186">pds-registry-app#186</a> As a developer, I want to deploy the registry with a single docker-compose command</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/devops/issues/16">devops#16</a> As a I&amp;T Engineer, I want a I&amp;T system with the latest release candidates of PDS tools automatically deployed</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/devops/issues/17">devops#17</a> As an Operations Engineer, I want a production staging system with the latest stable releases of PDS tools automatically deployed</p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/devops/issues/18">devops#18</a> As an Operations Engineer, I want a production system with the latest stable releases of PDS tools automatically deployed</p></li>
+<dt><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/issues/7">planetarydata.org#7</a> <strong>Migrate planetarydata.org to WordPress in AWS</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/issues/8">planetarydata.org#8</a> Deploy WordPress in an EC2 instance in JPL Cloud</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/issues/9">planetarydata.org#9</a> Migrate existing content from Plone to Wordpress</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/issues/10">planetarydata.org#10</a> Design / select skin for the new website</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/issues/11">planetarydata.org#11</a> Complete review of website with IPDA Website Update team</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/issues/12">planetarydata.org#12</a> Submit URS request for review of website for DNS switch</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/planetarydata.org/issues/13">planetarydata.org#13</a> Finalize website migration with DNS switch</p></li>
 </ul>
 </dd>
 </dl>
@@ -630,20 +644,33 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus#readme">User Guide</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus">Github Repo</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues">Issue Tracking</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues?q=is%3Aopen+is%3Aissue+label%3Aicebox">Backlog</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog">Backlog</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/releases/latest">Stable Release</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/releases">Dev Release</a></p></td>
 </tr>
 </tbody>
 </table>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/10">nucleus#10</a> <strong>Initial Prototyping and Implementation</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/2">nucleus#2</a> <strong>Initial Implementation and Operationalize Nucleus</strong></p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/14">nucleus#14</a> <strong>B13.1 Technology Selection and Internal Review</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/11">nucleus#11</a> Proof-of-concept with Apache Airflow</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/13">nucleus#13</a> Proof of concept with Cumulus on NGAP</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/15">nucleus#15</a> Proof of concept for Nucleus in CWS</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/19">nucleus#19</a> Complete JPL Internal Peer Review of Trade Study and Technology Selection</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/16">nucleus#16</a> <strong>Develop Cost Model</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/17">nucleus#17</a> <strong>Pilot Nucleus with SBN-PSI Catalina Sky Survey Pipeline</strong></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/18">nucleus#18</a> <strong>Develop Detailed Technical Architecture</strong></p></li>
 </ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="registry">
 <h3>registry<a class="headerlink" href="#registry" title="Permalink to this headline">¶</a></h3>
-<p><em>Core registry services</em></p>
+<p><em>PDS Registry provides service and software application necessary for tracking, searching, auditing, locating, and maintaining artifacts within the system. These artifacts can range from data files and label files, schemas, dictionary definitions for objects and elements, services, etc.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 17%" />
@@ -654,10 +681,10 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <col style="width: 17%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry#readme">User Guide</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/registry">User Guide</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/registry">Github Repo</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues">Issue Tracking</a></p></td>
-<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues?q=is%3Aopen+is%3Aissue+label%3Aicebox">Backlog</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog">Backlog</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/releases/latest">Stable Release</a></p></td>
 <td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/releases">Dev Release</a></p></td>
 </tr>
@@ -665,14 +692,29 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </table>
 <ul class="simple">
 <li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/45">registry#45</a> <strong>Preparations to Support B12.1 Registry Upgrades</strong></dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/43">registry#43</a> Develop script to update existing registry metadata per B12.1 metadata modifications</p></li>
+<dt><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/85">registry#85</a> <strong>Enhance Registry Delete Functionality</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry-mgr/issues/52">registry-mgr#52</a> As a user I want to delete whole bundles at once</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/46">registry#46</a> <strong>Preparations to Support B13.0 Registry Upgrades</strong></p></li>
-<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/47">registry#47</a> <strong>Support LBLX extension in Registry Loader tools</strong></p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/99">registry#99</a> <strong>Populate EN Registry with PDS3 Data Sets</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/62">registry#62</a> As a user, I want to ingest legacy PDS3 data sets from EN legacy registry</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/63">registry#63</a> Deploy harvest / registry-mgr as cron to regularly upload PDS EN data to registry</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/operations/issues/270">operations#270</a> Deployment of Registry Loader Tools and Initial Ingestion of Engineering Node Registry on Latest AWS Deployment</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/134">registry#134</a> <strong>Enhanced Query Support through Registry Tools</strong></dt><dd><ul>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/100">registry#100</a> Update documentation to include explicit example of how to query staged data</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/registry-mgr/issues/59">registry-mgr#59</a> As a user, I want to query OpenSearch for staged data via a CLI command</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
 </div>
@@ -716,6 +758,10 @@ build cycle are delivered to EN I&amp;T.</p></td>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../10.1/index.html" class="btn btn-neutral float-right" title="Software Catalog (Build 10.1)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../releases.html" class="btn btn-neutral float-left" title="Upcoming" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 
