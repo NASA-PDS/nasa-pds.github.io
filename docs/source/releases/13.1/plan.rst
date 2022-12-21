@@ -132,6 +132,20 @@ validate
    * `validate#480 <https://github.com/NASA-PDS/validate/issues/480>`_ Validate does not calculate overlaps correctly when Header is not first object in file
 * `validate#557 <https://github.com/NASA-PDS/validate/issues/557>`_ **Dockerize Validate**
    * `validate#556 <https://github.com/NASA-PDS/validate/issues/556>`_ As a user, I want to be able to use validate from a docker container
+* `validate#578 <https://github.com/NASA-PDS/validate/issues/578>`_ **B13.1 Fix Must-Have Priority Bugs**
+   * `validate#444 <https://github.com/NASA-PDS/validate/issues/444>`_ pds4.bundle option seems to not travel through enough subdirectories
+   * `validate#453 <https://github.com/NASA-PDS/validate/issues/453>`_ Validate should not check PDF/A validity if content validation is disabled
+   * `validate#474 <https://github.com/NASA-PDS/validate/issues/474>`_ Validate can't find files in directory specified by <directory_path_name>
+   * `validate#499 <https://github.com/NASA-PDS/validate/issues/499>`_ validate doesn't flag a data file with only LF
+   * `validate#503 <https://github.com/NASA-PDS/validate/issues/503>`_ validate passes confusing message to the command window
+   * `validate#511 <https://github.com/NASA-PDS/validate/issues/511>`_ Table_Character not accurately checking field formats
+   * `validate#519 <https://github.com/NASA-PDS/validate/issues/519>`_ Validate should throw record length error when record delimiter does not occur in correct location
+   * `validate#529 <https://github.com/NASA-PDS/validate/issues/529>`_  ERROR  [error.array.value_out_of_min_max_range] evaluation is not correct
+   * `validate#531 <https://github.com/NASA-PDS/validate/issues/531>`_ ERROR  [error.table.bad_file_read] incorrectly reports that GroupFieldBinary group_length is larger than size of contained fields
+   * `validate#544 <https://github.com/NASA-PDS/validate/issues/544>`_ validate gives a error.table.bad_field_read error
+   * `validate#554 <https://github.com/NASA-PDS/validate/issues/554>`_ --spot-check-data flag throws IOException
+   * `validate#564 <https://github.com/NASA-PDS/validate/issues/564>`_ Array object validation regression in v3.0.3
+   * `validate#576 <https://github.com/NASA-PDS/validate/issues/576>`_ validate does not correctly handle field format checks for hex values
 
 --------
 
@@ -190,6 +204,29 @@ pds-api
    * `pds-api#239 <https://github.com/NASA-PDS/pds-api/issues/239>`_ As a user, I want to get application/json response format by default if I request an API url in my browser
 * `pds-api#237 <https://github.com/NASA-PDS/pds-api/issues/237>`_ **Support Searching for Past Versions of Products with Differing LIDs**
    * `pds-api#148 <https://github.com/NASA-PDS/pds-api/issues/148>`_ As a user, I want to search for past versions of a product where the LID changed during the product history
+
+--------
+
+wds-implementation
+##################
+
+*PDS Web Design System*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pds-wds>`_
+     - `Github Repo <https://github.com/NASA-PDS/wds-implementation>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/wds-implementation/issues>`_ 
+     - `Backlog <https://github.com/NASA-PDS/wds-implementation/issues?q=is%3Aopen+is%3Aissue+label%3Abacklog>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/wds-implementation/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/wds-implementation/releases>`_ 
+
+* `wds-implementation#22 <https://github.com/NASA-PDS/wds-implementation/issues/22>`_ **Initial Data Search Journey Prototype**
+   * `wds-implementation#23 <https://github.com/NASA-PDS/wds-implementation/issues/23>`_ Show Search Results With PDS Styles
+   * `wds-implementation#24 <https://github.com/NASA-PDS/wds-implementation/issues/24>`_ Add Routing For Searches
+   * `wds-implementation#25 <https://github.com/NASA-PDS/wds-implementation/issues/25>`_ Show Search Results From API
+   * `wds-implementation#26 <https://github.com/NASA-PDS/wds-implementation/issues/26>`_ Integrate Search Results Feedback
 
 --------
 
