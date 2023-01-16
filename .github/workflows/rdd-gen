@@ -1,0 +1,53 @@
+name: Automated RDD Generation
+
+on: workflow_dispatch
+#  schedule:
+#    - cron: '0 0 * * FRI'
+
+jobs:
+  build: # job 1
+    name: 'Generate RDD'
+    runs-on: ubuntu-latest
+    if: github.actor != 'pdsen-ci'
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Install dependencies
+        run: |
+          build=13.1
+
+          pds-issues --format rst --issue_state closed --build ${build}
+          mkdir -p docs/source/releases/${build}
+          mv pdsen_issues.rst docs/source/releases/${build}/rdd.rst
+
+      - name: Make Sphinx
+        id: make
+        run: |
+          cd docs
+          make github
+          cd ..
+
+      - name: Push LDDs to Github
+        run: |
+          git config --local user.email "pdsen-ci@jpl.nasa.gov"
+          git config --local user.name "PDSEN CI Bot"
+          git add -A .
+          git commit --allow-empty -m "Auto-generated RDD by PDSEN CI Bot"
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
