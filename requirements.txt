@@ -1,5 +1,5 @@
-sphinx==6.1.3
+sphinx==4.5.0
 sphinx-rtd-theme==1.1.1
 gitpython==3.1.27
 sphinxemoji
-pds-github-util==0.27.0
+pds-github-util==0.27.2
