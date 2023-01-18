@@ -30,7 +30,7 @@ jobs:
           build=13.1
 
           export ZENHUB_TOKEN=${{ secrets.ZENHUB_TOKEN }}
-          pds-issues --token ${{ secrets.ADMIN_GITHUB_TOKEN }} --format rst --issue_state closed --build ${build}
+          pds-issues --token ${{ secrets.ADMIN_GITHUB_TOKEN }} --format rst --issue_state closed --build B${build}
           mkdir -p docs/source/releases/${build}
           mv pdsen_issues.rst docs/source/releases/${build}/rdd.rst
 
