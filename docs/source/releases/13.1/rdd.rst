@@ -36,6 +36,38 @@ applicable, as indicated by a specific icon in the following tables.
 
 --------
 
+Deep-archive
+------------
+*PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/deep-archive/>`_
+     - `Github Repo <https://github.com/NASA-PDS/deep-archive>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/deep-archive/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/deep-archive/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/deep-archive/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/deep-archive/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++---------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|Issue                                                                                                    |I&T       |Priority / Bug Severity   |
++=========================================================================================================+==========+==========================+
+|`deep-archive#137`_ Pagination handling does not appear to work properly for pds-deep-registry-archive   ||iandt|   |s.high                    |
++---------------------------------------------------------------------------------------------------------+----------+--------------------------+
+
+--------
+
 Doi-service
 -----------
 *Service and tools for generating DOIs for PDS bundles, collections, and data sets*
@@ -63,9 +95,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                    |I&T       |Priority / Bug Severity   |
 +=========================================================================================================+==========+==========================+
-|`doi-service#398`_ Still -- Unable to generate / export json report of DOI metadata                      ||iandt|   |s.medium                  |
-+---------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`doi-service#377`_ DOI Service does not accurately parse <author_list> and <editor_list> in XML labels   ||iandt|   |s.medium                  |
++---------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`doi-service#398`_ Still -- Unable to generate / export json report of DOI metadata                      ||iandt|   |s.medium                  |
 +---------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Requirements
@@ -115,9 +147,11 @@ Bugs
 +----------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                 |I&T       |Priority / Bug Severity   |
 +======================================================================+==========+==========================+
+|`doi-ui#130`_ Remove vulnerabilities from the package per npm audit   ||iandt|   |s.high                    |
++----------------------------------------------------------------------+----------+--------------------------+
 |`doi-ui#167`_ doi-editor release ui inoperable under Firefox          ||iandt|   |s.high                    |
 +----------------------------------------------------------------------+----------+--------------------------+
-|`doi-ui#130`_ Remove vulnerabilities from the package per npm audit   ||iandt|   |s.high                    |
+|`doi-ui#178`_ service does not start on at least 2 laptops            |          |s.high                    |
 +----------------------------------------------------------------------+----------+--------------------------+
 
 --------
@@ -149,9 +183,9 @@ Bugs
 +--------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                       |I&T       |Priority / Bug Severity   |
 +============================================================================================+==========+==========================+
-|`harvest#112`_ --overwrite flag is not respected for <bundles> elements in harvest config   ||iandt|   |s.high                    |
-+--------------------------------------------------------------------------------------------+----------+--------------------------+
 |`harvest#102`_ Harvest skips path that is the root of a soft link                           ||iandt|   |s.high                    |
++--------------------------------------------------------------------------------------------+----------+--------------------------+
+|`harvest#112`_ --overwrite flag is not respected for <bundles> elements in harvest config   ||iandt|   |s.high                    |
 +--------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
@@ -221,17 +255,17 @@ Bugs
 +====================================================================================================+==========+==========================+
 |`pds-api#240`_ API Client cannot connect to current deployed API                                    ||iandt|   |s.high                    |
 +----------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#214`_ vnd.nasa.pds.pds4+json format does return information                                ||iandt|   |s.medium                  |
+|`pds-api#215`_ vnd.nasa.pds.pds4+xml format does not return information                             ||iandt|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-api#213`_ Accept header of text/csv returns blank lines                                        ||iandt|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#199`_ `hits` appears to be showing the current page count, not the overall number of its   ||iandt|   |s.medium                  |
+|`pds-api#200`_ API performance degradation from B12.1 release                                       ||iandt|   |s.high                    |
 +----------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-api#220`_ Past versions are being returned by API, by default                                  ||iandt|   |s.high                    |
 +----------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#215`_ vnd.nasa.pds.pds4+xml format does not return information                             ||iandt|   |s.medium                  |
+|`pds-api#214`_ vnd.nasa.pds.pds4+json format does return information                                ||iandt|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`pds-api#200`_ API performance degradation from B12.1 release                                       ||iandt|   |s.high                    |
+|`pds-api#199`_ `hits` appears to be showing the current page count, not the overall number of its   ||iandt|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Requirements
@@ -240,9 +274,9 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                        |I&T       |Priority / Bug Severity   |
 +=============================================================================================================+==========+==========================+
-|`pds-api#221`_ As a user, I want to query only the latest versions of products unless explicitly requested   ||iandt|   |p.must-have               |
-+-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`pds-api#198`_ As a user, I want query responses for empty results to be clearly documented                  ||iandt|   |p.should-have             |
++-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`pds-api#221`_ As a user, I want to query only the latest versions of products unless explicitly requested   ||iandt|   |p.must-have               |
 +-------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
@@ -280,13 +314,13 @@ Other Updates
 Bugs
 ++++
 
-+-----------------------------------------------------------------------------+----------+--------------------------+
-|Issue                                                                        |I&T       |Priority / Bug Severity   |
-+=============================================================================+==========+==========================+
-|`pds4-information-model#506`_ hyb2 has incorrect namespace for IM v1.14      ||iandt|   |s.medium                  |
-+-----------------------------------------------------------------------------+----------+--------------------------+
-|`pds4-information-model#507`_ Bug generating BepiColombo SERENA dictionary   |          |s.medium                  |
-+-----------------------------------------------------------------------------+----------+--------------------------+
++-----------------------------------------------------------------------------+------+--------------------------+
+|Issue                                                                        |I&T   |Priority / Bug Severity   |
++=============================================================================+======+==========================+
+|`pds4-information-model#507`_ Bug generating BepiColombo SERENA dictionary   |      |s.medium                  |
++-----------------------------------------------------------------------------+------+--------------------------+
+|`pds4-information-model#506`_ hyb2 has incorrect namespace for IM v1.14      |      |s.medium                  |
++-----------------------------------------------------------------------------+------+--------------------------+
 
 Requirements
 ++++++++++++
@@ -358,13 +392,13 @@ Bugs
 +----------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                             |I&T       |Priority / Bug Severity   |
 +==================================================================================+==========+==========================+
-|`portal-tasks#47`_ [SECURITY] JQuery upgrade needed to avoid possible injection   ||iandt|   |s.high                    |
-+----------------------------------------------------------------------------------+----------+--------------------------+
 |`portal-tasks#54`_ Possible XSS vulnerability on data set view pages              ||iandt|   |s.critical                |
 +----------------------------------------------------------------------------------+----------+--------------------------+
-|`portal-tasks#36`_ PARTICLE LDD posted to v1 directory instead of v2              |          |s.medium                  |
+|`portal-tasks#47`_ [SECURITY] JQuery upgrade needed to avoid possible injection   ||iandt|   |s.high                    |
 +----------------------------------------------------------------------------------+----------+--------------------------+
 |`portal-tasks#31`_ Data release manager pages missing login session check         ||iandt|   |s.medium                  |
++----------------------------------------------------------------------------------+----------+--------------------------+
+|`portal-tasks#36`_ PARTICLE LDD posted to v1 directory instead of v2              |          |s.medium                  |
 +----------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
@@ -396,21 +430,21 @@ Bugs
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                          |I&T       |Priority / Bug Severity   |
 +===============================================================================================================+==========+==========================+
-|`registry#136`_ follow on to #118, registry-manager still unable to change archive status on bundle contents   ||iandt|   |s.high                    |
+|`registry#146`_ OpenSearch service of Registry won't start on Linux                                            ||iandt|   |s.high                    |
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry#118`_ archive status value was not changed on bundle's contents                                      ||iandt|   |s.high                    |
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`registry#97`_ registry-manager won't set archive-status on some collections                                   ||iandt|   |s.high                    |
+|`registry#132`_ Harvest is throwing errors of "Forbidden index write"                                          |          |s.high                    |
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`registry#146`_ OpenSearch service of Registry won't start on Linux                                            ||iandt|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`registry#149`_ Expo Registry fails to start                                                                   |          |s.medium                  |
-+---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`registry#120`_ Continuous Delivery not working with OpenSearch                                                |          |s.medium                  |
+|`registry#136`_ follow on to #118, registry-manager still unable to change archive status on bundle contents   ||iandt|   |s.high                    |
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry#150`_ TLS termination listening on wrong port                                                        ||iandt|   |s.medium                  |
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`registry#132`_ Harvest is throwing errors of "Forbidden index write"                                          |          |s.high                    |
+|`registry#97`_ registry-manager won't set archive-status on some collections                                   ||iandt|   |s.high                    |
++---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry#120`_ Continuous Delivery not working with OpenSearch                                                |          |s.medium                  |
++---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry#149`_ Expo Registry fails to start                                                                   |          |s.medium                  |
 +---------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
@@ -448,15 +482,17 @@ Other Updates
 Bugs
 ++++
 
-+-----------------------------------------------------------------------------+----------+--------------------------+
-|Issue                                                                        |I&T       |Priority / Bug Severity   |
-+=============================================================================+==========+==========================+
-|`registry-api#190`_ /all suffix returns a message which I don't understand   ||iandt|   |s.high                    |
-+-----------------------------------------------------------------------------+----------+--------------------------+
-|`registry-api#188`_ Stable Roundup can no longer trigger Imaging workflow    |          |s.medium                  |
-+-----------------------------------------------------------------------------+----------+--------------------------+
-|`registry-api#202`_ observational end-point returns collections              ||iandt|   |s.high                    |
-+-----------------------------------------------------------------------------+----------+--------------------------+
++---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|Issue                                                                                                                      |I&T       |Priority / Bug Severity   |
++===========================================================================================================================+==========+==========================+
+|`registry-api#188`_ Stable Roundup can no longer trigger Imaging workflow                                                  |          |s.medium                  |
++---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api#224`_ registry-api does not return latest version of product metadata when multiple versions are harvested   ||iandt|   |s.high                    |
++---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api#202`_ observational end-point returns collections                                                            ||iandt|   |s.high                    |
++---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api#190`_ /all suffix returns a message which I don't understand                                                 ||iandt|   |s.high                    |
++---------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Requirements
 ++++++++++++
@@ -464,9 +500,9 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                                                      |I&T       |Priority / Bug Severity   |
 +===========================================================================================================================================+==========+==========================+
-|`registry-api#212`_ As a user, I want the API to support redundant `/` in the url                                                          ||iandt|   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`registry-api#208`_ As a registry-tool/registry-user I want to ensure leading multiple forward-slashes in request paths are stripped out   ||iandt|   |p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`registry-api#212`_ As a user, I want the API to support redundant `/` in the url                                                          ||iandt|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
@@ -626,11 +662,11 @@ Bugs
 +-----------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                              |I&T       |Priority / Bug Severity   |
 +===================================================================================+==========+==========================+
+|`roundup-action#96`_ Roundup failing on unstable build                             |          |s.medium                  |
++-----------------------------------------------------------------------------------+----------+--------------------------+
 |`roundup-action#103`_ unstable build failed                                        ||iandt|   |s.medium                  |
 +-----------------------------------------------------------------------------------+----------+--------------------------+
 |`roundup-action#98`_ git push in roundup action failing w/ remote ahead of local   ||iandt|   |s.low                     |
-+-----------------------------------------------------------------------------------+----------+--------------------------+
-|`roundup-action#96`_ Roundup failing on unstable build                             |          |s.medium                  |
 +-----------------------------------------------------------------------------------+----------+--------------------------+
 
 --------
@@ -682,33 +718,33 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                                                                               |I&T       |Priority / Bug Severity   |
 +====================================================================================================================================================+==========+==========================+
-|`validate#444`_ pds4.bundle option seems to not travel through enough subdirectories                                                                ||iandt|   |p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#564`_ Array object validation regression in v3.0.3                                                                                        ||iandt|   |p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#576`_ validate does not correctly handle field format checks for hex values                                                               ||iandt|   |p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#474`_ Validate can't find files in directory specified by <directory_path_name>                                                           ||iandt|   |p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#503`_ validate passes confusing message to the command window                                                                             ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#453`_ Validate should not check PDF/A validity if content validation is disabled                                                          ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#554`_ --spot-check-data flag throws IOException                                                                                           ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#473`_ NullPointerException when Table_Delimited is missing records attribute                                                              ||iandt|   |s.low                     |
+|`validate#529`_  ERROR  [error.array.value_out_of_min_max_range] evaluation is not correct                                                          ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#544`_ validate gives a error.table.bad_field_read error                                                                                   ||iandt|   |p.must-have               |
+|`validate#564`_ Array object validation regression in v3.0.3                                                                                        ||iandt|   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`validate#473`_ NullPointerException when Table_Delimited is missing records attribute                                                              ||iandt|   |s.low                     |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#155`_ Fix uncaught exception error when validating an array object                                                                        ||iandt|   |s.low                     |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#499`_ validate doesn't flag a data file with only LF                                                                                      ||iandt|   |p.must-have               |
+|`validate#474`_ Validate can't find files in directory specified by <directory_path_name>                                                           ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#511`_ Table_Character not accurately checking field formats                                                                               ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#529`_  ERROR  [error.array.value_out_of_min_max_range] evaluation is not correct                                                          ||iandt|   |p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#531`_ ERROR  [error.table.bad_file_read] incorrectly reports that GroupFieldBinary group_length is larger than size of contained fields   ||iandt|   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`validate#503`_ validate passes confusing message to the command window                                                                             ||iandt|   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`validate#499`_ validate doesn't flag a data file with only LF                                                                                      ||iandt|   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`validate#544`_ validate gives a error.table.bad_field_read error                                                                                   ||iandt|   |p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
+|`validate#444`_ pds4.bundle option seems to not travel through enough subdirectories                                                                ||iandt|   |p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Enhancements
@@ -717,11 +753,11 @@ Enhancements
 +--------------------------------------------------------------------------------------------+----------+--------------------------+
 |Issue                                                                                       |I&T       |Priority / Bug Severity   |
 +============================================================================================+==========+==========================+
+|`validate#436`_ Improve error messages for overlapping objects in a label                   ||iandt|   |p.should-have             |
++--------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#569`_ Improve error message when file is truncated and cannot be read             ||iandt|   |p.could-have              |
 +--------------------------------------------------------------------------------------------+----------+--------------------------+
 |`validate#537`_ Refactor `getMessageCountBasedOnProblemType` function using introspection   |          |unknown                   |
-+--------------------------------------------------------------------------------------------+----------+--------------------------+
-|`validate#436`_ Improve error messages for overlapping objects in a label                   ||iandt|   |p.should-have             |
 +--------------------------------------------------------------------------------------------+----------+--------------------------+
 
 Liens
@@ -786,78 +822,81 @@ as follows:
 .. |iandt| image:: https://nasa-pds.github.io/_static/images/noun_certified_18093.png
    :alt: I&T
    :width: 20
-.. _doi-service#398: https://github.com/NASA-PDS/doi-service/issues/398
+.. _deep-archive#137: https://github.com/NASA-PDS/deep-archive/issues/137
 .. _doi-service#377: https://github.com/NASA-PDS/doi-service/issues/377
+.. _doi-service#398: https://github.com/NASA-PDS/doi-service/issues/398
 .. _doi-service#283: https://github.com/NASA-PDS/doi-service/issues/283
 .. _doi-service#363: https://github.com/NASA-PDS/doi-service/issues/363
-.. _doi-ui#167: https://github.com/NASA-PDS/doi-ui/issues/167
 .. _doi-ui#130: https://github.com/NASA-PDS/doi-ui/issues/130
-.. _harvest#112: https://github.com/NASA-PDS/harvest/issues/112
+.. _doi-ui#167: https://github.com/NASA-PDS/doi-ui/issues/167
+.. _doi-ui#178: https://github.com/NASA-PDS/doi-ui/issues/178
 .. _harvest#102: https://github.com/NASA-PDS/harvest/issues/102
+.. _harvest#112: https://github.com/NASA-PDS/harvest/issues/112
 .. _harvest#106: https://github.com/NASA-PDS/harvest/issues/106
 .. _nucleus#14: https://github.com/NASA-PDS/nucleus/issues/14
 .. _nucleus#18: https://github.com/NASA-PDS/nucleus/issues/18
 .. _pds-api#240: https://github.com/NASA-PDS/pds-api/issues/240
-.. _pds-api#214: https://github.com/NASA-PDS/pds-api/issues/214
-.. _pds-api#213: https://github.com/NASA-PDS/pds-api/issues/213
-.. _pds-api#199: https://github.com/NASA-PDS/pds-api/issues/199
-.. _pds-api#220: https://github.com/NASA-PDS/pds-api/issues/220
 .. _pds-api#215: https://github.com/NASA-PDS/pds-api/issues/215
+.. _pds-api#213: https://github.com/NASA-PDS/pds-api/issues/213
 .. _pds-api#200: https://github.com/NASA-PDS/pds-api/issues/200
-.. _pds-api#221: https://github.com/NASA-PDS/pds-api/issues/221
+.. _pds-api#220: https://github.com/NASA-PDS/pds-api/issues/220
+.. _pds-api#214: https://github.com/NASA-PDS/pds-api/issues/214
+.. _pds-api#199: https://github.com/NASA-PDS/pds-api/issues/199
 .. _pds-api#198: https://github.com/NASA-PDS/pds-api/issues/198
+.. _pds-api#221: https://github.com/NASA-PDS/pds-api/issues/221
 .. _pds-api#194: https://github.com/NASA-PDS/pds-api/issues/194
-.. _pds4-information-model#506: https://github.com/NASA-PDS/pds4-information-model/issues/506
 .. _pds4-information-model#507: https://github.com/NASA-PDS/pds4-information-model/issues/507
+.. _pds4-information-model#506: https://github.com/NASA-PDS/pds4-information-model/issues/506
 .. _pds4-information-model#473: https://github.com/NASA-PDS/pds4-information-model/issues/473
 .. _pds4-jparser#57: https://github.com/NASA-PDS/pds4-jparser/issues/57
-.. _portal-tasks#47: https://github.com/NASA-PDS/portal-tasks/issues/47
 .. _portal-tasks#54: https://github.com/NASA-PDS/portal-tasks/issues/54
-.. _portal-tasks#36: https://github.com/NASA-PDS/portal-tasks/issues/36
+.. _portal-tasks#47: https://github.com/NASA-PDS/portal-tasks/issues/47
 .. _portal-tasks#31: https://github.com/NASA-PDS/portal-tasks/issues/31
-.. _registry#136: https://github.com/NASA-PDS/registry/issues/136
-.. _registry#118: https://github.com/NASA-PDS/registry/issues/118
-.. _registry#97: https://github.com/NASA-PDS/registry/issues/97
+.. _portal-tasks#36: https://github.com/NASA-PDS/portal-tasks/issues/36
 .. _registry#146: https://github.com/NASA-PDS/registry/issues/146
-.. _registry#149: https://github.com/NASA-PDS/registry/issues/149
-.. _registry#120: https://github.com/NASA-PDS/registry/issues/120
-.. _registry#150: https://github.com/NASA-PDS/registry/issues/150
+.. _registry#118: https://github.com/NASA-PDS/registry/issues/118
 .. _registry#132: https://github.com/NASA-PDS/registry/issues/132
+.. _registry#136: https://github.com/NASA-PDS/registry/issues/136
+.. _registry#150: https://github.com/NASA-PDS/registry/issues/150
+.. _registry#97: https://github.com/NASA-PDS/registry/issues/97
+.. _registry#120: https://github.com/NASA-PDS/registry/issues/120
+.. _registry#149: https://github.com/NASA-PDS/registry/issues/149
 .. _registry#34: https://github.com/NASA-PDS/registry/issues/34
-.. _registry-api#190: https://github.com/NASA-PDS/registry-api/issues/190
 .. _registry-api#188: https://github.com/NASA-PDS/registry-api/issues/188
+.. _registry-api#224: https://github.com/NASA-PDS/registry-api/issues/224
 .. _registry-api#202: https://github.com/NASA-PDS/registry-api/issues/202
-.. _registry-api#212: https://github.com/NASA-PDS/registry-api/issues/212
+.. _registry-api#190: https://github.com/NASA-PDS/registry-api/issues/190
 .. _registry-api#208: https://github.com/NASA-PDS/registry-api/issues/208
+.. _registry-api#212: https://github.com/NASA-PDS/registry-api/issues/212
 .. _registry-common#29: https://github.com/NASA-PDS/registry-common/issues/29
 .. _registry-crawler-service#26: https://github.com/NASA-PDS/registry-crawler-service/issues/26
 .. _registry-harvest-service#25: https://github.com/NASA-PDS/registry-harvest-service/issues/25
 .. _registry-mgr#57: https://github.com/NASA-PDS/registry-mgr/issues/57
+.. _roundup-action#96: https://github.com/NASA-PDS/roundup-action/issues/96
 .. _roundup-action#103: https://github.com/NASA-PDS/roundup-action/issues/103
 .. _roundup-action#98: https://github.com/NASA-PDS/roundup-action/issues/98
-.. _roundup-action#96: https://github.com/NASA-PDS/roundup-action/issues/96
 .. _validate#481: https://github.com/NASA-PDS/validate/issues/481
 .. _validate#425: https://github.com/NASA-PDS/validate/issues/425
 .. _validate#480: https://github.com/NASA-PDS/validate/issues/480
 .. _validate#557: https://github.com/NASA-PDS/validate/issues/557
 .. _validate#556: https://github.com/NASA-PDS/validate/issues/556
-.. _validate#444: https://github.com/NASA-PDS/validate/issues/444
-.. _validate#564: https://github.com/NASA-PDS/validate/issues/564
 .. _validate#576: https://github.com/NASA-PDS/validate/issues/576
-.. _validate#474: https://github.com/NASA-PDS/validate/issues/474
-.. _validate#503: https://github.com/NASA-PDS/validate/issues/503
 .. _validate#453: https://github.com/NASA-PDS/validate/issues/453
 .. _validate#554: https://github.com/NASA-PDS/validate/issues/554
-.. _validate#473: https://github.com/NASA-PDS/validate/issues/473
-.. _validate#544: https://github.com/NASA-PDS/validate/issues/544
-.. _validate#155: https://github.com/NASA-PDS/validate/issues/155
-.. _validate#499: https://github.com/NASA-PDS/validate/issues/499
-.. _validate#511: https://github.com/NASA-PDS/validate/issues/511
 .. _validate#529: https://github.com/NASA-PDS/validate/issues/529
+.. _validate#564: https://github.com/NASA-PDS/validate/issues/564
+.. _validate#473: https://github.com/NASA-PDS/validate/issues/473
+.. _validate#155: https://github.com/NASA-PDS/validate/issues/155
+.. _validate#474: https://github.com/NASA-PDS/validate/issues/474
+.. _validate#511: https://github.com/NASA-PDS/validate/issues/511
 .. _validate#531: https://github.com/NASA-PDS/validate/issues/531
+.. _validate#503: https://github.com/NASA-PDS/validate/issues/503
+.. _validate#499: https://github.com/NASA-PDS/validate/issues/499
+.. _validate#544: https://github.com/NASA-PDS/validate/issues/544
+.. _validate#444: https://github.com/NASA-PDS/validate/issues/444
+.. _validate#436: https://github.com/NASA-PDS/validate/issues/436
 .. _validate#569: https://github.com/NASA-PDS/validate/issues/569
 .. _validate#537: https://github.com/NASA-PDS/validate/issues/537
-.. _validate#436: https://github.com/NASA-PDS/validate/issues/436
 .. _Software Release Summary (B13.1): https://nasa-pds.github.io/releases/13.1/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
