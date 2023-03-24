@@ -76,6 +76,10 @@ Cloud-tasks
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+`cloud-tasks#34`_ Phase 1: Plan and Architect SBN-PSI Catalina Sky Survey Migration
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
 `cloud-tasks#40`_ NGAP Onboarding
 +++++++++++++++++++++++++++++++++
 No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
@@ -124,29 +128,6 @@ Bugs
 
 --------
 
-Design-team
------------
-*PDS.nasa.gov User Experience Task Issue and Prototype repository*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/design-team#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/design-team>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/design-team/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/design-team/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/design-team/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/design-team/releases>`_ 
-
-
-Planned Updates
-~~~~~~~~~~~~~~~
-`design-team#161`_ B13.1 User Journey Figma Prototyping: Homepage & Search
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
-
---------
-
 Doi-service
 -----------
 *Service and tools for generating DOIs for PDS bundles, collections, and data sets*
@@ -174,9 +155,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                    |I&T Status          |Priority / Bug Severity   |
 +=========================================================================================================+====================+==========================+
-|`doi-service#398`_ Still -- Unable to generate / export json report of DOI metadata                      ||:yellow_circle:|   |s.medium                  |
-+---------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`doi-service#377`_ DOI Service does not accurately parse <author_list> and <editor_list> in XML labels   ||:green_circle:|    |s.medium                  |
++---------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`doi-service#398`_ Still -- Unable to generate / export json report of DOI metadata                      ||:yellow_circle:|   |s.medium                  |
 +---------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -218,7 +199,9 @@ Doi-ui
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
+`doi-ui#153`_ Develop DOI Editor and Service Documentation
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -228,9 +211,9 @@ Bugs
 +----------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                 |I&T Status          |Priority / Bug Severity   |
 +======================================================================+====================+==========================+
-|`doi-ui#167`_ doi-editor release ui inoperable under Firefox          ||:yellow_circle:|   |s.high                    |
-+----------------------------------------------------------------------+--------------------+--------------------------+
 |`doi-ui#130`_ Remove vulnerabilities from the package per npm audit   ||:yellow_circle:|   |s.high                    |
++----------------------------------------------------------------------+--------------------+--------------------------+
+|`doi-ui#167`_ doi-editor release ui inoperable under Firefox          ||:yellow_circle:|   |s.high                    |
 +----------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -262,9 +245,9 @@ Bugs
 +--------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                       |I&T Status          |Priority / Bug Severity   |
 +============================================================================================+====================+==========================+
-|`harvest#112`_ --overwrite flag is not respected for <bundles> elements in harvest config   ||:yellow_circle:|   |s.high                    |
-+--------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`harvest#102`_ Harvest skips path that is the root of a soft link                           ||:green_circle:|    |s.high                    |
++--------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`harvest#112`_ --overwrite flag is not respected for <bundles> elements in harvest config   ||:yellow_circle:|   |s.high                    |
 +--------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -295,6 +278,16 @@ Nucleus
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+`nucleus#2`_ Initial Implementation and Operationalize Nucleus
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++-----------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|Issue                                                                              |I&T Status          |Level         |Priority / Bug Severity   |
++===================================================================================+====================+==============+==========================+
+|`nucleus#29`_ As a user, I want to know the baseline architecture and deployment   ||:yellow_circle:|   |requirement   |p.must-have               |
++-----------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+
+
 `nucleus#14`_ B13.1 Technology Selection and Internal Review
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
@@ -313,16 +306,28 @@ No requirements, significant enhancements, or bug fixes identified for this Buil
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
-Other Updates
-~~~~~~~~~~~~~
-Requirements
-++++++++++++
+--------
 
-+-----------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                              |I&T Status          |Priority / Bug Severity   |
-+===================================================================================+====================+==========================+
-|`nucleus#29`_ As a user, I want to know the baseline architecture and deployment   ||:yellow_circle:|   |p.must-have               |
-+-----------------------------------------------------------------------------------+--------------------+--------------------------+
+Operations
+----------
+*Tickets for the PDSEN Operations Team*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/operations#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/operations>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/operations/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/operations/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/operations/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/operations/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+`operations#309`_ Initial Wordpress migration for pds-engineering website
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
 --------
 
@@ -343,6 +348,10 @@ Pds-api
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+`pds-api#181`_ Initial PDS Keyword Search Design
+++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
 `pds-api#230`_ Support latest product search from API
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -375,9 +384,7 @@ Bugs
 +----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                               |I&T Status          |Priority / Bug Severity   |
 +====================================================================================================+====================+==========================+
-|`pds-api#240`_ API Client cannot connect to current deployed API                                    ||:yellow_circle:|   |s.high                    |
-+----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`pds-api#214`_ vnd.nasa.pds.pds4+json format does return information                                ||:yellow_circle:|   |s.medium                  |
+|`pds-api#215`_ vnd.nasa.pds.pds4+xml format does not return information                             ||:green_circle:|    |s.medium                  |
 +----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#251`_ link to registry-api documentation from registry page is incorrect                   ||:blue_circle:|     |s.low                     |
 +----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
@@ -385,11 +392,13 @@ Bugs
 +----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#199`_ `hits` appears to be showing the current page count, not the overall number of its   ||:yellow_circle:|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds-api#214`_ vnd.nasa.pds.pds4+json format does return information                                ||:yellow_circle:|   |s.medium                  |
++----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#196`_ Swagger API page does not show the expected deployed API version                     ||:yellow_circle:|   |s.low                     |
 +----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#213`_ Accept header of text/csv returns blank lines                                        ||:yellow_circle:|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`pds-api#215`_ vnd.nasa.pds.pds4+xml format does not return information                             ||:green_circle:|    |s.medium                  |
+|`pds-api#240`_ API Client cannot connect to current deployed API                                    ||:yellow_circle:|   |s.high                    |
 +----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -398,9 +407,9 @@ Requirements
 +----------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                         |I&T Status          |Priority / Bug Severity   |
 +==============================================================================================+====================+==========================+
-|`pds-api#198`_ As a user, I want query responses for empty results to be clearly documented   ||:green_circle:|    |p.should-have             |
-+----------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#175`_ As a user, I want to know how to query observational data only                 ||:yellow_circle:|   |p.must-have               |
++----------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds-api#198`_ As a user, I want query responses for empty results to be clearly documented   ||:green_circle:|    |p.should-have             |
 +----------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -435,6 +444,14 @@ Planned Updates
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
+`pds4-information-model#544`_ Test and Validate Term Mapping Implementation
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
+`pds4-information-model#546`_ B13.1 Continue Refactoring the IMTool/LDDTool Code
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
 `pds4-information-model#547`_ B13.1 Updates per CCB-Approved SCRs
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -455,6 +472,10 @@ No requirements, significant enhancements, or bug fixes identified for this Buil
 +---------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
 
 
+`pds4-information-model#549`_ B13.1 Initial Support for Target Ontology Project
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
 Other Updates
 ~~~~~~~~~~~~~
 Bugs
@@ -463,13 +484,13 @@ Bugs
 +-------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                          |I&T Status          |Priority / Bug Severity   |
 +===============================================================================================================================+====================+==========================+
-|`pds4-information-model#507`_ Bug generating BepiColombo SERENA dictionary                                                     ||:blue_circle:|     |s.medium                  |
+|`pds4-information-model#506`_ hyb2 has incorrect namespace for IM v1.14                                                        ||:blue_circle:|     |s.medium                  |
 +-------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds4-information-model#606`_ LDDTool does not write a DocBook file for the Common Dictionary                                  ||:blue_circle:|     |s.medium                  |
 +-------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds4-information-model#618`_ Information Model does not have Product_External included in Identification_Area.product_class   ||:yellow_circle:|   |s.critical                |
 +-------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`pds4-information-model#506`_ hyb2 has incorrect namespace for IM v1.14                                                        ||:blue_circle:|     |s.medium                  |
+|`pds4-information-model#507`_ Bug generating BepiColombo SERENA dictionary                                                     ||:blue_circle:|     |s.medium                  |
 +-------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -478,11 +499,11 @@ Requirements
 +-----------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                                    |I&T Status          |Priority / Bug Severity   |
 +=========================================================================================================================================+====================+==========================+
-|`pds4-information-model#458`_ As a developer I want to have the PDS4 Information Model expressed in the RDF/OWL/TTL format.              ||:yellow_circle:|   |p.should-have             |
+|`pds4-information-model#502`_ CCB-350: Adopt more rigorous / stringent rules for leap seconds and use of "24:00:00" in datetimes         ||:yellow_circle:|   |p.must-have               |
 +-----------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds4-information-model#620`_ As a user I want to export the IM in the RDF/OWL format in RDF format                                      ||:blue_circle:|     |p.could-have              |
 +-----------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`pds4-information-model#502`_ CCB-350: Adopt more rigorous / stringent rules for leap seconds and use of "24:00:00" in datetimes         ||:yellow_circle:|   |p.must-have               |
+|`pds4-information-model#458`_ As a developer I want to have the PDS4 Information Model expressed in the RDF/OWL/TTL format.              ||:yellow_circle:|   |p.should-have             |
 +-----------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds4-information-model#473`_ As a user, I want to describe a relationship between an attribute in the model and the column of a table   ||:yellow_circle:|   |p.should-have             |
 +-----------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
@@ -548,17 +569,17 @@ Bugs
 +----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                     |I&T Status          |Priority / Bug Severity   |
 +==========================================================================================================+====================+==========================+
-|`portal-tasks#54`_ Possible XSS vulnerability on data set view pages                                      ||:yellow_circle:|   |s.critical                |
+|`portal-tasks#31`_ Data release manager pages missing login session check                                 ||:yellow_circle:|   |s.medium                  |
++----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`portal-tasks#56`_ SQL permission on data-search                                                          ||:blue_circle:|     |s.critical                |
 +----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`portal-tasks#8`_ URL Encoding errors from Subscription Service pages                                     ||:yellow_circle:|   |s.medium                  |
++----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`portal-tasks#54`_ Possible XSS vulnerability on data set view pages                                      ||:yellow_circle:|   |s.critical                |
 +----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`portal-tasks#55`_ dataset status needs to be updated to better handle potential security vulnerability   ||:yellow_circle:|   |s.critical                |
 +----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`portal-tasks#47`_ [SECURITY] JQuery upgrade needed to avoid possible injection                           ||:yellow_circle:|   |s.high                    |
-+----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`portal-tasks#31`_ Data release manager pages missing login session check                                 ||:yellow_circle:|   |s.medium                  |
-+----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`portal-tasks#56`_ SQL permission on data-search                                                          ||:blue_circle:|     |s.critical                |
 +----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -613,17 +634,17 @@ Bugs
 +=============================================================================================================================================================================================+====================+==========================+
 |`registry#136`_ follow on to #118, registry-manager still unable to change archive status on bundle contents                                                                                 ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry#118`_ archive status value was not changed on bundle's contents                                                                                                                    ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry#146`_ OpenSearch service of Registry won't start on Linux                                                                                                                          ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry#97`_ registry-manager won't set archive-status on some collections                                                                                                                 ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry#150`_ TLS termination listening on wrong port                                                                                                                                      ||:yellow_circle:|   |s.medium                  |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry#120`_ Continuous Delivery not working with OpenSearch                                                                                                                              ||:blue_circle:|     |s.medium                  |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry#159`_ ref_collection_lidvid field in some node registries populated using older versions of registry loader tools create string fields in the schema vs. the expected list types   ||:yellow_circle:|   |s.medium                  |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry#146`_ OpenSearch service of Registry won't start on Linux                                                                                                                          ||:yellow_circle:|   |s.high                    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry#97`_ registry-manager won't set archive-status on some collections                                                                                                                 ||:yellow_circle:|   |s.high                    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry#118`_ archive status value was not changed on bundle's contents                                                                                                                    ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -632,9 +653,9 @@ Requirements
 +-----------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                          |I&T Status          |Priority / Bug Severity   |
 +===============================================================================================+====================+==========================+
-|`registry#100`_ Update documentation to include explicit example of how to query staged data   ||:yellow_circle:|   |p.must-have               |
-+-----------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry#153`_ As a user, I want to all metadata attributes to be searchable                  ||:yellow_circle:|   |p.must-have               |
++-----------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry#100`_ Update documentation to include explicit example of how to query staged data   ||:yellow_circle:|   |p.must-have               |
 +-----------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -669,50 +690,62 @@ Registry-api
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
+`registry-api#257`_ B13.1 Fix must-have bugs for Registry API
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++--------------------------------------------------------------------------------------------+--------------------+--------+--------------------------+
+|Issue                                                                                       |I&T Status          |Level   |Priority / Bug Severity   |
++============================================================================================+====================+========+==========================+
+|`registry-api#241`_ requests with bad `q=` syntax should return 400 error                   ||:yellow_circle:|   |bug     |s.medium                  |
++--------------------------------------------------------------------------------------------+--------------------+--------+--------------------------+
+|`registry-api#258`_ not found lidvid does not return 404 error                              ||:yellow_circle:|   |bug     |s.medium                  |
++--------------------------------------------------------------------------------------------+--------------------+--------+--------------------------+
+|`registry-api#260`_ api does not return 400 error when q parameter value cannot be parsed   ||:yellow_circle:|   |bug     |s.medium                  |
++--------------------------------------------------------------------------------------------+--------------------+--------+--------------------------+
+|`registry-api#261`_ The members of a bundle can not be requested                            ||:yellow_circle:|   |bug     |s.high                    |
++--------------------------------------------------------------------------------------------+--------------------+--------+--------------------------+
+|`registry-api#287`_ Search criteria not producing expected matches                          ||:yellow_circle:|   |task    |unknown                   |
++--------------------------------------------------------------------------------------------+--------------------+--------+--------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
 Bugs
 ++++
 
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                                                      |I&T Status          |Priority / Bug Severity   |
-+===========================================================================================================================+====================+==========================+
-|`registry-api#227`_ Keyword search does not work on registry-api deployed on pds.nasa.gov                                  ||:yellow_circle:|   |s.medium                  |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#200`_ /classes endpoint does not work in a browser                                                           ||:yellow_circle:|   |s.medium                  |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#231`_ /classes/collections/<lidvid>/members (and deprecated equivalent) hangs                                ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#206`_ When q="" the returned status is 500 instead of 400                                                    ||:yellow_circle:|   |s.low                     |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#240`_ Pagination not working as expected with /collections/{identifier}/products                             ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#258`_ not found lidvid does not return 404 error                                                             ||:yellow_circle:|   |s.medium                  |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#234`_ registry-api does not respect VID when a LIDVID is used as an id, instead returns latest version       ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#190`_ /all suffix returns a message which I don't understand                                                 ||:green_circle:|    |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#207`_ lidvid not found raises 500 error                                                                      ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#224`_ registry-api does not return latest version of product metadata when multiple versions are harvested   ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#260`_ api does not return 400 error when q parameter value cannot be parsed                                  ||:yellow_circle:|   |s.medium                  |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#241`_ requests with bad `q=` syntax should return 400 error                                                  ||:yellow_circle:|   |s.medium                  |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#202`_ observational end-point returns collections                                                            ||:green_circle:|    |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#211`_ swaggger ui error in production                                                                        ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#196`_ documents / members returns an error                                                                   ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#261`_ The members of a bundle can not be requested                                                           ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#121`_ Fix vulnerabilities raised by sonalift                                                                 ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                                                     |I&T Status          |Priority / Bug Severity   |
++==========================================================================================================================================+====================+==========================+
+|`registry-api#231`_ /classes/collections/<lidvid>/members (and deprecated equivalent) hangs                                               ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#224`_ registry-api does not return latest version of product metadata when multiple versions are harvested                  ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#234`_ registry-api does not respect VID when a LIDVID is used as an id, instead returns latest version                      ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#196`_ documents / members returns an error                                                                                  ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#191`_ version number are treated as floats                                                                                  ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#207`_ lidvid not found raises 500 error                                                                                     ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#211`_ swaggger ui error in production                                                                                       ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#202`_ observational end-point returns collections                                                                           ||:green_circle:|    |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#200`_ /classes endpoint does not work in a browser                                                                          ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#190`_ /all suffix returns a message which I don't understand                                                                ||:green_circle:|    |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#293`_ Requests with Accept:application/vnd.nasa.gds.pds4+json fail for products with no ops:Label_File_Info/ops:file_name   ||:blue_circle:|     |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#206`_ When q="" the returned status is 500 instead of 400                                                                   ||:yellow_circle:|   |s.low                     |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#121`_ Fix vulnerabilities raised by sonalift                                                                                ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#227`_ Keyword search does not work on registry-api deployed on pds.nasa.gov                                                 ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#240`_ Pagination not working as expected with /collections/{identifier}/products                                            ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
 ++++++++++++
@@ -720,15 +753,15 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                                      |I&T Status          |Priority / Bug Severity   |
 +===========================================================================================================================================+====================+==========================+
-|`registry-api#282`_ As a user, I want to search by any metadata attribute                                                                  ||:yellow_circle:|   |p.must-have               |
+|`registry-api#208`_ As a registry-tool/registry-user I want to ensure leading multiple forward-slashes in request paths are stripped out   ||:green_circle:|    |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#223`_ As a user, I want to know the members of a bundle product                                                              ||:yellow_circle:|   |p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#212`_ As a user, I want the API to support redundant `/` in the url                                                          ||:green_circle:|    |p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#248`_ Suggest: Return Content-Type application/json by default                                                               ||:yellow_circle:|   |unknown                   |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#208`_ As a registry-tool/registry-user I want to ensure leading multiple forward-slashes in request paths are stripped out   ||:green_circle:|    |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#212`_ As a user, I want the API to support redundant `/` in the url                                                          ||:green_circle:|    |p.should-have             |
+|`registry-api#282`_ As a user, I want to search by any metadata attribute                                                                  ||:yellow_circle:|   |p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -824,15 +857,15 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                             |I&T Status          |Priority / Bug Severity   |
 +==================================================================================================================+====================+==========================+
+|`roundup-action#96`_ Roundup failing on unstable build                                                            ||:blue_circle:|     |s.medium                  |
++------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`roundup-action#98`_ git push in roundup action failing w/ remote ahead of local                                  ||:yellow_circle:|   |s.low                     |
++------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`roundup-action#104`_ Versions in CHANGELOG off a bit since we moved to release tagging scheme on Java projects   ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`roundup-action#105`_ Roundup broken for python repos                                                             ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`roundup-action#103`_ unstable build failed                                                                       ||:yellow_circle:|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`roundup-action#104`_ Versions in CHANGELOG off a bit since we moved to release tagging scheme on Java projects   ||:yellow_circle:|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`roundup-action#96`_ Roundup failing on unstable build                                                            ||:blue_circle:|     |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -987,11 +1020,11 @@ Bugs
 +================================================================================================================+===================+==========================+
 |`validate#473`_ NullPointerException when Table_Delimited is missing records attribute                          ||:green_circle:|   |s.low                     |
 +----------------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
+|`validate#155`_ Fix uncaught exception error when validating an array object                                    ||:green_circle:|   |s.low                     |
++----------------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
 |`validate#593`_ Regression in validate no longer enabling CRLF to be embedded within a Table_Character record   ||:green_circle:|   |s.high                    |
 +----------------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
 |`validate#551`_ Validate fails regression test on issue 188                                                     ||:green_circle:|   |s.medium                  |
-+----------------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
-|`validate#155`_ Fix uncaught exception error when validating an array object                                    ||:green_circle:|   |s.low                     |
 +----------------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
 
 Enhancements
@@ -1002,10 +1035,56 @@ Enhancements
 +============================================================================================+====================+==========================+
 |`validate#537`_ Refactor `getMessageCountBasedOnProblemType` function using introspection   ||:blue_circle:|     |unknown                   |
 +--------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#569`_ Improve error message when file is truncated and cannot be read             ||:yellow_circle:|   |p.could-have              |
-+--------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#436`_ Improve error messages for overlapping objects in a label                   ||:yellow_circle:|   |p.should-have             |
 +--------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#569`_ Improve error message when file is truncated and cannot be read             ||:yellow_circle:|   |p.could-have              |
++--------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Wds-implementation
+------------------
+*PDS Web Design System*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pds-wds>`_
+     - `Github Repo <https://github.com/NASA-PDS/wds-implementation>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/wds-implementation/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/wds-implementation/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/wds-implementation/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/wds-implementation/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+`wds-implementation#22`_ Initial Data Search Journey Prototype
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
+--------
+
+Web-modernization
+-----------------
+*PDS.nasa.gov Web Modernization repo for managing the overall design process and user testing for modernizing the PDS web experience.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/web-modernization#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/web-modernization>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/web-modernization/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/web-modernization/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/web-modernization/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/web-modernization/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+`web-modernization#161`_ B13.1 User Journey Figma Prototyping: Homepage & Search
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
 Liens
 =====
@@ -1073,45 +1152,51 @@ as follows:
 .. _pds4-information-model#608: https://github.com/NASA-PDS/pds4-information-model/issues/608
 .. _pds4-information-model#611: https://github.com/NASA-PDS/pds4-information-model/issues/611
 .. _pds4-information-model#616: https://github.com/NASA-PDS/pds4-information-model/issues/616
+.. _cloud-tasks#34: https://github.com/NASA-PDS/cloud-tasks/issues/34
 .. _cloud-tasks#40: https://github.com/NASA-PDS/cloud-tasks/issues/40
 .. _cloud-tasks#57: https://github.com/NASA-PDS/cloud-tasks/issues/57
 .. _cloud-tasks#60: https://github.com/NASA-PDS/cloud-tasks/issues/60
 .. _deep-archive#134: https://github.com/NASA-PDS/deep-archive/issues/134
 .. _deep-archive#137: https://github.com/NASA-PDS/deep-archive/issues/137
-.. _design-team#161: https://github.com/NASA-PDS/design-team/issues/161
-.. _doi-service#398: https://github.com/NASA-PDS/doi-service/issues/398
 .. _doi-service#377: https://github.com/NASA-PDS/doi-service/issues/377
+.. _doi-service#398: https://github.com/NASA-PDS/doi-service/issues/398
 .. _doi-service#344: https://github.com/NASA-PDS/doi-service/issues/344
 .. _doi-service#283: https://github.com/NASA-PDS/doi-service/issues/283
 .. _doi-service#363: https://github.com/NASA-PDS/doi-service/issues/363
-.. _doi-ui#167: https://github.com/NASA-PDS/doi-ui/issues/167
+.. _doi-ui#153: https://github.com/NASA-PDS/doi-ui/issues/153
 .. _doi-ui#130: https://github.com/NASA-PDS/doi-ui/issues/130
-.. _harvest#112: https://github.com/NASA-PDS/harvest/issues/112
+.. _doi-ui#167: https://github.com/NASA-PDS/doi-ui/issues/167
 .. _harvest#102: https://github.com/NASA-PDS/harvest/issues/102
+.. _harvest#112: https://github.com/NASA-PDS/harvest/issues/112
 .. _harvest#106: https://github.com/NASA-PDS/harvest/issues/106
+.. _nucleus#2: https://github.com/NASA-PDS/nucleus/issues/2
+.. _nucleus#29: https://github.com/NASA-PDS/nucleus/issues/29
 .. _nucleus#14: https://github.com/NASA-PDS/nucleus/issues/14
 .. _nucleus#16: https://github.com/NASA-PDS/nucleus/issues/16
 .. _nucleus#37: https://github.com/NASA-PDS/nucleus/issues/37
 .. _nucleus#18: https://github.com/NASA-PDS/nucleus/issues/18
-.. _nucleus#29: https://github.com/NASA-PDS/nucleus/issues/29
+.. _operations#309: https://github.com/NASA-PDS/operations/issues/309
+.. _pds-api#181: https://github.com/NASA-PDS/pds-api/issues/181
 .. _pds-api#230: https://github.com/NASA-PDS/pds-api/issues/230
 .. _pds-api#220: https://github.com/NASA-PDS/pds-api/issues/220
 .. _pds-api#221: https://github.com/NASA-PDS/pds-api/issues/221
 .. _pds-api#235: https://github.com/NASA-PDS/pds-api/issues/235
 .. _pds-api#193: https://github.com/NASA-PDS/pds-api/issues/193
 .. _pds-api#239: https://github.com/NASA-PDS/pds-api/issues/239
-.. _pds-api#240: https://github.com/NASA-PDS/pds-api/issues/240
-.. _pds-api#214: https://github.com/NASA-PDS/pds-api/issues/214
+.. _pds-api#215: https://github.com/NASA-PDS/pds-api/issues/215
 .. _pds-api#251: https://github.com/NASA-PDS/pds-api/issues/251
 .. _pds-api#200: https://github.com/NASA-PDS/pds-api/issues/200
 .. _pds-api#199: https://github.com/NASA-PDS/pds-api/issues/199
+.. _pds-api#214: https://github.com/NASA-PDS/pds-api/issues/214
 .. _pds-api#196: https://github.com/NASA-PDS/pds-api/issues/196
 .. _pds-api#213: https://github.com/NASA-PDS/pds-api/issues/213
-.. _pds-api#215: https://github.com/NASA-PDS/pds-api/issues/215
-.. _pds-api#198: https://github.com/NASA-PDS/pds-api/issues/198
+.. _pds-api#240: https://github.com/NASA-PDS/pds-api/issues/240
 .. _pds-api#175: https://github.com/NASA-PDS/pds-api/issues/175
+.. _pds-api#198: https://github.com/NASA-PDS/pds-api/issues/198
 .. _pds-api#194: https://github.com/NASA-PDS/pds-api/issues/194
 .. _pds4-information-model#513: https://github.com/NASA-PDS/pds4-information-model/issues/513
+.. _pds4-information-model#544: https://github.com/NASA-PDS/pds4-information-model/issues/544
+.. _pds4-information-model#546: https://github.com/NASA-PDS/pds4-information-model/issues/546
 .. _pds4-information-model#547: https://github.com/NASA-PDS/pds4-information-model/issues/547
 .. _pds4-information-model#599: https://github.com/NASA-PDS/pds4-information-model/issues/599
 .. _pds4-information-model#602: https://github.com/NASA-PDS/pds4-information-model/issues/602
@@ -1119,67 +1204,72 @@ as follows:
 .. _pds4-information-model#608: https://github.com/NASA-PDS/pds4-information-model/issues/608
 .. _pds4-information-model#611: https://github.com/NASA-PDS/pds4-information-model/issues/611
 .. _pds4-information-model#616: https://github.com/NASA-PDS/pds4-information-model/issues/616
-.. _pds4-information-model#507: https://github.com/NASA-PDS/pds4-information-model/issues/507
+.. _pds4-information-model#549: https://github.com/NASA-PDS/pds4-information-model/issues/549
+.. _pds4-information-model#506: https://github.com/NASA-PDS/pds4-information-model/issues/506
 .. _pds4-information-model#606: https://github.com/NASA-PDS/pds4-information-model/issues/606
 .. _pds4-information-model#618: https://github.com/NASA-PDS/pds4-information-model/issues/618
-.. _pds4-information-model#506: https://github.com/NASA-PDS/pds4-information-model/issues/506
-.. _pds4-information-model#458: https://github.com/NASA-PDS/pds4-information-model/issues/458
-.. _pds4-information-model#620: https://github.com/NASA-PDS/pds4-information-model/issues/620
+.. _pds4-information-model#507: https://github.com/NASA-PDS/pds4-information-model/issues/507
 .. _pds4-information-model#502: https://github.com/NASA-PDS/pds4-information-model/issues/502
+.. _pds4-information-model#620: https://github.com/NASA-PDS/pds4-information-model/issues/620
+.. _pds4-information-model#458: https://github.com/NASA-PDS/pds4-information-model/issues/458
 .. _pds4-information-model#473: https://github.com/NASA-PDS/pds4-information-model/issues/473
 .. _pds4-jparser#57: https://github.com/NASA-PDS/pds4-jparser/issues/57
-.. _portal-tasks#54: https://github.com/NASA-PDS/portal-tasks/issues/54
-.. _portal-tasks#8: https://github.com/NASA-PDS/portal-tasks/issues/8
-.. _portal-tasks#55: https://github.com/NASA-PDS/portal-tasks/issues/55
-.. _portal-tasks#47: https://github.com/NASA-PDS/portal-tasks/issues/47
 .. _portal-tasks#31: https://github.com/NASA-PDS/portal-tasks/issues/31
 .. _portal-tasks#56: https://github.com/NASA-PDS/portal-tasks/issues/56
+.. _portal-tasks#8: https://github.com/NASA-PDS/portal-tasks/issues/8
+.. _portal-tasks#54: https://github.com/NASA-PDS/portal-tasks/issues/54
+.. _portal-tasks#55: https://github.com/NASA-PDS/portal-tasks/issues/55
+.. _portal-tasks#47: https://github.com/NASA-PDS/portal-tasks/issues/47
 .. _portal-tasks#58: https://github.com/NASA-PDS/portal-tasks/issues/58
 .. _portal-tasks#49: https://github.com/NASA-PDS/portal-tasks/issues/49
 .. _portal-tasks#57: https://github.com/NASA-PDS/portal-tasks/issues/57
 .. _registry#148: https://github.com/NASA-PDS/registry/issues/148
 .. _registry#130: https://github.com/NASA-PDS/registry/issues/130
 .. _registry#136: https://github.com/NASA-PDS/registry/issues/136
-.. _registry#118: https://github.com/NASA-PDS/registry/issues/118
-.. _registry#146: https://github.com/NASA-PDS/registry/issues/146
-.. _registry#97: https://github.com/NASA-PDS/registry/issues/97
 .. _registry#150: https://github.com/NASA-PDS/registry/issues/150
 .. _registry#120: https://github.com/NASA-PDS/registry/issues/120
 .. _registry#159: https://github.com/NASA-PDS/registry/issues/159
-.. _registry#100: https://github.com/NASA-PDS/registry/issues/100
+.. _registry#146: https://github.com/NASA-PDS/registry/issues/146
+.. _registry#97: https://github.com/NASA-PDS/registry/issues/97
+.. _registry#118: https://github.com/NASA-PDS/registry/issues/118
 .. _registry#153: https://github.com/NASA-PDS/registry/issues/153
+.. _registry#100: https://github.com/NASA-PDS/registry/issues/100
 .. _registry#34: https://github.com/NASA-PDS/registry/issues/34
 .. _registry#139: https://github.com/NASA-PDS/registry/issues/139
 .. _registry#100: https://github.com/NASA-PDS/registry/issues/100
-.. _registry-api#227: https://github.com/NASA-PDS/registry-api/issues/227
-.. _registry-api#200: https://github.com/NASA-PDS/registry-api/issues/200
-.. _registry-api#231: https://github.com/NASA-PDS/registry-api/issues/231
-.. _registry-api#206: https://github.com/NASA-PDS/registry-api/issues/206
-.. _registry-api#240: https://github.com/NASA-PDS/registry-api/issues/240
-.. _registry-api#258: https://github.com/NASA-PDS/registry-api/issues/258
-.. _registry-api#234: https://github.com/NASA-PDS/registry-api/issues/234
-.. _registry-api#190: https://github.com/NASA-PDS/registry-api/issues/190
-.. _registry-api#207: https://github.com/NASA-PDS/registry-api/issues/207
-.. _registry-api#224: https://github.com/NASA-PDS/registry-api/issues/224
-.. _registry-api#260: https://github.com/NASA-PDS/registry-api/issues/260
+.. _registry-api#257: https://github.com/NASA-PDS/registry-api/issues/257
 .. _registry-api#241: https://github.com/NASA-PDS/registry-api/issues/241
-.. _registry-api#202: https://github.com/NASA-PDS/registry-api/issues/202
-.. _registry-api#211: https://github.com/NASA-PDS/registry-api/issues/211
-.. _registry-api#196: https://github.com/NASA-PDS/registry-api/issues/196
+.. _registry-api#258: https://github.com/NASA-PDS/registry-api/issues/258
+.. _registry-api#260: https://github.com/NASA-PDS/registry-api/issues/260
 .. _registry-api#261: https://github.com/NASA-PDS/registry-api/issues/261
+.. _registry-api#287: https://github.com/NASA-PDS/registry-api/issues/287
+.. _registry-api#231: https://github.com/NASA-PDS/registry-api/issues/231
+.. _registry-api#224: https://github.com/NASA-PDS/registry-api/issues/224
+.. _registry-api#234: https://github.com/NASA-PDS/registry-api/issues/234
+.. _registry-api#196: https://github.com/NASA-PDS/registry-api/issues/196
+.. _registry-api#191: https://github.com/NASA-PDS/registry-api/issues/191
+.. _registry-api#207: https://github.com/NASA-PDS/registry-api/issues/207
+.. _registry-api#211: https://github.com/NASA-PDS/registry-api/issues/211
+.. _registry-api#202: https://github.com/NASA-PDS/registry-api/issues/202
+.. _registry-api#200: https://github.com/NASA-PDS/registry-api/issues/200
+.. _registry-api#190: https://github.com/NASA-PDS/registry-api/issues/190
+.. _registry-api#293: https://github.com/NASA-PDS/registry-api/issues/293
+.. _registry-api#206: https://github.com/NASA-PDS/registry-api/issues/206
 .. _registry-api#121: https://github.com/NASA-PDS/registry-api/issues/121
-.. _registry-api#282: https://github.com/NASA-PDS/registry-api/issues/282
-.. _registry-api#223: https://github.com/NASA-PDS/registry-api/issues/223
-.. _registry-api#248: https://github.com/NASA-PDS/registry-api/issues/248
+.. _registry-api#227: https://github.com/NASA-PDS/registry-api/issues/227
+.. _registry-api#240: https://github.com/NASA-PDS/registry-api/issues/240
 .. _registry-api#208: https://github.com/NASA-PDS/registry-api/issues/208
+.. _registry-api#223: https://github.com/NASA-PDS/registry-api/issues/223
 .. _registry-api#212: https://github.com/NASA-PDS/registry-api/issues/212
+.. _registry-api#248: https://github.com/NASA-PDS/registry-api/issues/248
+.. _registry-api#282: https://github.com/NASA-PDS/registry-api/issues/282
 .. _registry-harvest-service#25: https://github.com/NASA-PDS/registry-harvest-service/issues/25
 .. _registry-mgr#57: https://github.com/NASA-PDS/registry-mgr/issues/57
+.. _roundup-action#96: https://github.com/NASA-PDS/roundup-action/issues/96
 .. _roundup-action#98: https://github.com/NASA-PDS/roundup-action/issues/98
+.. _roundup-action#104: https://github.com/NASA-PDS/roundup-action/issues/104
 .. _roundup-action#105: https://github.com/NASA-PDS/roundup-action/issues/105
 .. _roundup-action#103: https://github.com/NASA-PDS/roundup-action/issues/103
-.. _roundup-action#104: https://github.com/NASA-PDS/roundup-action/issues/104
-.. _roundup-action#96: https://github.com/NASA-PDS/roundup-action/issues/96
 .. _software-issues-repo#52: https://github.com/NASA-PDS/software-issues-repo/issues/52
 .. _template-repo-python#67: https://github.com/NASA-PDS/template-repo-python/issues/67
 .. _validate#481: https://github.com/NASA-PDS/validate/issues/481
@@ -1205,12 +1295,14 @@ as follows:
 .. _validate#564: https://github.com/NASA-PDS/validate/issues/564
 .. _validate#576: https://github.com/NASA-PDS/validate/issues/576
 .. _validate#473: https://github.com/NASA-PDS/validate/issues/473
+.. _validate#155: https://github.com/NASA-PDS/validate/issues/155
 .. _validate#593: https://github.com/NASA-PDS/validate/issues/593
 .. _validate#551: https://github.com/NASA-PDS/validate/issues/551
-.. _validate#155: https://github.com/NASA-PDS/validate/issues/155
 .. _validate#537: https://github.com/NASA-PDS/validate/issues/537
-.. _validate#569: https://github.com/NASA-PDS/validate/issues/569
 .. _validate#436: https://github.com/NASA-PDS/validate/issues/436
+.. _validate#569: https://github.com/NASA-PDS/validate/issues/569
+.. _wds-implementation#22: https://github.com/NASA-PDS/wds-implementation/issues/22
+.. _web-modernization#161: https://github.com/NASA-PDS/web-modernization/issues/161
 .. _Software Release Summary (B13.1): https://nasa-pds.github.io/releases/13.1/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
