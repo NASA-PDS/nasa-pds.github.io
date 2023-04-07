@@ -1,8 +1,7 @@
 =============================
 Software Catalog (Build 11.0)
 =============================
-The software provided for the PDS System Build 11.0 are listed below and
-organized by category:
+The software provided for the PDS System Build 11.0 are listed below and organized by category:
 
 - `Standalone Tools`_
 
@@ -33,8 +32,7 @@ PDS Tools for Discipline Nodes, Data Providers and Community Users.
 
 Libraries and Clients
 =====================
-Libraries and Clients for programing interfaces to PDS services and
-data.
+Libraries and Clients for programing interfaces to PDS services and data.
 
 +---------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
 |tool           |version   |last updated   |description                                                                                                                                                                      |l |manual|                       |l |changelog|                       |l |requirements|   |l |download|                       |l |license|                       |l |feedback|                       |
@@ -44,8 +42,7 @@ data.
 
 Discipline Node Services
 ========================
-Tools and Services that Discipline Node should deploy to enable
-integration and interoperability across the PDS.
+Tools and Services that Discipline Node should deploy to enable integration and interoperability across the PDS.
 
 +-------------------+----------+---------------+-----------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
 |tool               |version   |last updated   |description                                                                              |l |manual|                           |l |changelog|                           |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
@@ -55,8 +52,7 @@ integration and interoperability across the PDS.
 
 Engineering Node Services
 =========================
-Tools and Services centrally deployed by PDS Engineering Node to support
-the integration and interoperability of all PDS nodes.
+Tools and Services centrally deployed by PDS Engineering Node to support the integration and interoperability of all PDS nodes.
 
 +-------------------------------+----------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+------------------------------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
 |tool                           |version   |last updated   |description                                                                                                                                                                          |l |manual|                       |l |changelog|                       |l |requirements|   |l |download|                       |l |license|                       |l |feedback|                       |
