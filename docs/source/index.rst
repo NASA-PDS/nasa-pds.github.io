@@ -16,7 +16,7 @@ Sitemap
 ..  toctree::
     :glob:
     :caption: System Releases
-    :maxdepth: 1
+    :maxdepth: 0
 
     Current Release </releases/13.0/index>
     Other Releases </releases/releases>
@@ -24,6 +24,7 @@ Sitemap
 ..  toctree::
     :glob:
     :caption: Collaborate
+
 
     /collaborate/*
 
