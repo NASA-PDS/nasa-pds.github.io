@@ -16,9 +16,10 @@ Sitemap
 ..  toctree::
     :glob:
     :caption: System Releases
+    :maxdepth: 1
 
     Current Release </releases/13.0/index>
-    /releases/releases
+    Other Releases </releases/releases>
 
 ..  toctree::
     :glob:
