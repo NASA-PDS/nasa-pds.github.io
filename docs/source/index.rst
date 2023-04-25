@@ -24,6 +24,7 @@ Sitemap
 ..  toctree::
     :glob:
     :caption: Collaborate
+    :maxdepth: 1
 
 
     /collaborate/*
@@ -31,12 +32,14 @@ Sitemap
 ..  toctree::
     :glob:
     :caption: Teams
+    :maxdepth: 1
 
     /teams/*
 
 ..  toctree::
     :glob:
     :caption: Support
+    :maxdepth: 1
 
     /support/*
 
