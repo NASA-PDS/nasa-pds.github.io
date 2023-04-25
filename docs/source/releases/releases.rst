@@ -4,9 +4,9 @@ Upcoming
     :glob:
     :maxdepth: 1
 
-    Stable Beta Software <13.1/index>
-    Latest In-Dev Software <14.0-SNAPSHOT/index>
-    Near-Term Plans <13.1/plan>
+    Beta Software (13.1) <13.1/index>
+    Latest In-Dev Software, (14.0-SNAPSHOT) <14.0-SNAPSHOT/index>
+    Near-Term Plans (13.1) <13.1/plan>
 
 Past Releases
 =============
