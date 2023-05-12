@@ -12,7 +12,7 @@ on:
      paths:
        - 'docs/source/**'
        - '.github/workflows/*.yml'
-    workflow_dispatch:
+   workflow_dispatch:
 
 jobs:
   build: # job 1
