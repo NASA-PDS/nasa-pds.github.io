@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.actor != 'pdsen-ci'
 
+    strategy:
+        matrix:
+            build-number: [13.1, 14.0]
+
     steps:
       - uses: actions/checkout@v3
         with:
@@ -27,12 +31,10 @@ jobs:
 
       - name: Generate RDD
         run: |
-          build=13.1
-
           export ZENHUB_TOKEN=${{ secrets.ZENHUB_TOKEN }}
-          pds-issues --token ${{ secrets.ADMIN_GITHUB_TOKEN }} --format rst --issue_state closed --build B${build}
-          mkdir -p docs/source/releases/${build}
-          mv pdsen_issues.rst docs/source/releases/${build}/rdd.rst
+          pds-issues --token ${{ secrets.ADMIN_GITHUB_TOKEN }} --format rst --issue_state closed --build B${{matrix.build-number}}
+          mkdir -p docs/source/releases/${{matrix.build-number}}
+          mv pdsen_issues.rst docs/source/releases/${{matrix.build-number}}/rdd.rst
 
       - name: Make Sphinx
         id: make
