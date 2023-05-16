@@ -13,7 +13,7 @@ jobs:
 
     strategy:
         matrix:
-            build-number: [13.1, 14.0]
+            build-number: [13.1]
 
     steps:
       - uses: actions/checkout@v3
