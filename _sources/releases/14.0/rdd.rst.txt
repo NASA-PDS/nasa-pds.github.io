@@ -136,9 +136,9 @@ Requirements
 +==============================================================================+====================+==========================+
 |`nucleus#22`_ As a user, I want to deploy a baseline nucleus automatically.   ||:yellow_circle:|   |p.should-have             |
 +------------------------------------------------------------------------------+--------------------+--------------------------+
-|`nucleus#27`_ As a user, I want to estimate the cost for a new deployment     ||:yellow_circle:|   |p.must-have               |
-+------------------------------------------------------------------------------+--------------------+--------------------------+
 |`nucleus#24`_ As a user, I want to configure a nucleus pipeline               ||:yellow_circle:|   |p.must-have               |
++------------------------------------------------------------------------------+--------------------+--------------------------+
+|`nucleus#27`_ As a user, I want to estimate the cost for a new deployment     ||:yellow_circle:|   |p.must-have               |
 +------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -206,9 +206,9 @@ Bugs
 +-------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                          |I&T Status          |Priority / Bug Severity   |
 +===============================================================================+====================+==========================+
-|`pds4-information-model#661`_ LDDTool fails for dependent LDDs since v14.2.0   ||:yellow_circle:|   |s.critical                |
-+-------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds4-information-model#658`_ Bug trying to generate LDD and missing files     ||:yellow_circle:|   |s.high                    |
++-------------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds4-information-model#661`_ LDDTool fails for dependent LDDs since v14.2.0   ||:yellow_circle:|   |s.critical                |
 +-------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -353,6 +353,26 @@ Validate
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+`validate#534`_ B14.0 Content Validation Improvements: Additional Table Types, Additional File Areas
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|Issue                                                                                                       |I&T Status          |Level         |Priority / Bug Severity   |
++============================================================================================================+====================+==============+==========================+
+|`validate#7`_ Update to support ComplexLSB8 data types and investigate Floating point exception             ||:yellow_circle:|   |enhancement   |p.should-have             |
++------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`validate#190`_ Validation fails to catch real value in ASCII_NonNegative_Integer field (Table_Delimited)   ||:yellow_circle:|   |bug           |s.medium                  |
++------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`validate#217`_ As a user, I want to validate content for all possible PDS4 table types                     ||:yellow_circle:|   |requirement   |p.must-have               |
++------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`validate#343`_ As a user I want to see the name of a table/array in errors, if one is specified            ||:yellow_circle:|   |requirement   |p.could-have              |
++------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`validate#431`_ warning.table.characters_between_fields missing for last record in table                    ||:yellow_circle:|   |bug           |s.low                     |
++------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`validate#476`_ As a user, I want to check that are no duplicate LIDs/LIDVIDs in a File_Area_Inventory      ||:yellow_circle:|   |requirement   |p.should-have             |
++------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+
+
 `validate#607`_ Support for Improved Datetime Checks
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -381,15 +401,13 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================================================================+====================+==========================+
-|`validate#631`_ Expected value in validate report for context reference name is not same as value in the context file   ||:yellow_circle:|   |s.low                     |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                        ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#431`_ warning.table.characters_between_fields missing for last record in table                                ||:yellow_circle:|   |s.low                     |
+|`validate#652`_ validate 3.3.0 snapshot produces incorrect SKIP/INFO messages                                           ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                           ||:yellow_circle:|   |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#190`_ Validation fails to catch real value in ASCII_NonNegative_Integer field (Table_Delimited)               ||:yellow_circle:|   |s.medium                  |
+|`validate#631`_ Expected value in validate report for context reference name is not same as value in the context file   ||:yellow_circle:|   |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -400,27 +418,19 @@ Requirements
 +===========================================================================================================================================+====================+==========================+
 |`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#343`_ As a user I want to see the name of a table/array in errors, if one is specified                                           ||:yellow_circle:|   |p.could-have              |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#462`_ As a user, I want validate to throw an error when a collection inventory contains an invalid secondary product reference   ||:yellow_circle:|   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#476`_ As a user, I want to check that are no duplicate LIDs/LIDVIDs in a File_Area_Inventory                                     ||:yellow_circle:|   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#599`_ As a user, I want to be able to use both online and local schema/schematron files.                                         ||:yellow_circle:|   |p.could-have              |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#217`_ As a user, I want to validate content for all possible PDS4 table types                                                    ||:yellow_circle:|   |p.must-have               |
+|`validate#462`_ As a user, I want validate to throw an error when a collection inventory contains an invalid secondary product reference   ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
 ++++++++++++
 
-+--------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                             |I&T Status          |Priority / Bug Severity   |
-+==================================================================================================+====================+==========================+
-|`validate#567`_ Update ArrayObject exceptions to enable improved error messaging                  ||:blue_circle:|     |p.could-have              |
-+--------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#7`_ Update to support ComplexLSB8 data types and investigate Floating point exception   ||:yellow_circle:|   |p.should-have             |
-+--------------------------------------------------------------------------------------------------+--------------------+--------------------------+
++-----------------------------------------------------------------------------------+------------------+--------------------------+
+|Issue                                                                              |I&T Status        |Priority / Bug Severity   |
++===================================================================================+==================+==========================+
+|`validate#567`_ Update ArrayObject exceptions to enable improved error messaging   ||:blue_circle:|   |p.could-have              |
++-----------------------------------------------------------------------------------+------------------+--------------------------+
 
 --------
 
@@ -507,36 +517,38 @@ as follows:
 .. _deep-archive#147: https://github.com/NASA-PDS/deep-archive/issues/147
 .. _devops#34: https://github.com/NASA-PDS/devops/issues/34
 .. _nucleus#22: https://github.com/NASA-PDS/nucleus/issues/22
-.. _nucleus#27: https://github.com/NASA-PDS/nucleus/issues/27
 .. _nucleus#24: https://github.com/NASA-PDS/nucleus/issues/24
+.. _nucleus#27: https://github.com/NASA-PDS/nucleus/issues/27
 .. _pds-api#260: https://github.com/NASA-PDS/pds-api/issues/260
 .. _pds-api#259: https://github.com/NASA-PDS/pds-api/issues/259
 .. _pds-api#262: https://github.com/NASA-PDS/pds-api/issues/262
-.. _pds4-information-model#661: https://github.com/NASA-PDS/pds4-information-model/issues/661
 .. _pds4-information-model#658: https://github.com/NASA-PDS/pds4-information-model/issues/658
+.. _pds4-information-model#661: https://github.com/NASA-PDS/pds4-information-model/issues/661
 .. _registry#180: https://github.com/NASA-PDS/registry/issues/180
 .. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
 .. _registry-api#305: https://github.com/NASA-PDS/registry-api/issues/305
 .. _registry-api#296: https://github.com/NASA-PDS/registry-api/issues/296
 .. _registry-loader#26: https://github.com/NASA-PDS/registry-loader/issues/26
 .. _software-issues-repo#63: https://github.com/NASA-PDS/software-issues-repo/issues/63
+.. _validate#534: https://github.com/NASA-PDS/validate/issues/534
+.. _validate#7: https://github.com/NASA-PDS/validate/issues/7
+.. _validate#190: https://github.com/NASA-PDS/validate/issues/190
+.. _validate#217: https://github.com/NASA-PDS/validate/issues/217
+.. _validate#343: https://github.com/NASA-PDS/validate/issues/343
+.. _validate#431: https://github.com/NASA-PDS/validate/issues/431
+.. _validate#476: https://github.com/NASA-PDS/validate/issues/476
 .. _validate#607: https://github.com/NASA-PDS/validate/issues/607
 .. _validate#608: https://github.com/NASA-PDS/validate/issues/608
 .. _validate#629: https://github.com/NASA-PDS/validate/issues/629
 .. _validate#628: https://github.com/NASA-PDS/validate/issues/628
-.. _validate#631: https://github.com/NASA-PDS/validate/issues/631
 .. _validate#644: https://github.com/NASA-PDS/validate/issues/644
-.. _validate#431: https://github.com/NASA-PDS/validate/issues/431
+.. _validate#652: https://github.com/NASA-PDS/validate/issues/652
 .. _validate#561: https://github.com/NASA-PDS/validate/issues/561
-.. _validate#190: https://github.com/NASA-PDS/validate/issues/190
+.. _validate#631: https://github.com/NASA-PDS/validate/issues/631
 .. _validate#617: https://github.com/NASA-PDS/validate/issues/617
-.. _validate#343: https://github.com/NASA-PDS/validate/issues/343
-.. _validate#462: https://github.com/NASA-PDS/validate/issues/462
-.. _validate#476: https://github.com/NASA-PDS/validate/issues/476
 .. _validate#599: https://github.com/NASA-PDS/validate/issues/599
-.. _validate#217: https://github.com/NASA-PDS/validate/issues/217
+.. _validate#462: https://github.com/NASA-PDS/validate/issues/462
 .. _validate#567: https://github.com/NASA-PDS/validate/issues/567
-.. _validate#7: https://github.com/NASA-PDS/validate/issues/7
 .. _web-modernization#194: https://github.com/NASA-PDS/web-modernization/issues/194
 .. _Software Release Summary (B14.0): https://nasa-pds.github.io/releases/14.0/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
