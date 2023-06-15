@@ -18,7 +18,7 @@ Sitemap
     :caption: System Releases
     :maxdepth: 0
 
-    Current Release </releases/13.0/index>
+    Current Release </releases/current/index>
     Other Releases </releases/releases>
 
 ..  toctree::
