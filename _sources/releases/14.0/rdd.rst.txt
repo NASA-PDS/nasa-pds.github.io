@@ -139,6 +139,38 @@ Requirements
 
 --------
 
+Doi-service
+-----------
+*Service and tools for generating DOIs for PDS bundles, collections, and data sets*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/doi-service>`_
+     - `Github Repo <https://github.com/NASA-PDS/doi-service>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/doi-service/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/doi-service/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/doi-service/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/doi-service/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++---------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                |I&T Status          |Priority / Bug Severity   |
++=====================================================================+====================+==========================+
+|`doi-service#408`_ Sync script is pushing non-findable DOIs to ADS   ||:yellow_circle:|   |s.medium                  |
++---------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
 Harvest
 -------
 *Standalone Harvest client application providing the functionality for capturing and indexing product metadata into the PDS Registry system (https://github.com/nasa-pds/registry).*
@@ -188,24 +220,35 @@ Nucleus
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
+`nucleus#38`_ Develop Logging and Monitoring Strategy
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
-Other Updates
-~~~~~~~~~~~~~
-Requirements
-++++++++++++
+`nucleus#39`_ Operationalize Nucleus for Initial CSS Prototype
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-+------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                         |I&T Status          |Priority / Bug Severity   |
-+==============================================================================+====================+==========================+
-|`nucleus#22`_ As a user, I want to deploy a baseline nucleus automatically.   ||:yellow_circle:|   |p.should-have             |
-+------------------------------------------------------------------------------+--------------------+--------------------------+
-|`nucleus#27`_ As a user, I want to estimate the cost for a new deployment     ||:yellow_circle:|   |p.must-have               |
-+------------------------------------------------------------------------------+--------------------+--------------------------+
-|`nucleus#23`_ As a user, I want to monitor a nucleus workflow execution       ||:yellow_circle:|   |p.must-have               |
-+------------------------------------------------------------------------------+--------------------+--------------------------+
-|`nucleus#24`_ As a user, I want to configure a nucleus pipeline               ||:yellow_circle:|   |p.must-have               |
-+------------------------------------------------------------------------------+--------------------+--------------------------+
++------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|Issue                                                                         |I&T Status          |Level         |Priority / Bug Severity   |
++==============================================================================+====================+==============+==========================+
+|`nucleus#22`_ As a user, I want to deploy a baseline nucleus automatically.   ||:yellow_circle:|   |requirement   |p.should-have             |
++------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`nucleus#23`_ As a user, I want to monitor a nucleus workflow execution       ||:yellow_circle:|   |requirement   |p.must-have               |
++------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`nucleus#24`_ As a user, I want to configure a nucleus pipeline               ||:yellow_circle:|   |requirement   |p.must-have               |
++------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`nucleus#27`_ As a user, I want to estimate the cost for a new deployment     ||:yellow_circle:|   |requirement   |p.must-have               |
++------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+
+
+`nucleus#41`_ Determine DAG definition standard
++++++++++++++++++++++++++++++++++++++++++++++++
+
++-----------------------------------------------------------------------------------------------------+--------------------+--------+--------------------------+
+|Issue                                                                                                |I&T Status          |Level   |Priority / Bug Severity   |
++=====================================================================================================+====================+========+==========================+
+|`nucleus#51`_ Evaluate the ability to create Nucleus workflow using CWL (Common Workflow Language)   ||:yellow_circle:|   |task    |unknown                   |
++-----------------------------------------------------------------------------------------------------+--------------------+--------+--------------------------+
+
 
 --------
 
@@ -236,9 +279,9 @@ Bugs
 +----------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                       |I&T Status          |Priority / Bug Severity   |
 +============================================================================+====================+==========================+
-|`pds-api#260`_ PDS API documents are unclear wrt quoting in queries         ||:yellow_circle:|   |unknown                   |
-+----------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#259`_ API search returns 500 for anything besides simple queries   ||:yellow_circle:|   |unknown                   |
++----------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds-api#260`_ PDS API documents are unclear wrt quoting in queries         ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#262`_ PDS API is not respecting the sort field                     ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
@@ -340,12 +383,21 @@ Bugs
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                              |I&T Status          |Priority / Bug Severity   |
 +===================================================================================================+====================+==========================+
-|`registry-api#296`_ API crashes with JVM memory error on data sets with very large labels (>1MB)   ||:yellow_circle:|   |s.medium                  |
+|`registry-api#305`_ API not returning value for NAIF bundles                                       ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#277`_ Product summary object has an incomplete "properties" set                      ||:yellow_circle:|   |s.medium                  |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#305`_ API not returning value for NAIF bundles                                       ||:yellow_circle:|   |s.high                    |
+|`registry-api#296`_ API crashes with JVM memory error on data sets with very large labels (>1MB)   ||:yellow_circle:|   |s.medium                  |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+Requirements
+++++++++++++
+
++-----------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                          |I&T Status          |Priority / Bug Severity   |
++===============================================================================================+====================+==========================+
+|`registry-api#336`_ As a PDS operator, I want to know the health of the registry API service   ||:yellow_circle:|   |p.should-have             |
++-----------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -441,6 +493,22 @@ Planned Updates
 +------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
 
 
+`validate#606`_ Support for Encoded Video and Encoded Audio
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++-------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|Issue                                                                                                        |I&T Status          |Level         |Priority / Bug Severity   |
++=============================================================================================================+====================+==============+==========================+
+|`validate#604`_ As a user, I want to validate MP4/H.264 encoded video as observational data                  ||:yellow_circle:|   |requirement   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`validate#605`_ As a user, I want to validate MP4/H.264/AAC encoded video with audio as observational data   ||:yellow_circle:|   |requirement   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`validate#662`_ As a user, I want to validate WAV encoded audio as observational data                        ||:yellow_circle:|   |requirement   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|`validate#663`_ As a user, I want to validate M4A/AAC encoded audio as observational data                    ||:yellow_circle:|   |requirement   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+
+
 `validate#607`_ Support for Improved Datetime Checks
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -449,6 +517,16 @@ Planned Updates
 +===============================================================+====================+==============+==========================+
 |`validate#608`_ Update datetime regex for content validation   ||:yellow_circle:|   |enhancement   |p.must-have               |
 +---------------------------------------------------------------+--------------------+--------------+--------------------------+
+
+
+`validate#610`_ B14.0 Enhancements to Initial Version of Registry Referential Integrity Validator
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|Issue                                                                                     |I&T Status          |Level         |Priority / Bug Severity   |
++==========================================================================================+====================+==============+==========================+
+|`validate#643`_ Document how to use validate-refs tool in Validate Operation User Guide   ||:yellow_circle:|   |enhancement   |p.must-have               |
++------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
 
 
 `validate#629`_ Add Check for Schematron/Schema Version Mismatch
@@ -469,19 +547,19 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================================================================+====================+==========================+
+|`validate#479`_ validate erroneously flags PDF/A-1a compliant file                                                      ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#649`_ validate does not validate a collection if collection.xml pointed to                                    ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                           ||:yellow_circle:|   |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#631`_ Expected value in validate report for context reference name is not same as value in the context file   ||:yellow_circle:|   |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#649`_ validate does not validate a collection if collection.xml pointed to                                    ||:yellow_circle:|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#500`_ Validate does not allow `.arch_h` file name/data type                                                   ||:yellow_circle:|   |s.low                     |
+|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                        ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#652`_ validate 3.3.0 snapshot produces incorrect SKIP/INFO messages                                           ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#479`_ validate erroneously flags PDF/A-1a compliant file                                                      ||:yellow_circle:|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                        ||:yellow_circle:|   |s.medium                  |
+|`validate#500`_ Validate does not allow `.arch_h` file name/data type                                                   ||:yellow_circle:|   |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -490,29 +568,25 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                                      |I&T Status          |Priority / Bug Severity   |
 +===========================================================================================================================================+====================+==========================+
-|`validate#658`_ As a user, I want the PDF error reports to be output in a user-specified directory                                         ||:yellow_circle:|   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#604`_ As a user, I want to validate MP4/H.264 encoded video as observational data                                                ||:yellow_circle:|   |p.must-have               |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#605`_ As a user, I want to validate MP4/H.264/AAC encoded video with audio as observational data                                 ||:yellow_circle:|   |p.must-have               |
+|`validate#651`_ As a user, I want to support bit patterns within Special_Constants values                                                  ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#599`_ As a user, I want to be able to use both online and local schema/schematron files.                                         ||:yellow_circle:|   |p.could-have              |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#462`_ As a user, I want validate to throw an error when a collection inventory contains an invalid secondary product reference   ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#658`_ As a user, I want the PDF error reports to be output in a user-specified directory                                         ||:yellow_circle:|   |p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
 ++++++++++++
 
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                     |I&T Status          |Priority / Bug Severity   |
-+==========================================================================================+====================+==========================+
-|`validate#567`_ Update ArrayObject exceptions to enable improved error messaging          ||:blue_circle:|     |p.could-have              |
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#643`_ Document how to use validate-refs tool in Validate Operation User Guide   ||:yellow_circle:|   |p.must-have               |
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
++-----------------------------------------------------------------------------------+------------------+--------------------------+
+|Issue                                                                              |I&T Status        |Priority / Bug Severity   |
++===================================================================================+==================+==========================+
+|`validate#567`_ Update ArrayObject exceptions to enable improved error messaging   ||:blue_circle:|   |p.could-have              |
++-----------------------------------------------------------------------------------+------------------+--------------------------+
 
 --------
 
@@ -632,21 +706,27 @@ as follows:
 .. _deep-archive#147: https://github.com/NASA-PDS/deep-archive/issues/147
 .. _devops#34: https://github.com/NASA-PDS/devops/issues/34
 .. _devops#35: https://github.com/NASA-PDS/devops/issues/35
+.. _doi-service#408: https://github.com/NASA-PDS/doi-service/issues/408
 .. _harvest#124: https://github.com/NASA-PDS/harvest/issues/124
+.. _nucleus#38: https://github.com/NASA-PDS/nucleus/issues/38
+.. _nucleus#39: https://github.com/NASA-PDS/nucleus/issues/39
 .. _nucleus#22: https://github.com/NASA-PDS/nucleus/issues/22
-.. _nucleus#27: https://github.com/NASA-PDS/nucleus/issues/27
 .. _nucleus#23: https://github.com/NASA-PDS/nucleus/issues/23
 .. _nucleus#24: https://github.com/NASA-PDS/nucleus/issues/24
-.. _pds-api#260: https://github.com/NASA-PDS/pds-api/issues/260
+.. _nucleus#27: https://github.com/NASA-PDS/nucleus/issues/27
+.. _nucleus#41: https://github.com/NASA-PDS/nucleus/issues/41
+.. _nucleus#51: https://github.com/NASA-PDS/nucleus/issues/51
 .. _pds-api#259: https://github.com/NASA-PDS/pds-api/issues/259
+.. _pds-api#260: https://github.com/NASA-PDS/pds-api/issues/260
 .. _pds-api#262: https://github.com/NASA-PDS/pds-api/issues/262
 .. _pds4-information-model#661: https://github.com/NASA-PDS/pds4-information-model/issues/661
 .. _pds4-information-model#658: https://github.com/NASA-PDS/pds4-information-model/issues/658
 .. _registry#143: https://github.com/NASA-PDS/registry/issues/143
 .. _registry#180: https://github.com/NASA-PDS/registry/issues/180
-.. _registry-api#296: https://github.com/NASA-PDS/registry-api/issues/296
-.. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
 .. _registry-api#305: https://github.com/NASA-PDS/registry-api/issues/305
+.. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
+.. _registry-api#296: https://github.com/NASA-PDS/registry-api/issues/296
+.. _registry-api#336: https://github.com/NASA-PDS/registry-api/issues/336
 .. _registry-loader#26: https://github.com/NASA-PDS/registry-loader/issues/26
 .. _software-issues-repo#63: https://github.com/NASA-PDS/software-issues-repo/issues/63
 .. _validate#534: https://github.com/NASA-PDS/validate/issues/534
@@ -656,25 +736,30 @@ as follows:
 .. _validate#343: https://github.com/NASA-PDS/validate/issues/343
 .. _validate#431: https://github.com/NASA-PDS/validate/issues/431
 .. _validate#476: https://github.com/NASA-PDS/validate/issues/476
+.. _validate#606: https://github.com/NASA-PDS/validate/issues/606
+.. _validate#604: https://github.com/NASA-PDS/validate/issues/604
+.. _validate#605: https://github.com/NASA-PDS/validate/issues/605
+.. _validate#662: https://github.com/NASA-PDS/validate/issues/662
+.. _validate#663: https://github.com/NASA-PDS/validate/issues/663
 .. _validate#607: https://github.com/NASA-PDS/validate/issues/607
 .. _validate#608: https://github.com/NASA-PDS/validate/issues/608
+.. _validate#610: https://github.com/NASA-PDS/validate/issues/610
+.. _validate#643: https://github.com/NASA-PDS/validate/issues/643
 .. _validate#629: https://github.com/NASA-PDS/validate/issues/629
 .. _validate#628: https://github.com/NASA-PDS/validate/issues/628
+.. _validate#479: https://github.com/NASA-PDS/validate/issues/479
+.. _validate#649: https://github.com/NASA-PDS/validate/issues/649
 .. _validate#561: https://github.com/NASA-PDS/validate/issues/561
 .. _validate#631: https://github.com/NASA-PDS/validate/issues/631
-.. _validate#649: https://github.com/NASA-PDS/validate/issues/649
-.. _validate#500: https://github.com/NASA-PDS/validate/issues/500
-.. _validate#652: https://github.com/NASA-PDS/validate/issues/652
-.. _validate#479: https://github.com/NASA-PDS/validate/issues/479
 .. _validate#644: https://github.com/NASA-PDS/validate/issues/644
-.. _validate#658: https://github.com/NASA-PDS/validate/issues/658
-.. _validate#604: https://github.com/NASA-PDS/validate/issues/604
+.. _validate#652: https://github.com/NASA-PDS/validate/issues/652
+.. _validate#500: https://github.com/NASA-PDS/validate/issues/500
 .. _validate#617: https://github.com/NASA-PDS/validate/issues/617
-.. _validate#605: https://github.com/NASA-PDS/validate/issues/605
+.. _validate#651: https://github.com/NASA-PDS/validate/issues/651
 .. _validate#599: https://github.com/NASA-PDS/validate/issues/599
 .. _validate#462: https://github.com/NASA-PDS/validate/issues/462
+.. _validate#658: https://github.com/NASA-PDS/validate/issues/658
 .. _validate#567: https://github.com/NASA-PDS/validate/issues/567
-.. _validate#643: https://github.com/NASA-PDS/validate/issues/643
 .. _web-analytics#3: https://github.com/NASA-PDS/web-analytics/issues/3
 .. _web-modernization#194: https://github.com/NASA-PDS/web-modernization/issues/194
 .. _Software Release Summary (B14.0): https://nasa-pds.github.io/releases/14.0/index.html
