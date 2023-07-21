@@ -131,11 +131,13 @@ Bugs
 Requirements
 ++++++++++++
 
-+-------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                |I&T Status          |Priority / Bug Severity   |
-+=====================================================================================+====================+==========================+
-|`devops#35`_ As a EN team member, I want to check the API test reports in testrail   ||:yellow_circle:|   |unknown                   |
-+-------------------------------------------------------------------------------------+--------------------+--------------------------+
++-----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                      |I&T Status          |Priority / Bug Severity   |
++===========================================================================================================+====================+==========================+
+|`devops#50`_ As a user, I want PDS EN produced Docker images to support multiple platforms (x86 and ARM)   ||:yellow_circle:|   |p.must-have               |
++-----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`devops#35`_ As a EN team member, I want to check the API test reports in testrail                         ||:yellow_circle:|   |unknown                   |
++-----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -281,9 +283,9 @@ Bugs
 +============================================================================+====================+==========================+
 |`pds-api#259`_ API search returns 500 for anything besides simple queries   ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
-|`pds-api#260`_ PDS API documents are unclear wrt quoting in queries         ||:yellow_circle:|   |unknown                   |
-+----------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#262`_ PDS API is not respecting the sort field                     ||:yellow_circle:|   |unknown                   |
++----------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds-api#260`_ PDS API documents are unclear wrt quoting in queries         ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -383,11 +385,15 @@ Bugs
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                              |I&T Status          |Priority / Bug Severity   |
 +===================================================================================================+====================+==========================+
-|`registry-api#305`_ API not returning value for NAIF bundles                                       ||:yellow_circle:|   |s.high                    |
+|`registry-api#341`_ members of a bundle does not work on new test dataset                          ||:yellow_circle:|   |s.high                    |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#355`_ api does not return information that OpenSearch says is public                 ||:yellow_circle:|   |s.high                    |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#296`_ API crashes with JVM memory error on data sets with very large labels (>1MB)   ||:green_circle:|    |s.medium                  |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#305`_ API not returning value for NAIF bundles                                       ||:green_circle:|    |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#277`_ Product summary object has an incomplete "properties" set                      ||:yellow_circle:|   |s.medium                  |
-+---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#296`_ API crashes with JVM memory error on data sets with very large labels (>1MB)   ||:yellow_circle:|   |s.medium                  |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -479,15 +485,15 @@ Planned Updates
 +------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
 |Issue                                                                                                       |I&T Status          |Level         |Priority / Bug Severity   |
 +============================================================================================================+====================+==============+==========================+
-|`validate#7`_ Update to support ComplexLSB8 data types and investigate Floating point exception             ||:yellow_circle:|   |enhancement   |p.should-have             |
+|`validate#7`_ Update to support ComplexLSB8 data types and investigate Floating point exception             ||:green_circle:|    |enhancement   |p.should-have             |
 +------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
-|`validate#190`_ Validation fails to catch real value in ASCII_NonNegative_Integer field (Table_Delimited)   ||:yellow_circle:|   |bug           |s.medium                  |
+|`validate#190`_ Validation fails to catch real value in ASCII_NonNegative_Integer field (Table_Delimited)   ||:green_circle:|    |bug           |s.medium                  |
 +------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
-|`validate#217`_ As a user, I want to validate content for all possible PDS4 table types                     ||:yellow_circle:|   |requirement   |p.must-have               |
+|`validate#217`_ As a user, I want to validate content for all possible PDS4 table types                     ||:green_circle:|    |requirement   |p.must-have               |
 +------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
 |`validate#343`_ As a user I want to see the name of a table/array in errors, if one is specified            ||:yellow_circle:|   |requirement   |p.could-have              |
 +------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
-|`validate#431`_ warning.table.characters_between_fields missing for last record in table                    ||:yellow_circle:|   |bug           |s.low                     |
+|`validate#431`_ warning.table.characters_between_fields missing for last record in table                    ||:green_circle:|    |bug           |s.low                     |
 +------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
 |`validate#476`_ As a user, I want to check that are no duplicate LIDs/LIDVIDs in a File_Area_Inventory      ||:yellow_circle:|   |requirement   |p.should-have             |
 +------------------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
@@ -547,19 +553,19 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================================================================+====================+==========================+
-|`validate#479`_ validate erroneously flags PDF/A-1a compliant file                                                      ||:yellow_circle:|   |s.medium                  |
+|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                        ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#649`_ validate does not validate a collection if collection.xml pointed to                                    ||:yellow_circle:|   |s.medium                  |
+|`validate#479`_ validate erroneously flags PDF/A-1a compliant file                                                      ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                           ||:yellow_circle:|   |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#631`_ Expected value in validate report for context reference name is not same as value in the context file   ||:yellow_circle:|   |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                        ||:yellow_circle:|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#652`_ validate 3.3.0 snapshot produces incorrect SKIP/INFO messages                                           ||:yellow_circle:|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#500`_ Validate does not allow `.arch_h` file name/data type                                                   ||:yellow_circle:|   |s.low                     |
++------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#652`_ validate 3.3.0 snapshot produces incorrect SKIP/INFO messages                                           ||:green_circle:|    |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#649`_ validate does not validate a collection if collection.xml pointed to                                    ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -568,15 +574,15 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                                      |I&T Status          |Priority / Bug Severity   |
 +===========================================================================================================================================+====================+==========================+
-|`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#651`_ As a user, I want to support bit patterns within Special_Constants values                                                  ||:yellow_circle:|   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#599`_ As a user, I want to be able to use both online and local schema/schematron files.                                         ||:yellow_circle:|   |p.could-have              |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#462`_ As a user, I want validate to throw an error when a collection inventory contains an invalid secondary product reference   ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#658`_ As a user, I want the PDF error reports to be output in a user-specified directory                                         ||:yellow_circle:|   |p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#651`_ As a user, I want to support bit patterns within Special_Constants values                                                  ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -705,6 +711,7 @@ as follows:
 .. _cloud-tasks#29: https://github.com/NASA-PDS/cloud-tasks/issues/29
 .. _deep-archive#147: https://github.com/NASA-PDS/deep-archive/issues/147
 .. _devops#34: https://github.com/NASA-PDS/devops/issues/34
+.. _devops#50: https://github.com/NASA-PDS/devops/issues/50
 .. _devops#35: https://github.com/NASA-PDS/devops/issues/35
 .. _doi-service#408: https://github.com/NASA-PDS/doi-service/issues/408
 .. _harvest#124: https://github.com/NASA-PDS/harvest/issues/124
@@ -717,15 +724,17 @@ as follows:
 .. _nucleus#41: https://github.com/NASA-PDS/nucleus/issues/41
 .. _nucleus#51: https://github.com/NASA-PDS/nucleus/issues/51
 .. _pds-api#259: https://github.com/NASA-PDS/pds-api/issues/259
-.. _pds-api#260: https://github.com/NASA-PDS/pds-api/issues/260
 .. _pds-api#262: https://github.com/NASA-PDS/pds-api/issues/262
+.. _pds-api#260: https://github.com/NASA-PDS/pds-api/issues/260
 .. _pds4-information-model#661: https://github.com/NASA-PDS/pds4-information-model/issues/661
 .. _pds4-information-model#658: https://github.com/NASA-PDS/pds4-information-model/issues/658
 .. _registry#143: https://github.com/NASA-PDS/registry/issues/143
 .. _registry#180: https://github.com/NASA-PDS/registry/issues/180
+.. _registry-api#341: https://github.com/NASA-PDS/registry-api/issues/341
+.. _registry-api#355: https://github.com/NASA-PDS/registry-api/issues/355
+.. _registry-api#296: https://github.com/NASA-PDS/registry-api/issues/296
 .. _registry-api#305: https://github.com/NASA-PDS/registry-api/issues/305
 .. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
-.. _registry-api#296: https://github.com/NASA-PDS/registry-api/issues/296
 .. _registry-api#336: https://github.com/NASA-PDS/registry-api/issues/336
 .. _registry-loader#26: https://github.com/NASA-PDS/registry-loader/issues/26
 .. _software-issues-repo#63: https://github.com/NASA-PDS/software-issues-repo/issues/63
@@ -747,18 +756,18 @@ as follows:
 .. _validate#643: https://github.com/NASA-PDS/validate/issues/643
 .. _validate#629: https://github.com/NASA-PDS/validate/issues/629
 .. _validate#628: https://github.com/NASA-PDS/validate/issues/628
+.. _validate#644: https://github.com/NASA-PDS/validate/issues/644
 .. _validate#479: https://github.com/NASA-PDS/validate/issues/479
-.. _validate#649: https://github.com/NASA-PDS/validate/issues/649
 .. _validate#561: https://github.com/NASA-PDS/validate/issues/561
 .. _validate#631: https://github.com/NASA-PDS/validate/issues/631
-.. _validate#644: https://github.com/NASA-PDS/validate/issues/644
-.. _validate#652: https://github.com/NASA-PDS/validate/issues/652
 .. _validate#500: https://github.com/NASA-PDS/validate/issues/500
-.. _validate#617: https://github.com/NASA-PDS/validate/issues/617
-.. _validate#651: https://github.com/NASA-PDS/validate/issues/651
+.. _validate#652: https://github.com/NASA-PDS/validate/issues/652
+.. _validate#649: https://github.com/NASA-PDS/validate/issues/649
 .. _validate#599: https://github.com/NASA-PDS/validate/issues/599
+.. _validate#617: https://github.com/NASA-PDS/validate/issues/617
 .. _validate#462: https://github.com/NASA-PDS/validate/issues/462
 .. _validate#658: https://github.com/NASA-PDS/validate/issues/658
+.. _validate#651: https://github.com/NASA-PDS/validate/issues/651
 .. _validate#567: https://github.com/NASA-PDS/validate/issues/567
 .. _web-analytics#3: https://github.com/NASA-PDS/web-analytics/issues/3
 .. _web-modernization#194: https://github.com/NASA-PDS/web-modernization/issues/194
