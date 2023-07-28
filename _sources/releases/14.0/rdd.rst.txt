@@ -66,6 +66,38 @@ No requirements, significant enhancements, or bug fixes identified for this Buil
 
 --------
 
+Data-upload-manager
+-------------------
+*Data Upload Manager (DUM) component for managing the interface for data uploads to the Planetary Data Cloud from Data Providers and PDS Nodes.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/data-upload-manager>`_
+     - `Github Repo <https://github.com/NASA-PDS/data-upload-manager>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/data-upload-manager/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/data-upload-manager/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/data-upload-manager/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/data-upload-manager/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Requirements
+++++++++++++
+
++--------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                       |I&T Status          |Priority / Bug Severity   |
++============================================================================================+====================+==========================+
+|`data-upload-manager#24`_ As a user, I want to parallelize upload of data products to PDC   ||:yellow_circle:|   |p.should-have             |
++--------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
 Deep-archive
 ------------
 *PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators*
@@ -254,6 +286,47 @@ No requirements, significant enhancements, or bug fixes identified for this Buil
 
 --------
 
+Operations
+----------
+*Tickets for the PDSEN Operations Team*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/operations#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/operations>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/operations/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/operations/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/operations/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/operations/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                   |I&T Status          |Priority / Bug Severity   |
++========================================================================================================+====================+==========================+
+|`operations#413`_ Monthly Metrics are not generating for EN the (1) tool metrics or (2) other reports   ||:yellow_circle:|   |unknown                   |
++--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+Enhancements
+++++++++++++
+
++--------------------------------------------------------------------------------------+------------------+--------------------------+
+|Issue                                                                                 |I&T Status        |Priority / Bug Severity   |
++======================================================================================+==================+==========================+
+|`operations#378`_ Develop script to enhance sitemap with data set landing page URLs   ||:blue_circle:|   |p.should-have             |
++--------------------------------------------------------------------------------------+------------------+--------------------------+
+
+--------
+
 Pds-api
 -------
 *PDS web APIs specifications and user's manual*
@@ -350,11 +423,13 @@ Other Updates
 Bugs
 ++++
 
-+-------------------------------------------------------------------+------------------+--------------------------+
-|Issue                                                              |I&T Status        |Priority / Bug Severity   |
-+===================================================================+==================+==========================+
-|`registry#180`_ Provenance script failing on production registry   ||:blue_circle:|   |s.high                    |
-+-------------------------------------------------------------------+------------------+--------------------------+
++-------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                              |I&T Status          |Priority / Bug Severity   |
++===================================================================+====================+==========================+
+|`registry#213`_ Increase disk space for ATM opensearch             ||:yellow_circle:|   |s.critical                |
++-------------------------------------------------------------------+--------------------+--------------------------+
+|`registry#180`_ Provenance script failing on production registry   ||:blue_circle:|     |s.high                    |
++-------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -385,7 +460,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                              |I&T Status          |Priority / Bug Severity   |
 +===================================================================================================+====================+==========================+
-|`registry-api#341`_ members of a bundle does not work on new test dataset                          ||:yellow_circle:|   |s.high                    |
+|`registry-api#262`_ the request url in the error message does not make sense                       ||:yellow_circle:|   |s.low                     |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#277`_ Product summary object has an incomplete "properties" set                      ||:green_circle:|    |s.medium                  |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#355`_ api does not return information that OpenSearch says is public                 ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
@@ -393,17 +470,17 @@ Bugs
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#305`_ API not returning value for NAIF bundles                                       ||:green_circle:|    |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#277`_ Product summary object has an incomplete "properties" set                      ||:yellow_circle:|   |s.medium                  |
+|`registry-api#341`_ members of a bundle does not work on new test dataset                          ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
 ++++++++++++
 
-+-----------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                          |I&T Status          |Priority / Bug Severity   |
-+===============================================================================================+====================+==========================+
-|`registry-api#336`_ As a PDS operator, I want to know the health of the registry API service   ||:yellow_circle:|   |p.should-have             |
-+-----------------------------------------------------------------------------------------------+--------------------+--------------------------+
++-----------------------------------------------------------------------------------------------+-------------------+--------------------------+
+|Issue                                                                                          |I&T Status         |Priority / Bug Severity   |
++===============================================================================================+===================+==========================+
+|`registry-api#336`_ As a PDS operator, I want to know the health of the registry API service   ||:green_circle:|   |p.should-have             |
++-----------------------------------------------------------------------------------------------+-------------------+--------------------------+
 
 --------
 
@@ -436,6 +513,38 @@ Bugs
 +==============================================================================+====================+==========================+
 |`registry-loader#26`_ Stable Roundup can no longer trigger Imaging workflow   ||:yellow_circle:|   |unknown                   |
 +------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Registry-sweepers
+-----------------
+*Scripts that run regularly on the registry database, to clean and consolidate information *
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/registry-sweepers#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-sweepers>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-sweepers/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry-sweepers/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-sweepers/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-sweepers/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++----------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                                 |I&T Status          |Priority / Bug Severity   |
++======================================================================================================================+====================+==========================+
+|`registry-sweepers#34`_ Provenance bulk update db writes fail under specific conditions related to presence of CCRs   ||:yellow_circle:|   |s.critical                |
++----------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -553,17 +662,17 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================================================================+====================+==========================+
-|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                        ||:yellow_circle:|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#479`_ validate erroneously flags PDF/A-1a compliant file                                                      ||:yellow_circle:|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                           ||:yellow_circle:|   |s.low                     |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#631`_ Expected value in validate report for context reference name is not same as value in the context file   ||:yellow_circle:|   |s.low                     |
-+------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#500`_ Validate does not allow `.arch_h` file name/data type                                                   ||:yellow_circle:|   |s.low                     |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#652`_ validate 3.3.0 snapshot produces incorrect SKIP/INFO messages                                           ||:green_circle:|    |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                        ||:green_circle:|    |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#631`_ Expected value in validate report for context reference name is not same as value in the context file   ||:green_circle:|    |s.low                     |
++------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                           ||:green_circle:|    |s.low                     |
++------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#479`_ validate erroneously flags PDF/A-1a compliant file                                                      ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#649`_ validate does not validate a collection if collection.xml pointed to                                    ||:yellow_circle:|   |s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
@@ -574,13 +683,13 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                                      |I&T Status          |Priority / Bug Severity   |
 +===========================================================================================================================================+====================+==========================+
+|`validate#658`_ As a user, I want the PDF error reports to be output in a user-specified directory                                         ||:yellow_circle:|   |p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#599`_ As a user, I want to be able to use both online and local schema/schematron files.                                         ||:yellow_circle:|   |p.could-have              |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#462`_ As a user, I want validate to throw an error when a collection inventory contains an invalid secondary product reference   ||:yellow_circle:|   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#658`_ As a user, I want the PDF error reports to be output in a user-specified directory                                         ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#651`_ As a user, I want to support bit patterns within Special_Constants values                                                  ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
@@ -709,6 +818,7 @@ as follows:
 
 .. _plan B14.0: https://nasa-pds.github.io/releases/14.0/plan.html
 .. _cloud-tasks#29: https://github.com/NASA-PDS/cloud-tasks/issues/29
+.. _data-upload-manager#24: https://github.com/NASA-PDS/data-upload-manager/issues/24
 .. _deep-archive#147: https://github.com/NASA-PDS/deep-archive/issues/147
 .. _devops#34: https://github.com/NASA-PDS/devops/issues/34
 .. _devops#50: https://github.com/NASA-PDS/devops/issues/50
@@ -723,20 +833,25 @@ as follows:
 .. _nucleus#27: https://github.com/NASA-PDS/nucleus/issues/27
 .. _nucleus#41: https://github.com/NASA-PDS/nucleus/issues/41
 .. _nucleus#51: https://github.com/NASA-PDS/nucleus/issues/51
+.. _operations#413: https://github.com/NASA-PDS/operations/issues/413
+.. _operations#378: https://github.com/NASA-PDS/operations/issues/378
 .. _pds-api#259: https://github.com/NASA-PDS/pds-api/issues/259
 .. _pds-api#262: https://github.com/NASA-PDS/pds-api/issues/262
 .. _pds-api#260: https://github.com/NASA-PDS/pds-api/issues/260
 .. _pds4-information-model#661: https://github.com/NASA-PDS/pds4-information-model/issues/661
 .. _pds4-information-model#658: https://github.com/NASA-PDS/pds4-information-model/issues/658
 .. _registry#143: https://github.com/NASA-PDS/registry/issues/143
+.. _registry#213: https://github.com/NASA-PDS/registry/issues/213
 .. _registry#180: https://github.com/NASA-PDS/registry/issues/180
-.. _registry-api#341: https://github.com/NASA-PDS/registry-api/issues/341
+.. _registry-api#262: https://github.com/NASA-PDS/registry-api/issues/262
+.. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
 .. _registry-api#355: https://github.com/NASA-PDS/registry-api/issues/355
 .. _registry-api#296: https://github.com/NASA-PDS/registry-api/issues/296
 .. _registry-api#305: https://github.com/NASA-PDS/registry-api/issues/305
-.. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
+.. _registry-api#341: https://github.com/NASA-PDS/registry-api/issues/341
 .. _registry-api#336: https://github.com/NASA-PDS/registry-api/issues/336
 .. _registry-loader#26: https://github.com/NASA-PDS/registry-loader/issues/26
+.. _registry-sweepers#34: https://github.com/NASA-PDS/registry-sweepers/issues/34
 .. _software-issues-repo#63: https://github.com/NASA-PDS/software-issues-repo/issues/63
 .. _validate#534: https://github.com/NASA-PDS/validate/issues/534
 .. _validate#7: https://github.com/NASA-PDS/validate/issues/7
@@ -756,17 +871,17 @@ as follows:
 .. _validate#643: https://github.com/NASA-PDS/validate/issues/643
 .. _validate#629: https://github.com/NASA-PDS/validate/issues/629
 .. _validate#628: https://github.com/NASA-PDS/validate/issues/628
-.. _validate#644: https://github.com/NASA-PDS/validate/issues/644
-.. _validate#479: https://github.com/NASA-PDS/validate/issues/479
-.. _validate#561: https://github.com/NASA-PDS/validate/issues/561
-.. _validate#631: https://github.com/NASA-PDS/validate/issues/631
 .. _validate#500: https://github.com/NASA-PDS/validate/issues/500
 .. _validate#652: https://github.com/NASA-PDS/validate/issues/652
+.. _validate#644: https://github.com/NASA-PDS/validate/issues/644
+.. _validate#631: https://github.com/NASA-PDS/validate/issues/631
+.. _validate#561: https://github.com/NASA-PDS/validate/issues/561
+.. _validate#479: https://github.com/NASA-PDS/validate/issues/479
 .. _validate#649: https://github.com/NASA-PDS/validate/issues/649
+.. _validate#658: https://github.com/NASA-PDS/validate/issues/658
 .. _validate#599: https://github.com/NASA-PDS/validate/issues/599
 .. _validate#617: https://github.com/NASA-PDS/validate/issues/617
 .. _validate#462: https://github.com/NASA-PDS/validate/issues/462
-.. _validate#658: https://github.com/NASA-PDS/validate/issues/658
 .. _validate#651: https://github.com/NASA-PDS/validate/issues/651
 .. _validate#567: https://github.com/NASA-PDS/validate/issues/567
 .. _web-analytics#3: https://github.com/NASA-PDS/web-analytics/issues/3
