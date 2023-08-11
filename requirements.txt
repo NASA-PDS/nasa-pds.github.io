@@ -1,5 +1,5 @@
 sphinx==4.5.0
 sphinx-rtd-theme==1.1.1
-gitpython==3.1.30
+gitpython==3.1.32
 sphinxemoji
 lasso.issues~=1.0.1
