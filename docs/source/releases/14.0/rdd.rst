@@ -17,7 +17,11 @@ PDS4 Standards and Information Model Changes
 This section details the changes to the PDS4 Standards and Information Model approved by the PDS4 Change Control Board
 and implemented by the PDS within the latest build period.
 
-No PDS4 Standards Updates
++--------------------------------+---------------------------------------------------------------------+
+|Ref                             |Title                                                                |
++================================+=====================================================================+
+|`pds4-information-model#679`_   |CCB-336 Add a License_Information class to the Identification_Area   |
++--------------------------------+---------------------------------------------------------------------+
 
 Software Changes
 ================
@@ -87,7 +91,21 @@ Data-upload-manager
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
+`data-upload-manager#11`_ Refine Design and Prototype
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++---------------------------------------------------------------------------------------------------------------+------------------+--------------+--------------------------+
+|Issue                                                                                                          |I&T Status        |Level         |Priority / Bug Severity   |
++===============================================================================================================+==================+==============+==========================+
+|`data-upload-manager#10`_ As a user, I want to use Cognito Single Sign On to authenticate to the DUM service   ||:blue_circle:|   |requirement   |unknown                   |
++---------------------------------------------------------------------------------------------------------------+------------------+--------------+--------------------------+
+|`data-upload-manager#21`_ Develop Ingress Client Logging Capabilities                                          ||:blue_circle:|   |requirement   |unknown                   |
++---------------------------------------------------------------------------------------------------------------+------------------+--------------+--------------------------+
+
+
+`data-upload-manager#12`_ Develop IaC for Deployment
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -99,6 +117,15 @@ Requirements
 +============================================================================================+====================+==========================+
 |`data-upload-manager#24`_ As a user, I want to parallelize upload of data products to PDC   ||:yellow_circle:|   |p.should-have             |
 +--------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+Enhancements
+++++++++++++
+
++-----------------------------------------------------------------------+------------------+--------------------------+
+|Issue                                                                  |I&T Status        |Priority / Bug Severity   |
++=======================================================================+==================+==========================+
+|`data-upload-manager#26`_ Add support for presigned upload URL usage   ||:blue_circle:|   |unknown                   |
++-----------------------------------------------------------------------+------------------+--------------------------+
 
 --------
 
@@ -371,12 +398,46 @@ Bugs
 +----------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                       |I&T Status          |Priority / Bug Severity   |
 +============================================================================+====================+==========================+
-|`pds-api#259`_ API search returns 500 for anything besides simple queries   ||:yellow_circle:|   |unknown                   |
-+----------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#260`_ PDS API documents are unclear wrt quoting in queries         ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#262`_ PDS API is not respecting the sort field                     ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds-api#259`_ API search returns 500 for anything besides simple queries   ||:yellow_circle:|   |unknown                   |
++----------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Pds3-product-tools
+------------------
+*Library supporting the design/generation, validation and submission of PDS3 archival products.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds3-product-tools/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds3-product-tools>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds3-product-tools/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/pds3-product-tools/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds3-product-tools/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds3-product-tools/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                                                                         |I&T Status          |Priority / Bug Severity   |
++==============================================================================================================================================================+====================+==========================+
+|`pds3-product-tools#17`_ [SECURITY] Upgrade to latest log4j-api/log4-core                                                                                     ||:yellow_circle:|   |s.critical                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds3-product-tools#21`_ `code too large` error on generated ODLParser class preventing build and tag of upgraded log4j dependencies needed by pds4-jparser   ||:yellow_circle:|   |s.critical                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -397,31 +458,94 @@ Pds4-information-model
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
+`pds4-information-model#635`_ B14.0 Develop Planetary Systems Target Ontology
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
+`pds4-information-model#652`_ B14.0 LDDTool/IMTool Code Refactoring
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
 Other Updates
 ~~~~~~~~~~~~~
 Bugs
 ++++
 
-+---------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                                    |I&T Status          |Priority / Bug Severity   |
-+=========================================================================================================+====================+==========================+
-|`pds4-information-model#658`_ Bug trying to generate LDD and missing files                               ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`pds4-information-model#661`_ LDDTool fails for dependent LDDs since v14.2.0                             ||:yellow_circle:|   |s.critical                |
-+---------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`pds4-information-model#667`_ lddtool does not generate the correct closing tag for rule_type = Report   ||:yellow_circle:|   |s.medium                  |
-+---------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
++---------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
+|Issue                                                                                                    |I&T Status         |Priority / Bug Severity   |
++=========================================================================================================+===================+==========================+
+|`pds4-information-model#658`_ Bug trying to generate LDD and missing files                               ||:green_circle:|   |s.high                    |
++---------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
+|`pds4-information-model#667`_ lddtool does not generate the correct closing tag for rule_type = Report   ||:green_circle:|   |s.medium                  |
++---------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
+|`pds4-information-model#661`_ LDDTool fails for dependent LDDs since v14.2.0                             ||:green_circle:|   |s.critical                |
++---------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
+
+Requirements
+++++++++++++
+
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                              |I&T Status          |Priority / Bug Severity   |
++===================================================================================================+====================+==========================+
+|`pds4-information-model#679`_ CCB-336 Add a License_Information class to the Identification_Area   ||:yellow_circle:|   |p.must-have               |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
 ++++++++++++
 
-+--------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                               |I&T Status          |Priority / Bug Severity   |
-+====================================================================+====================+==========================+
-|`pds4-information-model#651`_ Add TermMaps to default output JSON   ||:yellow_circle:|   |p.should-have             |
-+--------------------------------------------------------------------+--------------------+--------------------------+
++-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                              |I&T Status          |Priority / Bug Severity   |
++===================================================================================================================+====================+==========================+
+|`pds4-information-model#686`_ Verify LDDTool Processing of the Discipline LDDs matches outputs previous releases   ||:yellow_circle:|   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds4-information-model#670`_ Adds to default output JSON TermMap                                                  ||:green_circle:|    |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Planetary-data-engine
+---------------------
+*Free-text search capability for planetary data, services, tools, and information*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/planetary-data-engine#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/planetary-data-engine>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/planetary-data-engine/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/planetary-data-engine/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/planetary-data-engine/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/planetary-data-engine/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+`planetary-data-engine#2`_ Evaluate SDE, Legacy Registry, and OpenSearch Keyword Search capabilities
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
+--------
+
+Planetarydata.org
+-----------------
+*Website and related services for the International Planetary Data Alliance, nominally run at https://planetarydata.org/*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/planetarydata.org#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/planetarydata.org>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/planetarydata.org/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/planetarydata.org/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/planetarydata.org/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/planetarydata.org/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+`planetarydata.org#7`_ Operational Deployment of new planetarydata.org WordPress site
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
 --------
 
@@ -445,6 +569,28 @@ Planned Updates
 `portal-tasks#64`_ Fix and Improve pds.nasa.gov SEO
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++---------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                |I&T Status          |Priority / Bug Severity   |
++=====================================================================+====================+==========================+
+|`portal-tasks#80`_ Unexpected metadata causing bug in ds-view        ||:yellow_circle:|   |s.medium                  |
++---------------------------------------------------------------------+--------------------+--------------------------+
+|`portal-tasks#84`_ Fix coldfusion vulnerability identified by ITSD   ||:yellow_circle:|   |s.critical                |
++---------------------------------------------------------------------+--------------------+--------------------------+
+
+Enhancements
+++++++++++++
+
++----------------------------------------------------------------------------------------+------------------+--------------------------+
+|Issue                                                                                   |I&T Status        |Priority / Bug Severity   |
++========================================================================================+==================+==========================+
+|`portal-tasks#78`_ As a user, I want a DOI landing page for Product_External products   ||:blue_circle:|   |p.must-have               |
++----------------------------------------------------------------------------------------+------------------+--------------------------+
 
 --------
 
@@ -496,6 +642,10 @@ No requirements, significant enhancements, or bug fixes identified for this Buil
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
+`registry#214`_ Enhance cost monitoring, alerting, and error handling for Registry and Registry Sweepers
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
 Other Updates
 ~~~~~~~~~~~~~
 Bugs
@@ -512,11 +662,15 @@ Bugs
 Requirements
 ++++++++++++
 
-+----------------------------------------------------------------------------------------------------------------+------------------+--------------------------+
-|Issue                                                                                                           |I&T Status        |Priority / Bug Severity   |
-+================================================================================================================+==================+==========================+
-|`registry#211`_ As an operator, I want to be notified of when Registry storage capacity exceeds 75% capacity.   ||:blue_circle:|   |p.must-have               |
-+----------------------------------------------------------------------------------------------------------------+------------------+--------------------------+
++-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                              |I&T Status          |Priority / Bug Severity   |
++===================================================================================================================+====================+==========================+
+|`registry#211`_ As an operator, I want to be notified of when Registry storage capacity exceeds 75% capacity.      ||:blue_circle:|     |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry#168`_ As a manager, I want to see the progress of data sets ingested into registry vs. legacy registry   ||:yellow_circle:|   |p.should-have             |
++-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry#226`_ As a system, I can support up to 25 simultaneous writes from Harvest                               ||:yellow_circle:|   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -547,25 +701,25 @@ Bugs
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                              |I&T Status          |Priority / Bug Severity   |
 +===================================================================================================+====================+==========================+
-|`registry-api#356`_ `Accept:*` response not defaulting to valid application/json                   ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#262`_ the request url in the error message does not make sense                       ||:yellow_circle:|   |s.low                     |
+|`registry-api#296`_ API crashes with JVM memory error on data sets with very large labels (>1MB)   ||:green_circle:|    |s.medium                  |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#341`_ members of a bundle does not work on new test dataset                          ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#305`_ API not returning value for NAIF bundles                                       ||:green_circle:|    |s.high                    |
-+---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#277`_ Product summary object has an incomplete "properties" set                      ||:green_circle:|    |s.medium                  |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#349`_ Request for json+pds4 response fails in production                             ||:yellow_circle:|   |s.high                    |
+|`registry-api#356`_ `Accept:*` response not defaulting to valid application/json                   ||:green_circle:|    |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#296`_ API crashes with JVM memory error on data sets with very large labels (>1MB)   ||:green_circle:|    |s.medium                  |
+|`registry-api#305`_ API not returning value for NAIF bundles                                       ||:green_circle:|    |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#355`_ api does not return information that OpenSearch says is public                 ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#362`_ field case in response and query have mismatched cases                         ||:yellow_circle:|   |s.high                    |
+|`registry-api#349`_ Request for json+pds4 response fails in production                             ||:yellow_circle:|   |s.high                    |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#262`_ the request url in the error message does not make sense                       ||:yellow_circle:|   |s.low                     |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#343`_ API falsely reports 10000 hits for hits>10000                                  ||:yellow_circle:|   |s.medium                  |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#362`_ field case in response and query have mismatched cases                         ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -574,10 +728,42 @@ Requirements
 +-----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                              |I&T Status          |Priority / Bug Severity   |
 +===================================================================================================================================+====================+==========================+
-|`registry-api#336`_ As a PDS operator, I want to know the health of the registry API service                                       ||:green_circle:|    |p.should-have             |
-+-----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#361`_ As a user, I want my API request to execute successfully even when the registry contains corrupted documents   ||:yellow_circle:|   |p.could-have              |
 +-----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#336`_ As a PDS operator, I want to know the health of the registry API service                                       ||:green_circle:|    |p.should-have             |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Registry-harvest-legacy
+-----------------------
+*None*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/registry-harvest-legacy#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-harvest-legacy>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-harvest-legacy/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry-harvest-legacy/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-harvest-legacy/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-harvest-legacy/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Enhancements
+++++++++++++
+
++----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                               |I&T Status          |Priority / Bug Severity   |
++====================================================================================================+====================+==========================+
+|`registry-harvest-legacy#7`_ Upgrade legacy harvest with upgraded log4j libraries and Solr 8.11.2   ||:yellow_circle:|   |p.must-have               |
++----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -610,6 +796,79 @@ Bugs
 +==============================================================================+====================+==========================+
 |`registry-loader#26`_ Stable Roundup can no longer trigger Imaging workflow   ||:yellow_circle:|   |unknown                   |
 +------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Registry-mgr-legacy
+-------------------
+*None*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/registry-mgr-legacy#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-mgr-legacy>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-mgr-legacy/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry-mgr-legacy/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-mgr-legacy/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-mgr-legacy/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++--------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                     |I&T Status          |Priority / Bug Severity   |
++==========================================================================+====================+==========================+
+|`registry-mgr-legacy#5`_ Fix XSLT issues with displaying search results   ||:yellow_circle:|   |s.high                    |
++--------------------------------------------------------------------------+--------------------+--------------------------+
+
+Enhancements
+++++++++++++
+
++-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                |I&T Status          |Priority / Bug Severity   |
++=====================================================================================================+====================+==========================+
+|`registry-mgr-legacy#3`_ Upgrade legacy registry mgr with upgraded log4j libraries and Solr 8.11.2   ||:yellow_circle:|   |p.must-have               |
++-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Registry-pds3-catalog
+---------------------
+*None*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/registry-pds3-catalog#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-pds3-catalog>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-pds3-catalog/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry-pds3-catalog/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-pds3-catalog/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-pds3-catalog/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                   |I&T Status          |Priority / Bug Severity   |
++========================================================================+====================+==========================+
+|`registry-pds3-catalog#2`_ Catalog does not create field 'package_id'   ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -696,7 +955,24 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `search-api-notebook#10`_ Prototype integration of pyWWT and PDS Search API in Jupyter
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
++---------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|Issue                                                                      |I&T Status          |Level         |Priority / Bug Severity   |
++===========================================================================+====================+==============+==========================+
+|`search-api-notebook#20`_ Data layer separation for pyWWT visualization    ||:yellow_circle:|   |enhancement   |p.should-have             |
++---------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+
+
+Other Updates
+~~~~~~~~~~~~~
+Requirements
+++++++++++++
+
++--------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                             |I&T Status          |Priority / Bug Severity   |
++==================================================================================================+====================+==========================+
+|`search-api-notebook#26`_ As a user, I want to retrieve and view IR/UV/Visual wavelength images   ||:yellow_circle:|   |p.should-have             |
++--------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -719,6 +995,10 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `software-issues-repo#63`_ B14.0 Release Planning
 +++++++++++++++++++++++++++++++++++++++++++++++++
+No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
+
+`software-issues-repo#78`_ Develop and Review Draft ISA for Node Interfaces
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 No requirements, significant enhancements, or bug fixes identified for this Build. See theme for more details.
 
 --------
@@ -846,27 +1126,31 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                             |I&T Status          |Priority / Bug Severity   |
 +==================================================================================================================================+====================+==========================+
-|`validate#673`_ Validate does not handle Special_Constants valid_minimum and valid_maximum in accordance with information model   ||:yellow_circle:|   |s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                                     ||:green_circle:|    |s.low                     |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                                  ||:green_circle:|    |s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#500`_ Validate does not allow `.arch_h` file name/data type                                                             ||:green_circle:|    |s.low                     |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#674`_ validate does not handle special constants with data type of SignedLSB2                                           ||:yellow_circle:|   |s.medium                  |
+|`validate#693`_ Upgrade verapdf dependency per transitive log4j vulnerability                                                     ||:yellow_circle:|   |s.critical                |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#479`_ validate erroneously flags PDF/A-1a compliant file                                                                ||:green_circle:|    |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#649`_ validate does not validate a collection if collection.xml pointed to                                              ||:green_circle:|    |s.medium                  |
+|`validate#679`_ Validate throws internal error when coming across non-label XML in a target directory                             ||:yellow_circle:|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#631`_ Expected value in validate report for context reference name is not same as value in the context file             ||:green_circle:|    |s.low                     |
+|`validate#500`_ Validate does not allow `.arch_h` file name/data type                                                             ||:green_circle:|    |s.low                     |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#652`_ validate 3.3.0 snapshot produces incorrect SKIP/INFO messages                                                     ||:green_circle:|    |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#679`_ Validate throws internal error when coming across non-label XML in a target directory                             ||:yellow_circle:|   |s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#684`_ Validation failures are contingent on presence of `<file_size>` attribute in `<File>` class                       ||:yellow_circle:|   |s.high                    |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#673`_ Validate does not handle Special_Constants valid_minimum and valid_maximum in accordance with information model   ||:yellow_circle:|   |s.medium                  |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#631`_ Expected value in validate report for context reference name is not same as value in the context file             ||:green_circle:|    |s.low                     |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                                  ||:green_circle:|    |s.medium                  |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                                     ||:green_circle:|    |s.low                     |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#649`_ validate does not validate a collection if collection.xml pointed to                                              ||:green_circle:|    |s.medium                  |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#674`_ validate does not handle special constants with data type of SignedLSB2                                           ||:yellow_circle:|   |s.medium                  |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#690`_ Validate does not accurately check for missing_constant values                                                    ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -875,17 +1159,17 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                                      |I&T Status          |Priority / Bug Severity   |
 +===========================================================================================================================================+====================+==========================+
+|`validate#683`_ As a user, I want to receive a WARNING when table objects are out of order                                                 ||:yellow_circle:|   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#651`_ As a user, I want to support bit patterns within Special_Constants values                                                  ||:yellow_circle:|   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#535`_ As a user, I want to receive a warning if records in file are greater than records value specified in label                ||:yellow_circle:|   |p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#658`_ As a user, I want the PDF error reports to be output in a user-specified directory                                         ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#599`_ As a user, I want to be able to use both online and local schema/schematron files.                                         ||:yellow_circle:|   |p.could-have              |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#683`_ As a user, I want to receive a WARNING when table objects are out of order                                                 ||:yellow_circle:|   |p.must-have               |
+|`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#535`_ As a user, I want to receive a warning if records in file are greater than records value specified in label                ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#462`_ As a user, I want validate to throw an error when a collection inventory contains an invalid secondary product reference   ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
@@ -1058,9 +1342,15 @@ as follows:
 - `PDS DOI Service Requirements and Design Document (SRD/SDD)`_
 
 .. _plan B14.0: https://nasa-pds.github.io/releases/14.0/plan.html
+.. _pds4-information-model#679: https://github.com/NASA-PDS/pds4-information-model/issues/679
 .. _cloud-tasks#29: https://github.com/NASA-PDS/cloud-tasks/issues/29
 .. _cloud-tasks#65: https://github.com/NASA-PDS/cloud-tasks/issues/65
+.. _data-upload-manager#11: https://github.com/NASA-PDS/data-upload-manager/issues/11
+.. _data-upload-manager#10: https://github.com/NASA-PDS/data-upload-manager/issues/10
+.. _data-upload-manager#21: https://github.com/NASA-PDS/data-upload-manager/issues/21
+.. _data-upload-manager#12: https://github.com/NASA-PDS/data-upload-manager/issues/12
 .. _data-upload-manager#24: https://github.com/NASA-PDS/data-upload-manager/issues/24
+.. _data-upload-manager#26: https://github.com/NASA-PDS/data-upload-manager/issues/26
 .. _deep-archive#147: https://github.com/NASA-PDS/deep-archive/issues/147
 .. _devops#34: https://github.com/NASA-PDS/devops/issues/34
 .. _devops#50: https://github.com/NASA-PDS/devops/issues/50
@@ -1080,37 +1370,58 @@ as follows:
 .. _operations#413: https://github.com/NASA-PDS/operations/issues/413
 .. _operations#378: https://github.com/NASA-PDS/operations/issues/378
 .. _operations#414: https://github.com/NASA-PDS/operations/issues/414
-.. _pds-api#259: https://github.com/NASA-PDS/pds-api/issues/259
 .. _pds-api#260: https://github.com/NASA-PDS/pds-api/issues/260
 .. _pds-api#262: https://github.com/NASA-PDS/pds-api/issues/262
+.. _pds-api#259: https://github.com/NASA-PDS/pds-api/issues/259
+.. _pds3-product-tools#17: https://github.com/NASA-PDS/pds3-product-tools/issues/17
+.. _pds3-product-tools#21: https://github.com/NASA-PDS/pds3-product-tools/issues/21
+.. _pds4-information-model#635: https://github.com/NASA-PDS/pds4-information-model/issues/635
+.. _pds4-information-model#652: https://github.com/NASA-PDS/pds4-information-model/issues/652
 .. _pds4-information-model#658: https://github.com/NASA-PDS/pds4-information-model/issues/658
-.. _pds4-information-model#661: https://github.com/NASA-PDS/pds4-information-model/issues/661
 .. _pds4-information-model#667: https://github.com/NASA-PDS/pds4-information-model/issues/667
-.. _pds4-information-model#651: https://github.com/NASA-PDS/pds4-information-model/issues/651
+.. _pds4-information-model#661: https://github.com/NASA-PDS/pds4-information-model/issues/661
+.. _pds4-information-model#679: https://github.com/NASA-PDS/pds4-information-model/issues/679
+.. _pds4-information-model#686: https://github.com/NASA-PDS/pds4-information-model/issues/686
+.. _pds4-information-model#670: https://github.com/NASA-PDS/pds4-information-model/issues/670
+.. _planetary-data-engine#2: https://github.com/NASA-PDS/planetary-data-engine/issues/2
+.. _planetarydata.org#7: https://github.com/NASA-PDS/planetarydata.org/issues/7
 .. _portal-tasks#64: https://github.com/NASA-PDS/portal-tasks/issues/64
+.. _portal-tasks#80: https://github.com/NASA-PDS/portal-tasks/issues/80
+.. _portal-tasks#84: https://github.com/NASA-PDS/portal-tasks/issues/84
+.. _portal-tasks#78: https://github.com/NASA-PDS/portal-tasks/issues/78
 .. _portal-wp-tasks#37: https://github.com/NASA-PDS/portal-wp-tasks/issues/37
 .. _registry#143: https://github.com/NASA-PDS/registry/issues/143
 .. _registry#186: https://github.com/NASA-PDS/registry/issues/186
+.. _registry#214: https://github.com/NASA-PDS/registry/issues/214
 .. _registry#180: https://github.com/NASA-PDS/registry/issues/180
 .. _registry#213: https://github.com/NASA-PDS/registry/issues/213
 .. _registry#211: https://github.com/NASA-PDS/registry/issues/211
-.. _registry-api#356: https://github.com/NASA-PDS/registry-api/issues/356
-.. _registry-api#262: https://github.com/NASA-PDS/registry-api/issues/262
-.. _registry-api#341: https://github.com/NASA-PDS/registry-api/issues/341
-.. _registry-api#305: https://github.com/NASA-PDS/registry-api/issues/305
-.. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
-.. _registry-api#349: https://github.com/NASA-PDS/registry-api/issues/349
+.. _registry#168: https://github.com/NASA-PDS/registry/issues/168
+.. _registry#226: https://github.com/NASA-PDS/registry/issues/226
 .. _registry-api#296: https://github.com/NASA-PDS/registry-api/issues/296
+.. _registry-api#341: https://github.com/NASA-PDS/registry-api/issues/341
+.. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
+.. _registry-api#356: https://github.com/NASA-PDS/registry-api/issues/356
+.. _registry-api#305: https://github.com/NASA-PDS/registry-api/issues/305
 .. _registry-api#355: https://github.com/NASA-PDS/registry-api/issues/355
-.. _registry-api#362: https://github.com/NASA-PDS/registry-api/issues/362
+.. _registry-api#349: https://github.com/NASA-PDS/registry-api/issues/349
+.. _registry-api#262: https://github.com/NASA-PDS/registry-api/issues/262
 .. _registry-api#343: https://github.com/NASA-PDS/registry-api/issues/343
-.. _registry-api#336: https://github.com/NASA-PDS/registry-api/issues/336
+.. _registry-api#362: https://github.com/NASA-PDS/registry-api/issues/362
 .. _registry-api#361: https://github.com/NASA-PDS/registry-api/issues/361
+.. _registry-api#336: https://github.com/NASA-PDS/registry-api/issues/336
+.. _registry-harvest-legacy#7: https://github.com/NASA-PDS/registry-harvest-legacy/issues/7
 .. _registry-loader#26: https://github.com/NASA-PDS/registry-loader/issues/26
+.. _registry-mgr-legacy#5: https://github.com/NASA-PDS/registry-mgr-legacy/issues/5
+.. _registry-mgr-legacy#3: https://github.com/NASA-PDS/registry-mgr-legacy/issues/3
+.. _registry-pds3-catalog#2: https://github.com/NASA-PDS/registry-pds3-catalog/issues/2
 .. _registry-sweepers#34: https://github.com/NASA-PDS/registry-sweepers/issues/34
 .. _roundup-action#116: https://github.com/NASA-PDS/roundup-action/issues/116
 .. _search-api-notebook#10: https://github.com/NASA-PDS/search-api-notebook/issues/10
+.. _search-api-notebook#20: https://github.com/NASA-PDS/search-api-notebook/issues/20
+.. _search-api-notebook#26: https://github.com/NASA-PDS/search-api-notebook/issues/26
 .. _software-issues-repo#63: https://github.com/NASA-PDS/software-issues-repo/issues/63
+.. _software-issues-repo#78: https://github.com/NASA-PDS/software-issues-repo/issues/78
 .. _transform#35: https://github.com/NASA-PDS/transform/issues/35
 .. _validate#534: https://github.com/NASA-PDS/validate/issues/534
 .. _validate#7: https://github.com/NASA-PDS/validate/issues/7
@@ -1130,23 +1441,25 @@ as follows:
 .. _validate#643: https://github.com/NASA-PDS/validate/issues/643
 .. _validate#629: https://github.com/NASA-PDS/validate/issues/629
 .. _validate#628: https://github.com/NASA-PDS/validate/issues/628
-.. _validate#673: https://github.com/NASA-PDS/validate/issues/673
-.. _validate#561: https://github.com/NASA-PDS/validate/issues/561
-.. _validate#644: https://github.com/NASA-PDS/validate/issues/644
-.. _validate#500: https://github.com/NASA-PDS/validate/issues/500
-.. _validate#674: https://github.com/NASA-PDS/validate/issues/674
+.. _validate#693: https://github.com/NASA-PDS/validate/issues/693
 .. _validate#479: https://github.com/NASA-PDS/validate/issues/479
-.. _validate#649: https://github.com/NASA-PDS/validate/issues/649
-.. _validate#631: https://github.com/NASA-PDS/validate/issues/631
-.. _validate#652: https://github.com/NASA-PDS/validate/issues/652
 .. _validate#679: https://github.com/NASA-PDS/validate/issues/679
+.. _validate#500: https://github.com/NASA-PDS/validate/issues/500
+.. _validate#652: https://github.com/NASA-PDS/validate/issues/652
 .. _validate#684: https://github.com/NASA-PDS/validate/issues/684
+.. _validate#673: https://github.com/NASA-PDS/validate/issues/673
+.. _validate#631: https://github.com/NASA-PDS/validate/issues/631
+.. _validate#644: https://github.com/NASA-PDS/validate/issues/644
+.. _validate#561: https://github.com/NASA-PDS/validate/issues/561
+.. _validate#649: https://github.com/NASA-PDS/validate/issues/649
+.. _validate#674: https://github.com/NASA-PDS/validate/issues/674
+.. _validate#690: https://github.com/NASA-PDS/validate/issues/690
+.. _validate#683: https://github.com/NASA-PDS/validate/issues/683
 .. _validate#651: https://github.com/NASA-PDS/validate/issues/651
-.. _validate#535: https://github.com/NASA-PDS/validate/issues/535
-.. _validate#617: https://github.com/NASA-PDS/validate/issues/617
 .. _validate#658: https://github.com/NASA-PDS/validate/issues/658
 .. _validate#599: https://github.com/NASA-PDS/validate/issues/599
-.. _validate#683: https://github.com/NASA-PDS/validate/issues/683
+.. _validate#617: https://github.com/NASA-PDS/validate/issues/617
+.. _validate#535: https://github.com/NASA-PDS/validate/issues/535
 .. _validate#462: https://github.com/NASA-PDS/validate/issues/462
 .. _validate#680: https://github.com/NASA-PDS/validate/issues/680
 .. _validate#567: https://github.com/NASA-PDS/validate/issues/567
