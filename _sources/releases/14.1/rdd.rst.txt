@@ -43,6 +43,38 @@ testing:
 
 --------
 
+Deep-archive
+------------
+*PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/deep-archive/>`_
+     - `Github Repo <https://github.com/NASA-PDS/deep-archive>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/deep-archive/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/deep-archive/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/deep-archive/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/deep-archive/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++-------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                    |I&T Status          |Priority / Bug Severity   |
++=========================================================================+====================+==========================+
+|`deep-archive#151`_ Installation instructions don't work on Windows 11   ||:yellow_circle:|   |s.medium                  |
++-------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
 Ds-view
 -------
 *Data Set View application (pds.nasa.gov/ds-view)*
@@ -64,15 +96,26 @@ No planned updates realized for this build in this repository.
 
 Other Updates
 ~~~~~~~~~~~~~
+Bugs
+++++
+
++------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                   |I&T Status          |Priority / Bug Severity   |
++========================================================================+====================+==========================+
+|`ds-view#12`_ v2.14.2 does not work for resource links                  ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------+--------------------+--------------------------+
+|`ds-view#14`_ Memory leak in Solr connections leading to Tomcat crash   ||:yellow_circle:|   |s.critical                |
++------------------------------------------------------------------------+--------------------+--------------------------+
+
 Enhancements
 ++++++++++++
 
 +------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                     |I&T Status          |Priority / Bug Severity   |
 +==========================================================================================+====================+==========================+
-|`ds-view#8`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`ds-view#3`_ Upgrade Dataset View and dependencies to support Harvest/Registry upgrades   ||:yellow_circle:|   |p.must-have               |
++------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`ds-view#8`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
 +------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -168,9 +211,9 @@ Enhancements
 +--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================================================+====================+==========================+
-|`registry-pds3-catalog#6`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
-+--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-pds3-catalog#4`_ Upgrade Catalog Tool and dependencies to support Harvest/Registry upgrades   ||:yellow_circle:|   |p.must-have               |
++--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-pds3-catalog#6`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
 +--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -231,13 +274,11 @@ Other Updates
 Bugs
 ++++
 
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                      |I&T Status          |Priority / Bug Severity   |
-+===========================================================================================+====================+==========================+
-|`transform#30`_ [SECURITY] Upgrade to log4j-core/log4j-api                                 ||:yellow_circle:|   |s.low                     |
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`transform#36`_ Unable to transform from PDS3 Label to PDS4 Label with upgraded mi-label   ||:yellow_circle:|   |s.medium                  |
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
++-------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                        |I&T Status          |Priority / Bug Severity   |
++=============================================================+====================+==========================+
+|`transform#30`_ [SECURITY] Upgrade to log4j-core/log4j-api   ||:yellow_circle:|   |s.low                     |
++-------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -265,15 +306,17 @@ Other Updates
 Bugs
 ++++
 
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                     |I&T Status          |Priority / Bug Severity   |
-+==========================================================================================+====================+==========================+
-|`validate#475`_ Validate crashes on invalid # of records, and spurious file left behind   ||:yellow_circle:|   |p.wont-have               |
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#698`_ Investigate and Fix code scanning alert for potential improvements        ||:blue_circle:|     |s.medium                  |
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#723`_ Installation instructions need updates for Windows                        ||:yellow_circle:|   |unknown                   |
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
++-------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                      |I&T Status          |Priority / Bug Severity   |
++===========================================================================================+====================+==========================+
+|`validate#698`_ Investigate and Fix code scanning alert for potential improvements         ||:blue_circle:|     |s.medium                  |
++-------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#723`_ Installation instructions need updates for Windows                         ||:yellow_circle:|   |unknown                   |
++-------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#475`_ Validate crashes on invalid # of records, and spurious file left behind    ||:yellow_circle:|   |p.wont-have               |
++-------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#681`_ Validate incorrectly throws precision mismatch error for Table_Delimited   ||:yellow_circle:|   |s.medium                  |
++-------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Liens
 =====
@@ -334,18 +377,21 @@ as follows:
 - `PDS DOI Service Requirements and Design Document (SRD/SDD)`_
 
 .. _plan B14.1: https://nasa-pds.github.io/releases/14.1/plan.html
-.. _ds-view#8: https://github.com/NASA-PDS/ds-view/issues/8
+.. _deep-archive#151: https://github.com/NASA-PDS/deep-archive/issues/151
+.. _ds-view#12: https://github.com/NASA-PDS/ds-view/issues/12
+.. _ds-view#14: https://github.com/NASA-PDS/ds-view/issues/14
 .. _ds-view#3: https://github.com/NASA-PDS/ds-view/issues/3
+.. _ds-view#8: https://github.com/NASA-PDS/ds-view/issues/8
 .. _registry-harvest-legacy#8: https://github.com/NASA-PDS/registry-harvest-legacy/issues/8
 .. _registry-mgr-legacy#17: https://github.com/NASA-PDS/registry-mgr-legacy/issues/17
-.. _registry-pds3-catalog#6: https://github.com/NASA-PDS/registry-pds3-catalog/issues/6
 .. _registry-pds3-catalog#4: https://github.com/NASA-PDS/registry-pds3-catalog/issues/4
+.. _registry-pds3-catalog#6: https://github.com/NASA-PDS/registry-pds3-catalog/issues/6
 .. _search-ui-legacy#1: https://github.com/NASA-PDS/search-ui-legacy/issues/1
 .. _transform#30: https://github.com/NASA-PDS/transform/issues/30
-.. _transform#36: https://github.com/NASA-PDS/transform/issues/36
-.. _validate#475: https://github.com/NASA-PDS/validate/issues/475
 .. _validate#698: https://github.com/NASA-PDS/validate/issues/698
 .. _validate#723: https://github.com/NASA-PDS/validate/issues/723
+.. _validate#475: https://github.com/NASA-PDS/validate/issues/475
+.. _validate#681: https://github.com/NASA-PDS/validate/issues/681
 .. _Software Release Summary (B14.1): https://nasa-pds.github.io/releases/14.1/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
