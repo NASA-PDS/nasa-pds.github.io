@@ -102,9 +102,9 @@ Bugs
 +------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================+====================+==========================+
-|`ds-view#12`_ v2.14.2 does not work for resource links                  ||:yellow_circle:|   |s.high                    |
-+------------------------------------------------------------------------+--------------------+--------------------------+
 |`ds-view#14`_ Memory leak in Solr connections leading to Tomcat crash   ||:yellow_circle:|   |s.critical                |
++------------------------------------------------------------------------+--------------------+--------------------------+
+|`ds-view#12`_ v2.14.2 does not work for resource links                  ||:yellow_circle:|   |s.high                    |
 +------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -113,10 +113,42 @@ Enhancements
 +------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                     |I&T Status          |Priority / Bug Severity   |
 +==========================================================================================+====================+==========================+
-|`ds-view#3`_ Upgrade Dataset View and dependencies to support Harvest/Registry upgrades   ||:yellow_circle:|   |p.must-have               |
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`ds-view#8`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
 +------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`ds-view#3`_ Upgrade Dataset View and dependencies to support Harvest/Registry upgrades   ||:yellow_circle:|   |p.must-have               |
++------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Registry-common
+---------------
+*Library utilized by tools that manage and load data into the PDS Registry, including Harvest, Registry Manager, and Supplementer*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/registry>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-common>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-common/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry-common/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-common/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-common/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++-------------------------------------------------+--------------------+--------------------------+
+|Issue                                            |I&T Status          |Priority / Bug Severity   |
++=================================================+====================+==========================+
+|`registry-common#40`_ Fix code scanning alerts   ||:yellow_circle:|   |s.high                    |
++-------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -211,9 +243,9 @@ Enhancements
 +--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================================================+====================+==========================+
-|`registry-pds3-catalog#4`_ Upgrade Catalog Tool and dependencies to support Harvest/Registry upgrades   ||:yellow_circle:|   |p.must-have               |
-+--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-pds3-catalog#6`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
++--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-pds3-catalog#4`_ Upgrade Catalog Tool and dependencies to support Harvest/Registry upgrades   ||:yellow_circle:|   |p.must-have               |
 +--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -274,11 +306,15 @@ Other Updates
 Bugs
 ++++
 
-+-------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                        |I&T Status          |Priority / Bug Severity   |
-+=============================================================+====================+==========================+
-|`transform#30`_ [SECURITY] Upgrade to log4j-core/log4j-api   ||:yellow_circle:|   |s.low                     |
-+-------------------------------------------------------------+--------------------+--------------------------+
++--------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                 |I&T Status          |Priority / Bug Severity   |
++======================================================================================+====================+==========================+
+|`transform#30`_ [SECURITY] Upgrade to log4j-core/log4j-api                            ||:yellow_circle:|   |s.low                     |
++--------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`transform#46`_ NoClassDefFoundError exception when transforming XML to PDS3 label    ||:yellow_circle:|   |s.medium                  |
++--------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`transform#45`_ Broken download link and Windows JAVA settings in installation docs   ||:yellow_circle:|   |s.medium                  |
++--------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -309,13 +345,13 @@ Bugs
 +-------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                      |I&T Status          |Priority / Bug Severity   |
 +===========================================================================================+====================+==========================+
-|`validate#698`_ Investigate and Fix code scanning alert for potential improvements         ||:blue_circle:|     |s.medium                  |
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#723`_ Installation instructions need updates for Windows                         ||:yellow_circle:|   |unknown                   |
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#475`_ Validate crashes on invalid # of records, and spurious file left behind    ||:yellow_circle:|   |p.wont-have               |
 +-------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#681`_ Validate incorrectly throws precision mismatch error for Table_Delimited   ||:yellow_circle:|   |s.medium                  |
++-------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#723`_ Installation instructions need updates for Windows                         ||:yellow_circle:|   |unknown                   |
++-------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#698`_ Investigate and Fix code scanning alert for potential improvements         ||:blue_circle:|     |s.medium                  |
 +-------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Liens
@@ -378,20 +414,23 @@ as follows:
 
 .. _plan B14.1: https://nasa-pds.github.io/releases/14.1/plan.html
 .. _deep-archive#151: https://github.com/NASA-PDS/deep-archive/issues/151
-.. _ds-view#12: https://github.com/NASA-PDS/ds-view/issues/12
 .. _ds-view#14: https://github.com/NASA-PDS/ds-view/issues/14
-.. _ds-view#3: https://github.com/NASA-PDS/ds-view/issues/3
+.. _ds-view#12: https://github.com/NASA-PDS/ds-view/issues/12
 .. _ds-view#8: https://github.com/NASA-PDS/ds-view/issues/8
+.. _ds-view#3: https://github.com/NASA-PDS/ds-view/issues/3
+.. _registry-common#40: https://github.com/NASA-PDS/registry-common/issues/40
 .. _registry-harvest-legacy#8: https://github.com/NASA-PDS/registry-harvest-legacy/issues/8
 .. _registry-mgr-legacy#17: https://github.com/NASA-PDS/registry-mgr-legacy/issues/17
-.. _registry-pds3-catalog#4: https://github.com/NASA-PDS/registry-pds3-catalog/issues/4
 .. _registry-pds3-catalog#6: https://github.com/NASA-PDS/registry-pds3-catalog/issues/6
+.. _registry-pds3-catalog#4: https://github.com/NASA-PDS/registry-pds3-catalog/issues/4
 .. _search-ui-legacy#1: https://github.com/NASA-PDS/search-ui-legacy/issues/1
 .. _transform#30: https://github.com/NASA-PDS/transform/issues/30
-.. _validate#698: https://github.com/NASA-PDS/validate/issues/698
-.. _validate#723: https://github.com/NASA-PDS/validate/issues/723
+.. _transform#46: https://github.com/NASA-PDS/transform/issues/46
+.. _transform#45: https://github.com/NASA-PDS/transform/issues/45
 .. _validate#475: https://github.com/NASA-PDS/validate/issues/475
 .. _validate#681: https://github.com/NASA-PDS/validate/issues/681
+.. _validate#723: https://github.com/NASA-PDS/validate/issues/723
+.. _validate#698: https://github.com/NASA-PDS/validate/issues/698
 .. _Software Release Summary (B14.1): https://nasa-pds.github.io/releases/14.1/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
