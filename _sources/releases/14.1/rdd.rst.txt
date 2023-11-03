@@ -102,9 +102,9 @@ Bugs
 +------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================+====================+==========================+
-|`ds-view#14`_ Memory leak in Solr connections leading to Tomcat crash   ||:yellow_circle:|   |s.critical                |
-+------------------------------------------------------------------------+--------------------+--------------------------+
 |`ds-view#12`_ v2.14.2 does not work for resource links                  ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------+--------------------+--------------------------+
+|`ds-view#14`_ Memory leak in Solr connections leading to Tomcat crash   ||:yellow_circle:|   |s.critical                |
 +------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -113,10 +113,127 @@ Enhancements
 +------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                     |I&T Status          |Priority / Bug Severity   |
 +==========================================================================================+====================+==========================+
-|`ds-view#8`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`ds-view#3`_ Upgrade Dataset View and dependencies to support Harvest/Registry upgrades   ||:yellow_circle:|   |p.must-have               |
 +------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`ds-view#8`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
++------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Harvest
+-------
+*Standalone Harvest client application providing the functionality for capturing and indexing product metadata into the PDS Registry system (https://github.com/nasa-pds/registry).*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/registry>`_
+     - `Github Repo <https://github.com/NASA-PDS/harvest>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/harvest/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/harvest/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/harvest/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/harvest/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+`harvest#129`_ Add Support for LBLX File Extension
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
++-----------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+|Issue                                                                                                |I&T Status          |Level         |Priority / Bug Severity   |
++=====================================================================================================+====================+==============+==========================+
+|`harvest#130`_ As a user, I want to ingest data products with labels having `.lblx` file extension   ||:yellow_circle:|   |requirement   |p.must-have               |
++-----------------------------------------------------------------------------------------------------+--------------------+--------------+--------------------------+
+
+
+--------
+
+Mi-label
+--------
+*Metadata Injector for PDS Labels (MILabel) provides a command-line interface for generating PDS4 Labels using a user provided PDS4 XML template and input (source) data products.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/mi-label/>`_
+     - `Github Repo <https://github.com/NASA-PDS/mi-label>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/mi-label/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/mi-label/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/mi-label/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/mi-label/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++-----------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                      |I&T Status          |Priority / Bug Severity   |
++===========================================================+====================+==========================+
+|`mi-label#46`_ Jackson-databind vulnerability identified   ||:yellow_circle:|   |s.high                    |
++-----------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Planetary-data-engine
+---------------------
+*Free-text search capability for planetary data, services, tools, and information*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/planetary-data-engine#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/planetary-data-engine>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/planetary-data-engine/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/planetary-data-engine/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/planetary-data-engine/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/planetary-data-engine/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+`planetary-data-engine#5`_ Complete Sinequa Useability Analysis
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the link in
+    this section title for details.
+
+--------
+
+Registry-api
+------------
+*Web API service for the PDS Registry, providing the implementation of the PDS Search API (https://github.com/nasa-pds/pds-api) for the PDS Registry.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-api>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-api>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-api/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry-api/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-api/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-api/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++--------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                         |I&T Status          |Priority / Bug Severity   |
++==============================================================+====================+==========================+
+|`registry-api#229`_ api is not returning consistent answer    ||:yellow_circle:|   |s.medium                  |
++--------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -243,10 +360,42 @@ Enhancements
 +--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================================================+====================+==========================+
-|`registry-pds3-catalog#6`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
-+--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-pds3-catalog#4`_ Upgrade Catalog Tool and dependencies to support Harvest/Registry upgrades   ||:yellow_circle:|   |p.must-have               |
 +--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-pds3-catalog#6`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
++--------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Roundup-action
+--------------
+*Do a "roundup", a/k/a PDS-style continuous integration and delivery*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/roundup-action#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/roundup-action>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/roundup-action/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/roundup-action/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/roundup-action/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/roundup-action/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++---------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                  |I&T Status          |Priority / Bug Severity   |
++=======================================================================================+====================+==========================+
+|`roundup-action#124`_ Roundup pushes version update prior to completion of execution   ||:yellow_circle:|   |s.medium                  |
++---------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
 
@@ -309,9 +458,9 @@ Bugs
 +--------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                 |I&T Status          |Priority / Bug Severity   |
 +======================================================================================+====================+==========================+
-|`transform#30`_ [SECURITY] Upgrade to log4j-core/log4j-api                            ||:yellow_circle:|   |s.low                     |
-+--------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`transform#46`_ NoClassDefFoundError exception when transforming XML to PDS3 label    ||:yellow_circle:|   |s.medium                  |
++--------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`transform#30`_ [SECURITY] Upgrade to log4j-core/log4j-api                            ||:yellow_circle:|   |s.low                     |
 +--------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`transform#45`_ Broken download link and Windows JAVA settings in installation docs   ||:yellow_circle:|   |s.medium                  |
 +--------------------------------------------------------------------------------------+--------------------+--------------------------+
@@ -342,17 +491,30 @@ Other Updates
 Bugs
 ++++
 
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                      |I&T Status          |Priority / Bug Severity   |
-+===========================================================================================+====================+==========================+
-|`validate#475`_ Validate crashes on invalid # of records, and spurious file left behind    ||:yellow_circle:|   |p.wont-have               |
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#681`_ Validate incorrectly throws precision mismatch error for Table_Delimited   ||:yellow_circle:|   |s.medium                  |
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#723`_ Installation instructions need updates for Windows                         ||:yellow_circle:|   |unknown                   |
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#698`_ Investigate and Fix code scanning alert for potential improvements         ||:blue_circle:|     |s.medium                  |
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
++-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                |I&T Status          |Priority / Bug Severity   |
++=====================================================================================================+====================+==========================+
+|`validate#698`_ Investigate and Fix code scanning alert for potential improvements                   ||:blue_circle:|     |s.medium                  |
++-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#427`_ validate does not work correct when path name contains a space on mac                ||:yellow_circle:|   |s.low                     |
++-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#739`_ Intermittent network failures attempting repeated downloads of schemas/schematrons   ||:yellow_circle:|   |s.high                    |
++-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#681`_ Validate incorrectly throws precision mismatch error for Table_Delimited             ||:yellow_circle:|   |s.medium                  |
++-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#723`_ Installation instructions need updates for Windows                                   ||:yellow_circle:|   |unknown                   |
++-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#475`_ Validate crashes on invalid # of records, and spurious file left behind              ||:yellow_circle:|   |p.wont-have               |
++-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+Requirements
+++++++++++++
+
++--------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                                                 |I&T Status          |Priority / Bug Severity   |
++======================================================================================================================================+====================+==========================+
+|`validate#741`_ As a user, I want validate's referential integrity tool to read a manifest of files and check referential integrity   ||:yellow_circle:|   |p.must-have               |
++--------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Liens
 =====
@@ -414,23 +576,32 @@ as follows:
 
 .. _plan B14.1: https://nasa-pds.github.io/releases/14.1/plan.html
 .. _deep-archive#151: https://github.com/NASA-PDS/deep-archive/issues/151
-.. _ds-view#14: https://github.com/NASA-PDS/ds-view/issues/14
 .. _ds-view#12: https://github.com/NASA-PDS/ds-view/issues/12
-.. _ds-view#8: https://github.com/NASA-PDS/ds-view/issues/8
+.. _ds-view#14: https://github.com/NASA-PDS/ds-view/issues/14
 .. _ds-view#3: https://github.com/NASA-PDS/ds-view/issues/3
+.. _ds-view#8: https://github.com/NASA-PDS/ds-view/issues/8
+.. _harvest#129: https://github.com/NASA-PDS/harvest/issues/129
+.. _harvest#130: https://github.com/NASA-PDS/harvest/issues/130
+.. _mi-label#46: https://github.com/NASA-PDS/mi-label/issues/46
+.. _planetary-data-engine#5: https://github.com/NASA-PDS/planetary-data-engine/issues/5
+.. _registry-api#229: https://github.com/NASA-PDS/registry-api/issues/229
 .. _registry-common#40: https://github.com/NASA-PDS/registry-common/issues/40
 .. _registry-harvest-legacy#8: https://github.com/NASA-PDS/registry-harvest-legacy/issues/8
 .. _registry-mgr-legacy#17: https://github.com/NASA-PDS/registry-mgr-legacy/issues/17
-.. _registry-pds3-catalog#6: https://github.com/NASA-PDS/registry-pds3-catalog/issues/6
 .. _registry-pds3-catalog#4: https://github.com/NASA-PDS/registry-pds3-catalog/issues/4
+.. _registry-pds3-catalog#6: https://github.com/NASA-PDS/registry-pds3-catalog/issues/6
+.. _roundup-action#124: https://github.com/NASA-PDS/roundup-action/issues/124
 .. _search-ui-legacy#1: https://github.com/NASA-PDS/search-ui-legacy/issues/1
-.. _transform#30: https://github.com/NASA-PDS/transform/issues/30
 .. _transform#46: https://github.com/NASA-PDS/transform/issues/46
+.. _transform#30: https://github.com/NASA-PDS/transform/issues/30
 .. _transform#45: https://github.com/NASA-PDS/transform/issues/45
-.. _validate#475: https://github.com/NASA-PDS/validate/issues/475
+.. _validate#698: https://github.com/NASA-PDS/validate/issues/698
+.. _validate#427: https://github.com/NASA-PDS/validate/issues/427
+.. _validate#739: https://github.com/NASA-PDS/validate/issues/739
 .. _validate#681: https://github.com/NASA-PDS/validate/issues/681
 .. _validate#723: https://github.com/NASA-PDS/validate/issues/723
-.. _validate#698: https://github.com/NASA-PDS/validate/issues/698
+.. _validate#475: https://github.com/NASA-PDS/validate/issues/475
+.. _validate#741: https://github.com/NASA-PDS/validate/issues/741
 .. _Software Release Summary (B14.1): https://nasa-pds.github.io/releases/14.1/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services

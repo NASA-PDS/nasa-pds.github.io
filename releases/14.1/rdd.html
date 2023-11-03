@@ -104,10 +104,15 @@ The original plan for this release can be found here: <a class="reference extern
 <li class="toctree-l2"><a class="reference internal" href="#software-changes">Software Changes</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#deep-archive">Deep-archive</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ds-view">Ds-view</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#harvest">Harvest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mi-label">Mi-label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#planetary-data-engine">Planetary-data-engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#registry-api">Registry-api</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#registry-common">Registry-common</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#registry-harvest-legacy">Registry-harvest-legacy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#registry-mgr-legacy">Registry-mgr-legacy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#registry-pds3-catalog">Registry-pds3-catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roundup-action">Roundup-action</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#search-ui-legacy">Search-ui-legacy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#transform">Transform</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#validate">Validate</a></li>
@@ -244,13 +249,13 @@ testing:</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/ds-view/issues/14">ds-view#14</a> Memory leak in Solr connections leading to Tomcat crash</p></td>
-<td><p>🟡</p></td>
-<td><p>s.critical</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/ds-view/issues/12">ds-view#12</a> v2.14.2 does not work for resource links</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/ds-view/issues/12">ds-view#12</a> v2.14.2 does not work for resource links</p></td>
 <td><p>🟡</p></td>
 <td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/ds-view/issues/14">ds-view#14</a> Memory leak in Solr connections leading to Tomcat crash</p></td>
+<td><p>🟡</p></td>
+<td><p>s.critical</p></td>
 </tr>
 </tbody>
 </table>
@@ -270,13 +275,205 @@ testing:</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/ds-view/issues/8">ds-view#8</a> Upgrade to latest Solr 9.3.x</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/ds-view/issues/3">ds-view#3</a> Upgrade Dataset View and dependencies to support Harvest/Registry upgrades</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/ds-view/issues/8">ds-view#8</a> Upgrade to latest Solr 9.3.x</p></td>
 <td><p>🔵</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/ds-view/issues/3">ds-view#3</a> Upgrade Dataset View and dependencies to support Harvest/Registry upgrades</p></td>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="harvest">
+<h3>Harvest<a class="headerlink" href="#harvest" title="Permalink to this headline"></a></h3>
+<p><em>Standalone Harvest client application providing the functionality for capturing and indexing product metadata into the PDS Registry system (https://github.com/nasa-pds/registry).</em></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/registry">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id16">
+<h4>Planned Updates<a class="headerlink" href="#id16" title="Permalink to this headline"></a></h4>
+<section id="harvest-129-add-support-for-lblx-file-extension">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues/129">harvest#129</a> Add Support for LBLX File Extension<a class="headerlink" href="#harvest-129-add-support-for-lblx-file-extension" title="Permalink to this headline"></a></h5>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 63%" />
+<col style="width: 12%" />
+<col style="width: 9%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues/130">harvest#130</a> As a user, I want to ingest data products with labels having <cite>.lblx</cite> file extension</p></td>
 <td><p>🟡</p></td>
+<td><p>requirement</p></td>
 <td><p>p.must-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="mi-label">
+<h3>Mi-label<a class="headerlink" href="#mi-label" title="Permalink to this headline"></a></h3>
+<p><em>Metadata Injector for PDS Labels (MILabel) provides a command-line interface for generating PDS4 Labels using a user provided PDS4 XML template and input (source) data products.</em></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/mi-label/">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/mi-label">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/mi-label/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/mi-label/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/mi-label/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/mi-label/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id23">
+<h4>Planned Updates<a class="headerlink" href="#id23" title="Permalink to this headline"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id24">
+<h4>Other Updates<a class="headerlink" href="#id24" title="Permalink to this headline"></a></h4>
+<section id="id25">
+<h5>Bugs<a class="headerlink" href="#id25" title="Permalink to this headline"></a></h5>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 56%" />
+<col style="width: 19%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/mi-label/issues/46">mi-label#46</a> Jackson-databind vulnerability identified</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="planetary-data-engine">
+<h3>Planetary-data-engine<a class="headerlink" href="#planetary-data-engine" title="Permalink to this headline"></a></h3>
+<p><em>Free-text search capability for planetary data, services, tools, and information</em></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id32">
+<h4>Planned Updates<a class="headerlink" href="#id32" title="Permalink to this headline"></a></h4>
+<section id="planetary-data-engine-5-complete-sinequa-useability-analysis">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/issues/5">planetary-data-engine#5</a> Complete Sinequa Useability Analysis<a class="headerlink" href="#planetary-data-engine-5-complete-sinequa-useability-analysis" title="Permalink to this headline"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the link in
+this section title for details.</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="registry-api">
+<h3>Registry-api<a class="headerlink" href="#registry-api" title="Permalink to this headline"></a></h3>
+<p><em>Web API service for the PDS Registry, providing the implementation of the PDS Search API (https://github.com/nasa-pds/pds-api) for the PDS Registry.</em></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/pds-api">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id39">
+<h4>Planned Updates<a class="headerlink" href="#id39" title="Permalink to this headline"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id40">
+<h4>Other Updates<a class="headerlink" href="#id40" title="Permalink to this headline"></a></h4>
+<section id="id41">
+<h5>Bugs<a class="headerlink" href="#id41" title="Permalink to this headline"></a></h5>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 57%" />
+<col style="width: 19%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/229">registry-api#229</a> api is not returning consistent answer</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
 </tr>
 </tbody>
 </table>
@@ -306,14 +503,14 @@ testing:</p>
 </tr>
 </tbody>
 </table>
-<section id="id16">
-<h4>Planned Updates<a class="headerlink" href="#id16" title="Permalink to this headline"></a></h4>
+<section id="id48">
+<h4>Planned Updates<a class="headerlink" href="#id48" title="Permalink to this headline"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id17">
-<h4>Other Updates<a class="headerlink" href="#id17" title="Permalink to this headline"></a></h4>
-<section id="id18">
-<h5>Bugs<a class="headerlink" href="#id18" title="Permalink to this headline"></a></h5>
+<section id="id49">
+<h4>Other Updates<a class="headerlink" href="#id49" title="Permalink to this headline"></a></h4>
+<section id="id50">
+<h5>Bugs<a class="headerlink" href="#id50" title="Permalink to this headline"></a></h5>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 52%" />
@@ -359,14 +556,14 @@ testing:</p>
 </tr>
 </tbody>
 </table>
-<section id="id25">
-<h4>Planned Updates<a class="headerlink" href="#id25" title="Permalink to this headline"></a></h4>
+<section id="id57">
+<h4>Planned Updates<a class="headerlink" href="#id57" title="Permalink to this headline"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id26">
-<h4>Other Updates<a class="headerlink" href="#id26" title="Permalink to this headline"></a></h4>
-<section id="id27">
-<h5>Requirements<a class="headerlink" href="#id27" title="Permalink to this headline"></a></h5>
+<section id="id58">
+<h4>Other Updates<a class="headerlink" href="#id58" title="Permalink to this headline"></a></h4>
+<section id="id59">
+<h5>Requirements<a class="headerlink" href="#id59" title="Permalink to this headline"></a></h5>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 69%" />
@@ -412,14 +609,14 @@ testing:</p>
 </tr>
 </tbody>
 </table>
-<section id="id34">
-<h4>Planned Updates<a class="headerlink" href="#id34" title="Permalink to this headline"></a></h4>
+<section id="id66">
+<h4>Planned Updates<a class="headerlink" href="#id66" title="Permalink to this headline"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id35">
-<h4>Other Updates<a class="headerlink" href="#id35" title="Permalink to this headline"></a></h4>
-<section id="id36">
-<h5>Enhancements<a class="headerlink" href="#id36" title="Permalink to this headline"></a></h5>
+<section id="id67">
+<h4>Other Updates<a class="headerlink" href="#id67" title="Permalink to this headline"></a></h4>
+<section id="id68">
+<h5>Enhancements<a class="headerlink" href="#id68" title="Permalink to this headline"></a></h5>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 56%" />
@@ -465,14 +662,14 @@ testing:</p>
 </tr>
 </tbody>
 </table>
-<section id="id43">
-<h4>Planned Updates<a class="headerlink" href="#id43" title="Permalink to this headline"></a></h4>
+<section id="id75">
+<h4>Planned Updates<a class="headerlink" href="#id75" title="Permalink to this headline"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id44">
-<h4>Other Updates<a class="headerlink" href="#id44" title="Permalink to this headline"></a></h4>
-<section id="id45">
-<h5>Enhancements<a class="headerlink" href="#id45" title="Permalink to this headline"></a></h5>
+<section id="id76">
+<h4>Other Updates<a class="headerlink" href="#id76" title="Permalink to this headline"></a></h4>
+<section id="id77">
+<h5>Enhancements<a class="headerlink" href="#id77" title="Permalink to this headline"></a></h5>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 69%" />
@@ -486,13 +683,66 @@ testing:</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-pds3-catalog/issues/6">registry-pds3-catalog#6</a> Upgrade to latest Solr 9.3.x</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-pds3-catalog/issues/4">registry-pds3-catalog#4</a> Upgrade Catalog Tool and dependencies to support Harvest/Registry upgrades</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-pds3-catalog/issues/6">registry-pds3-catalog#6</a> Upgrade to latest Solr 9.3.x</p></td>
 <td><p>🔵</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-pds3-catalog/issues/4">registry-pds3-catalog#4</a> Upgrade Catalog Tool and dependencies to support Harvest/Registry upgrades</p></td>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="roundup-action">
+<h3>Roundup-action<a class="headerlink" href="#roundup-action" title="Permalink to this headline"></a></h3>
+<p><em>Do a “roundup”, a/k/a PDS-style continuous integration and delivery</em></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id84">
+<h4>Planned Updates<a class="headerlink" href="#id84" title="Permalink to this headline"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id85">
+<h4>Other Updates<a class="headerlink" href="#id85" title="Permalink to this headline"></a></h4>
+<section id="id86">
+<h5>Bugs<a class="headerlink" href="#id86" title="Permalink to this headline"></a></h5>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 65%" />
+<col style="width: 15%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action/issues/124">roundup-action#124</a> Roundup pushes version update prior to completion of execution</p></td>
 <td><p>🟡</p></td>
-<td><p>p.must-have</p></td>
+<td><p>s.medium</p></td>
 </tr>
 </tbody>
 </table>
@@ -522,14 +772,14 @@ testing:</p>
 </tr>
 </tbody>
 </table>
-<section id="id52">
-<h4>Planned Updates<a class="headerlink" href="#id52" title="Permalink to this headline"></a></h4>
+<section id="id93">
+<h4>Planned Updates<a class="headerlink" href="#id93" title="Permalink to this headline"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id53">
-<h4>Other Updates<a class="headerlink" href="#id53" title="Permalink to this headline"></a></h4>
-<section id="id54">
-<h5>Enhancements<a class="headerlink" href="#id54" title="Permalink to this headline"></a></h5>
+<section id="id94">
+<h4>Other Updates<a class="headerlink" href="#id94" title="Permalink to this headline"></a></h4>
+<section id="id95">
+<h5>Enhancements<a class="headerlink" href="#id95" title="Permalink to this headline"></a></h5>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 69%" />
@@ -575,14 +825,14 @@ testing:</p>
 </tr>
 </tbody>
 </table>
-<section id="id61">
-<h4>Planned Updates<a class="headerlink" href="#id61" title="Permalink to this headline"></a></h4>
+<section id="id102">
+<h4>Planned Updates<a class="headerlink" href="#id102" title="Permalink to this headline"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id62">
-<h4>Other Updates<a class="headerlink" href="#id62" title="Permalink to this headline"></a></h4>
-<section id="id63">
-<h5>Bugs<a class="headerlink" href="#id63" title="Permalink to this headline"></a></h5>
+<section id="id103">
+<h4>Other Updates<a class="headerlink" href="#id103" title="Permalink to this headline"></a></h4>
+<section id="id104">
+<h5>Bugs<a class="headerlink" href="#id104" title="Permalink to this headline"></a></h5>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 65%" />
@@ -596,13 +846,13 @@ testing:</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/transform/issues/30">transform#30</a> [SECURITY] Upgrade to log4j-core/log4j-api</p></td>
-<td><p>🟡</p></td>
-<td><p>s.low</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/transform/issues/46">transform#46</a> NoClassDefFoundError exception when transforming XML to PDS3 label</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/transform/issues/46">transform#46</a> NoClassDefFoundError exception when transforming XML to PDS3 label</p></td>
 <td><p>🟡</p></td>
 <td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/transform/issues/30">transform#30</a> [SECURITY] Upgrade to log4j-core/log4j-api</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/transform/issues/45">transform#45</a> Broken download link and Windows JAVA settings in installation docs</p></td>
 <td><p>🟡</p></td>
@@ -636,19 +886,19 @@ testing:</p>
 </tr>
 </tbody>
 </table>
-<section id="id70">
-<h4>Planned Updates<a class="headerlink" href="#id70" title="Permalink to this headline"></a></h4>
+<section id="id111">
+<h4>Planned Updates<a class="headerlink" href="#id111" title="Permalink to this headline"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id71">
-<h4>Other Updates<a class="headerlink" href="#id71" title="Permalink to this headline"></a></h4>
-<section id="id72">
-<h5>Bugs<a class="headerlink" href="#id72" title="Permalink to this headline"></a></h5>
+<section id="id112">
+<h4>Other Updates<a class="headerlink" href="#id112" title="Permalink to this headline"></a></h4>
+<section id="id113">
+<h5>Bugs<a class="headerlink" href="#id113" title="Permalink to this headline"></a></h5>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 66%" />
-<col style="width: 15%" />
-<col style="width: 19%" />
+<col style="width: 69%" />
+<col style="width: 14%" />
+<col style="width: 18%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -657,9 +907,17 @@ testing:</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/475">validate#475</a> Validate crashes on invalid # of records, and spurious file left behind</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/698">validate#698</a> Investigate and Fix code scanning alert for potential improvements</p></td>
+<td><p>🔵</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/427">validate#427</a> validate does not work correct when path name contains a space on mac</p></td>
 <td><p>🟡</p></td>
-<td><p>p.wont-have</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/739">validate#739</a> Intermittent network failures attempting repeated downloads of schemas/schematrons</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/681">validate#681</a> Validate incorrectly throws precision mismatch error for Table_Delimited</p></td>
 <td><p>🟡</p></td>
@@ -669,9 +927,31 @@ testing:</p>
 <td><p>🟡</p></td>
 <td><p>unknown</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/698">validate#698</a> Investigate and Fix code scanning alert for potential improvements</p></td>
-<td><p>🔵</p></td>
-<td><p>s.medium</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/475">validate#475</a> Validate crashes on invalid # of records, and spurious file left behind</p></td>
+<td><p>🟡</p></td>
+<td><p>p.wont-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id114">
+<h5>Requirements<a class="headerlink" href="#id114" title="Permalink to this headline"></a></h5>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 74%" />
+<col style="width: 11%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/741">validate#741</a> As a user, I want validate’s referential integrity tool to read a manifest of files and check referential integrity</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
 </tr>
 </tbody>
 </table>
