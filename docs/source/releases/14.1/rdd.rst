@@ -75,6 +75,38 @@ Bugs
 
 --------
 
+Doi-ui
+------
+*The web interface for the PDS DOI Service providing the ability management PDS archive DOIs. See the DOI Service for more details on the available capabilities. https://nasa-pds.github.io/doi-service/*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/doi-ui#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/doi-ui>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/doi-ui/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/doi-ui/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/doi-ui/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/doi-ui/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++-----------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                                  |I&T Status          |Priority / Bug Severity   |
++=======================================================================================================================+====================+==========================+
+|`doi-ui#215`_ When the cognito token is expired, the UI fails and returns a misleading/badly formatted error message   ||:yellow_circle:|   |s.high                    |
++-----------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
 Ds-view
 -------
 *Data Set View application (pds.nasa.gov/ds-view)*
@@ -113,9 +145,9 @@ Enhancements
 +------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                     |I&T Status          |Priority / Bug Severity   |
 +==========================================================================================+====================+==========================+
-|`ds-view#3`_ Upgrade Dataset View and dependencies to support Harvest/Registry upgrades   ||:yellow_circle:|   |p.must-have               |
-+------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`ds-view#8`_ Upgrade to latest Solr 9.3.x                                                 ||:blue_circle:|     |unknown                   |
++------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`ds-view#3`_ Upgrade Dataset View and dependencies to support Harvest/Registry upgrades   ||:yellow_circle:|   |p.must-have               |
 +------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -189,6 +221,38 @@ Bugs
 +===========================================================+====================+==========================+
 |`mi-label#46`_ Jackson-databind vulnerability identified   ||:yellow_circle:|   |s.high                    |
 +-----------------------------------------------------------+--------------------+--------------------------+
+
+--------
+
+Pds4-information-model
+----------------------
+*The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds4-information-model/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds4-information-model>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds4-information-model/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/pds4-information-model/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds4-information-model/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds4-information-model/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Requirements
+++++++++++++
+
++-------------------------------------------------------------------------+------------------+--------------------------+
+|Issue                                                                    |I&T Status        |Priority / Bug Severity   |
++=========================================================================+==================+==========================+
+|`pds4-information-model#709`_ Add KARI as a new agency `urn:kari:kpds`   ||:blue_circle:|   |p.must-have               |
++-------------------------------------------------------------------------+------------------+--------------------------+
 
 --------
 
@@ -566,30 +630,38 @@ Other Updates
 Bugs
 ++++
 
-+-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                                |I&T Status          |Priority / Bug Severity   |
-+=====================================================================================================+====================+==========================+
-|`validate#475`_ Validate crashes on invalid # of records, and spurious file left behind              ||:yellow_circle:|   |p.wont-have               |
-+-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#698`_ Investigate and Fix code scanning alert for potential improvements                   ||:blue_circle:|     |s.medium                  |
-+-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#427`_ validate does not work correct when path name contains a space on mac                ||:yellow_circle:|   |s.low                     |
-+-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#723`_ Installation instructions need updates for Windows                                   ||:yellow_circle:|   |unknown                   |
-+-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#739`_ Intermittent network failures attempting repeated downloads of schemas/schematrons   ||:yellow_circle:|   |s.high                    |
-+-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#681`_ Validate incorrectly throws precision mismatch error for Table_Delimited             ||:yellow_circle:|   |s.medium                  |
-+-----------------------------------------------------------------------------------------------------+--------------------+--------------------------+
++------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                 |I&T Status          |Priority / Bug Severity   |
++======================================================================================================+====================+==========================+
+|`validate#475`_ Validate crashes on invalid # of records, and spurious file left behind               ||:yellow_circle:|   |p.wont-have               |
++------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#723`_ Installation instructions need updates for Windows                                    ||:yellow_circle:|   |unknown                   |
++------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#739`_ Intermittent network failures attempting repeated downloads of schemas/schematrons    ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#681`_ Validate incorrectly throws precision mismatch error for Table_Delimited              ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#698`_ Investigate and Fix code scanning alert for potential improvements                    ||:blue_circle:|     |s.medium                  |
++------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#427`_ validate does not work correct when path name contains a space on mac                 ||:yellow_circle:|   |s.low                     |
++------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#748`_ Buffer limit IOException thrown with validate-refs                                    ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#754`_ Validate 3.3.0 erroneously reports data objects out of offset order                   ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#750`_ Validate-refs with manifest of file paths does not seem to read the files correctly   ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
 ++++++++++++
 
-+--------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                                                                 |I&T Status          |Priority / Bug Severity   |
-+======================================================================================================================================+====================+==========================+
-|`validate#741`_ As a user, I want validate's referential integrity tool to read a manifest of files and check referential integrity   ||:yellow_circle:|   |p.must-have               |
-+--------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                                                                      |I&T Status          |Priority / Bug Severity   |
++===========================================================================================================================================================+====================+==========================+
+|`validate#308`_ As a user, I want to check that all Internal References are valid references to other PDS4 products within the current validating bundle   ||:yellow_circle:|   |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#741`_ As a user, I want validate's referential integrity tool to read a manifest of files and check referential integrity                        ||:yellow_circle:|   |p.must-have               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Liens
 =====
@@ -651,14 +723,16 @@ as follows:
 
 .. _plan B14.1: https://nasa-pds.github.io/releases/14.1/plan.html
 .. _deep-archive#151: https://github.com/NASA-PDS/deep-archive/issues/151
+.. _doi-ui#215: https://github.com/NASA-PDS/doi-ui/issues/215
 .. _ds-view#12: https://github.com/NASA-PDS/ds-view/issues/12
 .. _ds-view#14: https://github.com/NASA-PDS/ds-view/issues/14
-.. _ds-view#3: https://github.com/NASA-PDS/ds-view/issues/3
 .. _ds-view#8: https://github.com/NASA-PDS/ds-view/issues/8
+.. _ds-view#3: https://github.com/NASA-PDS/ds-view/issues/3
 .. _harvest#129: https://github.com/NASA-PDS/harvest/issues/129
 .. _harvest#130: https://github.com/NASA-PDS/harvest/issues/130
 .. _harvest#134: https://github.com/NASA-PDS/harvest/issues/134
 .. _mi-label#46: https://github.com/NASA-PDS/mi-label/issues/46
+.. _pds4-information-model#709: https://github.com/NASA-PDS/pds4-information-model/issues/709
 .. _planetary-data-engine#5: https://github.com/NASA-PDS/planetary-data-engine/issues/5
 .. _registry#176: https://github.com/NASA-PDS/registry/issues/176
 .. _registry-api#229: https://github.com/NASA-PDS/registry-api/issues/229
@@ -674,11 +748,15 @@ as follows:
 .. _transform#46: https://github.com/NASA-PDS/transform/issues/46
 .. _transform#30: https://github.com/NASA-PDS/transform/issues/30
 .. _validate#475: https://github.com/NASA-PDS/validate/issues/475
-.. _validate#698: https://github.com/NASA-PDS/validate/issues/698
-.. _validate#427: https://github.com/NASA-PDS/validate/issues/427
 .. _validate#723: https://github.com/NASA-PDS/validate/issues/723
 .. _validate#739: https://github.com/NASA-PDS/validate/issues/739
 .. _validate#681: https://github.com/NASA-PDS/validate/issues/681
+.. _validate#698: https://github.com/NASA-PDS/validate/issues/698
+.. _validate#427: https://github.com/NASA-PDS/validate/issues/427
+.. _validate#748: https://github.com/NASA-PDS/validate/issues/748
+.. _validate#754: https://github.com/NASA-PDS/validate/issues/754
+.. _validate#750: https://github.com/NASA-PDS/validate/issues/750
+.. _validate#308: https://github.com/NASA-PDS/validate/issues/308
 .. _validate#741: https://github.com/NASA-PDS/validate/issues/741
 .. _Software Release Summary (B14.1): https://nasa-pds.github.io/releases/14.1/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
