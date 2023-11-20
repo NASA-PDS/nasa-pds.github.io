@@ -7,9 +7,7 @@ The software provided for the PDS System Build 14.0-SNAPSHOT are listed below an
 
 - `Libraries and Clients`_
 
-- `Discipline Node Services`_
-
-- `Engineering Node Services`_
+- `Core Services`_
 
 
 Standalone Tools
@@ -44,7 +42,7 @@ Libraries and Clients for programing interfaces to PDS services and data.
 |PDS4 JParser   |v2.6.0-SNAPSHOT   |2023-05-26     |Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.   ||NASA-PDS/pds4-jparser_manual|   |                |                   ||NASA-PDS/pds4-jparser_download|   ||NASA-PDS/pds4-jparser_license|   ||NASA-PDS/pds4-jparser_feedback|   |
 +---------------+------------------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+----------------+-------------------+-----------------------------------+----------------------------------+-----------------------------------+
 
-Engineering Node Services
+Core Services
 =========================
 Tools and Services centrally deployed by PDS Engineering Node to support the integration and interoperability of all PDS nodes.
 

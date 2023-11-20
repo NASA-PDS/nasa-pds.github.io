@@ -7,9 +7,7 @@ The software provided for the PDS System Build 14.0 are listed below and organiz
 
 - `Libraries and Clients`_
 
-- `Discipline Node Services`_
-
-- `Engineering Node Services`_
+- `Core Services`_
 
 
 Standalone Tools
@@ -54,7 +52,7 @@ Libraries and Clients for programing interfaces to PDS services and data.
 |registry-common   |v1.5.1    |2023-11-16     |Library utilized by tools that manage and load data into the PDS Registry, including Harvest, Registry Manager, and Supplementer                                                 ||NASA-PDS/registry-common_manual|   |                                    |                   ||NASA-PDS/registry-common_download|   ||NASA-PDS/registry-common_license|   ||NASA-PDS/registry-common_feedback|   |
 +------------------+----------+---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------+------------------------------------+-------------------+--------------------------------------+-------------------------------------+--------------------------------------+
 
-Engineering Node Services
+Core Services
 =========================
 Tools and Services centrally deployed by PDS Engineering Node to support the integration and interoperability of all PDS nodes.
 
