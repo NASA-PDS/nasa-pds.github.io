@@ -134,9 +134,9 @@ Bugs
 +------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================+====================+==========================+
-|`ds-view#12`_ v2.14.2 does not work for resource links                  ||:yellow_circle:|   |s.high                    |
-+------------------------------------------------------------------------+--------------------+--------------------------+
 |`ds-view#14`_ Memory leak in Solr connections leading to Tomcat crash   ||:yellow_circle:|   |s.critical                |
++------------------------------------------------------------------------+--------------------+--------------------------+
+|`ds-view#12`_ v2.14.2 does not work for resource links                  ||:yellow_circle:|   |s.high                    |
 +------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -538,38 +538,6 @@ Enhancements
 
 --------
 
-Software-issues-repo
---------------------
-*Issue tracking repository as a centralized entry point for general PDS software bugs and feature requests.*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/software-issues-repo#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/software-issues-repo>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/software-issues-repo/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/software-issues-repo/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/software-issues-repo/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/software-issues-repo/releases>`_ 
-
-
-Planned Updates
-~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
-
-Other Updates
-~~~~~~~~~~~~~
-Requirements
-++++++++++++
-
-+-------------------------------------------------------------------------------------------------------+------------------+--------------------------+
-|Issue                                                                                                  |I&T Status        |Priority / Bug Severity   |
-+=======================================================================================================+==================+==========================+
-|`software-issues-repo#49`_ As a software user, I want to see the known bugs for a component release    ||:blue_circle:|   |p.could-have              |
-+-------------------------------------------------------------------------------------------------------+------------------+--------------------------+
-
---------
-
 Transform
 ---------
 *Transforms PDS3 and PDS4 product labels and data into various formats.*
@@ -597,11 +565,11 @@ Bugs
 +--------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                 |I&T Status          |Priority / Bug Severity   |
 +======================================================================================+====================+==========================+
-|`transform#45`_ Broken download link and Windows JAVA settings in installation docs   ||:yellow_circle:|   |s.medium                  |
+|`transform#30`_ [SECURITY] Upgrade to log4j-core/log4j-api                            ||:yellow_circle:|   |s.low                     |
 +--------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`transform#46`_ NoClassDefFoundError exception when transforming XML to PDS3 label    ||:yellow_circle:|   |s.medium                  |
 +--------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`transform#30`_ [SECURITY] Upgrade to log4j-core/log4j-api                            ||:yellow_circle:|   |s.low                     |
+|`transform#45`_ Broken download link and Windows JAVA settings in installation docs   ||:yellow_circle:|   |s.medium                  |
 +--------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -630,27 +598,37 @@ Other Updates
 Bugs
 ++++
 
-+------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|Issue                                                                                                 |I&T Status          |Priority / Bug Severity   |
-+======================================================================================================+====================+==========================+
-|`validate#475`_ Validate crashes on invalid # of records, and spurious file left behind               ||:yellow_circle:|   |p.wont-have               |
-+------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#723`_ Installation instructions need updates for Windows                                    ||:yellow_circle:|   |unknown                   |
-+------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#739`_ Intermittent network failures attempting repeated downloads of schemas/schematrons    ||:yellow_circle:|   |s.high                    |
-+------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#681`_ Validate incorrectly throws precision mismatch error for Table_Delimited              ||:yellow_circle:|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#698`_ Investigate and Fix code scanning alert for potential improvements                    ||:blue_circle:|     |s.medium                  |
-+------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#427`_ validate does not work correct when path name contains a space on mac                 ||:yellow_circle:|   |s.low                     |
-+------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#748`_ Buffer limit IOException thrown with validate-refs                                    ||:yellow_circle:|   |s.high                    |
-+------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#754`_ Validate 3.3.0 erroneously reports data objects out of offset order                   ||:yellow_circle:|   |s.medium                  |
-+------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#750`_ Validate-refs with manifest of file paths does not seem to read the files correctly   ||:yellow_circle:|   |s.high                    |
-+------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|Issue                                                                                                                                     |I&T Status          |Priority / Bug Severity   |
++==========================================================================================================================================+====================+==========================+
+|`validate#750`_ Validate-refs with manifest of file paths does not seem to read the files correctly                                       ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#761`_ Validate gives errors for 'NaN' values in IEEE754 data                                                                    ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#739`_ Intermittent network failures attempting repeated downloads of schemas/schematrons                                        ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#747`_ validate flags IEEE 754 "infinity" values as invalid                                                                      ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#754`_ Validate 3.3.0 erroneously reports data objects out of offset order                                                       ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#760`_ Uncaught exception thrown when only 1 of schemas/schematrons are provided via command-line                                ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#723`_ Installation instructions need updates for Windows                                                                        ||:yellow_circle:|   |unknown                   |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#432`_ Requirement #308 does not appear to be working for checking referential integrity from products to others in the bundle   ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#748`_ Buffer limit IOException thrown with validate-refs                                                                        ||:yellow_circle:|   |s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#763`_ Validate.bat does not execute on Windows                                                                                  ||:yellow_circle:|   |s.critical                |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#475`_ Validate crashes on invalid # of records, and spurious file left behind                                                   ||:yellow_circle:|   |p.wont-have               |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#681`_ Validate incorrectly throws precision mismatch error for Table_Delimited                                                  ||:yellow_circle:|   |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#427`_ validate does not work correct when path name contains a space on mac                                                     ||:yellow_circle:|   |s.low                     |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#698`_ Investigate and Fix code scanning alert for potential improvements                                                        ||:blue_circle:|     |s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
 ++++++++++++
@@ -724,8 +702,8 @@ as follows:
 .. _plan B14.1: https://nasa-pds.github.io/releases/14.1/plan.html
 .. _deep-archive#151: https://github.com/NASA-PDS/deep-archive/issues/151
 .. _doi-ui#215: https://github.com/NASA-PDS/doi-ui/issues/215
-.. _ds-view#12: https://github.com/NASA-PDS/ds-view/issues/12
 .. _ds-view#14: https://github.com/NASA-PDS/ds-view/issues/14
+.. _ds-view#12: https://github.com/NASA-PDS/ds-view/issues/12
 .. _ds-view#8: https://github.com/NASA-PDS/ds-view/issues/8
 .. _ds-view#3: https://github.com/NASA-PDS/ds-view/issues/3
 .. _harvest#129: https://github.com/NASA-PDS/harvest/issues/129
@@ -743,19 +721,23 @@ as follows:
 .. _registry-pds3-catalog#6: https://github.com/NASA-PDS/registry-pds3-catalog/issues/6
 .. _roundup-action#124: https://github.com/NASA-PDS/roundup-action/issues/124
 .. _search-ui-legacy#1: https://github.com/NASA-PDS/search-ui-legacy/issues/1
-.. _software-issues-repo#49: https://github.com/NASA-PDS/software-issues-repo/issues/49
-.. _transform#45: https://github.com/NASA-PDS/transform/issues/45
-.. _transform#46: https://github.com/NASA-PDS/transform/issues/46
 .. _transform#30: https://github.com/NASA-PDS/transform/issues/30
-.. _validate#475: https://github.com/NASA-PDS/validate/issues/475
-.. _validate#723: https://github.com/NASA-PDS/validate/issues/723
-.. _validate#739: https://github.com/NASA-PDS/validate/issues/739
-.. _validate#681: https://github.com/NASA-PDS/validate/issues/681
-.. _validate#698: https://github.com/NASA-PDS/validate/issues/698
-.. _validate#427: https://github.com/NASA-PDS/validate/issues/427
-.. _validate#748: https://github.com/NASA-PDS/validate/issues/748
-.. _validate#754: https://github.com/NASA-PDS/validate/issues/754
+.. _transform#46: https://github.com/NASA-PDS/transform/issues/46
+.. _transform#45: https://github.com/NASA-PDS/transform/issues/45
 .. _validate#750: https://github.com/NASA-PDS/validate/issues/750
+.. _validate#761: https://github.com/NASA-PDS/validate/issues/761
+.. _validate#739: https://github.com/NASA-PDS/validate/issues/739
+.. _validate#747: https://github.com/NASA-PDS/validate/issues/747
+.. _validate#754: https://github.com/NASA-PDS/validate/issues/754
+.. _validate#760: https://github.com/NASA-PDS/validate/issues/760
+.. _validate#723: https://github.com/NASA-PDS/validate/issues/723
+.. _validate#432: https://github.com/NASA-PDS/validate/issues/432
+.. _validate#748: https://github.com/NASA-PDS/validate/issues/748
+.. _validate#763: https://github.com/NASA-PDS/validate/issues/763
+.. _validate#475: https://github.com/NASA-PDS/validate/issues/475
+.. _validate#681: https://github.com/NASA-PDS/validate/issues/681
+.. _validate#427: https://github.com/NASA-PDS/validate/issues/427
+.. _validate#698: https://github.com/NASA-PDS/validate/issues/698
 .. _validate#308: https://github.com/NASA-PDS/validate/issues/308
 .. _validate#741: https://github.com/NASA-PDS/validate/issues/741
 .. _Software Release Summary (B14.1): https://nasa-pds.github.io/releases/14.1/index.html
