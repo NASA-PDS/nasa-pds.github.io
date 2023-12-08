@@ -175,9 +175,9 @@ Requirements
 +-----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                      |I&T Status          |Priority / Bug Severity   |
 +===========================================================================================================+====================+==========================+
-|`devops#50`_ As a user, I want PDS EN produced Docker images to support multiple platforms (x86 and ARM)   ||:yellow_circle:|   |p.must-have               |
-+-----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`devops#35`_ As a EN team member, I want to check the API test reports in testrail                         ||:yellow_circle:|   |p.should-have             |
++-----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`devops#50`_ As a user, I want PDS EN produced Docker images to support multiple platforms (x86 and ARM)   ||:yellow_circle:|   |p.must-have               |
 +-----------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -346,9 +346,9 @@ Bugs
 +----------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                   |I&T Status          |Priority / Bug Severity   |
 +========================================================================================+====================+==========================+
-|`mi-label#42`_ Upgrade to latest product-tools to remove log4j security vulnerability   ||:yellow_circle:|   |s.critical                |
-+----------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`mi-label#45`_ Transform error when calling Generator directly                          ||:blue_circle:|     |s.high                    |
++----------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`mi-label#42`_ Upgrade to latest product-tools to remove log4j security vulnerability   ||:yellow_circle:|   |s.critical                |
 +----------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -425,6 +425,11 @@ Planned Updates
     No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the link in
     this section title for details.
 
+`operations#459`_ B14.0 dLDD Build and I&T
+++++++++++++++++++++++++++++++++++++++++++
+    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the link in
+    this section title for details.
+
 Other Updates
 ~~~~~~~~~~~~~
 Bugs
@@ -476,11 +481,11 @@ Bugs
 +----------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                       |I&T Status          |Priority / Bug Severity   |
 +============================================================================+====================+==========================+
-|`pds-api#259`_ API search returns 500 for anything besides simple queries   ||:yellow_circle:|   |unknown                   |
+|`pds-api#262`_ PDS API is not respecting the sort field                     ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds-api#260`_ PDS API documents are unclear wrt quoting in queries         ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
-|`pds-api#262`_ PDS API is not respecting the sort field                     ||:yellow_circle:|   |unknown                   |
+|`pds-api#259`_ API search returns 500 for anything besides simple queries   ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -512,9 +517,9 @@ Bugs
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                                                         |I&T Status          |Priority / Bug Severity   |
 +==============================================================================================================================================================+====================+==========================+
-|`pds3-product-tools#17`_ [SECURITY] Upgrade to latest log4j-api/log4-core                                                                                     ||:yellow_circle:|   |s.critical                |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds3-product-tools#21`_ `code too large` error on generated ODLParser class preventing build and tag of upgraded log4j dependencies needed by pds4-jparser   ||:yellow_circle:|   |s.critical                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds3-product-tools#17`_ [SECURITY] Upgrade to latest log4j-api/log4-core                                                                                     ||:yellow_circle:|   |s.critical                |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -554,9 +559,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
 |Issue                                                                                                    |I&T Status         |Priority / Bug Severity   |
 +=========================================================================================================+===================+==========================+
-|`pds4-information-model#667`_ lddtool does not generate the correct closing tag for rule_type = Report   ||:green_circle:|   |s.medium                  |
-+---------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
 |`pds4-information-model#658`_ Bug trying to generate LDD and missing files                               ||:green_circle:|   |s.high                    |
++---------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
+|`pds4-information-model#667`_ lddtool does not generate the correct closing tag for rule_type = Report   ||:green_circle:|   |s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
 |`pds4-information-model#661`_ LDDTool fails for dependent LDDs since v14.2.0                             ||:green_circle:|   |s.critical                |
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
@@ -567,9 +572,9 @@ Requirements
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                              |I&T Status          |Priority / Bug Severity   |
 +===================================================================================================+====================+==========================+
-|`pds4-information-model#698`_ CCB-357: Create Product_External - LID Schematron Rule Update        ||:yellow_circle:|   |p.must-have               |
-+---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`pds4-information-model#679`_ CCB-336 Add a License_Information class to the Identification_Area   ||:green_circle:|    |p.must-have               |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`pds4-information-model#698`_ CCB-357: Create Product_External - LID Schematron Rule Update        ||:yellow_circle:|   |p.must-have               |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -578,9 +583,9 @@ Enhancements
 +-------------------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
 |Issue                                                                                                              |I&T Status         |Priority / Bug Severity   |
 +===================================================================================================================+===================+==========================+
-|`pds4-information-model#686`_ Verify LDDTool Processing of the Discipline LDDs matches outputs previous releases   ||:green_circle:|   |p.must-have               |
-+-------------------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
 |`pds4-information-model#670`_ Adds to default output JSON TermMap                                                  ||:green_circle:|   |p.must-have               |
++-------------------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
+|`pds4-information-model#686`_ Verify LDDTool Processing of the Discipline LDDs matches outputs previous releases   ||:green_circle:|   |p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------+-------------------+--------------------------+
 
 --------
@@ -692,9 +697,9 @@ Bugs
 +---------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                |I&T Status          |Priority / Bug Severity   |
 +=====================================================================+====================+==========================+
-|`portal-tasks#84`_ Fix coldfusion vulnerability identified by ITSD   ||:blue_circle:|     |s.critical                |
-+---------------------------------------------------------------------+--------------------+--------------------------+
 |`portal-tasks#80`_ Unexpected metadata causing bug in ds-view        ||:yellow_circle:|   |s.medium                  |
++---------------------------------------------------------------------+--------------------+--------------------------+
+|`portal-tasks#84`_ Fix coldfusion vulnerability identified by ITSD   ||:blue_circle:|     |s.critical                |
 +---------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -772,9 +777,9 @@ Bugs
 +-------------------------------------------------------------------+------------------+--------------------------+
 |Issue                                                              |I&T Status        |Priority / Bug Severity   |
 +===================================================================+==================+==========================+
-|`registry#180`_ Provenance script failing on production registry   ||:blue_circle:|   |s.high                    |
-+-------------------------------------------------------------------+------------------+--------------------------+
 |`registry#213`_ Increase disk space for ATM opensearch             ||:blue_circle:|   |s.critical                |
++-------------------------------------------------------------------+------------------+--------------------------+
+|`registry#180`_ Provenance script failing on production registry   ||:blue_circle:|   |s.high                    |
 +-------------------------------------------------------------------+------------------+--------------------------+
 
 Requirements
@@ -783,11 +788,11 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                              |I&T Status          |Priority / Bug Severity   |
 +===================================================================================================================+====================+==========================+
-|`registry#226`_ As a system, I can support up to 25 simultaneous writes from Harvest                               ||:yellow_circle:|   |p.must-have               |
+|`registry#168`_ As a manager, I want to see the progress of data sets ingested into registry vs. legacy registry   ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry#211`_ As an operator, I want to be notified of when Registry storage capacity exceeds 75% capacity.      ||:blue_circle:|     |p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry#168`_ As a manager, I want to see the progress of data sets ingested into registry vs. legacy registry   ||:yellow_circle:|   |p.should-have             |
+|`registry#226`_ As a system, I can support up to 25 simultaneous writes from Harvest                               ||:yellow_circle:|   |p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -819,27 +824,27 @@ Bugs
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                              |I&T Status          |Priority / Bug Severity   |
 +===================================================================================================+====================+==========================+
-|`registry-api#262`_ the request url in the error message does not make sense                       ||:yellow_circle:|   |s.low                     |
+|`registry-api#341`_ members of a bundle does not work on new test dataset                          ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#355`_ api does not return information that OpenSearch says is public                 ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#305`_ API not returning value for NAIF bundles                                       ||:green_circle:|    |s.high                    |
-+---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#356`_ `Accept:*` response not defaulting to valid application/json                   ||:green_circle:|    |s.high                    |
-+---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#362`_ field case in response and query have mismatched cases                         ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#277`_ Product summary object has an incomplete "properties" set                      ||:green_circle:|    |s.medium                  |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#349`_ Request for json+pds4 response fails in production                             ||:yellow_circle:|   |s.high                    |
+|`registry-api#262`_ the request url in the error message does not make sense                       ||:yellow_circle:|   |s.low                     |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#341`_ members of a bundle does not work on new test dataset                          ||:yellow_circle:|   |s.high                    |
-+---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#343`_ API falsely reports 10000 hits for hits>10000                                  ||:yellow_circle:|   |s.medium                  |
+|`registry-api#375`_ text/csv format is impacted by the repairkit script (apparently)               ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#296`_ API crashes with JVM memory error on data sets with very large labels (>1MB)   ||:green_circle:|    |s.medium                  |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`registry-api#375`_ text/csv format is impacted by the repairkit script (apparently)               ||:yellow_circle:|   |s.high                    |
+|`registry-api#362`_ field case in response and query have mismatched cases                         ||:yellow_circle:|   |s.high                    |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#305`_ API not returning value for NAIF bundles                                       ||:green_circle:|    |s.high                    |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#343`_ API falsely reports 10000 hits for hits>10000                                  ||:yellow_circle:|   |s.medium                  |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#356`_ `Accept:*` response not defaulting to valid application/json                   ||:green_circle:|    |s.high                    |
++---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#349`_ Request for json+pds4 response fails in production                             ||:yellow_circle:|   |s.high                    |
 +---------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -848,9 +853,9 @@ Requirements
 +-----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                              |I&T Status          |Priority / Bug Severity   |
 +===================================================================================================================================+====================+==========================+
-|`registry-api#336`_ As a PDS operator, I want to know the health of the registry API service                                       ||:green_circle:|    |p.should-have             |
-+-----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`registry-api#361`_ As a user, I want my API request to execute successfully even when the registry contains corrupted documents   ||:yellow_circle:|   |p.could-have              |
++-----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`registry-api#336`_ As a PDS operator, I want to know the health of the registry API service                                       ||:green_circle:|    |p.should-have             |
 +-----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -1264,9 +1269,9 @@ Bugs
 +-------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                      |I&T Status          |Priority / Bug Severity   |
 +===========================================================================================+====================+==========================+
-|`transform#36`_ Unable to transform from PDS3 Label to PDS4 Label with upgraded mi-label   ||:yellow_circle:|   |s.medium                  |
-+-------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`transform#35`_ Examples missing from tar/zip packages                                     ||:yellow_circle:|   |s.medium                  |
++-------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`transform#36`_ Unable to transform from PDS3 Label to PDS4 Label with upgraded mi-label   ||:yellow_circle:|   |s.medium                  |
 +-------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -1362,31 +1367,31 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                             |I&T Status          |Priority / Bug Severity   |
 +==================================================================================================================================+====================+==========================+
-|`validate#479`_ validate erroneously flags PDF/A-1a compliant file                                                                ||:green_circle:|    |s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                                     ||:green_circle:|    |s.low                     |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#684`_ Validation failures are contingent on presence of `<file_size>` attribute in `<File>` class                       ||:yellow_circle:|   |s.high                    |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#674`_ validate does not handle special constants with data type of SignedLSB2                                           ||:yellow_circle:|   |s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#649`_ validate does not validate a collection if collection.xml pointed to                                              ||:green_circle:|    |s.medium                  |
+|`validate#652`_ validate 3.3.0 snapshot produces incorrect SKIP/INFO messages                                                     ||:green_circle:|    |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#500`_ Validate does not allow `.arch_h` file name/data type                                                             ||:green_circle:|    |s.low                     |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                                  ||:green_circle:|    |s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#652`_ validate 3.3.0 snapshot produces incorrect SKIP/INFO messages                                                     ||:green_circle:|    |s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#673`_ Validate does not handle Special_Constants valid_minimum and valid_maximum in accordance with information model   ||:yellow_circle:|   |s.medium                  |
+|`validate#674`_ validate does not handle special constants with data type of SignedLSB2                                           ||:yellow_circle:|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#679`_ Validate throws internal error when coming across non-label XML in a target directory                             ||:yellow_circle:|   |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#561`_ Validate incorrectly enforces file naming requirements on bundles/collections                                     ||:green_circle:|    |s.low                     |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#631`_ Expected value in validate report for context reference name is not same as value in the context file             ||:green_circle:|    |s.low                     |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#649`_ validate does not validate a collection if collection.xml pointed to                                              ||:green_circle:|    |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#690`_ Validate does not accurately check for missing_constant values                                                    ||:yellow_circle:|   |unknown                   |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#479`_ validate erroneously flags PDF/A-1a compliant file                                                                ||:green_circle:|    |s.medium                  |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#693`_ Upgrade verapdf dependency per transitive log4j vulnerability                                                     ||:yellow_circle:|   |s.critical                |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#684`_ Validation failures are contingent on presence of `<file_size>` attribute in `<File>` class                       ||:yellow_circle:|   |s.high                    |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#673`_ Validate does not handle Special_Constants valid_minimum and valid_maximum in accordance with information model   ||:yellow_circle:|   |s.medium                  |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#644`_ Validate gives errors for 'NaN' and 'Inf' values in IEEE754 data                                                  ||:green_circle:|    |s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Requirements
@@ -1397,17 +1402,17 @@ Requirements
 +===========================================================================================================================================+====================+==========================+
 |`validate#599`_ As a user, I want to be able to use both online and local schema/schematron files.                                         ||:yellow_circle:|   |p.could-have              |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#651`_ As a user, I want to support bit patterns within Special_Constants values                                                  ||:yellow_circle:|   |p.should-have             |
+|`validate#462`_ As a user, I want validate to throw an error when a collection inventory contains an invalid secondary product reference   ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#658`_ As a user, I want the PDF error reports to be output in a user-specified directory                                         ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#535`_ As a user, I want to receive a warning if records in file are greater than records value specified in label                ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#462`_ As a user, I want validate to throw an error when a collection inventory contains an invalid secondary product reference   ||:yellow_circle:|   |p.should-have             |
+|`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#683`_ As a user, I want to receive a WARNING when table objects are out of order                                                 ||:yellow_circle:|   |p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
-|`validate#617`_ As a user, I would like to enforce browse file extension with encoding type                                                ||:yellow_circle:|   |p.should-have             |
+|`validate#651`_ As a user, I want to support bit patterns within Special_Constants values                                                  ||:yellow_circle:|   |p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 Enhancements
@@ -1416,9 +1421,9 @@ Enhancements
 +---------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |Issue                                                                                                                            |I&T Status          |Priority / Bug Severity   |
 +=================================================================================================================================+====================+==========================+
-|`validate#680`_ validate does not correctly diagnose errors in the record_length value for fixed width Table_Character objects   ||:yellow_circle:|   |p.should-have             |
-+---------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 |`validate#567`_ Update ArrayObject exceptions to enable improved error messaging                                                 ||:blue_circle:|     |p.could-have              |
++---------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
+|`validate#680`_ validate does not correctly diagnose errors in the record_length value for fixed width Table_Character objects   ||:yellow_circle:|   |p.should-have             |
 +---------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------------+
 
 --------
@@ -1590,15 +1595,15 @@ as follows:
 .. _deep-archive#151: https://github.com/NASA-PDS/deep-archive/issues/151
 .. _deep-archive#147: https://github.com/NASA-PDS/deep-archive/issues/147
 .. _devops#34: https://github.com/NASA-PDS/devops/issues/34
-.. _devops#50: https://github.com/NASA-PDS/devops/issues/50
 .. _devops#35: https://github.com/NASA-PDS/devops/issues/35
+.. _devops#50: https://github.com/NASA-PDS/devops/issues/50
 .. _doi-service#408: https://github.com/NASA-PDS/doi-service/issues/408
 .. _ds-view#3: https://github.com/NASA-PDS/ds-view/issues/3
 .. _harvest#124: https://github.com/NASA-PDS/harvest/issues/124
 .. _harvest#119: https://github.com/NASA-PDS/harvest/issues/119
 .. _lasso-issues#2: https://github.com/NASA-PDS/lasso-issues/issues/2
-.. _mi-label#42: https://github.com/NASA-PDS/mi-label/issues/42
 .. _mi-label#45: https://github.com/NASA-PDS/mi-label/issues/45
+.. _mi-label#42: https://github.com/NASA-PDS/mi-label/issues/42
 .. _nucleus#38: https://github.com/NASA-PDS/nucleus/issues/38
 .. _nucleus#39: https://github.com/NASA-PDS/nucleus/issues/39
 .. _nucleus#22: https://github.com/NASA-PDS/nucleus/issues/22
@@ -1608,53 +1613,54 @@ as follows:
 .. _nucleus#41: https://github.com/NASA-PDS/nucleus/issues/41
 .. _nucleus#51: https://github.com/NASA-PDS/nucleus/issues/51
 .. _operations#364: https://github.com/NASA-PDS/operations/issues/364
+.. _operations#459: https://github.com/NASA-PDS/operations/issues/459
 .. _operations#413: https://github.com/NASA-PDS/operations/issues/413
 .. _operations#378: https://github.com/NASA-PDS/operations/issues/378
 .. _operations#414: https://github.com/NASA-PDS/operations/issues/414
-.. _pds-api#259: https://github.com/NASA-PDS/pds-api/issues/259
-.. _pds-api#260: https://github.com/NASA-PDS/pds-api/issues/260
 .. _pds-api#262: https://github.com/NASA-PDS/pds-api/issues/262
-.. _pds3-product-tools#17: https://github.com/NASA-PDS/pds3-product-tools/issues/17
+.. _pds-api#260: https://github.com/NASA-PDS/pds-api/issues/260
+.. _pds-api#259: https://github.com/NASA-PDS/pds-api/issues/259
 .. _pds3-product-tools#21: https://github.com/NASA-PDS/pds3-product-tools/issues/21
+.. _pds3-product-tools#17: https://github.com/NASA-PDS/pds3-product-tools/issues/17
 .. _pds4-information-model#635: https://github.com/NASA-PDS/pds4-information-model/issues/635
 .. _pds4-information-model#652: https://github.com/NASA-PDS/pds4-information-model/issues/652
-.. _pds4-information-model#667: https://github.com/NASA-PDS/pds4-information-model/issues/667
 .. _pds4-information-model#658: https://github.com/NASA-PDS/pds4-information-model/issues/658
+.. _pds4-information-model#667: https://github.com/NASA-PDS/pds4-information-model/issues/667
 .. _pds4-information-model#661: https://github.com/NASA-PDS/pds4-information-model/issues/661
-.. _pds4-information-model#698: https://github.com/NASA-PDS/pds4-information-model/issues/698
 .. _pds4-information-model#679: https://github.com/NASA-PDS/pds4-information-model/issues/679
-.. _pds4-information-model#686: https://github.com/NASA-PDS/pds4-information-model/issues/686
+.. _pds4-information-model#698: https://github.com/NASA-PDS/pds4-information-model/issues/698
 .. _pds4-information-model#670: https://github.com/NASA-PDS/pds4-information-model/issues/670
+.. _pds4-information-model#686: https://github.com/NASA-PDS/pds4-information-model/issues/686
 .. _planetary-data-cloud#29: https://github.com/NASA-PDS/planetary-data-cloud/issues/29
 .. _planetary-data-cloud#65: https://github.com/NASA-PDS/planetary-data-cloud/issues/65
 .. _planetary-data-engine#2: https://github.com/NASA-PDS/planetary-data-engine/issues/2
 .. _planetarydata.org#7: https://github.com/NASA-PDS/planetarydata.org/issues/7
 .. _portal-tasks#64: https://github.com/NASA-PDS/portal-tasks/issues/64
-.. _portal-tasks#84: https://github.com/NASA-PDS/portal-tasks/issues/84
 .. _portal-tasks#80: https://github.com/NASA-PDS/portal-tasks/issues/80
+.. _portal-tasks#84: https://github.com/NASA-PDS/portal-tasks/issues/84
 .. _portal-tasks#78: https://github.com/NASA-PDS/portal-tasks/issues/78
 .. _portal-wp-tasks#37: https://github.com/NASA-PDS/portal-wp-tasks/issues/37
 .. _registry#143: https://github.com/NASA-PDS/registry/issues/143
 .. _registry#186: https://github.com/NASA-PDS/registry/issues/186
 .. _registry#214: https://github.com/NASA-PDS/registry/issues/214
-.. _registry#180: https://github.com/NASA-PDS/registry/issues/180
 .. _registry#213: https://github.com/NASA-PDS/registry/issues/213
-.. _registry#226: https://github.com/NASA-PDS/registry/issues/226
-.. _registry#211: https://github.com/NASA-PDS/registry/issues/211
+.. _registry#180: https://github.com/NASA-PDS/registry/issues/180
 .. _registry#168: https://github.com/NASA-PDS/registry/issues/168
-.. _registry-api#262: https://github.com/NASA-PDS/registry-api/issues/262
-.. _registry-api#355: https://github.com/NASA-PDS/registry-api/issues/355
-.. _registry-api#305: https://github.com/NASA-PDS/registry-api/issues/305
-.. _registry-api#356: https://github.com/NASA-PDS/registry-api/issues/356
-.. _registry-api#362: https://github.com/NASA-PDS/registry-api/issues/362
-.. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
-.. _registry-api#349: https://github.com/NASA-PDS/registry-api/issues/349
+.. _registry#211: https://github.com/NASA-PDS/registry/issues/211
+.. _registry#226: https://github.com/NASA-PDS/registry/issues/226
 .. _registry-api#341: https://github.com/NASA-PDS/registry-api/issues/341
-.. _registry-api#343: https://github.com/NASA-PDS/registry-api/issues/343
-.. _registry-api#296: https://github.com/NASA-PDS/registry-api/issues/296
+.. _registry-api#355: https://github.com/NASA-PDS/registry-api/issues/355
+.. _registry-api#277: https://github.com/NASA-PDS/registry-api/issues/277
+.. _registry-api#262: https://github.com/NASA-PDS/registry-api/issues/262
 .. _registry-api#375: https://github.com/NASA-PDS/registry-api/issues/375
-.. _registry-api#336: https://github.com/NASA-PDS/registry-api/issues/336
+.. _registry-api#296: https://github.com/NASA-PDS/registry-api/issues/296
+.. _registry-api#362: https://github.com/NASA-PDS/registry-api/issues/362
+.. _registry-api#305: https://github.com/NASA-PDS/registry-api/issues/305
+.. _registry-api#343: https://github.com/NASA-PDS/registry-api/issues/343
+.. _registry-api#356: https://github.com/NASA-PDS/registry-api/issues/356
+.. _registry-api#349: https://github.com/NASA-PDS/registry-api/issues/349
 .. _registry-api#361: https://github.com/NASA-PDS/registry-api/issues/361
+.. _registry-api#336: https://github.com/NASA-PDS/registry-api/issues/336
 .. _registry-common#40: https://github.com/NASA-PDS/registry-common/issues/40
 .. _registry-harvest-legacy#7: https://github.com/NASA-PDS/registry-harvest-legacy/issues/7
 .. _registry-loader#26: https://github.com/NASA-PDS/registry-loader/issues/26
@@ -1674,8 +1680,8 @@ as follows:
 .. _system-i-n-t#49: https://github.com/NASA-PDS/system-i-n-t/issues/49
 .. _system-i-n-t#48: https://github.com/NASA-PDS/system-i-n-t/issues/48
 .. _system-i-n-t#47: https://github.com/NASA-PDS/system-i-n-t/issues/47
-.. _transform#36: https://github.com/NASA-PDS/transform/issues/36
 .. _transform#35: https://github.com/NASA-PDS/transform/issues/35
+.. _transform#36: https://github.com/NASA-PDS/transform/issues/36
 .. _validate#534: https://github.com/NASA-PDS/validate/issues/534
 .. _validate#7: https://github.com/NASA-PDS/validate/issues/7
 .. _validate#190: https://github.com/NASA-PDS/validate/issues/190
@@ -1694,28 +1700,28 @@ as follows:
 .. _validate#643: https://github.com/NASA-PDS/validate/issues/643
 .. _validate#629: https://github.com/NASA-PDS/validate/issues/629
 .. _validate#628: https://github.com/NASA-PDS/validate/issues/628
-.. _validate#479: https://github.com/NASA-PDS/validate/issues/479
-.. _validate#561: https://github.com/NASA-PDS/validate/issues/561
-.. _validate#684: https://github.com/NASA-PDS/validate/issues/684
-.. _validate#674: https://github.com/NASA-PDS/validate/issues/674
-.. _validate#649: https://github.com/NASA-PDS/validate/issues/649
-.. _validate#500: https://github.com/NASA-PDS/validate/issues/500
-.. _validate#644: https://github.com/NASA-PDS/validate/issues/644
 .. _validate#652: https://github.com/NASA-PDS/validate/issues/652
-.. _validate#673: https://github.com/NASA-PDS/validate/issues/673
+.. _validate#500: https://github.com/NASA-PDS/validate/issues/500
+.. _validate#674: https://github.com/NASA-PDS/validate/issues/674
 .. _validate#679: https://github.com/NASA-PDS/validate/issues/679
+.. _validate#561: https://github.com/NASA-PDS/validate/issues/561
 .. _validate#631: https://github.com/NASA-PDS/validate/issues/631
+.. _validate#649: https://github.com/NASA-PDS/validate/issues/649
 .. _validate#690: https://github.com/NASA-PDS/validate/issues/690
+.. _validate#479: https://github.com/NASA-PDS/validate/issues/479
 .. _validate#693: https://github.com/NASA-PDS/validate/issues/693
+.. _validate#684: https://github.com/NASA-PDS/validate/issues/684
+.. _validate#673: https://github.com/NASA-PDS/validate/issues/673
+.. _validate#644: https://github.com/NASA-PDS/validate/issues/644
 .. _validate#599: https://github.com/NASA-PDS/validate/issues/599
-.. _validate#651: https://github.com/NASA-PDS/validate/issues/651
+.. _validate#462: https://github.com/NASA-PDS/validate/issues/462
 .. _validate#658: https://github.com/NASA-PDS/validate/issues/658
 .. _validate#535: https://github.com/NASA-PDS/validate/issues/535
-.. _validate#462: https://github.com/NASA-PDS/validate/issues/462
-.. _validate#683: https://github.com/NASA-PDS/validate/issues/683
 .. _validate#617: https://github.com/NASA-PDS/validate/issues/617
-.. _validate#680: https://github.com/NASA-PDS/validate/issues/680
+.. _validate#683: https://github.com/NASA-PDS/validate/issues/683
+.. _validate#651: https://github.com/NASA-PDS/validate/issues/651
 .. _validate#567: https://github.com/NASA-PDS/validate/issues/567
+.. _validate#680: https://github.com/NASA-PDS/validate/issues/680
 .. _wds-react-legacy#88: https://github.com/NASA-PDS/wds-react-legacy/issues/88
 .. _web-analytics#9: https://github.com/NASA-PDS/web-analytics/issues/9
 .. _web-analytics#3: https://github.com/NASA-PDS/web-analytics/issues/3
