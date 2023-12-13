@@ -4,8 +4,8 @@ Upcoming
     :glob:
     :maxdepth: 1
 
-    Latest In-Dev Software, (14.0-SNAPSHOT) <14.0-SNAPSHOT/index>
-    Near-Term Plans (14.0) <14.0/plan>
+    Latest In-Dev Software, (14.1-SNAPSHOT) <14.1-SNAPSHOT/index>
+    Near-Term Plans (14.1) <14.1/plan>
 
 Past Releases
 =============
@@ -20,6 +20,7 @@ Past Releases
     12.0 <12.0/index>
     12.1 <12.1/index>
     13.0 <13.0/index>
+    13.1 <13.1/index>
 
 
 
