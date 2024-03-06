@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Build 14.1 Plan &mdash; NASA PDS Software B14.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=6fa68f7b" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=1a9586fd"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -28,15 +31,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> NASA PDS Software
-            <img src="../../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            NASA PDS Software
+              <img src="../../_static/PDS_Planets.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 B14.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -115,7 +122,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../releases.html">Upcoming</a></li>
       <li class="breadcrumb-item active">Build 14.1 Plan</li>
       <li class="wy-breadcrumbs-aside">
@@ -128,52 +135,21 @@
            <div itemprop="articleBody">
              
   <section id="build-14-1-plan">
-<h1>Build 14.1 Plan<a class="headerlink" href="#build-14-1-plan" title="Permalink to this headline"></a></h1>
+<h1>Build 14.1 Plan<a class="headerlink" href="#build-14-1-plan" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Build 14.1 Plan</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#key-dates">Key Dates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#planned-pds4-information-model-changes">Planned PDS4 Information Model Changes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#planned-software-changes">Planned Software Changes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#validate">validate</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pds4-information-model">pds4-information-model</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#harvest">harvest</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#software-issues-repo">software-issues-repo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#portal-wp-tasks">portal-wp-tasks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#operations">operations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#roundup-action">roundup-action</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#doi-ui">doi-ui</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#search-api-notebook">search-api-notebook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#planetary-data-cloud">planetary-data-cloud</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#devops">devops</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#nucleus">nucleus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#registry">registry</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#registry-api">registry-api</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#planetary-data-engine">planetary-data-engine</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-upload-manager">data-upload-manager</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#other-information">Other Information</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#reference-documents">Reference Documents</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#system-requirements-dependencies-and-assumptions">System Requirements, Dependencies, and Assumptions</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 </div>
 <p>The Planetary Data System (PDS) is a long-term archive of digital data products returned from NASA’s planetary missions, and from other kinds of flight and ground-based data acquisitions, including laboratory experiments. But it is more than just a facility - the archive is actively managed by planetary scientists to help ensure its usefulness and usability by the world wide planetary science community.</p>
 <p>The following page outlines the planned PDS software enhancements, bug fixes, and impacted requirements for the upcoming Build .</p>
 <p>A more detailed breakdown of these tasks by date and priority can be found in our <a class="reference external" href="https://app.zenhub.com/workspaces/pdsen-workspace-5c87e859b7a0872dd10b87c5/roadmap">Zenhub Roadmap</a> (login required).</p>
 <section id="key-dates">
-<h2>Key Dates<a class="headerlink" href="#key-dates" title="Permalink to this headline"></a></h2>
-<table class="colwidths-given docutils align-default" id="id93">
-<caption><span class="caption-text">Key Dates for Discipline Nodes</span><a class="headerlink" href="#id93" title="Permalink to this table"></a></caption>
+<h2>Key Dates<a class="headerlink" href="#key-dates" title="Link to this heading"></a></h2>
+<table class="docutils align-default" id="id93">
+<caption><span class="caption-text">Key Dates for Discipline Nodes</span><a class="headerlink" href="#id93" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 40%" />
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 40.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Date</p></th>
@@ -215,12 +191,12 @@
 </tr>
 </tbody>
 </table>
-<table class="colwidths-given docutils align-default" id="id94">
-<caption><span class="caption-text">Key Dates for Engineering Node</span><a class="headerlink" href="#id94" title="Permalink to this table"></a></caption>
+<table class="docutils align-default" id="id94">
+<caption><span class="caption-text">Key Dates for Engineering Node</span><a class="headerlink" href="#id94" title="Link to this table"></a></caption>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 40%" />
-<col style="width: 40%" />
+<col style="width: 20.0%" />
+<col style="width: 40.0%" />
+<col style="width: 40.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Date</p></th>
@@ -251,14 +227,14 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <p>For a more detailed schedule, see <a class="reference external" href="https://pds-engineering.jpl.nasa.gov/content/schedules">https://pds-engineering.jpl.nasa.gov/content/schedules</a>.</p>
 </section>
 <section id="planned-pds4-information-model-changes">
-<h2>Planned PDS4 Information Model Changes<a class="headerlink" href="#planned-pds4-information-model-changes" title="Permalink to this headline"></a></h2>
+<h2>Planned PDS4 Information Model Changes<a class="headerlink" href="#planned-pds4-information-model-changes" title="Link to this heading"></a></h2>
 <p>This section details the planned changes to the PDS4 Information Model for this build. These changes are deliverables by the PDS Data Design Working Group (DDWG) to the Engineering Node for implementation.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/663">pds4-information-model#663</a> <strong>CCB-367: Superseded_by / Supersedes reference type</strong></p></li>
 </ul>
 </section>
 <section id="planned-software-changes">
-<h2>Planned Software Changes<a class="headerlink" href="#planned-software-changes" title="Permalink to this headline"></a></h2>
+<h2>Planned Software Changes<a class="headerlink" href="#planned-software-changes" title="Link to this heading"></a></h2>
 <p>This section details the planned software changes for this build.</p>
 <p>Planned tasks for the next release cycle are grouped by software component, and sub-tasks are included where known at the time of this plan generation. Each section also includes additional information, such as:</p>
 <ul class="simple">
@@ -272,16 +248,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 <p><strong>Have a new feature or tool you think we should be working on?</strong> Create a ticket in the applicable Github repo or in our <a class="reference external" href="https://github.com/NASA-PDS/pdsen-operations/issues/new/choose">PDS EN Operations repo</a> and we will see how that can fit into our plans moving forward.</p>
 <hr class="docutils" />
 <section id="validate">
-<h3>validate<a class="headerlink" href="#validate" title="Permalink to this headline"></a></h3>
+<h3>validate<a class="headerlink" href="#validate" title="Link to this heading"></a></h3>
 <p><em>Validates PDS4 product labels, data and PDS3 Volumes</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/validate/">User Guide</a></p></td>
@@ -314,16 +290,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="pds4-information-model">
-<h3>pds4-information-model<a class="headerlink" href="#pds4-information-model" title="Permalink to this headline"></a></h3>
+<h3>pds4-information-model<a class="headerlink" href="#pds4-information-model" title="Link to this heading"></a></h3>
 <p><em>The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/pds4-information-model/">User Guide</a></p></td>
@@ -357,16 +333,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="harvest">
-<h3>harvest<a class="headerlink" href="#harvest" title="Permalink to this headline"></a></h3>
+<h3>harvest<a class="headerlink" href="#harvest" title="Link to this heading"></a></h3>
 <p><em>Standalone Harvest client application providing the functionality for capturing and indexing product metadata into the PDS Registry system (https://github.com/nasa-pds/registry).</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/registry">User Guide</a></p></td>
@@ -397,16 +373,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="software-issues-repo">
-<h3>software-issues-repo<a class="headerlink" href="#software-issues-repo" title="Permalink to this headline"></a></h3>
+<h3>software-issues-repo<a class="headerlink" href="#software-issues-repo" title="Link to this heading"></a></h3>
 <p><em>Issue tracking repository as a centralized entry point for general PDS software bugs and feature requests.</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo#readme">User Guide</a></p></td>
@@ -459,16 +435,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="portal-wp-tasks">
-<h3>portal-wp-tasks<a class="headerlink" href="#portal-wp-tasks" title="Permalink to this headline"></a></h3>
+<h3>portal-wp-tasks<a class="headerlink" href="#portal-wp-tasks" title="Link to this heading"></a></h3>
 <p><em>PDS Web Design System</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-wds">User Guide</a></p></td>
@@ -506,16 +482,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="operations">
-<h3>operations<a class="headerlink" href="#operations" title="Permalink to this headline"></a></h3>
+<h3>operations<a class="headerlink" href="#operations" title="Link to this heading"></a></h3>
 <p><em>Tickets for the PDSEN Operations Team</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/operations#readme">User Guide</a></p></td>
@@ -548,16 +524,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="roundup-action">
-<h3>roundup-action<a class="headerlink" href="#roundup-action" title="Permalink to this headline"></a></h3>
+<h3>roundup-action<a class="headerlink" href="#roundup-action" title="Link to this heading"></a></h3>
 <p><em>Do a “roundup”, a/k/a PDS-style continuous integration and delivery</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action#readme">User Guide</a></p></td>
@@ -587,16 +563,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="doi-ui">
-<h3>doi-ui<a class="headerlink" href="#doi-ui" title="Permalink to this headline"></a></h3>
+<h3>doi-ui<a class="headerlink" href="#doi-ui" title="Link to this heading"></a></h3>
 <p><em>The web interface for the PDS DOI Service providing the ability management PDS archive DOIs. See the DOI Service for more details on the available capabilities. https://nasa-pds.github.io/doi-service/</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-ui#readme">User Guide</a></p></td>
@@ -614,16 +590,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="search-api-notebook">
-<h3>search-api-notebook<a class="headerlink" href="#search-api-notebook" title="Permalink to this headline"></a></h3>
+<h3>search-api-notebook<a class="headerlink" href="#search-api-notebook" title="Link to this heading"></a></h3>
 <p><em>Jupyter notebooks for demonstrating and utilizing the Planetary Data System (PDS) Search API</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/search-api-notebook#readme">User Guide</a></p></td>
@@ -649,16 +625,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="planetary-data-cloud">
-<h3>planetary-data-cloud<a class="headerlink" href="#planetary-data-cloud" title="Permalink to this headline"></a></h3>
+<h3>planetary-data-cloud<a class="headerlink" href="#planetary-data-cloud" title="Link to this heading"></a></h3>
 <p><em>PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud#readme">User Guide</a></p></td>
@@ -703,16 +679,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="devops">
-<h3>devops<a class="headerlink" href="#devops" title="Permalink to this headline"></a></h3>
+<h3>devops<a class="headerlink" href="#devops" title="Link to this heading"></a></h3>
 <p><em>Parent repo for PDS DevOps activities</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/devops#readme">User Guide</a></p></td>
@@ -744,16 +720,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="nucleus">
-<h3>nucleus<a class="headerlink" href="#nucleus" title="Permalink to this headline"></a></h3>
+<h3>nucleus<a class="headerlink" href="#nucleus" title="Link to this heading"></a></h3>
 <p><em>Nucleus is a software platform used to create workflows for the Planetary Data (PDS).</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/nucleus">User Guide</a></p></td>
@@ -784,16 +760,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="registry">
-<h3>registry<a class="headerlink" href="#registry" title="Permalink to this headline"></a></h3>
+<h3>registry<a class="headerlink" href="#registry" title="Link to this heading"></a></h3>
 <p><em>PDS Registry provides service and software application necessary for tracking, searching, auditing, locating, and maintaining artifacts within the system. These artifacts can range from data files and label files, schemas, dictionary definitions for objects and elements, services, etc.</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/registry">User Guide</a></p></td>
@@ -872,16 +848,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="registry-api">
-<h3>registry-api<a class="headerlink" href="#registry-api" title="Permalink to this headline"></a></h3>
+<h3>registry-api<a class="headerlink" href="#registry-api" title="Link to this heading"></a></h3>
 <p><em>Web API service for the PDS Registry, providing the implementation of the PDS Search API (https://github.com/nasa-pds/pds-api) for the PDS Registry.</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/pds-api">User Guide</a></p></td>
@@ -909,16 +885,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="planetary-data-engine">
-<h3>planetary-data-engine<a class="headerlink" href="#planetary-data-engine" title="Permalink to this headline"></a></h3>
+<h3>planetary-data-engine<a class="headerlink" href="#planetary-data-engine" title="Link to this heading"></a></h3>
 <p><em>Free-text search capability for planetary data, services, tools, and information</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine#readme">User Guide</a></p></td>
@@ -951,16 +927,16 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 <hr class="docutils" />
 <section id="data-upload-manager">
-<h3>data-upload-manager<a class="headerlink" href="#data-upload-manager" title="Permalink to this headline"></a></h3>
+<h3>data-upload-manager<a class="headerlink" href="#data-upload-manager" title="Link to this heading"></a></h3>
 <p><em>Data Upload Manager (DUM) component for managing the interface for data uploads to the Planetary Data Cloud from Data Providers and PDS Nodes.</em></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/data-upload-manager">User Guide</a></p></td>
@@ -989,9 +965,9 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </section>
 </section>
 <section id="other-information">
-<h2>Other Information<a class="headerlink" href="#other-information" title="Permalink to this headline"></a></h2>
+<h2>Other Information<a class="headerlink" href="#other-information" title="Link to this heading"></a></h2>
 <section id="reference-documents">
-<h3>Reference Documents<a class="headerlink" href="#reference-documents" title="Permalink to this headline"></a></h3>
+<h3>Reference Documents<a class="headerlink" href="#reference-documents" title="Link to this heading"></a></h3>
 <p>This section details the controlling and applicable documents referenced for this release. The controlling documents are as follows:</p>
 <ul class="simple">
 <li><p>PDS Level 1, 2 and 3 Requirements, April 20, 2017.</p></li>
@@ -1017,7 +993,7 @@ build cycle are delivered to EN I&amp;T.</p></td>
 </ul>
 </section>
 <section id="system-requirements-dependencies-and-assumptions">
-<h3>System Requirements, Dependencies, and Assumptions<a class="headerlink" href="#system-requirements-dependencies-and-assumptions" title="Permalink to this headline"></a></h3>
+<h3>System Requirements, Dependencies, and Assumptions<a class="headerlink" href="#system-requirements-dependencies-and-assumptions" title="Link to this heading"></a></h3>
 <p>See individual applications for specific dependencies and system requirements.</p>
 </section>
 </section>
