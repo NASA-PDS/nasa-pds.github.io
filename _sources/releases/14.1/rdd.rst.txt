@@ -116,9 +116,9 @@ Bugs
 +-----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                     | I&T Status       | Priority / Bug Severity   |
 +===========================================================================================================+==================+===========================+
-| `deep-archive#155`_ pds-deep-registry-archive produces invalid SIPs/AIPs                                  | |:green_circle:| | s.high                    |
-+-----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `deep-archive#158`_ Transfer manifest mismatch between `pds-deep-archive` and `pds-deep-registry-archive` | |:green_circle:| | s.high                    |
++-----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `deep-archive#155`_ pds-deep-registry-archive produces invalid SIPs/AIPs                                  | |:green_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `deep-archive#151`_ Installation instructions don't work on Windows 11                                    | |:green_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
@@ -222,9 +222,9 @@ Bugs
 +-----------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                 | I&T Status       | Priority / Bug Severity   |
 +=======================================================================+==================+===========================+
-| `ds-view#14`_ Memory leak in Solr connections leading to Tomcat crash | |:blue_circle:|  | s.critical                |
-+-----------------------------------------------------------------------+------------------+---------------------------+
 | `ds-view#12`_ v2.14.2 does not work for resource links                | |:green_circle:| | s.high                    |
++-----------------------------------------------------------------------+------------------+---------------------------+
+| `ds-view#14`_ Memory leak in Solr connections leading to Tomcat crash | |:blue_circle:|  | s.critical                |
 +-----------------------------------------------------------------------+------------------+---------------------------+
 
 Enhancements
@@ -233,9 +233,9 @@ Enhancements
 +-----------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                   | I&T Status       | Priority / Bug Severity   |
 +=========================================================================================+==================+===========================+
-| `ds-view#3`_ Upgrade Dataset View and dependencies to support Harvest/Registry upgrades | |:green_circle:| | p.must-have               |
-+-----------------------------------------------------------------------------------------+------------------+---------------------------+
 | `ds-view#8`_ Upgrade to latest Solr 9.3.x                                               | |:blue_circle:|  | unknown                   |
++-----------------------------------------------------------------------------------------+------------------+---------------------------+
+| `ds-view#3`_ Upgrade Dataset View and dependencies to support Harvest/Registry upgrades | |:green_circle:| | p.must-have               |
 +-----------------------------------------------------------------------------------------+------------------+---------------------------+
 
 --------
@@ -341,9 +341,9 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                  | I&T Status        | Priority / Bug Severity   |
 +========================================================================================================================+===================+===========================+
-| `lasso-issues#7`_ Unable to generate RDD when upgrading rstcloth 0.5.0                                                 | |:yellow_circle:| | s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `lasso-issues#11`_ add-version-label-to-open-bugs fails when launched multiple times as sometime done through the CICD | |:yellow_circle:| | s.high                    |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `lasso-issues#7`_ Unable to generate RDD when upgrading rstcloth 0.5.0                                                 | |:yellow_circle:| | s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -407,7 +407,7 @@ Bugs
 +----------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                            | I&T Status        | Priority / Bug Severity   |
 +==================================================================================+===================+===========================+
-| `ldd-manager#2`_ Generate does not fail fast when the ingest ldd file is missing | |:yellow_circle:| | s.low                     |
+| `ldd-manager#2`_ Generate does not fail fast when the ingest ldd file is missing | |:green_circle:|  | s.low                     |
 +----------------------------------------------------------------------------------+-------------------+---------------------------+
 | `ldd-manager#7`_ LDD Manager fails when there are nested dependencies            | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------+-------------------+---------------------------+
@@ -633,15 +633,19 @@ Bugs
 +---------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                     | I&T Status        | Priority / Bug Severity   |
 +===========================================================================================================================+===================+===========================+
-| `pds4-information-model#744`_ LDDTool producing invalid XSD for Voyager LDD                                               | |:yellow_circle:| | s.high                    |
-+---------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#738`_ LDDTool is not creating valid URL for KPLO                                                  | |:yellow_circle:| | s.high                    |
++---------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#761`_ Documentation broken with latest upgrade for maven site plugin                              | |:blue_circle:|   | s.medium                  |
++---------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#471`_ PDS4 IM repo fails with openjdk 17+                                                         | |:yellow_circle:| | s.low                     |
++---------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#744`_ LDDTool producing invalid XSD for Voyager LDD                                               | |:yellow_circle:| | s.high                    |
 +---------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#733`_ LDDTool is throwing ERROR SetMasterAttrXMLBaseDataTypeFromDataType - Data Type is missing - | |:yellow_circle:| | s.critical                |
 +---------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `pds4-information-model#746`_ JDK17 issue re-introduced bug per #733                                                      | |:yellow_circle:| | s.high                    |
+| `pds4-information-model#763`_ Version flag no longer works on Windows                                                     | |:yellow_circle:| | unknown                   |
 +---------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `pds4-information-model#471`_ PDS4 IM repo fails with openjdk 17+                                                         | |:yellow_circle:| | s.low                     |
+| `pds4-information-model#746`_ JDK17 issue re-introduced bug per #733                                                      | |:yellow_circle:| | s.high                    |
 +---------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#754`_ webpage links are not working                                                               | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
@@ -663,9 +667,9 @@ Enhancements
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                 | I&T Status        | Priority / Bug Severity   |
 +=======================================================================================================+===================+===========================+
-| `pds4-information-model#734`_ Add LDDTool Execution Smoke Test to Branch Testing and Unstable testing | |:blue_circle:|   | p.should-have             |
-+-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#716`_ [namespace-registry]update namespace URL for KPDS                       | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#734`_ Add LDDTool Execution Smoke Test to Branch Testing and Unstable testing | |:blue_circle:|   | p.should-have             |
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -901,11 +905,11 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                  | I&T Status        | Priority / Bug Severity   |
 +========================================================================================================================+===================+===========================+
-| `registry-api#411`_ members query return 500 when members do not exist in the registry or alternate_id does not exists | |:yellow_circle:| | s.critical                |
+| `registry-api#404`_ Broken tests per pagination upgrade #397                                                           | |:blue_circle:|   | s.high                    |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#352`_ Pagination performance does not meet requirements                                                  | |:yellow_circle:| | s.high                    |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#404`_ Broken tests per pagination upgrade #397                                                           | |:blue_circle:|   | s.high                    |
+| `registry-api#411`_ members query return 500 when members do not exist in the registry or alternate_id does not exists | |:yellow_circle:| | s.critical                |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -944,7 +948,7 @@ Bugs
 
 Registry-harvest-legacy
 -----------------------
-*None*
+*Legacy Harvest Tool for loading PDS4 data into the Legacy Solr Registry driving the website keyword search.*
 
 .. list-table:: 
    :widths: 15 15 15 15 15 15
@@ -1044,9 +1048,9 @@ Enhancements
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                 | I&T Status        | Priority / Bug Severity   |
 +=======================================================================================================+===================+===========================+
-| `registry-pds3-catalog#6`_ Upgrade to latest Solr 9.3.x                                               | |:green_circle:|  | p.must-have               |
-+-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-pds3-catalog#4`_ Upgrade Catalog Tool and dependencies to support Harvest/Registry upgrades | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-pds3-catalog#6`_ Upgrade to latest Solr 9.3.x                                               | |:green_circle:|  | p.must-have               |
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -1080,9 +1084,9 @@ Bugs
 +=======================================================================================================================+===================+===========================+
 | `registry-sweepers#86`_ Property values returned by the API are inconsistent, as list or single value.                | |:green_circle:|  | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-sweepers#109`_ When building registry-sweeper version 1.2.1, docker image 1.3.0 was published on docker hub | |:yellow_circle:| | s.medium                  |
-+-----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-sweepers#111`_ Timeout bug when running legacy dashboard sync                                               | |:yellow_circle:| | s.high                    |
++-----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-sweepers#109`_ When building registry-sweeper version 1.2.1, docker image 1.3.0 was published on docker hub | |:blue_circle:|   | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -1208,13 +1212,13 @@ Other Updates
 Requirements
 ++++++++++++
 
-+---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                                                   | I&T Status        | Priority / Bug Severity   |
-+=========================================================================================================+===================+===========================+
-| `software-issues-repo#49`_ As a software user, I want to see the known bugs for a component release     | |:blue_circle:|   | p.could-have              |
-+---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `software-issues-repo#54`_ As a user, I want to ensure no passwords/secrets are committed to a PDS repo | |:yellow_circle:| | p.must-have               |
-+---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| Issue                                                                                                   | I&T Status       | Priority / Bug Severity   |
++=========================================================================================================+==================+===========================+
+| `software-issues-repo#54`_ As a user, I want to ensure no passwords/secrets are committed to a PDS repo | |:green_circle:| | p.must-have               |
++---------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `software-issues-repo#49`_ As a software user, I want to see the known bugs for a component release     | |:blue_circle:|  | p.could-have              |
++---------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 --------
 
@@ -1245,13 +1249,13 @@ Bugs
 +-------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                               | I&T Status        | Priority / Bug Severity   |
 +=====================================================================================+===================+===========================+
-| `transform#46`_ NoClassDefFoundError exception when transforming XML to PDS3 label  | |:green_circle:|  | s.medium                  |
+| `transform#30`_ [SECURITY] Upgrade to log4j-core/log4j-api                          | |:green_circle:|  | s.low                     |
 +-------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `transform#45`_ Broken download link and Windows JAVA settings in installation docs | |:green_circle:|  | s.medium                  |
 +-------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `transform#30`_ [SECURITY] Upgrade to log4j-core/log4j-api                          | |:green_circle:|  | s.low                     |
-+-------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `transform#67`_ Transform failing with `java.lang.NoClassDefFoundError` on Windows  | |:yellow_circle:| | s.high                    |
++-------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `transform#46`_ NoClassDefFoundError exception when transforming XML to PDS3 label  | |:green_circle:|  | s.medium                  |
 +-------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -1291,39 +1295,41 @@ Bugs
 +-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                   | I&T Status        | Priority / Bug Severity   |
 +=========================================================================================================================================+===================+===========================+
-| `validate#809`_ Validate fails to read files on Windows systems after Internal Reference check updates (#308)                           | |:yellow_circle:| | s.high                    |
-+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#739`_ Intermittent network failures attempting repeated downloads of schemas/schematrons                                      | |:yellow_circle:| | s.high                    |
-+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#681`_ Validate incorrectly throws precision mismatch error for Table_Delimited                                                | |:yellow_circle:| | s.medium                  |
-+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#475`_ Validate crashes on invalid # of records, and spurious file left behind                                                 | |:green_circle:|  | p.wont-have               |
-+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#747`_ validate flags IEEE 754 "infinity" values as invalid                                                                    | |:yellow_circle:| | s.high                    |
-+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#432`_ Requirement #308 does not appear to be working for checking referential integrity from products to others in the bundle | |:green_circle:|  | s.high                    |
-+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#748`_ Buffer limit IOException thrown with validate-refs                                                                      | |:yellow_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#761`_ Validate gives errors for 'NaN' values in IEEE754 data                                                                  | |:green_circle:|  | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#427`_ validate does not work correct when path name contains a space on mac                                                   | |:green_circle:|  | s.low                     |
+| `validate#763`_ Validate.bat does not execute on Windows                                                                                | |:green_circle:|  | s.critical                |
++-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#809`_ Validate fails to read files on Windows systems after Internal Reference check updates (#308)                           | |:yellow_circle:| | s.high                    |
++-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#754`_ Validate 3.3.0 erroneously reports data objects out of offset order                                                     | |:green_circle:|  | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#750`_ Validate-refs with manifest of file paths does not seem to read the files correctly                                     | |:yellow_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#723`_ Installation instructions need updates for Windows                                                                      | |:green_circle:|  | unknown                   |
+| `validate#739`_ Intermittent network failures attempting repeated downloads of schemas/schematrons                                      | |:green_circle:|  | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#763`_ Validate.bat does not execute on Windows                                                                                | |:green_circle:|  | s.critical                |
-+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#698`_ Investigate and Fix code scanning alert for potential improvements                                                      | |:blue_circle:|   | s.medium                  |
-+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#754`_ Validate 3.3.0 erroneously reports data objects out of offset order                                                     | |:yellow_circle:| | s.medium                  |
-+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#785`_ validate catches valid_maximum but not valid_minimum                                                                    | |:yellow_circle:| | s.medium                  |
+| `validate#781`_ Validate making incorrect assumption that first object has and object length == `file_size`                             | |:green_circle:|  | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#760`_ Uncaught exception thrown when only 1 of schemas/schematrons are provided via command-line                              | |:green_circle:|  | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#781`_ Validate making incorrect assumption that first object has and object length == `file_size`                             | |:yellow_circle:| | s.high                    |
+| `validate#475`_ Validate crashes on invalid # of records, and spurious file left behind                                                 | |:green_circle:|  | p.wont-have               |
++-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#681`_ Validate incorrectly throws precision mismatch error for Table_Delimited                                                | |:green_circle:|  | s.medium                  |
++-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#698`_ Investigate and Fix code scanning alert for potential improvements                                                      | |:blue_circle:|   | s.medium                  |
++-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#747`_ validate flags IEEE 754 "infinity" values as invalid                                                                    | |:yellow_circle:| | s.high                    |
++-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#427`_ validate does not work correct when path name contains a space on mac                                                   | |:green_circle:|  | s.low                     |
++-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#723`_ Installation instructions need updates for Windows                                                                      | |:yellow_circle:| | unknown                   |
++-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#785`_ validate catches valid_maximum but not valid_minimum                                                                    | |:green_circle:|  | s.medium                  |
++-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#748`_ Buffer limit IOException thrown with validate-refs                                                                      | |:yellow_circle:| | s.high                    |
++-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#854`_ validate 3.5.0-SNAPSHOT attempts to look at all files, not just *.xml                                                   | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -1332,13 +1338,13 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================================================================+===================+===========================+
-| `validate#755`_ As a user, I want validate to throw an error when a file is being referenced by more than one label                                      | |:yellow_circle:| | p.must-have               |
+| `validate#741`_ As a user, I want validate's referential integrity tool to read a manifest of files and check referential integrity                      | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#773`_ As a user, I want validate with the registry when a file is being referenced by more than one label                                      | |:yellow_circle:| | p.must-have               |
+| `validate#755`_ As a user, I want validate to throw an error when a file is being referenced by more than one label                                      | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#308`_ As a user, I want to check that all Internal References are valid references to other PDS4 products within the current validating bundle | |:green_circle:|  | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#741`_ As a user, I want validate's referential integrity tool to read a manifest of files and check referential integrity                      | |:yellow_circle:| | p.must-have               |
+| `validate#773`_ As a user, I want validate with the registry when a file is being referenced by more than one label                                      | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -1439,24 +1445,24 @@ as follows:
 .. _data-upload-manager#29: https://github.com/NASA-PDS/data-upload-manager/issues/29
 .. _data-upload-manager#51: https://github.com/NASA-PDS/data-upload-manager/issues/51
 .. _data-upload-manager#50: https://github.com/NASA-PDS/data-upload-manager/issues/50
-.. _deep-archive#155: https://github.com/NASA-PDS/deep-archive/issues/155
 .. _deep-archive#158: https://github.com/NASA-PDS/deep-archive/issues/158
+.. _deep-archive#155: https://github.com/NASA-PDS/deep-archive/issues/155
 .. _deep-archive#151: https://github.com/NASA-PDS/deep-archive/issues/151
 .. _deep-archive#159: https://github.com/NASA-PDS/deep-archive/issues/159
 .. _devops#37: https://github.com/NASA-PDS/devops/issues/37
 .. _devops#67: https://github.com/NASA-PDS/devops/issues/67
 .. _doi-ui#215: https://github.com/NASA-PDS/doi-ui/issues/215
-.. _ds-view#14: https://github.com/NASA-PDS/ds-view/issues/14
 .. _ds-view#12: https://github.com/NASA-PDS/ds-view/issues/12
-.. _ds-view#3: https://github.com/NASA-PDS/ds-view/issues/3
+.. _ds-view#14: https://github.com/NASA-PDS/ds-view/issues/14
 .. _ds-view#8: https://github.com/NASA-PDS/ds-view/issues/8
+.. _ds-view#3: https://github.com/NASA-PDS/ds-view/issues/3
 .. _feedback-widget#18: https://github.com/NASA-PDS/feedback-widget/issues/18
 .. _harvest#129: https://github.com/NASA-PDS/harvest/issues/129
 .. _harvest#130: https://github.com/NASA-PDS/harvest/issues/130
 .. _harvest#134: https://github.com/NASA-PDS/harvest/issues/134
 .. _harvest#141: https://github.com/NASA-PDS/harvest/issues/141
-.. _lasso-issues#7: https://github.com/NASA-PDS/lasso-issues/issues/7
 .. _lasso-issues#11: https://github.com/NASA-PDS/lasso-issues/issues/11
+.. _lasso-issues#7: https://github.com/NASA-PDS/lasso-issues/issues/7
 .. _ldd-gen-action#7: https://github.com/NASA-PDS/ldd-gen-action/issues/7
 .. _ldd-manager#2: https://github.com/NASA-PDS/ldd-manager/issues/2
 .. _ldd-manager#7: https://github.com/NASA-PDS/ldd-manager/issues/7
@@ -1476,16 +1482,18 @@ as follows:
 .. _pds4-information-model#704: https://github.com/NASA-PDS/pds4-information-model/issues/704
 .. _pds4-information-model#705: https://github.com/NASA-PDS/pds4-information-model/issues/705
 .. _pds4-information-model#713: https://github.com/NASA-PDS/pds4-information-model/issues/713
-.. _pds4-information-model#744: https://github.com/NASA-PDS/pds4-information-model/issues/744
 .. _pds4-information-model#738: https://github.com/NASA-PDS/pds4-information-model/issues/738
-.. _pds4-information-model#733: https://github.com/NASA-PDS/pds4-information-model/issues/733
-.. _pds4-information-model#746: https://github.com/NASA-PDS/pds4-information-model/issues/746
+.. _pds4-information-model#761: https://github.com/NASA-PDS/pds4-information-model/issues/761
 .. _pds4-information-model#471: https://github.com/NASA-PDS/pds4-information-model/issues/471
+.. _pds4-information-model#744: https://github.com/NASA-PDS/pds4-information-model/issues/744
+.. _pds4-information-model#733: https://github.com/NASA-PDS/pds4-information-model/issues/733
+.. _pds4-information-model#763: https://github.com/NASA-PDS/pds4-information-model/issues/763
+.. _pds4-information-model#746: https://github.com/NASA-PDS/pds4-information-model/issues/746
 .. _pds4-information-model#754: https://github.com/NASA-PDS/pds4-information-model/issues/754
 .. _pds4-information-model#750: https://github.com/NASA-PDS/pds4-information-model/issues/750
 .. _pds4-information-model#709: https://github.com/NASA-PDS/pds4-information-model/issues/709
-.. _pds4-information-model#734: https://github.com/NASA-PDS/pds4-information-model/issues/734
 .. _pds4-information-model#716: https://github.com/NASA-PDS/pds4-information-model/issues/716
+.. _pds4-information-model#734: https://github.com/NASA-PDS/pds4-information-model/issues/734
 .. _planetary-data-cloud#35: https://github.com/NASA-PDS/planetary-data-cloud/issues/35
 .. _planetary-data-cloud#61: https://github.com/NASA-PDS/planetary-data-cloud/issues/61
 .. _planetary-data-cloud#69: https://github.com/NASA-PDS/planetary-data-cloud/issues/69
@@ -1510,19 +1518,19 @@ as follows:
 .. _registry-api#389: https://github.com/NASA-PDS/registry-api/issues/389
 .. _registry-api#387: https://github.com/NASA-PDS/registry-api/issues/387
 .. _registry-api#388: https://github.com/NASA-PDS/registry-api/issues/388
-.. _registry-api#411: https://github.com/NASA-PDS/registry-api/issues/411
-.. _registry-api#352: https://github.com/NASA-PDS/registry-api/issues/352
 .. _registry-api#404: https://github.com/NASA-PDS/registry-api/issues/404
+.. _registry-api#352: https://github.com/NASA-PDS/registry-api/issues/352
+.. _registry-api#411: https://github.com/NASA-PDS/registry-api/issues/411
 .. _registry-common#40: https://github.com/NASA-PDS/registry-common/issues/40
 .. _registry-harvest-legacy#8: https://github.com/NASA-PDS/registry-harvest-legacy/issues/8
 .. _registry-mgr-legacy#42: https://github.com/NASA-PDS/registry-mgr-legacy/issues/42
 .. _registry-mgr-legacy#49: https://github.com/NASA-PDS/registry-mgr-legacy/issues/49
 .. _registry-mgr-legacy#17: https://github.com/NASA-PDS/registry-mgr-legacy/issues/17
-.. _registry-pds3-catalog#6: https://github.com/NASA-PDS/registry-pds3-catalog/issues/6
 .. _registry-pds3-catalog#4: https://github.com/NASA-PDS/registry-pds3-catalog/issues/4
+.. _registry-pds3-catalog#6: https://github.com/NASA-PDS/registry-pds3-catalog/issues/6
 .. _registry-sweepers#86: https://github.com/NASA-PDS/registry-sweepers/issues/86
-.. _registry-sweepers#109: https://github.com/NASA-PDS/registry-sweepers/issues/109
 .. _registry-sweepers#111: https://github.com/NASA-PDS/registry-sweepers/issues/111
+.. _registry-sweepers#109: https://github.com/NASA-PDS/registry-sweepers/issues/109
 .. _registry-sweepers#92: https://github.com/NASA-PDS/registry-sweepers/issues/92
 .. _roundup-action#136: https://github.com/NASA-PDS/roundup-action/issues/136
 .. _roundup-action#124: https://github.com/NASA-PDS/roundup-action/issues/124
@@ -1531,35 +1539,36 @@ as follows:
 .. _software-issues-repo#67: https://github.com/NASA-PDS/software-issues-repo/issues/67
 .. _software-issues-repo#80: https://github.com/NASA-PDS/software-issues-repo/issues/80
 .. _software-issues-repo#93: https://github.com/NASA-PDS/software-issues-repo/issues/93
-.. _software-issues-repo#49: https://github.com/NASA-PDS/software-issues-repo/issues/49
 .. _software-issues-repo#54: https://github.com/NASA-PDS/software-issues-repo/issues/54
-.. _transform#46: https://github.com/NASA-PDS/transform/issues/46
-.. _transform#45: https://github.com/NASA-PDS/transform/issues/45
+.. _software-issues-repo#49: https://github.com/NASA-PDS/software-issues-repo/issues/49
 .. _transform#30: https://github.com/NASA-PDS/transform/issues/30
+.. _transform#45: https://github.com/NASA-PDS/transform/issues/45
 .. _transform#67: https://github.com/NASA-PDS/transform/issues/67
+.. _transform#46: https://github.com/NASA-PDS/transform/issues/46
 .. _validate#695: https://github.com/NASA-PDS/validate/issues/695
 .. _validate#833: https://github.com/NASA-PDS/validate/issues/833
-.. _validate#809: https://github.com/NASA-PDS/validate/issues/809
-.. _validate#739: https://github.com/NASA-PDS/validate/issues/739
-.. _validate#681: https://github.com/NASA-PDS/validate/issues/681
-.. _validate#475: https://github.com/NASA-PDS/validate/issues/475
-.. _validate#747: https://github.com/NASA-PDS/validate/issues/747
 .. _validate#432: https://github.com/NASA-PDS/validate/issues/432
-.. _validate#748: https://github.com/NASA-PDS/validate/issues/748
 .. _validate#761: https://github.com/NASA-PDS/validate/issues/761
-.. _validate#427: https://github.com/NASA-PDS/validate/issues/427
-.. _validate#750: https://github.com/NASA-PDS/validate/issues/750
-.. _validate#723: https://github.com/NASA-PDS/validate/issues/723
 .. _validate#763: https://github.com/NASA-PDS/validate/issues/763
-.. _validate#698: https://github.com/NASA-PDS/validate/issues/698
+.. _validate#809: https://github.com/NASA-PDS/validate/issues/809
 .. _validate#754: https://github.com/NASA-PDS/validate/issues/754
-.. _validate#785: https://github.com/NASA-PDS/validate/issues/785
-.. _validate#760: https://github.com/NASA-PDS/validate/issues/760
+.. _validate#750: https://github.com/NASA-PDS/validate/issues/750
+.. _validate#739: https://github.com/NASA-PDS/validate/issues/739
 .. _validate#781: https://github.com/NASA-PDS/validate/issues/781
-.. _validate#755: https://github.com/NASA-PDS/validate/issues/755
-.. _validate#773: https://github.com/NASA-PDS/validate/issues/773
-.. _validate#308: https://github.com/NASA-PDS/validate/issues/308
+.. _validate#760: https://github.com/NASA-PDS/validate/issues/760
+.. _validate#475: https://github.com/NASA-PDS/validate/issues/475
+.. _validate#681: https://github.com/NASA-PDS/validate/issues/681
+.. _validate#698: https://github.com/NASA-PDS/validate/issues/698
+.. _validate#747: https://github.com/NASA-PDS/validate/issues/747
+.. _validate#427: https://github.com/NASA-PDS/validate/issues/427
+.. _validate#723: https://github.com/NASA-PDS/validate/issues/723
+.. _validate#785: https://github.com/NASA-PDS/validate/issues/785
+.. _validate#748: https://github.com/NASA-PDS/validate/issues/748
+.. _validate#854: https://github.com/NASA-PDS/validate/issues/854
 .. _validate#741: https://github.com/NASA-PDS/validate/issues/741
+.. _validate#755: https://github.com/NASA-PDS/validate/issues/755
+.. _validate#308: https://github.com/NASA-PDS/validate/issues/308
+.. _validate#773: https://github.com/NASA-PDS/validate/issues/773
 .. _web-analytics#21: https://github.com/NASA-PDS/web-analytics/issues/21
 .. _pds-swg_26: https://github.com/NASA-PDS/pds-swg/issues/26
 .. _Software Release Summary (B14.1): https://nasa-pds.github.io/releases/14.1/index.html
