@@ -82,9 +82,9 @@ Bugs
 +------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================+===================+===========================+
-| `data-upload-manager#116`_ DUM Lambda Service can return pre-signed S3 URL's to non-existing buckets | |:yellow_circle:| | p.must-have               |
-+------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#110`_ DUM Client does not properly sanitize double-quotes from INI config       | |:yellow_circle:| | s.high                    |
++------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `data-upload-manager#116`_ DUM Lambda Service can return pre-signed S3 URL's to non-existing buckets | |:yellow_circle:| | p.must-have               |
 +------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -93,9 +93,9 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                          | I&T Status        | Priority / Bug Severity   |
 +================================================================================================================+===================+===========================+
-| `data-upload-manager#92`_ As a user, I want to skip upload of files already in S3 (nucleus staging bucket)     | |:yellow_circle:| | p.must-have               |
-+----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#98`_ As a user, I want an end summary report in logs to show statistics of files uploaded | |:yellow_circle:| | p.should-have             |
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `data-upload-manager#92`_ As a user, I want to skip upload of files already in S3 (nucleus staging bucket)     | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -448,21 +448,21 @@ Bugs
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
-| `validate#915`_ context_ref_mismatch does not run except when -R pds4.label                              | |:yellow_circle:| | s.low                     |
+| `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#822`_ Check for unlabeled files no longer works                                                | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#923`_ Configuration file parser does not reject incorrect options                              | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
+| `validate#826`_ validate is slow or runs out of memory when validating a bundle                          | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#826`_ validate is slow or runs out of memory when validating a bundle                          | |:yellow_circle:| | s.medium                  |
+| `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#923`_ Configuration file parser does not reject incorrect options                              | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#915`_ context_ref_mismatch does not run except when -R pds4.label                              | |:yellow_circle:| | s.low                     |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -588,10 +588,10 @@ as follows:
 .. _data-upload-manager#51: https://github.com/NASA-PDS/data-upload-manager/issues/51
 .. _data-upload-manager#50: https://github.com/NASA-PDS/data-upload-manager/issues/50
 .. _data-upload-manager#87: https://github.com/NASA-PDS/data-upload-manager/issues/87
-.. _data-upload-manager#116: https://github.com/NASA-PDS/data-upload-manager/issues/116
 .. _data-upload-manager#110: https://github.com/NASA-PDS/data-upload-manager/issues/110
-.. _data-upload-manager#92: https://github.com/NASA-PDS/data-upload-manager/issues/92
+.. _data-upload-manager#116: https://github.com/NASA-PDS/data-upload-manager/issues/116
 .. _data-upload-manager#98: https://github.com/NASA-PDS/data-upload-manager/issues/98
+.. _data-upload-manager#92: https://github.com/NASA-PDS/data-upload-manager/issues/92
 .. _deep-archive#162: https://github.com/NASA-PDS/deep-archive/issues/162
 .. _doi-service#430: https://github.com/NASA-PDS/doi-service/issues/430
 .. _nucleus#101: https://github.com/NASA-PDS/nucleus/issues/101
@@ -615,14 +615,14 @@ as follows:
 .. _validate#860: https://github.com/NASA-PDS/validate/issues/860
 .. _validate#857: https://github.com/NASA-PDS/validate/issues/857
 .. _validate#861: https://github.com/NASA-PDS/validate/issues/861
-.. _validate#915: https://github.com/NASA-PDS/validate/issues/915
-.. _validate#822: https://github.com/NASA-PDS/validate/issues/822
-.. _validate#923: https://github.com/NASA-PDS/validate/issues/923
 .. _validate#933: https://github.com/NASA-PDS/validate/issues/933
-.. _validate#919: https://github.com/NASA-PDS/validate/issues/919
-.. _validate#823: https://github.com/NASA-PDS/validate/issues/823
-.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
+.. _validate#822: https://github.com/NASA-PDS/validate/issues/822
 .. _validate#826: https://github.com/NASA-PDS/validate/issues/826
+.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
+.. _validate#823: https://github.com/NASA-PDS/validate/issues/823
+.. _validate#923: https://github.com/NASA-PDS/validate/issues/923
+.. _validate#915: https://github.com/NASA-PDS/validate/issues/915
+.. _validate#919: https://github.com/NASA-PDS/validate/issues/919
 .. _validate#824: https://github.com/NASA-PDS/validate/issues/824
 .. _web-analytics#30: https://github.com/NASA-PDS/web-analytics/issues/30
 .. _web-analytics#32: https://github.com/NASA-PDS/web-analytics/issues/32
