@@ -82,9 +82,9 @@ Bugs
 +------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================+===================+===========================+
-| `data-upload-manager#110`_ DUM Client does not properly sanitize double-quotes from INI config       | |:yellow_circle:| | s.high                    |
-+------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#116`_ DUM Lambda Service can return pre-signed S3 URL's to non-existing buckets | |:yellow_circle:| | p.must-have               |
++------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `data-upload-manager#110`_ DUM Client does not properly sanitize double-quotes from INI config       | |:yellow_circle:| | s.high                    |
 +------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -164,6 +164,47 @@ Bugs
 
 --------
 
+Harvest
+-------
+*Standalone Harvest client application providing the functionality for capturing and indexing product metadata into the PDS Registry system (https://github.com/nasa-pds/registry).*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/registry>`_
+     - `Github Repo <https://github.com/NASA-PDS/harvest>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/harvest/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/harvest/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/harvest/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/harvest/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                              | I&T Status        | Priority / Bug Severity   |
++====================================================================================+===================+===========================+
+| `harvest#127`_ ref_lid_* fields are not added to the Registry schema prior to load | |:yellow_circle:| | s.medium                  |
++------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+Enhancements
+++++++++++++
+
++---------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                         | I&T Status        | Priority / Bug Severity   |
++===============================================================================================================+===================+===========================+
+| `harvest#158`_ As a data custodian, I want to load URLs / file paths without unnecessary / additional slashes | |:yellow_circle:| | p.should-have             |
++---------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+--------
+
 Nucleus
 -------
 *Nucleus is a software platform used to create workflows for the Planetary Data (PDS).*
@@ -224,6 +265,8 @@ Bugs
 | Issue                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================+===================+===========================+
 | `pds4-information-model#770`_ ERROR 11179 data dictionary class is missing for overwrite | |:yellow_circle:| | s.high                    |
++------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#776`_ Unable to build LDDs for 1E00                              | |:yellow_circle:| | s.medium                  |
 +------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -289,6 +332,38 @@ Bugs
 +=========================================================================================================================================+===================+===========================+
 | `registry-sweepers#112`_ `superseded_by` fields with `null` values causing multiple versions of same products to appear in API searches | |:yellow_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+--------
+
+Roundup-action
+--------------
+*Do a "roundup", a/k/a PDS-style continuous integration and delivery*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/roundup-action#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/roundup-action>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/roundup-action/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/roundup-action/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/roundup-action/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/roundup-action/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++---------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                           | I&T Status        | Priority / Bug Severity   |
++=================================================================================+===================+===========================+
+| `roundup-action#138`_ Maven deploy no longer works due to Maven central upgrade | |:yellow_circle:| | s.high                    |
++---------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -448,21 +523,23 @@ Bugs
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
-| `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
+| `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#822`_ Check for unlabeled files no longer works                                                | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#826`_ validate is slow or runs out of memory when validating a bundle                          | |:yellow_circle:| | s.medium                  |
+| `validate#915`_ context_ref_mismatch does not run except when -R pds4.label                              | |:yellow_circle:| | s.low                     |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#936`_ Validate does not show correct filename for PDF/A failures when validating a directory   | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
+| `validate#826`_ validate is slow or runs out of memory when validating a bundle                          | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#923`_ Configuration file parser does not reject incorrect options                              | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#915`_ context_ref_mismatch does not run except when -R pds4.label                              | |:yellow_circle:| | s.low                     |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -588,16 +665,20 @@ as follows:
 .. _data-upload-manager#51: https://github.com/NASA-PDS/data-upload-manager/issues/51
 .. _data-upload-manager#50: https://github.com/NASA-PDS/data-upload-manager/issues/50
 .. _data-upload-manager#87: https://github.com/NASA-PDS/data-upload-manager/issues/87
-.. _data-upload-manager#110: https://github.com/NASA-PDS/data-upload-manager/issues/110
 .. _data-upload-manager#116: https://github.com/NASA-PDS/data-upload-manager/issues/116
+.. _data-upload-manager#110: https://github.com/NASA-PDS/data-upload-manager/issues/110
 .. _data-upload-manager#98: https://github.com/NASA-PDS/data-upload-manager/issues/98
 .. _data-upload-manager#92: https://github.com/NASA-PDS/data-upload-manager/issues/92
 .. _deep-archive#162: https://github.com/NASA-PDS/deep-archive/issues/162
 .. _doi-service#430: https://github.com/NASA-PDS/doi-service/issues/430
+.. _harvest#127: https://github.com/NASA-PDS/harvest/issues/127
+.. _harvest#158: https://github.com/NASA-PDS/harvest/issues/158
 .. _nucleus#101: https://github.com/NASA-PDS/nucleus/issues/101
 .. _pds4-information-model#770: https://github.com/NASA-PDS/pds4-information-model/issues/770
+.. _pds4-information-model#776: https://github.com/NASA-PDS/pds4-information-model/issues/776
 .. _registry-pds3-catalog#16: https://github.com/NASA-PDS/registry-pds3-catalog/issues/16
 .. _registry-sweepers#112: https://github.com/NASA-PDS/registry-sweepers/issues/112
+.. _roundup-action#138: https://github.com/NASA-PDS/roundup-action/issues/138
 .. _s3-browser-cloudfront#22: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/22
 .. _search-ui-legacy#30: https://github.com/NASA-PDS/search-ui-legacy/issues/30
 .. _software-issues-repo#86: https://github.com/NASA-PDS/software-issues-repo/issues/86
@@ -615,14 +696,15 @@ as follows:
 .. _validate#860: https://github.com/NASA-PDS/validate/issues/860
 .. _validate#857: https://github.com/NASA-PDS/validate/issues/857
 .. _validate#861: https://github.com/NASA-PDS/validate/issues/861
-.. _validate#933: https://github.com/NASA-PDS/validate/issues/933
-.. _validate#822: https://github.com/NASA-PDS/validate/issues/822
-.. _validate#826: https://github.com/NASA-PDS/validate/issues/826
-.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
 .. _validate#823: https://github.com/NASA-PDS/validate/issues/823
-.. _validate#923: https://github.com/NASA-PDS/validate/issues/923
+.. _validate#822: https://github.com/NASA-PDS/validate/issues/822
 .. _validate#915: https://github.com/NASA-PDS/validate/issues/915
+.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
+.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
+.. _validate#826: https://github.com/NASA-PDS/validate/issues/826
+.. _validate#923: https://github.com/NASA-PDS/validate/issues/923
 .. _validate#919: https://github.com/NASA-PDS/validate/issues/919
+.. _validate#933: https://github.com/NASA-PDS/validate/issues/933
 .. _validate#824: https://github.com/NASA-PDS/validate/issues/824
 .. _web-analytics#30: https://github.com/NASA-PDS/web-analytics/issues/30
 .. _web-analytics#32: https://github.com/NASA-PDS/web-analytics/issues/32
