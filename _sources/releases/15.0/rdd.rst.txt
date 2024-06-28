@@ -18,7 +18,11 @@ PDS4 Standards and Information Model Changes
 This section details the changes to the PDS4 Standards and Information Model approved by the PDS4 Change Control Board
 and implemented by the PDS within the latest build period.
 
-No PDS4 Standards Updates
++-------------------------------+------------------------------------------------------+
+| Ref                           | Title                                                |
++===============================+======================================================+
+| `pds4-information-model#784`_ | Never finished CCB-325 lien for browse and ancillary |
++-------------------------------+------------------------------------------------------+
 
 Software Changes
 ================
@@ -93,9 +97,9 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                          | I&T Status        | Priority / Bug Severity   |
 +================================================================================================================+===================+===========================+
-| `data-upload-manager#98`_ As a user, I want an end summary report in logs to show statistics of files uploaded | |:yellow_circle:| | p.should-have             |
-+----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#92`_ As a user, I want to skip upload of files already in S3 (nucleus staging bucket)     | |:yellow_circle:| | p.must-have               |
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `data-upload-manager#98`_ As a user, I want an end summary report in logs to show statistics of files uploaded | |:yellow_circle:| | p.should-have             |
 +----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -268,6 +272,38 @@ Bugs
 +------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#776`_ Unable to build LDDs for 1E00                              | |:yellow_circle:| | s.medium                  |
 +------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+--------
+
+Planetary-data-cloud
+--------------------
+*PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/planetary-data-cloud#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/planetary-data-cloud>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/planetary-data-cloud/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/planetary-data-cloud/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/planetary-data-cloud/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/planetary-data-cloud/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++-------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                           | I&T Status        | Priority / Bug Severity   |
++=================================================================================================+===================+===========================+
+| `planetary-data-cloud#108`_ [SECURITY] Ensure CloudFront distributions have logging enabled-PDS | |:yellow_circle:| | s.high                    |
++-------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -525,21 +561,21 @@ Bugs
 +==========================================================================================================+===================+===========================+
 | `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#822`_ Check for unlabeled files no longer works                                                | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#915`_ context_ref_mismatch does not run except when -R pds4.label                              | |:yellow_circle:| | s.low                     |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#936`_ Validate does not show correct filename for PDF/A failures when validating a directory   | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#826`_ validate is slow or runs out of memory when validating a bundle                          | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#923`_ Configuration file parser does not reject incorrect options                              | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
+| `validate#936`_ Validate does not show correct filename for PDF/A failures when validating a directory   | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#822`_ Check for unlabeled files no longer works                                                | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#915`_ context_ref_mismatch does not run except when -R pds4.label                              | |:yellow_circle:| | s.low                     |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -662,13 +698,14 @@ as follows:
 - `PDS DOI Service Requirements and Design Document (SRD/SDD)`_
 
 .. _plan B15.0: https://nasa-pds.github.io/releases/15.0/plan.html
+.. _pds4-information-model#784: https://github.com/NASA-PDS/pds4-information-model/issues/784
 .. _data-upload-manager#51: https://github.com/NASA-PDS/data-upload-manager/issues/51
 .. _data-upload-manager#50: https://github.com/NASA-PDS/data-upload-manager/issues/50
 .. _data-upload-manager#87: https://github.com/NASA-PDS/data-upload-manager/issues/87
 .. _data-upload-manager#116: https://github.com/NASA-PDS/data-upload-manager/issues/116
 .. _data-upload-manager#110: https://github.com/NASA-PDS/data-upload-manager/issues/110
-.. _data-upload-manager#98: https://github.com/NASA-PDS/data-upload-manager/issues/98
 .. _data-upload-manager#92: https://github.com/NASA-PDS/data-upload-manager/issues/92
+.. _data-upload-manager#98: https://github.com/NASA-PDS/data-upload-manager/issues/98
 .. _deep-archive#162: https://github.com/NASA-PDS/deep-archive/issues/162
 .. _doi-service#430: https://github.com/NASA-PDS/doi-service/issues/430
 .. _harvest#127: https://github.com/NASA-PDS/harvest/issues/127
@@ -676,6 +713,7 @@ as follows:
 .. _nucleus#101: https://github.com/NASA-PDS/nucleus/issues/101
 .. _pds4-information-model#770: https://github.com/NASA-PDS/pds4-information-model/issues/770
 .. _pds4-information-model#776: https://github.com/NASA-PDS/pds4-information-model/issues/776
+.. _planetary-data-cloud#108: https://github.com/NASA-PDS/planetary-data-cloud/issues/108
 .. _registry-pds3-catalog#16: https://github.com/NASA-PDS/registry-pds3-catalog/issues/16
 .. _registry-sweepers#112: https://github.com/NASA-PDS/registry-sweepers/issues/112
 .. _roundup-action#138: https://github.com/NASA-PDS/roundup-action/issues/138
@@ -697,14 +735,14 @@ as follows:
 .. _validate#857: https://github.com/NASA-PDS/validate/issues/857
 .. _validate#861: https://github.com/NASA-PDS/validate/issues/861
 .. _validate#823: https://github.com/NASA-PDS/validate/issues/823
-.. _validate#822: https://github.com/NASA-PDS/validate/issues/822
-.. _validate#915: https://github.com/NASA-PDS/validate/issues/915
-.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
-.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
 .. _validate#826: https://github.com/NASA-PDS/validate/issues/826
 .. _validate#923: https://github.com/NASA-PDS/validate/issues/923
-.. _validate#919: https://github.com/NASA-PDS/validate/issues/919
+.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
+.. _validate#822: https://github.com/NASA-PDS/validate/issues/822
+.. _validate#915: https://github.com/NASA-PDS/validate/issues/915
 .. _validate#933: https://github.com/NASA-PDS/validate/issues/933
+.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
+.. _validate#919: https://github.com/NASA-PDS/validate/issues/919
 .. _validate#824: https://github.com/NASA-PDS/validate/issues/824
 .. _web-analytics#30: https://github.com/NASA-PDS/web-analytics/issues/30
 .. _web-analytics#32: https://github.com/NASA-PDS/web-analytics/issues/32
