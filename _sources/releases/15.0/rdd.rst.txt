@@ -18,11 +18,11 @@ PDS4 Standards and Information Model Changes
 This section details the changes to the PDS4 Standards and Information Model approved by the PDS4 Change Control Board
 and implemented by the PDS within the latest build period.
 
-+-------------------------------+------------------------------------------------------+
-| Ref                           | Title                                                |
-+===============================+======================================================+
-| `pds4-information-model#784`_ | Never finished CCB-325 lien for browse and ancillary |
-+-------------------------------+------------------------------------------------------+
++-------------------------------+------------------------------------------------------------------------+
+| Ref                           | Title                                                                  |
++===============================+========================================================================+
+| `pds4-information-model#784`_ | Complete CCB-325 lien implementation for Browse and Ancillary products |
++-------------------------------+------------------------------------------------------------------------+
 
 Software Changes
 ================
@@ -86,9 +86,9 @@ Bugs
 +------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================+===================+===========================+
-| `data-upload-manager#116`_ DUM Lambda Service can return pre-signed S3 URL's to non-existing buckets | |:yellow_circle:| | p.must-have               |
-+------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#110`_ DUM Client does not properly sanitize double-quotes from INI config       | |:yellow_circle:| | s.high                    |
++------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `data-upload-manager#116`_ DUM Lambda Service can return pre-signed S3 URL's to non-existing buckets | |:yellow_circle:| | p.must-have               |
 +------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -185,19 +185,18 @@ Harvest
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
+`harvest#131`_ Enhance support for searching lid/lidvid references
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++------------------------------------------------------------------------------------+-------------------+---------+---------------------------+
+| Issue                                                                              | I&T Status        | Level   | Priority / Bug Severity   |
++====================================================================================+===================+=========+===========================+
+| `harvest#127`_ ref_lid_* fields are not added to the Registry schema prior to load | |:yellow_circle:| | bug     | s.medium                  |
++------------------------------------------------------------------------------------+-------------------+---------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
-Bugs
-++++
-
-+------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                              | I&T Status        | Priority / Bug Severity   |
-+====================================================================================+===================+===========================+
-| `harvest#127`_ ref_lid_* fields are not added to the Registry schema prior to load | |:yellow_circle:| | s.medium                  |
-+------------------------------------------------------------------------------------+-------------------+---------------------------+
-
 Enhancements
 ++++++++++++
 
@@ -559,21 +558,21 @@ Bugs
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
-| `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
+| `validate#923`_ Configuration file parser does not reject incorrect options                              | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#826`_ validate is slow or runs out of memory when validating a bundle                          | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#923`_ Configuration file parser does not reject incorrect options                              | |:yellow_circle:| | s.medium                  |
+| `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#936`_ Validate does not show correct filename for PDF/A failures when validating a directory   | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#915`_ `context_ref_mismatch` check only executes when -R pds4.label                            | |:yellow_circle:| | s.low                     |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#822`_ Check for unlabeled files no longer works                                                | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#915`_ context_ref_mismatch does not run except when -R pds4.label                              | |:yellow_circle:| | s.low                     |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
@@ -633,9 +632,9 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                   | I&T Status        | Priority / Bug Severity   |
 +=========================================================================================================================+===================+===========================+
-| `web-analytics#24`_ As a user, I want a mission-specific dashboard showing instrument and product type download metrics | |:yellow_circle:| | p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `web-analytics#39`_ update repo with template files                                                                     | |:yellow_circle:| | unknown                   |
++-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `web-analytics#24`_ As a user, I want a mission-specific dashboard showing instrument and product type download metrics | |:yellow_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Liens
@@ -702,12 +701,13 @@ as follows:
 .. _data-upload-manager#51: https://github.com/NASA-PDS/data-upload-manager/issues/51
 .. _data-upload-manager#50: https://github.com/NASA-PDS/data-upload-manager/issues/50
 .. _data-upload-manager#87: https://github.com/NASA-PDS/data-upload-manager/issues/87
-.. _data-upload-manager#116: https://github.com/NASA-PDS/data-upload-manager/issues/116
 .. _data-upload-manager#110: https://github.com/NASA-PDS/data-upload-manager/issues/110
+.. _data-upload-manager#116: https://github.com/NASA-PDS/data-upload-manager/issues/116
 .. _data-upload-manager#92: https://github.com/NASA-PDS/data-upload-manager/issues/92
 .. _data-upload-manager#98: https://github.com/NASA-PDS/data-upload-manager/issues/98
 .. _deep-archive#162: https://github.com/NASA-PDS/deep-archive/issues/162
 .. _doi-service#430: https://github.com/NASA-PDS/doi-service/issues/430
+.. _harvest#131: https://github.com/NASA-PDS/harvest/issues/131
 .. _harvest#127: https://github.com/NASA-PDS/harvest/issues/127
 .. _harvest#158: https://github.com/NASA-PDS/harvest/issues/158
 .. _nucleus#101: https://github.com/NASA-PDS/nucleus/issues/101
@@ -734,21 +734,21 @@ as follows:
 .. _validate#860: https://github.com/NASA-PDS/validate/issues/860
 .. _validate#857: https://github.com/NASA-PDS/validate/issues/857
 .. _validate#861: https://github.com/NASA-PDS/validate/issues/861
-.. _validate#823: https://github.com/NASA-PDS/validate/issues/823
-.. _validate#826: https://github.com/NASA-PDS/validate/issues/826
 .. _validate#923: https://github.com/NASA-PDS/validate/issues/923
-.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
-.. _validate#822: https://github.com/NASA-PDS/validate/issues/822
-.. _validate#915: https://github.com/NASA-PDS/validate/issues/915
+.. _validate#826: https://github.com/NASA-PDS/validate/issues/826
 .. _validate#933: https://github.com/NASA-PDS/validate/issues/933
+.. _validate#823: https://github.com/NASA-PDS/validate/issues/823
 .. _validate#902: https://github.com/NASA-PDS/validate/issues/902
+.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
+.. _validate#915: https://github.com/NASA-PDS/validate/issues/915
+.. _validate#822: https://github.com/NASA-PDS/validate/issues/822
 .. _validate#919: https://github.com/NASA-PDS/validate/issues/919
 .. _validate#824: https://github.com/NASA-PDS/validate/issues/824
 .. _web-analytics#30: https://github.com/NASA-PDS/web-analytics/issues/30
 .. _web-analytics#32: https://github.com/NASA-PDS/web-analytics/issues/32
 .. _web-analytics#12: https://github.com/NASA-PDS/web-analytics/issues/12
-.. _web-analytics#24: https://github.com/NASA-PDS/web-analytics/issues/24
 .. _web-analytics#39: https://github.com/NASA-PDS/web-analytics/pull/39
+.. _web-analytics#24: https://github.com/NASA-PDS/web-analytics/issues/24
 .. _Software Release Summary (B15.0): https://nasa-pds.github.io/releases/15.0/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
