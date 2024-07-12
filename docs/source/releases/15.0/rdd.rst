@@ -86,9 +86,9 @@ Bugs
 +------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================+===================+===========================+
-| `data-upload-manager#110`_ DUM Client does not properly sanitize double-quotes from INI config       | |:yellow_circle:| | s.high                    |
-+------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#116`_ DUM Lambda Service can return pre-signed S3 URL's to non-existing buckets | |:yellow_circle:| | p.must-have               |
++------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `data-upload-manager#110`_ DUM Client does not properly sanitize double-quotes from INI config       | |:yellow_circle:| | s.high                    |
 +------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -303,6 +303,70 @@ Bugs
 +=================================================================================================+===================+===========================+
 | `planetary-data-cloud#108`_ [SECURITY] Ensure CloudFront distributions have logging enabled-PDS | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+--------
+
+Registry
+--------
+*PDS Registry provides service and software application necessary for tracking, searching, auditing, locating, and maintaining artifacts within the system. These artifacts can range from data files and label files, schemas, dictionary definitions for objects and elements, services, etc.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/registry>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++---------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                           | I&T Status        | Priority / Bug Severity   |
++=================================================================================+===================+===========================+
+| `registry#292`_ Secret detection is broken on branch titan_treks_utility_script | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------+-------------------+---------------------------+
+
+--------
+
+Registry-common
+---------------
+*Library utilized by tools that manage and load data into the PDS Registry, including Harvest, Registry Manager, and Supplementer*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/registry>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-common>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-common/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry-common/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-common/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-common/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++-----------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                   | I&T Status        | Priority / Bug Severity   |
++=========================================================================================+===================+===========================+
+| `registry-common#50`_ Update registry-common library to support change to AWS interface | |:yellow_circle:| | s.critical                |
++-----------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -558,26 +622,26 @@ Bugs
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
+| `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#936`_ Validate does not show correct filename for PDF/A failures when validating a directory   | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#923`_ Configuration file parser does not reject incorrect options                              | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#826`_ validate is slow or runs out of memory when validating a bundle                          | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
+| `validate#822`_ Check for unlabeled files no longer works                                                | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#936`_ Validate does not show correct filename for PDF/A failures when validating a directory   | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#915`_ `context_ref_mismatch` check only executes when -R pds4.label                            | |:yellow_circle:| | s.low                     |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#822`_ Check for unlabeled files no longer works                                                | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
-Requirements
+Enhancements
 ++++++++++++
 
 +-------------------------------------------------------------+-------------------+---------------------------+
@@ -632,9 +696,9 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                   | I&T Status        | Priority / Bug Severity   |
 +=========================================================================================================================+===================+===========================+
-| `web-analytics#39`_ update repo with template files                                                                     | |:yellow_circle:| | unknown                   |
-+-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `web-analytics#24`_ As a user, I want a mission-specific dashboard showing instrument and product type download metrics | |:yellow_circle:| | p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `web-analytics#39`_ update repo with template files                                                                     | |:yellow_circle:| | unknown                   |
 +-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Liens
@@ -701,8 +765,8 @@ as follows:
 .. _data-upload-manager#51: https://github.com/NASA-PDS/data-upload-manager/issues/51
 .. _data-upload-manager#50: https://github.com/NASA-PDS/data-upload-manager/issues/50
 .. _data-upload-manager#87: https://github.com/NASA-PDS/data-upload-manager/issues/87
-.. _data-upload-manager#110: https://github.com/NASA-PDS/data-upload-manager/issues/110
 .. _data-upload-manager#116: https://github.com/NASA-PDS/data-upload-manager/issues/116
+.. _data-upload-manager#110: https://github.com/NASA-PDS/data-upload-manager/issues/110
 .. _data-upload-manager#92: https://github.com/NASA-PDS/data-upload-manager/issues/92
 .. _data-upload-manager#98: https://github.com/NASA-PDS/data-upload-manager/issues/98
 .. _deep-archive#162: https://github.com/NASA-PDS/deep-archive/issues/162
@@ -714,6 +778,8 @@ as follows:
 .. _pds4-information-model#770: https://github.com/NASA-PDS/pds4-information-model/issues/770
 .. _pds4-information-model#776: https://github.com/NASA-PDS/pds4-information-model/issues/776
 .. _planetary-data-cloud#108: https://github.com/NASA-PDS/planetary-data-cloud/issues/108
+.. _registry#292: https://github.com/NASA-PDS/registry/issues/292
+.. _registry-common#50: https://github.com/NASA-PDS/registry-common/issues/50
 .. _registry-pds3-catalog#16: https://github.com/NASA-PDS/registry-pds3-catalog/issues/16
 .. _registry-sweepers#112: https://github.com/NASA-PDS/registry-sweepers/issues/112
 .. _roundup-action#138: https://github.com/NASA-PDS/roundup-action/issues/138
@@ -734,21 +800,21 @@ as follows:
 .. _validate#860: https://github.com/NASA-PDS/validate/issues/860
 .. _validate#857: https://github.com/NASA-PDS/validate/issues/857
 .. _validate#861: https://github.com/NASA-PDS/validate/issues/861
+.. _validate#919: https://github.com/NASA-PDS/validate/issues/919
+.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
 .. _validate#923: https://github.com/NASA-PDS/validate/issues/923
+.. _validate#823: https://github.com/NASA-PDS/validate/issues/823
 .. _validate#826: https://github.com/NASA-PDS/validate/issues/826
 .. _validate#933: https://github.com/NASA-PDS/validate/issues/933
-.. _validate#823: https://github.com/NASA-PDS/validate/issues/823
-.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
-.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
-.. _validate#915: https://github.com/NASA-PDS/validate/issues/915
 .. _validate#822: https://github.com/NASA-PDS/validate/issues/822
-.. _validate#919: https://github.com/NASA-PDS/validate/issues/919
+.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
+.. _validate#915: https://github.com/NASA-PDS/validate/issues/915
 .. _validate#824: https://github.com/NASA-PDS/validate/issues/824
 .. _web-analytics#30: https://github.com/NASA-PDS/web-analytics/issues/30
 .. _web-analytics#32: https://github.com/NASA-PDS/web-analytics/issues/32
 .. _web-analytics#12: https://github.com/NASA-PDS/web-analytics/issues/12
-.. _web-analytics#39: https://github.com/NASA-PDS/web-analytics/pull/39
 .. _web-analytics#24: https://github.com/NASA-PDS/web-analytics/issues/24
+.. _web-analytics#39: https://github.com/NASA-PDS/web-analytics/pull/39
 .. _Software Release Summary (B15.0): https://nasa-pds.github.io/releases/15.0/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
