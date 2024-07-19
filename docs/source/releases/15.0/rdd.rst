@@ -97,9 +97,9 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                          | I&T Status        | Priority / Bug Severity   |
 +================================================================================================================+===================+===========================+
-| `data-upload-manager#92`_ As a user, I want to skip upload of files already in S3 (nucleus staging bucket)     | |:yellow_circle:| | p.must-have               |
-+----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#98`_ As a user, I want an end summary report in logs to show statistics of files uploaded | |:yellow_circle:| | p.should-have             |
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `data-upload-manager#92`_ As a user, I want to skip upload of files already in S3 (nucleus staging bucket)     | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -272,6 +272,15 @@ Bugs
 | `pds4-information-model#776`_ Unable to build LDDs for 1E00                              | |:yellow_circle:| | s.medium                  |
 +------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
+Enhancements
+++++++++++++
+
++-------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                               | I&T Status        | Priority / Bug Severity   |
++=====================================================================================+===================+===========================+
+| `pds4-information-model#794`_ [namespace-registry] add new namespace `vikinglander` | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------+-------------------+---------------------------+
+
 --------
 
 Planetary-data-cloud
@@ -335,6 +344,44 @@ Bugs
 +=================================================================================+===================+===========================+
 | `registry#292`_ Secret detection is broken on branch titan_treks_utility_script | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------+-------------------+---------------------------+
+
+--------
+
+Registry-api
+------------
+*Web API service for the PDS Registry, providing the implementation of the PDS Search API (https://github.com/nasa-pds/pds-api) for the PDS Registry.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds-api>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-api>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-api/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry-api/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-api/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-api/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Requirements
+++++++++++++
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                                                                     | I&T Status        | Priority / Bug Severity   |
++===========================================================================================================================================================================+===================+===========================+
+| `registry-api#469`_ As a user, I want to filter the products by any available PDS4 property using a combination of comparison, logical, and precedence grouping operators | |:yellow_circle:| | p.must-have               |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-api#434`_ As a user, I want to get a product description given a lidvid                                                                                         | |:yellow_circle:| | p.must-have               |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-api#435`_ As a user, I want to get the latest version of a product given a lid                                                                                  | |:yellow_circle:| | p.must-have               |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-api#436`_ As a user, I want to get all product versions associated to one lid                                                                                   | |:yellow_circle:| | p.must-have               |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -490,11 +537,13 @@ Other Updates
 Requirements
 ++++++++++++
 
-+----------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                                        | I&T Status        | Priority / Bug Severity   |
-+==============================================================================================+===================+===========================+
-| `s3-browser-cloudfront#22`_ As a data user, I want to view ODR S3 bucket with S3 browser app | |:yellow_circle:| | p.must-have               |
-+----------------------------------------------------------------------------------------------+-------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                   | I&T Status        | Priority / Bug Severity   |
++=========================================================================================================================+===================+===========================+
+| `s3-browser-cloudfront#22`_ As a data user, I want to view ODR S3 bucket with S3 browser app                            | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `s3-browser-cloudfront#68`_ As a manager, I want the S3-browser to be deployable and accessible from a '/some_path' URL | |:yellow_circle:| | p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -622,23 +671,23 @@ Bugs
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
-| `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#936`_ Validate does not show correct filename for PDF/A failures when validating a directory   | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#923`_ Configuration file parser does not reject incorrect options                              | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#826`_ validate is slow or runs out of memory when validating a bundle                          | |:yellow_circle:| | s.medium                  |
+| `validate#936`_ Validate does not show correct filename for PDF/A failures when validating a directory   | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#822`_ Check for unlabeled files no longer works                                                | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
+| `validate#826`_ validate is slow or runs out of memory when validating a bundle                          | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#915`_ `context_ref_mismatch` check only executes when -R pds4.label                            | |:yellow_circle:| | s.low                     |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -767,8 +816,8 @@ as follows:
 .. _data-upload-manager#87: https://github.com/NASA-PDS/data-upload-manager/issues/87
 .. _data-upload-manager#116: https://github.com/NASA-PDS/data-upload-manager/issues/116
 .. _data-upload-manager#110: https://github.com/NASA-PDS/data-upload-manager/issues/110
-.. _data-upload-manager#92: https://github.com/NASA-PDS/data-upload-manager/issues/92
 .. _data-upload-manager#98: https://github.com/NASA-PDS/data-upload-manager/issues/98
+.. _data-upload-manager#92: https://github.com/NASA-PDS/data-upload-manager/issues/92
 .. _deep-archive#162: https://github.com/NASA-PDS/deep-archive/issues/162
 .. _doi-service#430: https://github.com/NASA-PDS/doi-service/issues/430
 .. _harvest#131: https://github.com/NASA-PDS/harvest/issues/131
@@ -777,13 +826,19 @@ as follows:
 .. _nucleus#101: https://github.com/NASA-PDS/nucleus/issues/101
 .. _pds4-information-model#770: https://github.com/NASA-PDS/pds4-information-model/issues/770
 .. _pds4-information-model#776: https://github.com/NASA-PDS/pds4-information-model/issues/776
+.. _pds4-information-model#794: https://github.com/NASA-PDS/pds4-information-model/issues/794
 .. _planetary-data-cloud#108: https://github.com/NASA-PDS/planetary-data-cloud/issues/108
 .. _registry#292: https://github.com/NASA-PDS/registry/issues/292
+.. _registry-api#469: https://github.com/NASA-PDS/registry-api/issues/469
+.. _registry-api#434: https://github.com/NASA-PDS/registry-api/issues/434
+.. _registry-api#435: https://github.com/NASA-PDS/registry-api/issues/435
+.. _registry-api#436: https://github.com/NASA-PDS/registry-api/issues/436
 .. _registry-common#50: https://github.com/NASA-PDS/registry-common/issues/50
 .. _registry-pds3-catalog#16: https://github.com/NASA-PDS/registry-pds3-catalog/issues/16
 .. _registry-sweepers#112: https://github.com/NASA-PDS/registry-sweepers/issues/112
 .. _roundup-action#138: https://github.com/NASA-PDS/roundup-action/issues/138
 .. _s3-browser-cloudfront#22: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/22
+.. _s3-browser-cloudfront#68: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/68
 .. _search-ui-legacy#30: https://github.com/NASA-PDS/search-ui-legacy/issues/30
 .. _software-issues-repo#86: https://github.com/NASA-PDS/software-issues-repo/issues/86
 .. _software-issues-repo#98: https://github.com/NASA-PDS/software-issues-repo/issues/98
@@ -800,15 +855,15 @@ as follows:
 .. _validate#860: https://github.com/NASA-PDS/validate/issues/860
 .. _validate#857: https://github.com/NASA-PDS/validate/issues/857
 .. _validate#861: https://github.com/NASA-PDS/validate/issues/861
-.. _validate#919: https://github.com/NASA-PDS/validate/issues/919
-.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
 .. _validate#923: https://github.com/NASA-PDS/validate/issues/923
 .. _validate#823: https://github.com/NASA-PDS/validate/issues/823
-.. _validate#826: https://github.com/NASA-PDS/validate/issues/826
+.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
 .. _validate#933: https://github.com/NASA-PDS/validate/issues/933
 .. _validate#822: https://github.com/NASA-PDS/validate/issues/822
-.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
+.. _validate#826: https://github.com/NASA-PDS/validate/issues/826
+.. _validate#919: https://github.com/NASA-PDS/validate/issues/919
 .. _validate#915: https://github.com/NASA-PDS/validate/issues/915
+.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
 .. _validate#824: https://github.com/NASA-PDS/validate/issues/824
 .. _web-analytics#30: https://github.com/NASA-PDS/web-analytics/issues/30
 .. _web-analytics#32: https://github.com/NASA-PDS/web-analytics/issues/32
