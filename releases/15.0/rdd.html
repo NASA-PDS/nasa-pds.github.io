@@ -206,13 +206,21 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/116">data-upload-manager#116</a> DUM Lambda Service can return pre-signed S3 URL’s to non-existing buckets</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/110">data-upload-manager#110</a> DUM Client does not properly sanitize double-quotes from INI config</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/116">data-upload-manager#116</a> DUM Lambda Service can return pre-signed S3 URL’s to non-existing buckets</p></td>
 <td><p>🟡</p></td>
 <td><p>p.must-have</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/110">data-upload-manager#110</a> DUM Client does not properly sanitize double-quotes from INI config</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/136">data-upload-manager#136</a> Backoff/Retry logic not firing for certain error codes</p></td>
 <td><p>🟡</p></td>
-<td><p>s.high</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/135">data-upload-manager#135</a> DUM Client script does not respect configured logging level after a transfer failure/retry</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
 </tr>
 </tbody>
 </table>
@@ -227,13 +235,13 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/98">data-upload-manager#98</a> As a user, I want an end summary report in logs to show statistics of files uploaded</p></td>
-<td><p>🟡</p></td>
-<td><p>p.should-have</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/92">data-upload-manager#92</a> As a user, I want to skip upload of files already in S3 (nucleus staging bucket)</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/92">data-upload-manager#92</a> As a user, I want to skip upload of files already in S3 (nucleus staging bucket)</p></td>
 <td><p>🟡</p></td>
 <td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/98">data-upload-manager#98</a> As a user, I want an end summary report in logs to show statistics of files uploaded</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
 </tr>
 </tbody>
 </table>
@@ -403,6 +411,54 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </section>
 </section>
 <hr class="docutils" />
+<section id="monitoring">
+<h3>Monitoring<a class="headerlink" href="#monitoring" title="Link to this heading"></a></h3>
+<p><em>Monitoring configuration for PDS EN system, currently based on AWS CloudWatch</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/monitoring#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/monitoring">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/monitoring/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/monitoring/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/monitoring/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/monitoring/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id34">
+<h4>Planned Updates<a class="headerlink" href="#id34" title="Link to this heading"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id35">
+<h4>Other Updates<a class="headerlink" href="#id35" title="Link to this heading"></a></h4>
+<section id="id36">
+<h5>Requirements<a class="headerlink" href="#id36" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/monitoring/issues/14">monitoring#14</a> As a user, I want a daily budget reports sent to my email inbox</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
 <section id="nucleus">
 <h3>Nucleus<a class="headerlink" href="#nucleus" title="Link to this heading"></a></h3>
 <p><em>Nucleus is a software platform used to create workflows for the Planetary Data (PDS).</em></p>
@@ -425,14 +481,14 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </tr>
 </tbody>
 </table>
-<section id="id34">
-<h4>Planned Updates<a class="headerlink" href="#id34" title="Link to this heading"></a></h4>
+<section id="id43">
+<h4>Planned Updates<a class="headerlink" href="#id43" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id35">
-<h4>Other Updates<a class="headerlink" href="#id35" title="Link to this heading"></a></h4>
-<section id="id36">
-<h5>Bugs<a class="headerlink" href="#id36" title="Link to this heading"></a></h5>
+<section id="id44">
+<h4>Other Updates<a class="headerlink" href="#id44" title="Link to this heading"></a></h4>
+<section id="id45">
+<h5>Bugs<a class="headerlink" href="#id45" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -444,6 +500,482 @@ team based upon the technical or operational nature of the closed task.</p></li>
 <tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/nucleus/issues/101">nucleus#101</a> Nucleus MWAA DAG tasks are unable to read remote logs from Cloudwatch</p></td>
 <td><p>🟡</p></td>
 <td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="pds-api">
+<h3>Pds-api<a class="headerlink" href="#pds-api" title="Link to this heading"></a></h3>
+<p><em>PDS web APIs specifications and user’s manual</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="http://nasa-pds.github.io/pds-api">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id52">
+<h4>Planned Updates<a class="headerlink" href="#id52" title="Link to this heading"></a></h4>
+<section id="pds-api-24-registry-handle-pds-supplemental-metadata">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/24">pds-api#24</a> [registry] Handle PDS Supplemental Metadata<a class="headerlink" href="#pds-api-24-registry-handle-pds-supplemental-metadata" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-76-pds-api-improve-api-performance">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/76">pds-api#76</a> [pds-api] Improve API Performance<a class="headerlink" href="#pds-api-76-pds-api-improve-api-performance" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-75-pds-api-b12-0-api-response-improvements">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/75">pds-api#75</a> [pds-api] B12.0 API Response Improvements<a class="headerlink" href="#pds-api-75-pds-api-b12-0-api-response-improvements" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-77-pds-api-pds4-product-relationships">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/77">pds-api#77</a> [pds-api] PDS4 Product Relationships<a class="headerlink" href="#pds-api-77-pds-api-pds4-product-relationships" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-79-pds-api-pds-core-registry">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/79">pds-api#79</a> [pds-api] PDS Core Registry<a class="headerlink" href="#pds-api-79-pds-api-pds-core-registry" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-81-pds-api-b12-0-improve-api-query-handling">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/81">pds-api#81</a> [pds-api] B12.0 Improve API query handling<a class="headerlink" href="#pds-api-81-pds-api-b12-0-improve-api-query-handling" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-84-pds-api-initial-google-like-search">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/84">pds-api#84</a> [pds-api] Initial Google-like Search<a class="headerlink" href="#pds-api-84-pds-api-initial-google-like-search" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-111-b12-1-response-format-improvements">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/111">pds-api#111</a> B12.1 Response Format Improvements<a class="headerlink" href="#pds-api-111-b12-1-response-format-improvements" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-114-improve-pds-api-development-workflow-and-versioning">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/114">pds-api#114</a> Improve PDS API Development Workflow and Versioning<a class="headerlink" href="#pds-api-114-improve-pds-api-development-workflow-and-versioning" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-117-pds-api-b12-1-api-response-improvements">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/117">pds-api#117</a> [pds-api] B12.1 API Response Improvements<a class="headerlink" href="#pds-api-117-pds-api-b12-1-api-response-improvements" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-129-prep-for-api-v1-0-release">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/129">pds-api#129</a> Prep for API v1.0 Release<a class="headerlink" href="#pds-api-129-prep-for-api-v1-0-release" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-180-refactor-api-endpoints-for-maintainability">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/180">pds-api#180</a> Refactor API Endpoints for Maintainability<a class="headerlink" href="#pds-api-180-refactor-api-endpoints-for-maintainability" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-181-initial-pds-keyword-search-design">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/181">pds-api#181</a> Initial PDS Keyword Search Design<a class="headerlink" href="#pds-api-181-initial-pds-keyword-search-design" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-230-support-latest-product-search-from-api">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/230">pds-api#230</a> Support latest product search from API<a class="headerlink" href="#pds-api-230-support-latest-product-search-from-api" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-235-enable-swagger-interface-on-pds-nasa-gov">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/235">pds-api#235</a> Enable Swagger Interface on pds.nasa.gov<a class="headerlink" href="#pds-api-235-enable-swagger-interface-on-pds-nasa-gov" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-274-initialize-a-wrapper-api-client">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/274">pds-api#274</a> Initialize a Wrapper API Client<a class="headerlink" href="#pds-api-274-initialize-a-wrapper-api-client" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="pds-api-284-add-downtime-notification-to-top-of-api-documentation">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/284">pds-api#284</a> Add downtime notification to top of API documentation<a class="headerlink" href="#pds-api-284-add-downtime-notification-to-top-of-api-documentation" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="id53">
+<h4>Other Updates<a class="headerlink" href="#id53" title="Link to this heading"></a></h4>
+<section id="id54">
+<h5>Bugs<a class="headerlink" href="#id54" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/130">pds-api#130</a> pds api not able to search using URL parameters</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/251">pds-api#251</a> link to registry-api documentation from registry page is incorrect</p></td>
+<td><p>🔵</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/213">pds-api#213</a> Accept header of text/csv returns blank lines</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/216">pds-api#216</a> is “bites” a typo for “bytes” or “bits”?</p></td>
+<td><p>🔵</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/214">pds-api#214</a> vnd.nasa.pds.pds4+json format does return information</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/124">pds-api#124</a> Changes to API per last tagged release not in SwaggerHub</p></td>
+<td><p>🔵</p></td>
+<td><p>s.critical</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/209">pds-api#209</a> clarifications needed for fields reference in documentation</p></td>
+<td><p>🔵</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/220">pds-api#220</a> Past versions are being returned by API, by default</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/164">pds-api#164</a> version number invalid according to PEP validation in CI</p></td>
+<td><p>🔵</p></td>
+<td><p>s.critical</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/260">pds-api#260</a> PDS API documents are unclear wrt quoting in queries</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/121">pds-api#121</a> Deployed API + Registry does not contain product metadata for pds4+json response</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/73">pds-api#73</a> As a n00b paginator, there might be an off-by-1 error in the <cite>limit</cite> parameter</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/259">pds-api#259</a> API search returns 500 for anything besides simple queries</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/155">pds-api#155</a> <cite>products/{identifier}</cite> missing properties object in application/json response</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/257">pds-api#257</a> Search API documentation seems outdated?</p></td>
+<td><p>🔵</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/206">pds-api#206</a> fix broken link in API docs</p></td>
+<td><p>🔵</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/215">pds-api#215</a> vnd.nasa.pds.pds4+xml format does not return information</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/210">pds-api#210</a> wildcards do not work as expected for all fields</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/196">pds-api#196</a> Swagger API page does not show the expected deployed API version</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/240">pds-api#240</a> API Client cannot connect to current deployed API</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/262">pds-api#262</a> PDS API is not respecting the sort field</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/200">pds-api#200</a> API performance degradation from B12.1 release</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/199">pds-api#199</a> <cite>hits</cite> appears to be showing the current page count, not the overall number of its</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id55">
+<h5>Requirements<a class="headerlink" href="#id55" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/191">pds-api#191</a> As a user, I want to get directions whenever I arrive on an API URL</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/139">pds-api#139</a> As a user, I want to see API stable release specifications</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/198">pds-api#198</a> As a user, I want query responses for empty results to be clearly documented</p></td>
+<td><p>🟢</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/225">pds-api#225</a> As a user, I want to monitor the availability of the APIs in production</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/169">pds-api#169</a> As a user, I want to have a PDS Search API user guide</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/51">pds-api#51</a> As a developer, I want a continuous deployment of the API available for testing</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/68">pds-api#68</a> As an API user, I want to know in the response how many hits are returned for an API query.</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/67">pds-api#67</a> As an API user, I want to access supplemental metadata from Product_Metadata_Supplemental.</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/175">pds-api#175</a> As a user, I want to know how to query observational data only</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id56">
+<h5>Enhancements<a class="headerlink" href="#id56" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/133">pds-api#133</a> clarify what <cite>keyword</cite> parameter is for</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/194">pds-api#194</a> Develop NASA/PDS Skin for Search API Swagger interface</p></td>
+<td><p>🟢</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/217">pds-api#217</a> Update user guide to use new API endpoints</p></td>
+<td><p>🔵</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/10">pds-api#10</a> Propose an initial server stub based on swagger output</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/41">pds-api#41</a> Manage field preselection in queries</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/14">pds-api#14</a> Define initial set of intra-discipline (product-level) search scope</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/17">pds-api#17</a> Define initial structure for response format conventions and parameter definition</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/13">pds-api#13</a> Deploy PDS API v0 (alpha) on pds-gamma test server</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/34">pds-api#34</a> Deploy PDS API v0 (alpha) for beta testing</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/188">pds-api#188</a> Upgrade documentation to present version 1.0 of the search API</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/43">pds-api#43</a> Implement content negotiation</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/6">pds-api#6</a> Assign and iterate over applicable API spec sections with API WG</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/47">pds-api#47</a> develop a jupyter notebook demo where a user can browse PDS archive from bundle to product data file</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/49">pds-api#49</a> initiate a proposal for the API WG and ENG team</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/183">pds-api#183</a> Create a cookbook page on the content negotiation for the PDS Search API</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/52">pds-api#52</a> Get investigation area/targets/instruments from external ids</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/202">pds-api#202</a> Complete refactoring per API WG discussion on end-point redesign</p></td>
+<td><p>🔵</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/40">pds-api#40</a> add lexer to registry api</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/108">pds-api#108</a> Update API endpoints to use <cite>identifier</cite> instead of <cite>lidvid</cite></p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/136">pds-api#136</a> Revise the pds-api README so that it gives a perspective on non search api (e.g. doi) from pds</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/4">pds-api#4</a> Convert PDS API Spec to Open API</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/173">pds-api#173</a> Replace summary-only=true by limit=0</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/154">pds-api#154</a> Refactor <cite>meta</cite> section of pds4+json and pds4+xml to use ops namespace</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/145">pds-api#145</a> Remove the x-total-count header from the API specification</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/110">pds-api#110</a> Extend application/pds4+json support to all endpoints</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/31">pds-api#31</a> Streamline testing of API server implementation</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/8">pds-api#8</a> Design and elicit requirements for PDS API Spec</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/189">pds-api#189</a> Update README to reflect best practices of other PDS repositories</p></td>
+<td><p>🔵</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/5">pds-api#5</a> Define collection-level search parameters</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/35">pds-api#35</a> Initial Federated API implementation</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/12">pds-api#12</a> Initial Query Syntax Lexer Implementation</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/158">pds-api#158</a> Improve linkages from Registry App Docs to API Docs</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/140">pds-api#140</a> Merge unnecessary individual repository</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/1">pds-api#1</a> Design initial collection-level search API</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/172">pds-api#172</a> Create user guide for the search api</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/11">pds-api#11</a> Identify a framework to generate python api client from a swagger file</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/112">pds-api#112</a> As an API client user, I want to consistently and robustly start local servers for development and testing</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/137">pds-api#137</a> As a user, I want to have a detailed description of the API q parameter syntax</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/142">pds-api#142</a> flesh out the registry repository</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/91">pds-api#91</a> Disable XML and HTML responses from current registry-api-service implementation</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
 </tr>
 </tbody>
 </table>
@@ -473,14 +1005,14 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </tr>
 </tbody>
 </table>
-<section id="id43">
-<h4>Planned Updates<a class="headerlink" href="#id43" title="Link to this heading"></a></h4>
+<section id="id63">
+<h4>Planned Updates<a class="headerlink" href="#id63" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id44">
-<h4>Other Updates<a class="headerlink" href="#id44" title="Link to this heading"></a></h4>
-<section id="id45">
-<h5>Bugs<a class="headerlink" href="#id45" title="Link to this heading"></a></h5>
+<section id="id64">
+<h4>Other Updates<a class="headerlink" href="#id64" title="Link to this heading"></a></h4>
+<section id="id65">
+<h5>Bugs<a class="headerlink" href="#id65" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -489,23 +1021,23 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/801">pds4-information-model#801</a> Lack of object initialization in the code leads to infinite when trying to run main more than once</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/776">pds4-information-model#776</a> Unable to build LDDs for 1E00</p></td>
 <td><p>🟡</p></td>
-<td><p>s.high</p></td>
+<td><p>s.medium</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/770">pds4-information-model#770</a> ERROR 11179 data dictionary class is missing for overwrite</p></td>
 <td><p>🟡</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/776">pds4-information-model#776</a> Unable to build LDDs for 1E00</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/801">pds4-information-model#801</a> Lack of object initialization in the code leads to infinite when trying to run main more than once</p></td>
 <td><p>🟡</p></td>
-<td><p>s.medium</p></td>
+<td><p>s.high</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="id46">
-<h5>Enhancements<a class="headerlink" href="#id46" title="Link to this heading"></a></h5>
+<section id="id66">
+<h5>Enhancements<a class="headerlink" href="#id66" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -546,14 +1078,14 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </tr>
 </tbody>
 </table>
-<section id="id53">
-<h4>Planned Updates<a class="headerlink" href="#id53" title="Link to this heading"></a></h4>
+<section id="id73">
+<h4>Planned Updates<a class="headerlink" href="#id73" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id54">
-<h4>Other Updates<a class="headerlink" href="#id54" title="Link to this heading"></a></h4>
-<section id="id55">
-<h5>Bugs<a class="headerlink" href="#id55" title="Link to this heading"></a></h5>
+<section id="id74">
+<h4>Other Updates<a class="headerlink" href="#id74" title="Link to this heading"></a></h4>
+<section id="id75">
+<h5>Bugs<a class="headerlink" href="#id75" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -563,6 +1095,122 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/108">planetary-data-cloud#108</a> [SECURITY] Ensure CloudFront distributions have logging enabled-PDS</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="planetary-data-engine">
+<h3>Planetary-data-engine<a class="headerlink" href="#planetary-data-engine" title="Link to this heading"></a></h3>
+<p><em>Free-text search capability for planetary data, services, tools, and information</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id82">
+<h4>Planned Updates<a class="headerlink" href="#id82" title="Link to this heading"></a></h4>
+<section id="planetary-data-engine-2-evaluate-sde-legacy-registry-and-opensearch-keyword-search-capabilities">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/issues/2">planetary-data-engine#2</a> Evaluate SDE, Legacy Registry, and OpenSearch Keyword Search capabilities<a class="headerlink" href="#planetary-data-engine-2-evaluate-sde-legacy-registry-and-opensearch-keyword-search-capabilities" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-engine-5-complete-sinequa-useability-analysis">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/issues/5">planetary-data-engine#5</a> Complete Sinequa Useability Analysis<a class="headerlink" href="#planetary-data-engine-5-complete-sinequa-useability-analysis" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-engine-7-develop-query-test-suite-and-success-criteria">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/issues/7">planetary-data-engine#7</a> Develop Query Test Suite and Success Criteria<a class="headerlink" href="#planetary-data-engine-7-develop-query-test-suite-and-success-criteria" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="id83">
+<h4>Other Updates<a class="headerlink" href="#id83" title="Link to this heading"></a></h4>
+<section id="id84">
+<h5>Bugs<a class="headerlink" href="#id84" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-engine/issues/13">planetary-data-engine#13</a> Commits to the planetary-data-engine repo cannot be merged due to CI/CD build error related to sphinx</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="portal-tasks">
+<h3>Portal-tasks<a class="headerlink" href="#portal-tasks" title="Link to this heading"></a></h3>
+<p><em>PDS Portal tasks repo used to track update requests for the website. Actual code and website are managed in separate private repo</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pds.nasa.gov">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/portal-tasks">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/portal-tasks/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/portal-tasks/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/portal-tasks/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/portal-tasks/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id91">
+<h4>Planned Updates<a class="headerlink" href="#id91" title="Link to this heading"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id92">
+<h4>Other Updates<a class="headerlink" href="#id92" title="Link to this heading"></a></h4>
+<section id="id93">
+<h5>Bugs<a class="headerlink" href="#id93" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/portal-tasks/issues/95">portal-tasks#95</a> Broken links for 1.21.0.0 and 1.22.0.0</p></td>
 <td><p>🟡</p></td>
 <td><p>s.high</p></td>
 </tr>
@@ -594,14 +1242,14 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </tr>
 </tbody>
 </table>
-<section id="id62">
-<h4>Planned Updates<a class="headerlink" href="#id62" title="Link to this heading"></a></h4>
+<section id="id100">
+<h4>Planned Updates<a class="headerlink" href="#id100" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id63">
-<h4>Other Updates<a class="headerlink" href="#id63" title="Link to this heading"></a></h4>
-<section id="id64">
-<h5>Bugs<a class="headerlink" href="#id64" title="Link to this heading"></a></h5>
+<section id="id101">
+<h4>Other Updates<a class="headerlink" href="#id101" title="Link to this heading"></a></h4>
+<section id="id102">
+<h5>Bugs<a class="headerlink" href="#id102" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -611,6 +1259,10 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/292">registry#292</a> Secret detection is broken on branch titan_treks_utility_script</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/276">registry#276</a> harvest created archive_status as an array and registry-mgr updates it as a string</p></td>
 <td><p>🟡</p></td>
 <td><p>s.medium</p></td>
 </tr>
@@ -642,8 +1294,8 @@ team based upon the technical or operational nature of the closed task.</p></li>
 </tr>
 </tbody>
 </table>
-<section id="id71">
-<h4>Planned Updates<a class="headerlink" href="#id71" title="Link to this heading"></a></h4>
+<section id="id109">
+<h4>Planned Updates<a class="headerlink" href="#id109" title="Link to this heading"></a></h4>
 <section id="registry-api-505-multi-tenancy-migration-mvp-tasks">
 <h5><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/505">registry-api#505</a> Multi-tenancy Migration MVP Tasks<a class="headerlink" href="#registry-api-505-multi-tenancy-migration-mvp-tasks" title="Link to this heading"></a></h5>
 <blockquote>
@@ -652,10 +1304,10 @@ link in this section title for details.</p>
 </div></blockquote>
 </section>
 </section>
-<section id="id72">
-<h4>Other Updates<a class="headerlink" href="#id72" title="Link to this heading"></a></h4>
-<section id="id73">
-<h5>Requirements<a class="headerlink" href="#id73" title="Link to this heading"></a></h5>
+<section id="id110">
+<h4>Other Updates<a class="headerlink" href="#id110" title="Link to this heading"></a></h4>
+<section id="id111">
+<h5>Bugs<a class="headerlink" href="#id111" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -664,35 +1316,28 @@ link in this section title for details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/486">registry-api#486</a> As a user, by default, I want to search for only the latest versions of all products on the <cite>/products/{identifier}/member-of</cite> endpoint</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/431">registry-api#431</a> Investigate sporadic 500 and 504 errors with registry API</p></td>
 <td><p>🟡</p></td>
-<td><p>p.should-have</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id112">
+<h5>Requirements<a class="headerlink" href="#id112" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/435">registry-api#435</a> As a user, by default, I want to resolve the latest version of a product when given a product logical_identifier (LID) (<cite>/products/{logical_identifier}</cite> endpoint)</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/469">registry-api#469</a> As a user, I want to filter the products by any available PDS4 property using a combination of comparison, logical, and precedence grouping operators</p></td>
-<td><p>🟡</p></td>
-<td><p>p.must-have</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/434">registry-api#434</a> As a user, I want to get a product description given a lidvid</p></td>
-<td><p>🟡</p></td>
-<td><p>p.must-have</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/487">registry-api#487</a> As a user, by default, I want to search only for the latest versions of all products on the <cite>/products/{identifier}/member-of/member-of</cite> endpoint</p></td>
-<td><p>🟡</p></td>
-<td><p>p.should-have</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/484">registry-api#484</a> As a user, by default, I want to search for only the latest versions of all products on the <cite>/products/{identifier}/members</cite> endpoint</p></td>
-<td><p>🟡</p></td>
-<td><p>p.should-have</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/497">registry-api#497</a> As a user, I want to receive metadata only in the API responses (no binary blobs)</p></td>
-<td><p>🟡</p></td>
-<td><p>p.must-have</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/511">registry-api#511</a> As a user, I want to get all the products for a specific PDS4 product class</p></td>
-<td><p>🟡</p></td>
-<td><p>p.must-have</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/436">registry-api#436</a> As a user, I want to get all product versions associated to one lid</p></td>
 <td><p>🟡</p></td>
 <td><p>p.must-have</p></td>
 </tr>
@@ -700,11 +1345,43 @@ link in this section title for details.</p>
 <td><p>🟡</p></td>
 <td><p>p.should-have</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/434">registry-api#434</a> As a user, I want to get a product description given a lidvid</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/497">registry-api#497</a> As a user, I want to receive metadata only in the API responses (no binary blobs)</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/511">registry-api#511</a> As a user, I want to get all the products for a specific PDS4 product class</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/484">registry-api#484</a> As a user, by default, I want to search for only the latest versions of all products on the <cite>/products/{identifier}/members</cite> endpoint</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/516">registry-api#516</a> As a user, I want to get a description of the API when I request it from its base URL in a web browser</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/494">registry-api#494</a> As a user, I want to filter the products by any available PDS4 property using comparison operators</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/488">registry-api#488</a> As a user, by default, I want to search for the latest versions of all products on the <cite>/classes/{class}</cite> endpoint unless explicitly requested</p></td>
 <td><p>🟡</p></td>
 <td><p>p.should-have</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/435">registry-api#435</a> As a user, I want to get the latest version of a product given a lid</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/486">registry-api#486</a> As a user, by default, I want to search for only the latest versions of all products on the <cite>/products/{identifier}/member-of</cite> endpoint</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/487">registry-api#487</a> As a user, by default, I want to search only for the latest versions of all products on the <cite>/products/{identifier}/member-of/member-of</cite> endpoint</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/436">registry-api#436</a> As a user, I want to get all product versions associated to one lid</p></td>
 <td><p>🟡</p></td>
 <td><p>p.must-have</p></td>
 </tr>
@@ -736,14 +1413,14 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id80">
-<h4>Planned Updates<a class="headerlink" href="#id80" title="Link to this heading"></a></h4>
+<section id="id119">
+<h4>Planned Updates<a class="headerlink" href="#id119" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id81">
-<h4>Other Updates<a class="headerlink" href="#id81" title="Link to this heading"></a></h4>
-<section id="id82">
-<h5>Bugs<a class="headerlink" href="#id82" title="Link to this heading"></a></h5>
+<section id="id120">
+<h4>Other Updates<a class="headerlink" href="#id120" title="Link to this heading"></a></h4>
+<section id="id121">
+<h5>Bugs<a class="headerlink" href="#id121" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -753,7 +1430,7 @@ link in this section title for details.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-client/issues/3">registry-client#3</a> pypi installation is broken</p></td>
-<td><p>🟡</p></td>
+<td><p>🟢</p></td>
 <td><p>s.high</p></td>
 </tr>
 </tbody>
@@ -784,14 +1461,14 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id89">
-<h4>Planned Updates<a class="headerlink" href="#id89" title="Link to this heading"></a></h4>
+<section id="id128">
+<h4>Planned Updates<a class="headerlink" href="#id128" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id90">
-<h4>Other Updates<a class="headerlink" href="#id90" title="Link to this heading"></a></h4>
-<section id="id91">
-<h5>Bugs<a class="headerlink" href="#id91" title="Link to this heading"></a></h5>
+<section id="id129">
+<h4>Other Updates<a class="headerlink" href="#id129" title="Link to this heading"></a></h4>
+<section id="id130">
+<h5>Bugs<a class="headerlink" href="#id130" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -836,14 +1513,14 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id98">
-<h4>Planned Updates<a class="headerlink" href="#id98" title="Link to this heading"></a></h4>
+<section id="id137">
+<h4>Planned Updates<a class="headerlink" href="#id137" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id99">
-<h4>Other Updates<a class="headerlink" href="#id99" title="Link to this heading"></a></h4>
-<section id="id100">
-<h5>Requirements<a class="headerlink" href="#id100" title="Link to this heading"></a></h5>
+<section id="id138">
+<h4>Other Updates<a class="headerlink" href="#id138" title="Link to this heading"></a></h4>
+<section id="id139">
+<h5>Requirements<a class="headerlink" href="#id139" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -859,8 +1536,8 @@ link in this section title for details.</p>
 </tbody>
 </table>
 </section>
-<section id="id101">
-<h5>Enhancements<a class="headerlink" href="#id101" title="Link to this heading"></a></h5>
+<section id="id140">
+<h5>Enhancements<a class="headerlink" href="#id140" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -901,14 +1578,14 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id108">
-<h4>Planned Updates<a class="headerlink" href="#id108" title="Link to this heading"></a></h4>
+<section id="id147">
+<h4>Planned Updates<a class="headerlink" href="#id147" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id109">
-<h4>Other Updates<a class="headerlink" href="#id109" title="Link to this heading"></a></h4>
-<section id="id110">
-<h5>Bugs<a class="headerlink" href="#id110" title="Link to this heading"></a></h5>
+<section id="id148">
+<h4>Other Updates<a class="headerlink" href="#id148" title="Link to this heading"></a></h4>
+<section id="id149">
+<h5>Bugs<a class="headerlink" href="#id149" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -929,7 +1606,7 @@ link in this section title for details.</p>
 <hr class="docutils" />
 <section id="registry-sweepers">
 <h3>Registry-sweepers<a class="headerlink" href="#registry-sweepers" title="Link to this heading"></a></h3>
-<p><a href="#id111"><span class="problematic" id="id112">*</span></a>Scripts that run regularly on the registry database, to clean and consolidate information *</p>
+<p><a href="#id150"><span class="problematic" id="id151">*</span></a>Scripts that run regularly on the registry database, to clean and consolidate information *</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 16.7%" />
@@ -949,14 +1626,14 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id119">
-<h4>Planned Updates<a class="headerlink" href="#id119" title="Link to this heading"></a></h4>
+<section id="id158">
+<h4>Planned Updates<a class="headerlink" href="#id158" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id120">
-<h4>Other Updates<a class="headerlink" href="#id120" title="Link to this heading"></a></h4>
-<section id="id121">
-<h5>Bugs<a class="headerlink" href="#id121" title="Link to this heading"></a></h5>
+<section id="id159">
+<h4>Other Updates<a class="headerlink" href="#id159" title="Link to this heading"></a></h4>
+<section id="id160">
+<h5>Bugs<a class="headerlink" href="#id160" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -997,14 +1674,14 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id128">
-<h4>Planned Updates<a class="headerlink" href="#id128" title="Link to this heading"></a></h4>
+<section id="id167">
+<h4>Planned Updates<a class="headerlink" href="#id167" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id129">
-<h4>Other Updates<a class="headerlink" href="#id129" title="Link to this heading"></a></h4>
-<section id="id130">
-<h5>Bugs<a class="headerlink" href="#id130" title="Link to this heading"></a></h5>
+<section id="id168">
+<h4>Other Updates<a class="headerlink" href="#id168" title="Link to this heading"></a></h4>
+<section id="id169">
+<h5>Bugs<a class="headerlink" href="#id169" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -1013,11 +1690,11 @@ link in this section title for details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action/issues/139">roundup-action#139</a> Unstable Pipeline failing with unsatisfiable install dependency on Data Upload Manager repository</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action/issues/138">roundup-action#138</a> Maven deploy no longer works due to Maven central upgrade</p></td>
 <td><p>🟡</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action/issues/138">roundup-action#138</a> Maven deploy no longer works due to Maven central upgrade</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/roundup-action/issues/139">roundup-action#139</a> Unstable Pipeline failing with unsatisfiable install dependency on Data Upload Manager repository</p></td>
 <td><p>🟡</p></td>
 <td><p>s.high</p></td>
 </tr>
@@ -1049,14 +1726,14 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id137">
-<h4>Planned Updates<a class="headerlink" href="#id137" title="Link to this heading"></a></h4>
+<section id="id176">
+<h4>Planned Updates<a class="headerlink" href="#id176" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id138">
-<h4>Other Updates<a class="headerlink" href="#id138" title="Link to this heading"></a></h4>
-<section id="id139">
-<h5>Requirements<a class="headerlink" href="#id139" title="Link to this heading"></a></h5>
+<section id="id177">
+<h4>Other Updates<a class="headerlink" href="#id177" title="Link to this heading"></a></h4>
+<section id="id178">
+<h5>Requirements<a class="headerlink" href="#id178" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -1101,14 +1778,14 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id146">
-<h4>Planned Updates<a class="headerlink" href="#id146" title="Link to this heading"></a></h4>
+<section id="id185">
+<h4>Planned Updates<a class="headerlink" href="#id185" title="Link to this heading"></a></h4>
 <p>No planned updates realized for this build in this repository.</p>
 </section>
-<section id="id147">
-<h4>Other Updates<a class="headerlink" href="#id147" title="Link to this heading"></a></h4>
-<section id="id148">
-<h5>Bugs<a class="headerlink" href="#id148" title="Link to this heading"></a></h5>
+<section id="id186">
+<h4>Other Updates<a class="headerlink" href="#id186" title="Link to this heading"></a></h4>
+<section id="id187">
+<h5>Bugs<a class="headerlink" href="#id187" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -1149,8 +1826,15 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id155">
-<h4>Planned Updates<a class="headerlink" href="#id155" title="Link to this heading"></a></h4>
+<section id="id194">
+<h4>Planned Updates<a class="headerlink" href="#id194" title="Link to this heading"></a></h4>
+<section id="software-issues-repo-76-distribute-isas-for-signature-cycle">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/76">software-issues-repo#76</a> Distribute ISAs for Signature Cycle<a class="headerlink" href="#software-issues-repo-76-distribute-isas-for-signature-cycle" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
 <section id="software-issues-repo-86-complete-tasks-and-artifacts-supporting-nasa-a-a-process">
 <h5><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/86">software-issues-repo#86</a> Complete Tasks and Artifacts Supporting NASA A&amp;A Process<a class="headerlink" href="#software-issues-repo-86-complete-tasks-and-artifacts-supporting-nasa-a-a-process" title="Link to this heading"></a></h5>
 <blockquote>
@@ -1190,8 +1874,183 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id162">
-<h4>Planned Updates<a class="headerlink" href="#id162" title="Link to this heading"></a></h4>
+<section id="id201">
+<h4>Planned Updates<a class="headerlink" href="#id201" title="Link to this heading"></a></h4>
+<section id="validate-249-improvements-for-validating-accumulating-bundles-collections">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/249">validate#249</a> Improvements for validating accumulating bundles / collections<a class="headerlink" href="#validate-249-improvements-for-validating-accumulating-bundles-collections" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-250-improvements-to-meet-updated-standards-reference-since-initial-requirements-implementation">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/250">validate#250</a> Improvements to meet updated Standards Reference since initial requirements implementation<a class="headerlink" href="#validate-250-improvements-to-meet-updated-standards-reference-since-initial-requirements-implementation" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-317-b12-0-referential-integrity-improvements">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/317">validate#317</a> B12.0 Referential Integrity Improvements<a class="headerlink" href="#validate-317-b12-0-referential-integrity-improvements" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-318-b12-0-content-validation-improvements">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/318">validate#318</a> B12.0 Content Validation Improvements<a class="headerlink" href="#validate-318-b12-0-content-validation-improvements" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-409-b12-1-pdf-a-handling-improvements">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/409">validate#409</a> B12.1 PDF/A Handling Improvements<a class="headerlink" href="#validate-409-b12-1-pdf-a-handling-improvements" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-414-referential-integrity-checking-with-the-registry-api">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/414">validate#414</a> Referential Integrity Checking with the Registry+API<a class="headerlink" href="#validate-414-referential-integrity-checking-with-the-registry-api" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-426-b12-1-content-validation-improvements">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/426">validate#426</a> B12.1 Content Validation Improvements<a class="headerlink" href="#validate-426-b12-1-content-validation-improvements" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-481-b13-1-content-validation-improvements-intermingled-headers">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/481">validate#481</a> B13.1 Content Validation Improvements: Intermingled Headers<a class="headerlink" href="#validate-481-b13-1-content-validation-improvements-intermingled-headers" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-496-support-new-lblx-file-extension">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/496">validate#496</a> Support new lblx file extension<a class="headerlink" href="#validate-496-support-new-lblx-file-extension" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-498-improve-content-validation-performance-through-spot-checking">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/498">validate#498</a> Improve Content Validation Performance through Spot Checking<a class="headerlink" href="#validate-498-improve-content-validation-performance-through-spot-checking" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-534-b14-0-content-validation-improvements-additional-table-types-additional-file-areas">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/534">validate#534</a> B14.0 Content Validation Improvements: Additional Table Types, Additional File Areas<a class="headerlink" href="#validate-534-b14-0-content-validation-improvements-additional-table-types-additional-file-areas" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-557-dockerize-validate">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/557">validate#557</a> Dockerize Validate<a class="headerlink" href="#validate-557-dockerize-validate" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-578-b13-1-fix-must-have-priority-bugs">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/578">validate#578</a> B13.1 Fix Must-Have Priority Bugs<a class="headerlink" href="#validate-578-b13-1-fix-must-have-priority-bugs" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-606-support-for-encoded-video-and-encoded-audio">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/606">validate#606</a> Support for Encoded Video and Encoded Audio<a class="headerlink" href="#validate-606-support-for-encoded-video-and-encoded-audio" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-607-support-for-improved-datetime-checks">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/607">validate#607</a> Support for Improved Datetime Checks<a class="headerlink" href="#validate-607-support-for-improved-datetime-checks" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-610-b14-0-enhancements-to-initial-version-of-registry-referential-integrity-validator">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/610">validate#610</a> B14.0 Enhancements to Initial Version of Registry Referential Integrity Validator<a class="headerlink" href="#validate-610-b14-0-enhancements-to-initial-version-of-registry-referential-integrity-validator" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-629-add-check-for-schematron-schema-version-mismatch">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/629">validate#629</a> Add Check for Schematron/Schema Version Mismatch<a class="headerlink" href="#validate-629-add-check-for-schematron-schema-version-mismatch" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-695-update-validate-test-suite-to-support-larger-data-sets">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/695">validate#695</a> Update Validate Test Suite to Support Larger Data Sets<a class="headerlink" href="#validate-695-update-validate-test-suite-to-support-larger-data-sets" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-816-as-a-user-i-want-a-warning-to-be-thrown-when-a-delimited-or-character-table-value-does-not-match-the-expected-field-format">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/816">validate#816</a> As a user, I want a WARNING to be thrown when a delimited or character table value does not match the expected <cite>field_format</cite><a class="headerlink" href="#validate-816-as-a-user-i-want-a-warning-to-be-thrown-when-a-delimited-or-character-table-value-does-not-match-the-expected-field-format" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-817-as-a-user-i-want-an-error-to-be-thrown-when-a-character-table-value-does-not-match-the-expected-validation-format">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/817">validate#817</a> As a user, I want an ERROR to be thrown when a character table value does not match the expected <cite>validation_format</cite><a class="headerlink" href="#validate-817-as-a-user-i-want-an-error-to-be-thrown-when-a-character-table-value-does-not-match-the-expected-validation-format" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-822-check-for-unlabeled-files-no-longer-works">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/822">validate#822</a> Check for unlabeled files no longer works<a class="headerlink" href="#validate-822-check-for-unlabeled-files-no-longer-works" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-823-validate-v-3-4-1-reports-file-read-errors-on-products-which-read-correctly-under-v-3-2-0">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/823">validate#823</a> Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0<a class="headerlink" href="#validate-823-validate-v-3-4-1-reports-file-read-errors-on-products-which-read-correctly-under-v-3-2-0" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-824-check-for-pdf-a-1a-only-if-product-document">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/824">validate#824</a> Check for PDF/A-1a only if Product_Document<a class="headerlink" href="#validate-824-check-for-pdf-a-1a-only-if-product-document" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-826-validate-is-slow-or-runs-out-of-memory-when-validating-a-bundle">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/826">validate#826</a> validate is slow or runs out of memory when validating a bundle<a class="headerlink" href="#validate-826-validate-is-slow-or-runs-out-of-memory-when-validating-a-bundle" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-831-validate-incorrectly-handles-special-constant-high-instrument-saturation">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/831">validate#831</a> validate incorrectly handles special constant high_instrument_saturation<a class="headerlink" href="#validate-831-validate-incorrectly-handles-special-constant-high-instrument-saturation" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
 <section id="validate-832-review-handling-of-special-constants-field-formats-and-high-priority-bug-fixes">
 <h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/832">validate#832</a> Review Handling of Special Constants, Field Formats, and High Priority Bug Fixes<a class="headerlink" href="#validate-832-review-handling-of-special-constants-field-formats-and-high-priority-bug-fixes" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
@@ -1251,6 +2110,61 @@ link in this section title for details.</p>
 </tbody>
 </table>
 </section>
+<section id="validate-833-fix-performance-and-content-validation-regressions">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/833">validate#833</a> Fix Performance and Content Validation Regressions<a class="headerlink" href="#validate-833-fix-performance-and-content-validation-regressions" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/822">validate#822</a> Check for unlabeled files no longer works</p></td>
+<td><p>🟡</p></td>
+<td><p>bug</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/823">validate#823</a> Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0</p></td>
+<td><p>🟡</p></td>
+<td><p>bug</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/824">validate#824</a> Check for PDF/A-1a only if Product_Document</p></td>
+<td><p>🟡</p></td>
+<td><p>enhancement</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/826">validate#826</a> validate is slow or runs out of memory when validating a bundle</p></td>
+<td><p>🟡</p></td>
+<td><p>bug</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="validate-837-in-text-tables-validate-attempts-to-match-pattern-associated-with-data-type-before-checking-special-constants">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/837">validate#837</a> In text tables, validate attempts to match pattern associated with <cite>data_type</cite> before checking <cite>Special_Constants</cite><a class="headerlink" href="#validate-837-in-text-tables-validate-attempts-to-match-pattern-associated-with-data-type-before-checking-special-constants" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-849-validate-stalls-when-validating-collection-inventory-file-with-duplicates-records">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/849">validate#849</a> Validate stalls when validating collection inventory file with duplicates records<a class="headerlink" href="#validate-849-validate-stalls-when-validating-collection-inventory-file-with-duplicates-records" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-857-as-a-user-i-want-to-receive-a-warning-message-when-the-observing-system-component-name-does-not-match-the-value-in-the-context-product">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/857">validate#857</a> As a user, I want to receive a WARNING message when the <cite>Observing_System_Component.name</cite> does not match the value in the context product<a class="headerlink" href="#validate-857-as-a-user-i-want-to-receive-a-warning-message-when-the-observing-system-component-name-does-not-match-the-value-in-the-context-product" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
 <section id="validate-860-add-warning-messages-for-context-product-name-mismatches">
 <h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/860">validate#860</a> Add Warning Messages for Context Product Name Mismatches<a class="headerlink" href="#validate-860-add-warning-messages-for-context-product-name-mismatches" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
@@ -1275,11 +2189,102 @@ link in this section title for details.</p>
 </tbody>
 </table>
 </section>
+<section id="validate-861-as-a-user-i-want-to-receive-a-warning-message-when-the-target-identification-name-does-not-match-the-value-in-the-context-product">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/861">validate#861</a> As a user, I want to receive a WARNING message when the <cite>Target_Identification.name</cite> does not match the value in the context product<a class="headerlink" href="#validate-861-as-a-user-i-want-to-receive-a-warning-message-when-the-target-identification-name-does-not-match-the-value-in-the-context-product" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
 </section>
-<section id="id163">
-<h4>Other Updates<a class="headerlink" href="#id163" title="Link to this heading"></a></h4>
-<section id="id164">
-<h5>Bugs<a class="headerlink" href="#id164" title="Link to this heading"></a></h5>
+<section id="validate-873-validate-3-5-0-snapshot-giving-unexpected-errors-for-matching-filenames-in-separate-directories">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/873">validate#873</a> Validate 3.5.0-snapshot Giving Unexpected Errors for Matching Filenames in Separate Directories<a class="headerlink" href="#validate-873-validate-3-5-0-snapshot-giving-unexpected-errors-for-matching-filenames-in-separate-directories" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-874-sxxp0003-error-when-running-on-pds3-data-sets-for-v3-3-3-or-v3-4-1">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/874">validate#874</a> SXXP0003 Error when running on PDS3 data sets for v3.3.3 or v3.4.1<a class="headerlink" href="#validate-874-sxxp0003-error-when-running-on-pds3-data-sets-for-v3-3-3-or-v3-4-1" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-880-validate-failing-products-that-contain-collection-not-in-the-beginning-of-filename">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/880">validate#880</a> Validate failing products that contain “collection” not in the beginning of filename<a class="headerlink" href="#validate-880-validate-failing-products-that-contain-collection-not-in-the-beginning-of-filename" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-902-validate-error-during-jpeg-content-validation">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/902">validate#902</a> Validate error during JPEG content validation<a class="headerlink" href="#validate-902-validate-error-during-jpeg-content-validation" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-903-validate-not-retrying-on-sch-load-failure">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/903">validate#903</a> Validate not retrying on sch load failure<a class="headerlink" href="#validate-903-validate-not-retrying-on-sch-load-failure" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-905-validate-3-5-0-snapshot-gives-error-when-encountering-document-objects-files-used-in-other-document-products">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/905">validate#905</a> Validate 3.5.0-snapshot gives error when encountering Document objects/files used in other Document products.<a class="headerlink" href="#validate-905-validate-3-5-0-snapshot-gives-error-when-encountering-document-objects-files-used-in-other-document-products" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-915-context-ref-mismatch-check-only-executes-when-r-pds4-label">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/915">validate#915</a> <cite>context_ref_mismatch</cite> check only executes when -R pds4.label<a class="headerlink" href="#validate-915-context-ref-mismatch-check-only-executes-when-r-pds4-label" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-919-validate-throws-an-error-when-unsignedbitstring-has-61-bits">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/919">validate#919</a> Validate throws an error when UnsignedBitString has 61 bits<a class="headerlink" href="#validate-919-validate-throws-an-error-when-unsignedbitstring-has-61-bits" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-923-configuration-file-parser-does-not-reject-incorrect-options">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/923">validate#923</a> Configuration file parser does not reject incorrect options<a class="headerlink" href="#validate-923-configuration-file-parser-does-not-reject-incorrect-options" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-933-missing-operation-documentation">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/933">validate#933</a> Missing operation documentation<a class="headerlink" href="#validate-933-missing-operation-documentation" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-936-validate-does-not-show-correct-filename-for-pdf-a-failures-when-validating-a-directory">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/936">validate#936</a> Validate does not show correct filename for PDF/A failures when validating a directory<a class="headerlink" href="#validate-936-validate-does-not-show-correct-filename-for-pdf-a-failures-when-validating-a-directory" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+<section id="validate-949-validate-does-not-appear-to-validate-against-the-latest-versions-of-context-products">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/949">validate#949</a> Validate does not appear to validate against the latest versions of context products<a class="headerlink" href="#validate-949-validate-does-not-appear-to-validate-against-the-latest-versions-of-context-products" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+link in this section title for details.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="id202">
+<h4>Other Updates<a class="headerlink" href="#id202" title="Link to this heading"></a></h4>
+<section id="id203">
+<h5>Bugs<a class="headerlink" href="#id203" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -1288,47 +2293,715 @@ link in this section title for details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/902">validate#902</a> Validate error during JPEG content validation</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/178">validate#178</a> Improve performance when content validation is disabled</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/327">validate#327</a> validate fails to process large data file</p></td>
 <td><p>🟡</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/919">validate#919</a> Validate throws an error when UnsignedBitString has 61 bits</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/294">validate#294</a> Content validation incorrectly reports error for floating-point values out of specified min/max range</p></td>
 <td><p>🟡</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/915">validate#915</a> <cite>context_ref_mismatch</cite> check only executes when -R pds4.label</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/754">validate#754</a> Validate 3.3.0 erroneously reports data objects out of offset order</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/401">validate#401</a> validate does not flag &lt;CR&gt; within lid_reference</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/209">validate#209</a> Packed_Data_Fields and bit fields do not validate as expected</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/473">validate#473</a> NullPointerException when Table_Delimited is missing records attribute</p></td>
+<td><p>🟢</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/593">validate#593</a> Regression in validate no longer enabling CRLF to be embedded within a Table_Character record</p></td>
+<td><p>🟢</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/516">validate#516</a> validate embedded in an app bundled as a fat-jar raise exception on product validation</p></td>
+<td><p>🔵</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/439">validate#439</a> Incorrect Warning for Missing document_standard_id is Stream_Text</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/690">validate#690</a> Validate does not accurately check for missing_constant values</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/854">validate#854</a> validate 3.5.0-SNAPSHOT attempts to look at all files, not just <a href="#id204"><span class="problematic" id="id205">*</span></a>.xml</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/364">validate#364</a> validate does not allow “.XML” as an extension for a label file</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/2">validate#2</a> Suppress INFO messages related to initial fix for JAXB vulnerability</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/298">validate#298</a> validate misses double quotes within a delimited table</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/761">validate#761</a> Validate gives errors for ‘NaN’ values in IEEE754 data</p></td>
+<td><p>🟢</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/419">validate#419</a> validate 2.2.0-SNAPSHOT warns about a pretty benign bundle + readme.txt</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/469">validate#469</a> Validate content validation does not handle properly special_constants and field_statistics when they both appear</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/781">validate#781</a> Validate making incorrect assumption that first object has and object length == <cite>file_size</cite></p></td>
+<td><p>🟢</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/334">validate#334</a> validate 2.1.0 snapshot fails on a label with 2 table_character</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/71">validate#71</a> Unable to use catalog file after update to always force remote schemas</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/723">validate#723</a> Installation instructions need updates for Windows</p></td>
+<td><p>🟢</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/431">validate#431</a> warning.table.characters_between_fields missing for last record in table</p></td>
+<td><p>🟢</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/464">validate#464</a> Validate is reporting an “Uncaught exception while validating” error on Windows</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/739">validate#739</a> Intermittent network failures attempting repeated downloads of schemas/schematrons</p></td>
+<td><p>🟢</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/435">validate#435</a> Array Content Validator is not accepting values at the min/max due to false precision</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/748">validate#748</a> Buffer limit IOException thrown with validate-refs</p></td>
+<td><p>🔵</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/183">validate#183</a> Memory leak issue has returned after Saxon downgrade</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/153">validate#153</a> Update validate to throw error when a file has a space in the filename</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/411">validate#411</a> Validate repo cannot be checked out on Windows without errors</p></td>
 <td><p>🟡</p></td>
 <td><p>s.low</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/823">validate#823</a> Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/326">validate#326</a> File-size check fails for large data files</p></td>
 <td><p>🟡</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/822">validate#822</a> Check for unlabeled files no longer works</p></td>
-<td><p>🟡</p></td>
-<td><p>s.medium</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/561">validate#561</a> Validate incorrectly enforces file naming requirements on bundles/collections</p></td>
+<td><p>🟢</p></td>
+<td><p>s.low</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/936">validate#936</a> Validate does not show correct filename for PDF/A failures when validating a directory</p></td>
-<td><p>🟡</p></td>
-<td><p>s.medium</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/519">validate#519</a> Validate should throw record length error when record delimiter does not occur in correct location</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/933">validate#933</a> Missing operation documentation</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/441">validate#441</a> Validate is reporting a ‘String index out of range’ error for a text file</p></td>
 <td><p>🟡</p></td>
 <td><p>s.high</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/826">validate#826</a> validate is slow or runs out of memory when validating a bundle</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/461">validate#461</a> [SECURITY] Patch log4j library</p></td>
+<td><p>🟡</p></td>
+<td><p>s.critical</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/507">validate#507</a> validate having issues checking some file content on windows</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/514">validate#514</a> Validate does not catch NaNs in Binary Tables</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/300">validate#300</a> validate -u flag reports an error on Windows</p></td>
 <td><p>🟡</p></td>
 <td><p>s.medium</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/923">validate#923</a> Configuration file parser does not reject incorrect options</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/297">validate#297</a> Content validation of ASCII_Integer field does not accept value with leading zeroes</p></td>
 <td><p>🟡</p></td>
 <td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/155">validate#155</a> Fix uncaught exception error when validating an array object</p></td>
+<td><p>🟢</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/335">validate#335</a> validate gives a NullPointerException during validation of a directory containing Table_Character products</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/597">validate#597</a> Validate does not maintain history of other versions it comes across as it traverses directories causing erroneous WARNING messages</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/356">validate#356</a> validate labels error.sub_directory.unallowed_name as a warning</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/214">validate#214</a> validate outputs an extra ‘.’</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/173">validate#173</a> Bug with #149 fix: Product counter is invalid and does not reset after each collection</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/479">validate#479</a> validate erroneously flags PDF/A-1a compliant file</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/6">validate#6</a> Improve pds4.bundle unlabeled files check to handle files without a file suffix</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/145">validate#145</a> Incorrect help information for –spot-check-data flag</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/234">validate#234</a> Validate gives incorrect records mismatch WARNING for interleaved data objects</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/52">validate#52</a> Incorrect package declarations under gov.nasa.tools.web.ui</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/611">validate#611</a> Missing validation of valid_maximum and valid_minimum from Special_Constants</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/747">validate#747</a> validate flags IEEE 754 “infinity” values as invalid</p></td>
+<td><p>🟢</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/427">validate#427</a> validate does not work correct when path name contains a space on mac</p></td>
+<td><p>🟢</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/144">validate#144</a> Fix string == comparison issues per vulnerability scan</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/372">validate#372</a> Issues with logic for reading latest version of collections, and file read logging lost with v2.* of validate</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/63">validate#63</a> Validate Table_Character groups and their specified lengths match the specified group_length</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/554">validate#554</a> –spot-check-data flag throws IOException</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/529">validate#529</a>  ERROR  [error.array.value_out_of_min_max_range] evaluation is not correct</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/531">validate#531</a> ERROR  [error.table.bad_file_read] incorrectly reports that GroupFieldBinary group_length is larger than size of contained fields</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/750">validate#750</a> Validate-refs with manifest of file paths does not seem to read the files correctly</p></td>
+<td><p>🟢</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/844">validate#844</a> Exception when trying to handle <cite>missing_constant</cite> == <cite>Infinity</cite></p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/551">validate#551</a> Validate fails regression test on issue 188</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/72">validate#72</a> Catalog file flag expects a List of files requiring it not be the last argument</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/649">validate#649</a> validate does not validate a collection if collection.xml pointed to</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/499">validate#499</a> validate doesn’t flag a data file with only LF</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/408">validate#408</a> Validate 2.1.0-SNAPSHOT skips a collection XML label</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/328">validate#328</a> validate bundle incorrectly reports “not a member of any collection” that it passed before</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/167">validate#167</a> Content validation multi-threading issue</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/273">validate#273</a> Bug performing bundle validation with nested directories</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/545">validate#545</a> Validate 2.4.0/3.0.0 fail with NPE/internal error on certain test cases</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/299">validate#299</a> Validate tool does not PASS a bundle with a single-character filename</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/375">validate#375</a> validate halts if label has name “collection” embedded</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/203">validate#203</a> Assembly plugin non-fatal errors on Windows</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/240">validate#240</a> Unexpected error for data collection in a sub-directory</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/511">validate#511</a> Table_Character not accurately checking field formats</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/139">validate#139</a> Revisit PDS-605: L5.PRP.VA.36: Check that the LID for a product has the LID of its parent collection product as its base</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/11">validate#11</a> Update allowable field_format values per Standards Reference definition regarding [+-] characters</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/681">validate#681</a> Validate incorrectly throws precision mismatch error for Table_Delimited</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/562">validate#562</a> Validate incorrectly enforces file naming requirements for base file names ending in a period, underscore, or hyphen</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/345">validate#345</a> validate incorrectly flags integers bounded by “” in a .csv</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/146">validate#146</a> Update parent LID integrity checking to fix bug introduced for collection integrity checking</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/644">validate#644</a> Validate gives errors for ‘NaN’ and ‘Inf’ values in IEEE754 data</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/257">validate#257</a> Product with incorrect table binary definition pass validation</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/325">validate#325</a> Validate Incorrectly Throws Error When Embedded Field_Character Contains &lt;CR&gt;&lt;LF&gt;</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/9">validate#9</a> Update content validation to fail when the value of an ASCII_Integer is all spaces</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/271">validate#271</a> validate 1.25.0-SNAPSHOT raises an exception when validating a product</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/763">validate#763</a> Validate.bat does not execute on Windows</p></td>
+<td><p>🟢</p></td>
+<td><p>s.critical</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/657">validate#657</a> validate incorrectly SKIPs label</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/368">validate#368</a> Product referential integrity check throws invalid WARNINGs</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/175">validate#175</a> Fix schematron parsing bug introduced during performance improvements</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/361">validate#361</a> validate does not check Header of a File_Area_Ancillary nor does not provide a meaningful error message for an incorrect Table_Character offset</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/564">validate#564</a> Array object validation regression in v3.0.3</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/336">validate#336</a> validate2.0.3 throws unexpected JavaExceptions, and after fix, it hangs when trying bundle validation</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/180">validate#180</a> Fix multi-threading bug where reporting finishes prior to threads completing execution</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/190">validate#190</a> Validation fails to catch real value in ASCII_NonNegative_Integer field (Table_Delimited)</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/291">validate#291</a> When validating a product with a bad schematron definition, bundle validation also fails indicating the associated product does not exist</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/378">validate#378</a> validate raises an unexpected error with doi attribute in the Citation_information class</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/474">validate#474</a> Validate can’t find files in directory specified by &lt;directory_path_name&gt;</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/453">validate#453</a> Validate should not check PDF/A validity if content validation is disabled</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/684">validate#684</a> Validation failures are contingent on presence of <cite>&lt;file_size&gt;</cite> attribute in <cite>&lt;File&gt;</cite> class</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/673">validate#673</a> Validate does not handle Special_Constants valid_minimum and valid_maximum in accordance with information model</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/189">validate#189</a> Validate error reading tables &gt; 2GiB</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/165">validate#165</a> Spot check bug throws internal_error when record number is multiple of spot check number</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/74">validate#74</a> Validate execution script throws arguments error with v1.15.1</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/8">validate#8</a> Large Data File Uncaught Exception Error</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/170">validate#170</a> Update validate to allow for empty fields in delimited tables</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/349">validate#349</a> validate allows absolute path in directory_path_name but shouldn’t</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/333">validate#333</a> validate -u exits badly</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/381">validate#381</a> validate does not work correctly when the path name contains a space</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/62">validate#62</a> Context validation needs to be updated to include all possible product type use cases</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/379">validate#379</a> FileService:printStackTraceToFile:ERROR when validating a product with overlapping fields</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/550">validate#550</a> Validate partially fails regression test on issue 388</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/392">validate#392</a> Validate throws incorrect overlap error when first Field_Bit has length 1</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/674">validate#674</a> validate does not handle special constants with data type of SignedLSB2</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/220">validate#220</a> Incorrect validation of number of records</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/360">validate#360</a> validate does not parse colon in Windows path</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/631">validate#631</a> Expected value in validate report for context reference name is not same as value in the context file</p></td>
+<td><p>🟢</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/424">validate#424</a> Validate does not allow SIP tab file to have lines of differing lengths</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/5">validate#5</a> Improve file base name check according to Standards Reference</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/652">validate#652</a> validate 3.3.0 snapshot produces incorrect SKIP/INFO messages</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/33">validate#33</a> Validation succeeds despite throwing exception</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/84">validate#84</a> Update Validate to allow specification of schema/schematrons in config file</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/614">validate#614</a> invalid_object_definition occurs upon out-of-order data objects</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/55">validate#55</a> Content validation does not work properly</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/206">validate#206</a> Validate incorrectly fails ASCII_Integer field that is space-padded (empty) in Table_Character</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/809">validate#809</a> Validate fails to read files on Windows systems after Internal Reference check updates (#308)</p></td>
+<td><p>🟢</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/204">validate#204</a> Build and unit tests do not pass on Windows OS</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/281">validate#281</a> Validate fails to report error in   File.file_size</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/533">validate#533</a> Bug in validate when reading products with a number of records &gt; 4-byte range</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/416">validate#416</a> validate 2.1.0 indicates the table offset is not correct when validating a binary table inside a FITS</p></td>
+<td><p>🟡</p></td>
+<td><p>s.critical</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/301">validate#301</a> unclear error message for field count matching</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/423">validate#423</a> Validate does not allow a single-character subdirectory</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/380">validate#380</a> stack trace being created during successful validate execution</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/310">validate#310</a> Validate missing collections in bundle after CCB-282 updates</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/37">validate#37</a> JAVA Path does not handle whitespaces in MAC as it used to</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/357">validate#357</a> Validate allows CRLF within a Table_Delimited field</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/376">validate#376</a> Checksums output lowercase and do not accept uppercase checksums</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/160">validate#160</a> Remove erroneous timing messages from log output</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/260">validate#260</a> Missing documentation about deprecated flags</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/616">validate#616</a> validate does not correctly validate byte offsets to data objects</p></td>
+<td><p>🟢</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/256">validate#256</a> validate should only do integrity checking on latest version of a collection when referenced by LID</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/698">validate#698</a> Investigate and Fix code scanning alert for potential improvements</p></td>
+<td><p>🔵</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/480">validate#480</a> Validate does not calculate overlaps correctly when Header is not first object in file</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/429">validate#429</a> validate warns “document standard id … is not correct” on good labels</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/201">validate#201</a> Schematron doesn’t fire if &lt;?xml-model …&gt; has an extra space at the end</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/137">validate#137</a> Update delimited table handling to allow for empty fields</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/366">validate#366</a> validate should not check if file is PDF/A if –skip-content-validation is enabled</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/679">validate#679</a> Validate throws internal error when coming across non-label XML in a target directory</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/432">validate#432</a> Requirement #308 does not appear to be working for checking referential integrity from products to others in the bundle</p></td>
+<td><p>🟢</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/760">validate#760</a> Uncaught exception thrown when only 1 of schemas/schematrons are provided via command-line</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/548">validate#548</a> Validate fails regression test on issue 303</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/337">validate#337</a> Validate fails with Java Error</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/693">validate#693</a> Upgrade verapdf dependency per transitive log4j vulnerability</p></td>
+<td><p>🟡</p></td>
+<td><p>s.critical</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/620">validate#620</a> verbosity flag does not appear to output INFO messages</p></td>
+<td><p>🔵</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/671">validate#671</a> Unexpected SKIP Message for bundle product when using validate-3.3.0-SNAPSHOT</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/219">validate#219</a> validate v1.22.3 has large performance degradation on products with many tables</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/447">validate#447</a> Validate does not correctly pass PDF/A files that are in a subdirectory</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/3">validate#3</a> JAXB warning message with Java 9+</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/107">validate#107</a> Registered context product resource lists only one of multiple instrument or target multiple types</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/243">validate#243</a> validate 1.24.0-SNAPSHOT chokes on a probably good file</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/475">validate#475</a> Validate crashes on invalid # of records, and spurious file left behind</p></td>
+<td><p>🟢</p></td>
+<td><p>p.wont-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/470">validate#470</a> Fix validate compilation issues due to removal of veraPDF artifacts from maven central</p></td>
+<td><p>🟡</p></td>
+<td><p>s.critical</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/99">validate#99</a> Fix bug introduce by –skip-context-validation feature</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/444">validate#444</a> pds4.bundle option seems to not travel through enough subdirectories</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/576">validate#576</a> validate does not correctly handle field format checks for hex values</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/457">validate#457</a> validate flags .ASC extension as invalid but offers not expected suffices</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/785">validate#785</a> validate catches valid_maximum but not valid_minimum</p></td>
+<td><p>🟢</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/118">validate#118</a> Update Validate error/warning counts per ATM regression testing</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/503">validate#503</a> validate passes confusing message to the command window</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/278">validate#278</a> Registered context products file does not retain older versions of context products</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/177">validate#177</a> Software raises a field_value_overlap error on Table_Binary Packed data fields</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/34">validate#34</a> Add missing core.properties dependency</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/544">validate#544</a> validate gives a error.table.bad_field_read error</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/344">validate#344</a> validate inexplicably writes to validate_stack_traces.log</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/233">validate#233</a> Product validation does not detect the number of table records correctly for Table + Array object</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/500">validate#500</a> Validate does not allow <cite>.arch_h</cite> file name/data type</p></td>
+<td><p>🟢</p></td>
+<td><p>s.low</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="id165">
-<h5>Enhancements<a class="headerlink" href="#id165" title="Link to this heading"></a></h5>
+<section id="id206">
+<h5>Requirements<a class="headerlink" href="#id206" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -1337,12 +3010,183 @@ link in this section title for details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/824">validate#824</a> Check for PDF/A-1a only if Product_Document</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/212">validate#212</a> As a user, I want to validate all data types possible per the PDS4 Information Model</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/773">validate#773</a> As a user, I want validate with the registry when a file is being referenced by more than one label</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/1">validate#1</a> As a user, I want to execute content validation against every nth file</p></td>
+<td><p>🟢</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/462">validate#462</a> As a user, I want validate to throw an error when a collection inventory contains an invalid secondary product reference</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/605">validate#605</a> As a user, I want to validate MP4/H.264/AAC encoded video with audio as observational data</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/663">validate#663</a> As a user, I want to validate M4A/AAC encoded audio as observational data</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/741">validate#741</a> As a user, I want validate’s referential integrity tool to read a manifest of files and check referential integrity</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/596">validate#596</a> As a user, I want to validate all products referenced from a collection exist within the archive</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/662">validate#662</a> As a user, I want to validate WAV encoded audio as observational data</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/210">validate#210</a> As a user, I want validate to raise a WARNING when differing versions of IM are used within a bundle</p></td>
+<td><p>🟡</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/415">validate#415</a> As a user, I want to validate all internal references to products in the PDS archive are valid</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/50">validate#50</a> Add new target-manifest flag for user to provide a manifest (file) of file/directory paths to validate</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/63">validate#63</a> Validate Table_Character groups and their specified lengths match the specified group_length</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/797">validate#797</a> As a user, I want to have the same information available in the validation report no matter which style I choose</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/316">validate#316</a> As a user, I want to validate all internal references from one product to another exist within the archive</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/827">validate#827</a> As a user, I want to have the parameter names used in 3.5.0 reports to be the same as they were in ≤3.4.1</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/164">validate#164</a> As a user, I want to validate PDF files are PDF/A</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/343">validate#343</a> As a user I want to see the name of a table/array in errors, if one is specified</p></td>
+<td><p>🟢</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/556">validate#556</a> As a user, I want to be able to use validate from a docker container</p></td>
+<td><p>🟢</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/524">validate#524</a> As a user, I want to receive an error when no products are found within the validation target</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/658">validate#658</a> As a user, I want the PDF error reports to be output in a user-specified directory</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/755">validate#755</a> As a user, I want validate to throw an error when a file is being referenced by more than one label</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/535">validate#535</a> As a user, I want to receive a warning if records in file are greater than records value specified in label</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/367">validate#367</a> As a user, I want to validate all files referenced by a Product_Document</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/599">validate#599</a> As a user, I want to be able to use both online and local schema/schematron files.</p></td>
+<td><p>🟡</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/57">validate#57</a> As a user, I want to be warned when there are alphanumeric characters between fields in Table_Character</p></td>
+<td><p>🟡</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/476">validate#476</a> As a user, I want to check that are no duplicate LIDs/LIDVIDs in a File_Area_Inventory</p></td>
+<td><p>🟢</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/308">validate#308</a> As a user, I want to check that all Internal References are valid references to other PDS4 products within the current validating bundle</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/388">validate#388</a> Improve PDF/A validation to include more robust reporting on failures</p></td>
+<td><p>🟡</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/188">validate#188</a> As a user, I want to validate a bundle that uses multiple versions of the Information Model / Discipline LDDs</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/241">validate#241</a> As a developer, I want an API method enable specifying of non-registered context products</p></td>
+<td><p>🔵</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/15">validate#15</a> Verify that all name/type attribute values correspond to names denoted context products</p></td>
+<td><p>🟡</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/149">validate#149</a> As a user, I want validate to check number of records/fields specified in label matches the records in the actual data table</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/604">validate#604</a> As a user, I want to validate MP4/H.264 encoded video as observational data</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/617">validate#617</a> As a user, I would like to enforce browse file extension with encoding type</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/595">validate#595</a> As a user, I want to validate all collections referenced from a bundle exist within the archive</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/683">validate#683</a> As a user, I want to receive a WARNING when table objects are out of order</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/217">validate#217</a> As a user, I want to validate content for all possible PDS4 table types</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/482">validate#482</a> As a user, I want to validate labels/bundles/collections using the LBLX file extension</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/292">validate#292</a> CCB-264: Make the Line Feed (LF) character an allowed record delimiter</p></td>
+<td><p>🟡</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/303">validate#303</a> As a user, I want to the raise a WARNING if the object-defined size in the label does not match the file_size value</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/628">validate#628</a> As a user, I want to throw a WARNING when a product’s schematron version does not match the schema version</p></td>
+<td><p>🟢</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/651">validate#651</a> As a user, I want to support bit patterns within Special_Constants values</p></td>
 <td><p>🟡</p></td>
 <td><p>p.should-have</p></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="id207">
+<h5>Enhancements<a class="headerlink" href="#id207" title="Link to this heading"></a></h5>
 </section>
 </section>
 </section>
@@ -1369,8 +3213,8 @@ link in this section title for details.</p>
 </tr>
 </tbody>
 </table>
-<section id="id172">
-<h4>Planned Updates<a class="headerlink" href="#id172" title="Link to this heading"></a></h4>
+<section id="id214">
+<h4>Planned Updates<a class="headerlink" href="#id214" title="Link to this heading"></a></h4>
 <section id="web-analytics-30-automate-log-sync-to-s3-and-athena">
 <h5><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/issues/30">web-analytics#30</a> Automate Log Sync to S3 and Athena<a class="headerlink" href="#web-analytics-30-automate-log-sync-to-s3-and-athena" title="Link to this heading"></a></h5>
 <blockquote>
@@ -1386,10 +3230,10 @@ link in this section title for details.</p>
 </div></blockquote>
 </section>
 </section>
-<section id="id173">
-<h4>Other Updates<a class="headerlink" href="#id173" title="Link to this heading"></a></h4>
-<section id="id174">
-<h5>Bugs<a class="headerlink" href="#id174" title="Link to this heading"></a></h5>
+<section id="id215">
+<h4>Other Updates<a class="headerlink" href="#id215" title="Link to this heading"></a></h4>
+<section id="id216">
+<h5>Bugs<a class="headerlink" href="#id216" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -1405,8 +3249,8 @@ link in this section title for details.</p>
 </tbody>
 </table>
 </section>
-<section id="id175">
-<h5>Requirements<a class="headerlink" href="#id175" title="Link to this heading"></a></h5>
+<section id="id217">
+<h5>Requirements<a class="headerlink" href="#id217" title="Link to this heading"></a></h5>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Issue</p></th>
@@ -1415,13 +3259,13 @@ link in this section title for details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/pull/39">web-analytics#39</a> update repo with template files</p></td>
-<td><p>🟡</p></td>
-<td><p>unknown</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/issues/24">web-analytics#24</a> As a user, I want a mission-specific dashboard showing instrument and product type download metrics</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/issues/24">web-analytics#24</a> As a user, I want a mission-specific dashboard showing instrument and product type download metrics</p></td>
 <td><p>🟡</p></td>
 <td><p>p.should-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/pull/39">web-analytics#39</a> update repo with template files</p></td>
+<td><p>🟡</p></td>
+<td><p>unknown</p></td>
 </tr>
 </tbody>
 </table>
@@ -1439,9 +3283,84 @@ link in this section title for details.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td></td>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/26">pds-swg_26</a> [CR] Defer Registry/API new requirements, Add Performance Improvement Tasks</p></td>
+<td><p>[CR] Defer Registry/API new requirements, Add Performance Improvement Tasks</p></td>
+<td><p>Increased scope of NASA-PDS/registry#185 to use Cognito for multi-tenant OpenSearch requires developer needed for other tasks   NASA-PDS/registry-sweepers#92 was necessary in order to decrease cost and improve scalability of registry sweepers</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/25">pds-swg_25</a> [CR] Defer Nucleus / Cloud Tasks from Release Plan</p></td>
+<td><p>[CR] Defer Nucleus / Cloud Tasks from Release Plan</p></td>
+<td><p>Issues with NGAP and MCP access and policy definitions. Additionally, working to establish more refined OpenSearch deployment architecture for moving to multi-tenancy.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/24">pds-swg_24</a> [CR] Defer Registry and Admin tasks from Release Plan</p></td>
+<td><p>[CR] Defer Registry and Admin tasks from Release Plan</p></td>
+<td><p>Registry enhancements delayed due to <a class="reference external" href="https://github.com/NASA-PDS/registry/issues/178">https://github.com/NASA-PDS/registry/issues/178</a>.    JIRA migration delayed due to additional timeline available and lack of resources to focus on the task.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/22">pds-swg_22</a> [CR] Defer Registry+API Tasks</p></td>
+<td><p>[CR] Defer Registry+API Tasks</p></td>
+<td><p>Numerous bugs arose from initial rollout of Registry Workshop and increased usage over the past 6 months that required more effort than expected. <a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/257">https://github.com/NASA-PDS/registry-api/issues/257</a>    [registry#85](<a class="reference external" href="https://github.com/NASA-PDS/registry/issues/85">https://github.com/NASA-PDS/registry/issues/85</a>) was missed on the roadmap and in our schedule.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/21">pds-swg_21</a> [CR] Defer Validate Content Validation Improvements</p></td>
+<td><p>[CR] Defer Validate Content Validation Improvements</p></td>
+<td><p>Numerous bug fixes added onto the front half of the build implementation pushed out all other higher priority improvements. This will move onto B14.0 stack. Additionally, a lot of these tickets may have been fixed or improved from some of the bug fixes from B13.1, but we have not had the time to come up with sufficient test data to test all the table types.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/19">pds-swg_19</a> [CR] Defer Validate File Path Handling and Referential Integrity check improvements from Release Plan</p></td>
+<td><p>[CR] Defer Validate File Path Handling and Referential Integrity check improvements from Release Plan</p></td>
 <td></td>
-<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/18">pds-swg_18</a> [CR] Defer Registry tasks due to loss of personnel and bug fixes</p></td>
+<td><p>[CR] Defer Registry tasks due to loss of personnel and bug fixes</p></td>
+<td><p>_enter rationale for deviation from plan <a href="#id235"><span class="problematic" id="id236">here_</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/17">pds-swg_17</a> [CR] Defer Cloud Pilot projects to B13.1</p></td>
+<td><p>[CR] Defer Cloud Pilot projects to B13.1</p></td>
+<td><p>All pilot projects are being tabled until next FY when the EN Team has a better grasp of NGAP and how we are able to easily architect and deploy these applications, services, and data into NGAP.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/16">pds-swg_16</a> [CR] B12.1 Defer improved handling of product versioning</p></td>
+<td><p>[CR] B12.1 Defer improved handling of product versioning</p></td>
+<td><p>Not critical yet, focused for this release on a robust v1 release of the registry and management of scalable harvesting for bigger bundles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/15">pds-swg_15</a> [CR] B12.1 Defer Registry external source integration task</p></td>
+<td><p>[CR] B12.1 Defer Registry external source integration task</p></td>
+<td><p>&lt;!– enter rationale for deviation from plan here –&gt;  With <cite>Product_Metadata_Supplemental</cite> and accompanying CSV ingestion supported, a workaround exists for ingesting database data. More use detailed use cases needed for what data needs to be ingested and how we can support it. Additionally, other API tasks have taken precedence ([Staging vs. Operational Data](<a class="reference external" href="https://github.com/nasa-pds/pds-registry-app/issues/190">https://github.com/nasa-pds/pds-registry-app/issues/190</a>), [Handling “deprecated” LIDs and Versions](<a class="reference external" href="https://github.com/nasa-pds/pds-registry-app/issues/219">https://github.com/nasa-pds/pds-registry-app/issues/219</a>))</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/14">pds-swg_14</a> [CR] B12.1 Defer Validate Referential Integrity Checking and Logging Improvements</p></td>
+<td><p>[CR] B12.1 Defer Validate Referential Integrity Checking and Logging Improvements</p></td>
+<td><p>&lt;!– enter rationale for deviation from plan here –&gt;  Validate CogE retired in December causing significant delays in content validation improvements and bug fixes (<a class="reference external" href="https://github.com/nasa-pds/validate/issues/426">https://github.com/nasa-pds/validate/issues/426</a>). Considering content validation is a critical component ensuring a valid archive, these tasks for improvements to existing capabilities is being tabled to B13.0.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/12">pds-swg_12</a> [CR] Defer Validate Configuration Improvements from B12.0</p></td>
+<td><p>[CR] Defer Validate Configuration Improvements from B12.0</p></td>
+<td><p>_enter rationale for deviation from plan <a href="#id237"><span class="problematic" id="id238">here_</span></a>  Depending on triaged priority of bug fixes, the tend to move towards the top of validate dev queue as they are often blockers to allowing a user to successfully validate their archives.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/11">pds-swg_11</a> [CR] B12.0 Add Information Model Tasks to Release Plan</p></td>
+<td><p>[CR] B12.0 Add Information Model Tasks to Release Plan</p></td>
+<td><p>The GEOM LDD split effort is fully underway and we have pretty much dug the hole too deep at this point. Pulling back on that effort is most likely a non-starter, so we have to pivot to support that. The “B12.0 Refactoring of IMTool” effort is not critical and should not impact LDDTool for the near-term.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/7">pds-swg_7</a> [CR] Defer PDS UX Tasks to B12.0</p></td>
+<td><p>[CR] Defer PDS UX Tasks to B12.0</p></td>
+<td><p>Deferring these tasks to B12.0 in order to develop a comprehensive, detailed plan, milestones, and activities for a PDS Web Modernization Team. <a class="reference external" href="https://github.com/nasa-pds/pds.nasa.gov-ux/issues/70">https://github.com/nasa-pds/pds.nasa.gov-ux/issues/70</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/6">pds-swg_6</a> [CR] Defer PDS API Tasks to B12.0</p></td>
+<td><p>[CR] Defer PDS API Tasks to B12.0</p></td>
+<td><p>Inaccurate estimates for time to complete other designs and implementations with PDS API WG.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/5">pds-swg_5</a> [CR] Defer Tracking Service Tasks to B12.0</p></td>
+<td><p>[CR] Defer Tracking Service Tasks to B12.0</p></td>
+<td><p>Tracking Service design and partial implementation was completed in 2018. Misunderstanding during handoff from previous developers that the software design did not include requirements definition, and design did not form to common API standards. Caused significant increase in scope for [requirements definition task](<a class="reference external" href="https://github.com/nasa-pds/tracking-service/issues/2">https://github.com/nasa-pds/tracking-service/issues/2</a>)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/4">pds-swg_4</a> [CR] Add additional PDS4 SCRs to Release Plan</p></td>
+<td><p>[CR] Add additional PDS4 SCRs to Release Plan</p></td>
+<td><p>Several additional SCRs passed by the CCB.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/2">pds-swg_2</a> [CR] Defer Validate improvements to Build 11.1</p></td>
+<td><p>[CR] Defer Validate improvements to Build 11.1</p></td>
+<td><ol class="arabic simple">
+<li><p>Improvement from Build 10b, [Validate Table_Character groups and their specified lengths match the specified group_length](<a class="reference external" href="https://github.com/NASA-PDS/validate/issues/63">https://github.com/NASA-PDS/validate/issues/63</a>), had numerous ripple effects throughout the validate software, which required numerous bug fixes that used all the schedule slack for Build 11.0 delivery.       <a class="reference external" href="https://github.com/NASA-PDS/validate/issues/149">https://github.com/NASA-PDS/validate/issues/149</a>       <a class="reference external" href="https://github.com/NASA-PDS/validate/issues/222">https://github.com/NASA-PDS/validate/issues/222</a>       <a class="reference external" href="https://github.com/NASA-PDS/validate/issues/177">https://github.com/NASA-PDS/validate/issues/177</a>       <a class="reference external" href="https://github.com/NASA-PDS/validate/issues/215">https://github.com/NASA-PDS/validate/issues/215</a>       <a class="reference external" href="https://github.com/NASA-PDS/validate/issues/220">https://github.com/NASA-PDS/validate/issues/220</a>       <a class="reference external" href="https://github.com/NASA-PDS/validate/issues/233">https://github.com/NASA-PDS/validate/issues/233</a>       <a class="reference external" href="https://github.com/NASA-PDS/validate/issues/234">https://github.com/NASA-PDS/validate/issues/234</a>       <a class="reference external" href="https://github.com/NASA-PDS/validate/issues/243">https://github.com/NASA-PDS/validate/issues/243</a>       <a class="reference external" href="https://github.com/NASA-PDS/validate/issues/243">https://github.com/NASA-PDS/validate/issues/243</a>    2. Validate expert was pulled off onto M2020 Science Data System development work. Plans to train up new “expert” for Build 11.1.</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-swg/issues/1">pds-swg_1</a> [CR] Add PDS.nasa.gov-UX Tasks</p></td>
+<td><p>[CR] Add PDS.nasa.gov-UX Tasks</p></td>
+<td><p>Rationale for late planning: User Experience staff was onboarded after Release Plan was presented to SWG. That staff was responsible for identifying tasks for this work.   Rationale for tasks being included: <a class="reference external" href="https://docs.google.com/presentation/d/1In0Tjh1cuECCqF68D3d_fybLByDRUHwQtrlDd8cromI/edit#slide=id.g88d0673ea2_0_0">https://docs.google.com/presentation/d/1In0Tjh1cuECCqF68D3d_fybLByDRUHwQtrlDd8cromI/edit#slide=id.g88d0673ea2_0_0</a></p></td>
 </tr>
 </tbody>
 </table>
