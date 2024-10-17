@@ -46,11 +46,11 @@ Discipline Node Services
 ========================
 Tools and Services that Discipline Node should deploy to enable integration and interoperability across the PDS.
 
-+-------------------+----------+---------------+-----------------------------------------------------------------------------------------+-------------------------------------+----------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
-|tool               |version   |last updated   |description                                                                              |l |manual|                           |l |changelog|   |l |requirements|   |l |download|                           |l |license|                           |l |feedback|                           |
-+===================+==========+===============+=========================================================================================+=====================================+================+===================+=======================================+======================================+=======================================+
-|PDS Registry App   |v1.0.3    |2022-01-11     |(deprecated) See https://github.com/NASA-PDS/registry for new and improved capability.   ||NASA-PDS/pds-registry-app_manual|   |                |                   ||NASA-PDS/pds-registry-app_download|   ||NASA-PDS/pds-registry-app_license|   ||NASA-PDS/pds-registry-app_feedback|   |
-+-------------------+----------+---------------+-----------------------------------------------------------------------------------------+-------------------------------------+----------------+-------------------+---------------------------------------+--------------------------------------+---------------------------------------+
++-------------------+----------+---------------+-----------------------------------------------------------------------------------------+------------------------------------------------------+----------------+------------------------------------------------------------+--------------------------------------------------------+-------------------------------------------------------+--------------------------------------------------------+
+|tool               |version   |last updated   |description                                                                              |l |manual|                                            |l |changelog|   |l |requirements|                                            |l |download|                                            |l |license|                                            |l |feedback|                                            |
++===================+==========+===============+=========================================================================================+======================================================+================+============================================================+========================================================+=======================================================+========================================================+
+|PDS Registry App   |v1.0.3    |2022-01-11     |(deprecated) See https://github.com/NASA-PDS/registry for new and improved capability.   ||nasa-pds-engineering-node/pds-registry-app_manual|   |                ||nasa-pds-engineering-node/pds-registry-app_requirements|   ||nasa-pds-engineering-node/pds-registry-app_download|   ||nasa-pds-engineering-node/pds-registry-app_license|   ||nasa-pds-engineering-node/pds-registry-app_feedback|   |
++-------------------+----------+---------------+-----------------------------------------------------------------------------------------+------------------------------------------------------+----------------+------------------------------------------------------------+--------------------------------------------------------+-------------------------------------------------------+--------------------------------------------------------+
 
 Engineering Node Services
 =========================
@@ -78,17 +78,17 @@ Tools and Services centrally deployed by PDS Engineering Node to support the int
    :target: https://raw.githubusercontent.com/NASA-PDS/doi-service/main/LICENSE.md
 .. |NASA-PDS/doi-service_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/doi-service/issues/new/choose
-.. |NASA-PDS/pds-registry-app_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
-   :target: https://NASA-PDS.github.io/pds-registry-app/
-.. |NASA-PDS/pds-registry-app_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
+.. |nasa-pds-engineering-node/pds-registry-app_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
+   :target: https://github.com/NASA-PDS/pds-registry-app
+.. |nasa-pds-engineering-node/pds-registry-app_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
    :target: None
-.. |NASA-PDS/pds-registry-app_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
-   :target: None
-.. |NASA-PDS/pds-registry-app_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
+.. |nasa-pds-engineering-node/pds-registry-app_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
+   :target: https://github.com/NASA-PDS/pds-registry-app/blob/main/docs/requirements/v1.0.3/REQUIREMENTS.md
+.. |nasa-pds-engineering-node/pds-registry-app_download| image:: https://nasa-pds.github.io/pdsen-corral/images/download.png
    :target: https://github.com/NASA-PDS/pds-registry-app/releases/tag/v1.0.3
-.. |NASA-PDS/pds-registry-app_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
+.. |nasa-pds-engineering-node/pds-registry-app_license| image:: https://nasa-pds.github.io/pdsen-corral/images/license.png
    :target: https://raw.githubusercontent.com/NASA-PDS/pds-registry-app/main/LICENSE.md
-.. |NASA-PDS/pds-registry-app_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
+.. |nasa-pds-engineering-node/pds-registry-app_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/pds-registry-app/issues/new/choose
 .. |NASA-PDS/pds-api-client_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
    :target: https://NASA-PDS.github.io/pds-api-client/
@@ -151,7 +151,7 @@ Tools and Services centrally deployed by PDS Engineering Node to support the int
 .. |NASA-PDS/harvest_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/harvest/issues/new/choose
 .. |NASA-PDS/registry-mgr_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
-   :target: https://NASA-PDS.github.io/registry-mgr/
+   :target: https://github.com/NASA-PDS/registry-mgr
 .. |NASA-PDS/registry-mgr_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
    :target: None
 .. |NASA-PDS/registry-mgr_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
