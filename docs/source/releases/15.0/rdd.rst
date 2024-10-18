@@ -100,13 +100,13 @@ Bugs
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                 | I&T Status        | Priority / Bug Severity   |
 +=======================================================================================================================+===================+===========================+
-| `data-upload-manager#110`_ DUM Client does not properly sanitize double-quotes from INI config                        | |:yellow_circle:| | s.high                    |
-+-----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#116`_ DUM Lambda Service can return pre-signed S3 URL's to non-existing buckets                  | |:yellow_circle:| | p.must-have               |
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `data-upload-manager#136`_ Backoff/Retry logic not firing for certain error codes                                     | |:yellow_circle:| | s.medium                  |
+| `data-upload-manager#110`_ DUM Client does not properly sanitize double-quotes from INI config                        | |:yellow_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#135`_ DUM Client script does not respect configured logging level after a transfer failure/retry | |:yellow_circle:| | s.medium                  |
++-----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `data-upload-manager#136`_ Backoff/Retry logic not firing for certain error codes                                     | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -138,11 +138,11 @@ Bugs
 +----------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                            | I&T Status        | Priority / Bug Severity   |
 +==================================================================================+===================+===========================+
-| `deep-archive#178`_ Issues with manifests after multiple slash update fix (#162) | |:yellow_circle:| | s.medium                  |
+| `deep-archive#186`_ AIP now fails validation after #178 update                   | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------+-------------------+---------------------------+
 | `deep-archive#171`_ Failing build due to deprecated config                       | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------+-------------------+---------------------------+
-| `deep-archive#186`_ AIP now fails validation after #178 update                   | |:yellow_circle:| | s.high                    |
+| `deep-archive#178`_ Issues with manifests after multiple slash update fix (#162) | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -372,11 +372,11 @@ Bugs
 +==================================================================================================================================+===================+===========================+
 | `pds4-information-model#770`_ ERROR 11179 data dictionary class is missing for overwrite                                         | |:blue_circle:|   | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `pds4-information-model#801`_ Lack of object initialization in the code leads to infinite when trying to run main more than once | |:yellow_circle:| | s.high                    |
+| `pds4-information-model#776`_ Unable to build LDDs for 1E00                                                                      | |:blue_circle:|   | s.medium                  |
++----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#801`_ Lack of object initialization in the code leads to infinite when trying to run main more than once | |:blue_circle:|   | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#797`_ GEOM LDD schematron rules are not executing as expected `<kernel_type>` validation                 | |:yellow_circle:| | s.critical                |
-+----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `pds4-information-model#776`_ Unable to build LDDs for 1E00                                                                      | |:blue_circle:|   | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -385,9 +385,9 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================================+===================+===========================+
-| `pds4-information-model#795`_ CCB-7: Missing schematron rule - bundle_to_targets                                     | |:yellow_circle:| | p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#765`_ As a data provider, I want to add additional content to Investigation context products | |:blue_circle:|   | unknown                   |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#795`_ CCB-7: Missing schematron rule - bundle_to_targets                                     | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -396,9 +396,9 @@ Enhancements
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================================+===================+===========================+
-| `pds4-information-model#794`_ [namespace-registry] add new namespace `vikinglander`                                  | |:yellow_circle:| | p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#765`_ As a data provider, I want to add additional content to Investigation context products | |:blue_circle:|   | unknown                   |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#794`_ [namespace-registry] add new namespace `vikinglander`                                  | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -497,11 +497,11 @@ Bugs
 +-----------------------------------------------------+-------------------+---------------------------+
 | Issue                                               | I&T Status        | Priority / Bug Severity   |
 +=====================================================+===================+===========================+
+| `planetarydata.org#24`_ Old link to PSA             | |:yellow_circle:| | s.medium                  |
++-----------------------------------------------------+-------------------+---------------------------+
 | `planetarydata.org#23`_ Updates to web site content | |:blue_circle:|   | s.low                     |
 +-----------------------------------------------------+-------------------+---------------------------+
 | `planetarydata.org#25`_ Typo                        | |:yellow_circle:| | s.medium                  |
-+-----------------------------------------------------+-------------------+---------------------------+
-| `planetarydata.org#24`_ Old link to PSA             | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -671,45 +671,45 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                                                         | I&T Status        | Priority / Bug Severity   |
 +===============================================================================================================================================================================+===================+===========================+
-| `registry-api#469`_ As a user, I want to filter the products by any available PDS4 property using a combination of comparison, logical, and precedence grouping operators     | |:yellow_circle:| | p.must-have               |
+| `registry-api#486`_ As a user, by default, I want to search for only the latest versions of all products on the `/products/{identifier}/member-of` endpoint                   | |:yellow_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#488`_ As a user, by default, I want to search for the latest versions of all products on the `/classes/{class}` endpoint unless explicitly requested            | |:yellow_circle:| | p.should-have             |
+| `registry-api#436`_ As a user, I want to get all product versions associated to one lid                                                                                       | |:yellow_circle:| | p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#492`_ As a user, I want to apply an additional query filter (`q=`) to the `/products/{identifier}/member-of/member-of` result set                               | |:yellow_circle:| | p.should-have             |
+| `registry-api#511`_ As a user, I want to get all the products for a specific PDS4 product class                                                                               | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-api#516`_ As a user, I want to get a description of the API when I request it from its base URL in a web browser                                                    | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-api#506`_ As a user, I want to know what are all the possible properties I can search against (`/properties`)                                                       | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-api#426`_ As a user, by default, I want to search only for the latest versions of all products on the `/products` endpoint                                          | |:yellow_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#497`_ As a user, I want to receive metadata only in the API responses (no binary blobs)                                                                         | |:yellow_circle:| | p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#485`_ As a user, by default, I want to search for only the latest versions of all products on the `/products/{identifier}/members/members` endpoint             | |:yellow_circle:| | p.should-have             |
+| `registry-api#434`_ As a user, I want to get a product description given a lidvid                                                                                             | |:yellow_circle:| | p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#484`_ As a user, by default, I want to search for only the latest versions of all products on the `/products/{identifier}/members` endpoint                     | |:yellow_circle:| | p.should-have             |
+| `registry-api#490`_ As a user, I want to apply an additional query filter (`q=`) to members of the members of an aggregate product (`/products/{identifier}/members/members`) | |:yellow_circle:| | p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-api#487`_ As a user, by default, I want to search only for the latest versions of all products on the `/products/{identifier}/member-of/member-of` endpoint         | |:yellow_circle:| | p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-api#469`_ As a user, I want to filter the products by any available PDS4 property using a combination of comparison, logical, and precedence grouping operators     | |:yellow_circle:| | p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#491`_ As a user, I want to apply an additional query filter (`q=`) to the `/products/{identifier}/member-of` result set                                         | |:yellow_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#493`_ As a user, I want to apply an additional query filter (`q=`) to the `/classes/{class}` result set                                                         | |:yellow_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#516`_ As a user, I want to get a description of the API when I request it from its base URL in a web browser                                                    | |:yellow_circle:| | p.must-have               |
+| `registry-api#495`_ As a user, I want to filter the products by any available PDS4 property by combining comparison operators using logical operators                         | |:yellow_circle:| | p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#511`_ As a user, I want to get all the products for a specific PDS4 product class                                                                               | |:yellow_circle:| | p.must-have               |
+| `registry-api#484`_ As a user, by default, I want to search for only the latest versions of all products on the `/products/{identifier}/members` endpoint                     | |:yellow_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#490`_ As a user, I want to apply an additional query filter (`q=`) to members of the members of an aggregate product (`/products/{identifier}/members/members`) | |:yellow_circle:| | p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#426`_ As a user, by default, I want to search only for the latest versions of all products on the `/products` endpoint                                          | |:yellow_circle:| | p.should-have             |
+| `registry-api#488`_ As a user, by default, I want to search for the latest versions of all products on the `/classes/{class}` endpoint unless explicitly requested            | |:yellow_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#494`_ As a user, I want to filter the products by any available PDS4 property using comparison operators                                                        | |:yellow_circle:| | p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#434`_ As a user, I want to get a product description given a lidvid                                                                                             | |:yellow_circle:| | p.must-have               |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#506`_ As a user, I want to know what are all the possible properties I can search against (`/properties`)                                                       | |:yellow_circle:| | p.must-have               |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#487`_ As a user, by default, I want to search only for the latest versions of all products on the `/products/{identifier}/member-of/member-of` endpoint         | |:yellow_circle:| | p.should-have             |
+| `registry-api#485`_ As a user, by default, I want to search for only the latest versions of all products on the `/products/{identifier}/members/members` endpoint             | |:yellow_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#298`_ As a user, I want to apply an additional query filter (`q=`) to members of an aggregate product (`/products/{identifier}/members`)                        | |:yellow_circle:| | p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#486`_ As a user, by default, I want to search for only the latest versions of all products on the `/products/{identifier}/member-of` endpoint                   | |:yellow_circle:| | p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#495`_ As a user, I want to filter the products by any available PDS4 property by combining comparison operators using logical operators                         | |:yellow_circle:| | p.must-have               |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#436`_ As a user, I want to get all product versions associated to one lid                                                                                       | |:yellow_circle:| | p.must-have               |
+| `registry-api#492`_ As a user, I want to apply an additional query filter (`q=`) to the `/products/{identifier}/member-of/member-of` result set                               | |:yellow_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -932,9 +932,9 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                   | I&T Status        | Priority / Bug Severity   |
 +=========================================================================================================================+===================+===========================+
-| `s3-browser-cloudfront#22`_ As a data user, I want to view ODR S3 bucket with S3 browser app                            | |:yellow_circle:| | p.must-have               |
-+-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#68`_ As a manager, I want the S3-browser to be deployable and accessible from a '/some_path' URL | |:yellow_circle:| | p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `s3-browser-cloudfront#22`_ As a data user, I want to view ODR S3 bucket with S3 browser app                            | |:yellow_circle:| | p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -1102,27 +1102,27 @@ Bugs
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
-| `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
+| `validate#969`_ Slow performance with all content and product validation turned off                      | |:blue_circle:|   | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#915`_ `context_ref_mismatch` check only executes when -R pds4.label                            | |:yellow_circle:| | s.low                     |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#950`_ `--disable-context-mismatch-warnings` only works for rule `pds4.label`                   | |:yellow_circle:| | s.high                    |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
+| `validate#936`_ Validate does not show correct filename for PDF/A failures when validating a directory   | |:blue_circle:|   | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#826`_ validate is slow or runs out of memory when validating a bundle                          | |:blue_circle:|   | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#923`_ Configuration file parser does not reject incorrect options                              | |:blue_circle:|   | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#902`_ Validate error during JPEG content validation                                            | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#823`_ Validate V.3.4.1 reports file read errors on products which read correctly under V.3.2.0 | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#915`_ `context_ref_mismatch` check only executes when -R pds4.label                            | |:yellow_circle:| | s.low                     |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#919`_ Validate throws an error when UnsignedBitString has 61 bits                              | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#950`_ `--disable-context-mismatch-warnings` only works for rule `pds4.label`                   | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#822`_ Check for unlabeled files no longer works                                                | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#936`_ Validate does not show correct filename for PDF/A failures when validating a directory   | |:blue_circle:|   | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#969`_ Slow performance with all content and product validation turned off                      | |:blue_circle:|   | s.medium                  |
+| `validate#933`_ Missing operation documentation                                                          | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -1253,13 +1253,13 @@ as follows:
 .. _data-upload-manager#84: https://github.com/NASA-PDS/data-upload-manager/issues/84
 .. _data-upload-manager#92: https://github.com/NASA-PDS/data-upload-manager/issues/92
 .. _data-upload-manager#98: https://github.com/NASA-PDS/data-upload-manager/issues/98
-.. _data-upload-manager#110: https://github.com/NASA-PDS/data-upload-manager/issues/110
 .. _data-upload-manager#116: https://github.com/NASA-PDS/data-upload-manager/issues/116
-.. _data-upload-manager#136: https://github.com/NASA-PDS/data-upload-manager/issues/136
+.. _data-upload-manager#110: https://github.com/NASA-PDS/data-upload-manager/issues/110
 .. _data-upload-manager#135: https://github.com/NASA-PDS/data-upload-manager/issues/135
-.. _deep-archive#178: https://github.com/NASA-PDS/deep-archive/issues/178
-.. _deep-archive#171: https://github.com/NASA-PDS/deep-archive/issues/171
+.. _data-upload-manager#136: https://github.com/NASA-PDS/data-upload-manager/issues/136
 .. _deep-archive#186: https://github.com/NASA-PDS/deep-archive/issues/186
+.. _deep-archive#171: https://github.com/NASA-PDS/deep-archive/issues/171
+.. _deep-archive#178: https://github.com/NASA-PDS/deep-archive/issues/178
 .. _deep-archive#162: https://github.com/NASA-PDS/deep-archive/issues/162
 .. _doi-service#430: https://github.com/NASA-PDS/doi-service/issues/430
 .. _EdWG#15: https://github.com/NASA-PDS/EdWG/issues/15
@@ -1274,19 +1274,19 @@ as follows:
 .. _pds4-information-model#701: https://github.com/NASA-PDS/pds4-information-model/issues/701
 .. _pds4-information-model#728: https://github.com/NASA-PDS/pds4-information-model/issues/728
 .. _pds4-information-model#770: https://github.com/NASA-PDS/pds4-information-model/issues/770
+.. _pds4-information-model#776: https://github.com/NASA-PDS/pds4-information-model/issues/776
 .. _pds4-information-model#801: https://github.com/NASA-PDS/pds4-information-model/issues/801
 .. _pds4-information-model#797: https://github.com/NASA-PDS/pds4-information-model/issues/797
-.. _pds4-information-model#776: https://github.com/NASA-PDS/pds4-information-model/issues/776
+.. _pds4-information-model#765: https://github.com/NASA-PDS/pds4-information-model/issues/765
 .. _pds4-information-model#795: https://github.com/NASA-PDS/pds4-information-model/issues/795
 .. _pds4-information-model#765: https://github.com/NASA-PDS/pds4-information-model/issues/765
 .. _pds4-information-model#794: https://github.com/NASA-PDS/pds4-information-model/issues/794
-.. _pds4-information-model#765: https://github.com/NASA-PDS/pds4-information-model/issues/765
 .. _pds4-jparser#142: https://github.com/NASA-PDS/pds4-jparser/issues/142
 .. _planetary-data-cloud#73: https://github.com/NASA-PDS/planetary-data-cloud/issues/73
 .. _planetary-data-cloud#108: https://github.com/NASA-PDS/planetary-data-cloud/issues/108
+.. _planetarydata.org#24: https://github.com/NASA-PDS/planetarydata.org/issues/24
 .. _planetarydata.org#23: https://github.com/NASA-PDS/planetarydata.org/issues/23
 .. _planetarydata.org#25: https://github.com/NASA-PDS/planetarydata.org/issues/25
-.. _planetarydata.org#24: https://github.com/NASA-PDS/planetarydata.org/issues/24
 .. _portal-tasks#96: https://github.com/NASA-PDS/portal-tasks/issues/96
 .. _portal-tasks#95: https://github.com/NASA-PDS/portal-tasks/issues/95
 .. _portal-tasks#97: https://github.com/NASA-PDS/portal-tasks/issues/97
@@ -1303,26 +1303,26 @@ as follows:
 .. _registry-api#522: https://github.com/NASA-PDS/registry-api/issues/522
 .. _registry-api#431: https://github.com/NASA-PDS/registry-api/issues/431
 .. _registry-api#520: https://github.com/NASA-PDS/registry-api/issues/520
-.. _registry-api#469: https://github.com/NASA-PDS/registry-api/issues/469
-.. _registry-api#488: https://github.com/NASA-PDS/registry-api/issues/488
-.. _registry-api#492: https://github.com/NASA-PDS/registry-api/issues/492
+.. _registry-api#486: https://github.com/NASA-PDS/registry-api/issues/486
+.. _registry-api#436: https://github.com/NASA-PDS/registry-api/issues/436
+.. _registry-api#511: https://github.com/NASA-PDS/registry-api/issues/511
+.. _registry-api#516: https://github.com/NASA-PDS/registry-api/issues/516
+.. _registry-api#506: https://github.com/NASA-PDS/registry-api/issues/506
+.. _registry-api#426: https://github.com/NASA-PDS/registry-api/issues/426
 .. _registry-api#497: https://github.com/NASA-PDS/registry-api/issues/497
-.. _registry-api#485: https://github.com/NASA-PDS/registry-api/issues/485
-.. _registry-api#484: https://github.com/NASA-PDS/registry-api/issues/484
+.. _registry-api#434: https://github.com/NASA-PDS/registry-api/issues/434
+.. _registry-api#490: https://github.com/NASA-PDS/registry-api/issues/490
+.. _registry-api#487: https://github.com/NASA-PDS/registry-api/issues/487
+.. _registry-api#469: https://github.com/NASA-PDS/registry-api/issues/469
 .. _registry-api#491: https://github.com/NASA-PDS/registry-api/issues/491
 .. _registry-api#493: https://github.com/NASA-PDS/registry-api/issues/493
-.. _registry-api#516: https://github.com/NASA-PDS/registry-api/issues/516
-.. _registry-api#511: https://github.com/NASA-PDS/registry-api/issues/511
-.. _registry-api#490: https://github.com/NASA-PDS/registry-api/issues/490
-.. _registry-api#426: https://github.com/NASA-PDS/registry-api/issues/426
-.. _registry-api#494: https://github.com/NASA-PDS/registry-api/issues/494
-.. _registry-api#434: https://github.com/NASA-PDS/registry-api/issues/434
-.. _registry-api#506: https://github.com/NASA-PDS/registry-api/issues/506
-.. _registry-api#487: https://github.com/NASA-PDS/registry-api/issues/487
-.. _registry-api#298: https://github.com/NASA-PDS/registry-api/issues/298
-.. _registry-api#486: https://github.com/NASA-PDS/registry-api/issues/486
 .. _registry-api#495: https://github.com/NASA-PDS/registry-api/issues/495
-.. _registry-api#436: https://github.com/NASA-PDS/registry-api/issues/436
+.. _registry-api#484: https://github.com/NASA-PDS/registry-api/issues/484
+.. _registry-api#488: https://github.com/NASA-PDS/registry-api/issues/488
+.. _registry-api#494: https://github.com/NASA-PDS/registry-api/issues/494
+.. _registry-api#485: https://github.com/NASA-PDS/registry-api/issues/485
+.. _registry-api#298: https://github.com/NASA-PDS/registry-api/issues/298
+.. _registry-api#492: https://github.com/NASA-PDS/registry-api/issues/492
 .. _registry-client#3: https://github.com/NASA-PDS/registry-client/issues/3
 .. _registry-common#53: https://github.com/NASA-PDS/registry-common/issues/53
 .. _registry-common#50: https://github.com/NASA-PDS/registry-common/issues/50
@@ -1333,8 +1333,8 @@ as follows:
 .. _registry-mgr#69: https://github.com/NASA-PDS/registry-mgr/issues/69
 .. _roundup-action#138: https://github.com/NASA-PDS/roundup-action/issues/138
 .. _roundup-action#139: https://github.com/NASA-PDS/roundup-action/issues/139
-.. _s3-browser-cloudfront#22: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/22
 .. _s3-browser-cloudfront#68: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/68
+.. _s3-browser-cloudfront#22: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/22
 .. _search-ui-legacy#30: https://github.com/NASA-PDS/search-ui-legacy/issues/30
 .. _search-ui-legacy#35: https://github.com/NASA-PDS/search-ui-legacy/issues/35
 .. _software-issues-repo#76: https://github.com/NASA-PDS/software-issues-repo/issues/76
@@ -1354,17 +1354,17 @@ as follows:
 .. _validate#860: https://github.com/NASA-PDS/validate/issues/860
 .. _validate#857: https://github.com/NASA-PDS/validate/issues/857
 .. _validate#861: https://github.com/NASA-PDS/validate/issues/861
-.. _validate#823: https://github.com/NASA-PDS/validate/issues/823
-.. _validate#915: https://github.com/NASA-PDS/validate/issues/915
-.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
-.. _validate#919: https://github.com/NASA-PDS/validate/issues/919
-.. _validate#950: https://github.com/NASA-PDS/validate/issues/950
-.. _validate#933: https://github.com/NASA-PDS/validate/issues/933
+.. _validate#969: https://github.com/NASA-PDS/validate/issues/969
+.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
 .. _validate#826: https://github.com/NASA-PDS/validate/issues/826
 .. _validate#923: https://github.com/NASA-PDS/validate/issues/923
+.. _validate#902: https://github.com/NASA-PDS/validate/issues/902
+.. _validate#823: https://github.com/NASA-PDS/validate/issues/823
+.. _validate#915: https://github.com/NASA-PDS/validate/issues/915
+.. _validate#919: https://github.com/NASA-PDS/validate/issues/919
+.. _validate#950: https://github.com/NASA-PDS/validate/issues/950
 .. _validate#822: https://github.com/NASA-PDS/validate/issues/822
-.. _validate#936: https://github.com/NASA-PDS/validate/issues/936
-.. _validate#969: https://github.com/NASA-PDS/validate/issues/969
+.. _validate#933: https://github.com/NASA-PDS/validate/issues/933
 .. _validate#824: https://github.com/NASA-PDS/validate/issues/824
 .. _web-analytics#30: https://github.com/NASA-PDS/web-analytics/issues/30
 .. _web-analytics#32: https://github.com/NASA-PDS/web-analytics/issues/32
