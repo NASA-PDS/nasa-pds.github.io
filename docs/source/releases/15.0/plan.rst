@@ -44,7 +44,7 @@ Key Dates
       - dLDD Integration and Test
       - dLDD Stewards
       - Auto-generated dLDDs should be reviews by dLDD Stewards, and final updates to dLDDs should be completed during this time.
-    * - 04/12/24 - 05/22/24
+    * - 10/24/24 - 11/14/24
       - Standards Documents Review Due
       - Document Review Team
       - Review updates to PDS4 standards documents.
