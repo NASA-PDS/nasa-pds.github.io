@@ -7,10 +7,15 @@ The software provided for the PDS System Build 15.0 are listed below and organiz
 
 - `Libraries and Clients`_
 
-- `Discipline Node Services`_
-
 - `Engineering Node Services`_
 
+
+..  toctree::
+    :glob:
+    :maxdepth: 1
+
+    Release Plan <plan>
+    Release Description Document <rdd>
 
 Standalone Tools
 ================
