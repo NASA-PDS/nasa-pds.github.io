@@ -151,21 +151,23 @@ Other Updates
 Bugs
 ++++
 
-+---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                                             | I&T Status        | Priority / Bug Severity   |
-+===================================================================================================+===================+===========================+
-| `harvest#186`_ New records harvested in the registry don't have the expected Node value           | |:yellow_circle:| | s.high                    |
-+---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#190`_ I want to update the OpenSearch schema whatever the number of fields to be updated | |:yellow_circle:| | s.critical                |
-+---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#208`_ Read time out errors occurring with big data uploads                               | |:blue_circle:|   | s.medium                  |
-+---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#206`_ Issues identified with uncaught throttling errors                                  | |:yellow_circle:| | s.high                    |
-+---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#197`_ Unknown date format used that could not be parsed by Harvest                       | |:yellow_circle:| | s.high                    |
-+---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#222`_ Issue with ALT LDD date format error                                               | |:blue_circle:|   | s.medium                  |
-+---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                          | I&T Status        | Priority / Bug Severity   |
++================================================================================================================+===================+===========================+
+| `harvest#186`_ New records harvested in the registry don't have the expected Node value                        | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#204`_ OpenSearch mapping conflict issue when trying to change a type (`[illegal_argument_exception]`) | |:yellow_circle:| | s.critical                |
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#197`_ Unknown date format used that could not be parsed by Harvest                                    | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#206`_ Issues identified with uncaught throttling errors                                               | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#208`_ Read time out errors occurring with big data uploads                                            | |:blue_circle:|   | s.medium                  |
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#190`_ I want to update the OpenSearch schema whatever the number of fields to be updated              | |:yellow_circle:| | s.critical                |
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#222`_ Issue with ALT LDD date format error                                                            | |:blue_circle:|   | s.medium                  |
++----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
 ++++++++++++
@@ -173,9 +175,9 @@ Requirements
 +-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                       | I&T Status        | Priority / Bug Severity   |
 +=============================================================================================================================+===================+===========================+
-| `harvest#187`_ As a user, I want to include my organization name in the harvest metadata (`ops:Harvest_Info.ops:node_name`) | |:yellow_circle:| | p.must-have               |
-+-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `harvest#199`_ As a user, I want harvest to exit with non 0 code when the arguments are not parsable                        | |:yellow_circle:| | p.should-have             |
++-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#187`_ As a user, I want to include my organization name in the harvest metadata (`ops:Harvest_Info.ops:node_name`) | |:yellow_circle:| | p.must-have               |
 +-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -184,9 +186,13 @@ Enhancements
 +-----------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                               | I&T Status      | Priority / Bug Severity   |
 +=====================================================================================================+=================+===========================+
-| `harvest#203`_ Add the date time in the log messages                                                | |:blue_circle:| | p.should-have             |
+| `harvest#205`_ Optimize LDD downloads also on errors                                                | |:blue_circle:| | p.must-have               |
 +-----------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `harvest#207`_ Update harvest to support batches with data volumes larger than AOSS allowable limit | |:blue_circle:| | p.must-have               |
++-----------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `harvest#203`_ Add the date time in the log messages                                                | |:blue_circle:| | p.should-have             |
++-----------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `harvest#223`_ Quiet Harvest noisy logs for Invalid cookie header                                   | |:blue_circle:| | unknown                   |
 +-----------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
@@ -285,25 +291,27 @@ Bugs
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
-| `pds4-information-model#846`_ Download links broken for lddtool for online documentation                 | |:yellow_circle:| | s.high                    |
+| `pds4-information-model#848`_ lddtool -v creates/overwrites output directory and files                   | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#834`_ emrsp namespaces are configured to be produced as https:                   | |:blue_circle:|   | s.high                    |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `pds4-information-model#848`_ lddtool -v creates/overwrites output directory and files                   | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#822`_ Tests fail when there are multiple tests with multiple schemas/schematrons | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#849`_ lddtool -h returns expected information twice and then error messages      | |:blue_circle:|   | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#846`_ Download links broken for lddtool for online documentation                 | |:blue_circle:|   | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
 ++++++++++++
 
-+------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                                    | I&T Status        | Priority / Bug Severity   |
-+==========================================================================================+===================+===========================+
-| `pds4-information-model#845`_ [namespace-registry] add new namespace `LCROSS`            | |:yellow_circle:| | p.must-have               |
-+------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `pds4-information-model#825`_ Add `Product_Native` test case for #795 back to test suite | |:blue_circle:|   | unknown                   |
-+------------------------------------------------------------------------------------------+-------------------+---------------------------+
++------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                    | I&T Status      | Priority / Bug Severity   |
++==========================================================================================+=================+===========================+
+| `pds4-information-model#825`_ Add `Product_Native` test case for #795 back to test suite | |:blue_circle:| | unknown                   |
++------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `pds4-information-model#845`_ [namespace-registry] add new namespace `LCROSS`            | |:blue_circle:| | p.must-have               |
++------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
 
@@ -324,7 +332,10 @@ Peppi
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
+`peppi#53`_ Prep for AGU Training Workshop
+++++++++++++++++++++++++++++++++++++++++++
+    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+    link in this section title for details.
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -334,23 +345,23 @@ Requirements
 +---------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                 | I&T Status        | Priority / Bug Severity   |
 +=======================================================================================+===================+===========================+
-| `peppi#64`_ As a user, I want to limit the number of fields returned                  | |:yellow_circle:| | p.should-have             |
+| `peppi#31`_ As a user, I want to search for products based upon a instrument LID      | |:yellow_circle:| | p.must-have               |
 +---------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `peppi#34`_ As a user, I want to search for bundle products only                      | |:yellow_circle:| | p.must-have               |
 +---------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `peppi#30`_ As a user, I want to search for products based upon a investigation LID   | |:yellow_circle:| | p.must-have               |
-+---------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `peppi#57`_ As a user, I want my query response as a Pandas DataFrame                 | |:yellow_circle:| | p.could-have              |
-+---------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `peppi#31`_ As a user, I want to search for products based upon a instrument LID      | |:yellow_circle:| | p.must-have               |
-+---------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `peppi#35`_ As a user, I want to filter on a specific processing level                | |:yellow_circle:| | p.must-have               |
 +---------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `peppi#33`_ As a user, I want to search for collection products only                  | |:yellow_circle:| | p.must-have               |
 +---------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `peppi#32`_ As a user, I want to search for observational products only               | |:yellow_circle:| | p.must-have               |
-+---------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `peppi#47`_ As a user, I want to see an online reference documentation of the library | |:yellow_circle:| | p.should-have             |
++---------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `peppi#35`_ As a user, I want to filter on a specific processing level                | |:yellow_circle:| | p.must-have               |
++---------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `peppi#64`_ As a user, I want to limit the number of fields returned                  | |:yellow_circle:| | p.should-have             |
++---------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `peppi#30`_ As a user, I want to search for products based upon a investigation LID   | |:yellow_circle:| | p.must-have               |
++---------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `peppi#32`_ As a user, I want to search for observational products only               | |:yellow_circle:| | p.must-have               |
 +---------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -403,9 +414,11 @@ Enhancements
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                                         | I&T Status        | Priority / Bug Severity   |
 +===============================================================================================================================================================+===================+===========================+
-| `planetary-data-cloud#121`_ Phase 1: PDS-EN to provide codeql scan for SBN to incorporate.  Review any questions at next SBN cloud migration tagup (11/22/24) | |:yellow_circle:| | p.must-have               |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `planetary-data-cloud#128`_ Setup Budgets and Reporting for all accounts                                                                                      | |:blue_circle:|   | unknown                   |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `planetary-data-cloud#122`_ Phase 1: PDS-EN to provide terraform templates for SBN to capture the current status of CATCH.                                    | |:yellow_circle:| | p.must-have               |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `planetary-data-cloud#121`_ Phase 1: PDS-EN to provide codeql scan for SBN to incorporate.  Review any questions at next SBN cloud migration tagup (11/22/24) | |:yellow_circle:| | p.must-have               |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -437,15 +450,17 @@ Bugs
 +-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                       | I&T Status        | Priority / Bug Severity   |
 +=============================================================================================================================+===================+===========================+
-| `portal-tasks#104`_ Tool Registry search does not work past initial query                                                   | |:yellow_circle:| | s.high                    |
-+-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `portal-tasks#102`_ tool registry search result count is incorrect                                                          | |:yellow_circle:| | s.medium                  |
-+-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `portal-tasks#107`_ Missing PDS4_IMG_1100.xsd                                                                               | |:yellow_circle:| | s.high                    |
+| `portal-tasks#103`_ `Browse and search` link broken on https://pds.nasa.gov/datastandards/dictionaries/index-missions.shtml | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `portal-tasks#106`_ Missing PDS4_MSN_SURFACE_1A10.xsd                                                                       | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `portal-tasks#103`_ `Browse and search` link broken on https://pds.nasa.gov/datastandards/dictionaries/index-missions.shtml | |:yellow_circle:| | s.medium                  |
+| `portal-tasks#107`_ Missing PDS4_IMG_1100.xsd                                                                               | |:yellow_circle:| | s.high                    |
++-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `portal-tasks#102`_ tool registry search result count is incorrect                                                          | |:yellow_circle:| | s.medium                  |
++-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `portal-tasks#109`_ Tool Registry doesn't work for text searches                                                            | |:blue_circle:|   | s.high                    |
++-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `portal-tasks#104`_ Tool Registry search does not work past initial query                                                   | |:yellow_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -488,17 +503,21 @@ Requirements
 +====================================================================================================================+===================+===========================+
 | `portal-wp#87`_ As a user, I want collection descriptions to default to `pds:Citation_Information.pds:description` | |:yellow_circle:| | p.must-have               |
 +--------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `portal-wp#119`_ As a user, I want to select 1 or more filters to facet search results                             | |:blue_circle:|   | p.must-have               |
++--------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
 ++++++++++++
 
-+------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                            | I&T Status      | Priority / Bug Severity   |
-+==================================================================+=================+===========================+
-| `portal-wp#107`_ Test instructions for running WST Drupal Site   | |:blue_circle:| | unknown                   |
-+------------------------------------------------------------------+-----------------+---------------------------+
-| `portal-wp#97`_ Add State to Homepage for what has been selected | |:blue_circle:| | p.must-have               |
-+------------------------------------------------------------------+-----------------+---------------------------+
++------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                        | I&T Status      | Priority / Bug Severity   |
++==============================================================================+=================+===========================+
+| `portal-wp#107`_ Test instructions for running WST Drupal Site               | |:blue_circle:| | unknown                   |
++------------------------------------------------------------------------------+-----------------+---------------------------+
+| `portal-wp#129`_ Update facets and search results to enable sorting by title | |:blue_circle:| | unknown                   |
++------------------------------------------------------------------------------+-----------------+---------------------------+
+| `portal-wp#97`_ Add State to Homepage for what has been selected             | |:blue_circle:| | p.must-have               |
++------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
 
@@ -593,11 +612,15 @@ Bugs
 +-----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                           | I&T Status        | Priority / Bug Severity   |
 +=================================================================================================================+===================+===========================+
-| `registry-legacy-solr#147`_ `page_type` not working for context products                                        | |:blue_circle:|   | s.critical                |
+| `registry-legacy-solr#176`_ SIP_Deep_Archive products showing up in search results                              | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-legacy-solr#154`_ viewDocument.jsp has no links for SEARCH/ACCESS DATA                                | |:yellow_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-legacy-solr#163`_ Cassini ISS Users Guide returns "No Document Information found in the registry" msg | |:yellow_circle:| | s.high                    |
++-----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-legacy-solr#147`_ `page_type` not working for context products                                        | |:blue_circle:|   | s.critical                |
++-----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-legacy-solr#174`_ Harvest ignoring secondary members of collections managed by EN                     | |:yellow_circle:| | unknown                   |
 +-----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-legacy-solr#156`_ viewDataset.jsp shows no links for Search/Access Data                               | |:yellow_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
@@ -610,6 +633,15 @@ Requirements
 +=========================================================================================================================+===================+===========================+
 | `registry-legacy-solr#93`_ As a user, I want to provide search/access links using the hsk.cat files within the data set | |:yellow_circle:| | p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+Enhancements
+++++++++++++
+
++---------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                       | I&T Status      | Priority / Bug Severity   |
++=============================================================================================+=================+===========================+
+| `registry-legacy-solr#158`_ Add single-value title and context name field to enable sorting | |:blue_circle:| | p.must-have               |
++---------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
 
@@ -637,11 +669,28 @@ Other Updates
 Bugs
 ++++
 
-+-----------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                           | I&T Status        | Priority / Bug Severity   |
-+=================================================================+===================+===========================+
-| `registry-mgr#104`_ Update inline help to match latest features | |:yellow_circle:| | s.high                    |
-+-----------------------------------------------------------------+-------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                  | I&T Status        | Priority / Bug Severity   |
++========================================================================================================================+===================+===========================+
+| `registry-mgr#111`_ registry-mgr return ERROR null                                                                     | |:yellow_circle:| | s.high                    |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-mgr#104`_ Update inline help to match latest features                                                        | |:yellow_circle:| | s.high                    |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-mgr#121`_ `Missing required property 'FieldValue.<variant value>'` error when running with `list-dd` command | |:yellow_circle:| | s.high                    |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-mgr#109`_ archive status does not change for all bundle members                                              | |:yellow_circle:| | s.high                    |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+Requirements
+++++++++++++
+
++--------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                                      | I&T Status        | Priority / Bug Severity   |
++============================================================================================================================================+===================+===========================+
+| `registry-mgr#112`_ As a user, I want to update a bundle and associated collections' and products' archive status given a bundle lidvid    | |:yellow_circle:| | p.should-have             |
++--------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-mgr#113`_ As a user, I want to change the archive status for a collection and it's associated products given a collection lidvid | |:yellow_circle:| | p.should-have             |
++--------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -733,13 +782,13 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                            | I&T Status        | Priority / Bug Severity   |
 +==================================================================================================================+===================+===========================+
-| `validate#1066`_ Telescopes missing from registry context products config                                        | |:yellow_circle:| | s.high                    |
-+------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#979`_ OutOfMemoryError when NASA validate v3.5.2 is executed through a library for a batch of products | |:yellow_circle:| | s.medium                  |
-+------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1028`_ validate incorrectly disallows Encoded_Native/encoding_standard_id = 'SEED 2.4'                 | |:yellow_circle:| | s.medium                  |
+| `validate#979`_ OutOfMemoryError when NASA validate v3.5.2 is executed through a library for a batch of products | |:blue_circle:|   | s.medium                  |
 +------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1008`_ The PDF verification / VeraPDF component of Validate seems to error on Windows paths            | |:yellow_circle:| | s.medium                  |
++------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1066`_ Telescopes missing from registry context products config                                        | |:yellow_circle:| | s.high                    |
++------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1028`_ validate incorrectly disallows Encoded_Native/encoding_standard_id = 'SEED 2.4'                 | |:yellow_circle:| | s.medium                  |
 +------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -843,62 +892,79 @@ as follows:
 .. _ds-view#37: https://github.com/NASA-PDS/ds-view/issues/37
 .. _ds-view#39: https://github.com/NASA-PDS/ds-view/issues/39
 .. _harvest#186: https://github.com/NASA-PDS/harvest/issues/186
-.. _harvest#190: https://github.com/NASA-PDS/harvest/issues/190
-.. _harvest#208: https://github.com/NASA-PDS/harvest/issues/208
-.. _harvest#206: https://github.com/NASA-PDS/harvest/issues/206
+.. _harvest#204: https://github.com/NASA-PDS/harvest/issues/204
 .. _harvest#197: https://github.com/NASA-PDS/harvest/issues/197
+.. _harvest#206: https://github.com/NASA-PDS/harvest/issues/206
+.. _harvest#208: https://github.com/NASA-PDS/harvest/issues/208
+.. _harvest#190: https://github.com/NASA-PDS/harvest/issues/190
 .. _harvest#222: https://github.com/NASA-PDS/harvest/issues/222
-.. _harvest#187: https://github.com/NASA-PDS/harvest/issues/187
 .. _harvest#199: https://github.com/NASA-PDS/harvest/issues/199
-.. _harvest#203: https://github.com/NASA-PDS/harvest/issues/203
+.. _harvest#187: https://github.com/NASA-PDS/harvest/issues/187
+.. _harvest#205: https://github.com/NASA-PDS/harvest/issues/205
 .. _harvest#207: https://github.com/NASA-PDS/harvest/issues/207
+.. _harvest#203: https://github.com/NASA-PDS/harvest/issues/203
+.. _harvest#223: https://github.com/NASA-PDS/harvest/issues/223
 .. _nucleus#130: https://github.com/NASA-PDS/nucleus/issues/130
 .. _nucleus#121: https://github.com/NASA-PDS/nucleus/issues/121
 .. _operations#551: https://github.com/NASA-PDS/operations/issues/551
-.. _pds4-information-model#846: https://github.com/NASA-PDS/pds4-information-model/issues/846
-.. _pds4-information-model#834: https://github.com/NASA-PDS/pds4-information-model/issues/834
 .. _pds4-information-model#848: https://github.com/NASA-PDS/pds4-information-model/issues/848
+.. _pds4-information-model#834: https://github.com/NASA-PDS/pds4-information-model/issues/834
 .. _pds4-information-model#822: https://github.com/NASA-PDS/pds4-information-model/issues/822
-.. _pds4-information-model#845: https://github.com/NASA-PDS/pds4-information-model/issues/845
+.. _pds4-information-model#849: https://github.com/NASA-PDS/pds4-information-model/issues/849
+.. _pds4-information-model#846: https://github.com/NASA-PDS/pds4-information-model/issues/846
 .. _pds4-information-model#825: https://github.com/NASA-PDS/pds4-information-model/issues/825
-.. _peppi#64: https://github.com/NASA-PDS/peppi/issues/64
-.. _peppi#34: https://github.com/NASA-PDS/peppi/issues/34
-.. _peppi#30: https://github.com/NASA-PDS/peppi/issues/30
-.. _peppi#57: https://github.com/NASA-PDS/peppi/issues/57
+.. _pds4-information-model#845: https://github.com/NASA-PDS/pds4-information-model/issues/845
+.. _peppi#53: https://github.com/NASA-PDS/peppi/issues/53
 .. _peppi#31: https://github.com/NASA-PDS/peppi/issues/31
-.. _peppi#35: https://github.com/NASA-PDS/peppi/issues/35
+.. _peppi#34: https://github.com/NASA-PDS/peppi/issues/34
+.. _peppi#57: https://github.com/NASA-PDS/peppi/issues/57
 .. _peppi#33: https://github.com/NASA-PDS/peppi/issues/33
-.. _peppi#32: https://github.com/NASA-PDS/peppi/issues/32
 .. _peppi#47: https://github.com/NASA-PDS/peppi/issues/47
+.. _peppi#35: https://github.com/NASA-PDS/peppi/issues/35
+.. _peppi#64: https://github.com/NASA-PDS/peppi/issues/64
+.. _peppi#30: https://github.com/NASA-PDS/peppi/issues/30
+.. _peppi#32: https://github.com/NASA-PDS/peppi/issues/32
 .. _planetary-data-cloud#80: https://github.com/NASA-PDS/planetary-data-cloud/issues/80
 .. _planetary-data-cloud#125: https://github.com/NASA-PDS/planetary-data-cloud/issues/125
 .. _planetary-data-cloud#75: https://github.com/NASA-PDS/planetary-data-cloud/issues/75
-.. _planetary-data-cloud#121: https://github.com/NASA-PDS/planetary-data-cloud/issues/121
 .. _planetary-data-cloud#128: https://github.com/NASA-PDS/planetary-data-cloud/issues/128
-.. _portal-tasks#104: https://github.com/NASA-PDS/portal-tasks/issues/104
-.. _portal-tasks#102: https://github.com/NASA-PDS/portal-tasks/issues/102
-.. _portal-tasks#107: https://github.com/NASA-PDS/portal-tasks/issues/107
-.. _portal-tasks#106: https://github.com/NASA-PDS/portal-tasks/issues/106
+.. _planetary-data-cloud#122: https://github.com/NASA-PDS/planetary-data-cloud/issues/122
+.. _planetary-data-cloud#121: https://github.com/NASA-PDS/planetary-data-cloud/issues/121
 .. _portal-tasks#103: https://github.com/NASA-PDS/portal-tasks/issues/103
+.. _portal-tasks#106: https://github.com/NASA-PDS/portal-tasks/issues/106
+.. _portal-tasks#107: https://github.com/NASA-PDS/portal-tasks/issues/107
+.. _portal-tasks#102: https://github.com/NASA-PDS/portal-tasks/issues/102
+.. _portal-tasks#109: https://github.com/NASA-PDS/portal-tasks/issues/109
+.. _portal-tasks#104: https://github.com/NASA-PDS/portal-tasks/issues/104
 .. _portal-wp#72: https://github.com/NASA-PDS/portal-wp/issues/72
 .. _portal-wp#87: https://github.com/NASA-PDS/portal-wp/issues/87
+.. _portal-wp#119: https://github.com/NASA-PDS/portal-wp/issues/119
 .. _portal-wp#107: https://github.com/NASA-PDS/portal-wp/issues/107
+.. _portal-wp#129: https://github.com/NASA-PDS/portal-wp/issues/129
 .. _portal-wp#97: https://github.com/NASA-PDS/portal-wp/issues/97
 .. _registry#331: https://github.com/NASA-PDS/registry/issues/331
 .. _registry-common#83: https://github.com/NASA-PDS/registry-common/issues/83
-.. _registry-legacy-solr#147: https://github.com/NASA-PDS/registry-legacy-solr/issues/147
+.. _registry-legacy-solr#176: https://github.com/NASA-PDS/registry-legacy-solr/issues/176
 .. _registry-legacy-solr#154: https://github.com/NASA-PDS/registry-legacy-solr/issues/154
 .. _registry-legacy-solr#163: https://github.com/NASA-PDS/registry-legacy-solr/issues/163
+.. _registry-legacy-solr#147: https://github.com/NASA-PDS/registry-legacy-solr/issues/147
+.. _registry-legacy-solr#174: https://github.com/NASA-PDS/registry-legacy-solr/issues/174
 .. _registry-legacy-solr#156: https://github.com/NASA-PDS/registry-legacy-solr/issues/156
 .. _registry-legacy-solr#93: https://github.com/NASA-PDS/registry-legacy-solr/issues/93
+.. _registry-legacy-solr#158: https://github.com/NASA-PDS/registry-legacy-solr/issues/158
+.. _registry-mgr#111: https://github.com/NASA-PDS/registry-mgr/issues/111
 .. _registry-mgr#104: https://github.com/NASA-PDS/registry-mgr/issues/104
+.. _registry-mgr#121: https://github.com/NASA-PDS/registry-mgr/issues/121
+.. _registry-mgr#109: https://github.com/NASA-PDS/registry-mgr/issues/109
+.. _registry-mgr#112: https://github.com/NASA-PDS/registry-mgr/issues/112
+.. _registry-mgr#113: https://github.com/NASA-PDS/registry-mgr/issues/113
 .. _search-ui-legacy#40: https://github.com/NASA-PDS/search-ui-legacy/issues/40
 .. _system-i-n-t#54: https://github.com/NASA-PDS/system-i-n-t/issues/54
 .. _system-i-n-t#55: https://github.com/NASA-PDS/system-i-n-t/issues/55
-.. _validate#1066: https://github.com/NASA-PDS/validate/issues/1066
 .. _validate#979: https://github.com/NASA-PDS/validate/issues/979
-.. _validate#1028: https://github.com/NASA-PDS/validate/issues/1028
 .. _validate#1008: https://github.com/NASA-PDS/validate/issues/1008
+.. _validate#1066: https://github.com/NASA-PDS/validate/issues/1066
+.. _validate#1028: https://github.com/NASA-PDS/validate/issues/1028
 .. _validate#992: https://github.com/NASA-PDS/validate/issues/992
 .. _web-modernization#239: https://github.com/NASA-PDS/web-modernization/issues/239
 .. _Software Release Summary (B15.1): https://nasa-pds.github.io/releases/15.1/index.html
