@@ -4,9 +4,7 @@ Upcoming
     :glob:
     :maxdepth: 1
 
-    Latest In-Dev Software, (15.1-SNAPSHOT) <15.1-SNAPSHOT/index>
-    Latest In-Dev Software RDD, (15.1) <15.1/rdd>
-    Near-Term Plans (15.1) <15.1/plan>
+    Latest In-Dev Software RDD, (16.0) <16.0/rdd>
 
 Past Releases
 =============
@@ -25,6 +23,7 @@ Past Releases
     14.0 <14.0/index>
     14.1 <14.1/index>
     15.0 <15.0/index>
+    15.1 <15.1/index>
 
 
 
