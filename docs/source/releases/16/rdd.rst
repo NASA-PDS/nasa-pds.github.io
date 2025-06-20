@@ -45,6 +45,38 @@ testing:
 
 --------
 
+Data-upload-manager
+-------------------
+*Data Upload Manager (DUM) component for managing the interface for data uploads to the Planetary Data Cloud from Data Providers and PDS Nodes.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/data-upload-manager>`_
+     - `Github Repo <https://github.com/NASA-PDS/data-upload-manager>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/data-upload-manager/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/data-upload-manager/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/data-upload-manager/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/data-upload-manager/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Requirements
+++++++++++++
+
++------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                        | I&T Status        | Priority / Bug Severity   |
++==============================================================================+===================+===========================+
+| `data-upload-manager#221`_ As a user, I want to support upload of files >5GB | |:yellow_circle:| | p.must-have               |
++------------------------------------------------------------------------------+-------------------+---------------------------+
+
+--------
+
 Deep-archive
 ------------
 *PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators*
@@ -375,9 +407,9 @@ Requirements
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                               | I&T Status        | Priority / Bug Severity   |
 +=====================================================================================================+===================+===========================+
-| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
-+-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
++-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -464,6 +496,7 @@ as follows:
 - `PDS DOI Service Requirements and Design Document (SRD/SDD)`_
 
 .. _plan B16: https://nasa-pds.github.io/releases/16/plan.html
+.. _data-upload-manager#221: https://github.com/NASA-PDS/data-upload-manager/issues/221
 .. _deep-archive#204: https://github.com/NASA-PDS/deep-archive/issues/204
 .. _deep-archive#157: https://github.com/NASA-PDS/deep-archive/issues/157
 .. _doi-service#456: https://github.com/NASA-PDS/doi-service/issues/456
@@ -480,8 +513,8 @@ as follows:
 .. _registry-sweepers#164: https://github.com/NASA-PDS/registry-sweepers/issues/164
 .. _validate#1184: https://github.com/NASA-PDS/validate/issues/1184
 .. _validate#967: https://github.com/NASA-PDS/validate/issues/967
-.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
+.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _web-modernization#257: https://github.com/NASA-PDS/web-modernization/issues/257
 .. _Software Release Summary (B16): https://nasa-pds.github.io/releases/16/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
