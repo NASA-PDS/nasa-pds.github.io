@@ -4,8 +4,8 @@ Upcoming
     :glob:
     :maxdepth: 1
 
-    Latest In-Dev Software RDD, (16.0) <16.0/rdd>
-    Near-Term Plans (16.0) <16.0/plan>
+    Latest In-Dev Software RDD, (16) <16/rdd>
+    Near-Term Plans (16) <16/plan>
 
 Past Releases
 =============
