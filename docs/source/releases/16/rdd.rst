@@ -443,9 +443,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1276`_ `--strict-field-checks` not working as expected                                        | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1234`_ validate does not raise a warning when a table has more records than label says it has | |:yellow_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1234`_ validate does not raise a warning when a table has more records than label says it has | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -454,11 +454,11 @@ Requirements
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                               | I&T Status        | Priority / Bug Severity   |
 +=====================================================================================================+===================+===========================+
-| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
+| `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                     | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                     | |:yellow_circle:| | p.should-have             |
+| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -565,11 +565,11 @@ as follows:
 .. _validate#1184: https://github.com/NASA-PDS/validate/issues/1184
 .. _validate#967: https://github.com/NASA-PDS/validate/issues/967
 .. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
-.. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
 .. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
-.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
-.. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
+.. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
 .. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
+.. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
+.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _web-modernization#257: https://github.com/NASA-PDS/web-modernization/issues/257
 .. _Software Release Summary (B16): https://nasa-pds.github.io/releases/16/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
