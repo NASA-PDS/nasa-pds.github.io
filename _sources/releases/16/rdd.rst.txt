@@ -113,11 +113,13 @@ Bugs
 Requirements
 ++++++++++++
 
-+-------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                               | I&T Status        | Priority / Bug Severity   |
-+=====================================================================================+===================+===========================+
-| `deep-archive#157`_ As a user, I want deep archive to support LBLX label extensions | |:yellow_circle:| | p.should-have             |
-+-------------------------------------------------------------------------------------+-------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
++==========================================================================================================+===================+===========================+
+| `deep-archive#136`_ As a user, I want to know that the software is still executing on long running jobs. | |:blue_circle:|   | p.could-have              |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `deep-archive#157`_ As a user, I want deep archive to support LBLX label extensions                      | |:yellow_circle:| | p.should-have             |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -243,6 +245,30 @@ Planned Updates
 
 --------
 
+Pds4-information-model
+----------------------
+*The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/pds4-information-model/>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds4-information-model>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds4-information-model/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/pds4-information-model/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds4-information-model/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds4-information-model/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+`pds4-information-model#652`_ B14.0 LDDTool/IMTool Code Refactoring
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+    link in this section title for details.
+
+--------
+
 Planetary-data-cloud
 --------------------
 *PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.*
@@ -265,8 +291,22 @@ Planned Updates
     No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
     link in this section title for details.
 
+`planetary-data-cloud#165`_ Define PDC Assumed User Roles
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+    link in this section title for details.
+
 Other Updates
 ~~~~~~~~~~~~~
+Bugs
+++++
+
++---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                   | I&T Status        | Priority / Bug Severity   |
++=========================================================================================================+===================+===========================+
+| `planetary-data-cloud#171`_ Cloudfront caching of API requests causing confusion with user expectations | |:yellow_circle:| | s.high                    |
++---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
 Requirements
 ++++++++++++
 
@@ -417,6 +457,11 @@ Planned Updates
     No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
     link in this section title for details.
 
+`software-issues-repo#128`_ Upgrade Java Repos to use Maven Central Portal from OSSRH
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+    link in this section title for details.
+
 Other Updates
 ~~~~~~~~~~~~~
 Enhancements
@@ -462,11 +507,11 @@ Bugs
 +=========================================================================================================+===================+===========================+
 | `validate#967`_ validate configuration includes context product names that do not match the products    | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1234`_ validate does not raise a warning when a table has more records than label says it has | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1276`_ `--strict-field-checks` not working as expected                                        | |:yellow_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -475,11 +520,11 @@ Requirements
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                               | I&T Status        | Priority / Bug Severity   |
 +=====================================================================================================+===================+===========================+
-| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
-+-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                     | |:yellow_circle:| | p.should-have             |
++-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -538,6 +583,16 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `web-modernization#257`_ Design Instrument Package Portal Pages
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+    link in this section title for details.
+
+`web-modernization#258`_ Design Learning Hub Page
++++++++++++++++++++++++++++++++++++++++++++++++++
+    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+    link in this section title for details.
+
+`web-modernization#259`_ Design-System Housekeeping
++++++++++++++++++++++++++++++++++++++++++++++++++++
     No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
     link in this section title for details.
 
@@ -604,6 +659,7 @@ as follows:
 .. _data-upload-manager#221: https://github.com/NASA-PDS/data-upload-manager/issues/221
 .. _deep-archive#204: https://github.com/NASA-PDS/deep-archive/issues/204
 .. _deep-archive#208: https://github.com/NASA-PDS/deep-archive/issues/208
+.. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
 .. _deep-archive#157: https://github.com/NASA-PDS/deep-archive/issues/157
 .. _doi-service#456: https://github.com/NASA-PDS/doi-service/issues/456
 .. _EdWG#86: https://github.com/NASA-PDS/EdWG/issues/86
@@ -611,7 +667,10 @@ as follows:
 .. _nucleus#131: https://github.com/NASA-PDS/nucleus/issues/131
 .. _nucleus#142: https://github.com/NASA-PDS/nucleus/issues/142
 .. _nucleus#149: https://github.com/NASA-PDS/nucleus/issues/149
+.. _pds4-information-model#652: https://github.com/NASA-PDS/pds4-information-model/issues/652
 .. _planetary-data-cloud#139: https://github.com/NASA-PDS/planetary-data-cloud/issues/139
+.. _planetary-data-cloud#165: https://github.com/NASA-PDS/planetary-data-cloud/issues/165
+.. _planetary-data-cloud#171: https://github.com/NASA-PDS/planetary-data-cloud/issues/171
 .. _planetary-data-cloud#153: https://github.com/NASA-PDS/planetary-data-cloud/issues/153
 .. _registry#404: https://github.com/NASA-PDS/registry/issues/404
 .. _registry#396: https://github.com/NASA-PDS/registry/issues/396
@@ -620,18 +679,21 @@ as follows:
 .. _registry-api#638: https://github.com/NASA-PDS/registry-api/issues/638
 .. _registry-sweepers#164: https://github.com/NASA-PDS/registry-sweepers/issues/164
 .. _software-issues-repo#125: https://github.com/NASA-PDS/software-issues-repo/issues/125
+.. _software-issues-repo#128: https://github.com/NASA-PDS/software-issues-repo/issues/128
 .. _software-issues-repo#113: https://github.com/NASA-PDS/software-issues-repo/issues/113
 .. _validate#1184: https://github.com/NASA-PDS/validate/issues/1184
 .. _validate#967: https://github.com/NASA-PDS/validate/issues/967
+.. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
 .. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
 .. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
-.. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
-.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
 .. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
+.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _web-analytics#57: https://github.com/NASA-PDS/web-analytics/issues/57
 .. _web-analytics#51: https://github.com/NASA-PDS/web-analytics/issues/51
 .. _web-modernization#257: https://github.com/NASA-PDS/web-modernization/issues/257
+.. _web-modernization#258: https://github.com/NASA-PDS/web-modernization/issues/258
+.. _web-modernization#259: https://github.com/NASA-PDS/web-modernization/issues/259
 .. _Software Release Summary (B16): https://nasa-pds.github.io/releases/16/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
