@@ -116,9 +116,9 @@ Requirements
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
-| `deep-archive#136`_ As a user, I want to know that the software is still executing on long running jobs. | |:blue_circle:|   | p.could-have              |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `deep-archive#157`_ As a user, I want deep archive to support LBLX label extensions                      | |:yellow_circle:| | p.should-have             |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `deep-archive#136`_ As a user, I want to know that the software is still executing on long running jobs. | |:blue_circle:|   | p.could-have              |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -147,11 +147,13 @@ Other Updates
 Bugs
 ++++
 
-+----------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                    | I&T Status        | Priority / Bug Severity   |
-+==========================================================+===================+===========================+
-| `doi-service#456`_ Large majority of units tests failing | |:yellow_circle:| | s.high                    |
-+----------------------------------------------------------+-------------------+---------------------------+
++---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                             | I&T Status        | Priority / Bug Severity   |
++===================================================================================================+===================+===========================+
+| `doi-service#455`_ SBN DOIs contain unexpected metadata that is breaking our database load script | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#456`_ Large majority of units tests failing                                          | |:yellow_circle:| | s.high                    |
++---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -203,11 +205,13 @@ Other Updates
 Bugs
 ++++
 
-+------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                  | I&T Status        | Priority / Bug Severity   |
-+========================================================================+===================+===========================+
-| `harvest#239`_ Harvest failing due to AOSS OCU limits without retrying | |:yellow_circle:| | s.high                    |
-+------------------------------------------------------------------------+-------------------+---------------------------+
++--------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                    | I&T Status        | Priority / Bug Severity   |
++==========================================================================+===================+===========================+
+| `harvest#239`_ Harvest failing due to AOSS OCU limits without retrying   | |:yellow_circle:| | s.high                    |
++--------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#247`_ Error `FIPS mode: only SunJSSE TrustManagers may be used` | |:yellow_circle:| | s.high                    |
++--------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -242,6 +246,17 @@ Planned Updates
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
     link in this section title for details.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++-------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                             | I&T Status      | Priority / Bug Severity   |
++===================================================================+=================+===========================+
+| `nucleus#159`_ Invalid creation of archive buckets with terraform | |:blue_circle:| | s.medium                  |
++-------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
 
@@ -505,13 +520,13 @@ Bugs
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                   | I&T Status        | Priority / Bug Severity   |
 +=========================================================================================================+===================+===========================+
-| `validate#967`_ validate configuration includes context product names that do not match the products    | |:yellow_circle:| | s.medium                  |
+| `validate#1276`_ `--strict-field-checks` not working as expected                                        | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
+| `validate#967`_ validate configuration includes context product names that do not match the products    | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1234`_ validate does not raise a warning when a table has more records than label says it has | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1276`_ `--strict-field-checks` not working as expected                                        | |:yellow_circle:| | s.medium                  |
+| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -522,9 +537,9 @@ Requirements
 +=====================================================================================================+===================+===========================+
 | `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                     | |:yellow_circle:| | p.should-have             |
-+-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
++-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                     | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -659,14 +674,17 @@ as follows:
 .. _data-upload-manager#221: https://github.com/NASA-PDS/data-upload-manager/issues/221
 .. _deep-archive#204: https://github.com/NASA-PDS/deep-archive/issues/204
 .. _deep-archive#208: https://github.com/NASA-PDS/deep-archive/issues/208
-.. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
 .. _deep-archive#157: https://github.com/NASA-PDS/deep-archive/issues/157
+.. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
+.. _doi-service#455: https://github.com/NASA-PDS/doi-service/issues/455
 .. _doi-service#456: https://github.com/NASA-PDS/doi-service/issues/456
 .. _EdWG#86: https://github.com/NASA-PDS/EdWG/issues/86
 .. _harvest#239: https://github.com/NASA-PDS/harvest/issues/239
+.. _harvest#247: https://github.com/NASA-PDS/harvest/issues/247
 .. _nucleus#131: https://github.com/NASA-PDS/nucleus/issues/131
 .. _nucleus#142: https://github.com/NASA-PDS/nucleus/issues/142
 .. _nucleus#149: https://github.com/NASA-PDS/nucleus/issues/149
+.. _nucleus#159: https://github.com/NASA-PDS/nucleus/issues/159
 .. _pds4-information-model#652: https://github.com/NASA-PDS/pds4-information-model/issues/652
 .. _planetary-data-cloud#139: https://github.com/NASA-PDS/planetary-data-cloud/issues/139
 .. _planetary-data-cloud#165: https://github.com/NASA-PDS/planetary-data-cloud/issues/165
@@ -682,13 +700,13 @@ as follows:
 .. _software-issues-repo#128: https://github.com/NASA-PDS/software-issues-repo/issues/128
 .. _software-issues-repo#113: https://github.com/NASA-PDS/software-issues-repo/issues/113
 .. _validate#1184: https://github.com/NASA-PDS/validate/issues/1184
-.. _validate#967: https://github.com/NASA-PDS/validate/issues/967
-.. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
-.. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
 .. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
+.. _validate#967: https://github.com/NASA-PDS/validate/issues/967
+.. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
+.. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
 .. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
-.. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
 .. _validate#970: https://github.com/NASA-PDS/validate/issues/970
+.. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
 .. _web-analytics#57: https://github.com/NASA-PDS/web-analytics/issues/57
 .. _web-analytics#51: https://github.com/NASA-PDS/web-analytics/issues/51
 .. _web-modernization#257: https://github.com/NASA-PDS/web-modernization/issues/257
