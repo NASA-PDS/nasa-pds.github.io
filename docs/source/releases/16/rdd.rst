@@ -150,9 +150,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                             | I&T Status        | Priority / Bug Severity   |
 +===================================================================================================+===================+===========================+
-| `doi-service#455`_ SBN DOIs contain unexpected metadata that is breaking our database load script | |:yellow_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#456`_ Large majority of units tests failing                                          | |:yellow_circle:| | s.high                    |
++---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#455`_ SBN DOIs contain unexpected metadata that is breaking our database load script | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -522,11 +522,11 @@ Bugs
 +=========================================================================================================+===================+===========================+
 | `validate#1276`_ `--strict-field-checks` not working as expected                                        | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#967`_ validate configuration includes context product names that do not match the products    | |:yellow_circle:| | s.medium                  |
+| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1234`_ validate does not raise a warning when a table has more records than label says it has | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
+| `validate#967`_ validate configuration includes context product names that do not match the products    | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -537,9 +537,9 @@ Requirements
 +=====================================================================================================+===================+===========================+
 | `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
-+-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                     | |:yellow_circle:| | p.should-have             |
++-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -676,8 +676,8 @@ as follows:
 .. _deep-archive#208: https://github.com/NASA-PDS/deep-archive/issues/208
 .. _deep-archive#157: https://github.com/NASA-PDS/deep-archive/issues/157
 .. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
-.. _doi-service#455: https://github.com/NASA-PDS/doi-service/issues/455
 .. _doi-service#456: https://github.com/NASA-PDS/doi-service/issues/456
+.. _doi-service#455: https://github.com/NASA-PDS/doi-service/issues/455
 .. _EdWG#86: https://github.com/NASA-PDS/EdWG/issues/86
 .. _harvest#239: https://github.com/NASA-PDS/harvest/issues/239
 .. _harvest#247: https://github.com/NASA-PDS/harvest/issues/247
@@ -701,12 +701,12 @@ as follows:
 .. _software-issues-repo#113: https://github.com/NASA-PDS/software-issues-repo/issues/113
 .. _validate#1184: https://github.com/NASA-PDS/validate/issues/1184
 .. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
-.. _validate#967: https://github.com/NASA-PDS/validate/issues/967
-.. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
 .. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
+.. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
+.. _validate#967: https://github.com/NASA-PDS/validate/issues/967
 .. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
-.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
+.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _web-analytics#57: https://github.com/NASA-PDS/web-analytics/issues/57
 .. _web-analytics#51: https://github.com/NASA-PDS/web-analytics/issues/51
 .. _web-modernization#257: https://github.com/NASA-PDS/web-modernization/issues/257
