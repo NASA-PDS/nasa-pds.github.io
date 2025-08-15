@@ -130,9 +130,9 @@ Requirements
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
-| `deep-archive#136`_ As a user, I want to know that the software is still executing on long running jobs. | |:blue_circle:|   | p.could-have              |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `deep-archive#157`_ As a user, I want deep archive to support LBLX label extensions                      | |:yellow_circle:| | p.should-have             |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `deep-archive#136`_ As a user, I want to know that the software is still executing on long running jobs. | |:blue_circle:|   | p.could-have              |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -164,9 +164,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                             | I&T Status        | Priority / Bug Severity   |
 +===================================================================================================+===================+===========================+
-| `doi-service#455`_ SBN DOIs contain unexpected metadata that is breaking our database load script | |:yellow_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#456`_ Large majority of units tests failing                                          | |:yellow_circle:| | s.high                    |
++---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#455`_ SBN DOIs contain unexpected metadata that is breaking our database load script | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -314,6 +314,38 @@ Bugs
 
 --------
 
+Peppi
+-----
+*Planetary Data Explorer: Python (PEPPi) client library (pds.peppi) to access Planetary Data from the NASA Planetary Data System*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/peppi>`_
+     - `Github Repo <https://github.com/NASA-PDS/peppi>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/peppi/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/peppi/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/peppi/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/peppi/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++----------------------------------------+-------------------+---------------------------+
+| Issue                                  | I&T Status        | Priority / Bug Severity   |
++========================================+===================+===========================+
+| `peppi#102`_ as_dataframe method fails | |:yellow_circle:| | s.high                    |
++----------------------------------------+-------------------+---------------------------+
+
+--------
+
 Planetary-data-cloud
 --------------------
 *PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.*
@@ -365,6 +397,38 @@ Requirements
 +==========================================================================================================+=================+===========================+
 | `planetary-data-cloud#153`_ As a user, I need a lambda function to tag S3 objects based upon file suffix | |:blue_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+--------
+
+Portal-tasks
+------------
+*PDS Portal tasks repo used to track update requests for the website. Actual code and website are managed in separate private repo*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://pds.nasa.gov>`_
+     - `Github Repo <https://github.com/NASA-PDS/portal-tasks>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/portal-tasks/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/portal-tasks/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/portal-tasks/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/portal-tasks/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++-------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                                             | I&T Status      | Priority / Bug Severity   |
++===================================================================================================================+=================+===========================+
+| `portal-tasks#123`_ Data release item details (data_product_information.cfm?) does not display on testing machine | |:blue_circle:| | s.medium                  |
++-------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
 
@@ -520,11 +584,13 @@ Other Updates
 Enhancements
 ++++++++++++
 
-+------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                    | I&T Status      | Priority / Bug Severity   |
-+==========================================================================================+=================+===========================+
-| `software-issues-repo#113`_ Create tool to generate SLOC reports for software deliveries | |:blue_circle:| | unknown                   |
-+------------------------------------------------------------------------------------------+-----------------+---------------------------+
++-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                                 | I&T Status      | Priority / Bug Severity   |
++=======================================================================================================+=================+===========================+
+| `software-issues-repo#135`_ Update LDD off-nominal release process to include regeneration of WebHelp | |:blue_circle:| | unknown                   |
++-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `software-issues-repo#113`_ Create tool to generate SLOC reports for software deliveries              | |:blue_circle:| | unknown                   |
++-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
 
@@ -562,9 +628,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1234`_ validate does not raise a warning when a table has more records than label says it has | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#967`_ validate configuration includes context product names that do not match the products    | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -573,11 +639,11 @@ Requirements
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                               | I&T Status        | Priority / Bug Severity   |
 +=====================================================================================================+===================+===========================+
-| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
+| `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                     | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
+| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -714,10 +780,10 @@ as follows:
 .. _deep-archive#204: https://github.com/NASA-PDS/deep-archive/issues/204
 .. _deep-archive#210: https://github.com/NASA-PDS/deep-archive/issues/210
 .. _deep-archive#208: https://github.com/NASA-PDS/deep-archive/issues/208
-.. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
 .. _deep-archive#157: https://github.com/NASA-PDS/deep-archive/issues/157
-.. _doi-service#455: https://github.com/NASA-PDS/doi-service/issues/455
+.. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
 .. _doi-service#456: https://github.com/NASA-PDS/doi-service/issues/456
+.. _doi-service#455: https://github.com/NASA-PDS/doi-service/issues/455
 .. _EdWG#85: https://github.com/NASA-PDS/EdWG/issues/85
 .. _EdWG#86: https://github.com/NASA-PDS/EdWG/issues/86
 .. _harvest#239: https://github.com/NASA-PDS/harvest/issues/239
@@ -728,11 +794,13 @@ as follows:
 .. _nucleus#159: https://github.com/NASA-PDS/nucleus/issues/159
 .. _pds4-information-model#652: https://github.com/NASA-PDS/pds4-information-model/issues/652
 .. _pds4-information-model#938: https://github.com/NASA-PDS/pds4-information-model/issues/938
+.. _peppi#102: https://github.com/NASA-PDS/peppi/issues/102
 .. _planetary-data-cloud#87: https://github.com/NASA-PDS/planetary-data-cloud/issues/87
 .. _planetary-data-cloud#139: https://github.com/NASA-PDS/planetary-data-cloud/issues/139
 .. _planetary-data-cloud#165: https://github.com/NASA-PDS/planetary-data-cloud/issues/165
 .. _planetary-data-cloud#171: https://github.com/NASA-PDS/planetary-data-cloud/issues/171
 .. _planetary-data-cloud#153: https://github.com/NASA-PDS/planetary-data-cloud/issues/153
+.. _portal-tasks#123: https://github.com/NASA-PDS/portal-tasks/issues/123
 .. _registry#370: https://github.com/NASA-PDS/registry/issues/370
 .. _registry#404: https://github.com/NASA-PDS/registry/issues/404
 .. _registry#396: https://github.com/NASA-PDS/registry/issues/396
@@ -742,15 +810,16 @@ as follows:
 .. _registry-sweepers#164: https://github.com/NASA-PDS/registry-sweepers/issues/164
 .. _software-issues-repo#125: https://github.com/NASA-PDS/software-issues-repo/issues/125
 .. _software-issues-repo#128: https://github.com/NASA-PDS/software-issues-repo/issues/128
+.. _software-issues-repo#135: https://github.com/NASA-PDS/software-issues-repo/issues/135
 .. _software-issues-repo#113: https://github.com/NASA-PDS/software-issues-repo/issues/113
 .. _validate#1184: https://github.com/NASA-PDS/validate/issues/1184
 .. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
 .. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
-.. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
 .. _validate#967: https://github.com/NASA-PDS/validate/issues/967
-.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
-.. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
+.. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
 .. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
+.. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
+.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _web-analytics#57: https://github.com/NASA-PDS/web-analytics/issues/57
 .. _web-analytics#51: https://github.com/NASA-PDS/web-analytics/issues/51
 .. _web-modernization#257: https://github.com/NASA-PDS/web-modernization/issues/257
