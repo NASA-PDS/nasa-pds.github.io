@@ -130,9 +130,9 @@ Requirements
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
-| `deep-archive#157`_ As a user, I want deep archive to support LBLX label extensions                      | |:yellow_circle:| | p.should-have             |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `deep-archive#136`_ As a user, I want to know that the software is still executing on long running jobs. | |:blue_circle:|   | p.could-have              |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `deep-archive#157`_ As a user, I want deep archive to support LBLX label extensions                      | |:yellow_circle:| | p.should-have             |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -456,15 +456,6 @@ Planned Updates
 
 Other Updates
 ~~~~~~~~~~~~~
-Bugs
-++++
-
-+-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                                                 | I&T Status        | Priority / Bug Severity   |
-+=======================================================================================================+===================+===========================+
-| `registry#404`_ Registry is not accepting date time with leap second, e.g. `2015-06-30T23:59:60.862Z` | |:yellow_circle:| | s.high                    |
-+-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-
 Requirements
 ++++++++++++
 
@@ -628,9 +619,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1234`_ validate does not raise a warning when a table has more records than label says it has | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#967`_ validate configuration includes context product names that do not match the products    | |:yellow_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#967`_ validate configuration includes context product names that do not match the products    | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -639,11 +630,11 @@ Requirements
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                               | I&T Status        | Priority / Bug Severity   |
 +=====================================================================================================+===================+===========================+
-| `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
+| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                     | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
+| `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -780,8 +771,8 @@ as follows:
 .. _deep-archive#204: https://github.com/NASA-PDS/deep-archive/issues/204
 .. _deep-archive#210: https://github.com/NASA-PDS/deep-archive/issues/210
 .. _deep-archive#208: https://github.com/NASA-PDS/deep-archive/issues/208
-.. _deep-archive#157: https://github.com/NASA-PDS/deep-archive/issues/157
 .. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
+.. _deep-archive#157: https://github.com/NASA-PDS/deep-archive/issues/157
 .. _doi-service#456: https://github.com/NASA-PDS/doi-service/issues/456
 .. _doi-service#455: https://github.com/NASA-PDS/doi-service/issues/455
 .. _EdWG#85: https://github.com/NASA-PDS/EdWG/issues/85
@@ -802,7 +793,6 @@ as follows:
 .. _planetary-data-cloud#153: https://github.com/NASA-PDS/planetary-data-cloud/issues/153
 .. _portal-tasks#123: https://github.com/NASA-PDS/portal-tasks/issues/123
 .. _registry#370: https://github.com/NASA-PDS/registry/issues/370
-.. _registry#404: https://github.com/NASA-PDS/registry/issues/404
 .. _registry#396: https://github.com/NASA-PDS/registry/issues/396
 .. _registry#360: https://github.com/NASA-PDS/registry/issues/360
 .. _registry-api#623: https://github.com/NASA-PDS/registry-api/issues/623
@@ -815,11 +805,11 @@ as follows:
 .. _validate#1184: https://github.com/NASA-PDS/validate/issues/1184
 .. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
 .. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
-.. _validate#967: https://github.com/NASA-PDS/validate/issues/967
 .. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
-.. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
-.. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
+.. _validate#967: https://github.com/NASA-PDS/validate/issues/967
 .. _validate#970: https://github.com/NASA-PDS/validate/issues/970
+.. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
+.. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
 .. _web-analytics#57: https://github.com/NASA-PDS/web-analytics/issues/57
 .. _web-analytics#51: https://github.com/NASA-PDS/web-analytics/issues/51
 .. _web-modernization#257: https://github.com/NASA-PDS/web-modernization/issues/257
