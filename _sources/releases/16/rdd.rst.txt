@@ -130,9 +130,9 @@ Requirements
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================+===================+===========================+
-| `deep-archive#136`_ As a user, I want to know that the software is still executing on long running jobs. | |:blue_circle:|   | p.could-have              |
-+----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `deep-archive#157`_ As a user, I want deep archive to support LBLX label extensions                      | |:yellow_circle:| | p.should-have             |
++----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `deep-archive#136`_ As a user, I want to know that the software is still executing on long running jobs. | |:blue_circle:|   | p.could-have              |
 +----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -312,6 +312,15 @@ Bugs
 | `pds4-information-model#938`_ Current WebHelp documentation (1O00/1.24.0.0) does not reflect latest Rings LDD | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
+Requirements
+++++++++++++
+
++------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                        | I&T Status        | Priority / Bug Severity   |
++==============================================================================================================================+===================+===========================+
+| `pds4-information-model#939`_ As a user, I want to easily identify which IM and LDD version the WebHelp documentation is for | |:yellow_circle:| | p.should-have             |
++------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
 --------
 
 Peppi
@@ -456,6 +465,15 @@ Planned Updates
 
 Other Updates
 ~~~~~~~~~~~~~
+Bugs
+++++
+
++-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                 | I&T Status        | Priority / Bug Severity   |
++=======================================================================================================+===================+===========================+
+| `registry#404`_ Registry is not accepting date time with leap second, e.g. `2015-06-30T23:59:60.862Z` | |:yellow_circle:| | s.high                    |
++-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
 Requirements
 ++++++++++++
 
@@ -578,9 +596,9 @@ Enhancements
 +-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                 | I&T Status      | Priority / Bug Severity   |
 +=======================================================================================================+=================+===========================+
-| `software-issues-repo#135`_ Update LDD off-nominal release process to include regeneration of WebHelp | |:blue_circle:| | unknown                   |
-+-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `software-issues-repo#113`_ Create tool to generate SLOC reports for software deliveries              | |:blue_circle:| | unknown                   |
++-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `software-issues-repo#135`_ Update LDD off-nominal release process to include regeneration of WebHelp | |:blue_circle:| | unknown                   |
 +-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
@@ -615,13 +633,15 @@ Bugs
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                   | I&T Status        | Priority / Bug Severity   |
 +=========================================================================================================+===================+===========================+
+| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1276`_ `--strict-field-checks` not working as expected                                        | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#967`_ validate configuration includes context product names that do not match the products    | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1234`_ validate does not raise a warning when a table has more records than label says it has | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                              | |:yellow_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#967`_ validate configuration includes context product names that do not match the products    | |:yellow_circle:| | s.medium                  |
+| `validate#1331`_ `validate-bundle` does not find same files as `validate` (uppercase label filenames)   | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -630,11 +650,11 @@ Requirements
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                               | I&T Status        | Priority / Bug Severity   |
 +=====================================================================================================+===================+===========================+
-| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
+| `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                     | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
+| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -771,8 +791,8 @@ as follows:
 .. _deep-archive#204: https://github.com/NASA-PDS/deep-archive/issues/204
 .. _deep-archive#210: https://github.com/NASA-PDS/deep-archive/issues/210
 .. _deep-archive#208: https://github.com/NASA-PDS/deep-archive/issues/208
-.. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
 .. _deep-archive#157: https://github.com/NASA-PDS/deep-archive/issues/157
+.. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
 .. _doi-service#456: https://github.com/NASA-PDS/doi-service/issues/456
 .. _doi-service#455: https://github.com/NASA-PDS/doi-service/issues/455
 .. _EdWG#85: https://github.com/NASA-PDS/EdWG/issues/85
@@ -785,6 +805,7 @@ as follows:
 .. _nucleus#159: https://github.com/NASA-PDS/nucleus/issues/159
 .. _pds4-information-model#652: https://github.com/NASA-PDS/pds4-information-model/issues/652
 .. _pds4-information-model#938: https://github.com/NASA-PDS/pds4-information-model/issues/938
+.. _pds4-information-model#939: https://github.com/NASA-PDS/pds4-information-model/issues/939
 .. _peppi#102: https://github.com/NASA-PDS/peppi/issues/102
 .. _planetary-data-cloud#87: https://github.com/NASA-PDS/planetary-data-cloud/issues/87
 .. _planetary-data-cloud#139: https://github.com/NASA-PDS/planetary-data-cloud/issues/139
@@ -793,6 +814,7 @@ as follows:
 .. _planetary-data-cloud#153: https://github.com/NASA-PDS/planetary-data-cloud/issues/153
 .. _portal-tasks#123: https://github.com/NASA-PDS/portal-tasks/issues/123
 .. _registry#370: https://github.com/NASA-PDS/registry/issues/370
+.. _registry#404: https://github.com/NASA-PDS/registry/issues/404
 .. _registry#396: https://github.com/NASA-PDS/registry/issues/396
 .. _registry#360: https://github.com/NASA-PDS/registry/issues/360
 .. _registry-api#623: https://github.com/NASA-PDS/registry-api/issues/623
@@ -800,16 +822,17 @@ as follows:
 .. _registry-sweepers#164: https://github.com/NASA-PDS/registry-sweepers/issues/164
 .. _software-issues-repo#125: https://github.com/NASA-PDS/software-issues-repo/issues/125
 .. _software-issues-repo#128: https://github.com/NASA-PDS/software-issues-repo/issues/128
-.. _software-issues-repo#135: https://github.com/NASA-PDS/software-issues-repo/issues/135
 .. _software-issues-repo#113: https://github.com/NASA-PDS/software-issues-repo/issues/113
+.. _software-issues-repo#135: https://github.com/NASA-PDS/software-issues-repo/issues/135
 .. _validate#1184: https://github.com/NASA-PDS/validate/issues/1184
-.. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
-.. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
 .. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
+.. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
 .. _validate#967: https://github.com/NASA-PDS/validate/issues/967
-.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
-.. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
+.. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
+.. _validate#1331: https://github.com/NASA-PDS/validate/issues/1331
 .. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
+.. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
+.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _web-analytics#57: https://github.com/NASA-PDS/web-analytics/issues/57
 .. _web-analytics#51: https://github.com/NASA-PDS/web-analytics/issues/51
 .. _web-modernization#257: https://github.com/NASA-PDS/web-modernization/issues/257
