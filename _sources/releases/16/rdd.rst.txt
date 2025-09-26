@@ -198,10 +198,25 @@ Bugs
 +---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                             | I&T Status        | Priority / Bug Severity   |
 +===================================================================================================+===================+===========================+
+| `doi-service#466`_ DOI service does not properly process UTF-16 in a JSON label                   | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#476`_ Tests do not run successfully on windows                                       | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#455`_ SBN DOIs contain unexpected metadata that is breaking our database load script | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#456`_ Large majority of units tests failing                                          | |:yellow_circle:| | s.high                    |
 +---------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+Requirements
+++++++++++++
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                                                       | I&T Status        | Priority / Bug Severity   |
++=============================================================================================================================================================+===================+===========================+
+| `doi-service#432`_ As a user, I want to submit a label utilizing the updated author/contributor metadata (`List_Author`, `List_Contributor`, `List_Editor`) | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#478`_ As a user, I want to support labels with lblx suffix                                                                                     | |:blue_circle:|   | p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -295,9 +310,9 @@ Bugs
 +--------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================+===================+===========================+
-| `harvest#247`_ Error `FIPS mode: only SunJSSE TrustManagers may be used` | |:yellow_circle:| | s.high                    |
-+--------------------------------------------------------------------------+-------------------+---------------------------+
 | `harvest#239`_ Harvest failing due to AOSS OCU limits without retrying   | |:yellow_circle:| | s.high                    |
++--------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#247`_ Error `FIPS mode: only SunJSSE TrustManagers may be used` | |:yellow_circle:| | s.high                    |
 +--------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -306,10 +321,42 @@ Requirements
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================================+===================+===========================+
-| `harvest#262`_ As a user, I want to ingest all XML attribute values as string, by default                                | |:yellow_circle:| | p.must-have               |
-+--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `harvest#261`_ As a user, I want harvest to raise an error if an attribute is not found in a local data dictionary (LDD) | |:yellow_circle:| | p.must-have               |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#262`_ As a user, I want to ingest all XML attribute values as string, by default                                | |:yellow_circle:| | p.must-have               |
++--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+--------
+
+Lasso-releasers
+---------------
+*Automatic "release" of software to artifact repositories, publishing packages for general availability*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/lasso-releasers#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/lasso-releasers>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/lasso-releasers/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/lasso-releasers/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/lasso-releasers/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/lasso-releasers/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++---------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                       | I&T Status        | Priority / Bug Severity   |
++=============================================================================================+===================+===========================+
+| `lasso-releasers#5`_ Stable releases of ds-view are not publishing releases or their assets | |:yellow_circle:| | s.high                    |
++---------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -337,6 +384,11 @@ Planned Updates
 
 `nucleus#142`_ Support Data Backlog Use Case
 ++++++++++++++++++++++++++++++++++++++++++++
+    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+    link in this section title for details.
+
+`nucleus#147`_ Design and Prototype New Tracking Service
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
     link in this section title for details.
 
@@ -393,6 +445,8 @@ Bugs
 +---------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                         | I&T Status        | Priority / Bug Severity   |
 +===============================================================================================================+===================+===========================+
+| `pds4-information-model#951`_ PDS4 Instrument class (Product_Context) lists attributes that cannot be used    | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#938`_ Current WebHelp documentation (1O00/1.24.0.0) does not reflect latest Rings LDD | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
@@ -402,14 +456,25 @@ Requirements
 +------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================================================+===================+===========================+
-| `pds4-information-model#945`_ CCB-60:  New permissible value for File_Area_Observational.Header.parsing_standard_id: "CDF 3.9 ISTP/IACG" | |:yellow_circle:| | p.must-have               |
+| `pds4-information-model#946`_ CCB-59: funding_year only allows the value "9999"                                                          | |:yellow_circle:| | p.must-have               |
 +------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#949`_ CCB-62: Transfer_Manifest class should enforce data types for its two mandatory columns                    | |:yellow_circle:| | p.must-have               |
 +------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#945`_ CCB-60:  New permissible value for File_Area_Observational.Header.parsing_standard_id: "CDF 3.9 ISTP/IACG" | |:yellow_circle:| | p.must-have               |
++------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#939`_ As a user, I want to easily identify which IM and LDD version the WebHelp documentation is for             | |:yellow_circle:| | p.should-have             |
 +------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `pds4-information-model#946`_ CCB-59: funding_year only allows the value "9999"                                                          | |:yellow_circle:| | p.must-have               |
-+------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+Enhancements
+++++++++++++
+
++--------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                          | I&T Status        | Priority / Bug Severity   |
++================================================================================+===================+===========================+
+| `pds4-information-model#958`_ [namespace-registry] add new namespace "prov"    | |:yellow_circle:| | p.must-have               |
++--------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#953`_ [namespace-registry] add new namespace "galileo" | |:yellow_circle:| | p.must-have               |
++--------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -585,10 +650,7 @@ Registry
 
 Planned Updates
 ~~~~~~~~~~~~~~~
-`registry#370`_ Resurrect Legacy Registry Dashboards
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+No planned updates realized for this build in this repository.
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -598,11 +660,15 @@ Bugs
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                 | I&T Status        | Priority / Bug Severity   |
 +=======================================================================================================+===================+===========================+
-| `registry#422`_ Some of product urn:nasa:pds:lro_diviner_derived2::1.0's fields are not indexed       | |:yellow_circle:| | s.high                    |
+| `registry#375`_ product has date for sweeper index but is listed as not indexed                       | |:yellow_circle:| | s.medium                  |
++-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry#380`_ CSV response not returning the values associated with `fields` argument               | |:yellow_circle:| | s.medium                  |
++-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry#403`_ members of GEO bundle/collection collection not found                                 | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry#404`_ Registry is not accepting date time with leap second, e.g. `2015-06-30T23:59:60.862Z` | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry#380`_ CSV response not returning the values associated with `fields` argument               | |:yellow_circle:| | s.medium                  |
+| `registry#422`_ Some of product urn:nasa:pds:lro_diviner_derived2::1.0's fields are not indexed       | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -611,11 +677,11 @@ Requirements
 +------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                              | I&T Status        | Priority / Bug Severity   |
 +====================================================================================================================================+===================+===========================+
-| `registry#424`_ As a user, I want to receive an alert when my registry credentials are readable by someone else than myself        | |:yellow_circle:| | p.should-have             |
+| `registry#396`_ As a node user, I want to have multiple cognito groups and still have the main cognito node group to be effective  | |:yellow_circle:| | p.must-have               |
 +------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry#113`_ As a node operator, I want the the registry schema to update autonomously / dynamically when new data is ingested. | |:yellow_circle:| | p.should-have             |
 +------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry#396`_ As a node user, I want to have multiple cognito groups and still have the main cognito node group to be effective  | |:yellow_circle:| | p.must-have               |
+| `registry#424`_ As a user, I want to receive an alert when my registry credentials are readable by someone else than myself        | |:yellow_circle:| | p.should-have             |
 +------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -648,6 +714,11 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `registry-api#623`_ Implement Registry API Performance Improvements
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
+    link in this section title for details.
+
+`registry-api#633`_ Prototype Semantic Search Using AI / LLMs
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
     link in this section title for details.
 
@@ -728,6 +799,38 @@ Bugs
 
 --------
 
+Search-ui-legacy
+----------------
+*Legacy Keyword Search UI querying the Legacy Registry through Apache Solr.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://pds.nasa.gov/datasearch/keyword-search/>`_
+     - `Github Repo <https://github.com/NASA-PDS/search-ui-legacy>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/search-ui-legacy/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/search-ui-legacy/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/search-ui-legacy/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/search-ui-legacy/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++---------------------------------------------------+-------------------+---------------------------+
+| Issue                                             | I&T Status        | Priority / Bug Severity   |
++===================================================+===================+===========================+
+| `search-ui-legacy#59`_ Bug with XSS vulnerability | |:yellow_circle:| | s.high                    |
++---------------------------------------------------+-------------------+---------------------------+
+
+--------
+
 Software-issues-repo
 --------------------
 *Issue tracking repository as a centralized entry point for general PDS software bugs and feature requests.*
@@ -773,9 +876,9 @@ Enhancements
 +-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                 | I&T Status      | Priority / Bug Severity   |
 +=======================================================================================================+=================+===========================+
-| `software-issues-repo#135`_ Update LDD off-nominal release process to include regeneration of WebHelp | |:blue_circle:| | unknown                   |
-+-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `software-issues-repo#113`_ Create tool to generate SLOC reports for software deliveries              | |:blue_circle:| | unknown                   |
++-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `software-issues-repo#135`_ Update LDD off-nominal release process to include regeneration of WebHelp | |:blue_circle:| | unknown                   |
 +-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
@@ -810,23 +913,23 @@ Bugs
 +--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                          | I&T Status        | Priority / Bug Severity   |
 +================================================================================================================================+===================+===========================+
+| `validate#1332`_ Validate Incorrectly Reports Overlap Error If Initial Bits Are Not Specified in Packed_Data_Fields            | |:yellow_circle:| | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1358`_ Validate doesn't correctly handle an integer value of valid_maximum associated with floating point data array | |:yellow_circle:| | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#967`_ validate configuration includes context product names that do not match the products                           | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1276`_ `--strict-field-checks` not working as expected                                                               | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1359`_ Validate does not allow LIDVID for external products                                                          | |:yellow_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1358`_ Validate doesn't correctly handle an integer value of valid_maximum associated with floating point data array | |:yellow_circle:| | s.medium                  |
+| `validate#1357`_ Encoded_External/encoding_standard_id does not allow NetCDF                                                   | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                                                     | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1357`_ Encoded_External/encoding_standard_id does not allow NetCDF                                                   | |:yellow_circle:| | s.medium                  |
+| `validate#1359`_ Validate does not allow LIDVID for external products                                                          | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1234`_ validate does not raise a warning when a table has more records than label says it has                        | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1331`_ `validate-bundle` does not find same files as `validate` (uppercase label filenames)                          | |:yellow_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1332`_ Validate Incorrectly Reports Overlap Error If Initial Bits Are Not Specified in Packed_Data_Fields            | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -835,11 +938,11 @@ Requirements
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                               | I&T Status        | Priority / Bug Severity   |
 +=====================================================================================================+===================+===========================+
+| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
++-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                     | |:yellow_circle:| | p.should-have             |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1137`_ As a user, I want to know how much progress is being made during a validate run    | |:yellow_circle:| | p.should-have             |
-+-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation | |:yellow_circle:| | p.could-have              |
 +-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -983,27 +1086,36 @@ as follows:
 .. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
 .. _deep-archive#157: https://github.com/NASA-PDS/deep-archive/issues/157
 .. _devops#81: https://github.com/NASA-PDS/devops/issues/81
+.. _doi-service#466: https://github.com/NASA-PDS/doi-service/issues/466
+.. _doi-service#476: https://github.com/NASA-PDS/doi-service/issues/476
 .. _doi-service#455: https://github.com/NASA-PDS/doi-service/issues/455
 .. _doi-service#456: https://github.com/NASA-PDS/doi-service/issues/456
+.. _doi-service#432: https://github.com/NASA-PDS/doi-service/issues/432
+.. _doi-service#478: https://github.com/NASA-PDS/doi-service/issues/478
 .. _ds-view#53: https://github.com/NASA-PDS/ds-view/issues/53
 .. _ds-view#56: https://github.com/NASA-PDS/ds-view/issues/56
 .. _EdWG#85: https://github.com/NASA-PDS/EdWG/issues/85
 .. _EdWG#86: https://github.com/NASA-PDS/EdWG/issues/86
-.. _harvest#247: https://github.com/NASA-PDS/harvest/issues/247
 .. _harvest#239: https://github.com/NASA-PDS/harvest/issues/239
-.. _harvest#262: https://github.com/NASA-PDS/harvest/issues/262
+.. _harvest#247: https://github.com/NASA-PDS/harvest/issues/247
 .. _harvest#261: https://github.com/NASA-PDS/harvest/issues/261
+.. _harvest#262: https://github.com/NASA-PDS/harvest/issues/262
+.. _lasso-releasers#5: https://github.com/NASA-PDS/lasso-releasers/issues/5
 .. _nucleus#131: https://github.com/NASA-PDS/nucleus/issues/131
 .. _nucleus#142: https://github.com/NASA-PDS/nucleus/issues/142
+.. _nucleus#147: https://github.com/NASA-PDS/nucleus/issues/147
 .. _nucleus#149: https://github.com/NASA-PDS/nucleus/issues/149
 .. _nucleus#156: https://github.com/NASA-PDS/nucleus/issues/156
 .. _nucleus#159: https://github.com/NASA-PDS/nucleus/issues/159
 .. _pds4-information-model#652: https://github.com/NASA-PDS/pds4-information-model/issues/652
+.. _pds4-information-model#951: https://github.com/NASA-PDS/pds4-information-model/issues/951
 .. _pds4-information-model#938: https://github.com/NASA-PDS/pds4-information-model/issues/938
-.. _pds4-information-model#945: https://github.com/NASA-PDS/pds4-information-model/issues/945
-.. _pds4-information-model#949: https://github.com/NASA-PDS/pds4-information-model/issues/949
-.. _pds4-information-model#939: https://github.com/NASA-PDS/pds4-information-model/issues/939
 .. _pds4-information-model#946: https://github.com/NASA-PDS/pds4-information-model/issues/946
+.. _pds4-information-model#949: https://github.com/NASA-PDS/pds4-information-model/issues/949
+.. _pds4-information-model#945: https://github.com/NASA-PDS/pds4-information-model/issues/945
+.. _pds4-information-model#939: https://github.com/NASA-PDS/pds4-information-model/issues/939
+.. _pds4-information-model#958: https://github.com/NASA-PDS/pds4-information-model/issues/958
+.. _pds4-information-model#953: https://github.com/NASA-PDS/pds4-information-model/issues/953
 .. _pdsen-maven-parent#70: https://github.com/NASA-PDS/pdsen-maven-parent/issues/70
 .. _peppi#102: https://github.com/NASA-PDS/peppi/issues/102
 .. _planetary-data-cloud#87: https://github.com/NASA-PDS/planetary-data-cloud/issues/87
@@ -1013,37 +1125,40 @@ as follows:
 .. _planetary-data-cloud#171: https://github.com/NASA-PDS/planetary-data-cloud/issues/171
 .. _planetary-data-cloud#153: https://github.com/NASA-PDS/planetary-data-cloud/issues/153
 .. _portal-tasks#123: https://github.com/NASA-PDS/portal-tasks/issues/123
-.. _registry#370: https://github.com/NASA-PDS/registry/issues/370
-.. _registry#422: https://github.com/NASA-PDS/registry/issues/422
-.. _registry#404: https://github.com/NASA-PDS/registry/issues/404
+.. _registry#375: https://github.com/NASA-PDS/registry/issues/375
 .. _registry#380: https://github.com/NASA-PDS/registry/issues/380
-.. _registry#424: https://github.com/NASA-PDS/registry/issues/424
-.. _registry#113: https://github.com/NASA-PDS/registry/issues/113
+.. _registry#403: https://github.com/NASA-PDS/registry/issues/403
+.. _registry#404: https://github.com/NASA-PDS/registry/issues/404
+.. _registry#422: https://github.com/NASA-PDS/registry/issues/422
 .. _registry#396: https://github.com/NASA-PDS/registry/issues/396
+.. _registry#113: https://github.com/NASA-PDS/registry/issues/113
+.. _registry#424: https://github.com/NASA-PDS/registry/issues/424
 .. _registry#360: https://github.com/NASA-PDS/registry/issues/360
 .. _registry-api#623: https://github.com/NASA-PDS/registry-api/issues/623
+.. _registry-api#633: https://github.com/NASA-PDS/registry-api/issues/633
 .. _registry-api#638: https://github.com/NASA-PDS/registry-api/issues/638
 .. _registry-common#149: https://github.com/NASA-PDS/registry-common/issues/149
 .. _registry-sweepers#164: https://github.com/NASA-PDS/registry-sweepers/issues/164
+.. _search-ui-legacy#59: https://github.com/NASA-PDS/search-ui-legacy/issues/59
 .. _software-issues-repo#118: https://github.com/NASA-PDS/software-issues-repo/issues/118
 .. _software-issues-repo#124: https://github.com/NASA-PDS/software-issues-repo/issues/124
 .. _software-issues-repo#125: https://github.com/NASA-PDS/software-issues-repo/issues/125
 .. _software-issues-repo#128: https://github.com/NASA-PDS/software-issues-repo/issues/128
-.. _software-issues-repo#135: https://github.com/NASA-PDS/software-issues-repo/issues/135
 .. _software-issues-repo#113: https://github.com/NASA-PDS/software-issues-repo/issues/113
+.. _software-issues-repo#135: https://github.com/NASA-PDS/software-issues-repo/issues/135
 .. _validate#1184: https://github.com/NASA-PDS/validate/issues/1184
+.. _validate#1332: https://github.com/NASA-PDS/validate/issues/1332
+.. _validate#1358: https://github.com/NASA-PDS/validate/issues/1358
 .. _validate#967: https://github.com/NASA-PDS/validate/issues/967
 .. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
-.. _validate#1359: https://github.com/NASA-PDS/validate/issues/1359
-.. _validate#1358: https://github.com/NASA-PDS/validate/issues/1358
-.. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
 .. _validate#1357: https://github.com/NASA-PDS/validate/issues/1357
+.. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
+.. _validate#1359: https://github.com/NASA-PDS/validate/issues/1359
 .. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
 .. _validate#1331: https://github.com/NASA-PDS/validate/issues/1331
-.. _validate#1332: https://github.com/NASA-PDS/validate/issues/1332
+.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
 .. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
-.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
 .. _web-analytics#57: https://github.com/NASA-PDS/web-analytics/issues/57
 .. _web-analytics#51: https://github.com/NASA-PDS/web-analytics/issues/51
 .. _web-modernization#257: https://github.com/NASA-PDS/web-modernization/issues/257
