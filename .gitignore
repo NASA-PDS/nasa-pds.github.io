@@ -40,7 +40,8 @@ src/test/temp/
 *.DS_Store
 pom.xml.versionsBackup
 **#*
-venv/
+venv
+.vscode
 
 # Java stuff
 *.javac
