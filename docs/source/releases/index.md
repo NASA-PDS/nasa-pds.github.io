@@ -11,11 +11,18 @@ Latest stable release:
   
 
 
+Development releases:  
+
+|build|planned release|update|
+| :---: | :---: | :---: |
+|[16.0-SNAPSHOT](./16.0-SNAPSHOT)|<span style="color:orange">2026-12-31</span>|2025-11-19|
+  
+
+
 Archived stable releases:  
 
 |build|release|update|
 | :---: | :---: | :---: |
-|[15.0-SNAPSHOT](./15.0-SNAPSHOT)|<span style="color:green">2024-12-31</span>|2025-10-13|
 |[15.0](./15.0)|<span style="color:green">2024-12-31</span>|2025-04-21|
 |[14.1](./14.1)|<span style="color:green">2024-06-30</span>|2024-06-12|
 |[14.0](./14.0)|<span style="color:green">2023-12-31</span>|2024-02-27|
