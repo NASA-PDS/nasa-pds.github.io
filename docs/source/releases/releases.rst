@@ -6,6 +6,7 @@ Upcoming
 
     Latest In-Dev Software RDD, (16) <16/rdd>
     Near-Term Plans (16) <16/plan>
+    Software Summary (16) <16/index>
 
 Past Releases
 =============
