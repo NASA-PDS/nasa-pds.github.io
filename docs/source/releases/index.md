@@ -16,6 +16,7 @@ Development releases:
 |build|planned release|update|
 | :---: | :---: | :---: |
 |[16.0-SNAPSHOT](./16.0-SNAPSHOT)|<span style="color:orange">2026-12-31</span>|2025-11-19|
+|[16.0](./16.0)|<span style="color:orange">2026-12-31</span>|2025-11-19|
   
 
 
