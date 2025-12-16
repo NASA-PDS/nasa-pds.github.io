@@ -20,8 +20,8 @@
 project = 'NASA PDS Software'
 copyright = '2020-2025 California Institute of Technology'
 author = 'NASA Planetary Data System'
-release = 'B15.1'
-version = 'B15.1'
+release = 'B16'
+version = 'B16'
 
 
 # -- General configuration ---------------------------------------------------
