@@ -10,7 +10,7 @@ The software provided for the PDS System Build 16 are listed below and organized
 - `Engineering Node Services`_
 
 
-:abbr: `I&T (Integration & testing)` review and results are available in the following 2 documents:
+I&T (Integration & testing) review and results are available in the following 2 documents:
 
 - `Delivery and Deployment Review <PDS-B16-testrail-report-20251204.pdf>`_
 
