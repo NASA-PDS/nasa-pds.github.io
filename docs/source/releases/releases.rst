@@ -6,7 +6,6 @@ Upcoming
 
     Latest In-Dev Software RDD, (B17) <17/rdd>
     Near-Term Plans (B17) <17/plan>
-    Software Summary (B16) <16/index>
 
 Past Releases
 =============
