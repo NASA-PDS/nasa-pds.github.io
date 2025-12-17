@@ -1,15 +1,17 @@
 Upcoming
 ========
 ..  toctree::
+    :glob:
     :maxdepth: 1
 
-    Latest In-Dev Software RDD, (B17) <17/rdd>
+    Latest In-Dev Software RDD (B17) <17/rdd>
     Near-Term Plans (B17) <17/plan>
 
 Past Releases
 =============
 
 ..  toctree::
+    :glob:
     :maxdepth: 1
 
     10.1 <10.1/index>
