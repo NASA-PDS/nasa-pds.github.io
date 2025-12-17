@@ -1,7 +1,6 @@
 Upcoming
 ========
 ..  toctree::
-    :glob:
     :maxdepth: 1
 
     Latest In-Dev Software RDD, (B17) <17/rdd>
@@ -11,7 +10,6 @@ Past Releases
 =============
 
 ..  toctree::
-    :glob:
     :maxdepth: 1
 
     10.1 <10.1/index>
