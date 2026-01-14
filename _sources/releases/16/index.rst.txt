@@ -12,7 +12,7 @@ The software provided for the PDS System Build 16 are listed below and organized
 
 I&T (Integration & testing) review and results are available in the following 2 documents:
 
-- `Delivery and Deployment Review <PDS-B16-testrail-report-20251204.pdf>`_
+- `Delivery and Deployment Review <PDS-B16-DDR-20251204.pdf>`_
 
 - `TestRail Report <PDS-B16-testrail-report-20251204.pdf>`_
 
