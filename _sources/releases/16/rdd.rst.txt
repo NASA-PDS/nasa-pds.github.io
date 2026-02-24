@@ -21,6 +21,8 @@ and implemented by the PDS within the latest build period.
 +-------------------------------+------------------------------------------------------------------------------------------------------------+
 | Ref                           | Title                                                                                                      |
 +===============================+============================================================================================================+
+| `pds4-information-model#663`_ | Adopt Provenance LDD for Superseded LIDs - CCB-21 (CCB-367)                                                |
++-------------------------------+------------------------------------------------------------------------------------------------------------+
 | `pds4-information-model#945`_ | CCB-60:  New permissible value for File_Area_Observational.Header.parsing_standard_id: "CDF 3.9 ISTP/IACG" |
 +-------------------------------+------------------------------------------------------------------------------------------------------------+
 | `pds4-information-model#946`_ | CCB-59: funding_year only allows the value "9999"                                                          |
@@ -74,18 +76,57 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `data-upload-manager#207`_ Improvements to Support LRO Uploads
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++----------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| Issue                                                                                              | I&T Status       | Level       | Priority / Bug Severity   |
++====================================================================================================+==================+=============+===========================+
+| `data-upload-manager#221`_ As a user, I want to support upload of files >5GB                       | |:green_circle:| | requirement | p.must-have               |
++----------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `data-upload-manager#224`_ Verify scalability of manifest file usage for archives >5 million files | |:blue_circle:|  | theme       | unknown                   |
++----------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `data-upload-manager#264`_ Sync DUM Metadata with rclone metadata                                  | |:blue_circle:|  | theme       | p.could-have              |
++----------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+
 
 `data-upload-manager#224`_ Verify scalability of manifest file usage for archives >5 million files
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++----------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                              | I&T Status      | Priority / Bug Severity   |
++====================================================================================================+=================+===========================+
+| `data-upload-manager#224`_ Verify scalability of manifest file usage for archives >5 million files | |:blue_circle:| | unknown                   |
++----------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 `data-upload-manager#231`_ Support Upload of Web Logs
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| Issue                                                                                     | I&T Status       | Level       | Priority / Bug Severity   |
++===========================================================================================+==================+=============+===========================+
+| `data-upload-manager#232`_ As a user, I want to load web logs to the web analytics bucket | |:green_circle:| | requirement | p.should-have             |
++-------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+
+
+`data-upload-manager#256`_ Update DUM to Support Integration with rclone
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++------------------------------------------------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+| Issue                                                                                                                              | I&T Status      | Level       | Priority / Bug Severity   |
++====================================================================================================================================+=================+=============+===========================+
+| `data-upload-manager#209`_ As a user, I can read rclone-generated checksums when checking for existing files in the staging bucket | |:blue_circle:| | requirement | p.must-have               |
++------------------------------------------------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+
+
+`data-upload-manager#264`_ Sync DUM Metadata with rclone metadata
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++-------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                             | I&T Status      | Priority / Bug Severity   |
++===================================================================+=================+===========================+
+| `data-upload-manager#264`_ Sync DUM Metadata with rclone metadata | |:blue_circle:| | p.could-have              |
++-------------------------------------------------------------------+-----------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -95,27 +136,21 @@ Bugs
 +------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                          | I&T Status      | Priority / Bug Severity   |
 +================================================================================================+=================+===========================+
-| `data-upload-manager#271`_ DUM output has typo                                                 | |:blue_circle:| | s.low                     |
+| `data-upload-manager#282`_ During DUM load, undocumented message about "Backing off"           | |:blue_circle:| | s.medium                  |
 +------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `data-upload-manager#241`_ When DUM crashes, the report it generates falsely indicates success | |:blue_circle:| | s.medium                  |
 +------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| `data-upload-manager#282`_ During DUM load, undocumented message about "Backing off"           | |:blue_circle:| | s.medium                  |
+| `data-upload-manager#271`_ DUM output has typo                                                 | |:blue_circle:| | s.low                     |
 +------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 Requirements
 ++++++++++++
 
-+------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                                                                              | I&T Status        | Priority / Bug Severity   |
-+====================================================================================================================================+===================+===========================+
-| `data-upload-manager#232`_ As a user, I want to load web logs to the web analytics bucket                                          | |:green_circle:|  | p.should-have             |
-+------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `data-upload-manager#221`_ As a user, I want to support upload of files >5GB                                                       | |:green_circle:|  | p.must-have               |
-+------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `data-upload-manager#99`_ As a user, I want to skip upload of files that are already in the archive bucket                         | |:green_circle:|  | p.must-have               |
-+------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `data-upload-manager#209`_ As a user, I can read rclone-generated checksums when checking for existing files in the staging bucket | |:yellow_circle:| | p.must-have               |
-+------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| Issue                                                                                                      | I&T Status       | Priority / Bug Severity   |
++============================================================================================================+==================+===========================+
+| `data-upload-manager#99`_ As a user, I want to skip upload of files that are already in the archive bucket | |:green_circle:| | p.must-have               |
++------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Enhancements
 ++++++++++++
@@ -147,13 +182,25 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `deep-archive#204`_ Add Support for Labels with LBLX file suffix
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| Issue                                                                               | I&T Status       | Level       | Priority / Bug Severity   |
++=====================================================================================+==================+=============+===========================+
+| `deep-archive#157`_ As a user, I want deep archive to support LBLX label extensions | |:green_circle:| | requirement | p.should-have             |
++-------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+
 
 `deep-archive#210`_ B16 Deep Archive Maintenance Tasks
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++----------------------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+| Issue                                                                                                    | I&T Status      | Level       | Priority / Bug Severity   |
++==========================================================================================================+=================+=============+===========================+
+| `deep-archive#208`_ Output manifest .tab files do not use forward slashes on Windows                     | |:blue_circle:| | bug         | s.medium                  |
++----------------------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+| `deep-archive#136`_ As a user, I want to know that the software is still executing on long running jobs. | |:blue_circle:| | requirement | p.could-have              |
++----------------------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -165,19 +212,6 @@ Bugs
 +=================================================================================================================+==================+===========================+
 | `deep-archive#213`_ pds-deep-registry-archive does not include all collections within a bundle in SIP/AIP files | |:green_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `deep-archive#208`_ Output manifest .tab files do not use forward slashes on Windows                            | |:blue_circle:|  | s.medium                  |
-+-----------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-
-Requirements
-++++++++++++
-
-+----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| Issue                                                                                                    | I&T Status       | Priority / Bug Severity   |
-+==========================================================================================================+==================+===========================+
-| `deep-archive#157`_ As a user, I want deep archive to support LBLX label extensions                      | |:green_circle:| | p.should-have             |
-+----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `deep-archive#136`_ As a user, I want to know that the software is still executing on long running jobs. | |:blue_circle:|  | p.could-have              |
-+----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Enhancements
 ++++++++++++
@@ -209,8 +243,13 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `devops#81`_ Enable Continuous Deployment for Portal
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                | I&T Status      | Priority / Bug Severity   |
++======================================================+=================+===========================+
+| `devops#81`_ Enable Continuous Deployment for Portal | |:blue_circle:| | p.must-have               |
++------------------------------------------------------+-----------------+---------------------------+
+
 
 --------
 
@@ -241,13 +280,13 @@ Bugs
 +---------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                             | I&T Status      | Priority / Bug Severity   |
 +===================================================================================================+=================+===========================+
-| `doi-service#476`_ Tests do not run successfully on windows                                       | |:blue_circle:| | s.medium                  |
+| `doi-service#455`_ SBN DOIs contain unexpected metadata that is breaking our database load script | |:blue_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `doi-service#466`_ DOI service does not properly process UTF-16 in a JSON label                   | |:blue_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| `doi-service#455`_ SBN DOIs contain unexpected metadata that is breaking our database load script | |:blue_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `doi-service#456`_ Large majority of units tests failing                                          | |:blue_circle:| | s.high                    |
++---------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `doi-service#476`_ Tests do not run successfully on windows                                       | |:blue_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 Requirements
@@ -323,15 +362,35 @@ Edwg
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+`EdWG#28`_ Develop Service and Tools Context Products
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`EdWG#53`_ Phase 1: PDS Website Page Content Migration
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
 `EdWG#85`_ Gather Investigation Imagery
 +++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-----------------------------------------+-----------------+---------------------------+
+| Issue                                   | I&T Status      | Priority / Bug Severity   |
++=========================================+=================+===========================+
+| `EdWG#85`_ Gather Investigation Imagery | |:blue_circle:| | p.could-have              |
++-----------------------------------------+-----------------+---------------------------+
+
 
 `EdWG#86`_ Context Updates Phase 1: Facilities and Telescopes
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++---------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                         | I&T Status      | Priority / Bug Severity   |
++===============================================================+=================+===========================+
+| `EdWG#86`_ Context Updates Phase 1: Facilities and Telescopes | |:blue_circle:| | p.should-have             |
++---------------------------------------------------------------+-----------------+---------------------------+
+
 
 --------
 
@@ -362,11 +421,11 @@ Bugs
 +------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                  | I&T Status       | Priority / Bug Severity   |
 +========================================================================+==================+===========================+
-| `harvest#239`_ Harvest failing due to AOSS OCU limits without retrying | |:blue_circle:|  | s.high                    |
-+------------------------------------------------------------------------+------------------+---------------------------+
 | `harvest#283`_ Harvest cannot parse Date without time                  | |:green_circle:| | s.high                    |
 +------------------------------------------------------------------------+------------------+---------------------------+
 | `harvest#285`_ False positive Duplicate detected by harvest            | |:blue_circle:|  | s.medium                  |
++------------------------------------------------------------------------+------------------+---------------------------+
+| `harvest#239`_ Harvest failing due to AOSS OCU limits without retrying | |:blue_circle:|  | s.high                    |
 +------------------------------------------------------------------------+------------------+---------------------------+
 
 Requirements
@@ -375,9 +434,9 @@ Requirements
 +--------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                                    | I&T Status       | Priority / Bug Severity   |
 +==========================================================================================================================+==================+===========================+
-| `harvest#262`_ As a user, I want to ingest all XML attribute values (not PDS4 attributes) as string, by default          | |:blue_circle:|  | p.must-have               |
-+--------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `harvest#261`_ As a user, I want harvest to raise an error if an attribute is not found in a local data dictionary (LDD) | |:green_circle:| | p.must-have               |
++--------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `harvest#262`_ As a user, I want to ingest all XML attribute values (not PDS4 attributes) as string, by default          | |:blue_circle:|  | p.must-have               |
 +--------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 --------
@@ -431,30 +490,65 @@ Nucleus
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+`nucleus#127`_ [SBN] CSS: Deploy Nucleus to Prod and Kickoff Processing
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
 `nucleus#131`_ Update Architecture and Implement Separate EFS Per Node Baseline DAG
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                               | I&T Status      | Priority / Bug Severity   |
++=====================================================================================+=================+===========================+
+| `nucleus#131`_ Update Architecture and Implement Separate EFS Per Node Baseline DAG | |:blue_circle:| | p.could-have              |
++-------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`nucleus#138`_ [IMG] Onboard IMG Team to Monitor Nucleus LRO Processing
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
 
 `nucleus#142`_ Support Data Backlog Use Case
 ++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++----------------------------------------------+-----------------+---------------------------+
+| Issue                                        | I&T Status      | Priority / Bug Severity   |
++==============================================+=================+===========================+
+| `nucleus#142`_ Support Data Backlog Use Case | |:blue_circle:| | unknown                   |
++----------------------------------------------+-----------------+---------------------------+
+
 
 `nucleus#147`_ Design and Prototype New Tracking Service
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++----------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                    | I&T Status      | Priority / Bug Severity   |
++==========================================================+=================+===========================+
+| `nucleus#147`_ Design and Prototype New Tracking Service | |:blue_circle:| | unknown                   |
++----------------------------------------------------------+-----------------+---------------------------+
+
 
 `nucleus#149`_ Upgrade Nucleus to the latest 2.x version in MWAA
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                            | I&T Status      | Priority / Bug Severity   |
++==================================================================+=================+===========================+
+| `nucleus#149`_ Upgrade Nucleus to the latest 2.x version in MWAA | |:blue_circle:| | unknown                   |
++------------------------------------------------------------------+-----------------+---------------------------+
+
 
 `nucleus#156`_ Develop a DAG Task Library
 +++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-------------------------------------------+-----------------+---------------------------+
+| Issue                                     | I&T Status      | Priority / Bug Severity   |
++===========================================+=================+===========================+
+| `nucleus#156`_ Develop a DAG Task Library | |:blue_circle:| | unknown                   |
++-------------------------------------------+-----------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -488,70 +582,97 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `pds4-information-model#917`_ B16 Information Model SCR Implementation and LDDTool Updates
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| Issue                                                                                                                                                  | I&T Status        | Level       | Priority / Bug Severity   |
++========================================================================================================================================================+===================+=============+===========================+
+| `pds4-information-model#939`_ As a user, I want to know both the IM and LDD version applicable to a given attribute/class in the WebHelp documentation | |:green_circle:|  | requirement | p.should-have             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `pds4-information-model#938`_ Current WebHelp documentation (1O00/1.24.0.0) does not reflect latest Rings LDD                                          | |:blue_circle:|   | bug         | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `pds4-information-model#948`_ As a user, I want to override the default namespace version used by LDDTool                                              | |:green_circle:|  | requirement | p.must-have               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `pds4-information-model#967`_ CCB-28: As a user, I want validate to allow delimited tables with whitespace-only numeric fields                         | |:yellow_circle:| | task        | p.must-have               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `pds4-information-model#968`_ Upgrade to Java 17 for compatibility with validate dependency                                                            | |:blue_circle:|   | enhancement | p.must-have               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+
 
 `pds4-information-model#920`_ B16 Information Model Delivery to I&T
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++---------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                               | I&T Status      | Priority / Bug Severity   |
++=====================================================================+=================+===========================+
+| `pds4-information-model#920`_ B16 Information Model Delivery to I&T | |:blue_circle:| | unknown                   |
++---------------------------------------------------------------------+-----------------+---------------------------+
+
 
 `pds4-information-model#921`_ B16 SCR Freeze
 ++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++----------------------------------------------+-----------------+---------------------------+
+| Issue                                        | I&T Status      | Priority / Bug Severity   |
++==============================================+=================+===========================+
+| `pds4-information-model#921`_ B16 SCR Freeze | |:blue_circle:| | p.must-have               |
++----------------------------------------------+-----------------+---------------------------+
+
 
 `pds4-information-model#922`_ B16 Standards Documents Updates
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++---------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                         | I&T Status      | Priority / Bug Severity   |
++===============================================================+=================+===========================+
+| `pds4-information-model#922`_ B16 Standards Documents Updates | |:blue_circle:| | unknown                   |
++---------------------------------------------------------------+-----------------+---------------------------+
+
+
+`pds4-information-model#926`_ Refactor PDS4 Data Dictionary Search to Support Scalability
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
 
 Other Updates
 ~~~~~~~~~~~~~
 Bugs
 ++++
 
-+---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                                         | I&T Status      | Priority / Bug Severity   |
-+===============================================================================================================+=================+===========================+
-| `pds4-information-model#951`_ PDS4 Instrument class (Product_Context) lists attributes that cannot be used    | |:blue_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| `pds4-information-model#938`_ Current WebHelp documentation (1O00/1.24.0.0) does not reflect latest Rings LDD | |:blue_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| `pds4-information-model#947`_ LDD generator is not generating valid LDDs                                      | |:blue_circle:| | s.high                    |
-+---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
++------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                                      | I&T Status      | Priority / Bug Severity   |
++============================================================================================================+=================+===========================+
+| `pds4-information-model#947`_ LDD generator is not generating valid LDDs                                   | |:blue_circle:| | s.high                    |
++------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `pds4-information-model#951`_ PDS4 Instrument class (Product_Context) lists attributes that cannot be used | |:blue_circle:| | s.medium                  |
++------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 Requirements
 ++++++++++++
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| Issue                                                                                                                                                  | I&T Status       | Priority / Bug Severity   |
-+========================================================================================================================================================+==================+===========================+
-| `pds4-information-model#939`_ As a user, I want to know both the IM and LDD version applicable to a given attribute/class in the WebHelp documentation | |:green_circle:| | p.should-have             |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `pds4-information-model#946`_ CCB-59: funding_year only allows the value "9999"                                                                        | |:green_circle:| | p.must-have               |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `pds4-information-model#949`_ CCB-62: Transfer_Manifest class should enforce data types for its two mandatory columns                                  | |:green_circle:| | p.must-have               |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `pds4-information-model#948`_ As a user, I want to override the default namespace version used by LDDTool                                              | |:green_circle:| | p.must-have               |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `pds4-information-model#945`_ CCB-60:  New permissible value for File_Area_Observational.Header.parsing_standard_id: "CDF 3.9 ISTP/IACG"               | |:green_circle:| | p.must-have               |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| Issue                                                                                                                                    | I&T Status       | Priority / Bug Severity   |
++==========================================================================================================================================+==================+===========================+
+| `pds4-information-model#949`_ CCB-62: Transfer_Manifest class should enforce data types for its two mandatory columns                    | |:green_circle:| | p.must-have               |
++------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `pds4-information-model#663`_ Adopt Provenance LDD for Superseded LIDs - CCB-21 (CCB-367)                                                | |:blue_circle:|  | p.must-have               |
++------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `pds4-information-model#946`_ CCB-59: funding_year only allows the value "9999"                                                          | |:green_circle:| | p.must-have               |
++------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `pds4-information-model#945`_ CCB-60:  New permissible value for File_Area_Observational.Header.parsing_standard_id: "CDF 3.9 ISTP/IACG" | |:green_circle:| | p.must-have               |
++------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Enhancements
 ++++++++++++
 
-+---------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                       | I&T Status      | Priority / Bug Severity   |
-+=============================================================================================+=================+===========================+
-| `pds4-information-model#935`_ [namespace-registry] add new namespace "dscovr"               | |:blue_circle:| | p.must-have               |
-+---------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| `pds4-information-model#968`_ Upgrade to Java 17 for compatibility with validate dependency | |:blue_circle:| | p.must-have               |
-+---------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| `pds4-information-model#953`_ [namespace-registry] add new namespace "galileo"              | |:blue_circle:| | p.must-have               |
-+---------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| `pds4-information-model#958`_ [namespace-registry] add new namespace "prov"                 | |:blue_circle:| | p.must-have               |
-+---------------------------------------------------------------------------------------------+-----------------+---------------------------+
++--------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                          | I&T Status      | Priority / Bug Severity   |
++================================================================================+=================+===========================+
+| `pds4-information-model#953`_ [namespace-registry] add new namespace "galileo" | |:blue_circle:| | p.must-have               |
++--------------------------------------------------------------------------------+-----------------+---------------------------+
+| `pds4-information-model#935`_ [namespace-registry] add new namespace "dscovr"  | |:blue_circle:| | p.must-have               |
++--------------------------------------------------------------------------------+-----------------+---------------------------+
+| `pds4-information-model#958`_ [namespace-registry] add new namespace "prov"    | |:blue_circle:| | p.must-have               |
++--------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
 
@@ -640,48 +761,128 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `planetary-data-cloud#87`_ Develop PDC User Engagement Strategy
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-----------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                           | I&T Status      | Priority / Bug Severity   |
++=================================================================+=================+===========================+
+| `planetary-data-cloud#87`_ Develop PDC User Engagement Strategy | |:blue_circle:| | p.must-have               |
++-----------------------------------------------------------------+-----------------+---------------------------+
+
 
 `planetary-data-cloud#100`_ Phase 2 Migration of Existing Production JPL AWS Infra to MCP
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                     | I&T Status      | Priority / Bug Severity   |
++===========================================================================================+=================+===========================+
+| `planetary-data-cloud#100`_ Phase 2 Migration of Existing Production JPL AWS Infra to MCP | |:blue_circle:| | unknown                   |
++-------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 `planetary-data-cloud#159`_ [IMG] LROC MVP: Setup IMG Prod Env, Replicate Data, Deploy Nucleus, and Kickoff Processing
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++----------------------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+| Issue                                                                                                    | I&T Status      | Level       | Priority / Bug Severity   |
++==========================================================================================================+=================+=============+===========================+
+| `planetary-data-cloud#153`_ As a user, I need a lambda function to tag S3 objects based upon file suffix | |:blue_circle:| | requirement | p.must-have               |
++----------------------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+
+
+`planetary-data-cloud#117`_ Implement Optional Cognito Password Rotation Requirement (Disabled)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
 
 `planetary-data-cloud#139`_ Define Tagging Strategy for Planetary Data Cloud
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                        | I&T Status      | Priority / Bug Severity   |
++==============================================================================+=================+===========================+
+| `planetary-data-cloud#139`_ Define Tagging Strategy for Planetary Data Cloud | |:blue_circle:| | unknown                   |
++------------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 `planetary-data-cloud#144`_ Develop Egress Management Strategy
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++----------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                          | I&T Status      | Priority / Bug Severity   |
++================================================================+=================+===========================+
+| `planetary-data-cloud#144`_ Develop Egress Management Strategy | |:blue_circle:| | p.must-have               |
++----------------------------------------------------------------+-----------------+---------------------------+
+
 
 `planetary-data-cloud#145`_ Develop Data Management and Storage Strategy
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++--------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                    | I&T Status      | Priority / Bug Severity   |
++==========================================================================+=================+===========================+
+| `planetary-data-cloud#145`_ Develop Data Management and Storage Strategy | |:blue_circle:| | p.must-have               |
++--------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 `planetary-data-cloud#146`_ B16 Cost Model Iteration with SMD Team
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++--------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                              | I&T Status      | Priority / Bug Severity   |
++====================================================================+=================+===========================+
+| `planetary-data-cloud#146`_ B16 Cost Model Iteration with SMD Team | |:blue_circle:| | p.could-have              |
++--------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#147`_ B16 Bi-annual Cloud Resource Housekeeping
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++-----------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                 | I&T Status      | Priority / Bug Severity   |
++=======================================================================+=================+===========================+
+| `planetary-data-cloud#147`_ B16 Bi-annual Cloud Resource Housekeeping | |:blue_circle:| | unknown                   |
++-----------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#164`_ Develop Process for Enabling Direct Public Access to S3 Buckets
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
 
 `planetary-data-cloud#165`_ Define PDC Assumed User Roles
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-----------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                     | I&T Status      | Priority / Bug Severity   |
++===========================================================+=================+===========================+
+| `planetary-data-cloud#165`_ Define PDC Assumed User Roles | |:blue_circle:| | p.must-have               |
++-----------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#166`_ Update Data Backup Plan to Include OpenSearch and Cognito
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#184`_ Document Requirements and Guidelines for Archives to Support Cloud Infra
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
 
 `planetary-data-cloud#188`_ Document Archive Management Guidelines and Constraints
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                              | I&T Status      | Priority / Bug Severity   |
++====================================================================================+=================+===========================+
+| `planetary-data-cloud#188`_ Document Archive Management Guidelines and Constraints | |:blue_circle:| | unknown                   |
++------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#193`_ B17 Bi-annual Cloud Resource Housekeeping
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -693,15 +894,6 @@ Bugs
 +=========================================================================================================+=================+===========================+
 | `planetary-data-cloud#171`_ Cloudfront caching of API requests causing confusion with user expectations | |:blue_circle:| | s.high                    |
 +---------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-
-Requirements
-++++++++++++
-
-+----------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                                    | I&T Status      | Priority / Bug Severity   |
-+==========================================================================================================+=================+===========================+
-| `planetary-data-cloud#153`_ As a user, I need a lambda function to tag S3 objects based upon file suffix | |:blue_circle:| | p.must-have               |
-+----------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
 
@@ -756,15 +948,48 @@ Registry
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+`registry#266`_ Implement design for alternate data file paths / file path updates
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`registry#333`_ Add S3 URIs to Registry Metadata
+++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
 `registry#370`_ Resurrect Legacy Registry Dashboards
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                | I&T Status      | Priority / Bug Severity   |
++======================================================+=================+===========================+
+| `registry#370`_ Resurrect Legacy Registry Dashboards | |:blue_circle:| | p.must-have               |
++------------------------------------------------------+-----------------+---------------------------+
+
+
+`registry#371`_ Adapt Harvest to Support Using Inventories for Data File Metadata
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
 
 `registry#381`_ B16 Registry Maintenance: High Priority Enhancements / Bug Fixes / Tasks
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-----------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+| Issue                                                                                   | I&T Status      | Level       | Priority / Bug Severity   |
++=========================================================================================+=================+=============+===========================+
+| `registry#380`_ CSV response not returning the values associated with `fields` argument | |:blue_circle:| | bug         | s.medium                  |
++-----------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+| `registry#375`_ product has date for sweeper index but is listed as not indexed         | |:blue_circle:| | bug         | s.medium                  |
++-----------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+| `registry#360`_ Fix GEO node products which ops:Harvest_Info/ops:node_name: geo         | |:blue_circle:| | enhancement | p.must-have               |
++-----------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+| `registry#403`_ members of GEO bundle/collection collection not found                   | |:blue_circle:| | bug         | s.high                    |
++-----------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+| `registry#440`_ Error `FIPS mode: only SunJSSE TrustManagers may be used`               | |:blue_circle:| | bug         | s.high                    |
++-----------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -776,40 +1001,23 @@ Bugs
 +==========================================================================================================+==================+===========================+
 | `registry#404`_ Registry is not accepting date time with leap second, e.g. `2015-06-30T23:59:60.862Z`    | |:green_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `registry#380`_ CSV response not returning the values associated with `fields` argument                  | |:blue_circle:|  | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `registry#375`_ product has date for sweeper index but is listed as not indexed                          | |:blue_circle:|  | s.medium                  |
-+----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `registry#403`_ members of GEO bundle/collection collection not found                                    | |:blue_circle:|  | s.high                    |
+| `registry#423`_ lid and pds:Identification_Area.pds:logical_identifier do not behave the same in the API | |:blue_circle:|  | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `registry#422`_ Some of product urn:nasa:pds:lro_diviner_derived2::1.0's fields are not indexed          | |:blue_circle:|  | s.high                    |
-+----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `registry#440`_ Error `FIPS mode: only SunJSSE TrustManagers may be used`                                | |:blue_circle:|  | s.high                    |
-+----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `registry#423`_ lid and pds:Identification_Area.pds:logical_identifier do not behave the same in the API | |:blue_circle:|  | s.medium                  |
 +----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Requirements
 ++++++++++++
 
-+------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                                                                              | I&T Status        | Priority / Bug Severity   |
-+====================================================================================================================================+===================+===========================+
-| `registry#424`_ As a user, I want to receive an alert when my registry credentials are readable by someone else than myself        | |:green_circle:|  | p.should-have             |
-+------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry#113`_ As a node operator, I want the the registry schema to update autonomously / dynamically when new data is ingested. | |:yellow_circle:| | p.should-have             |
-+------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry#396`_ As a node user, I want to have multiple cognito groups and still have the main cognito node group to be effective  | |:green_circle:|  | p.must-have               |
-+------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-
-Enhancements
-++++++++++++
-
-+---------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                           | I&T Status      | Priority / Bug Severity   |
-+=================================================================================+=================+===========================+
-| `registry#360`_ Fix GEO node products which ops:Harvest_Info/ops:node_name: geo | |:blue_circle:| | p.must-have               |
-+---------------------------------------------------------------------------------+-----------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| Issue                                                                                                                              | I&T Status       | Priority / Bug Severity   |
++====================================================================================================================================+==================+===========================+
+| `registry#113`_ As a node operator, I want the the registry schema to update autonomously / dynamically when new data is ingested. | |:blue_circle:|  | p.should-have             |
++------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `registry#424`_ As a user, I want to receive an alert when my registry credentials are readable by someone else than myself        | |:green_circle:| | p.should-have             |
++------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `registry#396`_ As a node user, I want to have multiple cognito groups and still have the main cognito node group to be effective  | |:green_circle:| | p.must-have               |
++------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 --------
 
@@ -830,15 +1038,50 @@ Registry-api
 
 Planned Updates
 ~~~~~~~~~~~~~~~
+`registry-api#715`_ Complete Design for Supporting Registration and Search of Mirrored Archives
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`registry-api#622`_ Add Search Functionality to Find When Class / Attribute Has Been Used / Exists
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++----------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                              | I&T Status      | Priority / Bug Severity   |
++====================================================================================================+=================+===========================+
+| `registry-api#622`_ Add Search Functionality to Find When Class / Attribute Has Been Used / Exists | |:blue_circle:| | unknown                   |
++----------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+
 `registry-api#623`_ Implement Registry API Performance Improvements
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++---------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                               | I&T Status      | Priority / Bug Severity   |
++=====================================================================+=================+===========================+
+| `registry-api#623`_ Implement Registry API Performance Improvements | |:blue_circle:| | unknown                   |
++---------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`registry-api#632`_ Add Support for Searching Full PDS4 Structured Metadata
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++-------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| Issue                                                                                                       | I&T Status        | Level       | Priority / Bug Severity   |
++=============================================================================================================+===================+=============+===========================+
+| `registry-api#611`_ As a user, I want to search by a full/unique hierarchical path for a specific attribute | |:yellow_circle:| | requirement | p.must-have               |
++-------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+
 
 `registry-api#633`_ Prototype Semantic Search Using AI / LLMs
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++---------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                         | I&T Status      | Priority / Bug Severity   |
++===============================================================+=================+===========================+
+| `registry-api#633`_ Prototype Semantic Search Using AI / LLMs | |:blue_circle:| | unknown                   |
++---------------------------------------------------------------+-----------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -848,9 +1091,11 @@ Bugs
 +-------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                                               | I&T Status       | Priority / Bug Severity   |
 +=====================================================================================================================================+==================+===========================+
+| `registry-api#638`_ The API fails when no Accept header is provided                                                                 | |:green_circle:| | s.high                    |
++-------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `registry-api#677`_ API search results using "search-after" returns empty [data] block even though I can find the product by lidvid | |:green_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `registry-api#638`_ The API fails when no Accept header is provided                                                                 | |:green_circle:| | s.high                    |
+| `registry-api#705`_ Inconsistent support for `application/vnd.nasa.pds.pds4+json` response format                                   | |:green_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 --------
@@ -938,8 +1183,13 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `registry-legacy-solr#200`_ B16 Registry Legacy Maintenance
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                       | I&T Status      | Priority / Bug Severity   |
++=============================================================+=================+===========================+
+| `registry-legacy-solr#200`_ B16 Registry Legacy Maintenance | |:blue_circle:| | p.could-have              |
++-------------------------------------------------------------+-----------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -951,6 +1201,41 @@ Enhancements
 +==============================================================================================+=================+===========================+
 | `registry-legacy-solr#217`_ Auto-restart the registry legacy docker container unless stopped | |:blue_circle:| | unknown                   |
 +----------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+--------
+
+Registry-loader
+---------------
+*Tools used to load and update data in the registry, currently harvest and registry manager package in a docker image. *
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/registry-loader#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-loader>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-loader/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry-loader/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-loader/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-loader/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+`registry-loader#49`_ Develop Harvest and Registry Manager Test Framework
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+Other Updates
+~~~~~~~~~~~~~
+Enhancements
+++++++++++++
+
++---------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                 | I&T Status      | Priority / Bug Severity   |
++=======================================================================================+=================+===========================+
+| `registry-loader#41`_ Merge registry-common, registry-mgr, harvest into one uber repo | |:blue_circle:| | unknown                   |
++---------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
 
@@ -981,9 +1266,9 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                                            | I&T Status       | Priority / Bug Severity   |
 +==================================================================================================================================+==================+===========================+
-| `registry-mgr#137`_ set-archive-status is changing the status of more products than are in the bundle                            | |:green_circle:| | s.high                    |
-+----------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `registry-mgr#134`_ registry-manager is incorrectly changing the archive_status of collection versions not in the bundle version | |:green_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `registry-mgr#137`_ set-archive-status is changing the status of more products than are in the bundle                            | |:green_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 --------
@@ -1007,21 +1292,24 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `registry-sweepers#166`_ Optimize Sweepers Performance - Part 1
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-----------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                           | I&T Status      | Priority / Bug Severity   |
++=================================================================+=================+===========================+
+| `registry-sweepers#166`_ Optimize Sweepers Performance - Part 1 | |:blue_circle:| | p.must-have               |
++-----------------------------------------------------------------+-----------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
 Bugs
 ++++
 
-+-------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                             | I&T Status        | Priority / Bug Severity   |
-+===================================================================+===================+===========================+
-| `registry-sweepers#164`_ ATM Registry-Sweeper ECS task is failing | |:blue_circle:|   | s.critical                |
-+-------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-sweepers#171`_ Ancestry not working properly for SBN    | |:yellow_circle:| | s.critical                |
-+-------------------------------------------------------------------+-------------------+---------------------------+
++-------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                             | I&T Status      | Priority / Bug Severity   |
++===================================================================+=================+===========================+
+| `registry-sweepers#164`_ ATM Registry-Sweeper ECS task is failing | |:blue_circle:| | s.critical                |
++-------------------------------------------------------------------+-----------------+---------------------------+
 
 Enhancements
 ++++++++++++
@@ -1119,38 +1407,83 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `software-issues-repo#118`_ 2025 Annual A&A Assessment Prep and Review
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                  | I&T Status      | Priority / Bug Severity   |
++========================================================================+=================+===========================+
+| `software-issues-repo#118`_ 2025 Annual A&A Assessment Prep and Review | |:blue_circle:| | p.must-have               |
++------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 `software-issues-repo#120`_ B16 Security Code Scans
 +++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-----------------------------------------------------+-----------------+---------------------------+
+| Issue                                               | I&T Status      | Priority / Bug Severity   |
++=====================================================+=================+===========================+
+| `software-issues-repo#120`_ B16 Security Code Scans | |:blue_circle:| | p.must-have               |
++-----------------------------------------------------+-----------------+---------------------------+
+
+
+`software-issues-repo#121`_ B16 Prep for I&T
+++++++++++++++++++++++++++++++++++++++++++++
+
++----------------------------------------------+-----------------+---------------------------+
+| Issue                                        | I&T Status      | Priority / Bug Severity   |
++==============================================+=================+===========================+
+| `software-issues-repo#121`_ B16 Prep for I&T | |:blue_circle:| | unknown                   |
++----------------------------------------------+-----------------+---------------------------+
+
 
 `software-issues-repo#122`_ B16 Code Freeze
 +++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++---------------------------------------------+-----------------+---------------------------+
+| Issue                                       | I&T Status      | Priority / Bug Severity   |
++=============================================+=================+===========================+
+| `software-issues-repo#122`_ B16 Code Freeze | |:blue_circle:| | unknown                   |
++---------------------------------------------+-----------------+---------------------------+
+
 
 `software-issues-repo#124`_ Re-imagine Data Release and DOI Processes in GitHub
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++---------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                           | I&T Status      | Priority / Bug Severity   |
++=================================================================================+=================+===========================+
+| `software-issues-repo#124`_ Re-imagine Data Release and DOI Processes in GitHub | |:blue_circle:| | unknown                   |
++---------------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 `software-issues-repo#125`_ Complete ISA with NSSDCA
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                | I&T Status      | Priority / Bug Severity   |
++======================================================+=================+===========================+
+| `software-issues-repo#125`_ Complete ISA with NSSDCA | |:blue_circle:| | p.must-have               |
++------------------------------------------------------+-----------------+---------------------------+
+
 
 `software-issues-repo#128`_ Upgrade Java Repos to use Maven Central Portal from OSSRH
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++---------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                 | I&T Status      | Priority / Bug Severity   |
++=======================================================================================+=================+===========================+
+| `software-issues-repo#128`_ Upgrade Java Repos to use Maven Central Portal from OSSRH | |:blue_circle:| | unknown                   |
++---------------------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 `software-issues-repo#139`_ Add Google Analytics to GitHub Sites
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                            | I&T Status      | Priority / Bug Severity   |
++==================================================================+=================+===========================+
+| `software-issues-repo#139`_ Add Google Analytics to GitHub Sites | |:blue_circle:| | p.must-have               |
++------------------------------------------------------------------+-----------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -1186,23 +1519,73 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `system-i-n-t#67`_ B16 dLDD Integration & Test
 ++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++------------------------------------------------+-----------------+---------------------------+
+| Issue                                          | I&T Status      | Priority / Bug Severity   |
++================================================+=================+===========================+
+| `system-i-n-t#67`_ B16 dLDD Integration & Test | |:blue_circle:| | unknown                   |
++------------------------------------------------+-----------------+---------------------------+
+
+
+`system-i-n-t#68`_ B16 Standards Document Review
+++++++++++++++++++++++++++++++++++++++++++++++++
+
++--------------------------------------------------+-----------------+---------------------------+
+| Issue                                            | I&T Status      | Priority / Bug Severity   |
++==================================================+=================+===========================+
+| `system-i-n-t#68`_ B16 Standards Document Review | |:blue_circle:| | unknown                   |
++--------------------------------------------------+-----------------+---------------------------+
+
 
 `system-i-n-t#69`_ B16 Test Readiness Review (TRR)
 ++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++----------------------------------------------------+-----------------+---------------------------+
+| Issue                                              | I&T Status      | Priority / Bug Severity   |
++====================================================+=================+===========================+
+| `system-i-n-t#69`_ B16 Test Readiness Review (TRR) | |:blue_circle:| | unknown                   |
++----------------------------------------------------+-----------------+---------------------------+
+
+
+`system-i-n-t#70`_ B16 System Integration & Test
+++++++++++++++++++++++++++++++++++++++++++++++++
+
++--------------------------------------------------+-----------------+---------------------------+
+| Issue                                            | I&T Status      | Priority / Bug Severity   |
++==================================================+=================+===========================+
+| `system-i-n-t#70`_ B16 System Integration & Test | |:blue_circle:| | unknown                   |
++--------------------------------------------------+-----------------+---------------------------+
+
+
+`system-i-n-t#71`_ B16 Deployment and Release
++++++++++++++++++++++++++++++++++++++++++++++
+
++-----------------------------------------------+-----------------+---------------------------+
+| Issue                                         | I&T Status      | Priority / Bug Severity   |
++===============================================+=================+===========================+
+| `system-i-n-t#71`_ B16 Deployment and Release | |:blue_circle:| | unknown                   |
++-----------------------------------------------+-----------------+---------------------------+
+
 
 `system-i-n-t#72`_ B16 Delivery & Deployment Review (DDR)
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-----------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                     | I&T Status      | Priority / Bug Severity   |
++===========================================================+=================+===========================+
+| `system-i-n-t#72`_ B16 Delivery & Deployment Review (DDR) | |:blue_circle:| | unknown                   |
++-----------------------------------------------------------+-----------------+---------------------------+
+
 
 `system-i-n-t#73`_ B16 Information Model I&T
 ++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++----------------------------------------------+-----------------+---------------------------+
+| Issue                                        | I&T Status      | Priority / Bug Severity   |
++==============================================+=================+===========================+
+| `system-i-n-t#73`_ B16 Information Model I&T | |:blue_circle:| | unknown                   |
++----------------------------------------------+-----------------+---------------------------+
+
 
 --------
 
@@ -1225,8 +1608,13 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `template-repo-python#104`_ Enable Code Coverage for Python repos
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                             | I&T Status      | Priority / Bug Severity   |
++===================================================================+=================+===========================+
+| `template-repo-python#104`_ Enable Code Coverage for Python repos | |:blue_circle:| | p.could-have              |
++-------------------------------------------------------------------+-----------------+---------------------------+
+
 
 --------
 
@@ -1249,63 +1637,71 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `validate#1184`_ Update Context Metadata Quality Checks to Support Aliases
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| Issue                                                                                                | I&T Status       | Level       | Priority / Bug Severity   |
++======================================================================================================+==================+=============+===========================+
+| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation  | |:green_circle:| | requirement | p.could-have              |
++------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#967`_ validate configuration includes context product names that do not match the products | |:green_circle:| | bug         | s.medium                  |
++------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+
 
 `validate#1203`_ B16 High Priority Bug Fixes and Updated Standards Implementations
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| Issue                                                                                                                          | I&T Status       | Level       | Priority / Bug Severity   |
++================================================================================================================================+==================+=============+===========================+
+| `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                                                | |:green_circle:| | requirement | p.should-have             |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#1234`_ validate does not raise a warning when a table has more records than label says it has                        | |:green_circle:| | bug         | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#1276`_ `--strict-field-checks` not working as expected                                                               | |:green_circle:| | bug         | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                                                     | |:blue_circle:|  | bug         | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#1331`_ `validate-bundle` does not find same files as `validate` (uppercase label filenames)                          | |:blue_circle:|  | bug         | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#1332`_ Validate Incorrectly Reports Overlap Error If Initial Bits Are Not Specified in Packed_Data_Fields            | |:green_circle:| | bug         | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#1357`_ Encoded_External/encoding_standard_id does not allow NetCDF                                                   | |:green_circle:| | bug         | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#1358`_ Validate doesn't correctly handle an integer value of valid_maximum associated with floating point data array | |:green_circle:| | bug         | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#1359`_ Validate does not allow LIDVID for external products                                                          | |:green_circle:| | bug         | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#1379`_ missing_constant treated differently to valid_minimim/valid_maximum                                           | |:green_circle:| | bug         | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+| `validate#1391`_ As a validate user, I want validate to allow delimited tables with whitespace-only numeric fields (CCB-28)    | |:green_circle:| | requirement | p.must-have               |
++--------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
 Bugs
 ++++
 
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| Issue                                                                                                                          | I&T Status       | Priority / Bug Severity   |
-+================================================================================================================================+==================+===========================+
-| `validate#1234`_ validate does not raise a warning when a table has more records than label says it has                        | |:green_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1149`_ `validate-bundle` has no default value for `--report-dir`                                                     | |:blue_circle:|  | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1316`_ Encoded_Audio encoding_standard_id = WAV gives MP4 error in Validate 3.7.1                                    | |:green_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1358`_ Validate doesn't correctly handle an integer value of valid_maximum associated with floating point data array | |:green_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1408`_ JSON reports duplicates messages per product specified                                                        | |:blue_circle:|  | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1331`_ `validate-bundle` does not find same files as `validate` (uppercase label filenames)                          | |:blue_circle:|  | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1332`_ Validate Incorrectly Reports Overlap Error If Initial Bits Are Not Specified in Packed_Data_Fields            | |:green_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1379`_ missing_constant treated differently to valid_minimim/valid_maximum                                           | |:green_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1276`_ `--strict-field-checks` not working as expected                                                               | |:green_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1359`_ Validate does not allow LIDVID for external products                                                          | |:green_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1357`_ Encoded_External/encoding_standard_id does not allow NetCDF                                                   | |:green_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#967`_ validate configuration includes context product names that do not match the products                           | |:green_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| Issue                                                                                                                                          | I&T Status       | Priority / Bug Severity   |
++================================================================================================================================================+==================+===========================+
+| `validate#1408`_ JSON reports duplicates messages per product specified                                                                        | |:blue_circle:|  | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `validate#1241`_ Validating large data file (150GB) is trying to write the entire file to local temp space - error upon not enough local space | |:blue_circle:|  | s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `validate#1316`_ Encoded_Audio encoding_standard_id = WAV gives MP4 error in Validate 3.7.1                                                    | |:green_circle:| | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Requirements
 ++++++++++++
 
-+-----------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| Issue                                                                                                                       | I&T Status       | Priority / Bug Severity   |
-+=============================================================================================================================+==================+===========================+
-| `validate#970`_ As a user, I want to includes titles and aliases in context product name validation                         | |:green_circle:| | p.could-have              |
-+-----------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1201`_ As a user, I want validate to report empty (blank) PDS4 labels                                             | |:green_circle:| | p.should-have             |
-+-----------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1391`_ As a validate user, I want validate to allow delimited tables with whitespace-only numeric fields (CCB-28) | |:green_circle:| | p.must-have               |
-+-----------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1370`_ As a Validate user, I want to include the lidvid for each label in all reports                             | |:blue_circle:|  | p.should-have             |
-+-----------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1137`_ As a user, I want to know how much progress is being made during a validate run                            | |:green_circle:| | p.should-have             |
-+-----------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| Issue                                                                                            | I&T Status       | Priority / Bug Severity   |
++==================================================================================================+==================+===========================+
+| `validate#1370`_ As a Validate user, I want to include the lidvid for each label in all reports  | |:blue_circle:|  | p.should-have             |
++--------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `validate#1137`_ As a user, I want to know how much progress is being made during a validate run | |:green_circle:| | p.should-have             |
++--------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Enhancements
 ++++++++++++
@@ -1337,13 +1733,23 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `web-analytics#50`_ Deploy Web Analytics System in Production
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++--------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+| Issue                                                                                      | I&T Status      | Level       | Priority / Bug Severity   |
++============================================================================================+=================+=============+===========================+
+| `web-analytics#53`_ As a user, I want to automatically deploy all web analytics components | |:blue_circle:| | requirement | p.must-have               |
++--------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
+
 
 `web-analytics#57`_ Complete Logstash Wrapper Tools for Prod Deployment
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                   | I&T Status      | Priority / Bug Severity   |
++=========================================================================+=================+===========================+
+| `web-analytics#57`_ Complete Logstash Wrapper Tools for Prod Deployment | |:blue_circle:| | unknown                   |
++-------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -1355,15 +1761,6 @@ Bugs
 +=======================================================================+=================+===========================+
 | `web-analytics#51`_ `en-web-analytics` is locked up and unable to use | |:blue_circle:| | s.high                    |
 +-----------------------------------------------------------------------+-----------------+---------------------------+
-
-Requirements
-++++++++++++
-
-+--------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                      | I&T Status      | Priority / Bug Severity   |
-+============================================================================================+=================+===========================+
-| `web-analytics#53`_ As a user, I want to automatically deploy all web analytics components | |:blue_circle:| | p.must-have               |
-+--------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 Enhancements
 ++++++++++++
@@ -1395,18 +1792,120 @@ Planned Updates
 ~~~~~~~~~~~~~~~
 `web-modernization#257`_ Design Instrument Package Portal Pages
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-----------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                           | I&T Status      | Priority / Bug Severity   |
++=================================================================+=================+===========================+
+| `web-modernization#257`_ Design Instrument Package Portal Pages | |:blue_circle:| | unknown                   |
++-----------------------------------------------------------------+-----------------+---------------------------+
+
 
 `web-modernization#258`_ Design Learning Hub Page
 +++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++---------------------------------------------------+-----------------+---------------------------+
+| Issue                                             | I&T Status      | Priority / Bug Severity   |
++===================================================+=================+===========================+
+| `web-modernization#258`_ Design Learning Hub Page | |:blue_circle:| | p.must-have               |
++---------------------------------------------------+-----------------+---------------------------+
+
 
 `web-modernization#259`_ Design-System Housekeeping
 +++++++++++++++++++++++++++++++++++++++++++++++++++
-    No requirements, enhancements, or bug fixes tickets identified for this theme in the current build. Click on the
-    link in this section title for details.
+
++-----------------------------------------------------+-----------------+---------------------------+
+| Issue                                               | I&T Status      | Priority / Bug Severity   |
++=====================================================+=================+===========================+
+| `web-modernization#259`_ Design-System Housekeeping | |:blue_circle:| | unknown                   |
++-----------------------------------------------------+-----------------+---------------------------+
+
+
+`web-modernization#260`_ Prototype Using LLMs for Training Support
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`web-modernization#261`_ Update Data Portal Pages to Better Support Programmatic and Cloud-enabled Access
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`web-modernization#265`_ Design new Data Release Pages
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+Release Summary Metrics
+=======================
+This section provides a summary of the issues addressed in this release, organized by issue type.
+
+
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| Component/Repo         | Bugs   | Enhancements   | Requirements   | Tasks   | Themes   | Total   |
++========================+========+================+================+=========+==========+=========+
+| EdWG                   | 0      | 0              | 0              | 0       | 4        | 4       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| data-upload-manager    | 3      | 1              | 4              | 0       | 5        | 13      |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| deep-archive           | 2      | 1              | 2              | 0       | 2        | 7       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| devops                 | 0      | 0              | 0              | 0       | 1        | 1       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| doi-service            | 4      | 1              | 2              | 0       | 0        | 7       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| ds-view                | 2      | 0              | 0              | 0       | 0        | 2       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| harvest                | 3      | 0              | 2              | 0       | 0        | 5       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| lasso-releasers        | 1      | 0              | 0              | 0       | 0        | 1       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| nucleus                | 1      | 0              | 0              | 0       | 7        | 8       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| pds4-information-model | 3      | 4              | 6              | 0       | 5        | 18      |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| pdsen-maven-parent     | 0      | 1              | 0              | 0       | 0        | 1       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| peppi                  | 2      | 0              | 0              | 0       | 0        | 2       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| planetary-data-cloud   | 1      | 0              | 1              | 0       | 15       | 17      |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| portal-tasks           | 2      | 0              | 0              | 0       | 0        | 2       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| registry               | 7      | 1              | 3              | 0       | 5        | 16      |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| registry-api           | 3      | 0              | 1              | 0       | 5        | 9       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| registry-client        | 0      | 1              | 0              | 0       | 0        | 1       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| registry-common        | 0      | 1              | 0              | 0       | 0        | 1       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| registry-legacy-solr   | 0      | 1              | 0              | 0       | 1        | 2       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| registry-loader        | 0      | 1              | 0              | 0       | 1        | 2       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| registry-mgr           | 2      | 0              | 0              | 0       | 0        | 2       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| registry-sweepers      | 1      | 1              | 0              | 0       | 1        | 3       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| roundup-action         | 2      | 0              | 0              | 0       | 0        | 2       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| search-ui-legacy       | 1      | 0              | 0              | 0       | 0        | 1       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| software-issues-repo   | 0      | 2              | 0              | 0       | 8        | 10      |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| system-i-n-t           | 0      | 0              | 0              | 0       | 7        | 7       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| template-repo-python   | 0      | 0              | 0              | 0       | 1        | 1       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| validate               | 13     | 1              | 5              | 0       | 2        | 21      |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| web-analytics          | 1      | 1              | 1              | 0       | 2        | 5       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| web-modernization      | 0      | 0              | 0              | 0       | 6        | 6       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| **TOTAL**              | **54** | **18**         | **27**         | **0**   | **78**   | **177** |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+
 
 Liens
 =====
@@ -1468,67 +1967,79 @@ as follows:
 - `PDS DOI Service Requirements and Design Document (SRD/SDD)`_
 
 .. _plan B16: https://nasa-pds.github.io/releases/16/plan.html
+.. _pds4-information-model#663: https://github.com/NASA-PDS/pds4-information-model/issues/663
 .. _pds4-information-model#945: https://github.com/NASA-PDS/pds4-information-model/issues/945
 .. _pds4-information-model#946: https://github.com/NASA-PDS/pds4-information-model/issues/946
 .. _pds4-information-model#949: https://github.com/NASA-PDS/pds4-information-model/issues/949
 .. _pds4-information-model#967: https://github.com/NASA-PDS/pds4-information-model/issues/967
 .. _data-upload-manager#207: https://github.com/NASA-PDS/data-upload-manager/issues/207
+.. _data-upload-manager#221: https://github.com/NASA-PDS/data-upload-manager/issues/221
+.. _data-upload-manager#224: https://github.com/NASA-PDS/data-upload-manager/issues/224
+.. _data-upload-manager#264: https://github.com/NASA-PDS/data-upload-manager/issues/264
 .. _data-upload-manager#224: https://github.com/NASA-PDS/data-upload-manager/issues/224
 .. _data-upload-manager#231: https://github.com/NASA-PDS/data-upload-manager/issues/231
-.. _data-upload-manager#271: https://github.com/NASA-PDS/data-upload-manager/issues/271
-.. _data-upload-manager#241: https://github.com/NASA-PDS/data-upload-manager/issues/241
-.. _data-upload-manager#282: https://github.com/NASA-PDS/data-upload-manager/issues/282
 .. _data-upload-manager#232: https://github.com/NASA-PDS/data-upload-manager/issues/232
-.. _data-upload-manager#221: https://github.com/NASA-PDS/data-upload-manager/issues/221
-.. _data-upload-manager#99: https://github.com/NASA-PDS/data-upload-manager/issues/99
+.. _data-upload-manager#256: https://github.com/NASA-PDS/data-upload-manager/issues/256
 .. _data-upload-manager#209: https://github.com/NASA-PDS/data-upload-manager/issues/209
+.. _data-upload-manager#264: https://github.com/NASA-PDS/data-upload-manager/issues/264
+.. _data-upload-manager#282: https://github.com/NASA-PDS/data-upload-manager/issues/282
+.. _data-upload-manager#241: https://github.com/NASA-PDS/data-upload-manager/issues/241
+.. _data-upload-manager#271: https://github.com/NASA-PDS/data-upload-manager/issues/271
+.. _data-upload-manager#99: https://github.com/NASA-PDS/data-upload-manager/issues/99
 .. _data-upload-manager#289: https://github.com/NASA-PDS/data-upload-manager/issues/289
 .. _deep-archive#204: https://github.com/NASA-PDS/deep-archive/issues/204
-.. _deep-archive#210: https://github.com/NASA-PDS/deep-archive/issues/210
-.. _deep-archive#213: https://github.com/NASA-PDS/deep-archive/issues/213
-.. _deep-archive#208: https://github.com/NASA-PDS/deep-archive/issues/208
 .. _deep-archive#157: https://github.com/NASA-PDS/deep-archive/issues/157
+.. _deep-archive#210: https://github.com/NASA-PDS/deep-archive/issues/210
+.. _deep-archive#208: https://github.com/NASA-PDS/deep-archive/issues/208
 .. _deep-archive#136: https://github.com/NASA-PDS/deep-archive/issues/136
+.. _deep-archive#213: https://github.com/NASA-PDS/deep-archive/issues/213
 .. _deep-archive#218: https://github.com/NASA-PDS/deep-archive/issues/218
 .. _devops#81: https://github.com/NASA-PDS/devops/issues/81
-.. _doi-service#476: https://github.com/NASA-PDS/doi-service/issues/476
-.. _doi-service#466: https://github.com/NASA-PDS/doi-service/issues/466
 .. _doi-service#455: https://github.com/NASA-PDS/doi-service/issues/455
+.. _doi-service#466: https://github.com/NASA-PDS/doi-service/issues/466
 .. _doi-service#456: https://github.com/NASA-PDS/doi-service/issues/456
+.. _doi-service#476: https://github.com/NASA-PDS/doi-service/issues/476
 .. _doi-service#478: https://github.com/NASA-PDS/doi-service/issues/478
 .. _doi-service#432: https://github.com/NASA-PDS/doi-service/issues/432
 .. _doi-service#485: https://github.com/NASA-PDS/doi-service/issues/485
 .. _ds-view#56: https://github.com/NASA-PDS/ds-view/issues/56
 .. _ds-view#53: https://github.com/NASA-PDS/ds-view/issues/53
+.. _EdWG#28: https://github.com/NASA-PDS/EdWG/issues/28
+.. _EdWG#53: https://github.com/NASA-PDS/EdWG/issues/53
 .. _EdWG#85: https://github.com/NASA-PDS/EdWG/issues/85
 .. _EdWG#86: https://github.com/NASA-PDS/EdWG/issues/86
-.. _harvest#239: https://github.com/NASA-PDS/harvest/issues/239
 .. _harvest#283: https://github.com/NASA-PDS/harvest/issues/283
 .. _harvest#285: https://github.com/NASA-PDS/harvest/issues/285
-.. _harvest#262: https://github.com/NASA-PDS/harvest/issues/262
+.. _harvest#239: https://github.com/NASA-PDS/harvest/issues/239
 .. _harvest#261: https://github.com/NASA-PDS/harvest/issues/261
+.. _harvest#262: https://github.com/NASA-PDS/harvest/issues/262
 .. _lasso-releasers#5: https://github.com/NASA-PDS/lasso-releasers/issues/5
+.. _nucleus#127: https://github.com/NASA-PDS/nucleus/issues/127
 .. _nucleus#131: https://github.com/NASA-PDS/nucleus/issues/131
+.. _nucleus#138: https://github.com/NASA-PDS/nucleus/issues/138
 .. _nucleus#142: https://github.com/NASA-PDS/nucleus/issues/142
 .. _nucleus#147: https://github.com/NASA-PDS/nucleus/issues/147
 .. _nucleus#149: https://github.com/NASA-PDS/nucleus/issues/149
 .. _nucleus#156: https://github.com/NASA-PDS/nucleus/issues/156
 .. _nucleus#159: https://github.com/NASA-PDS/nucleus/issues/159
 .. _pds4-information-model#917: https://github.com/NASA-PDS/pds4-information-model/issues/917
+.. _pds4-information-model#939: https://github.com/NASA-PDS/pds4-information-model/issues/939
+.. _pds4-information-model#938: https://github.com/NASA-PDS/pds4-information-model/issues/938
+.. _pds4-information-model#948: https://github.com/NASA-PDS/pds4-information-model/issues/948
+.. _pds4-information-model#967: https://github.com/NASA-PDS/pds4-information-model/issues/967
+.. _pds4-information-model#968: https://github.com/NASA-PDS/pds4-information-model/issues/968
 .. _pds4-information-model#920: https://github.com/NASA-PDS/pds4-information-model/issues/920
 .. _pds4-information-model#921: https://github.com/NASA-PDS/pds4-information-model/issues/921
 .. _pds4-information-model#922: https://github.com/NASA-PDS/pds4-information-model/issues/922
-.. _pds4-information-model#951: https://github.com/NASA-PDS/pds4-information-model/issues/951
-.. _pds4-information-model#938: https://github.com/NASA-PDS/pds4-information-model/issues/938
+.. _pds4-information-model#926: https://github.com/NASA-PDS/pds4-information-model/issues/926
 .. _pds4-information-model#947: https://github.com/NASA-PDS/pds4-information-model/issues/947
-.. _pds4-information-model#939: https://github.com/NASA-PDS/pds4-information-model/issues/939
-.. _pds4-information-model#946: https://github.com/NASA-PDS/pds4-information-model/issues/946
+.. _pds4-information-model#951: https://github.com/NASA-PDS/pds4-information-model/issues/951
 .. _pds4-information-model#949: https://github.com/NASA-PDS/pds4-information-model/issues/949
-.. _pds4-information-model#948: https://github.com/NASA-PDS/pds4-information-model/issues/948
+.. _pds4-information-model#663: https://github.com/NASA-PDS/pds4-information-model/issues/663
+.. _pds4-information-model#946: https://github.com/NASA-PDS/pds4-information-model/issues/946
 .. _pds4-information-model#945: https://github.com/NASA-PDS/pds4-information-model/issues/945
-.. _pds4-information-model#935: https://github.com/NASA-PDS/pds4-information-model/issues/935
-.. _pds4-information-model#968: https://github.com/NASA-PDS/pds4-information-model/issues/968
 .. _pds4-information-model#953: https://github.com/NASA-PDS/pds4-information-model/issues/953
+.. _pds4-information-model#935: https://github.com/NASA-PDS/pds4-information-model/issues/935
 .. _pds4-information-model#958: https://github.com/NASA-PDS/pds4-information-model/issues/958
 .. _pdsen-maven-parent#70: https://github.com/NASA-PDS/pdsen-maven-parent/issues/70
 .. _peppi#104: https://github.com/NASA-PDS/peppi/issues/104
@@ -1536,48 +2047,64 @@ as follows:
 .. _planetary-data-cloud#87: https://github.com/NASA-PDS/planetary-data-cloud/issues/87
 .. _planetary-data-cloud#100: https://github.com/NASA-PDS/planetary-data-cloud/issues/100
 .. _planetary-data-cloud#159: https://github.com/NASA-PDS/planetary-data-cloud/issues/159
+.. _planetary-data-cloud#153: https://github.com/NASA-PDS/planetary-data-cloud/issues/153
+.. _planetary-data-cloud#117: https://github.com/NASA-PDS/planetary-data-cloud/issues/117
 .. _planetary-data-cloud#139: https://github.com/NASA-PDS/planetary-data-cloud/issues/139
 .. _planetary-data-cloud#144: https://github.com/NASA-PDS/planetary-data-cloud/issues/144
 .. _planetary-data-cloud#145: https://github.com/NASA-PDS/planetary-data-cloud/issues/145
 .. _planetary-data-cloud#146: https://github.com/NASA-PDS/planetary-data-cloud/issues/146
+.. _planetary-data-cloud#147: https://github.com/NASA-PDS/planetary-data-cloud/issues/147
+.. _planetary-data-cloud#164: https://github.com/NASA-PDS/planetary-data-cloud/issues/164
 .. _planetary-data-cloud#165: https://github.com/NASA-PDS/planetary-data-cloud/issues/165
+.. _planetary-data-cloud#166: https://github.com/NASA-PDS/planetary-data-cloud/issues/166
+.. _planetary-data-cloud#184: https://github.com/NASA-PDS/planetary-data-cloud/issues/184
 .. _planetary-data-cloud#188: https://github.com/NASA-PDS/planetary-data-cloud/issues/188
+.. _planetary-data-cloud#193: https://github.com/NASA-PDS/planetary-data-cloud/issues/193
 .. _planetary-data-cloud#171: https://github.com/NASA-PDS/planetary-data-cloud/issues/171
-.. _planetary-data-cloud#153: https://github.com/NASA-PDS/planetary-data-cloud/issues/153
 .. _portal-tasks#123: https://github.com/NASA-PDS/portal-tasks/issues/123
 .. _portal-tasks#129: https://github.com/NASA-PDS/portal-tasks/issues/129
+.. _registry#266: https://github.com/NASA-PDS/registry/issues/266
+.. _registry#333: https://github.com/NASA-PDS/registry/issues/333
 .. _registry#370: https://github.com/NASA-PDS/registry/issues/370
+.. _registry#371: https://github.com/NASA-PDS/registry/issues/371
 .. _registry#381: https://github.com/NASA-PDS/registry/issues/381
-.. _registry#404: https://github.com/NASA-PDS/registry/issues/404
 .. _registry#380: https://github.com/NASA-PDS/registry/issues/380
 .. _registry#375: https://github.com/NASA-PDS/registry/issues/375
-.. _registry#403: https://github.com/NASA-PDS/registry/issues/403
-.. _registry#422: https://github.com/NASA-PDS/registry/issues/422
-.. _registry#440: https://github.com/NASA-PDS/registry/issues/440
-.. _registry#423: https://github.com/NASA-PDS/registry/issues/423
-.. _registry#424: https://github.com/NASA-PDS/registry/issues/424
-.. _registry#113: https://github.com/NASA-PDS/registry/issues/113
-.. _registry#396: https://github.com/NASA-PDS/registry/issues/396
 .. _registry#360: https://github.com/NASA-PDS/registry/issues/360
+.. _registry#403: https://github.com/NASA-PDS/registry/issues/403
+.. _registry#440: https://github.com/NASA-PDS/registry/issues/440
+.. _registry#404: https://github.com/NASA-PDS/registry/issues/404
+.. _registry#423: https://github.com/NASA-PDS/registry/issues/423
+.. _registry#422: https://github.com/NASA-PDS/registry/issues/422
+.. _registry#113: https://github.com/NASA-PDS/registry/issues/113
+.. _registry#424: https://github.com/NASA-PDS/registry/issues/424
+.. _registry#396: https://github.com/NASA-PDS/registry/issues/396
+.. _registry-api#715: https://github.com/NASA-PDS/registry-api/issues/715
+.. _registry-api#622: https://github.com/NASA-PDS/registry-api/issues/622
 .. _registry-api#623: https://github.com/NASA-PDS/registry-api/issues/623
+.. _registry-api#632: https://github.com/NASA-PDS/registry-api/issues/632
+.. _registry-api#611: https://github.com/NASA-PDS/registry-api/issues/611
 .. _registry-api#633: https://github.com/NASA-PDS/registry-api/issues/633
-.. _registry-api#677: https://github.com/NASA-PDS/registry-api/issues/677
 .. _registry-api#638: https://github.com/NASA-PDS/registry-api/issues/638
+.. _registry-api#677: https://github.com/NASA-PDS/registry-api/issues/677
+.. _registry-api#705: https://github.com/NASA-PDS/registry-api/issues/705
 .. _registry-client#34: https://github.com/NASA-PDS/registry-client/issues/34
 .. _registry-common#149: https://github.com/NASA-PDS/registry-common/issues/149
 .. _registry-legacy-solr#200: https://github.com/NASA-PDS/registry-legacy-solr/issues/200
 .. _registry-legacy-solr#217: https://github.com/NASA-PDS/registry-legacy-solr/issues/217
-.. _registry-mgr#137: https://github.com/NASA-PDS/registry-mgr/issues/137
+.. _registry-loader#49: https://github.com/NASA-PDS/registry-loader/issues/49
+.. _registry-loader#41: https://github.com/NASA-PDS/registry-loader/issues/41
 .. _registry-mgr#134: https://github.com/NASA-PDS/registry-mgr/issues/134
+.. _registry-mgr#137: https://github.com/NASA-PDS/registry-mgr/issues/137
 .. _registry-sweepers#166: https://github.com/NASA-PDS/registry-sweepers/issues/166
 .. _registry-sweepers#164: https://github.com/NASA-PDS/registry-sweepers/issues/164
-.. _registry-sweepers#171: https://github.com/NASA-PDS/registry-sweepers/issues/171
 .. _registry-sweepers#181: https://github.com/NASA-PDS/registry-sweepers/issues/181
 .. _roundup-action#154: https://github.com/NASA-PDS/roundup-action/issues/154
 .. _roundup-action#157: https://github.com/NASA-PDS/roundup-action/issues/157
 .. _search-ui-legacy#59: https://github.com/NASA-PDS/search-ui-legacy/issues/59
 .. _software-issues-repo#118: https://github.com/NASA-PDS/software-issues-repo/issues/118
 .. _software-issues-repo#120: https://github.com/NASA-PDS/software-issues-repo/issues/120
+.. _software-issues-repo#121: https://github.com/NASA-PDS/software-issues-repo/issues/121
 .. _software-issues-repo#122: https://github.com/NASA-PDS/software-issues-repo/issues/122
 .. _software-issues-repo#124: https://github.com/NASA-PDS/software-issues-repo/issues/124
 .. _software-issues-repo#125: https://github.com/NASA-PDS/software-issues-repo/issues/125
@@ -1586,38 +2113,45 @@ as follows:
 .. _software-issues-repo#135: https://github.com/NASA-PDS/software-issues-repo/issues/135
 .. _software-issues-repo#113: https://github.com/NASA-PDS/software-issues-repo/issues/113
 .. _system-i-n-t#67: https://github.com/NASA-PDS/system-i-n-t/issues/67
+.. _system-i-n-t#68: https://github.com/NASA-PDS/system-i-n-t/issues/68
 .. _system-i-n-t#69: https://github.com/NASA-PDS/system-i-n-t/issues/69
+.. _system-i-n-t#70: https://github.com/NASA-PDS/system-i-n-t/issues/70
+.. _system-i-n-t#71: https://github.com/NASA-PDS/system-i-n-t/issues/71
 .. _system-i-n-t#72: https://github.com/NASA-PDS/system-i-n-t/issues/72
 .. _system-i-n-t#73: https://github.com/NASA-PDS/system-i-n-t/issues/73
 .. _template-repo-python#104: https://github.com/NASA-PDS/template-repo-python/issues/104
 .. _validate#1184: https://github.com/NASA-PDS/validate/issues/1184
+.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
+.. _validate#967: https://github.com/NASA-PDS/validate/issues/967
 .. _validate#1203: https://github.com/NASA-PDS/validate/issues/1203
+.. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
 .. _validate#1234: https://github.com/NASA-PDS/validate/issues/1234
+.. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
 .. _validate#1149: https://github.com/NASA-PDS/validate/issues/1149
-.. _validate#1316: https://github.com/NASA-PDS/validate/issues/1316
-.. _validate#1358: https://github.com/NASA-PDS/validate/issues/1358
-.. _validate#1408: https://github.com/NASA-PDS/validate/issues/1408
 .. _validate#1331: https://github.com/NASA-PDS/validate/issues/1331
 .. _validate#1332: https://github.com/NASA-PDS/validate/issues/1332
-.. _validate#1379: https://github.com/NASA-PDS/validate/issues/1379
-.. _validate#1276: https://github.com/NASA-PDS/validate/issues/1276
-.. _validate#1359: https://github.com/NASA-PDS/validate/issues/1359
 .. _validate#1357: https://github.com/NASA-PDS/validate/issues/1357
-.. _validate#967: https://github.com/NASA-PDS/validate/issues/967
-.. _validate#970: https://github.com/NASA-PDS/validate/issues/970
-.. _validate#1201: https://github.com/NASA-PDS/validate/issues/1201
+.. _validate#1358: https://github.com/NASA-PDS/validate/issues/1358
+.. _validate#1359: https://github.com/NASA-PDS/validate/issues/1359
+.. _validate#1379: https://github.com/NASA-PDS/validate/issues/1379
 .. _validate#1391: https://github.com/NASA-PDS/validate/issues/1391
+.. _validate#1408: https://github.com/NASA-PDS/validate/issues/1408
+.. _validate#1241: https://github.com/NASA-PDS/validate/issues/1241
+.. _validate#1316: https://github.com/NASA-PDS/validate/issues/1316
 .. _validate#1370: https://github.com/NASA-PDS/validate/issues/1370
 .. _validate#1137: https://github.com/NASA-PDS/validate/issues/1137
 .. _validate#1424: https://github.com/NASA-PDS/validate/issues/1424
 .. _web-analytics#50: https://github.com/NASA-PDS/web-analytics/issues/50
+.. _web-analytics#53: https://github.com/NASA-PDS/web-analytics/issues/53
 .. _web-analytics#57: https://github.com/NASA-PDS/web-analytics/issues/57
 .. _web-analytics#51: https://github.com/NASA-PDS/web-analytics/issues/51
-.. _web-analytics#53: https://github.com/NASA-PDS/web-analytics/issues/53
 .. _web-analytics#61: https://github.com/NASA-PDS/web-analytics/issues/61
 .. _web-modernization#257: https://github.com/NASA-PDS/web-modernization/issues/257
 .. _web-modernization#258: https://github.com/NASA-PDS/web-modernization/issues/258
 .. _web-modernization#259: https://github.com/NASA-PDS/web-modernization/issues/259
+.. _web-modernization#260: https://github.com/NASA-PDS/web-modernization/issues/260
+.. _web-modernization#261: https://github.com/NASA-PDS/web-modernization/issues/261
+.. _web-modernization#265: https://github.com/NASA-PDS/web-modernization/issues/265
 .. _Software Release Summary (B16): https://nasa-pds.github.io/releases/16/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
