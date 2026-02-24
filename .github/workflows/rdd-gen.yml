@@ -23,7 +23,7 @@ jobs:
       - name: Set up Python 3
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.13'
 
       - name: Install dependencies
         run: |
@@ -31,7 +31,6 @@ jobs:
 
       - name: Generate RDD
         run: |
-          export ZENHUB_TOKEN=${{ secrets.ZENHUB_TOKEN }}
           pds-issues --token ${{ secrets.ADMIN_GITHUB_TOKEN }} --format rst --issue_state closed --build B${{matrix.build-number}}
           mkdir -p docs/source/releases/${{matrix.build-number}}
           mv pdsen_issues.rst docs/source/releases/${{matrix.build-number}}/rdd.rst
