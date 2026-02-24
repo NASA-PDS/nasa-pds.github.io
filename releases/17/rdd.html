@@ -1,0 +1,2368 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release Description Document (Build B17) &mdash; NASA PDS Software B16 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=6fa68f7b" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=08626a09"></script>
+      <script src="../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Software Catalog (Build 10.1)" href="../10.1/index.html" />
+    <link rel="prev" title="Upcoming" href="../releases.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            NASA PDS Software
+              <img src="../../_static/PDS_Planets.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">System Releases</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../16/index.html">Current Release</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../releases.html">Upcoming</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Latest In-Dev Software RDD (B17)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pds4-standards-and-information-model-changes">PDS4 Standards and Information Model Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#software-changes">Software Changes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#data-upload-manager">Data-upload-manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deep-archive">Deep-archive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#doi-service">Doi-service</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#harvest">Harvest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lasso-issues">Lasso-issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operations">Operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pds-api">Pds-api</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pds4-context-products">Pds4-context-products</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pds4-information-model">Pds4-information-model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#peppi">Peppi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#planetary-data-cloud">Planetary-data-cloud</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#registry">Registry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#registry-api">Registry-api</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#registry-legacy-solr">Registry-legacy-solr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#registry-loader">Registry-loader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#registry-sweepers">Registry-sweepers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#software-issues-repo">Software-issues-repo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#system-i-n-t">System-i-n-t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#validate">Validate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#web-analytics">Web-analytics</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#release-summary-metrics">Release Summary Metrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#liens">Liens</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#engineering-node-software-catalog">Engineering Node Software Catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-and-operation">Installation and Operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reference-documents">Reference documents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releases.html#past-releases">Past Releases</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Collaborate</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../collaborate/contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../collaborate/developer.html">PDS Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../collaborate/forum.html">OpenPlanetary Forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../collaborate/jpl-pds-oss-policy.html">JPL-PDS Open Source Software Policy</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../teams/pds-swg.html">Software Working Group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../teams/pdsen-operations.html">PDSEN Operations Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../teams/pmc.html">PMC and Committers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../support/contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/help.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/discipline_nodes/index.html">Discipline Node Support</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/NASA-PDS/nasa-pds.github.io/wiki">Wiki</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NASA PDS Software</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../releases.html">Upcoming</a></li>
+      <li class="breadcrumb-item active">Release Description Document (Build B17)</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/nasa-pds/nasa-pds.github.io/blob/main/docs/source/releases/17/rdd.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="release-description-document-build-b17">
+<h1>Release Description Document (Build B17)<a class="headerlink" href="#release-description-document-build-b17" title="Link to this heading"></a></h1>
+<p>This release of the PDS4 System is intended as an operational release of the system components to date.
+The original plan for this release can be found here: <a class="reference external" href="https://nasa-pds.github.io/releases/17/plan.html">plan B17</a></p>
+<p>The following sections can be found in this document:</p>
+<div class="toctree-wrapper compound">
+</div>
+<section id="pds4-standards-and-information-model-changes">
+<h2>PDS4 Standards and Information Model Changes<a class="headerlink" href="#pds4-standards-and-information-model-changes" title="Link to this heading"></a></h2>
+<p>This section details the changes to the PDS4 Standards and Information Model approved by the PDS4 Change Control Board
+and implemented by the PDS within the latest build period.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ref</p></th>
+<th class="head"><p>Title</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/663">pds4-information-model#663</a></p></td>
+<td><p>Adopt Provenance LDD for Superseded LIDs - CCB-21 (CCB-367)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="software-changes">
+<h2>Software Changes<a class="headerlink" href="#software-changes" title="Link to this heading"></a></h2>
+<p>For each software repository, the changes are listed in 2 categories:</p>
+<ul class="simple">
+<li><p>Planned Updates</p></li>
+<li><p>Other Updates</p></li>
+</ul>
+<p>The ‘Planned Updates’ are organized by ‘Themes’ (or ‘Release Themes’), which are defined in advance and approved by the
+PDS Software Working Group (see <a class="reference external" href="https://nasa-pds.github.io/releases/17/plan.html">Plan B17</a>).</p>
+<p>The ‘Other Updates’ occurs during the build cycle without being planned or attached to a theme. They are organized by
+types (bug, enhancements, requirements, tasks). Any updates that require a de-scope of planned tasks are reviewed by the
+PDS Software Working Group.</p>
+<p>The deliveries are validated by the development team and go through an additional Integration &amp; Test process, as
+applicable, as indicated by the <code class="docutils literal notranslate"><span class="pre">`Testing</span> <span class="pre">Status`</span></code> column in the tables below. There are 3 possible statuses for
+testing:</p>
+<ul class="simple">
+<li><p>🔵 Skip Testing - Testing is not needed for this ticket. These are determined at the discretion of the
+team based upon the technical or operational nature of the closed task.</p></li>
+<li><p>🟡 Testing Needed</p></li>
+<li><p>🟢 Testing Complete - Initial testing complete, and test cases/results documented.</p></li>
+</ul>
+<hr class="docutils" />
+<section id="data-upload-manager">
+<h3>Data-upload-manager<a class="headerlink" href="#data-upload-manager" title="Link to this heading"></a></h3>
+<p><em>Data Upload Manager (DUM) component for managing the interface for data uploads to the Planetary Data Cloud from Data Providers and PDS Nodes.</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/data-upload-manager">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="planned-updates">
+<h4>Planned Updates<a class="headerlink" href="#planned-updates" title="Link to this heading"></a></h4>
+<section id="data-upload-manager-264-sync-dum-metadata-with-rclone-metadata">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/264">data-upload-manager#264</a> Sync DUM Metadata with rclone metadata<a class="headerlink" href="#data-upload-manager-264-sync-dum-metadata-with-rclone-metadata" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/264">data-upload-manager#264</a> Sync DUM Metadata with rclone metadata</p></td>
+<td><p>🔵</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-upload-manager-293-b17-dum-enhancements-high-priority-updates-bug-fixes-tasks">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/293">data-upload-manager#293</a> B17 DUM Enhancements: High Priority Updates / Bug Fixes / Tasks<a class="headerlink" href="#data-upload-manager-293-b17-dum-enhancements-high-priority-updates-bug-fixes-tasks" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/293">data-upload-manager#293</a> B17 DUM Enhancements: High Priority Updates / Bug Fixes / Tasks</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-upload-manager-295-add-dum-support-for-handling-files-in-archive-buckets">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/295">data-upload-manager#295</a> Add DUM Support For Handling Files In Archive Buckets<a class="headerlink" href="#data-upload-manager-295-add-dum-support-for-handling-files-in-archive-buckets" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/100">data-upload-manager#100</a> As a user, I want to force an upload of file that is already in the archive bucket</p></td>
+<td><p>🟡</p></td>
+<td><p>requirement</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/99">data-upload-manager#99</a> As a user, I want to skip upload of files that are already in the archive bucket</p></td>
+<td><p>🟢</p></td>
+<td><p>requirement</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-upload-manager-319-new-flag-to-skipping-symlinks">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/319">data-upload-manager#319</a> New Flag to Skipping Symlinks<a class="headerlink" href="#data-upload-manager-319-new-flag-to-skipping-symlinks" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/340">data-upload-manager#340</a> As a data provider, I want to skip following symlinks during ingress</p></td>
+<td><p>🟡</p></td>
+<td><p>requirement</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-upload-manager-329-b17-dum-support-high-priority-enhancements-bug-fixes-tasks">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/329">data-upload-manager#329</a> B17 DUM Support:  High Priority Enhancements / Bug Fixes / Tasks<a class="headerlink" href="#data-upload-manager-329-b17-dum-support-high-priority-enhancements-bug-fixes-tasks" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/318">data-upload-manager#318</a> S3 client initialization does not use explicit IAM role credentials</p></td>
+<td><p>🟡</p></td>
+<td><p>bug</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/321">data-upload-manager#321</a> S3 operations do not validate bucket ownership leading to Confused Deputy vulnerability</p></td>
+<td><p>🟡</p></td>
+<td><p>bug</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/337">data-upload-manager#337</a> DUM client MD5 hash generation does not work on FIPS-enabled systems</p></td>
+<td><p>🟡</p></td>
+<td><p>bug</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/336">data-upload-manager#336</a> Upload of gzip files does not happen if it is batched with non-gzip files</p></td>
+<td><p>🟡</p></td>
+<td><p>bug</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="other-updates">
+<h4>Other Updates<a class="headerlink" href="#other-updates" title="Link to this heading"></a></h4>
+<section id="bugs">
+<h5>Bugs<a class="headerlink" href="#bugs" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/304">data-upload-manager#304</a> Summary table bytes transferred does not calculate correctly with multiple threads</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id1">
+<h5>Requirements<a class="headerlink" href="#id1" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/data-upload-manager/issues/330">data-upload-manager#330</a> As a Node Operator, I want weblogs to be validated as gzipped prior to upload</p></td>
+<td><p>🟢</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="deep-archive">
+<h3>Deep-archive<a class="headerlink" href="#deep-archive" title="Link to this heading"></a></h3>
+<p><em>PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/deep-archive/">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/deep-archive">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/deep-archive/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/deep-archive/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/deep-archive/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/deep-archive/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id8">
+<h4>Planned Updates<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id9">
+<h4>Other Updates<a class="headerlink" href="#id9" title="Link to this heading"></a></h4>
+<section id="id10">
+<h5>Bugs<a class="headerlink" href="#id10" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/deep-archive/issues/237">deep-archive#237</a> Registry transient error not handled gracefully – JSONDecodeError on 500 response</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/deep-archive/issues/226">deep-archive#226</a> MD5 hashing does not work in FIPS mode</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="enhancements">
+<h5>Enhancements<a class="headerlink" href="#enhancements" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/deep-archive/issues/238">deep-archive#238</a> Optimize API payload size by requesting only required fields</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="doi-service">
+<h3>Doi-service<a class="headerlink" href="#doi-service" title="Link to this heading"></a></h3>
+<p><em>Service and tools for generating DOIs for PDS bundles, collections, and data sets</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/doi-service">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id17">
+<h4>Planned Updates<a class="headerlink" href="#id17" title="Link to this heading"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id18">
+<h4>Other Updates<a class="headerlink" href="#id18" title="Link to this heading"></a></h4>
+<section id="id19">
+<h5>Bugs<a class="headerlink" href="#id19" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/issues/513">doi-service#513</a> Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/issues/497">doi-service#497</a> FIPS Compliance: MD5 usage in checksum() function still causes ValueError on FIPS-enabled systems</p></td>
+<td><p>🔵</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/issues/510">doi-service#510</a> DOI Search is not returning all SBN collections from DataCite for 10.26007</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/issues/502">doi-service#502</a> SFTP roundup script does not run due to missing invoke dependencies on Python 3.13</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/issues/500">doi-service#500</a> pds-doi-cmd release fails when there are multiple <cite>List_Author</cite> classes in a label</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id20">
+<h5>Enhancements<a class="headerlink" href="#id20" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/doi-service/issues/493">doi-service#493</a> Remove or ignore use of MD5 from code</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="harvest">
+<h3>Harvest<a class="headerlink" href="#harvest" title="Link to this heading"></a></h3>
+<p><em>Version&lt;=4 of the standalone Harvest client application providing the functionality for capturing and indexing product metadata into the PDS Registry system. Version 5+ are now managed through https://github.com/NASA-PDS/registry-loader/</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/registry">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id27">
+<h4>Planned Updates<a class="headerlink" href="#id27" title="Link to this heading"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id28">
+<h4>Other Updates<a class="headerlink" href="#id28" title="Link to this heading"></a></h4>
+<section id="id29">
+<h5>Bugs<a class="headerlink" href="#id29" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues/279">harvest#279</a> GEO no longer able to harvest data due to cognito issue</p></td>
+<td><p>🟡</p></td>
+<td><p>s.critical</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues/285">harvest#285</a> False positive Duplicate detected by harvest</p></td>
+<td><p>🔵</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues/144">harvest#144</a> Harvest setting pds:Time_Coordinates.pds:stop_date_time to bogus value when value is missing from label</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/harvest/issues/283">harvest#283</a> Harvest cannot parse Date without time</p></td>
+<td><p>🟢</p></td>
+<td><p>s.high</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="lasso-issues">
+<h3>Lasso-issues<a class="headerlink" href="#lasso-issues" title="Link to this heading"></a></h3>
+<p><em>Utilities for wrapping GitHub API for creating specific data structures and reports from GitHub issues</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/lasso-issues#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/lasso-issues">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/lasso-issues/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/lasso-issues/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/lasso-issues/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/lasso-issues/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id36">
+<h4>Planned Updates<a class="headerlink" href="#id36" title="Link to this heading"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id37">
+<h4>Other Updates<a class="headerlink" href="#id37" title="Link to this heading"></a></h4>
+<section id="id38">
+<h5>Bugs<a class="headerlink" href="#id38" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/lasso-issues/issues/51">lasso-issues#51</a> RDD and markdown reports do not respect ignore flag in products config</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id39">
+<h5>Requirements<a class="headerlink" href="#id39" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/lasso-issues/issues/41">lasso-issues#41</a> As a user, I want to automate creation of release theme issues from CSV schedules</p></td>
+<td><p>🔵</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/lasso-issues/issues/47">lasso-issues#47</a> As a PDS project manager, I want enhanced issue reporting with component grouping and parent-child hierarchy</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id40">
+<h5>Enhancements<a class="headerlink" href="#id40" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/lasso-issues/issues/48">lasso-issues#48</a> Remove ZenHub integration from codebase</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="operations">
+<h3>Operations<a class="headerlink" href="#operations" title="Link to this heading"></a></h3>
+<p><em>Tickets for the PDSEN Operations Team</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/operations#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/operations">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/operations/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/operations/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/operations/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/operations/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id47">
+<h4>Planned Updates<a class="headerlink" href="#id47" title="Link to this heading"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id48">
+<h4>Other Updates<a class="headerlink" href="#id48" title="Link to this heading"></a></h4>
+<section id="id49">
+<h5>Bugs<a class="headerlink" href="#id49" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/operations/issues/900">operations#900</a> nssdca-delivery missing from issue templates</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="pds-api">
+<h3>Pds-api<a class="headerlink" href="#pds-api" title="Link to this heading"></a></h3>
+<p><em>PDS web APIs specifications and user’s manual</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="http://nasa-pds.github.io/pds-api">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id56">
+<h4>Planned Updates<a class="headerlink" href="#id56" title="Link to this heading"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id57">
+<h4>Other Updates<a class="headerlink" href="#id57" title="Link to this heading"></a></h4>
+<section id="id58">
+<h5>Bugs<a class="headerlink" href="#id58" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds-api/issues/296">pds-api#296</a> Link to PDF document is broken</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="pds4-context-products">
+<h3>Pds4-context-products<a class="headerlink" href="#pds4-context-products" title="Link to this heading"></a></h3>
+<p><em>Repository for managing PDS4 Context Products</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-context-products#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-context-products">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-context-products/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-context-products/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-context-products/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-context-products/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id65">
+<h4>Planned Updates<a class="headerlink" href="#id65" title="Link to this heading"></a></h4>
+<p>No planned updates realized for this build in this repository.</p>
+</section>
+<section id="id66">
+<h4>Other Updates<a class="headerlink" href="#id66" title="Link to this heading"></a></h4>
+<section id="id67">
+<h5>Bugs<a class="headerlink" href="#id67" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-context-products/issues/70">pds4-context-products#70</a> Invalid XML structure in two context products causes incorrect page types in search</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="pds4-information-model">
+<h3>Pds4-information-model<a class="headerlink" href="#pds4-information-model" title="Link to this heading"></a></h3>
+<p><em>The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/pds4-information-model/">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id74">
+<h4>Planned Updates<a class="headerlink" href="#id74" title="Link to this heading"></a></h4>
+<section id="pds4-information-model-926-refactor-pds4-data-dictionary-search-to-support-scalability">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/926">pds4-information-model#926</a> Refactor PDS4 Data Dictionary Search to Support Scalability<a class="headerlink" href="#pds4-information-model-926-refactor-pds4-data-dictionary-search-to-support-scalability" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="pds4-information-model-965-develop-new-product-resource-data-model-for-services-and-tools">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/965">pds4-information-model#965</a> Develop New Product Resource Data Model for Services and Tools<a class="headerlink" href="#pds4-information-model-965-develop-new-product-resource-data-model-for-services-and-tools" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="pds4-information-model-981-b17-scr-freeze">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/981">pds4-information-model#981</a> B17 SCR Freeze<a class="headerlink" href="#pds4-information-model-981-b17-scr-freeze" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/982">pds4-information-model#982</a> The <cite>contributor_type</cite> <cite>DataCurator</cite> has a typo / misdefined</p></td>
+<td><p>🟡</p></td>
+<td><p>bug</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pds4-information-model-983-b17-standards-documents-updates">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/983">pds4-information-model#983</a> B17 Standards Documents Updates<a class="headerlink" href="#pds4-information-model-983-b17-standards-documents-updates" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="pds4-information-model-984-b17-information-model-delivery-to-i-t">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/984">pds4-information-model#984</a> B17 Information Model Delivery to I&amp;T<a class="headerlink" href="#pds4-information-model-984-b17-information-model-delivery-to-i-t" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="pds4-information-model-985-b17-information-model-scr-implementation-and-lddtool-updates">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/985">pds4-information-model#985</a> B17 Information Model SCR Implementation and LDDTool Updates<a class="headerlink" href="#pds4-information-model-985-b17-information-model-scr-implementation-and-lddtool-updates" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/663">pds4-information-model#663</a> Adopt Provenance LDD for Superseded LIDs - CCB-21 (CCB-367)</p></td>
+<td><p>🔵</p></td>
+<td><p>requirement</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/990">pds4-information-model#990</a> Complete documentation for PROV LDD</p></td>
+<td><p>🔵</p></td>
+<td><p>enhancement</p></td>
+<td><p>unknown</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/991">pds4-information-model#991</a> Improve PROV LDD with controlled vocabulary</p></td>
+<td><p>🔵</p></td>
+<td><p>enhancement</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id75">
+<h4>Other Updates<a class="headerlink" href="#id75" title="Link to this heading"></a></h4>
+<section id="id76">
+<h5>Enhancements<a class="headerlink" href="#id76" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/pds4-information-model/issues/976">pds4-information-model#976</a> [namespace-registry] add new namespace phoenix</p></td>
+<td><p>🔵</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="peppi">
+<h3>Peppi<a class="headerlink" href="#peppi" title="Link to this heading"></a></h3>
+<p><em>Planetary Data Explorer: Python (PEPPi) client library (pds.peppi) to access Planetary Data from the NASA Planetary Data System</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/peppi">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/peppi">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/peppi/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/peppi/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/peppi/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/peppi/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id83">
+<h4>Planned Updates<a class="headerlink" href="#id83" title="Link to this heading"></a></h4>
+<section id="peppi-121-integrate-pds-registry-mcp-server-info-with-peppi">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/peppi/issues/121">peppi#121</a> Integrate PDS Registry MCP Server Info with PEPPI<a class="headerlink" href="#peppi-121-integrate-pds-registry-mcp-server-info-with-peppi" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/peppi/issues/121">peppi#121</a> Integrate PDS Registry MCP Server Info with PEPPI</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="planetary-data-cloud">
+<h3>Planetary-data-cloud<a class="headerlink" href="#planetary-data-cloud" title="Link to this heading"></a></h3>
+<p><em>PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id90">
+<h4>Planned Updates<a class="headerlink" href="#id90" title="Link to this heading"></a></h4>
+<section id="planetary-data-cloud-117-implement-optional-cognito-password-rotation-requirement-disabled">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/117">planetary-data-cloud#117</a> Implement Optional Cognito Password Rotation Requirement (Disabled)<a class="headerlink" href="#planetary-data-cloud-117-implement-optional-cognito-password-rotation-requirement-disabled" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-cloud-144-develop-egress-management-strategy">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/144">planetary-data-cloud#144</a> Develop Egress Management Strategy<a class="headerlink" href="#planetary-data-cloud-144-develop-egress-management-strategy" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/144">planetary-data-cloud#144</a> Develop Egress Management Strategy</p></td>
+<td><p>🔵</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="planetary-data-cloud-147-b16-bi-annual-cloud-resource-housekeeping">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/147">planetary-data-cloud#147</a> B16 Bi-annual Cloud Resource Housekeeping<a class="headerlink" href="#planetary-data-cloud-147-b16-bi-annual-cloud-resource-housekeeping" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/147">planetary-data-cloud#147</a> B16 Bi-annual Cloud Resource Housekeeping</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="planetary-data-cloud-157-egress-management-strategy-phase-1-throttling-and-monitoring">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/157">planetary-data-cloud#157</a> Egress Management Strategy Phase 1 - Throttling and Monitoring<a class="headerlink" href="#planetary-data-cloud-157-egress-management-strategy-phase-1-throttling-and-monitoring" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-cloud-178-plan-schedule-and-implement-first-pdc-cop">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/178">planetary-data-cloud#178</a> Plan, Schedule, and Implement First PDC CoP<a class="headerlink" href="#planetary-data-cloud-178-plan-schedule-and-implement-first-pdc-cop" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/178">planetary-data-cloud#178</a> Plan, Schedule, and Implement First PDC CoP</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="planetary-data-cloud-183-develop-monthly-cloud-reporting-metrics-spreadsheet-and-documentation">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/183">planetary-data-cloud#183</a> Develop Monthly Cloud Reporting Metrics Spreadsheet and Documentation<a class="headerlink" href="#planetary-data-cloud-183-develop-monthly-cloud-reporting-metrics-spreadsheet-and-documentation" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-cloud-193-b17-bi-annual-cloud-resource-housekeeping">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/193">planetary-data-cloud#193</a> B17 Bi-annual Cloud Resource Housekeeping<a class="headerlink" href="#planetary-data-cloud-193-b17-bi-annual-cloud-resource-housekeeping" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-cloud-194-complete-migration-of-atm-backup">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/194">planetary-data-cloud#194</a> Complete Migration of ATM Backup<a class="headerlink" href="#planetary-data-cloud-194-complete-migration-of-atm-backup" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-cloud-195-pdc-role-definitions-tenant-en-platform-and-data-engineer-roles">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/195">planetary-data-cloud#195</a> PDC Role Definitions: Tenant EN Platform and Data Engineer Roles<a class="headerlink" href="#planetary-data-cloud-195-pdc-role-definitions-tenant-en-platform-and-data-engineer-roles" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-cloud-199-consolidate-dum-and-registry-configurations">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/199">planetary-data-cloud#199</a> Consolidate DUM and Registry Configurations<a class="headerlink" href="#planetary-data-cloud-199-consolidate-dum-and-registry-configurations" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/199">planetary-data-cloud#199</a> Consolidate DUM and Registry Configurations</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="planetary-data-cloud-202-require-and-implement-tagging-across-all-component-terraforms">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/202">planetary-data-cloud#202</a> Require and Implement Tagging Across All Component Terraforms<a class="headerlink" href="#planetary-data-cloud-202-require-and-implement-tagging-across-all-component-terraforms" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-cloud-205-support-pdc-migration-to-scip">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/205">planetary-data-cloud#205</a> Support PDC Migration to SCIP<a class="headerlink" href="#planetary-data-cloud-205-support-pdc-migration-to-scip" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-cloud-206-develop-risk-list">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/206">planetary-data-cloud#206</a> Develop Risk List<a class="headerlink" href="#planetary-data-cloud-206-develop-risk-list" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="planetary-data-cloud-207-data-storage-management-strategy-phase-1-tool-trade-dashboards-thresholds-alerts">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/planetary-data-cloud/issues/207">planetary-data-cloud#207</a> Data Storage Management Strategy Phase 1 - Tool Trade, Dashboards, Thresholds, Alerts<a class="headerlink" href="#planetary-data-cloud-207-data-storage-management-strategy-phase-1-tool-trade-dashboards-thresholds-alerts" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="registry">
+<h3>Registry<a class="headerlink" href="#registry" title="Link to this heading"></a></h3>
+<p><em>PDS Registry provides service and software application necessary for tracking, searching, auditing, locating, and maintaining artifacts within the system. These artifacts can range from data files and label files, schemas, dictionary definitions for objects and elements, services, etc.</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/registry">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id97">
+<h4>Planned Updates<a class="headerlink" href="#id97" title="Link to this heading"></a></h4>
+<section id="registry-266-implement-design-for-alternate-data-file-paths-file-path-updates">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/266">registry#266</a> Implement design for alternate data file paths / file path updates<a class="headerlink" href="#registry-266-implement-design-for-alternate-data-file-paths-file-path-updates" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="registry-333-add-s3-uris-to-registry-metadata">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/333">registry#333</a> Add S3 URIs to Registry Metadata<a class="headerlink" href="#registry-333-add-s3-uris-to-registry-metadata" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="registry-432-onboard-ipda-partner-isro">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/432">registry#432</a> Onboard IPDA Partner: ISRO<a class="headerlink" href="#registry-432-onboard-ipda-partner-isro" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="registry-436-b17-registry-support-high-priority-enhancements-bug-fixes-tasks">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/436">registry#436</a> B17 Registry Support: High Priority Enhancements / Bug Fixes / Tasks<a class="headerlink" href="#registry-436-b17-registry-support-high-priority-enhancements-bug-fixes-tasks" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/466">registry#466</a> Can no longer load data into en-registry from staging EC2</p></td>
+<td><p>🔵</p></td>
+<td><p>bug</p></td>
+<td><p>s.critical</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="registry-451-trade-study-and-cost-analysis-of-aoss-vs-managed-opensearch-vs-self-managed-cluster">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/451">registry#451</a> Trade Study and Cost Analysis of AOSS vs. Managed OpenSearch vs. Self-managed Cluster<a class="headerlink" href="#registry-451-trade-study-and-cost-analysis-of-aoss-vs-managed-opensearch-vs-self-managed-cluster" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="id98">
+<h4>Other Updates<a class="headerlink" href="#id98" title="Link to this heading"></a></h4>
+<section id="id99">
+<h5>Bugs<a class="headerlink" href="#id99" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/456">registry#456</a> Some properties return “null” values</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id100">
+<h5>Enhancements<a class="headerlink" href="#id100" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry/issues/460">registry#460</a> Document and script the monthly legacy registry statusing</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="registry-api">
+<h3>Registry-api<a class="headerlink" href="#registry-api" title="Link to this heading"></a></h3>
+<p><em>Web API service for the PDS Registry, providing the implementation of the PDS Search API (https://github.com/nasa-pds/pds-api) for the PDS Registry.</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/pds-api">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id107">
+<h4>Planned Updates<a class="headerlink" href="#id107" title="Link to this heading"></a></h4>
+<section id="registry-api-715-complete-design-for-supporting-registration-and-search-of-mirrored-archives">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/715">registry-api#715</a> Complete Design for Supporting Registration and Search of Mirrored Archives<a class="headerlink" href="#registry-api-715-complete-design-for-supporting-registration-and-search-of-mirrored-archives" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="registry-api-622-add-search-functionality-to-find-when-class-attribute-has-been-used-exists">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/622">registry-api#622</a> Add Search Functionality to Find When Class / Attribute Has Been Used / Exists<a class="headerlink" href="#registry-api-622-add-search-functionality-to-find-when-class-attribute-has-been-used-exists" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/406">registry-api#406</a> As a user, I want to query for documents where a specific search field exists in the document</p></td>
+<td><p>🟡</p></td>
+<td><p>requirement</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="registry-api-632-add-support-for-searching-full-pds4-structured-metadata">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/632">registry-api#632</a> Add Support for Searching Full PDS4 Structured Metadata<a class="headerlink" href="#registry-api-632-add-support-for-searching-full-pds4-structured-metadata" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/611">registry-api#611</a> As a user, I want to search by a full/unique hierarchical path for a specific attribute</p></td>
+<td><p>🟡</p></td>
+<td><p>requirement</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="registry-api-689-develop-ops-ldd">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/689">registry-api#689</a> Develop OPS LDD<a class="headerlink" href="#registry-api-689-develop-ops-ldd" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="registry-api-698-refactor-registry-api-functionality-for-products-identifier-members-members">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/698">registry-api#698</a> Refactor Registry API Functionality for <cite>/products/{identifier}/members/members</cite><a class="headerlink" href="#registry-api-698-refactor-registry-api-functionality-for-products-identifier-members-members" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/699">registry-api#699</a> Update registry API <cite>/members/members</cite> algorithm per deprecation of <cite>parent_bundle_identifier</cite> metadata non-aggregate products</p></td>
+<td><p>🔵</p></td>
+<td><p>enhancement</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="registry-api-706-b17-search-api-support-high-priority-enhancements-bug-fixes-tasks">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/706">registry-api#706</a> B17 Search API Support: High Priority Enhancements / Bug Fixes / Tasks<a class="headerlink" href="#registry-api-706-b17-search-api-support-high-priority-enhancements-bug-fixes-tasks" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/706">registry-api#706</a> B17 Search API Support: High Priority Enhancements / Bug Fixes / Tasks</p></td>
+<td><p>🔵</p></td>
+<td><p>p.could-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="registry-api-709-enable-metrics-logging-and-monitoring-for-registry-api">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/709">registry-api#709</a> Enable Metrics, Logging, and Monitoring for Registry API<a class="headerlink" href="#registry-api-709-enable-metrics-logging-and-monitoring-for-registry-api" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="registry-api-721-b17-registry-api-support-high-priority-enhancements-bug-fixes-tasks">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/721">registry-api#721</a> B17 Registry API Support: High Priority Enhancements / Bug Fixes / Tasks<a class="headerlink" href="#registry-api-721-b17-registry-api-support-high-priority-enhancements-bug-fixes-tasks" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/705">registry-api#705</a> Inconsistent support for <cite>application/vnd.nasa.pds.pds4+json</cite> response format</p></td>
+<td><p>🟢</p></td>
+<td><p>bug</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/716">registry-api#716</a> API in production is unstable and returns 500 errors</p></td>
+<td><p>🟡</p></td>
+<td><p>bug</p></td>
+<td><p>s.critical</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="registry-api-729-update-functionality-to-find-when-class-attribute-has-been-used-exists">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-api/issues/729">registry-api#729</a> Update Functionality To Find When Class / Attribute Has Been Used / Exists<a class="headerlink" href="#registry-api-729-update-functionality-to-find-when-class-attribute-has-been-used-exists" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="registry-legacy-solr">
+<h3>Registry-legacy-solr<a class="headerlink" href="#registry-legacy-solr" title="Link to this heading"></a></h3>
+<p><em>Legacy Registry Software components leveraging Apache Solr. Includes Legacy Harvest Tool, Registry Manager, PDS3 Catalog Tool, and Search Core library. These components provide the capabilities for loading PDS3 and PDS4 data into the Legacy Solr Registry, driving the PDS keyword search.</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-legacy-solr#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-legacy-solr">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-legacy-solr/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-legacy-solr/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-legacy-solr/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-legacy-solr/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id114">
+<h4>Planned Updates<a class="headerlink" href="#id114" title="Link to this heading"></a></h4>
+<section id="registry-legacy-solr-162-load-ipda-partner-agency-bundles-collections-and-context-products-into-legacy-registry">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-legacy-solr/issues/162">registry-legacy-solr#162</a> Load IPDA Partner Agency Bundles, Collections, and Context Products into Legacy Registry<a class="headerlink" href="#registry-legacy-solr-162-load-ipda-partner-agency-bundles-collections-and-context-products-into-legacy-registry" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="registry-legacy-solr-241-b17-registry-legacy-support-high-priority-enhancements-bug-fixes-tasks">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-legacy-solr/issues/241">registry-legacy-solr#241</a> B17 Registry Legacy Support: High Priority Enhancements / Bug Fixes / Tasks<a class="headerlink" href="#registry-legacy-solr-241-b17-registry-legacy-support-high-priority-enhancements-bug-fixes-tasks" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-legacy-solr/issues/243">registry-legacy-solr#243</a> Unexpected <cite>Internal Reference</cite> And <cite>Reference</cite> Page Types Values</p></td>
+<td><p>🟡</p></td>
+<td><p>bug</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id115">
+<h4>Other Updates<a class="headerlink" href="#id115" title="Link to this heading"></a></h4>
+<section id="id116">
+<h5>Bugs<a class="headerlink" href="#id116" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-legacy-solr/issues/237">registry-legacy-solr#237</a> harvest-solr XML flattening does not preserve relationships between nested elements</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="registry-loader">
+<h3>Registry-loader<a class="headerlink" href="#registry-loader" title="Link to this heading"></a></h3>
+<p><a href="#id117"><span class="problematic" id="id118">*</span></a>Tools used to load and update data in the registry, currently harvest and registry manager package in a docker image. *</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id125">
+<h4>Planned Updates<a class="headerlink" href="#id125" title="Link to this heading"></a></h4>
+<section id="registry-loader-11-combine-registry-common-harvest-registry-mgr-into-one-registry-loader-repo">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/issues/11">registry-loader#11</a> Combine registry-common/harvest/registry-mgr into one registry-loader repo<a class="headerlink" href="#registry-loader-11-combine-registry-common-harvest-registry-mgr-into-one-registry-loader-repo" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/issues/11">registry-loader#11</a> Combine registry-common/harvest/registry-mgr into one registry-loader repo</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="registry-loader-49-develop-harvest-and-registry-manager-test-framework">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/issues/49">registry-loader#49</a> Develop Harvest and Registry Manager Test Framework<a class="headerlink" href="#registry-loader-49-develop-harvest-and-registry-manager-test-framework" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="id126">
+<h4>Other Updates<a class="headerlink" href="#id126" title="Link to this heading"></a></h4>
+<section id="id127">
+<h5>Bugs<a class="headerlink" href="#id127" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/issues/44">registry-loader#44</a> Remove error from log</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id128">
+<h5>Requirements<a class="headerlink" href="#id128" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/issues/42">registry-loader#42</a> As a Harvest user, I want both the file path and the lidvid included in log messages</p></td>
+<td><p>🟡</p></td>
+<td><p>p.should-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id129">
+<h5>Enhancements<a class="headerlink" href="#id129" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-loader/issues/41">registry-loader#41</a> Merge registry-common, registry-mgr, harvest into one uber repo</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="registry-sweepers">
+<h3>Registry-sweepers<a class="headerlink" href="#registry-sweepers" title="Link to this heading"></a></h3>
+<p><a href="#id130"><span class="problematic" id="id131">*</span></a>Scripts that run regularly on the registry database, to clean and consolidate information *</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id138">
+<h4>Planned Updates<a class="headerlink" href="#id138" title="Link to this heading"></a></h4>
+<section id="registry-sweepers-186-optimize-sweepers-performance-part-2">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers/issues/186">registry-sweepers#186</a> Optimize Sweepers Performance - Part 2<a class="headerlink" href="#registry-sweepers-186-optimize-sweepers-performance-part-2" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers/issues/187">registry-sweepers#187</a> Update ancestry handling for handling members of collection LIDVID</p></td>
+<td><p>🔵</p></td>
+<td><p>enhancement</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="registry-sweepers-189-update-sweepers-to-support-new-structured-metadata">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers/issues/189">registry-sweepers#189</a> Update sweepers to support new structured metadata<a class="headerlink" href="#registry-sweepers-189-update-sweepers-to-support-new-structured-metadata" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="registry-sweepers-201-implement-handling-of-partial-collections-uploads-and-orphan-products">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers/issues/201">registry-sweepers#201</a> Implement Handling of Partial Collections Uploads and Orphan Products<a class="headerlink" href="#registry-sweepers-201-implement-handling-of-partial-collections-uploads-and-orphan-products" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="id139">
+<h4>Other Updates<a class="headerlink" href="#id139" title="Link to this heading"></a></h4>
+<section id="id140">
+<h5>Bugs<a class="headerlink" href="#id140" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers/issues/192">registry-sweepers#192</a> Docker container does not run with non-root user</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id141">
+<h5>Enhancements<a class="headerlink" href="#id141" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/registry-sweepers/issues/185">registry-sweepers#185</a> Remove <cite>parent_bundle_identifier</cite> support for non-aggregate products</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="software-issues-repo">
+<h3>Software-issues-repo<a class="headerlink" href="#software-issues-repo" title="Link to this heading"></a></h3>
+<p><em>Issue tracking repository as a centralized entry point for general PDS software bugs and feature requests.</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id148">
+<h4>Planned Updates<a class="headerlink" href="#id148" title="Link to this heading"></a></h4>
+<section id="software-issues-repo-119-2026-annual-contingency-plan-review-and-test">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/119">software-issues-repo#119</a> 2026 Annual Contingency Plan Review and Test<a class="headerlink" href="#software-issues-repo-119-2026-annual-contingency-plan-review-and-test" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/119">software-issues-repo#119</a> 2026 Annual Contingency Plan Review and Test</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="software-issues-repo-120-b16-security-code-scans">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/120">software-issues-repo#120</a> B16 Security Code Scans<a class="headerlink" href="#software-issues-repo-120-b16-security-code-scans" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/120">software-issues-repo#120</a> B16 Security Code Scans</p></td>
+<td><p>🔵</p></td>
+<td><p>p.must-have</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="software-issues-repo-121-b16-prep-for-i-t">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/121">software-issues-repo#121</a> B16 Prep for I&amp;T<a class="headerlink" href="#software-issues-repo-121-b16-prep-for-i-t" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/121">software-issues-repo#121</a> B16 Prep for I&amp;T</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="software-issues-repo-142-b17-security-code-scans">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/142">software-issues-repo#142</a> B17 Security Code Scans<a class="headerlink" href="#software-issues-repo-142-b17-security-code-scans" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="software-issues-repo-143-b17-prep-for-i-t">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/143">software-issues-repo#143</a> B17 Prep for I&amp;T<a class="headerlink" href="#software-issues-repo-143-b17-prep-for-i-t" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="software-issues-repo-155-b17-release-planning">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/155">software-issues-repo#155</a> B17 Release Planning<a class="headerlink" href="#software-issues-repo-155-b17-release-planning" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/155">software-issues-repo#155</a> B17 Release Planning</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="software-issues-repo-156-b17-triage-security-code-scans">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/156">software-issues-repo#156</a> B17 Triage Security Code Scans<a class="headerlink" href="#software-issues-repo-156-b17-triage-security-code-scans" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="software-issues-repo-157-close-our-pds-security-plan">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/157">software-issues-repo#157</a> Close our PDS Security Plan<a class="headerlink" href="#software-issues-repo-157-close-our-pds-security-plan" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="id149">
+<h4>Other Updates<a class="headerlink" href="#id149" title="Link to this heading"></a></h4>
+<section id="id150">
+<h5>Enhancements<a class="headerlink" href="#id150" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/software-issues-repo/issues/140">software-issues-repo#140</a> Add automation with GitHub Actions for integrating label selections and GitHub Projects</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="system-i-n-t">
+<h3>System-i-n-t<a class="headerlink" href="#system-i-n-t" title="Link to this heading"></a></h3>
+<p><em>Repo for PDS EN System I&amp;T scripts and issue tracking</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t#readme">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id157">
+<h4>Planned Updates<a class="headerlink" href="#id157" title="Link to this heading"></a></h4>
+<section id="system-i-n-t-68-b16-standards-document-review">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/68">system-i-n-t#68</a> B16 Standards Document Review<a class="headerlink" href="#system-i-n-t-68-b16-standards-document-review" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/68">system-i-n-t#68</a> B16 Standards Document Review</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="system-i-n-t-70-b16-system-integration-test">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/70">system-i-n-t#70</a> B16 System Integration &amp; Test<a class="headerlink" href="#system-i-n-t-70-b16-system-integration-test" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/70">system-i-n-t#70</a> B16 System Integration &amp; Test</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="system-i-n-t-71-b16-deployment-and-release">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/71">system-i-n-t#71</a> B16 Deployment and Release<a class="headerlink" href="#system-i-n-t-71-b16-deployment-and-release" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/71">system-i-n-t#71</a> B16 Deployment and Release</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="system-i-n-t-72-b16-delivery-deployment-review-ddr">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/72">system-i-n-t#72</a> B16 Delivery &amp; Deployment Review (DDR)<a class="headerlink" href="#system-i-n-t-72-b16-delivery-deployment-review-ddr" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/72">system-i-n-t#72</a> B16 Delivery &amp; Deployment Review (DDR)</p></td>
+<td><p>🔵</p></td>
+<td><p>unknown</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="system-i-n-t-76-b17-dldd-integration-test">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/76">system-i-n-t#76</a> B17 dLDD Integration &amp; Test<a class="headerlink" href="#system-i-n-t-76-b17-dldd-integration-test" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="system-i-n-t-77-b17-standards-document-review">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/77">system-i-n-t#77</a> B17 Standards Document Review<a class="headerlink" href="#system-i-n-t-77-b17-standards-document-review" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="system-i-n-t-78-b17-system-integration-test">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/78">system-i-n-t#78</a> B17 System Integration &amp; Test<a class="headerlink" href="#system-i-n-t-78-b17-system-integration-test" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="system-i-n-t-79-b17-information-model-i-t">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/79">system-i-n-t#79</a> B17 Information Model I&amp;T<a class="headerlink" href="#system-i-n-t-79-b17-information-model-i-t" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="system-i-n-t-80-b17-delivery-deployment-review-ddr">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/80">system-i-n-t#80</a> B17 Delivery &amp; Deployment Review (DDR)<a class="headerlink" href="#system-i-n-t-80-b17-delivery-deployment-review-ddr" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+<section id="system-i-n-t-81-b17-deployment-and-release">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/system-i-n-t/issues/81">system-i-n-t#81</a> B17 Deployment and Release<a class="headerlink" href="#system-i-n-t-81-b17-deployment-and-release" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="validate">
+<h3>Validate<a class="headerlink" href="#validate" title="Link to this heading"></a></h3>
+<p><em>Validates PDS4 product labels, data and PDS3 Volumes</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/validate/">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/validate">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id164">
+<h4>Planned Updates<a class="headerlink" href="#id164" title="Link to this heading"></a></h4>
+<section id="validate-1473-b17-validate-support-high-priority-enhancements-bug-fixes-tasks">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/1473">validate#1473</a> B17 Validate Support: High Priority Enhancements / Bug Fixes / Tasks<a class="headerlink" href="#validate-1473-b17-validate-support-high-priority-enhancements-bug-fixes-tasks" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/1316">validate#1316</a> Encoded_Audio encoding_standard_id = WAV gives MP4 error in Validate 3.7.1</p></td>
+<td><p>🟢</p></td>
+<td><p>bug</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/1241">validate#1241</a> Validating large data file (150GB) is trying to write the entire file to local temp space - error upon not enough local space</p></td>
+<td><p>🔵</p></td>
+<td><p>bug</p></td>
+<td><p>s.high</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/1408">validate#1408</a> JSON reports duplicates messages per product specified</p></td>
+<td><p>🔵</p></td>
+<td><p>bug</p></td>
+<td><p>s.medium</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id165">
+<h4>Other Updates<a class="headerlink" href="#id165" title="Link to this heading"></a></h4>
+<section id="id166">
+<h5>Bugs<a class="headerlink" href="#id166" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/1453">validate#1453</a> new/updated context objects have not been incorporated into the validator for 2 months</p></td>
+<td><p>🔵</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/1294">validate#1294</a> validate does not handle Special Constants for UnsignedMSB4</p></td>
+<td><p>🟡</p></td>
+<td><p>s.medium</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/validate/issues/1423">validate#1423</a> Running validate 4.0.4 on terminal produces lots of new line characters while processing</p></td>
+<td><p>🟡</p></td>
+<td><p>s.low</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="web-analytics">
+<h3>Web-analytics<a class="headerlink" href="#web-analytics" title="Link to this heading"></a></h3>
+<p><em>None</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nasa-pds.github.io/web-analytics">User Guide</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/web-analytics">Github Repo</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/issues">Issue Tracking</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/tree/main/docs/requirements">Requirements</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/releases/latest">Stable Release</a></p></td>
+<td><p><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/releases">Dev Release</a></p></td>
+</tr>
+</tbody>
+</table>
+<section id="id173">
+<h4>Planned Updates<a class="headerlink" href="#id173" title="Link to this heading"></a></h4>
+<section id="web-analytics-63-onboard-nodes-to-upload-web-logs-with-dum">
+<h5><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/issues/63">web-analytics#63</a> Onboard Nodes to Upload Web Logs With DUM<a class="headerlink" href="#web-analytics-63-onboard-nodes-to-upload-web-logs-with-dum" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+details.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="id174">
+<h4>Other Updates<a class="headerlink" href="#id174" title="Link to this heading"></a></h4>
+<section id="id175">
+<h5>Bugs<a class="headerlink" href="#id175" title="Link to this heading"></a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>I&amp;T Status</p></th>
+<th class="head"><p>Priority / Bug Severity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/NASA-PDS/web-analytics/issues/66">web-analytics#66</a> Terraform mistakenly expires logs after 30 days</p></td>
+<td><p>🟡</p></td>
+<td><p>s.high</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+</section>
+<section id="release-summary-metrics">
+<h2>Release Summary Metrics<a class="headerlink" href="#release-summary-metrics" title="Link to this heading"></a></h2>
+<p>This section provides a summary of the issues addressed in this release, organized by issue type.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Component/Repo</p></th>
+<th class="head"><p>Bugs</p></th>
+<th class="head"><p>Enhancements</p></th>
+<th class="head"><p>Requirements</p></th>
+<th class="head"><p>Tasks</p></th>
+<th class="head"><p>Themes</p></th>
+<th class="head"><p>Total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>data-upload-manager</p></td>
+<td><p>5</p></td>
+<td><p>0</p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>5</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-odd"><td><p>deep-archive</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>doi-service</p></td>
+<td><p>5</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>harvest</p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>lasso-issues</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>operations</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>pds-api</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>pds4-context-products</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>pds4-information-model</p></td>
+<td><p>1</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>6</p></td>
+<td><p>11</p></td>
+</tr>
+<tr class="row-odd"><td><p>peppi</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>planetary-data-cloud</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>14</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-odd"><td><p>registry</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>5</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><p>registry-api</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>9</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-odd"><td><p>registry-legacy-solr</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>registry-loader</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>registry-sweepers</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>software-issues-repo</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>8</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>system-i-n-t</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>10</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>validate</p></td>
+<td><p>6</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>web-analytics</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>TOTAL</strong></p></td>
+<td><p><strong>36</strong></p></td>
+<td><p><strong>12</strong></p></td>
+<td><p><strong>10</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>67</strong></p></td>
+<td><p><strong>125</strong></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="liens">
+<h2>Liens<a class="headerlink" href="#liens" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Issue</p></th>
+<th class="head"><p>Title</p></th>
+<th class="head"><p>Rationale</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="engineering-node-software-catalog">
+<h2>Engineering Node Software Catalog<a class="headerlink" href="#engineering-node-software-catalog" title="Link to this heading"></a></h2>
+<p>The Engineering Node Software resources are listed in the <a class="reference external" href="https://nasa-pds.github.io/releases/17/index.html">Software Release Summary (B17)</a></p>
+</section>
+<section id="installation-and-operation">
+<h2>Installation and Operation<a class="headerlink" href="#installation-and-operation" title="Link to this heading"></a></h2>
+<p>PDS Engineering Node Software have 3 different venues/purposes for execution: Standalone, Discipline Node Deployment or
+Engineering Node-only Deployment
+For the Installation and Operation manual see the <cite>users manuals</cite> in the software summary sections below:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries">PDS Standalone</a></p></li>
+<li><p><a class="reference external" href="https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services">PDS Discipline Nodes</a></p></li>
+<li><p><a class="reference external" href="https://nasa-pds.github.io/releases/11.1/index.html#enineering-node-services">PDS Engineering Node Only</a></p></li>
+</ul>
+</section>
+<section id="reference-documents">
+<h2>Reference documents<a class="headerlink" href="#reference-documents" title="Link to this heading"></a></h2>
+<p>This section details the controlling and applicable documents referenced for this release. The controlling documents are
+as follows:</p>
+<ul class="simple">
+<li><p>PDS Level 1, 2 and 3 Requirements, April 20, 2017.</p></li>
+<li><p>PDS4 Project Plan, July 17, 2013.</p></li>
+<li><p>PDS4 System Architecture Specification, Version 1.3, September 1, 2013.</p></li>
+<li><p>PDS4 Operations Concept, Version 1.0, September 1, 2013.</p></li>
+<li><p>PDS Harvest Tool Software Requirements and Design Document (SRD/SDD), Version 1.2, September 1, 2013.</p></li>
+<li><p>PDS Preparation Tools Software Requirements and Design Document (SRD/SDD), Version 0.3, September 1, 2013.</p></li>
+<li><p>PDS Registry Service Software Requirements and Design Document (SRD/SDD), Version 1.1, September 1, 2013.</p></li>
+<li><p>PDS Report Service Software Requirements and Design Document (SRD/SDD), Version 1.1, September 1, 2013.</p></li>
+<li><p>PDS Search Service Software Requirements and Design Document (SRD/SDD), Version 1.0, September 1, 2013.</p></li>
+<li><p>PDS Search Scenarios, Version 1.0, September 1, 2013.</p></li>
+<li><p>PDS Search Protocol, Version 1.2, March 21, 2014.</p></li>
+<li><p>PDAP Search Protocol, Version 1.0, March 21, 2014.</p></li>
+<li><p>PDS Security Service Software Requirements and Design Document (SRD/SDD), Version 1.1, September 1, 2013.</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-deep-archive/blob/master/docs/pds4_nssdca_delivery_design_20191219.docx">PDS Deep Archive Software Requirements and Design Document (SRD/SDD)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-PDS/pds-doi-service/blob/master/docs/design/pds-doi-service-srd.md">PDS DOI Service Requirements and Design Document (SRD/SDD)</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../releases.html" class="btn btn-neutral float-left" title="Upcoming" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../10.1/index.html" class="btn btn-neutral float-right" title="Software Catalog (Build 10.1)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2025 California Institute of Technology.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1K210DS5W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Q1K210DS5W', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
