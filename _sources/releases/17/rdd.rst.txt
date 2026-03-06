@@ -104,6 +104,8 @@ Planned Updates
 +-------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 | Issue                                                                                           | I&T Status        | Level       | Priority / Bug Severity   |
 +=================================================================================================+===================+=============+===========================+
+| `data-upload-manager#268`_ DUM loads duplicate files                                            | |:yellow_circle:| | bug         | s.medium                  |
++-------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 | `data-upload-manager#340`_ As a data provider, I want to skip following symlinks during ingress | |:yellow_circle:| | requirement | p.should-have             |
 +-------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 
@@ -173,9 +175,9 @@ Bugs
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                 | I&T Status        | Priority / Bug Severity   |
 +=======================================================================================================+===================+===========================+
-| `deep-archive#226`_ MD5 hashing does not work in FIPS mode                                            | |:yellow_circle:| | s.high                    |
-+-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `deep-archive#237`_ Registry transient error not handled gracefully – JSONDecodeError on 500 response | |:yellow_circle:| | s.high                    |
++-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `deep-archive#226`_ MD5 hashing does not work in FIPS mode                                            | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -216,15 +218,15 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================================+===================+===========================+
+| `doi-service#497`_ FIPS Compliance: MD5 usage in checksum() function still causes ValueError on FIPS-enabled systems | |:blue_circle:|   | s.high                    |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#510`_ DOI Search is not returning all SBN collections from DataCite for 10.26007                        | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `doi-service#502`_ SFTP roundup script does not run due to missing invoke dependencies on Python 3.13                | |:yellow_circle:| | s.high                    |
+| `doi-service#500`_ pds-doi-cmd release fails when there are multiple `List_Author` classes in a label                | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#513`_ Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release                 | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `doi-service#497`_ FIPS Compliance: MD5 usage in checksum() function still causes ValueError on FIPS-enabled systems | |:blue_circle:|   | s.high                    |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `doi-service#500`_ pds-doi-cmd release fails when there are multiple `List_Author` classes in a label                | |:yellow_circle:| | s.medium                  |
+| `doi-service#502`_ SFTP roundup script does not run due to missing invoke dependencies on Python 3.13                | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -299,12 +301,21 @@ Bugs
 +========================================================================================================================+===================+===========================+
 | `harvest#285`_ False positive Duplicate detected by harvest                                                            | |:blue_circle:|   | s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#283`_ Harvest cannot parse Date without time                                                                  | |:green_circle:|  | s.high                    |
+| `harvest#279`_ GEO no longer able to harvest data due to cognito issue                                                 | |:yellow_circle:| | s.critical                |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `harvest#144`_ Harvest setting pds:Time_Coordinates.pds:stop_date_time to bogus value when value is missing from label | |:yellow_circle:| | s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#279`_ GEO no longer able to harvest data due to cognito issue                                                 | |:yellow_circle:| | s.critical                |
+| `harvest#283`_ Harvest cannot parse Date without time                                                                  | |:green_circle:|  | s.high                    |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+Requirements
+++++++++++++
+
++-------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                           | I&T Status        | Priority / Bug Severity   |
++=================================================================================================+===================+===========================+
+| `harvest#292`_ harvest successfully ingests nonexistent LDD attributes when it should error out | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -658,8 +669,13 @@ Planned Updates
 
 `planetary-data-cloud#206`_ Develop Risk List
 +++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
+
++-----------------------------------------------+-----------------+---------------------------+
+| Issue                                         | I&T Status      | Priority / Bug Severity   |
++===============================================+=================+===========================+
+| `planetary-data-cloud#206`_ Develop Risk List | |:blue_circle:| | unknown                   |
++-----------------------------------------------+-----------------+---------------------------+
+
 
 `planetary-data-cloud#207`_ Data Storage Management Strategy Phase 1 - Tool Trade, Dashboards, Thresholds, Alerts
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -703,11 +719,13 @@ Planned Updates
 `registry#436`_ B17 Registry Support: High Priority Enhancements / Bug Fixes / Tasks
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-+---------------------------------------------------------------------------+-----------------+---------+---------------------------+
-| Issue                                                                     | I&T Status      | Level   | Priority / Bug Severity   |
-+===========================================================================+=================+=========+===========================+
-| `registry#466`_ Can no longer load data into en-registry from staging EC2 | |:blue_circle:| | bug     | s.critical                |
-+---------------------------------------------------------------------------+-----------------+---------+---------------------------+
++---------------------------------------------------------------------------+-------------------+---------+---------------------------+
+| Issue                                                                     | I&T Status        | Level   | Priority / Bug Severity   |
++===========================================================================+===================+=========+===========================+
+| `registry#466`_ Can no longer load data into en-registry from staging EC2 | |:blue_circle:|   | bug     | s.critical                |
++---------------------------------------------------------------------------+-------------------+---------+---------------------------+
+| `registry#471`_ generate_registry_status_reports.py results incomplete    | |:yellow_circle:| | bug     | s.medium                  |
++---------------------------------------------------------------------------+-------------------+---------+---------------------------+
 
 
 `registry#451`_ Trade Study and Cost Analysis of AOSS vs. Managed OpenSearch vs. Self-managed Cluster
@@ -725,6 +743,15 @@ Bugs
 +======================================================+===================+===========================+
 | `registry#456`_ Some properties return "null" values | |:yellow_circle:| | s.medium                  |
 +------------------------------------------------------+-------------------+---------------------------+
+
+Requirements
+++++++++++++
+
++--------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                            | I&T Status        | Priority / Bug Severity   |
++==================================================================================================+===================+===========================+
+| `registry#426`_ As a user, I want to load date times as strings in order to support leap seconds | |:yellow_circle:| | p.must-have               |
++--------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
 ++++++++++++
@@ -933,6 +960,38 @@ Enhancements
 +=======================================================================================+=================+===========================+
 | `registry-loader#41`_ Merge registry-common, registry-mgr, harvest into one uber repo | |:blue_circle:| | unknown                   |
 +---------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+--------
+
+Registry-mgr
+------------
+*Version<=5 of the standalone Registry Manager application responsible for managing the PDS Registry (https://github.com/NASA-PDS/registry) schemas and indexes. Version 6+ is now managed through https://github.com/NASA-PDS/registry-loader/ .*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/registry>`_
+     - `Github Repo <https://github.com/NASA-PDS/registry-mgr>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/registry-mgr/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/registry-mgr/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/registry-mgr/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/registry-mgr/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++-----------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                         | I&T Status        | Priority / Bug Severity   |
++===============================================================================================+===================+===========================+
+| `registry-mgr#170`_ `set-archive-status` says it updates more products than are in the bundle | |:yellow_circle:| | s.high                    |
++-----------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -1213,12 +1272,21 @@ Bugs
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                     | I&T Status        | Priority / Bug Severity   |
 +===========================================================================================================+===================+===========================+
-| `validate#1453`_ new/updated context objects have not been incorporated into the validator for 2 months   | |:blue_circle:|   | s.medium                  |
+| `validate#1294`_ validate does not handle Special Constants for UnsignedMSB4                              | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1423`_ Running validate 4.0.4 on terminal produces lots of new line characters while processing | |:yellow_circle:| | s.low                     |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1294`_ validate does not handle Special Constants for UnsignedMSB4                              | |:yellow_circle:| | s.medium                  |
+| `validate#1453`_ new/updated context objects have not been incorporated into the validator for 2 months   | |:blue_circle:|   | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+Requirements
+++++++++++++
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                                                                                                              | I&T Status      | Priority / Bug Severity   |
++====================================================================================================================================================================================+=================+===========================+
+| `validate#1509`_ As a user, I want the validate report entry for when there is a context name mismatch to show the LID of the context object as well as the correct known values.. | |:blue_circle:| | p.should-have             |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
 
@@ -1263,7 +1331,7 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | Component/Repo         | Bugs   | Enhancements   | Requirements   | Tasks   | Themes   | Total   |
 +========================+========+================+================+=========+==========+=========+
-| data-upload-manager    | 5      | 0              | 4              | 0       | 5        | 14      |
+| data-upload-manager    | 6      | 0              | 4              | 0       | 5        | 15      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | deep-archive           | 2      | 1              | 0              | 0       | 0        | 3       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1271,7 +1339,7 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | ds-view                | 1      | 0              | 0              | 0       | 0        | 1       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| harvest                | 4      | 0              | 0              | 0       | 0        | 4       |
+| harvest                | 4      | 0              | 1              | 0       | 0        | 5       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | lasso-issues           | 1      | 1              | 2              | 0       | 0        | 4       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1287,7 +1355,7 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | planetary-data-cloud   | 0      | 0              | 0              | 0       | 14       | 14      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry               | 2      | 1              | 0              | 0       | 5        | 8       |
+| registry               | 3      | 1              | 1              | 0       | 5        | 10      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | registry-api           | 2      | 1              | 2              | 0       | 9        | 14      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1295,17 +1363,19 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | registry-loader        | 1      | 1              | 1              | 0       | 2        | 5       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
+| registry-mgr           | 1      | 0              | 0              | 0       | 0        | 1       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
 | registry-sweepers      | 1      | 2              | 0              | 0       | 3        | 6       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | software-issues-repo   | 0      | 1              | 0              | 0       | 8        | 9       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | system-i-n-t           | 0      | 0              | 0              | 0       | 10       | 10      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| validate               | 6      | 0              | 0              | 0       | 1        | 7       |
+| validate               | 6      | 0              | 1              | 0       | 1        | 8       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | web-analytics          | 1      | 0              | 0              | 0       | 1        | 2       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| **TOTAL**              | **37** | **12**         | **10**         | **0**   | **67**   | **126** |
+| **TOTAL**              | **40** | **12**         | **13**         | **0**   | **67**   | **132** |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 
 
@@ -1376,6 +1446,7 @@ as follows:
 .. _data-upload-manager#100: https://github.com/NASA-PDS/data-upload-manager/issues/100
 .. _data-upload-manager#99: https://github.com/NASA-PDS/data-upload-manager/issues/99
 .. _data-upload-manager#319: https://github.com/NASA-PDS/data-upload-manager/issues/319
+.. _data-upload-manager#268: https://github.com/NASA-PDS/data-upload-manager/issues/268
 .. _data-upload-manager#340: https://github.com/NASA-PDS/data-upload-manager/issues/340
 .. _data-upload-manager#329: https://github.com/NASA-PDS/data-upload-manager/issues/329
 .. _data-upload-manager#318: https://github.com/NASA-PDS/data-upload-manager/issues/318
@@ -1384,20 +1455,21 @@ as follows:
 .. _data-upload-manager#336: https://github.com/NASA-PDS/data-upload-manager/issues/336
 .. _data-upload-manager#304: https://github.com/NASA-PDS/data-upload-manager/issues/304
 .. _data-upload-manager#330: https://github.com/NASA-PDS/data-upload-manager/issues/330
-.. _deep-archive#226: https://github.com/NASA-PDS/deep-archive/issues/226
 .. _deep-archive#237: https://github.com/NASA-PDS/deep-archive/issues/237
+.. _deep-archive#226: https://github.com/NASA-PDS/deep-archive/issues/226
 .. _deep-archive#238: https://github.com/NASA-PDS/deep-archive/issues/238
-.. _doi-service#510: https://github.com/NASA-PDS/doi-service/issues/510
-.. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
-.. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
 .. _doi-service#497: https://github.com/NASA-PDS/doi-service/issues/497
+.. _doi-service#510: https://github.com/NASA-PDS/doi-service/issues/510
 .. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
+.. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
+.. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
 .. _doi-service#493: https://github.com/NASA-PDS/doi-service/issues/493
 .. _ds-view#60: https://github.com/NASA-PDS/ds-view/issues/60
 .. _harvest#285: https://github.com/NASA-PDS/harvest/issues/285
-.. _harvest#283: https://github.com/NASA-PDS/harvest/issues/283
-.. _harvest#144: https://github.com/NASA-PDS/harvest/issues/144
 .. _harvest#279: https://github.com/NASA-PDS/harvest/issues/279
+.. _harvest#144: https://github.com/NASA-PDS/harvest/issues/144
+.. _harvest#283: https://github.com/NASA-PDS/harvest/issues/283
+.. _harvest#292: https://github.com/NASA-PDS/harvest/issues/292
 .. _lasso-issues#51: https://github.com/NASA-PDS/lasso-issues/issues/51
 .. _lasso-issues#41: https://github.com/NASA-PDS/lasso-issues/issues/41
 .. _lasso-issues#47: https://github.com/NASA-PDS/lasso-issues/issues/47
@@ -1436,8 +1508,10 @@ as follows:
 .. _registry#432: https://github.com/NASA-PDS/registry/issues/432
 .. _registry#436: https://github.com/NASA-PDS/registry/issues/436
 .. _registry#466: https://github.com/NASA-PDS/registry/issues/466
+.. _registry#471: https://github.com/NASA-PDS/registry/issues/471
 .. _registry#451: https://github.com/NASA-PDS/registry/issues/451
 .. _registry#456: https://github.com/NASA-PDS/registry/issues/456
+.. _registry#426: https://github.com/NASA-PDS/registry/issues/426
 .. _registry#460: https://github.com/NASA-PDS/registry/issues/460
 .. _registry-api#715: https://github.com/NASA-PDS/registry-api/issues/715
 .. _registry-api#622: https://github.com/NASA-PDS/registry-api/issues/622
@@ -1462,6 +1536,7 @@ as follows:
 .. _registry-loader#44: https://github.com/NASA-PDS/registry-loader/issues/44
 .. _registry-loader#42: https://github.com/NASA-PDS/registry-loader/issues/42
 .. _registry-loader#41: https://github.com/NASA-PDS/registry-loader/issues/41
+.. _registry-mgr#170: https://github.com/NASA-PDS/registry-mgr/issues/170
 .. _registry-sweepers#186: https://github.com/NASA-PDS/registry-sweepers/issues/186
 .. _registry-sweepers#187: https://github.com/NASA-PDS/registry-sweepers/issues/187
 .. _registry-sweepers#189: https://github.com/NASA-PDS/registry-sweepers/issues/189
@@ -1491,9 +1566,10 @@ as follows:
 .. _validate#1316: https://github.com/NASA-PDS/validate/issues/1316
 .. _validate#1241: https://github.com/NASA-PDS/validate/issues/1241
 .. _validate#1408: https://github.com/NASA-PDS/validate/issues/1408
-.. _validate#1453: https://github.com/NASA-PDS/validate/issues/1453
-.. _validate#1423: https://github.com/NASA-PDS/validate/issues/1423
 .. _validate#1294: https://github.com/NASA-PDS/validate/issues/1294
+.. _validate#1423: https://github.com/NASA-PDS/validate/issues/1423
+.. _validate#1453: https://github.com/NASA-PDS/validate/issues/1453
+.. _validate#1509: https://github.com/NASA-PDS/validate/issues/1509
 .. _web-analytics#63: https://github.com/NASA-PDS/web-analytics/issues/63
 .. _web-analytics#66: https://github.com/NASA-PDS/web-analytics/issues/66
 .. _Software Release Summary (B17): https://nasa-pds.github.io/releases/17/index.html
