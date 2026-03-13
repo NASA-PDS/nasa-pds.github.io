@@ -218,15 +218,17 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================================+===================+===========================+
-| `doi-service#497`_ FIPS Compliance: MD5 usage in checksum() function still causes ValueError on FIPS-enabled systems | |:blue_circle:|   | s.high                    |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `doi-service#510`_ DOI Search is not returning all SBN collections from DataCite for 10.26007                        | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#500`_ pds-doi-cmd release fails when there are multiple `List_Author` classes in a label                | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#502`_ SFTP roundup script does not run due to missing invoke dependencies on Python 3.13                | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#515`_ `'Datapaper' is not a valid ProductType` error                                                    | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#513`_ Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release                 | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `doi-service#502`_ SFTP roundup script does not run due to missing invoke dependencies on Python 3.13                | |:yellow_circle:| | s.high                    |
+| `doi-service#497`_ FIPS Compliance: MD5 usage in checksum() function still causes ValueError on FIPS-enabled systems | |:blue_circle:|   | s.high                    |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#510`_ DOI Search is not returning all SBN collections from DataCite for 10.26007                        | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -237,38 +239,6 @@ Enhancements
 +==========================================================+=================+===========================+
 | `doi-service#493`_ Remove or ignore use of MD5 from code | |:blue_circle:| | unknown                   |
 +----------------------------------------------------------+-----------------+---------------------------+
-
---------
-
-Ds-view
--------
-*Data Set View application (pds.nasa.gov/ds-view)*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/ds-view#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/ds-view>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/ds-view/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/ds-view/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/ds-view/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/ds-view/releases>`_ 
-
-
-Planned Updates
-~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
-
-Other Updates
-~~~~~~~~~~~~~
-Bugs
-++++
-
-+-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                                               | I&T Status        | Priority / Bug Severity   |
-+=====================================================================================================+===================+===========================+
-| `ds-view#60`_ JSP view pages are vulnerable to HTML/link injection via unsanitized parameter output | |:yellow_circle:| | unknown                   |
-+-----------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -301,11 +271,11 @@ Bugs
 +========================================================================================================================+===================+===========================+
 | `harvest#285`_ False positive Duplicate detected by harvest                                                            | |:blue_circle:|   | s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#283`_ Harvest cannot parse Date without time                                                                  | |:green_circle:|  | s.high                    |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `harvest#279`_ GEO no longer able to harvest data due to cognito issue                                                 | |:yellow_circle:| | s.critical                |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `harvest#144`_ Harvest setting pds:Time_Coordinates.pds:stop_date_time to bogus value when value is missing from label | |:yellow_circle:| | s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#283`_ Harvest cannot parse Date without time                                                                  | |:green_circle:|  | s.high                    |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -368,6 +338,45 @@ Enhancements
 +============================================================+=================+===========================+
 | `lasso-issues#48`_ Remove ZenHub integration from codebase | |:blue_circle:| | unknown                   |
 +------------------------------------------------------------+-----------------+---------------------------+
+
+--------
+
+Nucleus
+-------
+*Nucleus is a software platform used to create workflows for the Planetary Data (PDS).*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/nucleus>`_
+     - `Github Repo <https://github.com/NASA-PDS/nucleus>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/nucleus/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/nucleus/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/nucleus/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/nucleus/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+`nucleus#127`_ [SBN] CSS: Deploy Nucleus to Prod and Kickoff Processing
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`nucleus#178`_ Design and Implement PDS Common Logging Libraries for Java and Python
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`nucleus#181`_ Upgrade Airflow to 3.x
++++++++++++++++++++++++++++++++++++++
+
++---------------------------------------+-----------------+---------------------------+
+| Issue                                 | I&T Status      | Priority / Bug Severity   |
++=======================================+=================+===========================+
+| `nucleus#181`_ Upgrade Airflow to 3.x | |:blue_circle:| | unknown                   |
++---------------------------------------+-----------------+---------------------------+
+
 
 --------
 
@@ -681,6 +690,38 @@ Planned Updates
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
+
+--------
+
+Portal-ds-view
+--------------
+*Data Set View application (pds.nasa.gov/ds-view)*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/portal-ds-view#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/portal-ds-view>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/portal-ds-view/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/portal-ds-view/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/portal-ds-view/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/portal-ds-view/releases>`_ 
+
+
+Planned Updates
+~~~~~~~~~~~~~~~
+No planned updates realized for this build in this repository.
+
+Other Updates
+~~~~~~~~~~~~~
+Bugs
+++++
+
++------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                      | I&T Status        | Priority / Bug Severity   |
++============================================================================================================+===================+===========================+
+| `portal-ds-view#60`_ JSP view pages are vulnerable to HTML/link injection via unsanitized parameter output | |:yellow_circle:| | unknown                   |
++------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -1274,9 +1315,9 @@ Bugs
 +===========================================================================================================+===================+===========================+
 | `validate#1294`_ validate does not handle Special Constants for UnsignedMSB4                              | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1423`_ Running validate 4.0.4 on terminal produces lots of new line characters while processing | |:yellow_circle:| | s.low                     |
-+-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1453`_ new/updated context objects have not been incorporated into the validator for 2 months   | |:blue_circle:|   | s.medium                  |
++-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1423`_ Running validate 4.0.4 on terminal produces lots of new line characters while processing | |:yellow_circle:| | s.low                     |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -1335,13 +1376,13 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | deep-archive           | 2      | 1              | 0              | 0       | 0        | 3       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| doi-service            | 5      | 1              | 0              | 0       | 0        | 6       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| ds-view                | 1      | 0              | 0              | 0       | 0        | 1       |
+| doi-service            | 6      | 1              | 0              | 0       | 0        | 7       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | harvest                | 4      | 0              | 1              | 0       | 0        | 5       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | lasso-issues           | 1      | 1              | 2              | 0       | 0        | 4       |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| nucleus                | 0      | 0              | 0              | 0       | 3        | 3       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | operations             | 1      | 0              | 0              | 0       | 0        | 1       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1354,6 +1395,8 @@ This section provides a summary of the issues addressed in this release, organiz
 | peppi                  | 0      | 0              | 0              | 0       | 1        | 1       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | planetary-data-cloud   | 0      | 0              | 0              | 0       | 14       | 14      |
++------------------------+--------+----------------+----------------+---------+----------+---------+
+| portal-ds-view         | 1      | 0              | 0              | 0       | 0        | 1       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | registry               | 3      | 1              | 1              | 0       | 5        | 10      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1375,7 +1418,7 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | web-analytics          | 1      | 0              | 0              | 0       | 1        | 2       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| **TOTAL**              | **40** | **12**         | **13**         | **0**   | **67**   | **132** |
+| **TOTAL**              | **41** | **12**         | **13**         | **0**   | **70**   | **136** |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 
 
@@ -1458,22 +1501,25 @@ as follows:
 .. _deep-archive#237: https://github.com/NASA-PDS/deep-archive/issues/237
 .. _deep-archive#226: https://github.com/NASA-PDS/deep-archive/issues/226
 .. _deep-archive#238: https://github.com/NASA-PDS/deep-archive/issues/238
+.. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
+.. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
+.. _doi-service#515: https://github.com/NASA-PDS/doi-service/issues/515
+.. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
 .. _doi-service#497: https://github.com/NASA-PDS/doi-service/issues/497
 .. _doi-service#510: https://github.com/NASA-PDS/doi-service/issues/510
-.. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
-.. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
-.. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
 .. _doi-service#493: https://github.com/NASA-PDS/doi-service/issues/493
-.. _ds-view#60: https://github.com/NASA-PDS/ds-view/issues/60
 .. _harvest#285: https://github.com/NASA-PDS/harvest/issues/285
+.. _harvest#283: https://github.com/NASA-PDS/harvest/issues/283
 .. _harvest#279: https://github.com/NASA-PDS/harvest/issues/279
 .. _harvest#144: https://github.com/NASA-PDS/harvest/issues/144
-.. _harvest#283: https://github.com/NASA-PDS/harvest/issues/283
 .. _harvest#292: https://github.com/NASA-PDS/harvest/issues/292
 .. _lasso-issues#51: https://github.com/NASA-PDS/lasso-issues/issues/51
 .. _lasso-issues#41: https://github.com/NASA-PDS/lasso-issues/issues/41
 .. _lasso-issues#47: https://github.com/NASA-PDS/lasso-issues/issues/47
 .. _lasso-issues#48: https://github.com/NASA-PDS/lasso-issues/issues/48
+.. _nucleus#127: https://github.com/NASA-PDS/nucleus/issues/127
+.. _nucleus#178: https://github.com/NASA-PDS/nucleus/issues/178
+.. _nucleus#181: https://github.com/NASA-PDS/nucleus/issues/181
 .. _operations#900: https://github.com/NASA-PDS/operations/issues/900
 .. _pds-api#296: https://github.com/NASA-PDS/pds-api/issues/296
 .. _pds4-context-products#70: https://github.com/NASA-PDS/pds4-context-products/issues/70
@@ -1503,6 +1549,7 @@ as follows:
 .. _planetary-data-cloud#205: https://github.com/NASA-PDS/planetary-data-cloud/issues/205
 .. _planetary-data-cloud#206: https://github.com/NASA-PDS/planetary-data-cloud/issues/206
 .. _planetary-data-cloud#207: https://github.com/NASA-PDS/planetary-data-cloud/issues/207
+.. _portal-ds-view#60: https://github.com/NASA-PDS/portal-ds-view/issues/60
 .. _registry#266: https://github.com/NASA-PDS/registry/issues/266
 .. _registry#333: https://github.com/NASA-PDS/registry/issues/333
 .. _registry#432: https://github.com/NASA-PDS/registry/issues/432
@@ -1567,8 +1614,8 @@ as follows:
 .. _validate#1241: https://github.com/NASA-PDS/validate/issues/1241
 .. _validate#1408: https://github.com/NASA-PDS/validate/issues/1408
 .. _validate#1294: https://github.com/NASA-PDS/validate/issues/1294
-.. _validate#1423: https://github.com/NASA-PDS/validate/issues/1423
 .. _validate#1453: https://github.com/NASA-PDS/validate/issues/1453
+.. _validate#1423: https://github.com/NASA-PDS/validate/issues/1423
 .. _validate#1509: https://github.com/NASA-PDS/validate/issues/1509
 .. _web-analytics#63: https://github.com/NASA-PDS/web-analytics/issues/63
 .. _web-analytics#66: https://github.com/NASA-PDS/web-analytics/issues/66
