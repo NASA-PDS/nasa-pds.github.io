@@ -23,6 +23,8 @@ and implemented by the PDS within the latest build period.
 +===============================+=============================================================+
 | `pds4-information-model#663`_ | Adopt Provenance LDD for Superseded LIDs - CCB-21 (CCB-367) |
 +-------------------------------+-------------------------------------------------------------+
+| `pds4-information-model#997`_ | CCB-72: New enumerated values for funding_source            |
++-------------------------------+-------------------------------------------------------------+
 
 Software Changes
 ================
@@ -218,13 +220,13 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================================+===================+===========================+
-| `doi-service#500`_ pds-doi-cmd release fails when there are multiple `List_Author` classes in a label                | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `doi-service#502`_ SFTP roundup script does not run due to missing invoke dependencies on Python 3.13                | |:yellow_circle:| | s.high                    |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#515`_ `'Datapaper' is not a valid ProductType` error                                                    | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#513`_ Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release                 | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#500`_ pds-doi-cmd release fails when there are multiple `List_Author` classes in a label                | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#502`_ SFTP roundup script does not run due to missing invoke dependencies on Python 3.13                | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#497`_ FIPS Compliance: MD5 usage in checksum() function still causes ValueError on FIPS-enabled systems | |:blue_circle:|   | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
@@ -500,8 +502,13 @@ Planned Updates
 
 `pds4-information-model#965`_ Develop New Product Resource Data Model for Services and Tools
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
+
++----------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                        | I&T Status      | Priority / Bug Severity   |
++==============================================================================================+=================+===========================+
+| `pds4-information-model#965`_ Develop New Product Resource Data Model for Services and Tools | |:blue_circle:| | unknown                   |
++----------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 `pds4-information-model#981`_ B17 SCR Freeze
 ++++++++++++++++++++++++++++++++++++++++++++
@@ -539,12 +546,25 @@ Planned Updates
 
 Other Updates
 ~~~~~~~~~~~~~
+Requirements
+++++++++++++
+
++--------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                          | I&T Status        | Priority / Bug Severity   |
++================================================================================+===================+===========================+
+| `pds4-information-model#997`_ CCB-72: New enumerated values for funding_source | |:yellow_circle:| | p.must-have               |
++--------------------------------------------------------------------------------+-------------------+---------------------------+
+
 Enhancements
 ++++++++++++
 
 +------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                        | I&T Status      | Priority / Bug Severity   |
 +==============================================================================+=================+===========================+
+| `pds4-information-model#994`_ [namespace-registry] add new namespace "ops"   | |:blue_circle:| | p.must-have               |
++------------------------------------------------------------------------------+-----------------+---------------------------+
+| `pds4-information-model#995`_ [namespace-registry] add new namespace "asl"   | |:blue_circle:| | p.must-have               |
++------------------------------------------------------------------------------+-----------------+---------------------------+
 | `pds4-information-model#976`_ [namespace-registry] add new namespace phoenix | |:blue_circle:| | p.must-have               |
 +------------------------------------------------------------------------------+-----------------+---------------------------+
 
@@ -576,6 +596,17 @@ Planned Updates
 | `peppi#121`_ Integrate PDS Registry MCP Server Info with PEPPI | |:blue_circle:| | unknown                   |
 +----------------------------------------------------------------+-----------------+---------------------------+
 
+
+Other Updates
+~~~~~~~~~~~~~
+Requirements
+++++++++++++
+
++-------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                             | I&T Status        | Priority / Bug Severity   |
++===================================================================+===================+===========================+
+| `peppi#158`_ As a data user, I want to search for products by DOI | |:yellow_circle:| | unknown                   |
++-------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -771,8 +802,13 @@ Planned Updates
 
 `registry#451`_ Trade Study and Cost Analysis of AOSS vs. Managed OpenSearch vs. Self-managed Cluster
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
+
++-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                                 | I&T Status      | Priority / Bug Severity   |
++=======================================================================================================+=================+===========================+
+| `registry#451`_ Trade Study and Cost Analysis of AOSS vs. Managed OpenSearch vs. Self-managed Cluster | |:blue_circle:| | unknown                   |
++-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 Other Updates
 ~~~~~~~~~~~~~
@@ -837,8 +873,8 @@ Planned Updates
 +-------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 
 
-`registry-api#632`_ Add Support for Searching Full PDS4 Structured Metadata
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+`registry-api#632`_ Add Initial Support for Searching Full PDS4 Structured Metadata
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 +-------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 | Issue                                                                                                       | I&T Status        | Level       | Priority / Bug Severity   |
@@ -847,8 +883,8 @@ Planned Updates
 +-------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 
 
-`registry-api#689`_ Develop OPS LDD
-+++++++++++++++++++++++++++++++++++
+`registry-api#689`_ First Draft of OPS LDD
+++++++++++++++++++++++++++++++++++++++++++
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
@@ -978,11 +1014,13 @@ Other Updates
 Bugs
 ++++
 
-+---------------------------------------------+-------------------+---------------------------+
-| Issue                                       | I&T Status        | Priority / Bug Severity   |
-+=============================================+===================+===========================+
-| `registry-loader#44`_ Remove error from log | |:yellow_circle:| | s.medium                  |
-+---------------------------------------------+-------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                            | I&T Status        | Priority / Bug Severity   |
++==================================================================================================================================+===================+===========================+
+| `registry-loader#52`_ Harvest does not detect uppercase file extensions for labels, nor report errors for those missing products | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-loader#44`_ Remove error from log                                                                                      | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
 ++++++++++++
@@ -1070,6 +1108,11 @@ Planned Updates
 
 `registry-sweepers#201`_ Implement Handling of Partial Collections Uploads and Orphan Products
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`registry-sweepers#210`_ Implement Sweepers Execution in Airflow
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
@@ -1315,9 +1358,9 @@ Bugs
 +===========================================================================================================+===================+===========================+
 | `validate#1294`_ validate does not handle Special Constants for UnsignedMSB4                              | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1453`_ new/updated context objects have not been incorporated into the validator for 2 months   | |:blue_circle:|   | s.medium                  |
-+-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1423`_ Running validate 4.0.4 on terminal produces lots of new line characters while processing | |:yellow_circle:| | s.low                     |
++-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1453`_ new/updated context objects have not been incorporated into the validator for 2 months   | |:blue_circle:|   | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -1390,9 +1433,9 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | pds4-context-products  | 1      | 0              | 0              | 0       | 0        | 1       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| pds4-information-model | 1      | 3              | 1              | 0       | 6        | 11      |
+| pds4-information-model | 1      | 5              | 2              | 0       | 6        | 14      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| peppi                  | 0      | 0              | 0              | 0       | 1        | 1       |
+| peppi                  | 0      | 0              | 1              | 0       | 1        | 2       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | planetary-data-cloud   | 0      | 0              | 0              | 0       | 14       | 14      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1404,11 +1447,11 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | registry-legacy-solr   | 2      | 0              | 0              | 0       | 2        | 4       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry-loader        | 1      | 1              | 1              | 0       | 2        | 5       |
+| registry-loader        | 2      | 1              | 1              | 0       | 2        | 6       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | registry-mgr           | 1      | 0              | 0              | 0       | 0        | 1       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry-sweepers      | 1      | 2              | 0              | 0       | 3        | 6       |
+| registry-sweepers      | 1      | 2              | 0              | 0       | 4        | 7       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | software-issues-repo   | 0      | 1              | 0              | 0       | 8        | 9       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1418,7 +1461,7 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | web-analytics          | 1      | 0              | 0              | 0       | 1        | 2       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| **TOTAL**              | **41** | **12**         | **13**         | **0**   | **70**   | **136** |
+| **TOTAL**              | **42** | **14**         | **15**         | **0**   | **71**   | **142** |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 
 
@@ -1483,6 +1526,7 @@ as follows:
 
 .. _plan B17: https://nasa-pds.github.io/releases/17/plan.html
 .. _pds4-information-model#663: https://github.com/NASA-PDS/pds4-information-model/issues/663
+.. _pds4-information-model#997: https://github.com/NASA-PDS/pds4-information-model/issues/997
 .. _data-upload-manager#264: https://github.com/NASA-PDS/data-upload-manager/issues/264
 .. _data-upload-manager#293: https://github.com/NASA-PDS/data-upload-manager/issues/293
 .. _data-upload-manager#295: https://github.com/NASA-PDS/data-upload-manager/issues/295
@@ -1501,10 +1545,10 @@ as follows:
 .. _deep-archive#237: https://github.com/NASA-PDS/deep-archive/issues/237
 .. _deep-archive#226: https://github.com/NASA-PDS/deep-archive/issues/226
 .. _deep-archive#238: https://github.com/NASA-PDS/deep-archive/issues/238
-.. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
-.. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
 .. _doi-service#515: https://github.com/NASA-PDS/doi-service/issues/515
 .. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
+.. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
+.. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
 .. _doi-service#497: https://github.com/NASA-PDS/doi-service/issues/497
 .. _doi-service#510: https://github.com/NASA-PDS/doi-service/issues/510
 .. _doi-service#493: https://github.com/NASA-PDS/doi-service/issues/493
@@ -1533,8 +1577,12 @@ as follows:
 .. _pds4-information-model#663: https://github.com/NASA-PDS/pds4-information-model/issues/663
 .. _pds4-information-model#990: https://github.com/NASA-PDS/pds4-information-model/issues/990
 .. _pds4-information-model#991: https://github.com/NASA-PDS/pds4-information-model/issues/991
+.. _pds4-information-model#997: https://github.com/NASA-PDS/pds4-information-model/issues/997
+.. _pds4-information-model#994: https://github.com/NASA-PDS/pds4-information-model/issues/994
+.. _pds4-information-model#995: https://github.com/NASA-PDS/pds4-information-model/issues/995
 .. _pds4-information-model#976: https://github.com/NASA-PDS/pds4-information-model/issues/976
 .. _peppi#121: https://github.com/NASA-PDS/peppi/issues/121
+.. _peppi#158: https://github.com/NASA-PDS/peppi/issues/158
 .. _planetary-data-cloud#117: https://github.com/NASA-PDS/planetary-data-cloud/issues/117
 .. _planetary-data-cloud#144: https://github.com/NASA-PDS/planetary-data-cloud/issues/144
 .. _planetary-data-cloud#147: https://github.com/NASA-PDS/planetary-data-cloud/issues/147
@@ -1580,6 +1628,7 @@ as follows:
 .. _registry-legacy-solr#237: https://github.com/NASA-PDS/registry-legacy-solr/issues/237
 .. _registry-loader#11: https://github.com/NASA-PDS/registry-loader/issues/11
 .. _registry-loader#49: https://github.com/NASA-PDS/registry-loader/issues/49
+.. _registry-loader#52: https://github.com/NASA-PDS/registry-loader/issues/52
 .. _registry-loader#44: https://github.com/NASA-PDS/registry-loader/issues/44
 .. _registry-loader#42: https://github.com/NASA-PDS/registry-loader/issues/42
 .. _registry-loader#41: https://github.com/NASA-PDS/registry-loader/issues/41
@@ -1588,6 +1637,7 @@ as follows:
 .. _registry-sweepers#187: https://github.com/NASA-PDS/registry-sweepers/issues/187
 .. _registry-sweepers#189: https://github.com/NASA-PDS/registry-sweepers/issues/189
 .. _registry-sweepers#201: https://github.com/NASA-PDS/registry-sweepers/issues/201
+.. _registry-sweepers#210: https://github.com/NASA-PDS/registry-sweepers/issues/210
 .. _registry-sweepers#192: https://github.com/NASA-PDS/registry-sweepers/issues/192
 .. _registry-sweepers#185: https://github.com/NASA-PDS/registry-sweepers/issues/185
 .. _software-issues-repo#119: https://github.com/NASA-PDS/software-issues-repo/issues/119
@@ -1614,8 +1664,8 @@ as follows:
 .. _validate#1241: https://github.com/NASA-PDS/validate/issues/1241
 .. _validate#1408: https://github.com/NASA-PDS/validate/issues/1408
 .. _validate#1294: https://github.com/NASA-PDS/validate/issues/1294
-.. _validate#1453: https://github.com/NASA-PDS/validate/issues/1453
 .. _validate#1423: https://github.com/NASA-PDS/validate/issues/1423
+.. _validate#1453: https://github.com/NASA-PDS/validate/issues/1453
 .. _validate#1509: https://github.com/NASA-PDS/validate/issues/1509
 .. _web-analytics#63: https://github.com/NASA-PDS/web-analytics/issues/63
 .. _web-analytics#66: https://github.com/NASA-PDS/web-analytics/issues/66
