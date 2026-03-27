@@ -18,13 +18,17 @@ PDS4 Standards and Information Model Changes
 This section details the changes to the PDS4 Standards and Information Model approved by the PDS4 Change Control Board
 and implemented by the PDS within the latest build period.
 
-+-------------------------------+-------------------------------------------------------------+
-| Ref                           | Title                                                       |
-+===============================+=============================================================+
-| `pds4-information-model#663`_ | Adopt Provenance LDD for Superseded LIDs - CCB-21 (CCB-367) |
-+-------------------------------+-------------------------------------------------------------+
-| `pds4-information-model#997`_ | CCB-72: New enumerated values for funding_source            |
-+-------------------------------+-------------------------------------------------------------+
++--------------------------------+---------------------------------------------------------------------------------------------+
+| Ref                            | Title                                                                                       |
++================================+=============================================================================================+
+| `pds4-information-model#663`_  | Adopt Provenance LDD for Superseded LIDs - CCB-21 (CCB-367)                                 |
++--------------------------------+---------------------------------------------------------------------------------------------+
+| `pds4-information-model#997`_  | CCB-72: New enumerated values for funding_source                                            |
++--------------------------------+---------------------------------------------------------------------------------------------+
+| `pds4-information-model#1000`_ | CCB-68: ASCII_File_Name and ASCII_Directory_Path_Name are using malformed regex expressions |
++--------------------------------+---------------------------------------------------------------------------------------------+
+| `pds4-information-model#1002`_ | CCB-75: Add new value for object type  - "Interstellar Object"                              |
++--------------------------------+---------------------------------------------------------------------------------------------+
 
 Software Changes
 ================
@@ -220,17 +224,17 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================================+===================+===========================+
-| `doi-service#515`_ `'Datapaper' is not a valid ProductType` error                                                    | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `doi-service#513`_ Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release                 | |:yellow_circle:| | s.high                    |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `doi-service#500`_ pds-doi-cmd release fails when there are multiple `List_Author` classes in a label                | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `doi-service#502`_ SFTP roundup script does not run due to missing invoke dependencies on Python 3.13                | |:yellow_circle:| | s.high                    |
-+----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#497`_ FIPS Compliance: MD5 usage in checksum() function still causes ValueError on FIPS-enabled systems | |:blue_circle:|   | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `doi-service#510`_ DOI Search is not returning all SBN collections from DataCite for 10.26007                        | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#513`_ Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release                 | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#515`_ `'Datapaper' is not a valid ProductType` error                                                    | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#502`_ SFTP roundup script does not run due to missing invoke dependencies on Python 3.13                | |:yellow_circle:| | s.high                    |
++----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `doi-service#500`_ pds-doi-cmd release fails when there are multiple `List_Author` classes in a label                | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -271,13 +275,13 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                  | I&T Status        | Priority / Bug Severity   |
 +========================================================================================================================+===================+===========================+
-| `harvest#285`_ False positive Duplicate detected by harvest                                                            | |:blue_circle:|   | s.medium                  |
+| `harvest#144`_ Harvest setting pds:Time_Coordinates.pds:stop_date_time to bogus value when value is missing from label | |:yellow_circle:| | s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `harvest#283`_ Harvest cannot parse Date without time                                                                  | |:green_circle:|  | s.high                    |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#279`_ GEO no longer able to harvest data due to cognito issue                                                 | |:yellow_circle:| | s.critical                |
+| `harvest#285`_ False positive Duplicate detected by harvest                                                            | |:blue_circle:|   | s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#144`_ Harvest setting pds:Time_Coordinates.pds:stop_date_time to bogus value when value is missing from label | |:yellow_circle:| | s.medium                  |
+| `harvest#279`_ GEO no longer able to harvest data due to cognito issue                                                 | |:yellow_circle:| | s.critical                |
 +------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -533,39 +537,36 @@ Planned Updates
 `pds4-information-model#985`_ B17 Information Model SCR Implementation and LDDTool Updates
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-+-------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
-| Issue                                                                                     | I&T Status      | Level       | Priority / Bug Severity   |
-+===========================================================================================+=================+=============+===========================+
-| `pds4-information-model#663`_ Adopt Provenance LDD for Superseded LIDs - CCB-21 (CCB-367) | |:blue_circle:| | requirement | p.must-have               |
-+-------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
-| `pds4-information-model#990`_ Complete documentation for PROV LDD                         | |:blue_circle:| | enhancement | unknown                   |
-+-------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
-| `pds4-information-model#991`_ Improve PROV LDD with controlled vocabulary                 | |:blue_circle:| | enhancement | unknown                   |
-+-------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| Issue                                                                                                                      | I&T Status        | Level       | Priority / Bug Severity   |
++============================================================================================================================+===================+=============+===========================+
+| `pds4-information-model#663`_ Adopt Provenance LDD for Superseded LIDs - CCB-21 (CCB-367)                                  | |:blue_circle:|   | requirement | p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `pds4-information-model#990`_ Complete documentation for PROV LDD                                                          | |:blue_circle:|   | enhancement | unknown                   |
++----------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `pds4-information-model#991`_ Improve PROV LDD with controlled vocabulary                                                  | |:blue_circle:|   | enhancement | unknown                   |
++----------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `pds4-information-model#1002`_ CCB-75: Add new value for object type  - "Interstellar Object"                              | |:yellow_circle:| | requirement | p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `pds4-information-model#1000`_ CCB-68: ASCII_File_Name and ASCII_Directory_Path_Name are using malformed regex expressions | |:yellow_circle:| | requirement | p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `pds4-information-model#997`_ CCB-72: New enumerated values for funding_source                                             | |:yellow_circle:| | requirement | p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 
 
 Other Updates
 ~~~~~~~~~~~~~
-Requirements
-++++++++++++
-
-+--------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                          | I&T Status        | Priority / Bug Severity   |
-+================================================================================+===================+===========================+
-| `pds4-information-model#997`_ CCB-72: New enumerated values for funding_source | |:yellow_circle:| | p.must-have               |
-+--------------------------------------------------------------------------------+-------------------+---------------------------+
-
 Enhancements
 ++++++++++++
 
 +------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                        | I&T Status      | Priority / Bug Severity   |
 +==============================================================================+=================+===========================+
-| `pds4-information-model#994`_ [namespace-registry] add new namespace "ops"   | |:blue_circle:| | p.must-have               |
-+------------------------------------------------------------------------------+-----------------+---------------------------+
 | `pds4-information-model#995`_ [namespace-registry] add new namespace "asl"   | |:blue_circle:| | p.must-have               |
 +------------------------------------------------------------------------------+-----------------+---------------------------+
 | `pds4-information-model#976`_ [namespace-registry] add new namespace phoenix | |:blue_circle:| | p.must-have               |
++------------------------------------------------------------------------------+-----------------+---------------------------+
+| `pds4-information-model#994`_ [namespace-registry] add new namespace "ops"   | |:blue_circle:| | p.must-have               |
 +------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
@@ -824,11 +825,15 @@ Bugs
 Requirements
 ++++++++++++
 
-+--------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                                            | I&T Status        | Priority / Bug Severity   |
-+==================================================================================================+===================+===========================+
-| `registry#426`_ As a user, I want to load date times as strings in order to support leap seconds | |:yellow_circle:| | p.must-have               |
-+--------------------------------------------------------------------------------------------------+-------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                                                 | I&T Status        | Priority / Bug Severity   |
++=======================================================================================================================================================+===================+===========================+
+| `registry#426`_ As a user, I want to load date times as strings in order to support leap seconds                                                      | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry#481`_ As a PDS Node Operator, I want to track historical counts of missing and staged products over time                                    | |:yellow_circle:| | p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry#484`_ As a PDS Node Operator, I want to validate that products listed as missing from the registry are truly absent from the PDS Search API | |:yellow_circle:| | p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
 ++++++++++++
@@ -1071,6 +1076,8 @@ Bugs
 +===============================================================================================+===================+===========================+
 | `registry-mgr#170`_ `set-archive-status` says it updates more products than are in the bundle | |:yellow_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-mgr#135`_ Output does not always say if `set-archive-status` has failed             | |:yellow_circle:| | s.medium                  |
++-----------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -1121,11 +1128,13 @@ Other Updates
 Bugs
 ++++
 
-+---------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                     | I&T Status        | Priority / Bug Severity   |
-+===========================================================================+===================+===========================+
-| `registry-sweepers#192`_ Docker container does not run with non-root user | |:yellow_circle:| | s.medium                  |
-+---------------------------------------------------------------------------+-------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                  | I&T Status        | Priority / Bug Severity   |
++========================================================================================================================+===================+===========================+
+| `registry-sweepers#192`_ Docker container does not run with non-root user                                              | |:yellow_circle:| | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-sweepers#209`_ Legacy registry sync reconciliation report incorrectly flags bundles as missing from registry | |:yellow_circle:| | s.critical                |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
 ++++++++++++
@@ -1337,15 +1346,29 @@ Planned Updates
 `validate#1473`_ B17 Validate Support: High Priority Enhancements / Bug Fixes / Tasks
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------+---------------------------+
-| Issue                                                                                                                                          | I&T Status       | Level   | Priority / Bug Severity   |
-+================================================================================================================================================+==================+=========+===========================+
-| `validate#1316`_ Encoded_Audio encoding_standard_id = WAV gives MP4 error in Validate 3.7.1                                                    | |:green_circle:| | bug     | s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------+---------------------------+
-| `validate#1241`_ Validating large data file (150GB) is trying to write the entire file to local temp space - error upon not enough local space | |:blue_circle:|  | bug     | s.high                    |
-+------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------+---------------------------+
-| `validate#1408`_ JSON reports duplicates messages per product specified                                                                        | |:blue_circle:|  | bug     | s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| Issue                                                                                                                                          | I&T Status        | Level       | Priority / Bug Severity   |
++================================================================================================================================================+===================+=============+===========================+
+| `validate#956`_ Validate reports unexpected NaN error for ASCII_String fields                                                                  | |:yellow_circle:| | bug         | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `validate#1316`_ Encoded_Audio encoding_standard_id = WAV gives MP4 error in Validate 3.7.1                                                    | |:green_circle:|  | bug         | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `validate#1241`_ Validating large data file (150GB) is trying to write the entire file to local temp space - error upon not enough local space | |:blue_circle:|   | bug         | s.high                    |
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `validate#1408`_ JSON reports duplicates messages per product specified                                                                        | |:blue_circle:|   | bug         | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `validate#1481`_ Referential integrity not being checked in all places there is an Internal_Reference area                                     | |:yellow_circle:| | bug         | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `validate#1458`_ Number of passing products in summary does not match actual total                                                             | |:yellow_circle:| | bug         | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `validate#1510`_ When validate reports a directory has a warning it says "XML could not be parsed." which is misleading.                       | |:yellow_circle:| | bug         | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `validate#1539`_ error.directory.unallowed_name not raised on Windows for absolute directory_path_name                                         | |:yellow_circle:| | bug         | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `validate#1542`_ As a data provider, I want to add a new encoding type for Product Native                                                      | |:blue_circle:|   | requirement | p.must-have               |
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `validate#1541`_ As a data provider, I want to add two new encoding types for Product Native                                                   | |:blue_circle:|   | requirement | p.should-have             |
++------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 
 
 Other Updates
@@ -1356,9 +1379,11 @@ Bugs
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                     | I&T Status        | Priority / Bug Severity   |
 +===========================================================================================================+===================+===========================+
-| `validate#1294`_ validate does not handle Special Constants for UnsignedMSB4                              | |:yellow_circle:| | s.medium                  |
-+-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1423`_ Running validate 4.0.4 on terminal produces lots of new line characters while processing | |:yellow_circle:| | s.low                     |
++-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1544`_ Add MSSS ODR and Nikon NEF encoding types for Product_Native                             | |:yellow_circle:| | p.must-have               |
++-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1294`_ validate does not handle Special Constants for UnsignedMSB4                              | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1453`_ new/updated context objects have not been incorporated into the validator for 2 months   | |:blue_circle:|   | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
@@ -1366,11 +1391,13 @@ Bugs
 Requirements
 ++++++++++++
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                                                                                                              | I&T Status      | Priority / Bug Severity   |
-+====================================================================================================================================================================================+=================+===========================+
-| `validate#1509`_ As a user, I want the validate report entry for when there is a context name mismatch to show the LID of the context object as well as the correct known values.. | |:blue_circle:| | p.should-have             |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                                                                              | I&T Status        | Priority / Bug Severity   |
++====================================================================================================================================================================================+===================+===========================+
+| `validate#1544`_ Add MSSS ODR and Nikon NEF encoding types for Product_Native                                                                                                      | |:yellow_circle:| | p.must-have               |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1509`_ As a user, I want the validate report entry for when there is a context name mismatch to show the LID of the context object as well as the correct known values.. | |:blue_circle:|   | p.should-have             |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -1433,7 +1460,7 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | pds4-context-products  | 1      | 0              | 0              | 0       | 0        | 1       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| pds4-information-model | 1      | 5              | 2              | 0       | 6        | 14      |
+| pds4-information-model | 1      | 5              | 4              | 0       | 6        | 16      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | peppi                  | 0      | 0              | 1              | 0       | 1        | 2       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1441,7 +1468,7 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | portal-ds-view         | 1      | 0              | 0              | 0       | 0        | 1       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry               | 3      | 1              | 1              | 0       | 5        | 10      |
+| registry               | 3      | 1              | 3              | 0       | 5        | 12      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | registry-api           | 2      | 1              | 2              | 0       | 9        | 14      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1449,19 +1476,19 @@ This section provides a summary of the issues addressed in this release, organiz
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | registry-loader        | 2      | 1              | 1              | 0       | 2        | 6       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry-mgr           | 1      | 0              | 0              | 0       | 0        | 1       |
+| registry-mgr           | 2      | 0              | 0              | 0       | 0        | 2       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry-sweepers      | 1      | 2              | 0              | 0       | 4        | 7       |
+| registry-sweepers      | 2      | 2              | 0              | 0       | 4        | 8       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | software-issues-repo   | 0      | 1              | 0              | 0       | 8        | 9       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | system-i-n-t           | 0      | 0              | 0              | 0       | 10       | 10      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| validate               | 6      | 0              | 1              | 0       | 1        | 8       |
+| validate               | 12     | 0              | 4              | 0       | 1        | 17      |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 | web-analytics          | 1      | 0              | 0              | 0       | 1        | 2       |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
-| **TOTAL**              | **42** | **14**         | **15**         | **0**   | **71**   | **142** |
+| **TOTAL**              | **50** | **14**         | **22**         | **0**   | **71**   | **157** |
 +------------------------+--------+----------------+----------------+---------+----------+---------+
 
 
@@ -1527,6 +1554,8 @@ as follows:
 .. _plan B17: https://nasa-pds.github.io/releases/17/plan.html
 .. _pds4-information-model#663: https://github.com/NASA-PDS/pds4-information-model/issues/663
 .. _pds4-information-model#997: https://github.com/NASA-PDS/pds4-information-model/issues/997
+.. _pds4-information-model#1000: https://github.com/NASA-PDS/pds4-information-model/issues/1000
+.. _pds4-information-model#1002: https://github.com/NASA-PDS/pds4-information-model/issues/1002
 .. _data-upload-manager#264: https://github.com/NASA-PDS/data-upload-manager/issues/264
 .. _data-upload-manager#293: https://github.com/NASA-PDS/data-upload-manager/issues/293
 .. _data-upload-manager#295: https://github.com/NASA-PDS/data-upload-manager/issues/295
@@ -1545,17 +1574,17 @@ as follows:
 .. _deep-archive#237: https://github.com/NASA-PDS/deep-archive/issues/237
 .. _deep-archive#226: https://github.com/NASA-PDS/deep-archive/issues/226
 .. _deep-archive#238: https://github.com/NASA-PDS/deep-archive/issues/238
-.. _doi-service#515: https://github.com/NASA-PDS/doi-service/issues/515
-.. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
-.. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
-.. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
 .. _doi-service#497: https://github.com/NASA-PDS/doi-service/issues/497
 .. _doi-service#510: https://github.com/NASA-PDS/doi-service/issues/510
+.. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
+.. _doi-service#515: https://github.com/NASA-PDS/doi-service/issues/515
+.. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
+.. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
 .. _doi-service#493: https://github.com/NASA-PDS/doi-service/issues/493
-.. _harvest#285: https://github.com/NASA-PDS/harvest/issues/285
-.. _harvest#283: https://github.com/NASA-PDS/harvest/issues/283
-.. _harvest#279: https://github.com/NASA-PDS/harvest/issues/279
 .. _harvest#144: https://github.com/NASA-PDS/harvest/issues/144
+.. _harvest#283: https://github.com/NASA-PDS/harvest/issues/283
+.. _harvest#285: https://github.com/NASA-PDS/harvest/issues/285
+.. _harvest#279: https://github.com/NASA-PDS/harvest/issues/279
 .. _harvest#292: https://github.com/NASA-PDS/harvest/issues/292
 .. _lasso-issues#51: https://github.com/NASA-PDS/lasso-issues/issues/51
 .. _lasso-issues#41: https://github.com/NASA-PDS/lasso-issues/issues/41
@@ -1577,10 +1606,12 @@ as follows:
 .. _pds4-information-model#663: https://github.com/NASA-PDS/pds4-information-model/issues/663
 .. _pds4-information-model#990: https://github.com/NASA-PDS/pds4-information-model/issues/990
 .. _pds4-information-model#991: https://github.com/NASA-PDS/pds4-information-model/issues/991
+.. _pds4-information-model#1002: https://github.com/NASA-PDS/pds4-information-model/issues/1002
+.. _pds4-information-model#1000: https://github.com/NASA-PDS/pds4-information-model/issues/1000
 .. _pds4-information-model#997: https://github.com/NASA-PDS/pds4-information-model/issues/997
-.. _pds4-information-model#994: https://github.com/NASA-PDS/pds4-information-model/issues/994
 .. _pds4-information-model#995: https://github.com/NASA-PDS/pds4-information-model/issues/995
 .. _pds4-information-model#976: https://github.com/NASA-PDS/pds4-information-model/issues/976
+.. _pds4-information-model#994: https://github.com/NASA-PDS/pds4-information-model/issues/994
 .. _peppi#121: https://github.com/NASA-PDS/peppi/issues/121
 .. _peppi#158: https://github.com/NASA-PDS/peppi/issues/158
 .. _planetary-data-cloud#117: https://github.com/NASA-PDS/planetary-data-cloud/issues/117
@@ -1607,6 +1638,8 @@ as follows:
 .. _registry#451: https://github.com/NASA-PDS/registry/issues/451
 .. _registry#456: https://github.com/NASA-PDS/registry/issues/456
 .. _registry#426: https://github.com/NASA-PDS/registry/issues/426
+.. _registry#481: https://github.com/NASA-PDS/registry/issues/481
+.. _registry#484: https://github.com/NASA-PDS/registry/issues/484
 .. _registry#460: https://github.com/NASA-PDS/registry/issues/460
 .. _registry-api#715: https://github.com/NASA-PDS/registry-api/issues/715
 .. _registry-api#622: https://github.com/NASA-PDS/registry-api/issues/622
@@ -1633,12 +1666,14 @@ as follows:
 .. _registry-loader#42: https://github.com/NASA-PDS/registry-loader/issues/42
 .. _registry-loader#41: https://github.com/NASA-PDS/registry-loader/issues/41
 .. _registry-mgr#170: https://github.com/NASA-PDS/registry-mgr/issues/170
+.. _registry-mgr#135: https://github.com/NASA-PDS/registry-mgr/issues/135
 .. _registry-sweepers#186: https://github.com/NASA-PDS/registry-sweepers/issues/186
 .. _registry-sweepers#187: https://github.com/NASA-PDS/registry-sweepers/issues/187
 .. _registry-sweepers#189: https://github.com/NASA-PDS/registry-sweepers/issues/189
 .. _registry-sweepers#201: https://github.com/NASA-PDS/registry-sweepers/issues/201
 .. _registry-sweepers#210: https://github.com/NASA-PDS/registry-sweepers/issues/210
 .. _registry-sweepers#192: https://github.com/NASA-PDS/registry-sweepers/issues/192
+.. _registry-sweepers#209: https://github.com/NASA-PDS/registry-sweepers/issues/209
 .. _registry-sweepers#185: https://github.com/NASA-PDS/registry-sweepers/issues/185
 .. _software-issues-repo#119: https://github.com/NASA-PDS/software-issues-repo/issues/119
 .. _software-issues-repo#120: https://github.com/NASA-PDS/software-issues-repo/issues/120
@@ -1660,12 +1695,21 @@ as follows:
 .. _system-i-n-t#80: https://github.com/NASA-PDS/system-i-n-t/issues/80
 .. _system-i-n-t#81: https://github.com/NASA-PDS/system-i-n-t/issues/81
 .. _validate#1473: https://github.com/NASA-PDS/validate/issues/1473
+.. _validate#956: https://github.com/NASA-PDS/validate/issues/956
 .. _validate#1316: https://github.com/NASA-PDS/validate/issues/1316
 .. _validate#1241: https://github.com/NASA-PDS/validate/issues/1241
 .. _validate#1408: https://github.com/NASA-PDS/validate/issues/1408
-.. _validate#1294: https://github.com/NASA-PDS/validate/issues/1294
+.. _validate#1481: https://github.com/NASA-PDS/validate/issues/1481
+.. _validate#1458: https://github.com/NASA-PDS/validate/issues/1458
+.. _validate#1510: https://github.com/NASA-PDS/validate/issues/1510
+.. _validate#1539: https://github.com/NASA-PDS/validate/issues/1539
+.. _validate#1542: https://github.com/NASA-PDS/validate/issues/1542
+.. _validate#1541: https://github.com/NASA-PDS/validate/issues/1541
 .. _validate#1423: https://github.com/NASA-PDS/validate/issues/1423
+.. _validate#1544: https://github.com/NASA-PDS/validate/pull/1544
+.. _validate#1294: https://github.com/NASA-PDS/validate/issues/1294
 .. _validate#1453: https://github.com/NASA-PDS/validate/issues/1453
+.. _validate#1544: https://github.com/NASA-PDS/validate/pull/1544
 .. _validate#1509: https://github.com/NASA-PDS/validate/issues/1509
 .. _web-analytics#63: https://github.com/NASA-PDS/web-analytics/issues/63
 .. _web-analytics#66: https://github.com/NASA-PDS/web-analytics/issues/66
