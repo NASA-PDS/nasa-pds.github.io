@@ -25,9 +25,18 @@ jobs:
         with:
           python-version: '3.13'
 
+      - name: Checkout lasso-issues
+        uses: actions/checkout@v4
+        with:
+          repository: NASA-PDS/lasso-issues
+          ref: main
+          path: lasso-issues
+          token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
+
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+          pip install ./lasso-issues
 
       - name: Generate RDD
         run: |
