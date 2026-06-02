@@ -75,8 +75,165 @@ testing:
 
 --------
 
+Component: Cloud Operations
+---------------------------
+*Cloud operations, utilities, and authentication*
+
+--------
+
+Component: Cloud Platform Engineering
+-------------------------------------
+*Planetary Data Cloud platform infrastructure and engineering*
+
+--------
+
+Planetary-data-cloud
+~~~~~~~~~~~~~~~~~~~~
+*PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/planetary-data-cloud#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/planetary-data-cloud>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/planetary-data-cloud/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/planetary-data-cloud/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/planetary-data-cloud/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/planetary-data-cloud/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+`planetary-data-cloud#117`_ Implement Optional Cognito Password Rotation Requirement (Disabled)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++-------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                           | I&T Status      | Priority / Bug Severity   |
++=================================================================================================+=================+===========================+
+| `planetary-data-cloud#117`_ Implement Optional Cognito Password Rotation Requirement (Disabled) | |:blue_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#144`_ Develop Egress Management Strategy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++----------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                          | I&T Status      | Priority / Bug Severity   |
++================================================================+=================+===========================+
+| `planetary-data-cloud#144`_ Develop Egress Management Strategy | |:blue_circle:| | p.must-have               |
++----------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#147`_ B16 Bi-annual Cloud Resource Housekeeping
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++-----------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                 | I&T Status      | Priority / Bug Severity   |
++=======================================================================+=================+===========================+
+| `planetary-data-cloud#147`_ B16 Bi-annual Cloud Resource Housekeeping | |:blue_circle:| | unknown                   |
++-----------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#157`_ Egress Management Strategy Phase 1 - Throttling and Monitoring
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#178`_ Plan, Schedule, and Implement First PDC CoP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++-------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                   | I&T Status      | Priority / Bug Severity   |
++=========================================================================+=================+===========================+
+| `planetary-data-cloud#178`_ Plan, Schedule, and Implement First PDC CoP | |:blue_circle:| | unknown                   |
++-------------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#183`_ Develop Monthly Cloud Reporting Metrics Spreadsheet and Documentation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++---------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                             | I&T Status      | Priority / Bug Severity   |
++===================================================================================================+=================+===========================+
+| `planetary-data-cloud#183`_ Develop Monthly Cloud Reporting Metrics Spreadsheet and Documentation | |:blue_circle:| | unknown                   |
++---------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#193`_ B17 Bi-annual Cloud Resource Housekeeping
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++-----------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                 | I&T Status      | Priority / Bug Severity   |
++=======================================================================+=================+===========================+
+| `planetary-data-cloud#193`_ B17 Bi-annual Cloud Resource Housekeeping | |:blue_circle:| | unknown                   |
++-----------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#194`_ Complete Migration of ATM Backup
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#195`_ PDC Role Definitions: Tenant EN Platform and Data Engineer Roles
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++----------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                        | I&T Status      | Priority / Bug Severity   |
++==============================================================================================+=================+===========================+
+| `planetary-data-cloud#195`_ PDC Role Definitions: Tenant EN Platform and Data Engineer Roles | |:blue_circle:| | unknown                   |
++----------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#199`_ Consolidate DUM and Registry Configurations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++-------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                   | I&T Status      | Priority / Bug Severity   |
++=========================================================================+=================+===========================+
+| `planetary-data-cloud#199`_ Consolidate DUM and Registry Configurations | |:blue_circle:| | unknown                   |
++-------------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#202`_ Require and Implement Tagging Across All Component Terraforms
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++-------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                     | I&T Status      | Priority / Bug Severity   |
++===========================================================================================+=================+===========================+
+| `planetary-data-cloud#202`_ Require and Implement Tagging Across All Component Terraforms | |:blue_circle:| | unknown                   |
++-------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#205`_ Support PDC Migration to SCIP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#206`_ Develop Risk List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++-----------------------------------------------+-----------------+---------------------------+
+| Issue                                         | I&T Status      | Priority / Bug Severity   |
++===============================================+=================+===========================+
+| `planetary-data-cloud#206`_ Develop Risk List | |:blue_circle:| | unknown                   |
++-----------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#207`_ Data Storage Management Strategy Phase 1 - Tool Trade, Dashboards, Thresholds, Alerts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+--------
+
+Component: Data Upload Manager
+------------------------------
+*Data Upload Manager (DUM) for managing data uploads to PDC*
+
+--------
+
 Data-upload-manager
--------------------
+~~~~~~~~~~~~~~~~~~~
 *Data Upload Manager (DUM) component for managing the interface for data uploads to the Planetary Data Cloud from Data Providers and PDS Nodes.*
 
 .. list-table:: 
@@ -91,9 +248,9 @@ Data-upload-manager
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `data-upload-manager#264`_ Sync DUM Metadata with rclone metadata
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                             | I&T Status      | Priority / Bug Severity   |
@@ -103,7 +260,7 @@ Planned Updates
 
 
 `data-upload-manager#293`_ B17 DUM Enhancements: High Priority Updates / Bug Fixes / Tasks
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                      | I&T Status      | Priority / Bug Severity   |
@@ -113,7 +270,7 @@ Planned Updates
 
 
 `data-upload-manager#295`_ Add DUM Support For Handling Files In Archive Buckets
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +---------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
 | Issue                                                                                                         | I&T Status       | Level       | Priority / Bug Severity   |
@@ -125,7 +282,7 @@ Planned Updates
 
 
 `data-upload-manager#319`_ New Flag to Skipping Symlinks
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
 | Issue                                                                                           | I&T Status       | Level       | Priority / Bug Severity   |
@@ -137,7 +294,7 @@ Planned Updates
 
 
 `data-upload-manager#329`_ B17 DUM Support:  High Priority Enhancements / Bug Fixes / Tasks
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------------------------------------------------------------------------------------------------+------------------+---------+---------------------------+
 | Issue                                                                                                              | I&T Status       | Level   | Priority / Bug Severity   |
@@ -153,9 +310,9 @@ Planned Updates
 
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                         | I&T Status      | Priority / Bug Severity   |
@@ -164,7 +321,7 @@ Bugs
 +---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 Requirements
-++++++++++++
+^^^^^^^^^^^^
 
 +----------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                    | I&T Status       | Priority / Bug Severity   |
@@ -174,8 +331,14 @@ Requirements
 
 --------
 
+Component: Deep Archive
+-----------------------
+*PDS Open Archival Information System (OAIS) utilities for deep archive operations*
+
+--------
+
 Deep-archive
-------------
+~~~~~~~~~~~~
 *PDS Open Archival Information System (OAIS) utilities, including Submission Information Package (SIP) and Archive Information Package (AIP) generators*
 
 .. list-table:: 
@@ -190,24 +353,24 @@ Deep-archive
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 No planned updates realized for this build in this repository.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                 | I&T Status      | Priority / Bug Severity   |
 +=======================================================================================================+=================+===========================+
-| `deep-archive#226`_ MD5 hashing does not work in FIPS mode                                            | |:blue_circle:| | s.high                    |
-+-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `deep-archive#237`_ Registry transient error not handled gracefully – JSONDecodeError on 500 response | |:blue_circle:| | s.high                    |
++-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `deep-archive#226`_ MD5 hashing does not work in FIPS mode                                            | |:blue_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 Enhancements
-++++++++++++
+^^^^^^^^^^^^
 
 +----------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                            | I&T Status      | Priority / Bug Severity   |
@@ -217,8 +380,20 @@ Enhancements
 
 --------
 
+Component: Devops
+-----------------
+*DevOps tools, CI/CD pipelines, and automation infrastructure*
+
+--------
+
+Component: DOI Service
+----------------------
+*Digital Object Identifier (DOI) service for PDS data products*
+
+--------
+
 Doi-service
------------
+~~~~~~~~~~~
 *Service and tools for generating DOIs for PDS bundles, collections, and data sets*
 
 .. list-table:: 
@@ -233,32 +408,32 @@ Doi-service
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 No planned updates realized for this build in this repository.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                                | I&T Status       | Priority / Bug Severity   |
 +======================================================================================================================+==================+===========================+
-| `doi-service#515`_ `'Datapaper' is not a valid ProductType` error                                                    | |:blue_circle:|  | s.medium                  |
+| `doi-service#500`_ pds-doi-cmd release fails when there are multiple `List_Author` classes in a label                | |:blue_circle:|  | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `doi-service#497`_ FIPS Compliance: MD5 usage in checksum() function still causes ValueError on FIPS-enabled systems | |:blue_circle:|  | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `doi-service#513`_ Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release                 | |:blue_circle:|  | s.high                    |
+| `doi-service#515`_ `'Datapaper' is not a valid ProductType` error                                                    | |:blue_circle:|  | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `doi-service#502`_ SFTP roundup script does not run due to missing invoke dependencies on Python 3.13                | |:green_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `doi-service#510`_ DOI Search is not returning all SBN collections from DataCite for 10.26007                        | |:blue_circle:|  | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `doi-service#500`_ pds-doi-cmd release fails when there are multiple `List_Author` classes in a label                | |:blue_circle:|  | s.medium                  |
+| `doi-service#513`_ Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release                 | |:blue_circle:|  | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Enhancements
-++++++++++++
+^^^^^^^^^^^^
 
 +----------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                    | I&T Status      | Priority / Bug Severity   |
@@ -268,143 +443,114 @@ Enhancements
 
 --------
 
-En-ops-utils
-------------
-*None*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/en-ops-utils#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/en-ops-utils>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/en-ops-utils/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/en-ops-utils/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/en-ops-utils/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/en-ops-utils/releases>`_ 
-
-
-Planned Updates
-~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
-
-Other Updates
-~~~~~~~~~~~~~
-Bugs
-++++
-
-+-----------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                       | I&T Status      | Priority / Bug Severity   |
-+=============================================================================+=================+===========================+
-| `en-ops-utils#1`_ pds-sync-api.py does not handle network errors gracefully | |:blue_circle:| | s.medium                  |
-+-----------------------------------------------------------------------------+-----------------+---------------------------+
-| `en-ops-utils#10`_ 1.24.0.0/1O00 LDD page may have missing LDDs             | |:blue_circle:| | s.low                     |
-+-----------------------------------------------------------------------------+-----------------+---------------------------+
+Component: Integration And Testing
+----------------------------------
+*Integration and testing infrastructure*
 
 --------
 
-Harvest
--------
-*Version<=4 of the standalone Harvest client application providing the functionality for capturing and indexing product metadata into the PDS Registry system. Version 5+ are now managed through https://github.com/NASA-PDS/registry-loader/*
+System-i-n-t
+~~~~~~~~~~~~
+*Repo for PDS EN System I&T scripts and issue tracking*
 
 .. list-table:: 
    :widths: 15 15 15 15 15 15
 
-   * - `User Guide <https://nasa-pds.github.io/registry>`_
-     - `Github Repo <https://github.com/NASA-PDS/harvest>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/harvest/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/harvest/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/harvest/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/harvest/releases>`_ 
+   * - `User Guide <https://github.com/NASA-PDS/system-i-n-t#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/system-i-n-t>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/system-i-n-t/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/system-i-n-t/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/system-i-n-t/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/system-i-n-t/releases>`_ 
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
++++++++++++++++
+`system-i-n-t#68`_ B16 Standards Document Review
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Other Updates
-~~~~~~~~~~~~~
-Bugs
-++++
++--------------------------------------------------+-----------------+---------------------------+
+| Issue                                            | I&T Status      | Priority / Bug Severity   |
++==================================================+=================+===========================+
+| `system-i-n-t#68`_ B16 Standards Document Review | |:blue_circle:| | unknown                   |
++--------------------------------------------------+-----------------+---------------------------+
 
-+------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                                                                  | I&T Status        | Priority / Bug Severity   |
-+========================================================================================================================+===================+===========================+
-| `harvest#325`_ Harvest does not ingest data                                                                            | |:yellow_circle:| | s.critical                |
-+------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#283`_ Harvest cannot parse Date without time                                                                  | |:green_circle:|  | s.high                    |
-+------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#285`_ False positive Duplicate detected by harvest                                                            | |:blue_circle:|   | s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#279`_ GEO no longer able to harvest data due to cognito issue                                                 | |:blue_circle:|   | s.critical                |
-+------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `harvest#144`_ Harvest setting pds:Time_Coordinates.pds:stop_date_time to bogus value when value is missing from label | |:blue_circle:|   | s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
-Requirements
-++++++++++++
+`system-i-n-t#70`_ B16 System Integration & Test
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| Issue                                                                                           | I&T Status       | Priority / Bug Severity   |
-+=================================================================================================+==================+===========================+
-| `harvest#292`_ harvest successfully ingests nonexistent LDD attributes when it should error out | |:green_circle:| | p.must-have               |
-+-------------------------------------------------------------------------------------------------+------------------+---------------------------+
++--------------------------------------------------+-----------------+---------------------------+
+| Issue                                            | I&T Status      | Priority / Bug Severity   |
++==================================================+=================+===========================+
+| `system-i-n-t#70`_ B16 System Integration & Test | |:blue_circle:| | unknown                   |
++--------------------------------------------------+-----------------+---------------------------+
+
+
+`system-i-n-t#71`_ B16 Deployment and Release
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++-----------------------------------------------+-----------------+---------------------------+
+| Issue                                         | I&T Status      | Priority / Bug Severity   |
++===============================================+=================+===========================+
+| `system-i-n-t#71`_ B16 Deployment and Release | |:blue_circle:| | unknown                   |
++-----------------------------------------------+-----------------+---------------------------+
+
+
+`system-i-n-t#72`_ B16 Delivery & Deployment Review (DDR)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++-----------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                     | I&T Status      | Priority / Bug Severity   |
++===========================================================+=================+===========================+
+| `system-i-n-t#72`_ B16 Delivery & Deployment Review (DDR) | |:blue_circle:| | unknown                   |
++-----------------------------------------------------------+-----------------+---------------------------+
+
+
+`system-i-n-t#76`_ B17 dLDD Integration & Test
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`system-i-n-t#77`_ B17 Standards Document Review
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`system-i-n-t#78`_ B17 System Integration & Test 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`system-i-n-t#79`_ B17 Information Model I&T
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++----------------------------------------------+-----------------+---------------------------+
+| Issue                                        | I&T Status      | Priority / Bug Severity   |
++==============================================+=================+===========================+
+| `system-i-n-t#79`_ B17 Information Model I&T | |:blue_circle:| | unknown                   |
++----------------------------------------------+-----------------+---------------------------+
+
+
+`system-i-n-t#80`_ B17 Delivery & Deployment Review (DDR)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`system-i-n-t#81`_ B17 Deployment and Release
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
 
 --------
 
-Lasso-issues
-------------
-*Utilities for wrapping GitHub API for creating specific data structures and reports from GitHub issues*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/lasso-issues#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/lasso-issues>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/lasso-issues/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/lasso-issues/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/lasso-issues/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/lasso-issues/releases>`_ 
-
-
-Planned Updates
-~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
-
-Other Updates
-~~~~~~~~~~~~~
-Bugs
-++++
-
-+-------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                     | I&T Status      | Priority / Bug Severity   |
-+===========================================================================================+=================+===========================+
-| `lasso-issues#51`_ RDD and markdown reports do not respect ignore flag in products config | |:blue_circle:| | s.medium                  |
-+-------------------------------------------------------------------------------------------+-----------------+---------------------------+
-
-Requirements
-++++++++++++
-
-+---------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                                                           | I&T Status      | Priority / Bug Severity   |
-+=================================================================================================================================+=================+===========================+
-| `lasso-issues#41`_ As a user, I want to automate creation of release theme issues from CSV schedules                            | |:blue_circle:| | p.could-have              |
-+---------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| `lasso-issues#47`_ As a PDS project manager, I want enhanced issue reporting with component grouping and parent-child hierarchy | |:blue_circle:| | p.should-have             |
-+---------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-
-Enhancements
-++++++++++++
-
-+------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                      | I&T Status      | Priority / Bug Severity   |
-+============================================================+=================+===========================+
-| `lasso-issues#48`_ Remove ZenHub integration from codebase | |:blue_circle:| | unknown                   |
-+------------------------------------------------------------+-----------------+---------------------------+
+Component: Nucleus
+------------------
+*Nucleus workflow platform for planetary data processing*
 
 --------
 
 Nucleus
--------
+~~~~~~~
 *Nucleus is a software platform used to create workflows for the Planetary Data (PDS).*
 
 .. list-table:: 
@@ -419,19 +565,19 @@ Nucleus
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `nucleus#127`_ [SBN] CSS: Deploy Nucleus to Prod and Kickoff Processing
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 `nucleus#178`_ Design and Implement PDS Common Logging Libraries for Java and Python
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 `nucleus#181`_ Upgrade Airflow to 3.x
-+++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +---------------------------------------+-----------------+---------------------------+
 | Issue                                 | I&T Status      | Priority / Bug Severity   |
@@ -442,8 +588,48 @@ Planned Updates
 
 --------
 
+Component: Operations
+---------------------
+*PDS Engineering Node operations and issue tracking*
+
+--------
+
+En-ops-utils
+~~~~~~~~~~~~
+*None*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/en-ops-utils#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/en-ops-utils>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/en-ops-utils/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/en-ops-utils/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/en-ops-utils/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/en-ops-utils/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+No planned updates realized for this build in this repository.
+
+Other Updates
++++++++++++++
+Bugs
+^^^^
+
++-----------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                       | I&T Status      | Priority / Bug Severity   |
++=============================================================================+=================+===========================+
+| `en-ops-utils#1`_ pds-sync-api.py does not handle network errors gracefully | |:blue_circle:| | s.medium                  |
++-----------------------------------------------------------------------------+-----------------+---------------------------+
+| `en-ops-utils#10`_ 1.24.0.0/1O00 LDD page may have missing LDDs             | |:blue_circle:| | s.low                     |
++-----------------------------------------------------------------------------+-----------------+---------------------------+
+
+--------
+
 Operations
-----------
+~~~~~~~~~~
 *Tickets for the PDSEN Operations Team*
 
 .. list-table:: 
@@ -458,13 +644,13 @@ Operations
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 No planned updates realized for this build in this repository.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +----------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                          | I&T Status      | Priority / Bug Severity   |
@@ -474,40 +660,14 @@ Bugs
 
 --------
 
-Pds-api
--------
-*PDS web APIs specifications and user's manual*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <http://nasa-pds.github.io/pds-api>`_
-     - `Github Repo <https://github.com/NASA-PDS/pds-api>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/pds-api/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/pds-api/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/pds-api/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/pds-api/releases>`_ 
-
-
-Planned Updates
-~~~~~~~~~~~~~~~
-No planned updates realized for this build in this repository.
-
-Other Updates
-~~~~~~~~~~~~~
-Bugs
-++++
-
-+-----------------------------------------------+-----------------+---------------------------+
-| Issue                                         | I&T Status      | Priority / Bug Severity   |
-+===============================================+=================+===========================+
-| `pds-api#296`_ Link to PDF document is broken | |:blue_circle:| | s.low                     |
-+-----------------------------------------------+-----------------+---------------------------+
+Component: PDS4 Information Model
+---------------------------------
+*PDS4 Information Model, ontology, and data dictionary tools*
 
 --------
 
 Pds4-context-products
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 *Repository for managing PDS4 Context Products*
 
 .. list-table:: 
@@ -522,26 +682,26 @@ Pds4-context-products
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 No planned updates realized for this build in this repository.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                        | I&T Status        | Priority / Bug Severity   |
 +==============================================================================================================================================+===================+===========================+
-| `pds4-context-products#84`_ Chandrayaan-1 NASA PDS investigation (and maybe instrument host, and instruments?) are not accurately deprecated | |:yellow_circle:| | s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-context-products#70`_ Invalid XML structure in two context products causes incorrect page types in search                              | |:blue_circle:|   | s.high                    |
++----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-context-products#84`_ Chandrayaan-1 NASA PDS investigation (and maybe instrument host, and instruments?) are not accurately deprecated | |:yellow_circle:| | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
 Pds4-information-model
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 *The software tools and data necessary for generating the Information Model including PDS4 ontology, data, and information model.*
 
 .. list-table:: 
@@ -556,9 +716,9 @@ Pds4-information-model
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `pds4-information-model#965`_ Develop New Product Resource Data Model for Services and Tools
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
 | Issue                                                                                                              | I&T Status       | Level       | Priority / Bug Severity   |
@@ -568,7 +728,7 @@ Planned Updates
 
 
 `pds4-information-model#981`_ B17 SCR Freeze
-++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------------------------------------------------------------------------+-------------------+---------+---------------------------+
 | Issue                                                                                      | I&T Status        | Level   | Priority / Bug Severity   |
@@ -578,7 +738,7 @@ Planned Updates
 
 
 `pds4-information-model#983`_ B17 Standards Documents Updates
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +---------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                         | I&T Status      | Priority / Bug Severity   |
@@ -588,7 +748,7 @@ Planned Updates
 
 
 `pds4-information-model#984`_ B17 Information Model Delivery to I&T
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +---------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                               | I&T Status      | Priority / Bug Severity   |
@@ -598,7 +758,7 @@ Planned Updates
 
 
 `pds4-information-model#985`_ B17 Information Model SCR Implementation and LDDTool Updates
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +---------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 | Issue                                                                                                                           | I&T Status        | Level       | Priority / Bug Severity   |
@@ -644,9 +804,9 @@ Planned Updates
 
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Enhancements
-++++++++++++
+^^^^^^^^^^^^
 
 +------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                        | I&T Status       | Priority / Bug Severity   |
@@ -660,8 +820,14 @@ Enhancements
 
 --------
 
+Component: PDS4 Viewer
+----------------------
+*Tools for viewing and visualizing PDS4 data products*
+
+--------
+
 Pds4-jparser
-------------
+~~~~~~~~~~~~
 *Java Library providing APIs for parsing and exporting information on PDS4 products, including table and image objects to various formats including CSV, PNG, VICAR, FITs, etc.*
 
 .. list-table:: 
@@ -676,13 +842,13 @@ Pds4-jparser
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 No planned updates realized for this build in this repository.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                         | I&T Status      | Priority / Bug Severity   |
@@ -694,176 +860,8 @@ Bugs
 
 --------
 
-Peppi
------
-*Planetary Data Explorer: Python (PEPPi) client library (pds.peppi) to access Planetary Data from the NASA Planetary Data System*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://nasa-pds.github.io/peppi>`_
-     - `Github Repo <https://github.com/NASA-PDS/peppi>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/peppi/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/peppi/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/peppi/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/peppi/releases>`_ 
-
-
-Planned Updates
-~~~~~~~~~~~~~~~
-`peppi#121`_ Integrate PDS Registry MCP Server Info with PEPPI
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+----------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                          | I&T Status      | Priority / Bug Severity   |
-+================================================================+=================+===========================+
-| `peppi#121`_ Integrate PDS Registry MCP Server Info with PEPPI | |:blue_circle:| | unknown                   |
-+----------------------------------------------------------------+-----------------+---------------------------+
-
-
---------
-
-Planetary-data-cloud
---------------------
-*PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/planetary-data-cloud#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/planetary-data-cloud>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/planetary-data-cloud/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/planetary-data-cloud/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/planetary-data-cloud/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/planetary-data-cloud/releases>`_ 
-
-
-Planned Updates
-~~~~~~~~~~~~~~~
-`planetary-data-cloud#117`_ Implement Optional Cognito Password Rotation Requirement (Disabled)
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+-------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                           | I&T Status      | Priority / Bug Severity   |
-+=================================================================================================+=================+===========================+
-| `planetary-data-cloud#117`_ Implement Optional Cognito Password Rotation Requirement (Disabled) | |:blue_circle:| | p.must-have               |
-+-------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-
-
-`planetary-data-cloud#144`_ Develop Egress Management Strategy
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+----------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                          | I&T Status      | Priority / Bug Severity   |
-+================================================================+=================+===========================+
-| `planetary-data-cloud#144`_ Develop Egress Management Strategy | |:blue_circle:| | p.must-have               |
-+----------------------------------------------------------------+-----------------+---------------------------+
-
-
-`planetary-data-cloud#147`_ B16 Bi-annual Cloud Resource Housekeeping
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+-----------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                 | I&T Status      | Priority / Bug Severity   |
-+=======================================================================+=================+===========================+
-| `planetary-data-cloud#147`_ B16 Bi-annual Cloud Resource Housekeeping | |:blue_circle:| | unknown                   |
-+-----------------------------------------------------------------------+-----------------+---------------------------+
-
-
-`planetary-data-cloud#157`_ Egress Management Strategy Phase 1 - Throttling and Monitoring
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
-
-`planetary-data-cloud#178`_ Plan, Schedule, and Implement First PDC CoP
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+-------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                   | I&T Status      | Priority / Bug Severity   |
-+=========================================================================+=================+===========================+
-| `planetary-data-cloud#178`_ Plan, Schedule, and Implement First PDC CoP | |:blue_circle:| | unknown                   |
-+-------------------------------------------------------------------------+-----------------+---------------------------+
-
-
-`planetary-data-cloud#183`_ Develop Monthly Cloud Reporting Metrics Spreadsheet and Documentation
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+---------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                             | I&T Status      | Priority / Bug Severity   |
-+===================================================================================================+=================+===========================+
-| `planetary-data-cloud#183`_ Develop Monthly Cloud Reporting Metrics Spreadsheet and Documentation | |:blue_circle:| | unknown                   |
-+---------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-
-
-`planetary-data-cloud#193`_ B17 Bi-annual Cloud Resource Housekeeping
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+-----------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                 | I&T Status      | Priority / Bug Severity   |
-+=======================================================================+=================+===========================+
-| `planetary-data-cloud#193`_ B17 Bi-annual Cloud Resource Housekeeping | |:blue_circle:| | unknown                   |
-+-----------------------------------------------------------------------+-----------------+---------------------------+
-
-
-`planetary-data-cloud#194`_ Complete Migration of ATM Backup
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
-
-`planetary-data-cloud#195`_ PDC Role Definitions: Tenant EN Platform and Data Engineer Roles
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+----------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                        | I&T Status      | Priority / Bug Severity   |
-+==============================================================================================+=================+===========================+
-| `planetary-data-cloud#195`_ PDC Role Definitions: Tenant EN Platform and Data Engineer Roles | |:blue_circle:| | unknown                   |
-+----------------------------------------------------------------------------------------------+-----------------+---------------------------+
-
-
-`planetary-data-cloud#199`_ Consolidate DUM and Registry Configurations
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+-------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                   | I&T Status      | Priority / Bug Severity   |
-+=========================================================================+=================+===========================+
-| `planetary-data-cloud#199`_ Consolidate DUM and Registry Configurations | |:blue_circle:| | unknown                   |
-+-------------------------------------------------------------------------+-----------------+---------------------------+
-
-
-`planetary-data-cloud#202`_ Require and Implement Tagging Across All Component Terraforms
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+-------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                     | I&T Status      | Priority / Bug Severity   |
-+===========================================================================================+=================+===========================+
-| `planetary-data-cloud#202`_ Require and Implement Tagging Across All Component Terraforms | |:blue_circle:| | unknown                   |
-+-------------------------------------------------------------------------------------------+-----------------+---------------------------+
-
-
-`planetary-data-cloud#205`_ Support PDC Migration to SCIP
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
-
-`planetary-data-cloud#206`_ Develop Risk List
-+++++++++++++++++++++++++++++++++++++++++++++
-
-+-----------------------------------------------+-----------------+---------------------------+
-| Issue                                         | I&T Status      | Priority / Bug Severity   |
-+===============================================+=================+===========================+
-| `planetary-data-cloud#206`_ Develop Risk List | |:blue_circle:| | unknown                   |
-+-----------------------------------------------+-----------------+---------------------------+
-
-
-`planetary-data-cloud#207`_ Data Storage Management Strategy Phase 1 - Tool Trade, Dashboards, Thresholds, Alerts
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
-
---------
-
 Portal-ds-view
---------------
+~~~~~~~~~~~~~~
 *Data Set View application (pds.nasa.gov/ds-view)*
 
 .. list-table:: 
@@ -878,13 +876,13 @@ Portal-ds-view
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 No planned updates realized for this build in this repository.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                      | I&T Status      | Priority / Bug Severity   |
@@ -894,8 +892,94 @@ Bugs
 
 --------
 
-Registry
+Component: Peppi
+----------------
+*Planetary Data Explorer Python (PEPPi) client library*
+
 --------
+
+Peppi
+~~~~~
+*Planetary Data Explorer: Python (PEPPi) client library (pds.peppi) to access Planetary Data from the NASA Planetary Data System*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/peppi>`_
+     - `Github Repo <https://github.com/NASA-PDS/peppi>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/peppi/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/peppi/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/peppi/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/peppi/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+`peppi#121`_ Integrate PDS Registry MCP Server Info with PEPPI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++----------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                          | I&T Status      | Priority / Bug Severity   |
++================================================================+=================+===========================+
+| `peppi#121`_ Integrate PDS Registry MCP Server Info with PEPPI | |:blue_circle:| | unknown                   |
++----------------------------------------------------------------+-----------------+---------------------------+
+
+
+--------
+
+Component: Registry Tools
+-------------------------
+*PDS Registry backend services and data loading tools*
+
+--------
+
+Harvest
+~~~~~~~
+*Version<=4 of the standalone Harvest client application providing the functionality for capturing and indexing product metadata into the PDS Registry system. Version 5+ are now managed through https://github.com/NASA-PDS/registry-loader/*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/registry>`_
+     - `Github Repo <https://github.com/NASA-PDS/harvest>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/harvest/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/harvest/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/harvest/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/harvest/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+No planned updates realized for this build in this repository.
+
+Other Updates
++++++++++++++
+Bugs
+^^^^
+
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                                  | I&T Status        | Priority / Bug Severity   |
++========================================================================================================================+===================+===========================+
+| `harvest#144`_ Harvest setting pds:Time_Coordinates.pds:stop_date_time to bogus value when value is missing from label | |:blue_circle:|   | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#325`_ Harvest does not ingest data                                                                            | |:yellow_circle:| | s.critical                |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `harvest#279`_ GEO no longer able to harvest data due to cognito issue                                                 | |:blue_circle:|   | s.critical                |
++------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+
+Requirements
+^^^^^^^^^^^^
+
++-------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| Issue                                                                                           | I&T Status       | Priority / Bug Severity   |
++=================================================================================================+==================+===========================+
+| `harvest#292`_ harvest successfully ingests nonexistent LDD attributes when it should error out | |:green_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------------------+------------------+---------------------------+
+
+--------
+
+Registry
+~~~~~~~~
 *PDS Registry provides service and software application necessary for tracking, searching, auditing, locating, and maintaining artifacts within the system. These artifacts can range from data files and label files, schemas, dictionary definitions for objects and elements, services, etc.*
 
 .. list-table:: 
@@ -910,24 +994,24 @@ Registry
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `registry#266`_ Implement design for alternate data file paths / file path updates
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 `registry#333`_ Add S3 URIs to Registry Metadata
-++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 `registry#432`_ Onboard IPDA Partner: ISRO
-++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 `registry#436`_ B17 Registry Support: High Priority Enhancements / Bug Fixes / Tasks
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +---------------------------------------------------------------------------+-----------------+---------+---------------------------+
 | Issue                                                                     | I&T Status      | Level   | Priority / Bug Severity   |
@@ -939,7 +1023,7 @@ Planned Updates
 
 
 `registry#451`_ Trade Study and Cost Analysis of AOSS vs. Managed OpenSearch vs. Self-managed Cluster
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                 | I&T Status      | Priority / Bug Severity   |
@@ -949,9 +1033,9 @@ Planned Updates
 
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                | I&T Status        | Priority / Bug Severity   |
@@ -960,7 +1044,7 @@ Bugs
 +------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
-++++++++++++
+^^^^^^^^^^^^
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                                                                 | I&T Status       | Priority / Bug Severity   |
@@ -973,7 +1057,7 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Enhancements
-++++++++++++
+^^^^^^^^^^^^
 
 +---------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                     | I&T Status      | Priority / Bug Severity   |
@@ -984,7 +1068,7 @@ Enhancements
 --------
 
 Registry-api
-------------
+~~~~~~~~~~~~
 *Web API service for the PDS Registry, providing the implementation of the PDS Search API (https://github.com/nasa-pds/pds-api) for the PDS Registry.*
 
 .. list-table:: 
@@ -999,14 +1083,14 @@ Registry-api
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `registry-api#715`_ Complete Design for Supporting Registration and Search of Mirrored Archives
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 `registry-api#622`_ Add Search Functionality to Find When Class / Attribute Has Been Used / Exists
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
 | Issue                                                                                                             | I&T Status       | Level       | Priority / Bug Severity   |
@@ -1016,7 +1100,7 @@ Planned Updates
 
 
 `registry-api#632`_ Add Initial Support for Searching Full PDS4 Structured Metadata
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                               | I&T Status      | Priority / Bug Severity   |
@@ -1026,7 +1110,7 @@ Planned Updates
 
 
 `registry-api#689`_ First Draft of OPS LDD
-++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------------------------+-----------------+---------------------------+
 | Issue                                      | I&T Status      | Priority / Bug Severity   |
@@ -1036,7 +1120,7 @@ Planned Updates
 
 
 `registry-api#698`_ Refactor Registry API Functionality for `/products/{identifier}/members/members`
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
 | Issue                                                                                                                                              | I&T Status      | Level       | Priority / Bug Severity   |
@@ -1046,7 +1130,7 @@ Planned Updates
 
 
 `registry-api#706`_ B17 Search API Support: High Priority Enhancements / Bug Fixes / Tasks
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                      | I&T Status      | Priority / Bug Severity   |
@@ -1056,12 +1140,12 @@ Planned Updates
 
 
 `registry-api#709`_ Enable Metrics, Logging, and Monitoring for Registry API
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 `registry-api#721`_ B17 Registry API Support: High Priority Enhancements / Bug Fixes / Tasks
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +---------------------------------------------------------------------------------------------------+------------------+---------+---------------------------+
 | Issue                                                                                             | I&T Status       | Level   | Priority / Bug Severity   |
@@ -1073,7 +1157,7 @@ Planned Updates
 
 
 `registry-api#729`_ Update Functionality To Find When Class / Attribute Has Been Used / Exists
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +----------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
 | Issue                                                                                  | I&T Status      | Level       | Priority / Bug Severity   |
@@ -1083,14 +1167,14 @@ Planned Updates
 
 
 `registry-api#751`_ Finalize Release of`/members` Enhancements to Production
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 --------
 
 Registry-legacy-solr
---------------------
+~~~~~~~~~~~~~~~~~~~~
 *Legacy Registry Software components leveraging Apache Solr. Includes Legacy Harvest Tool, Registry Manager, PDS3 Catalog Tool, and Search Core library. These components provide the capabilities for loading PDS3 and PDS4 data into the Legacy Solr Registry, driving the PDS keyword search.*
 
 .. list-table:: 
@@ -1105,14 +1189,14 @@ Registry-legacy-solr
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `registry-legacy-solr#162`_ Load IPDA Partner Agency Bundles, Collections, and Context Products into Legacy Registry
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 `registry-legacy-solr#241`_ B17 Registry Legacy Support: High Priority Enhancements / Bug Fixes / Tasks
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-----------------------------------------------------------------------------------------------+-----------------+---------+---------------------------+
 | Issue                                                                                         | I&T Status      | Level   | Priority / Bug Severity   |
@@ -1124,9 +1208,9 @@ Planned Updates
 
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +-----------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                           | I&T Status      | Priority / Bug Severity   |
@@ -1139,7 +1223,7 @@ Bugs
 --------
 
 Registry-loader
----------------
+~~~~~~~~~~~~~~~
 *Tools used to load and update data in the registry, currently harvest and registry manager package in a docker image. *
 
 .. list-table:: 
@@ -1154,9 +1238,9 @@ Registry-loader
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `registry-loader#11`_ Combine registry-common/harvest/registry-mgr into one registry-loader repo
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                            | I&T Status      | Priority / Bug Severity   |
@@ -1166,14 +1250,14 @@ Planned Updates
 
 
 `registry-loader#49`_ Develop Harvest and Registry Manager Test Framework
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +----------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                                            | I&T Status      | Priority / Bug Severity   |
@@ -1184,7 +1268,7 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 Requirements
-++++++++++++
+^^^^^^^^^^^^
 
 +------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                      | I&T Status        | Priority / Bug Severity   |
@@ -1193,7 +1277,7 @@ Requirements
 +------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
-++++++++++++
+^^^^^^^^^^^^
 
 +---------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                 | I&T Status      | Priority / Bug Severity   |
@@ -1204,7 +1288,7 @@ Enhancements
 --------
 
 Registry-mgr
-------------
+~~~~~~~~~~~~
 *Version<=5 of the standalone Registry Manager application responsible for managing the PDS Registry (https://github.com/NASA-PDS/registry) schemas and indexes. Version 6+ is now managed through https://github.com/NASA-PDS/registry-loader/ .*
 
 .. list-table:: 
@@ -1219,28 +1303,28 @@ Registry-mgr
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 No planned updates realized for this build in this repository.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +-----------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                         | I&T Status        | Priority / Bug Severity   |
 +===============================================================================================+===================+===========================+
-| `registry-mgr#72`_ When delete-data command is used, log file specified is empty              | |:yellow_circle:| | s.medium                  |
+| `registry-mgr#170`_ `set-archive-status` says it updates more products than are in the bundle | |:green_circle:|  | s.high                    |
 +-----------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-mgr#135`_ Output does not always say if `set-archive-status` has failed             | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-mgr#170`_ `set-archive-status` says it updates more products than are in the bundle | |:green_circle:|  | s.high                    |
+| `registry-mgr#72`_ When delete-data command is used, log file specified is empty              | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
 Registry-sweepers
------------------
+~~~~~~~~~~~~~~~~~
 *Scripts that run regularly on the registry database, to clean and consolidate information *
 
 .. list-table:: 
@@ -1255,9 +1339,9 @@ Registry-sweepers
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `registry-sweepers#186`_ Optimize Sweepers Performance - Part 2
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +---------------------------------------------------------------------------------------------+-----------------+-------------+---------------------------+
 | Issue                                                                                       | I&T Status      | Level       | Priority / Bug Severity   |
@@ -1267,30 +1351,30 @@ Planned Updates
 
 
 `registry-sweepers#201`_ Implement Handling of Partial Collections Uploads and Orphan Products
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 `registry-sweepers#210`_ Implement Sweepers Execution in Airflow
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                                  | I&T Status      | Priority / Bug Severity   |
 +========================================================================================================================+=================+===========================+
-| `registry-sweepers#192`_ Docker container does not run with non-root user                                              | |:blue_circle:| | s.medium                  |
-+------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `registry-sweepers#209`_ Legacy registry sync reconciliation report incorrectly flags bundles as missing from registry | |:blue_circle:| | s.critical                |
++------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `registry-sweepers#192`_ Docker container does not run with non-root user                                              | |:blue_circle:| | s.medium                  |
 +------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 Enhancements
-++++++++++++
+^^^^^^^^^^^^
 
 +-----------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                         | I&T Status      | Priority / Bug Severity   |
@@ -1300,8 +1384,104 @@ Enhancements
 
 --------
 
+Component: Search API
+---------------------
+*PDS Search API and client libraries*
+
+--------
+
+Pds-api
+~~~~~~~
+*PDS web APIs specifications and user's manual*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <http://nasa-pds.github.io/pds-api>`_
+     - `Github Repo <https://github.com/NASA-PDS/pds-api>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pds-api/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/pds-api/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pds-api/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pds-api/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+No planned updates realized for this build in this repository.
+
+Other Updates
++++++++++++++
+Bugs
+^^^^
+
++-----------------------------------------------+-----------------+---------------------------+
+| Issue                                         | I&T Status      | Priority / Bug Severity   |
++===============================================+=================+===========================+
+| `pds-api#296`_ Link to PDF document is broken | |:blue_circle:| | s.low                     |
++-----------------------------------------------+-----------------+---------------------------+
+
+--------
+
+Component: System Engineering
+-----------------------------
+*System-level engineering, requirements, and documentation*
+
+--------
+
+Lasso-issues
+~~~~~~~~~~~~
+*Utilities for wrapping GitHub API for creating specific data structures and reports from GitHub issues*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/lasso-issues#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/lasso-issues>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/lasso-issues/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/lasso-issues/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/lasso-issues/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/lasso-issues/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+No planned updates realized for this build in this repository.
+
+Other Updates
++++++++++++++
+Bugs
+^^^^
+
++-------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                     | I&T Status      | Priority / Bug Severity   |
++===========================================================================================+=================+===========================+
+| `lasso-issues#51`_ RDD and markdown reports do not respect ignore flag in products config | |:blue_circle:| | s.medium                  |
++-------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+Requirements
+^^^^^^^^^^^^
+
++---------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                                                           | I&T Status      | Priority / Bug Severity   |
++=================================================================================================================================+=================+===========================+
+| `lasso-issues#41`_ As a user, I want to automate creation of release theme issues from CSV schedules                            | |:blue_circle:| | p.could-have              |
++---------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `lasso-issues#47`_ As a PDS project manager, I want enhanced issue reporting with component grouping and parent-child hierarchy | |:blue_circle:| | p.should-have             |
++---------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
+Enhancements
+^^^^^^^^^^^^
+
++------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                      | I&T Status      | Priority / Bug Severity   |
++============================================================+=================+===========================+
+| `lasso-issues#48`_ Remove ZenHub integration from codebase | |:blue_circle:| | unknown                   |
++------------------------------------------------------------+-----------------+---------------------------+
+
+--------
+
 Software-issues-repo
---------------------
+~~~~~~~~~~~~~~~~~~~~
 *Issue tracking repository as a centralized entry point for general PDS software bugs and feature requests.*
 
 .. list-table:: 
@@ -1316,9 +1496,9 @@ Software-issues-repo
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `software-issues-repo#119`_ 2026 Annual Contingency Plan Review and Test
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                    | I&T Status      | Priority / Bug Severity   |
@@ -1328,7 +1508,7 @@ Planned Updates
 
 
 `software-issues-repo#120`_ B16 Security Code Scans
-+++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-----------------------------------------------------+-----------------+---------------------------+
 | Issue                                               | I&T Status      | Priority / Bug Severity   |
@@ -1338,7 +1518,7 @@ Planned Updates
 
 
 `software-issues-repo#121`_ B16 Prep for I&T
-++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +----------------------------------------------+-----------------+---------------------------+
 | Issue                                        | I&T Status      | Priority / Bug Severity   |
@@ -1348,7 +1528,7 @@ Planned Updates
 
 
 `software-issues-repo#142`_ B17 Security Code Scans
-+++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-----------------------------------------------------+-----------------+---------------------------+
 | Issue                                               | I&T Status      | Priority / Bug Severity   |
@@ -1358,7 +1538,7 @@ Planned Updates
 
 
 `software-issues-repo#143`_ B17 Prep for I&T
-++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +----------------------------------------------+-----------------+---------------------------+
 | Issue                                        | I&T Status      | Priority / Bug Severity   |
@@ -1368,7 +1548,7 @@ Planned Updates
 
 
 `software-issues-repo#155`_ B17 Release Planning
-++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------------------------------+-----------------+---------------------------+
 | Issue                                            | I&T Status      | Priority / Bug Severity   |
@@ -1378,7 +1558,7 @@ Planned Updates
 
 
 `software-issues-repo#156`_ B17 Triage Security Code Scans
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                      | I&T Status      | Priority / Bug Severity   |
@@ -1388,14 +1568,14 @@ Planned Updates
 
 
 `software-issues-repo#157`_ Close our PDS Security Plan
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Enhancements
-++++++++++++
+^^^^^^^^^^^^
 
 +---------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                               | I&T Status      | Priority / Bug Severity   |
@@ -1405,102 +1585,20 @@ Enhancements
 
 --------
 
-System-i-n-t
-------------
-*Repo for PDS EN System I&T scripts and issue tracking*
+Component: System Tools
+-----------------------
+*System-level utilities and libraries*
 
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
+--------
 
-   * - `User Guide <https://github.com/NASA-PDS/system-i-n-t#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/system-i-n-t>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/system-i-n-t/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/system-i-n-t/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/system-i-n-t/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/system-i-n-t/releases>`_ 
-
-
-Planned Updates
-~~~~~~~~~~~~~~~
-`system-i-n-t#68`_ B16 Standards Document Review
-++++++++++++++++++++++++++++++++++++++++++++++++
-
-+--------------------------------------------------+-----------------+---------------------------+
-| Issue                                            | I&T Status      | Priority / Bug Severity   |
-+==================================================+=================+===========================+
-| `system-i-n-t#68`_ B16 Standards Document Review | |:blue_circle:| | unknown                   |
-+--------------------------------------------------+-----------------+---------------------------+
-
-
-`system-i-n-t#70`_ B16 System Integration & Test
-++++++++++++++++++++++++++++++++++++++++++++++++
-
-+--------------------------------------------------+-----------------+---------------------------+
-| Issue                                            | I&T Status      | Priority / Bug Severity   |
-+==================================================+=================+===========================+
-| `system-i-n-t#70`_ B16 System Integration & Test | |:blue_circle:| | unknown                   |
-+--------------------------------------------------+-----------------+---------------------------+
-
-
-`system-i-n-t#71`_ B16 Deployment and Release
-+++++++++++++++++++++++++++++++++++++++++++++
-
-+-----------------------------------------------+-----------------+---------------------------+
-| Issue                                         | I&T Status      | Priority / Bug Severity   |
-+===============================================+=================+===========================+
-| `system-i-n-t#71`_ B16 Deployment and Release | |:blue_circle:| | unknown                   |
-+-----------------------------------------------+-----------------+---------------------------+
-
-
-`system-i-n-t#72`_ B16 Delivery & Deployment Review (DDR)
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+-----------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                     | I&T Status      | Priority / Bug Severity   |
-+===========================================================+=================+===========================+
-| `system-i-n-t#72`_ B16 Delivery & Deployment Review (DDR) | |:blue_circle:| | unknown                   |
-+-----------------------------------------------------------+-----------------+---------------------------+
-
-
-`system-i-n-t#76`_ B17 dLDD Integration & Test
-++++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
-
-`system-i-n-t#77`_ B17 Standards Document Review
-++++++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
-
-`system-i-n-t#78`_ B17 System Integration & Test 
-+++++++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
-
-`system-i-n-t#79`_ B17 Information Model I&T
-++++++++++++++++++++++++++++++++++++++++++++
-
-+----------------------------------------------+-----------------+---------------------------+
-| Issue                                        | I&T Status      | Priority / Bug Severity   |
-+==============================================+=================+===========================+
-| `system-i-n-t#79`_ B17 Information Model I&T | |:blue_circle:| | unknown                   |
-+----------------------------------------------+-----------------+---------------------------+
-
-
-`system-i-n-t#80`_ B17 Delivery & Deployment Review (DDR)
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
-
-`system-i-n-t#81`_ B17 Deployment and Release
-+++++++++++++++++++++++++++++++++++++++++++++
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
+Component: Validate
+-------------------
+*PDS4 data product validation tools*
 
 --------
 
 Validate
---------
+~~~~~~~~
 *Validates PDS4 product labels, data and PDS3 Volumes*
 
 .. list-table:: 
@@ -1515,9 +1613,9 @@ Validate
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `validate#1473`_ B17 Validate Support: High Priority Enhancements / Bug Fixes / Tasks
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+-------------+---------------------------+
 | Issue                                                                                                                                                                              | I&T Status       | Level       | Priority / Bug Severity   |
@@ -1553,24 +1651,24 @@ Planned Updates
 
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                             | I&T Status       | Priority / Bug Severity   |
 +===================================================================================================================+==================+===========================+
-| `validate#1453`_ new/updated context objects have not been incorporated into the validator for 2 months           | |:blue_circle:|  | s.medium                  |
-+-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `validate#1423`_ Running validate 4.0.4 on terminal produces lots of new line characters while processing         | |:blue_circle:|  | s.low                     |
-+-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `validate#1294`_ validate does not handle Special Constants for UnsignedMSB4                                      | |:green_circle:| | s.medium                  |
++-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `validate#1453`_ new/updated context objects have not been incorporated into the validator for 2 months           | |:blue_circle:|  | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `validate#1557`_ Validate does not count cleanly-passing products, incorrectly triggering no_products_found error | |:blue_circle:|  | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `validate#1423`_ Running validate 4.0.4 on terminal produces lots of new line characters while processing         | |:blue_circle:|  | s.low                     |
++-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Requirements
-++++++++++++
+^^^^^^^^^^^^
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                                                              | I&T Status        | Priority / Bug Severity   |
@@ -1584,8 +1682,14 @@ Requirements
 
 --------
 
+Component: Web Analytics
+------------------------
+*Web analytics tools and monitoring*
+
+--------
+
 Web-analytics
--------------
+~~~~~~~~~~~~~
 *None*
 
 .. list-table:: 
@@ -1600,16 +1704,16 @@ Web-analytics
 
 
 Planned Updates
-~~~~~~~~~~~~~~~
++++++++++++++++
 `web-analytics#63`_ Onboard Nodes to Upload Web Logs With DUM
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
 Other Updates
-~~~~~~~~~~~~~
++++++++++++++
 Bugs
-++++
+^^^^
 
 +---------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                               | I&T Status      | Priority / Bug Severity   |
@@ -1617,66 +1721,98 @@ Bugs
 | `web-analytics#66`_ Terraform mistakenly expires logs after 30 days | |:blue_circle:| | s.high                    |
 +---------------------------------------------------------------------+-----------------+---------------------------+
 
+--------
+
+Component: Web Content
+----------------------
+*PDS website content management and legacy systems*
+
+--------
+
+Nasa-pds.github.io
+~~~~~~~~~~~~~~~~~~
+*Site for https://nasa-pds.github.io and NASA PDS Wiki*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/>`_
+     - `Github Repo <https://github.com/NASA-PDS/nasa-pds.github.io>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/nasa-pds.github.io/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/nasa-pds.github.io/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/nasa-pds.github.io/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/nasa-pds.github.io/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+No planned updates realized for this build in this repository.
+
+Other Updates
++++++++++++++
+Bugs
+^^^^
+
++----------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                      | I&T Status        | Priority / Bug Severity   |
++============================================================================+===================+===========================+
+| `nasa-pds.github.io#79`_ Links to B16 DDR materials link to the same thing | |:yellow_circle:| | s.medium                  |
++----------------------------------------------------------------------------+-------------------+---------------------------+
+
+--------
+
+Component: Web Design
+---------------------
+*PDS Web Design System (WDS) components and implementations*
+
+--------
+
+Component: Web Dev
+------------------
+*Web development tools and demonstration applications*
+
 Release Summary Metrics
 =======================
 This section provides a summary of the issues addressed in this release, organized by issue type.
 
 
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| Component/Repo         | Bugs   | Enhancements   | Requirements   | Tasks   | Themes   | Total   |
-+========================+========+================+================+=========+==========+=========+
-| data-upload-manager    | 6      | 0              | 4              | 0       | 5        | 15      |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| deep-archive           | 2      | 1              | 0              | 0       | 0        | 3       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| doi-service            | 6      | 1              | 0              | 0       | 0        | 7       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| en-ops-utils           | 2      | 0              | 0              | 0       | 0        | 2       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| harvest                | 5      | 0              | 1              | 0       | 0        | 6       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| lasso-issues           | 1      | 1              | 2              | 0       | 0        | 4       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| nucleus                | 0      | 0              | 0              | 0       | 3        | 3       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| operations             | 1      | 0              | 0              | 0       | 0        | 1       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| pds-api                | 1      | 0              | 0              | 0       | 0        | 1       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| pds4-context-products  | 2      | 0              | 0              | 0       | 0        | 2       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| pds4-information-model | 2      | 7              | 15             | 0       | 5        | 29      |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| pds4-jparser           | 2      | 0              | 0              | 0       | 0        | 2       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| peppi                  | 0      | 0              | 0              | 0       | 1        | 1       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| planetary-data-cloud   | 0      | 0              | 0              | 0       | 14       | 14      |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| portal-ds-view         | 1      | 0              | 0              | 0       | 0        | 1       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry               | 3      | 1              | 3              | 0       | 5        | 12      |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry-api           | 2      | 2              | 1              | 0       | 10       | 15      |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry-legacy-solr   | 4      | 0              | 0              | 0       | 2        | 6       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry-loader        | 2      | 1              | 1              | 0       | 2        | 6       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry-mgr           | 3      | 0              | 0              | 0       | 0        | 3       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| registry-sweepers      | 2      | 2              | 0              | 0       | 3        | 7       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| software-issues-repo   | 0      | 1              | 0              | 0       | 8        | 9       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| system-i-n-t           | 0      | 0              | 0              | 0       | 10       | 10      |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| validate               | 16     | 0              | 5              | 0       | 1        | 22      |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| web-analytics          | 1      | 0              | 0              | 0       | 1        | 2       |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
-| **TOTAL**              | **64** | **17**         | **32**         | **0**   | **70**   | **183** |
-+------------------------+--------+----------------+----------------+---------+----------+---------+
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| Component/Repo                 | Bugs   | Enhancements   | Requirements   | Tasks   | Themes   | Total   |
++================================+========+================+================+=========+==========+=========+
+| **Cloud Platform Engineering** | 0      | 0              | 0              | 0       | 14       | 14      |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Data Upload Manager**        | 6      | 0              | 4              | 0       | 5        | 15      |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Deep Archive**               | 2      | 1              | 0              | 0       | 0        | 3       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **DOI Service**                | 6      | 1              | 0              | 0       | 0        | 7       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Integration And Testing**    | 0      | 0              | 0              | 0       | 10       | 10      |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Nucleus**                    | 0      | 0              | 0              | 0       | 3        | 3       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Operations**                 | 3      | 0              | 0              | 0       | 0        | 3       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **PDS4 Information Model**     | 4      | 7              | 15             | 0       | 5        | 31      |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **PDS4 Viewer**                | 3      | 0              | 0              | 0       | 0        | 3       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Peppi**                      | 0      | 0              | 0              | 0       | 1        | 1       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Registry Tools**             | 19     | 6              | 6              | 0       | 22       | 53      |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Search API**                 | 1      | 0              | 0              | 0       | 0        | 1       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **System Engineering**         | 1      | 2              | 2              | 0       | 8        | 13      |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Validate**                   | 16     | 0              | 5              | 0       | 1        | 22      |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Web Analytics**              | 1      | 0              | 0              | 0       | 1        | 2       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Web Content**                | 1      | 0              | 0              | 0       | 0        | 1       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **TOTAL**                      | **63** | **17**         | **32**         | **0**   | **70**   | **182** |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
 
 
 Liens
@@ -1753,6 +1889,20 @@ as follows:
 .. _pds4-information-model#1033: https://github.com/NASA-PDS/pds4-information-model/issues/1033
 .. _pds4-information-model#1034: https://github.com/NASA-PDS/pds4-information-model/issues/1034
 .. _pds4-information-model#1035: https://github.com/NASA-PDS/pds4-information-model/issues/1035
+.. _planetary-data-cloud#117: https://github.com/NASA-PDS/planetary-data-cloud/issues/117
+.. _planetary-data-cloud#144: https://github.com/NASA-PDS/planetary-data-cloud/issues/144
+.. _planetary-data-cloud#147: https://github.com/NASA-PDS/planetary-data-cloud/issues/147
+.. _planetary-data-cloud#157: https://github.com/NASA-PDS/planetary-data-cloud/issues/157
+.. _planetary-data-cloud#178: https://github.com/NASA-PDS/planetary-data-cloud/issues/178
+.. _planetary-data-cloud#183: https://github.com/NASA-PDS/planetary-data-cloud/issues/183
+.. _planetary-data-cloud#193: https://github.com/NASA-PDS/planetary-data-cloud/issues/193
+.. _planetary-data-cloud#194: https://github.com/NASA-PDS/planetary-data-cloud/issues/194
+.. _planetary-data-cloud#195: https://github.com/NASA-PDS/planetary-data-cloud/issues/195
+.. _planetary-data-cloud#199: https://github.com/NASA-PDS/planetary-data-cloud/issues/199
+.. _planetary-data-cloud#202: https://github.com/NASA-PDS/planetary-data-cloud/issues/202
+.. _planetary-data-cloud#205: https://github.com/NASA-PDS/planetary-data-cloud/issues/205
+.. _planetary-data-cloud#206: https://github.com/NASA-PDS/planetary-data-cloud/issues/206
+.. _planetary-data-cloud#207: https://github.com/NASA-PDS/planetary-data-cloud/issues/207
 .. _data-upload-manager#264: https://github.com/NASA-PDS/data-upload-manager/issues/264
 .. _data-upload-manager#293: https://github.com/NASA-PDS/data-upload-manager/issues/293
 .. _data-upload-manager#295: https://github.com/NASA-PDS/data-upload-manager/issues/295
@@ -1768,35 +1918,34 @@ as follows:
 .. _data-upload-manager#336: https://github.com/NASA-PDS/data-upload-manager/issues/336
 .. _data-upload-manager#304: https://github.com/NASA-PDS/data-upload-manager/issues/304
 .. _data-upload-manager#330: https://github.com/NASA-PDS/data-upload-manager/issues/330
-.. _deep-archive#226: https://github.com/NASA-PDS/deep-archive/issues/226
 .. _deep-archive#237: https://github.com/NASA-PDS/deep-archive/issues/237
+.. _deep-archive#226: https://github.com/NASA-PDS/deep-archive/issues/226
 .. _deep-archive#238: https://github.com/NASA-PDS/deep-archive/issues/238
-.. _doi-service#515: https://github.com/NASA-PDS/doi-service/issues/515
+.. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
 .. _doi-service#497: https://github.com/NASA-PDS/doi-service/issues/497
-.. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
+.. _doi-service#515: https://github.com/NASA-PDS/doi-service/issues/515
 .. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
 .. _doi-service#510: https://github.com/NASA-PDS/doi-service/issues/510
-.. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
+.. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
 .. _doi-service#493: https://github.com/NASA-PDS/doi-service/issues/493
-.. _en-ops-utils#1: https://github.com/NASA-PDS/en-ops-utils/issues/1
-.. _en-ops-utils#10: https://github.com/NASA-PDS/en-ops-utils/issues/10
-.. _harvest#325: https://github.com/NASA-PDS/harvest/issues/325
-.. _harvest#283: https://github.com/NASA-PDS/harvest/issues/283
-.. _harvest#285: https://github.com/NASA-PDS/harvest/issues/285
-.. _harvest#279: https://github.com/NASA-PDS/harvest/issues/279
-.. _harvest#144: https://github.com/NASA-PDS/harvest/issues/144
-.. _harvest#292: https://github.com/NASA-PDS/harvest/issues/292
-.. _lasso-issues#51: https://github.com/NASA-PDS/lasso-issues/issues/51
-.. _lasso-issues#41: https://github.com/NASA-PDS/lasso-issues/issues/41
-.. _lasso-issues#47: https://github.com/NASA-PDS/lasso-issues/issues/47
-.. _lasso-issues#48: https://github.com/NASA-PDS/lasso-issues/issues/48
+.. _system-i-n-t#68: https://github.com/NASA-PDS/system-i-n-t/issues/68
+.. _system-i-n-t#70: https://github.com/NASA-PDS/system-i-n-t/issues/70
+.. _system-i-n-t#71: https://github.com/NASA-PDS/system-i-n-t/issues/71
+.. _system-i-n-t#72: https://github.com/NASA-PDS/system-i-n-t/issues/72
+.. _system-i-n-t#76: https://github.com/NASA-PDS/system-i-n-t/issues/76
+.. _system-i-n-t#77: https://github.com/NASA-PDS/system-i-n-t/issues/77
+.. _system-i-n-t#78: https://github.com/NASA-PDS/system-i-n-t/issues/78
+.. _system-i-n-t#79: https://github.com/NASA-PDS/system-i-n-t/issues/79
+.. _system-i-n-t#80: https://github.com/NASA-PDS/system-i-n-t/issues/80
+.. _system-i-n-t#81: https://github.com/NASA-PDS/system-i-n-t/issues/81
 .. _nucleus#127: https://github.com/NASA-PDS/nucleus/issues/127
 .. _nucleus#178: https://github.com/NASA-PDS/nucleus/issues/178
 .. _nucleus#181: https://github.com/NASA-PDS/nucleus/issues/181
+.. _en-ops-utils#1: https://github.com/NASA-PDS/en-ops-utils/issues/1
+.. _en-ops-utils#10: https://github.com/NASA-PDS/en-ops-utils/issues/10
 .. _operations#900: https://github.com/NASA-PDS/operations/issues/900
-.. _pds-api#296: https://github.com/NASA-PDS/pds-api/issues/296
-.. _pds4-context-products#84: https://github.com/NASA-PDS/pds4-context-products/issues/84
 .. _pds4-context-products#70: https://github.com/NASA-PDS/pds4-context-products/issues/70
+.. _pds4-context-products#84: https://github.com/NASA-PDS/pds4-context-products/issues/84
 .. _pds4-information-model#965: https://github.com/NASA-PDS/pds4-information-model/issues/965
 .. _pds4-information-model#931: https://github.com/NASA-PDS/pds4-information-model/issues/931
 .. _pds4-information-model#981: https://github.com/NASA-PDS/pds4-information-model/issues/981
@@ -1828,22 +1977,12 @@ as follows:
 .. _pds4-information-model#994: https://github.com/NASA-PDS/pds4-information-model/issues/994
 .. _pds4-jparser#193: https://github.com/NASA-PDS/pds4-jparser/issues/193
 .. _pds4-jparser#192: https://github.com/NASA-PDS/pds4-jparser/issues/192
-.. _peppi#121: https://github.com/NASA-PDS/peppi/issues/121
-.. _planetary-data-cloud#117: https://github.com/NASA-PDS/planetary-data-cloud/issues/117
-.. _planetary-data-cloud#144: https://github.com/NASA-PDS/planetary-data-cloud/issues/144
-.. _planetary-data-cloud#147: https://github.com/NASA-PDS/planetary-data-cloud/issues/147
-.. _planetary-data-cloud#157: https://github.com/NASA-PDS/planetary-data-cloud/issues/157
-.. _planetary-data-cloud#178: https://github.com/NASA-PDS/planetary-data-cloud/issues/178
-.. _planetary-data-cloud#183: https://github.com/NASA-PDS/planetary-data-cloud/issues/183
-.. _planetary-data-cloud#193: https://github.com/NASA-PDS/planetary-data-cloud/issues/193
-.. _planetary-data-cloud#194: https://github.com/NASA-PDS/planetary-data-cloud/issues/194
-.. _planetary-data-cloud#195: https://github.com/NASA-PDS/planetary-data-cloud/issues/195
-.. _planetary-data-cloud#199: https://github.com/NASA-PDS/planetary-data-cloud/issues/199
-.. _planetary-data-cloud#202: https://github.com/NASA-PDS/planetary-data-cloud/issues/202
-.. _planetary-data-cloud#205: https://github.com/NASA-PDS/planetary-data-cloud/issues/205
-.. _planetary-data-cloud#206: https://github.com/NASA-PDS/planetary-data-cloud/issues/206
-.. _planetary-data-cloud#207: https://github.com/NASA-PDS/planetary-data-cloud/issues/207
 .. _portal-ds-view#60: https://github.com/NASA-PDS/portal-ds-view/issues/60
+.. _peppi#121: https://github.com/NASA-PDS/peppi/issues/121
+.. _harvest#144: https://github.com/NASA-PDS/harvest/issues/144
+.. _harvest#325: https://github.com/NASA-PDS/harvest/issues/325
+.. _harvest#279: https://github.com/NASA-PDS/harvest/issues/279
+.. _harvest#292: https://github.com/NASA-PDS/harvest/issues/292
 .. _registry#266: https://github.com/NASA-PDS/registry/issues/266
 .. _registry#333: https://github.com/NASA-PDS/registry/issues/333
 .. _registry#432: https://github.com/NASA-PDS/registry/issues/432
@@ -1883,16 +2022,21 @@ as follows:
 .. _registry-loader#44: https://github.com/NASA-PDS/registry-loader/issues/44
 .. _registry-loader#42: https://github.com/NASA-PDS/registry-loader/issues/42
 .. _registry-loader#41: https://github.com/NASA-PDS/registry-loader/issues/41
-.. _registry-mgr#72: https://github.com/NASA-PDS/registry-mgr/issues/72
-.. _registry-mgr#135: https://github.com/NASA-PDS/registry-mgr/issues/135
 .. _registry-mgr#170: https://github.com/NASA-PDS/registry-mgr/issues/170
+.. _registry-mgr#135: https://github.com/NASA-PDS/registry-mgr/issues/135
+.. _registry-mgr#72: https://github.com/NASA-PDS/registry-mgr/issues/72
 .. _registry-sweepers#186: https://github.com/NASA-PDS/registry-sweepers/issues/186
 .. _registry-sweepers#187: https://github.com/NASA-PDS/registry-sweepers/issues/187
 .. _registry-sweepers#201: https://github.com/NASA-PDS/registry-sweepers/issues/201
 .. _registry-sweepers#210: https://github.com/NASA-PDS/registry-sweepers/issues/210
-.. _registry-sweepers#192: https://github.com/NASA-PDS/registry-sweepers/issues/192
 .. _registry-sweepers#209: https://github.com/NASA-PDS/registry-sweepers/issues/209
+.. _registry-sweepers#192: https://github.com/NASA-PDS/registry-sweepers/issues/192
 .. _registry-sweepers#185: https://github.com/NASA-PDS/registry-sweepers/issues/185
+.. _pds-api#296: https://github.com/NASA-PDS/pds-api/issues/296
+.. _lasso-issues#51: https://github.com/NASA-PDS/lasso-issues/issues/51
+.. _lasso-issues#41: https://github.com/NASA-PDS/lasso-issues/issues/41
+.. _lasso-issues#47: https://github.com/NASA-PDS/lasso-issues/issues/47
+.. _lasso-issues#48: https://github.com/NASA-PDS/lasso-issues/issues/48
 .. _software-issues-repo#119: https://github.com/NASA-PDS/software-issues-repo/issues/119
 .. _software-issues-repo#120: https://github.com/NASA-PDS/software-issues-repo/issues/120
 .. _software-issues-repo#121: https://github.com/NASA-PDS/software-issues-repo/issues/121
@@ -1902,16 +2046,6 @@ as follows:
 .. _software-issues-repo#156: https://github.com/NASA-PDS/software-issues-repo/issues/156
 .. _software-issues-repo#157: https://github.com/NASA-PDS/software-issues-repo/issues/157
 .. _software-issues-repo#140: https://github.com/NASA-PDS/software-issues-repo/issues/140
-.. _system-i-n-t#68: https://github.com/NASA-PDS/system-i-n-t/issues/68
-.. _system-i-n-t#70: https://github.com/NASA-PDS/system-i-n-t/issues/70
-.. _system-i-n-t#71: https://github.com/NASA-PDS/system-i-n-t/issues/71
-.. _system-i-n-t#72: https://github.com/NASA-PDS/system-i-n-t/issues/72
-.. _system-i-n-t#76: https://github.com/NASA-PDS/system-i-n-t/issues/76
-.. _system-i-n-t#77: https://github.com/NASA-PDS/system-i-n-t/issues/77
-.. _system-i-n-t#78: https://github.com/NASA-PDS/system-i-n-t/issues/78
-.. _system-i-n-t#79: https://github.com/NASA-PDS/system-i-n-t/issues/79
-.. _system-i-n-t#80: https://github.com/NASA-PDS/system-i-n-t/issues/80
-.. _system-i-n-t#81: https://github.com/NASA-PDS/system-i-n-t/issues/81
 .. _validate#1473: https://github.com/NASA-PDS/validate/issues/1473
 .. _validate#956: https://github.com/NASA-PDS/validate/issues/956
 .. _validate#1316: https://github.com/NASA-PDS/validate/issues/1316
@@ -1927,15 +2061,16 @@ as follows:
 .. _validate#1550: https://github.com/NASA-PDS/validate/issues/1550
 .. _validate#1581: https://github.com/NASA-PDS/validate/issues/1581
 .. _validate#1580: https://github.com/NASA-PDS/validate/issues/1580
-.. _validate#1453: https://github.com/NASA-PDS/validate/issues/1453
-.. _validate#1423: https://github.com/NASA-PDS/validate/issues/1423
 .. _validate#1294: https://github.com/NASA-PDS/validate/issues/1294
+.. _validate#1453: https://github.com/NASA-PDS/validate/issues/1453
 .. _validate#1557: https://github.com/NASA-PDS/validate/issues/1557
+.. _validate#1423: https://github.com/NASA-PDS/validate/issues/1423
 .. _validate#1544: https://github.com/NASA-PDS/validate/pull/1544
 .. _validate#1565: https://github.com/NASA-PDS/validate/issues/1565
 .. _validate#1509: https://github.com/NASA-PDS/validate/issues/1509
 .. _web-analytics#63: https://github.com/NASA-PDS/web-analytics/issues/63
 .. _web-analytics#66: https://github.com/NASA-PDS/web-analytics/issues/66
+.. _nasa-pds.github.io#79: https://github.com/NASA-PDS/nasa-pds.github.io/issues/79
 .. _Software Release Summary (B17): https://nasa-pds.github.io/releases/17/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
