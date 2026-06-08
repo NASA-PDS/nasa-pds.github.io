@@ -222,7 +222,7 @@ Tools and Services centrally deployed by PDS Engineering Node to support the int
 .. |nasa-pds-engineering-node/PLAID_feedback| image:: https://nasa-pds.github.io/pdsen-corral/images/feedback.png
    :target: https://github.com/NASA-PDS/PLAID/issues/new/choose
 .. |NASA-PDS/registry-common_manual| image:: https://nasa-pds.github.io/pdsen-corral/images/manual.png
-   :target: https://github.com/NASA-PDS/registry-common
+   :target: https://NASA-PDS.github.io/registry-common/
 .. |NASA-PDS/registry-common_changelog| image:: https://nasa-pds.github.io/pdsen-corral/images/changelog.png
    :target: None
 .. |NASA-PDS/registry-common_requirements| image:: https://nasa-pds.github.io/pdsen-corral/images/requirements.png
