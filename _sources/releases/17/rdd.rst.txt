@@ -364,9 +364,9 @@ Bugs
 +-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                 | I&T Status      | Priority / Bug Severity   |
 +=======================================================================================================+=================+===========================+
-| `deep-archive#226`_ MD5 hashing does not work in FIPS mode                                            | |:blue_circle:| | s.high                    |
-+-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `deep-archive#237`_ Registry transient error not handled gracefully – JSONDecodeError on 500 response | |:blue_circle:| | s.high                    |
++-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `deep-archive#226`_ MD5 hashing does not work in FIPS mode                                            | |:blue_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 Enhancements
@@ -419,17 +419,17 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                                | I&T Status       | Priority / Bug Severity   |
 +======================================================================================================================+==================+===========================+
-| `doi-service#497`_ FIPS Compliance: MD5 usage in checksum() function still causes ValueError on FIPS-enabled systems | |:blue_circle:|  | s.high                    |
+| `doi-service#510`_ DOI Search is not returning all SBN collections from DataCite for 10.26007                        | |:blue_circle:|  | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `doi-service#500`_ pds-doi-cmd release fails when there are multiple `List_Author` classes in a label                | |:blue_circle:|  | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `doi-service#513`_ Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release                 | |:blue_circle:|  | s.high                    |
+| `doi-service#515`_ `'Datapaper' is not a valid ProductType` error                                                    | |:blue_circle:|  | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `doi-service#510`_ DOI Search is not returning all SBN collections from DataCite for 10.26007                        | |:blue_circle:|  | s.medium                  |
+| `doi-service#513`_ Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release                 | |:blue_circle:|  | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `doi-service#502`_ SFTP roundup script does not run due to missing invoke dependencies on Python 3.13                | |:green_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
-| `doi-service#515`_ `'Datapaper' is not a valid ProductType` error                                                    | |:blue_circle:|  | s.medium                  |
+| `doi-service#497`_ FIPS Compliance: MD5 usage in checksum() function still causes ValueError on FIPS-enabled systems | |:blue_circle:|  | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Enhancements
@@ -543,8 +543,13 @@ Planned Updates
 
 `system-i-n-t#80`_ B17 Delivery & Deployment Review (DDR)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
+
++-----------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                     | I&T Status      | Priority / Bug Severity   |
++===========================================================+=================+===========================+
+| `system-i-n-t#80`_ B17 Delivery & Deployment Review (DDR) | |:blue_circle:| | unknown                   |
++-----------------------------------------------------------+-----------------+---------------------------+
+
 
 `system-i-n-t#81`_ B17 Deployment and Release
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -631,9 +636,9 @@ Bugs
 +-----------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                       | I&T Status      | Priority / Bug Severity   |
 +=============================================================================+=================+===========================+
-| `en-ops-utils#1`_ pds-sync-api.py does not handle network errors gracefully | |:blue_circle:| | s.medium                  |
-+-----------------------------------------------------------------------------+-----------------+---------------------------+
 | `en-ops-utils#10`_ 1.24.0.0/1O00 LDD page may have missing LDDs             | |:blue_circle:| | s.low                     |
++-----------------------------------------------------------------------------+-----------------+---------------------------+
+| `en-ops-utils#1`_ pds-sync-api.py does not handle network errors gracefully | |:blue_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
@@ -815,26 +820,17 @@ Planned Updates
 
 Other Updates
 +++++++++++++
-Bugs
-^^^^
-
-+-----------------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| Issue                                                                                                                                   | I&T Status      | Priority / Bug Severity   |
-+=========================================================================================================================================+=================+===========================+
-| `pds4-information-model#934`_ `pds:ASCII_File_Name` and `pds:ASCII_Directory_Path_Name` are using malformed regexes for schema patterns | |:blue_circle:| | s.medium                  |
-+-----------------------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
-
 Enhancements
 ^^^^^^^^^^^^
 
 +------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                        | I&T Status       | Priority / Bug Severity   |
 +==============================================================================+==================+===========================+
-| `pds4-information-model#994`_ [namespace-registry] add new namespace "ops"   | |:blue_circle:|  | p.must-have               |
+| `pds4-information-model#995`_ [namespace-registry] add new namespace "asl"   | |:green_circle:| | p.must-have               |
 +------------------------------------------------------------------------------+------------------+---------------------------+
 | `pds4-information-model#976`_ [namespace-registry] add new namespace phoenix | |:blue_circle:|  | p.must-have               |
 +------------------------------------------------------------------------------+------------------+---------------------------+
-| `pds4-information-model#995`_ [namespace-registry] add new namespace "asl"   | |:green_circle:| | p.must-have               |
+| `pds4-information-model#994`_ [namespace-registry] add new namespace "ops"   | |:blue_circle:|  | p.must-have               |
 +------------------------------------------------------------------------------+------------------+---------------------------+
 
 --------
@@ -872,9 +868,9 @@ Bugs
 +---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                         | I&T Status      | Priority / Bug Severity   |
 +===============================================================================================================+=================+===========================+
-| `pds4-jparser#193`_ AxisArray.getSequenceNumber() does not compile after IM upgrade from 1L00 to 1M00         | |:blue_circle:| | s.high                    |
-+---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `pds4-jparser#192`_ Support new PDS4 IM product types (e.g. Product_Resource) and document IM upgrade process | |:blue_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `pds4-jparser#193`_ AxisArray.getSequenceNumber() does not compile after IM upgrade from 1L00 to 1M00         | |:blue_circle:| | s.high                    |
 +---------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
@@ -944,6 +940,11 @@ Planned Updates
 +----------------------------------------------------------------+-----------------+---------------------------+
 
 
+`peppi#171`_ Support DOI Search
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
 --------
 
 Component: Registry Tools
@@ -979,9 +980,9 @@ Bugs
 +------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                                                  | I&T Status      | Priority / Bug Severity   |
 +========================================================================================================================+=================+===========================+
-| `harvest#279`_ GEO no longer able to harvest data due to cognito issue                                                 | |:blue_circle:| | s.critical                |
-+------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `harvest#144`_ Harvest setting pds:Time_Coordinates.pds:stop_date_time to bogus value when value is missing from label | |:blue_circle:| | s.medium                  |
++------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `harvest#279`_ GEO no longer able to harvest data due to cognito issue                                                 | |:blue_circle:| | s.critical                |
 +------------------------------------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 Requirements
@@ -1066,11 +1067,11 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                                                                 | I&T Status       | Priority / Bug Severity   |
 +=======================================================================================================================================================+==================+===========================+
-| `registry#426`_ As a user, I want to load date times as strings in order to support leap seconds                                                      | |:green_circle:| | p.must-have               |
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `registry#481`_ As a PDS Node Operator, I want to track historical counts of missing and staged products over time                                    | |:green_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `registry#484`_ As a PDS Node Operator, I want to validate that products listed as missing from the registry are truly absent from the PDS Search API | |:blue_circle:|  | p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `registry#426`_ As a user, I want to load date times as strings in order to support leap seconds                                                      | |:green_circle:| | p.must-have               |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 Enhancements
@@ -1279,11 +1280,11 @@ Bugs
 +----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                            | I&T Status        | Priority / Bug Severity   |
 +==================================================================================================================================+===================+===========================+
+| `registry-loader#52`_ Harvest does not detect uppercase file extensions for labels, nor report errors for those missing products | |:blue_circle:|   | s.high                    |
++----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-loader#68`_ ops: namespace fields missing from data type resolution, causing DataTypeNotFoundException                 | |:yellow_circle:| | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-loader#44`_ Remove `[ERROR] /opt/registry-manager/elastic/data-dic-data.jar`  from log                                 | |:blue_circle:|   | s.medium                  |
-+----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#52`_ Harvest does not detect uppercase file extensions for labels, nor report errors for those missing products | |:blue_circle:|   | s.high                    |
 +----------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -1324,11 +1325,11 @@ Bugs
 +-----------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                         | I&T Status       | Priority / Bug Severity   |
 +===============================================================================================+==================+===========================+
-| `registry-mgr#72`_ When delete-data command is used, log file specified is empty              | |:blue_circle:|  | s.medium                  |
-+-----------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `registry-mgr#170`_ `set-archive-status` says it updates more products than are in the bundle | |:green_circle:| | s.high                    |
 +-----------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `registry-mgr#135`_ Output does not always say if `set-archive-status` has failed             | |:blue_circle:|  | s.medium                  |
++-----------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `registry-mgr#72`_ When delete-data command is used, log file specified is empty              | |:blue_circle:|  | s.medium                  |
 +-----------------------------------------------------------------------------------------------+------------------+---------------------------+
 
 --------
@@ -1579,8 +1580,13 @@ Planned Updates
 
 `software-issues-repo#157`_ Close our PDS Security Plan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
+
++---------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                   | I&T Status      | Priority / Bug Severity   |
++=========================================================+=================+===========================+
+| `software-issues-repo#157`_ Close our PDS Security Plan | |:blue_circle:| | unknown                   |
++---------------------------------------------------------+-----------------+---------------------------+
+
 
 Other Updates
 +++++++++++++
@@ -1668,9 +1674,9 @@ Bugs
 +-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | Issue                                                                                                             | I&T Status       | Priority / Bug Severity   |
 +===================================================================================================================+==================+===========================+
-| `validate#1423`_ Running validate 4.0.4 on terminal produces lots of new line characters while processing         | |:blue_circle:|  | s.low                     |
-+-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `validate#1294`_ validate does not handle Special Constants for UnsignedMSB4                                      | |:green_circle:| | s.medium                  |
++-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
+| `validate#1423`_ Running validate 4.0.4 on terminal produces lots of new line characters while processing         | |:blue_circle:|  | s.low                     |
 +-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
 | `validate#1557`_ Validate does not count cleanly-passing products, incorrectly triggering no_products_found error | |:blue_circle:|  | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------------+------------------+---------------------------+
@@ -1801,11 +1807,11 @@ This section provides a summary of the issues addressed in this release, organiz
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Operations**                 | 3      | 0              | 0              | 0       | 0        | 3       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
-| **PDS4 Information Model**     | 5      | 7              | 15             | 0       | 5        | 32      |
+| **PDS4 Information Model**     | 4      | 7              | 15             | 0       | 5        | 31      |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **PDS4 Viewer**                | 3      | 0              | 0              | 0       | 0        | 3       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Peppi**                      | 0      | 0              | 0              | 0       | 1        | 1       |
+| **Peppi**                      | 0      | 0              | 0              | 0       | 2        | 2       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Registry Tools**             | 19     | 6              | 5              | 0       | 22       | 52      |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1819,7 +1825,7 @@ This section provides a summary of the issues addressed in this release, organiz
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Web Content**                | 1      | 0              | 0              | 0       | 0        | 1       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
-| **TOTAL**                      | **64** | **17**         | **30**         | **0**   | **70**   | **181** |
+| **TOTAL**                      | **63** | **17**         | **30**         | **0**   | **71**   | **181** |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 
 
@@ -1926,15 +1932,15 @@ as follows:
 .. _data-upload-manager#336: https://github.com/NASA-PDS/data-upload-manager/issues/336
 .. _data-upload-manager#304: https://github.com/NASA-PDS/data-upload-manager/issues/304
 .. _data-upload-manager#330: https://github.com/NASA-PDS/data-upload-manager/issues/330
-.. _deep-archive#226: https://github.com/NASA-PDS/deep-archive/issues/226
 .. _deep-archive#237: https://github.com/NASA-PDS/deep-archive/issues/237
+.. _deep-archive#226: https://github.com/NASA-PDS/deep-archive/issues/226
 .. _deep-archive#238: https://github.com/NASA-PDS/deep-archive/issues/238
-.. _doi-service#497: https://github.com/NASA-PDS/doi-service/issues/497
-.. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
-.. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
 .. _doi-service#510: https://github.com/NASA-PDS/doi-service/issues/510
-.. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
+.. _doi-service#500: https://github.com/NASA-PDS/doi-service/issues/500
 .. _doi-service#515: https://github.com/NASA-PDS/doi-service/issues/515
+.. _doi-service#513: https://github.com/NASA-PDS/doi-service/issues/513
+.. _doi-service#502: https://github.com/NASA-PDS/doi-service/issues/502
+.. _doi-service#497: https://github.com/NASA-PDS/doi-service/issues/497
 .. _doi-service#493: https://github.com/NASA-PDS/doi-service/issues/493
 .. _system-i-n-t#68: https://github.com/NASA-PDS/system-i-n-t/issues/68
 .. _system-i-n-t#70: https://github.com/NASA-PDS/system-i-n-t/issues/70
@@ -1949,8 +1955,8 @@ as follows:
 .. _nucleus#127: https://github.com/NASA-PDS/nucleus/issues/127
 .. _nucleus#178: https://github.com/NASA-PDS/nucleus/issues/178
 .. _nucleus#181: https://github.com/NASA-PDS/nucleus/issues/181
-.. _en-ops-utils#1: https://github.com/NASA-PDS/en-ops-utils/issues/1
 .. _en-ops-utils#10: https://github.com/NASA-PDS/en-ops-utils/issues/10
+.. _en-ops-utils#1: https://github.com/NASA-PDS/en-ops-utils/issues/1
 .. _operations#900: https://github.com/NASA-PDS/operations/issues/900
 .. _pds4-context-products#84: https://github.com/NASA-PDS/pds4-context-products/issues/84
 .. _pds4-context-products#70: https://github.com/NASA-PDS/pds4-context-products/issues/70
@@ -1980,16 +1986,16 @@ as follows:
 .. _pds4-information-model#1033: https://github.com/NASA-PDS/pds4-information-model/issues/1033
 .. _pds4-information-model#1032: https://github.com/NASA-PDS/pds4-information-model/issues/1032
 .. _pds4-information-model#1035: https://github.com/NASA-PDS/pds4-information-model/issues/1035
-.. _pds4-information-model#934: https://github.com/NASA-PDS/pds4-information-model/issues/934
-.. _pds4-information-model#994: https://github.com/NASA-PDS/pds4-information-model/issues/994
-.. _pds4-information-model#976: https://github.com/NASA-PDS/pds4-information-model/issues/976
 .. _pds4-information-model#995: https://github.com/NASA-PDS/pds4-information-model/issues/995
-.. _pds4-jparser#193: https://github.com/NASA-PDS/pds4-jparser/issues/193
+.. _pds4-information-model#976: https://github.com/NASA-PDS/pds4-information-model/issues/976
+.. _pds4-information-model#994: https://github.com/NASA-PDS/pds4-information-model/issues/994
 .. _pds4-jparser#192: https://github.com/NASA-PDS/pds4-jparser/issues/192
+.. _pds4-jparser#193: https://github.com/NASA-PDS/pds4-jparser/issues/193
 .. _portal-ds-view#60: https://github.com/NASA-PDS/portal-ds-view/issues/60
 .. _peppi#121: https://github.com/NASA-PDS/peppi/issues/121
-.. _harvest#279: https://github.com/NASA-PDS/harvest/issues/279
+.. _peppi#171: https://github.com/NASA-PDS/peppi/issues/171
 .. _harvest#144: https://github.com/NASA-PDS/harvest/issues/144
+.. _harvest#279: https://github.com/NASA-PDS/harvest/issues/279
 .. _harvest#292: https://github.com/NASA-PDS/harvest/issues/292
 .. _registry#266: https://github.com/NASA-PDS/registry/issues/266
 .. _registry#333: https://github.com/NASA-PDS/registry/issues/333
@@ -1999,9 +2005,9 @@ as follows:
 .. _registry#471: https://github.com/NASA-PDS/registry/issues/471
 .. _registry#451: https://github.com/NASA-PDS/registry/issues/451
 .. _registry#456: https://github.com/NASA-PDS/registry/issues/456
-.. _registry#426: https://github.com/NASA-PDS/registry/issues/426
 .. _registry#481: https://github.com/NASA-PDS/registry/issues/481
 .. _registry#484: https://github.com/NASA-PDS/registry/issues/484
+.. _registry#426: https://github.com/NASA-PDS/registry/issues/426
 .. _registry#460: https://github.com/NASA-PDS/registry/issues/460
 .. _registry-api#715: https://github.com/NASA-PDS/registry-api/issues/715
 .. _registry-api#622: https://github.com/NASA-PDS/registry-api/issues/622
@@ -2026,13 +2032,13 @@ as follows:
 .. _registry-legacy-solr#237: https://github.com/NASA-PDS/registry-legacy-solr/issues/237
 .. _registry-loader#11: https://github.com/NASA-PDS/registry-loader/issues/11
 .. _registry-loader#49: https://github.com/NASA-PDS/registry-loader/issues/49
+.. _registry-loader#52: https://github.com/NASA-PDS/registry-loader/issues/52
 .. _registry-loader#68: https://github.com/NASA-PDS/registry-loader/issues/68
 .. _registry-loader#44: https://github.com/NASA-PDS/registry-loader/issues/44
-.. _registry-loader#52: https://github.com/NASA-PDS/registry-loader/issues/52
 .. _registry-loader#41: https://github.com/NASA-PDS/registry-loader/issues/41
-.. _registry-mgr#72: https://github.com/NASA-PDS/registry-mgr/issues/72
 .. _registry-mgr#170: https://github.com/NASA-PDS/registry-mgr/issues/170
 .. _registry-mgr#135: https://github.com/NASA-PDS/registry-mgr/issues/135
+.. _registry-mgr#72: https://github.com/NASA-PDS/registry-mgr/issues/72
 .. _registry-sweepers#186: https://github.com/NASA-PDS/registry-sweepers/issues/186
 .. _registry-sweepers#187: https://github.com/NASA-PDS/registry-sweepers/issues/187
 .. _registry-sweepers#201: https://github.com/NASA-PDS/registry-sweepers/issues/201
@@ -2069,8 +2075,8 @@ as follows:
 .. _validate#1550: https://github.com/NASA-PDS/validate/issues/1550
 .. _validate#1581: https://github.com/NASA-PDS/validate/issues/1581
 .. _validate#1580: https://github.com/NASA-PDS/validate/issues/1580
-.. _validate#1423: https://github.com/NASA-PDS/validate/issues/1423
 .. _validate#1294: https://github.com/NASA-PDS/validate/issues/1294
+.. _validate#1423: https://github.com/NASA-PDS/validate/issues/1423
 .. _validate#1557: https://github.com/NASA-PDS/validate/issues/1557
 .. _validate#1453: https://github.com/NASA-PDS/validate/issues/1453
 .. _validate#1509: https://github.com/NASA-PDS/validate/issues/1509
