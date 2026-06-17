@@ -4,8 +4,8 @@ Upcoming
     :glob:
     :maxdepth: 1
 
-    Latest In-Dev Software RDD (B17) <17/rdd>
-    Near-Term Plans (B17) <17/plan>
+    Latest In-Dev Software RDD (B18) <18/rdd>
+    Near-Term Plans (B18) <18/plan>
 
 Past Releases
 =============
@@ -25,3 +25,4 @@ Past Releases
     14.1 <14.1/index>
     15.0 <15.0/index>
     15.1 <15.1/index>
+    16 <16/index>
