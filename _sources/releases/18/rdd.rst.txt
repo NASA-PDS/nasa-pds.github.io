@@ -217,11 +217,11 @@ Requirements
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================================+===================+===========================+
+| `en-ops-utils#18`_ As a user, I want to verify context product version_id matches filename version suffix                | |:yellow_circle:| | unknown                   |
++--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `en-ops-utils#19`_ As a user, I want to verify deprecated context product LIDs have been removed from the PDS Search API | |:yellow_circle:| | unknown                   |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `en-ops-utils#16`_ As a steward, I want auto-generated LDD release PRs to include a reviewer checklist                   | |:yellow_circle:| | p.should-have             |
-+--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `en-ops-utils#18`_ As a user, I want to verify context product version_id matches filename version suffix                | |:yellow_circle:| | unknown                   |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -337,9 +337,9 @@ Bugs
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                 | I&T Status        | Priority / Bug Severity   |
 +=======================================================================================================+===================+===========================+
-| `pds4-information-model#1049`_ lddtool generates confusing error message for Local_Internal_Reference | |:yellow_circle:| | s.low                     |
-+-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#1042`_ Radar namespace is not present in namespace registry                   | |:yellow_circle:| | s.medium                  |
++-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#1049`_ lddtool generates confusing error message for Local_Internal_Reference | |:yellow_circle:| | s.low                     |
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -348,9 +348,9 @@ Enhancements
 +-----------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                       | I&T Status      | Priority / Bug Severity   |
 +=============================================================================+=================+===========================+
-| `pds4-information-model#1040`_ [namespace-registry] add new namespace BOPPS | |:blue_circle:| | p.must-have               |
-+-----------------------------------------------------------------------------+-----------------+---------------------------+
 | `pds4-information-model#1038`_ [namespace-registry] add new namespace AV    | |:blue_circle:| | p.must-have               |
++-----------------------------------------------------------------------------+-----------------+---------------------------+
+| `pds4-information-model#1040`_ [namespace-registry] add new namespace BOPPS | |:blue_circle:| | p.must-have               |
 +-----------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
@@ -650,9 +650,9 @@ Bugs
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#745`_ Integration tests in unstable build suite do not pass when run locally                  | |:yellow_circle:| | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#744`_ Unstable build does not complete on develop branch due to GitHub Actions runner timeout | |:yellow_circle:| | s.medium                  |
-+-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#748`_ Investigate and fix skipped `product/{id}/member*` integration tests                    | |:blue_circle:|   | s.medium                  |
++-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-api#744`_ Unstable build does not complete on develop branch due to GitHub Actions runner timeout | |:yellow_circle:| | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -991,13 +991,13 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                        | I&T Status        | Priority / Bug Severity   |
 +==============================================================================================================================================+===================+===========================+
-| `s3-browser-cloudfront#159`_ As a user, I need s3-browser to properly display breadcrumbs that include the bucket I chose                    | |:yellow_circle:| | p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#143`_ As a developer, I want the S3 browser to work with CloudFront as the S3 passthrough vs. direct S3 bucket access | |:yellow_circle:| | p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `s3-browser-cloudfront#158`_ As a developer, I need the ability to deep link into a bucket that is served via CloudFront                     | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#174`_ As a PDS Engineer, I want the domain of data paths for buckets we control to be automatically configured        | |:yellow_circle:| | unknown                   |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `s3-browser-cloudfront#158`_ As a developer, I need the ability to deep link into a bucket that is served via CloudFront                     | |:yellow_circle:| | p.must-have               |
+| `s3-browser-cloudfront#159`_ As a user, I need s3-browser to properly display breadcrumbs that include the bucket I chose                    | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Release Summary Metrics
@@ -1108,9 +1108,9 @@ as follows:
 .. _data-upload-manager#349: https://github.com/NASA-PDS/data-upload-manager/issues/349
 .. _data-upload-manager#352: https://github.com/NASA-PDS/data-upload-manager/issues/352
 .. _roundup-action#170: https://github.com/NASA-PDS/roundup-action/issues/170
+.. _en-ops-utils#18: https://github.com/NASA-PDS/en-ops-utils/issues/18
 .. _en-ops-utils#19: https://github.com/NASA-PDS/en-ops-utils/issues/19
 .. _en-ops-utils#16: https://github.com/NASA-PDS/en-ops-utils/issues/16
-.. _en-ops-utils#18: https://github.com/NASA-PDS/en-ops-utils/issues/18
 .. _pds4-context-products#85: https://github.com/NASA-PDS/pds4-context-products/issues/85
 .. _pds4-context-products#84: https://github.com/NASA-PDS/pds4-context-products/issues/84
 .. _pds4-context-products#94: https://github.com/NASA-PDS/pds4-context-products/issues/94
@@ -1121,10 +1121,10 @@ as follows:
 .. _pds4-information-model#1016: https://github.com/NASA-PDS/pds4-information-model/issues/1016
 .. _pds4-information-model#1017: https://github.com/NASA-PDS/pds4-information-model/issues/1017
 .. _pds4-information-model#1026: https://github.com/NASA-PDS/pds4-information-model/issues/1026
-.. _pds4-information-model#1049: https://github.com/NASA-PDS/pds4-information-model/issues/1049
 .. _pds4-information-model#1042: https://github.com/NASA-PDS/pds4-information-model/issues/1042
-.. _pds4-information-model#1040: https://github.com/NASA-PDS/pds4-information-model/issues/1040
+.. _pds4-information-model#1049: https://github.com/NASA-PDS/pds4-information-model/issues/1049
 .. _pds4-information-model#1038: https://github.com/NASA-PDS/pds4-information-model/issues/1038
+.. _pds4-information-model#1040: https://github.com/NASA-PDS/pds4-information-model/issues/1040
 .. _pds4-jparser#200: https://github.com/NASA-PDS/pds4-jparser/issues/200
 .. _pds4-jparser#197: https://github.com/NASA-PDS/pds4-jparser/issues/197
 .. _pds4-jparser#197: https://github.com/NASA-PDS/pds4-jparser/issues/197
@@ -1154,8 +1154,8 @@ as follows:
 .. _registry-api#768: https://github.com/NASA-PDS/registry-api/issues/768
 .. _registry-api#742: https://github.com/NASA-PDS/registry-api/issues/742
 .. _registry-api#745: https://github.com/NASA-PDS/registry-api/issues/745
-.. _registry-api#744: https://github.com/NASA-PDS/registry-api/issues/744
 .. _registry-api#748: https://github.com/NASA-PDS/registry-api/issues/748
+.. _registry-api#744: https://github.com/NASA-PDS/registry-api/issues/744
 .. _registry-api#611: https://github.com/NASA-PDS/registry-api/issues/611
 .. _registry-loader#67: https://github.com/NASA-PDS/registry-loader/issues/67
 .. _registry-loader#65: https://github.com/NASA-PDS/registry-loader/issues/65
@@ -1182,10 +1182,10 @@ as follows:
 .. _portal#145: https://github.com/NASA-PDS/portal/issues/145
 .. _s3-browser-cloudfront#138: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/138
 .. _s3-browser-cloudfront#144: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/144
-.. _s3-browser-cloudfront#159: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/159
 .. _s3-browser-cloudfront#143: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/143
-.. _s3-browser-cloudfront#174: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/174
 .. _s3-browser-cloudfront#158: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/158
+.. _s3-browser-cloudfront#174: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/174
+.. _s3-browser-cloudfront#159: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/159
 .. _Software Release Summary (B18): https://nasa-pds.github.io/releases/18/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
