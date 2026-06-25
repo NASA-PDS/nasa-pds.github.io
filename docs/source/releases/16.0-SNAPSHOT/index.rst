@@ -1,11 +1,6 @@
 ======================================
 Software Catalog (Build 16.0-SNAPSHOT)
 ======================================
-I&T (Integration & Testing) review and results are available in the following two documents:
-
-- `Delivery and Deployment Review <PDS-B16-DDR.pdf>`_
-- `Combined TestRail Reports <PDS-B16-TestRail-reports.pdf>`_
-
 The software provided for the PDS System Build 16.0-SNAPSHOT are listed below and organized by category:
 
 - `Standalone Tools`_
