@@ -134,6 +134,38 @@ Component: Devops
 
 --------
 
+Pdsen-corral
+~~~~~~~~~~~~
+*umbrella project to manage the build cycle (continuous integration and stable release) for the PDS EN tools. *
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/pdsen-corral#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/pdsen-corral>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/pdsen-corral/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/pdsen-corral/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/pdsen-corral/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/pdsen-corral/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+No planned updates realized for this build in this repository.
+
+Other Updates
++++++++++++++
+Bugs
+^^^^
+
++------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                | I&T Status      | Priority / Bug Severity   |
++======================================================+=================+===========================+
+| `pdsen-corral#34`_ Workflow does not update GH pages | |:blue_circle:| | unknown                   |
++------------------------------------------------------+-----------------+---------------------------+
+
+--------
+
 Roundup-action
 ~~~~~~~~~~~~~~
 *Do a "roundup", a/k/a PDS-style continuous integration and delivery*
@@ -219,9 +251,9 @@ Requirements
 +==========================================================================================================================+===================+===========================+
 | `en-ops-utils#18`_ As a user, I want to verify context product version_id matches filename version suffix                | |:yellow_circle:| | unknown                   |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `en-ops-utils#19`_ As a user, I want to verify deprecated context product LIDs have been removed from the PDS Search API | |:yellow_circle:| | unknown                   |
-+--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `en-ops-utils#16`_ As a steward, I want auto-generated LDD release PRs to include a reviewer checklist                   | |:yellow_circle:| | p.should-have             |
++--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `en-ops-utils#19`_ As a user, I want to verify deprecated context product LIDs have been removed from the PDS Search API | |:yellow_circle:| | unknown                   |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -655,13 +687,13 @@ Bugs
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                       | I&T Status        | Priority / Bug Severity   |
 +=============================================================================================================+===================+===========================+
-| `registry-api#745`_ Integration tests in unstable build suite do not pass when run locally                  | |:yellow_circle:| | s.medium                  |
-+-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#748`_ Investigate and fix skipped `product/{id}/member*` integration tests                    | |:blue_circle:|   | s.medium                  |
++-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-api#744`_ Unstable build does not complete on develop branch due to GitHub Actions runner timeout | |:yellow_circle:| | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#742`_ A query to pds.nasa.gov does not respond the same as a query to pds.mcp.nasa.gov        | |:yellow_circle:| | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#744`_ Unstable build does not complete on develop branch due to GitHub Actions runner timeout | |:yellow_circle:| | s.medium                  |
+| `registry-api#745`_ Integration tests in unstable build suite do not pass when run locally                  | |:yellow_circle:| | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -713,6 +745,8 @@ Bugs
 | Issue                                                                                                                                     | I&T Status        | Priority / Bug Severity   |
 +===========================================================================================================================================+===================+===========================+
 | `registry-loader#77`_ Harvest does not download LDD on Windows: temp file creation fails with 'The system cannot find the path specified' | |:yellow_circle:| | s.high                    |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-loader#80`_ LDD JSON parser fails to resolve field data types across IM versions due to format changes                          | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -903,9 +937,9 @@ Bugs
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================================+===================+===========================+
-| `validate#1601`_ warning.integrity.member_not_found should be an ERROR by default, with new flag to downgrade to warning | |:yellow_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1548`_ validate does not fail or report errors when an explicitly-specified target file does not exist         | |:yellow_circle:| | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1601`_ warning.integrity.member_not_found should be an ERROR by default, with new flag to downgrade to warning | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -919,6 +953,38 @@ Component: Web Analytics
 Component: Web Content
 ----------------------
 *PDS website content management and legacy systems*
+
+--------
+
+Nasa-pds.github.io
+~~~~~~~~~~~~~~~~~~
+*Site for https://nasa-pds.github.io and NASA PDS Wiki*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/>`_
+     - `Github Repo <https://github.com/NASA-PDS/nasa-pds.github.io>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/nasa-pds.github.io/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/nasa-pds.github.io/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/nasa-pds.github.io/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/nasa-pds.github.io/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+No planned updates realized for this build in this repository.
+
+Other Updates
++++++++++++++
+Requirements
+^^^^^^^^^^^^
+
++---------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                       | I&T Status        | Priority / Bug Severity   |
++=============================================================================================+===================+===========================+
+| `nasa-pds.github.io#85`_ As PDS EN Ops, I want to add I&T reports that won't be overwritten | |:yellow_circle:| | unknown                   |
++---------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -985,13 +1051,15 @@ Planned Updates
 `s3-browser-cloudfront#138`_ S3 Browser Testing and Enhancements to Support LROC Launch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
-| Issue                                                                                           | I&T Status        | Level       | Priority / Bug Severity   |
-+=================================================================================================+===================+=============+===========================+
-| `s3-browser-cloudfront#139`_ As an end user, I want to be able to browse LROC data in S3 bucket | |:yellow_circle:| | requirement | p.must-have               |
-+-------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
-| `s3-browser-cloudfront#144`_ open-data-registry configuration broken by CloudFront PR changes   | |:yellow_circle:| | bug         | p.must-have               |
-+-------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
++------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| Issue                                                                                                      | I&T Status        | Level       | Priority / Bug Severity   |
++============================================================================================================+===================+=============+===========================+
+| `s3-browser-cloudfront#139`_ As an end user, I want to be able to browse LROC data in S3 bucket            | |:yellow_circle:| | requirement | p.must-have               |
++------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `s3-browser-cloudfront#144`_ open-data-registry configuration broken by CloudFront PR changes              | |:yellow_circle:| | bug         | p.must-have               |
++------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| `s3-browser-cloudfront#178`_ S3 listing pagination enters infinite loop in directories with >1,000 objects | |:yellow_circle:| | bug         | s.critical                |
++------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 
 
 Other Updates
@@ -1002,13 +1070,13 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                        | I&T Status        | Priority / Bug Severity   |
 +==============================================================================================================================================+===================+===========================+
+| `s3-browser-cloudfront#174`_ As a PDS Engineer, I want the domain of data paths for buckets we control to be automatically configured        | |:yellow_circle:| | unknown                   |
++----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#143`_ As a developer, I want the S3 browser to work with CloudFront as the S3 passthrough vs. direct S3 bucket access | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#159`_ As a user, I need s3-browser to properly display breadcrumbs that include the bucket I chose                    | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#158`_ As a developer, I need the ability to deep link into a bucket that is served via CloudFront                     | |:yellow_circle:| | p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `s3-browser-cloudfront#174`_ As a PDS Engineer, I want the domain of data paths for buckets we control to be automatically configured        | |:yellow_circle:| | unknown                   |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Release Summary Metrics
@@ -1021,7 +1089,7 @@ This section provides a summary of the issues addressed in this release, organiz
 +============================+========+================+================+=========+==========+=========+
 | **Data Upload Manager**    | 1      | 0              | 0              | 0       | 1        | 2       |
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Devops**                 | 0      | 0              | 1              | 0       | 0        | 1       |
+| **Devops**                 | 1      | 0              | 1              | 0       | 0        | 2       |
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Operations**             | 0      | 0              | 3              | 0       | 0        | 3       |
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1031,17 +1099,17 @@ This section provides a summary of the issues addressed in this release, organiz
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Peppi**                  | 1      | 0              | 1              | 0       | 1        | 3       |
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Registry Tools**         | 12     | 2              | 5              | 0       | 19       | 38      |
+| **Registry Tools**         | 13     | 2              | 5              | 0       | 19       | 39      |
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
 | **System Tools**           | 0      | 0              | 1              | 0       | 0        | 1       |
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Validate**               | 3      | 1              | 2              | 0       | 2        | 8       |
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Web Content**            | 2      | 0              | 0              | 0       | 1        | 3       |
+| **Web Content**            | 2      | 0              | 1              | 0       | 1        | 4       |
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Web Dev**                | 1      | 0              | 5              | 0       | 1        | 7       |
+| **Web Dev**                | 2      | 0              | 5              | 0       | 1        | 8       |
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **TOTAL**                  | **25** | **6**          | **20**         | **0**   | **32**   | **83**  |
+| **TOTAL**                  | **28** | **6**          | **21**         | **0**   | **32**   | **87**  |
 +----------------------------+--------+----------------+----------------+---------+----------+---------+
 
 
@@ -1118,10 +1186,11 @@ as follows:
 .. _pds4-information-model#1035: https://github.com/NASA-PDS/pds4-information-model/issues/1035
 .. _data-upload-manager#349: https://github.com/NASA-PDS/data-upload-manager/issues/349
 .. _data-upload-manager#352: https://github.com/NASA-PDS/data-upload-manager/issues/352
+.. _pdsen-corral#34: https://github.com/NASA-PDS/pdsen-corral/issues/34
 .. _roundup-action#170: https://github.com/NASA-PDS/roundup-action/issues/170
 .. _en-ops-utils#18: https://github.com/NASA-PDS/en-ops-utils/issues/18
-.. _en-ops-utils#19: https://github.com/NASA-PDS/en-ops-utils/issues/19
 .. _en-ops-utils#16: https://github.com/NASA-PDS/en-ops-utils/issues/16
+.. _en-ops-utils#19: https://github.com/NASA-PDS/en-ops-utils/issues/19
 .. _pds4-context-products#85: https://github.com/NASA-PDS/pds4-context-products/issues/85
 .. _pds4-context-products#84: https://github.com/NASA-PDS/pds4-context-products/issues/84
 .. _pds4-context-products#94: https://github.com/NASA-PDS/pds4-context-products/issues/94
@@ -1164,15 +1233,16 @@ as follows:
 .. _registry-api#751: https://github.com/NASA-PDS/registry-api/issues/751
 .. _registry-api#760: https://github.com/NASA-PDS/registry-api/issues/760
 .. _registry-api#768: https://github.com/NASA-PDS/registry-api/issues/768
-.. _registry-api#745: https://github.com/NASA-PDS/registry-api/issues/745
 .. _registry-api#748: https://github.com/NASA-PDS/registry-api/issues/748
-.. _registry-api#742: https://github.com/NASA-PDS/registry-api/issues/742
 .. _registry-api#744: https://github.com/NASA-PDS/registry-api/issues/744
+.. _registry-api#742: https://github.com/NASA-PDS/registry-api/issues/742
+.. _registry-api#745: https://github.com/NASA-PDS/registry-api/issues/745
 .. _registry-api#611: https://github.com/NASA-PDS/registry-api/issues/611
 .. _registry-loader#67: https://github.com/NASA-PDS/registry-loader/issues/67
 .. _registry-loader#65: https://github.com/NASA-PDS/registry-loader/issues/65
 .. _registry-loader#66: https://github.com/NASA-PDS/registry-loader/issues/66
 .. _registry-loader#77: https://github.com/NASA-PDS/registry-loader/issues/77
+.. _registry-loader#80: https://github.com/NASA-PDS/registry-loader/issues/80
 .. _registry-mgr#72: https://github.com/NASA-PDS/registry-mgr/issues/72
 .. _registry-sweepers#201: https://github.com/NASA-PDS/registry-sweepers/issues/201
 .. _registry-sweepers#205: https://github.com/NASA-PDS/registry-sweepers/issues/205
@@ -1187,18 +1257,20 @@ as follows:
 .. _validate#1571: https://github.com/NASA-PDS/validate/issues/1571
 .. _validate#1565: https://github.com/NASA-PDS/validate/issues/1565
 .. _validate#1568: https://github.com/NASA-PDS/validate/issues/1568
-.. _validate#1601: https://github.com/NASA-PDS/validate/issues/1601
 .. _validate#1548: https://github.com/NASA-PDS/validate/issues/1548
+.. _validate#1601: https://github.com/NASA-PDS/validate/issues/1601
+.. _nasa-pds.github.io#85: https://github.com/NASA-PDS/nasa-pds.github.io/issues/85
 .. _portal#143: https://github.com/NASA-PDS/portal/issues/143
 .. _portal#144: https://github.com/NASA-PDS/portal/issues/144
 .. _portal#145: https://github.com/NASA-PDS/portal/issues/145
 .. _s3-browser-cloudfront#138: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/138
 .. _s3-browser-cloudfront#139: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/139
 .. _s3-browser-cloudfront#144: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/144
+.. _s3-browser-cloudfront#178: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/178
+.. _s3-browser-cloudfront#174: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/174
 .. _s3-browser-cloudfront#143: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/143
 .. _s3-browser-cloudfront#159: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/159
 .. _s3-browser-cloudfront#158: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/158
-.. _s3-browser-cloudfront#174: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/174
 .. _Software Release Summary (B18): https://nasa-pds.github.io/releases/18/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
