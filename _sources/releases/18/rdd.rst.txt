@@ -81,6 +81,95 @@ Component: Cloud Platform Engineering
 
 --------
 
+Planetary-data-cloud
+~~~~~~~~~~~~~~~~~~~~
+*PDS Cloud Migration documentation, issue, tracking and simple tools for assisting in the PDS hybrid cloud study and migration efforts.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/planetary-data-cloud#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/planetary-data-cloud>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/planetary-data-cloud/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/planetary-data-cloud/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/planetary-data-cloud/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/planetary-data-cloud/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+`planetary-data-cloud#156`_ [IMG] Migrate LRO Processing to PDC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#157`_ Egress Management Strategy Phase 1 - Throttling and Monitoring
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#166`_ Update Data Backup Plan to Include OpenSearch and Cognito
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#179`_ Develop Onboarding and Pilot Project Cost Model
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#194`_ Complete Migration of ATM Backup
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#195`_ PDC Role Definitions: Tenant EN Platform and Data Engineer Roles
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#200`_ Setup Automated Notifications for ECR Vulnerabilities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#205`_ Support PDC Migration to SCIP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++-----------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                     | I&T Status      | Priority / Bug Severity   |
++===========================================================+=================+===========================+
+| `planetary-data-cloud#205`_ Support PDC Migration to SCIP | |:blue_circle:| | unknown                   |
++-----------------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#207`_ Data Storage Management Strategy Phase 1 - Tool Trade, Dashboards, Thresholds, Alerts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#216`_ 2026 Annual End of Life Review
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#217`_ Tenant Account S3 Bucket Baseline: Terraform provisioning for tenant onboarding
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#220`_ B18 Bi-annual Cloud Resource Housekeeping
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`planetary-data-cloud#222`_ Create PDS Cloud Migration Roll-Up Dashboard Across All Nodes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+--------
+
 Component: Data Upload Manager
 ------------------------------
 *Data Upload Manager (DUM) for managing data uploads to PDC*
@@ -249,11 +338,11 @@ Requirements
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                    | I&T Status        | Priority / Bug Severity   |
 +==========================================================================================================================+===================+===========================+
-| `en-ops-utils#18`_ As a user, I want to verify context product version_id matches filename version suffix                | |:yellow_circle:| | unknown                   |
+| `en-ops-utils#19`_ As a user, I want to verify deprecated context product LIDs have been removed from the PDS Search API | |:yellow_circle:| | unknown                   |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `en-ops-utils#16`_ As a steward, I want auto-generated LDD release PRs to include a reviewer checklist                   | |:yellow_circle:| | p.should-have             |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `en-ops-utils#19`_ As a user, I want to verify deprecated context product LIDs have been removed from the PDS Search API | |:yellow_circle:| | unknown                   |
+| `en-ops-utils#18`_ As a user, I want to verify context product version_id matches filename version suffix                | |:yellow_circle:| | unknown                   |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -290,6 +379,11 @@ Planned Updates
 | `pds4-context-products#84`_ Chandrayaan-1 NASA PDS investigation (and maybe instrument host, and instruments?) are not accurately deprecated | |:blue_circle:| | bug     | s.medium                  |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-----------------+---------+---------------------------+
 
+
+`pds4-context-products#101`_ Consolidate Reserved Context and Bundle LIDs into GitHub
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
 
 Other Updates
 +++++++++++++
@@ -369,9 +463,9 @@ Bugs
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                 | I&T Status        | Priority / Bug Severity   |
 +=======================================================================================================+===================+===========================+
-| `pds4-information-model#1049`_ lddtool generates confusing error message for Local_Internal_Reference | |:yellow_circle:| | s.low                     |
-+-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#1042`_ Radar namespace is not present in namespace registry                   | |:yellow_circle:| | s.medium                  |
++-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#1049`_ lddtool generates confusing error message for Local_Internal_Reference | |:yellow_circle:| | s.low                     |
 +-------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -380,9 +474,9 @@ Enhancements
 +-----------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                       | I&T Status      | Priority / Bug Severity   |
 +=============================================================================+=================+===========================+
-| `pds4-information-model#1038`_ [namespace-registry] add new namespace AV    | |:blue_circle:| | p.must-have               |
-+-----------------------------------------------------------------------------+-----------------+---------------------------+
 | `pds4-information-model#1040`_ [namespace-registry] add new namespace BOPPS | |:blue_circle:| | p.must-have               |
++-----------------------------------------------------------------------------+-----------------+---------------------------+
+| `pds4-information-model#1038`_ [namespace-registry] add new namespace AV    | |:blue_circle:| | p.must-have               |
 +-----------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
@@ -571,8 +665,8 @@ Planned Updates
 +--------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
 
 
-`registry#517`_ Integrate Registry sub-components with Managed Opensearch
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+`registry#517`_ Integrate Registry sub-components with New Managed Opensearch
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
@@ -744,9 +838,11 @@ Bugs
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                     | I&T Status        | Priority / Bug Severity   |
 +===========================================================================================================================================+===================+===========================+
+| `registry-loader#80`_ LDD JSON parser fails to resolve field data types across IM versions due to format changes                          | |:yellow_circle:| | s.high                    |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-loader#77`_ Harvest does not download LDD on Windows: temp file creation fails with 'The system cannot find the path specified' | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#80`_ LDD JSON parser fails to resolve field data types across IM versions due to format changes                          | |:yellow_circle:| | s.high                    |
+| `registry-loader#89`_ Detect and remove stale LDD sentinel records across all node registry indexes                                       | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -828,9 +924,9 @@ Bugs
 +--------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                | I&T Status        | Priority / Bug Severity   |
 +======================================================================================================================================+===================+===========================+
-| `registry-sweepers#212`_ Legacy registry sync node assignment does not use registry API metadata, causing incorrect node assignments | |:yellow_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-sweepers#220`_ Race condition exists when sweepers ensures index mappings and writes document updates very soon after      | |:yellow_circle:| | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-sweepers#212`_ Legacy registry sync node assignment does not use registry API metadata, causing incorrect node assignments | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -838,6 +934,35 @@ Bugs
 Component: Search API
 ---------------------
 *PDS Search API and client libraries*
+
+--------
+
+Search-api-notebook
+~~~~~~~~~~~~~~~~~~~
+*Jupyter notebooks for demonstrating and utilizing the Planetary Data System (PDS) Search API*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/search-api-notebook#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/search-api-notebook>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/search-api-notebook/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/search-api-notebook/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/search-api-notebook/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/search-api-notebook/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+`search-api-notebook#89`_ Improve notebook self-containment and accessibility for new users
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++---------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| Issue                                                                                       | I&T Status      | Priority / Bug Severity   |
++=============================================================================================+=================+===========================+
+| `search-api-notebook#89`_ Improve notebook self-containment and accessibility for new users | |:blue_circle:| | unknown                   |
++---------------------------------------------------------------------------------------------+-----------------+---------------------------+
+
 
 --------
 
@@ -1070,13 +1195,13 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                        | I&T Status        | Priority / Bug Severity   |
 +==============================================================================================================================================+===================+===========================+
-| `s3-browser-cloudfront#174`_ As a PDS Engineer, I want the domain of data paths for buckets we control to be automatically configured        | |:yellow_circle:| | unknown                   |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#143`_ As a developer, I want the S3 browser to work with CloudFront as the S3 passthrough vs. direct S3 bucket access | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#159`_ As a user, I need s3-browser to properly display breadcrumbs that include the bucket I chose                    | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#158`_ As a developer, I need the ability to deep link into a bucket that is served via CloudFront                     | |:yellow_circle:| | p.must-have               |
++----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `s3-browser-cloudfront#174`_ As a PDS Engineer, I want the domain of data paths for buckets we control to be automatically configured        | |:yellow_circle:| | unknown                   |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Release Summary Metrics
@@ -1084,33 +1209,37 @@ Release Summary Metrics
 This section provides a summary of the issues addressed in this release, organized by issue type.
 
 
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| Component/Repo             | Bugs   | Enhancements   | Requirements   | Tasks   | Themes   | Total   |
-+============================+========+================+================+=========+==========+=========+
-| **Data Upload Manager**    | 1      | 0              | 0              | 0       | 1        | 2       |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Devops**                 | 1      | 0              | 1              | 0       | 0        | 2       |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Operations**             | 0      | 0              | 3              | 0       | 0        | 3       |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **PDS4 Information Model** | 4      | 2              | 1              | 0       | 7        | 14      |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **PDS4 Viewer**            | 1      | 1              | 1              | 0       | 0        | 3       |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Peppi**                  | 1      | 0              | 1              | 0       | 1        | 3       |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Registry Tools**         | 13     | 2              | 5              | 0       | 19       | 39      |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **System Tools**           | 0      | 0              | 1              | 0       | 0        | 1       |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Validate**               | 3      | 1              | 2              | 0       | 2        | 8       |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Web Content**            | 2      | 0              | 1              | 0       | 1        | 4       |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Web Dev**                | 2      | 0              | 5              | 0       | 1        | 8       |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
-| **TOTAL**                  | **28** | **6**          | **21**         | **0**   | **32**   | **87**  |
-+----------------------------+--------+----------------+----------------+---------+----------+---------+
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| Component/Repo                 | Bugs   | Enhancements   | Requirements   | Tasks   | Themes   | Total   |
++================================+========+================+================+=========+==========+=========+
+| **Cloud Platform Engineering** | 0      | 0              | 0              | 0       | 13       | 13      |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Data Upload Manager**        | 1      | 0              | 0              | 0       | 1        | 2       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Devops**                     | 1      | 0              | 1              | 0       | 0        | 2       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Operations**                 | 0      | 0              | 3              | 0       | 0        | 3       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **PDS4 Information Model**     | 4      | 2              | 1              | 0       | 8        | 15      |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **PDS4 Viewer**                | 1      | 1              | 1              | 0       | 0        | 3       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Peppi**                      | 1      | 0              | 1              | 0       | 1        | 3       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Registry Tools**             | 14     | 2              | 5              | 0       | 19       | 40      |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Search API**                 | 0      | 0              | 0              | 0       | 1        | 1       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **System Tools**               | 0      | 0              | 1              | 0       | 0        | 1       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Validate**                   | 3      | 1              | 2              | 0       | 2        | 8       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Web Content**                | 2      | 0              | 1              | 0       | 1        | 4       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Web Dev**                    | 2      | 0              | 5              | 0       | 1        | 8       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **TOTAL**                      | **29** | **6**          | **21**         | **0**   | **47**   | **103** |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
 
 
 Liens
@@ -1184,15 +1313,29 @@ as follows:
 .. _pds4-information-model#1033: https://github.com/NASA-PDS/pds4-information-model/issues/1033
 .. _pds4-information-model#1034: https://github.com/NASA-PDS/pds4-information-model/issues/1034
 .. _pds4-information-model#1035: https://github.com/NASA-PDS/pds4-information-model/issues/1035
+.. _planetary-data-cloud#156: https://github.com/NASA-PDS/planetary-data-cloud/issues/156
+.. _planetary-data-cloud#157: https://github.com/NASA-PDS/planetary-data-cloud/issues/157
+.. _planetary-data-cloud#166: https://github.com/NASA-PDS/planetary-data-cloud/issues/166
+.. _planetary-data-cloud#179: https://github.com/NASA-PDS/planetary-data-cloud/issues/179
+.. _planetary-data-cloud#194: https://github.com/NASA-PDS/planetary-data-cloud/issues/194
+.. _planetary-data-cloud#195: https://github.com/NASA-PDS/planetary-data-cloud/issues/195
+.. _planetary-data-cloud#200: https://github.com/NASA-PDS/planetary-data-cloud/issues/200
+.. _planetary-data-cloud#205: https://github.com/NASA-PDS/planetary-data-cloud/issues/205
+.. _planetary-data-cloud#207: https://github.com/NASA-PDS/planetary-data-cloud/issues/207
+.. _planetary-data-cloud#216: https://github.com/NASA-PDS/planetary-data-cloud/issues/216
+.. _planetary-data-cloud#217: https://github.com/NASA-PDS/planetary-data-cloud/issues/217
+.. _planetary-data-cloud#220: https://github.com/NASA-PDS/planetary-data-cloud/issues/220
+.. _planetary-data-cloud#222: https://github.com/NASA-PDS/planetary-data-cloud/issues/222
 .. _data-upload-manager#349: https://github.com/NASA-PDS/data-upload-manager/issues/349
 .. _data-upload-manager#352: https://github.com/NASA-PDS/data-upload-manager/issues/352
 .. _pdsen-corral#34: https://github.com/NASA-PDS/pdsen-corral/issues/34
 .. _roundup-action#170: https://github.com/NASA-PDS/roundup-action/issues/170
-.. _en-ops-utils#18: https://github.com/NASA-PDS/en-ops-utils/issues/18
-.. _en-ops-utils#16: https://github.com/NASA-PDS/en-ops-utils/issues/16
 .. _en-ops-utils#19: https://github.com/NASA-PDS/en-ops-utils/issues/19
+.. _en-ops-utils#16: https://github.com/NASA-PDS/en-ops-utils/issues/16
+.. _en-ops-utils#18: https://github.com/NASA-PDS/en-ops-utils/issues/18
 .. _pds4-context-products#85: https://github.com/NASA-PDS/pds4-context-products/issues/85
 .. _pds4-context-products#84: https://github.com/NASA-PDS/pds4-context-products/issues/84
+.. _pds4-context-products#101: https://github.com/NASA-PDS/pds4-context-products/issues/101
 .. _pds4-context-products#94: https://github.com/NASA-PDS/pds4-context-products/issues/94
 .. _pds4-information-model#984: https://github.com/NASA-PDS/pds4-information-model/issues/984
 .. _pds4-information-model#1014: https://github.com/NASA-PDS/pds4-information-model/issues/1014
@@ -1201,10 +1344,10 @@ as follows:
 .. _pds4-information-model#1016: https://github.com/NASA-PDS/pds4-information-model/issues/1016
 .. _pds4-information-model#1017: https://github.com/NASA-PDS/pds4-information-model/issues/1017
 .. _pds4-information-model#1026: https://github.com/NASA-PDS/pds4-information-model/issues/1026
-.. _pds4-information-model#1049: https://github.com/NASA-PDS/pds4-information-model/issues/1049
 .. _pds4-information-model#1042: https://github.com/NASA-PDS/pds4-information-model/issues/1042
-.. _pds4-information-model#1038: https://github.com/NASA-PDS/pds4-information-model/issues/1038
+.. _pds4-information-model#1049: https://github.com/NASA-PDS/pds4-information-model/issues/1049
 .. _pds4-information-model#1040: https://github.com/NASA-PDS/pds4-information-model/issues/1040
+.. _pds4-information-model#1038: https://github.com/NASA-PDS/pds4-information-model/issues/1038
 .. _pds4-jparser#200: https://github.com/NASA-PDS/pds4-jparser/issues/200
 .. _pds4-jparser#197: https://github.com/NASA-PDS/pds4-jparser/issues/197
 .. _pds4-jparser#197: https://github.com/NASA-PDS/pds4-jparser/issues/197
@@ -1241,15 +1384,17 @@ as follows:
 .. _registry-loader#67: https://github.com/NASA-PDS/registry-loader/issues/67
 .. _registry-loader#65: https://github.com/NASA-PDS/registry-loader/issues/65
 .. _registry-loader#66: https://github.com/NASA-PDS/registry-loader/issues/66
-.. _registry-loader#77: https://github.com/NASA-PDS/registry-loader/issues/77
 .. _registry-loader#80: https://github.com/NASA-PDS/registry-loader/issues/80
+.. _registry-loader#77: https://github.com/NASA-PDS/registry-loader/issues/77
+.. _registry-loader#89: https://github.com/NASA-PDS/registry-loader/issues/89
 .. _registry-mgr#72: https://github.com/NASA-PDS/registry-mgr/issues/72
 .. _registry-sweepers#201: https://github.com/NASA-PDS/registry-sweepers/issues/201
 .. _registry-sweepers#205: https://github.com/NASA-PDS/registry-sweepers/issues/205
 .. _registry-sweepers#210: https://github.com/NASA-PDS/registry-sweepers/issues/210
 .. _registry-sweepers#208: https://github.com/NASA-PDS/registry-sweepers/issues/208
-.. _registry-sweepers#212: https://github.com/NASA-PDS/registry-sweepers/issues/212
 .. _registry-sweepers#220: https://github.com/NASA-PDS/registry-sweepers/issues/220
+.. _registry-sweepers#212: https://github.com/NASA-PDS/registry-sweepers/issues/212
+.. _search-api-notebook#89: https://github.com/NASA-PDS/search-api-notebook/issues/89
 .. _pds-agent-skills#6: https://github.com/NASA-PDS/pds-agent-skills/issues/6
 .. _validate#1549: https://github.com/NASA-PDS/validate/issues/1549
 .. _validate#1595: https://github.com/NASA-PDS/validate/issues/1595
@@ -1267,10 +1412,10 @@ as follows:
 .. _s3-browser-cloudfront#139: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/139
 .. _s3-browser-cloudfront#144: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/144
 .. _s3-browser-cloudfront#178: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/178
-.. _s3-browser-cloudfront#174: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/174
 .. _s3-browser-cloudfront#143: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/143
 .. _s3-browser-cloudfront#159: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/159
 .. _s3-browser-cloudfront#158: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/158
+.. _s3-browser-cloudfront#174: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/174
 .. _Software Release Summary (B18): https://nasa-pds.github.io/releases/18/index.html
 .. _PDS Standalone: https://nasa-pds.github.io/releases/11.1/index.html#standalone-tools-and-libraries
 .. _PDS Discipline Nodes: https://nasa-pds.github.io/releases/11.1/index.html#discipline-node-services
