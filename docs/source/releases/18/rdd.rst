@@ -200,6 +200,21 @@ Planned Updates
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
 
+`planetary-data-cloud#284`_ Onboard IMG to PDC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------------------------------------------+-----------------+---------------------------+
+| Issue                                          | I&T Status      | Priority / Bug Severity   |
++================================================+=================+===========================+
+| `planetary-data-cloud#284`_ Onboard IMG to PDC | |:blue_circle:| | unknown                   |
++------------------------------------------------+-----------------+---------------------------+
+
+
+`planetary-data-cloud#291`_ User Tracking System for Users to Data Services / SCIP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
 --------
 
 Component: Data Upload Manager
@@ -245,11 +260,11 @@ Bugs
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                   | I&T Status        | Priority / Bug Severity   |
 +=========================================================================================================+===================+===========================+
-| `data-upload-manager#358`_ Ingress path resolution does not prune excluded directories before traversal | |:yellow_circle:| | s.medium                  |
-+---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#361`_ Follow-up: address Copilot code quality findings from PR #356                | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `data-upload-manager#352`_ DUM v2.4.2 CloudWatch Logs SerializationException Errors                     | |:yellow_circle:| | s.medium                  |
++---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `data-upload-manager#358`_ Ingress path resolution does not prune excluded directories before traversal | |:yellow_circle:| | s.medium                  |
 +---------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -374,6 +389,83 @@ Component: Integration And Testing
 Component: Nucleus
 ------------------
 *Nucleus workflow platform for planetary data processing*
+
+--------
+
+Component: Observability
+------------------------
+*PDC Observability, web analytics tools and monitoring*
+
+--------
+
+O11y-cloudfront-batch
+~~~~~~~~~~~~~~~~~~~~~
+*None*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://nasa-pds.github.io/web-analytics>`_
+     - `Github Repo <https://github.com/NASA-PDS/o11y-cloudfront-batch>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/o11y-cloudfront-batch/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/o11y-cloudfront-batch/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/o11y-cloudfront-batch/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/o11y-cloudfront-batch/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+`o11y-cloudfront-batch#63`_ Onboard Nodes to Upload Web Logs With DUM
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`o11y-cloudfront-batch#69`_ Finalize terraform deployment for web analytics components
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
+    details.
+
+`o11y-cloudfront-batch#70`_ Upgrade logstash config to support CloudFront logs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+| Issue                                                                                                                                    | I&T Status        | Level       | Priority / Bug Severity   |
++==========================================================================================================================================+===================+=============+===========================+
+| `o11y-cloudfront-batch#71`_ As a CloudOps Engineer, I want to ingest and parse CloudFront access logs in legacy W3C tab-delimited format | |:yellow_circle:| | requirement | p.must-have               |
++------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
+
+
+--------
+
+O11y-platform
+~~~~~~~~~~~~~
+*Shared OpenSearch-backed Observability platform for the Planetary Data Cloud integrating web-analytics and real-time egress monitoring into an integrated system.*
+
+.. list-table:: 
+   :widths: 15 15 15 15 15 15
+
+   * - `User Guide <https://github.com/NASA-PDS/o11y-platform#readme>`_
+     - `Github Repo <https://github.com/NASA-PDS/o11y-platform>`_
+     - `Issue Tracking <https://github.com/NASA-PDS/o11y-platform/issues>`_ 
+     - `Requirements <https://github.com/NASA-PDS/o11y-platform/tree/main/docs/requirements>`_ 
+     - `Stable Release <https://github.com/NASA-PDS/o11y-platform/releases/latest>`_ 
+     - `Dev Release <https://github.com/NASA-PDS/o11y-platform/releases>`_ 
+
+
+Planned Updates
++++++++++++++++
+No planned updates realized for this build in this repository.
+
+Other Updates
++++++++++++++
+Enhancements
+^^^^^^^^^^^^
+
++-------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                               | I&T Status        | Priority / Bug Severity   |
++=====================================================================================+===================+===========================+
+| `o11y-platform#22`_ Move Firehose→OpenSearch VPC ingress rule back to o11y-platform | |:yellow_circle:| | p.must-have               |
++-------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -537,15 +629,15 @@ Bugs
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                     | I&T Status        | Priority / Bug Severity   |
 +===========================================================================================================+===================+===========================+
-| `pds4-information-model#1067`_ LDDTool should not write Schematron rules for Units of Measure             | |:yellow_circle:| | s.low                     |
-+-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `pds4-information-model#771`_ LDDTool does not include all rules from IngestLDD file                      | |:yellow_circle:| | s.critical                |
+| `pds4-information-model#1049`_ lddtool generates confusing error message for Local_Internal_Reference     | |:yellow_circle:| | s.low                     |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#1056`_ Automated generation of PDS Namespace Registry files from CSV update fails | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `pds4-information-model#1042`_ Radar namespace is not present in namespace registry                       | |:yellow_circle:| | s.medium                  |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `pds4-information-model#1049`_ lddtool generates confusing error message for Local_Internal_Reference     | |:yellow_circle:| | s.low                     |
+| `pds4-information-model#771`_ LDDTool does not include all rules from IngestLDD file                      | |:yellow_circle:| | s.critical                |
++-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `pds4-information-model#1067`_ LDDTool should not write Schematron rules for Units of Measure             | |:yellow_circle:| | s.low                     |
 +-----------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Requirements
@@ -653,9 +745,9 @@ Bugs
 +-------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                             | I&T Status        | Priority / Bug Severity   |
 +===================================================================================================================+===================+===========================+
-| `portal-ds-view#68`_ LID with new VID still attached to old DOI                                                   | |:yellow_circle:| | s.medium                  |
-+-------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `portal-ds-view#65`_ Tomcat ThreadLocal memory leak on undeploy caused by Http2SolrClient Jetty byte buffer pools | |:yellow_circle:| | s.medium                  |
++-------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `portal-ds-view#68`_ LID with new VID still attached to old DOI                                                   | |:yellow_circle:| | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -812,9 +904,9 @@ Requirements
 +-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                           | I&T Status        | Priority / Bug Severity   |
 +=================================================================================================================================================+===================+===========================+
-| `registry#543`_ As a PDS System Admin, I want to have distinct AWS security groups for the ECS service and the load balancer                    | |:yellow_circle:| | p.should-have             |
-+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry#510`_ As a registry operator, I want burnup charts and per-node tracking in status reports to monitor data loading progress over time | |:yellow_circle:| | p.should-have             |
++-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry#543`_ As a PDS System Admin, I want to have distinct AWS security groups for the ECS service and the load balancer                    | |:yellow_circle:| | p.should-have             |
 +-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 Enhancements
@@ -913,11 +1005,11 @@ Bugs
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                       | I&T Status        | Priority / Bug Severity   |
 +=============================================================================================================+===================+===========================+
-| `registry-api#744`_ Unstable build does not complete on develop branch due to GitHub Actions runner timeout | |:yellow_circle:| | s.medium                  |
+| `registry-api#742`_ A query to pds.nasa.gov does not respond the same as a query to pds.mcp.nasa.gov        | |:yellow_circle:| | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#745`_ Integration tests in unstable build suite do not pass when run locally                  | |:yellow_circle:| | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-api#742`_ A query to pds.nasa.gov does not respond the same as a query to pds.mcp.nasa.gov        | |:yellow_circle:| | s.medium                  |
+| `registry-api#744`_ Unstable build does not complete on develop branch due to GitHub Actions runner timeout | |:yellow_circle:| | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-api#748`_ Investigate and fix skipped `product/{id}/member*` integration tests                    | |:blue_circle:|   | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
@@ -970,6 +1062,17 @@ Planned Updates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
     details.
+
+Other Updates
++++++++++++++
+Requirements
+^^^^^^^^^^^^
+
++---------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| Issue                                                                                                         | I&T Status        | Priority / Bug Severity   |
++===============================================================================================================+===================+===========================+
+| `registry-legacy-solr#281`_ As a EN Operator, I want to automate Registry load on Harvest's Solr doc creation | |:yellow_circle:| | p.should-have             |
++---------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -1027,29 +1130,29 @@ Bugs
 +===========================================================================================================================================+===================+===========================+
 | `registry-loader#89`_ Detect and remove stale LDD sentinel records across all node registry indexes                                       | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#88`_ LDD fields silently not loaded when PDS4 LDD JSON uses older tooling-generated association format                   | |:yellow_circle:| | s.high                    |
+| `registry-loader#122`_ LDD_Info sentinel written for partial load blocks future re-download of missing fields                             | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#105`_ Harvest cannot find datatypes for pds namespace                                                                    | |:yellow_circle:| | s.high                    |
+| `registry-loader#144`_ `Unexpected error (should not have made it here) while getting index sbnumd-registry`                              | |:yellow_circle:| | s.medium                  |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-loader#81`_ AOSS propagation race: LDD re-downloaded and fields fail to resolve immediately after bulk load into -dd index      | |:yellow_circle:| | s.high                    |
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `registry-loader#80`_ LDD JSON parser fails to resolve field data types across IM versions due to format changes                          | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-loader#124`_ PDS4_PDS_1J00.JSON error "Failed to download or load LDD for namespace 'pds'"                                      | |:yellow_circle:| | s.medium                  |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-loader#86`_ Harvest fails when PDS4 label contains empty class definitions                                                      | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#81`_ AOSS propagation race: LDD re-downloaded and fields fail to resolve immediately after bulk load into -dd index      | |:yellow_circle:| | s.high                    |
+| `registry-loader#88`_ LDD fields silently not loaded when PDS4 LDD JSON uses older tooling-generated association format                   | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#77`_ Harvest does not download LDD on Windows: temp file creation fails with 'The system cannot find the path specified' | |:yellow_circle:| | s.high                    |
-+-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#85`_ harvest 5.1.2 is failing where harvest 5.00 works                                                                   | |:yellow_circle:| | s.critical                |
-+-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#87`_ Incomplete LDD load permanently blocked by stale sentinel record in data dictionary index                           | |:yellow_circle:| | s.high                    |
+| `registry-loader#105`_ Harvest cannot find datatypes for pds namespace                                                                    | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `registry-loader#142`_ Harvest does not create LDD download temp files on Windows, causing all products in a bundle to fail               | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#80`_ LDD JSON parser fails to resolve field data types across IM versions due to format changes                          | |:yellow_circle:| | s.high                    |
+| `registry-loader#85`_ harvest 5.1.2 is failing where harvest 5.00 works                                                                   | |:yellow_circle:| | s.critical                |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#122`_ LDD_Info sentinel written for partial load blocks future re-download of missing fields                             | |:yellow_circle:| | s.high                    |
+| `registry-loader#77`_ Harvest does not download LDD on Windows: temp file creation fails with 'The system cannot find the path specified' | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `registry-loader#144`_ `Unexpected error (should not have made it here) while getting index sbnumd-registry`                              | |:yellow_circle:| | s.medium                  |
+| `registry-loader#87`_ Incomplete LDD load permanently blocked by stale sentinel record in data dictionary index                           | |:yellow_circle:| | s.high                    |
 +-------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -1243,15 +1346,15 @@ Enhancements
 +--------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | Issue                                                                                      | I&T Status      | Priority / Bug Severity   |
 +============================================================================================+=================+===========================+
-| `lasso-issues#64`_ Activity Collector: Issue→PR→Release correlation engine                 | |:blue_circle:| | unknown                   |
-+--------------------------------------------------------------------------------------------+-----------------+---------------------------+
-| `lasso-issues#61`_ Activity Collector: repository discovery and issue collection           | |:blue_circle:| | unknown                   |
-+--------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `lasso-issues#65`_ Activity Collector: canonical activity.json export and pds-activity CLI | |:blue_circle:| | unknown                   |
++--------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `lasso-issues#64`_ Activity Collector: Issue→PR→Release correlation engine                 | |:blue_circle:| | unknown                   |
 +--------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `lasso-issues#63`_ Activity Collector: Release/Tag collector                               | |:blue_circle:| | unknown                   |
 +--------------------------------------------------------------------------------------------+-----------------+---------------------------+
 | `lasso-issues#62`_ Activity Collector: PR collector                                        | |:blue_circle:| | unknown                   |
++--------------------------------------------------------------------------------------------+-----------------+---------------------------+
+| `lasso-issues#61`_ Activity Collector: repository discovery and issue collection           | |:blue_circle:| | unknown                   |
 +--------------------------------------------------------------------------------------------+-----------------+---------------------------+
 
 --------
@@ -1329,11 +1432,13 @@ Planned Updates
 `validate#1549`_ B18 Validate Support: High Priority Enhancements / Bug Fixes / Tasks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+-----------------------------------------------------------+-------------------+---------+---------------------------+
-| Issue                                                     | I&T Status        | Level   | Priority / Bug Severity   |
-+===========================================================+===================+=========+===========================+
-| `validate#1635`_ Throws an error processing M4A/AAC files | |:yellow_circle:| | bug     | s.medium                  |
-+-----------------------------------------------------------+-------------------+---------+---------------------------+
++-----------------------------------------------------------------------+-------------------+---------+---------------------------+
+| Issue                                                                 | I&T Status        | Level   | Priority / Bug Severity   |
++=======================================================================+===================+=========+===========================+
+| `validate#1265`_ Context reference check is not collapsing whitespace | |:yellow_circle:| | bug     | s.medium                  |
++-----------------------------------------------------------------------+-------------------+---------+---------------------------+
+| `validate#1635`_ Throws an error processing M4A/AAC files             | |:yellow_circle:| | bug     | s.medium                  |
++-----------------------------------------------------------------------+-------------------+---------+---------------------------+
 
 
 `validate#1595`_ Performance Improvements for Large Bundle Validation
@@ -1362,11 +1467,11 @@ Bugs
 +==========================================================================================================================+===================+===========================+
 | `validate#1601`_ warning.integrity.member_not_found should be an ERROR by default, with new flag to downgrade to warning | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `validate#1548`_ validate does not fail or report errors when an explicitly-specified target file does not exist         | |:yellow_circle:| | s.medium                  |
++--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1657`_ validate -u fails: `ERROR [error.connection.registry] Error connecting to Registry`                     | |:yellow_circle:| | s.high                    |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `validate#1662`_ PDF/A validation reports internal_error instead of not_pdfa_compliant after veraPDF upgrade to 1.30.x   | |:yellow_circle:| | s.medium                  |
-+--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
-| `validate#1548`_ validate does not fail or report errors when an explicitly-specified target file does not exist         | |:yellow_circle:| | s.medium                  |
 +--------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
@@ -1500,11 +1605,11 @@ Requirements
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | Issue                                                                                                                                        | I&T Status        | Priority / Bug Severity   |
 +==============================================================================================================================================+===================+===========================+
-| `s3-browser-cloudfront#159`_ As a user, I need s3-browser to properly display breadcrumbs that include the bucket I chose                    | |:yellow_circle:| | p.must-have               |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#143`_ As a developer, I want the S3 browser to work with CloudFront as the S3 passthrough vs. direct S3 bucket access | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#174`_ As a PDS Engineer, I want the domain of data paths for buckets we control to be automatically configured        | |:yellow_circle:| | unknown                   |
++----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
+| `s3-browser-cloudfront#159`_ As a user, I need s3-browser to properly display breadcrumbs that include the bucket I chose                    | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
 | `s3-browser-cloudfront#158`_ As a developer, I need the ability to deep link into a bucket that is served via CloudFront                     | |:yellow_circle:| | p.must-have               |
 +----------------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------------------------+
@@ -1514,77 +1619,6 @@ Requirements
 Other Coverage
 --------------
 *Repositories not assigned to a specific component.*
-
---------
-
-O11y-cloudfront-batch
-~~~~~~~~~~~~~~~~~~~~~
-*None*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://nasa-pds.github.io/web-analytics>`_
-     - `Github Repo <https://github.com/NASA-PDS/o11y-cloudfront-batch>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/o11y-cloudfront-batch/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/o11y-cloudfront-batch/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/o11y-cloudfront-batch/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/o11y-cloudfront-batch/releases>`_ 
-
-
-Planned Updates
-+++++++++++++++
-`o11y-cloudfront-batch#63`_ Onboard Nodes to Upload Web Logs With DUM
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
-
-`o11y-cloudfront-batch#69`_ Finalize terraform deployment for web analytics components
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    No closed sub-issues identified for this theme in the current build yet. Click on the link in this section title for
-    details.
-
-`o11y-cloudfront-batch#70`_ Upgrade logstash config to support CloudFront logs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-+------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
-| Issue                                                                                                                                    | I&T Status        | Level       | Priority / Bug Severity   |
-+==========================================================================================================================================+===================+=============+===========================+
-| `o11y-cloudfront-batch#71`_ As a CloudOps Engineer, I want to ingest and parse CloudFront access logs in legacy W3C tab-delimited format | |:yellow_circle:| | requirement | p.must-have               |
-+------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------------+---------------------------+
-
-
---------
-
-O11y-platform
-~~~~~~~~~~~~~
-*Shared OpenSearch-backed Observability platform for the Planetary Data Cloud integrating web-analytics and real-time egress monitoring into an integrated system.*
-
-.. list-table:: 
-   :widths: 15 15 15 15 15 15
-
-   * - `User Guide <https://github.com/NASA-PDS/o11y-platform#readme>`_
-     - `Github Repo <https://github.com/NASA-PDS/o11y-platform>`_
-     - `Issue Tracking <https://github.com/NASA-PDS/o11y-platform/issues>`_ 
-     - `Requirements <https://github.com/NASA-PDS/o11y-platform/tree/main/docs/requirements>`_ 
-     - `Stable Release <https://github.com/NASA-PDS/o11y-platform/releases/latest>`_ 
-     - `Dev Release <https://github.com/NASA-PDS/o11y-platform/releases>`_ 
-
-
-Planned Updates
-+++++++++++++++
-No planned updates realized for this build in this repository.
-
-Other Updates
-+++++++++++++
-Enhancements
-^^^^^^^^^^^^
-
-+-------------------------------------------------------------------------------------+-------------------+---------------------------+
-| Issue                                                                               | I&T Status        | Priority / Bug Severity   |
-+=====================================================================================+===================+===========================+
-| `o11y-platform#22`_ Move Firehose→OpenSearch VPC ingress rule back to o11y-platform | |:yellow_circle:| | p.must-have               |
-+-------------------------------------------------------------------------------------+-------------------+---------------------------+
 
 --------
 
@@ -1668,11 +1702,13 @@ This section provides a summary of the issues addressed in this release, organiz
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | Component/Repo                 | Bugs   | Enhancements   | Requirements   | Tasks   | Themes   | Total   |
 +================================+========+================+================+=========+==========+=========+
-| **Cloud Platform Engineering** | 0      | 0              | 0              | 0       | 16       | 16      |
+| **Cloud Platform Engineering** | 0      | 0              | 0              | 0       | 18       | 18      |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Data Upload Manager**        | 5      | 1              | 2              | 0       | 1        | 9       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Devops**                     | 2      | 0              | 1              | 0       | 0        | 3       |
++--------------------------------+--------+----------------+----------------+---------+----------+---------+
+| **Observability**              | 0      | 1              | 1              | 0       | 3        | 5       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Operations**                 | 0      | 0              | 3              | 0       | 0        | 3       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1682,7 +1718,7 @@ This section provides a summary of the issues addressed in this release, organiz
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Peppi**                      | 1      | 0              | 1              | 0       | 1        | 3       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Registry Tools**             | 26     | 2              | 15             | 0       | 25       | 68      |
+| **Registry Tools**             | 26     | 2              | 16             | 0       | 25       | 69      |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Search API**                 | 0      | 0              | 0              | 0       | 1        | 1       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
@@ -1690,15 +1726,15 @@ This section provides a summary of the issues addressed in this release, organiz
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **System Tools**               | 0      | 1              | 1              | 0       | 0        | 2       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Validate**                   | 6      | 1              | 2              | 0       | 2        | 11      |
+| **Validate**                   | 7      | 1              | 2              | 0       | 2        | 12      |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Web Content**                | 2      | 0              | 1              | 0       | 1        | 4       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 | **Web Dev**                    | 3      | 0              | 5              | 0       | 1        | 9       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
-| **Other Coverage**             | 0      | 1              | 1              | 0       | 9        | 11      |
+| **Other Coverage**             | 0      | 0              | 0              | 0       | 6        | 6       |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
-| **TOTAL**                      | **57** | **14**         | **35**         | **0**   | **65**   | **171** |
+| **TOTAL**                      | **58** | **14**         | **36**         | **0**   | **67**   | **175** |
 +--------------------------------+--------+----------------+----------------+---------+----------+---------+
 
 
@@ -1790,18 +1826,25 @@ as follows:
 .. _planetary-data-cloud#234: https://github.com/NASA-PDS/planetary-data-cloud/issues/234
 .. _planetary-data-cloud#235: https://github.com/NASA-PDS/planetary-data-cloud/issues/235
 .. _planetary-data-cloud#249: https://github.com/NASA-PDS/planetary-data-cloud/issues/249
+.. _planetary-data-cloud#284: https://github.com/NASA-PDS/planetary-data-cloud/issues/284
+.. _planetary-data-cloud#291: https://github.com/NASA-PDS/planetary-data-cloud/issues/291
 .. _data-upload-manager#349: https://github.com/NASA-PDS/data-upload-manager/issues/349
 .. _data-upload-manager#365: https://github.com/NASA-PDS/data-upload-manager/issues/365
 .. _data-upload-manager#368: https://github.com/NASA-PDS/data-upload-manager/issues/368
-.. _data-upload-manager#358: https://github.com/NASA-PDS/data-upload-manager/issues/358
 .. _data-upload-manager#361: https://github.com/NASA-PDS/data-upload-manager/issues/361
 .. _data-upload-manager#352: https://github.com/NASA-PDS/data-upload-manager/issues/352
+.. _data-upload-manager#358: https://github.com/NASA-PDS/data-upload-manager/issues/358
 .. _data-upload-manager#366: https://github.com/NASA-PDS/data-upload-manager/issues/366
 .. _data-upload-manager#382: https://github.com/NASA-PDS/data-upload-manager/issues/382
 .. _data-upload-manager#380: https://github.com/NASA-PDS/data-upload-manager/issues/380
 .. _pdsen-corral#34: https://github.com/NASA-PDS/pdsen-corral/issues/34
 .. _roundup-action#179: https://github.com/NASA-PDS/roundup-action/issues/179
 .. _roundup-action#170: https://github.com/NASA-PDS/roundup-action/issues/170
+.. _o11y-cloudfront-batch#63: https://github.com/NASA-PDS/o11y-cloudfront-batch/issues/63
+.. _o11y-cloudfront-batch#69: https://github.com/NASA-PDS/o11y-cloudfront-batch/issues/69
+.. _o11y-cloudfront-batch#70: https://github.com/NASA-PDS/o11y-cloudfront-batch/issues/70
+.. _o11y-cloudfront-batch#71: https://github.com/NASA-PDS/o11y-cloudfront-batch/issues/71
+.. _o11y-platform#22: https://github.com/NASA-PDS/o11y-platform/issues/22
 .. _en-ops-utils#19: https://github.com/NASA-PDS/en-ops-utils/issues/19
 .. _en-ops-utils#18: https://github.com/NASA-PDS/en-ops-utils/issues/18
 .. _en-ops-utils#16: https://github.com/NASA-PDS/en-ops-utils/issues/16
@@ -1817,19 +1860,19 @@ as follows:
 .. _pds4-information-model#1016: https://github.com/NASA-PDS/pds4-information-model/issues/1016
 .. _pds4-information-model#1017: https://github.com/NASA-PDS/pds4-information-model/issues/1017
 .. _pds4-information-model#1026: https://github.com/NASA-PDS/pds4-information-model/issues/1026
-.. _pds4-information-model#1067: https://github.com/NASA-PDS/pds4-information-model/issues/1067
-.. _pds4-information-model#771: https://github.com/NASA-PDS/pds4-information-model/issues/771
+.. _pds4-information-model#1049: https://github.com/NASA-PDS/pds4-information-model/issues/1049
 .. _pds4-information-model#1056: https://github.com/NASA-PDS/pds4-information-model/issues/1056
 .. _pds4-information-model#1042: https://github.com/NASA-PDS/pds4-information-model/issues/1042
-.. _pds4-information-model#1049: https://github.com/NASA-PDS/pds4-information-model/issues/1049
+.. _pds4-information-model#771: https://github.com/NASA-PDS/pds4-information-model/issues/771
+.. _pds4-information-model#1067: https://github.com/NASA-PDS/pds4-information-model/issues/1067
 .. _pds4-information-model#1065: https://github.com/NASA-PDS/pds4-information-model/issues/1065
 .. _pds4-information-model#1038: https://github.com/NASA-PDS/pds4-information-model/issues/1038
 .. _pds4-information-model#1040: https://github.com/NASA-PDS/pds4-information-model/issues/1040
 .. _pds4-jparser#200: https://github.com/NASA-PDS/pds4-jparser/issues/200
 .. _pds4-jparser#197: https://github.com/NASA-PDS/pds4-jparser/issues/197
 .. _pds4-jparser#197: https://github.com/NASA-PDS/pds4-jparser/issues/197
-.. _portal-ds-view#68: https://github.com/NASA-PDS/portal-ds-view/issues/68
 .. _portal-ds-view#65: https://github.com/NASA-PDS/portal-ds-view/issues/65
+.. _portal-ds-view#68: https://github.com/NASA-PDS/portal-ds-view/issues/68
 .. _peppi#171: https://github.com/NASA-PDS/peppi/issues/171
 .. _peppi#158: https://github.com/NASA-PDS/peppi/issues/158
 .. _peppi#168: https://github.com/NASA-PDS/peppi/issues/168
@@ -1843,8 +1886,8 @@ as follows:
 .. _registry#536: https://github.com/NASA-PDS/registry/issues/536
 .. _registry#517: https://github.com/NASA-PDS/registry/issues/517
 .. _registry#518: https://github.com/NASA-PDS/registry/issues/518
-.. _registry#543: https://github.com/NASA-PDS/registry/issues/543
 .. _registry#510: https://github.com/NASA-PDS/registry/issues/510
+.. _registry#543: https://github.com/NASA-PDS/registry/issues/543
 .. _registry#510: https://github.com/NASA-PDS/registry/issues/510
 .. _registry-api#715: https://github.com/NASA-PDS/registry-api/issues/715
 .. _registry-api#617: https://github.com/NASA-PDS/registry-api/issues/617
@@ -1858,9 +1901,9 @@ as follows:
 .. _registry-api#751: https://github.com/NASA-PDS/registry-api/issues/751
 .. _registry-api#760: https://github.com/NASA-PDS/registry-api/issues/760
 .. _registry-api#768: https://github.com/NASA-PDS/registry-api/issues/768
-.. _registry-api#744: https://github.com/NASA-PDS/registry-api/issues/744
-.. _registry-api#745: https://github.com/NASA-PDS/registry-api/issues/745
 .. _registry-api#742: https://github.com/NASA-PDS/registry-api/issues/742
+.. _registry-api#745: https://github.com/NASA-PDS/registry-api/issues/745
+.. _registry-api#744: https://github.com/NASA-PDS/registry-api/issues/744
 .. _registry-api#748: https://github.com/NASA-PDS/registry-api/issues/748
 .. _registry-api#611: https://github.com/NASA-PDS/registry-api/issues/611
 .. _registry-legacy-solr#162: https://github.com/NASA-PDS/registry-legacy-solr/issues/162
@@ -1869,6 +1912,7 @@ as follows:
 .. _registry-legacy-solr#276: https://github.com/NASA-PDS/registry-legacy-solr/issues/276
 .. _registry-legacy-solr#277: https://github.com/NASA-PDS/registry-legacy-solr/issues/277
 .. _registry-legacy-solr#244: https://github.com/NASA-PDS/registry-legacy-solr/issues/244
+.. _registry-legacy-solr#281: https://github.com/NASA-PDS/registry-legacy-solr/issues/281
 .. _registry-loader#67: https://github.com/NASA-PDS/registry-loader/issues/67
 .. _registry-loader#65: https://github.com/NASA-PDS/registry-loader/issues/65
 .. _registry-loader#66: https://github.com/NASA-PDS/registry-loader/issues/66
@@ -1876,18 +1920,18 @@ as follows:
 .. _registry-loader#126: https://github.com/NASA-PDS/registry-loader/issues/126
 .. _registry-loader#138: https://github.com/NASA-PDS/registry-loader/issues/138
 .. _registry-loader#89: https://github.com/NASA-PDS/registry-loader/issues/89
-.. _registry-loader#88: https://github.com/NASA-PDS/registry-loader/issues/88
-.. _registry-loader#105: https://github.com/NASA-PDS/registry-loader/issues/105
-.. _registry-loader#124: https://github.com/NASA-PDS/registry-loader/issues/124
-.. _registry-loader#86: https://github.com/NASA-PDS/registry-loader/issues/86
-.. _registry-loader#81: https://github.com/NASA-PDS/registry-loader/issues/81
-.. _registry-loader#77: https://github.com/NASA-PDS/registry-loader/issues/77
-.. _registry-loader#85: https://github.com/NASA-PDS/registry-loader/issues/85
-.. _registry-loader#87: https://github.com/NASA-PDS/registry-loader/issues/87
-.. _registry-loader#142: https://github.com/NASA-PDS/registry-loader/issues/142
-.. _registry-loader#80: https://github.com/NASA-PDS/registry-loader/issues/80
 .. _registry-loader#122: https://github.com/NASA-PDS/registry-loader/issues/122
 .. _registry-loader#144: https://github.com/NASA-PDS/registry-loader/issues/144
+.. _registry-loader#81: https://github.com/NASA-PDS/registry-loader/issues/81
+.. _registry-loader#80: https://github.com/NASA-PDS/registry-loader/issues/80
+.. _registry-loader#124: https://github.com/NASA-PDS/registry-loader/issues/124
+.. _registry-loader#86: https://github.com/NASA-PDS/registry-loader/issues/86
+.. _registry-loader#88: https://github.com/NASA-PDS/registry-loader/issues/88
+.. _registry-loader#105: https://github.com/NASA-PDS/registry-loader/issues/105
+.. _registry-loader#142: https://github.com/NASA-PDS/registry-loader/issues/142
+.. _registry-loader#85: https://github.com/NASA-PDS/registry-loader/issues/85
+.. _registry-loader#77: https://github.com/NASA-PDS/registry-loader/issues/77
+.. _registry-loader#87: https://github.com/NASA-PDS/registry-loader/issues/87
 .. _registry-mgr#72: https://github.com/NASA-PDS/registry-mgr/issues/72
 .. _registry-sweepers#201: https://github.com/NASA-PDS/registry-sweepers/issues/201
 .. _registry-sweepers#205: https://github.com/NASA-PDS/registry-sweepers/issues/205
@@ -1903,14 +1947,15 @@ as follows:
 .. _registry-sweepers#211: https://github.com/NASA-PDS/registry-sweepers/issues/211
 .. _search-api-notebook#89: https://github.com/NASA-PDS/search-api-notebook/issues/89
 .. _lasso-issues#59: https://github.com/NASA-PDS/lasso-issues/issues/59
-.. _lasso-issues#64: https://github.com/NASA-PDS/lasso-issues/issues/64
-.. _lasso-issues#61: https://github.com/NASA-PDS/lasso-issues/issues/61
 .. _lasso-issues#65: https://github.com/NASA-PDS/lasso-issues/issues/65
+.. _lasso-issues#64: https://github.com/NASA-PDS/lasso-issues/issues/64
 .. _lasso-issues#63: https://github.com/NASA-PDS/lasso-issues/issues/63
 .. _lasso-issues#62: https://github.com/NASA-PDS/lasso-issues/issues/62
+.. _lasso-issues#61: https://github.com/NASA-PDS/lasso-issues/issues/61
 .. _pds-agent-skills#6: https://github.com/NASA-PDS/pds-agent-skills/issues/6
 .. _pds-agent-skills#23: https://github.com/NASA-PDS/pds-agent-skills/issues/23
 .. _validate#1549: https://github.com/NASA-PDS/validate/issues/1549
+.. _validate#1265: https://github.com/NASA-PDS/validate/issues/1265
 .. _validate#1635: https://github.com/NASA-PDS/validate/issues/1635
 .. _validate#1595: https://github.com/NASA-PDS/validate/issues/1595
 .. _validate#1570: https://github.com/NASA-PDS/validate/issues/1570
@@ -1918,9 +1963,9 @@ as follows:
 .. _validate#1565: https://github.com/NASA-PDS/validate/issues/1565
 .. _validate#1568: https://github.com/NASA-PDS/validate/issues/1568
 .. _validate#1601: https://github.com/NASA-PDS/validate/issues/1601
+.. _validate#1548: https://github.com/NASA-PDS/validate/issues/1548
 .. _validate#1657: https://github.com/NASA-PDS/validate/issues/1657
 .. _validate#1662: https://github.com/NASA-PDS/validate/issues/1662
-.. _validate#1548: https://github.com/NASA-PDS/validate/issues/1548
 .. _nasa-pds.github.io#85: https://github.com/NASA-PDS/nasa-pds.github.io/issues/85
 .. _portal#143: https://github.com/NASA-PDS/portal/issues/143
 .. _portal#144: https://github.com/NASA-PDS/portal/issues/144
@@ -1930,15 +1975,10 @@ as follows:
 .. _s3-browser-cloudfront#144: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/144
 .. _s3-browser-cloudfront#178: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/178
 .. _s3-browser-cloudfront#184: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/184
-.. _s3-browser-cloudfront#159: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/159
 .. _s3-browser-cloudfront#143: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/143
 .. _s3-browser-cloudfront#174: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/174
+.. _s3-browser-cloudfront#159: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/159
 .. _s3-browser-cloudfront#158: https://github.com/NASA-PDS/s3-browser-cloudfront/issues/158
-.. _o11y-cloudfront-batch#63: https://github.com/NASA-PDS/o11y-cloudfront-batch/issues/63
-.. _o11y-cloudfront-batch#69: https://github.com/NASA-PDS/o11y-cloudfront-batch/issues/69
-.. _o11y-cloudfront-batch#70: https://github.com/NASA-PDS/o11y-cloudfront-batch/issues/70
-.. _o11y-cloudfront-batch#71: https://github.com/NASA-PDS/o11y-cloudfront-batch/issues/71
-.. _o11y-platform#22: https://github.com/NASA-PDS/o11y-platform/issues/22
 .. _systems-engineering#142: https://github.com/NASA-PDS/systems-engineering/issues/142
 .. _systems-engineering#143: https://github.com/NASA-PDS/systems-engineering/issues/143
 .. _systems-engineering#156: https://github.com/NASA-PDS/systems-engineering/issues/156
