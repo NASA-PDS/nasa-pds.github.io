@@ -1,4 +1,4 @@
-sphinx==7.4.7
+sphinx==9.1.0
 sphinx-rtd-theme==3.0.2
 gitpython==3.1.58
 sphinxemoji==0.3.1
